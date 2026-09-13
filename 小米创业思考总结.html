@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/><meta content="width=device-width initial-scale=1" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"/><style type="text/css">html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+
+</style><title>小米创业思考总结</title>
+<link href="content_note.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<button id="sidebar-toggle"></button><div id="sidebar">
+  <h2>目录</h2>
+  <ul>
+        <ul>
+            <li><a href="#Xiaomisentrepreneurialthinkingsummary">小米创业思考总结</a></li>
+    <ul>
+                <li><a href="#Corepointoftheforeword">前言核心观点</a></li>
+    </ul>
+            <li><a href="#PartOneEntrepreneurshipHistory">第一部分 创业历程</a></li>
+    <ul>
+                <li><a href="#Chapter1AgeofMiracles">第一章 奇迹时代</a></li>
+                <li><a href="#Chapter2ReflectionontheTrough">第二章 低谷反思</a></li>
+                <li><a href="#Chapter3ReturntoGrowth">第三章 重回增长</a></li>
+                <li><a href="#Chapter4NewDecadeStrategy">第四章 新十年战略</a></li>
+    </ul>
+            <li><a href="#XiaomiMethodologyInterpretationofInternetThinking">小米方法论：互联网思维解读</a></li>
+    <ul>
+                <li><a href="#Chapter5MyunderstandingofInternetthinking">第五章 我对互联网思维的理解</a></li>
+    </ul>
+            <li><a href="#1EvolutionoftheEssenceoftheInternet">一、互联网本质认知演进</a></li>
+            <li><a href="#2CoreelementsofInternetmethodology">二、互联网方法论核心要素</a></li>
+            <li><a href="#3Internetcompanyoperationrules">三、互联网公司运作法则</a></li>
+            <li><a href="#4Comparisonoftheconclusionsoftwolongtermexams">四、两次长考结论对比</a></li>
+            <li><a href="#5TheprocessofformationofSevencharacterSkills">五、"七字诀"形成历程</a></li>
+            <li><a href="#6Internetservicetransformation">六、互联网服务化转型</a></li>
+            <li><a href="#Chapter6TheInternetSevencharacterSkill">第六章 互联网七字诀</a></li>
+    <ul>
+                <li><a href="#1Focus">一、专注</a></li>
+                <li><a href="#2Extreme">二、极致</a></li>
+                <li><a href="#3Wordofmouth">三、口碑</a></li>
+                <li><a href="#4Quick">四、快</a></li>
+    </ul>
+            <li><a href="#Part3PracticeofXiaomismethodologyTechnologybased">第三部分 小米方法论的实践：技术为本</a></li>
+    <ul>
+                <li><a href="#1Theessentialattributesoftechnologycompanies">一、科技公司本质属性</a></li>
+                <li><a href="#2Technicalarchitecture">二、技术体系架构</a></li>
+                <li><a href="#3Engineerculturalpractice">三、工程师文化实践</a></li>
+                <li><a href="#4Fiveelementsofengineeringthinking">四、工程思维五要素</a></li>
+                <li><a href="#5Keylessons">五、关键教训</a></li>
+    </ul>
+            <li><a href="#Chapter8Makefriendswithusers">第八章 和用户交朋友</a></li>
+    <ul>
+                <li><a href="#1Coreconceptofuserrelationship">一、用户关系核心理念</a></li>
+                <li><a href="#2Learnfromtheopeningcustomermodel">二、开市客模式借鉴</a></li>
+                <li><a href="#3Userinteractionmechanism">三、用户互动机制</a></li>
+    </ul>
+            <li><a href="#Chapter9PopularProductMode">第九章 爆品模式</a></li>
+    <ul>
+                <li><a href="#1DefinitionandConditionsofPopularProducts">一、爆品定义与条件</a></li>
+                <li><a href="#2Fourelementsofhotproductscreation">二、爆品打造四要素</a></li>
+                <li><a href="#Threeorfourkeyabilities">三、四项关键能力</a></li>
+    </ul>
+            <li><a href="#Chapter10HighefficiencyModel">第十章 高效率模型</a></li>
+    <ul>
+                <li><a href="#1Efficiencymodelcore">一、效率模型核心</a></li>
+                <li><a href="#2Triathlonmode">二、铁人三项模式</a></li>
+    </ul>
+            <li><a href="#Chapter11NewRetail">第十一章 新零售</a></li>
+    <ul>
+                <li><a href="#1Channelevolutionprocess">一、渠道演变历程</a></li>
+                <li><a href="#2XiaomiHomeOperationModel">二、小米之家运营模型</a></li>
+                <li><a href="#IIIRetailessentialpractice">三、零售本质实践</a></li>
+    </ul>
+            <li><a href="#Part4Xiaomimethodologyandindustrialecology">第四部分 小米方法论与产业生态</a></li>
+            <li><a href="#Chapter12EcologicalChainModel">第十二章 生态链模式</a></li>
+    <ul>
+                <li><a href="#1Corelogicoftheecologicalchainmodel">一、生态链模式核心逻辑</a></li>
+                <li><a href="#2Analysisofcasestudiesonexplosiveproductsinecologicalchain">二、生态链爆品案例解析</a></li>
+                <li><a href="#3Qualityconceptanddesignconcept">三、质量观与设计理念</a></li>
+                <li><a href="#4Ecochain20upgrade">四、生态链2.0升级</a></li>
+    </ul>
+            <li><a href="#Chapter13IntelligentManufacturing">第十三章 智能制造</a></li>
+    <ul>
+                <li><a href="#1Manufacturingefficiencyimprovementpath">一、制造效率提升路径</a></li>
+                <li><a href="#2Threemajorproblemsandsolutionsforintelligentmanufacturing">二、智能制造三大难题与解法</a></li>
+                <li><a href="#3Futuregoalsofmanufacturingend">三、制造端未来目标</a></li>
+    </ul>
+            <li><a href="#Part5ThinkingabouttheevolutionofXiaomismethodology">第五部分 小米方法论的演进思考</a></li>
+            <li><a href="#Chapter14ThoughtsontheEvolutionofXiaomiMethodology">第十四章 小米方法论的演进思考</a></li>
+    <ul>
+                <li><a href="#1Bewareofthetrapofuneconomicscale">一、警惕“规模不经济”陷阱</a></li>
+                <li><a href="#2Formulatethethreemajorironlaws">二、制定“三大铁律”</a></li>
+                <li><a href="#3Xiaomisstrategicthinkingoncarmanufacturing">三、小米造车的战略思考</a></li>
+                <li><a href="#4Highendstrategylifeanddeathbattle">四、高端化战略：生死之战</a></li>
+                <li><a href="#5Thegrowthtestofmethodology">五、方法论的成长考验</a></li>
+                <li><a href="#PostscriptTheessenceofXiaomimodel">后记：小米模式的本质</a></li>
+                </ul>
+</div>
+<script src="sidebar.js"></script>
+    
+    
+    <div class="typora-export-content">
+<div class="" id="write"><h3 id="Xiaomisentrepreneurialthinkingsummary"><span>小米创业思考总结  </span></h3><hr/><h4 id="Corepointoftheforeword"><strong><span>前言核心观点</span></strong><span> </span></h4><ul><li><p><span>互联网本质：高效、透明、公平、普惠  </span></p></li><li><p><span>三大拒绝：割裂藩篱/零和竞争/流量独占  </span></p></li><li><p><span>核心定位：社会财富耕耘者  </span></p></li></ul><hr/><h3 id="PartOneEntrepreneurshipHistory"><strong><span>第一部分 创业历程</span></strong><span> </span></h3><h4 id="Chapter1AgeofMiracles"><strong><span>第一章 奇迹时代</span></strong><span> </span></h4><p><strong><span>1. 创业初心</span></strong><span> </span></p><ul><li><p><span>目标：推动中国制造业升级，做"全球最好手机，价格减半"  </span></p></li><li><p><span>团队构建：集结微软（软件）、摩托罗拉（硬件）、谷歌（互联网）精英  </span></p></li></ul><p><strong><span>2. MIUI开发方法论</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>策略</span></strong></th><th><strong><span>具体实践</span></strong></th><th><strong><span>成果</span></strong></th></tr></thead><tbody><tr><td><span>功能聚焦</span></td><td><span>初期仅开发电话/短信/通讯录/桌面四大功能</span></td><td><span>系统稳定性提升</span></td></tr><tr><td><span>用户共创</span></td><td><span>10万发烧友参与功能投票，全员论坛互动</span></td><td><span>全球首款"活系统"</span></td></tr><tr><td><span>极致体验</span></td><td><span>百变锁屏/主题，模拟任意机型</span></td><td><span>海外XDA论坛爆火</span></td></tr><tr><td><span>快速迭代</span></td><td><span>每周更新，互联网开发模式</span></td><td><span>验证"专注、极致、口碑、快"七字诀</span></td></tr></tbody></table></figure><p><strong><span>3. 供应链破局</span></strong><span> </span></p><ul><li><p><span>选择标准：仅用苹果供应商（含三星合作方）  </span></p></li><li><p><span>代价：支付超市场价获取顶级资源  </span></p></li></ul><p><strong><span>4. 产品战略</span></strong><span> </span></p><ul><li><p><span>定价原则：1999元旗舰机（国产首例），硬件成本打平  </span></p></li><li><p><span>爆款逻辑：前三年仅5款机型，累计销量超1.1亿台  </span></p><ul><li><p><span>小米1代：790万  </span></p></li><li><p><span>红米1代：4460万  </span></p></li></ul></li></ul><p><strong><span>5. 生态布局</span></strong><span> </span></p><ul><li><p><span>2013年启动生态链计划  </span></p></li><li><p><span>爆品矩阵：移动电源/手环/空气净化器全球份额第一  </span></p></li></ul><hr/><h4 id="Chapter2ReflectionontheTrough"><strong><span>第二章 低谷反思</span></strong><span> </span></h4><p><strong><span>1. 危机根源</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>外部挑战</span></strong></th><th><strong><span>内部问题</span></strong></th></tr></thead><tbody><tr><td><span>手机市场饱和</span></td><td><span>用户连接弱化（社区荒废）</span></td></tr><tr><td><span>寡头竞争加剧</span></td><td><span>硬件理解不足，产品创新停滞</span></td></tr><tr><td><span>电商遇瓶颈</span></td><td><span>交付能力缺失（被误读为饥饿营销）</span></td></tr></tbody></table></figure><p><strong><span>2. 补课行动</span></strong><span> </span></p><ul><li><p><span>三大重点：交付体系重建/创新能力强化/质量管控升级  </span></p></li><li><p><span>生存关键：用户信任+价值观坚守  </span></p></li></ul><hr/><h4 id="Chapter3ReturntoGrowth"><strong><span>第三章 重回增长</span></strong><span> </span></h4><p><strong><span>1. 战略决策</span></strong><span> </span></p><ul><li><p><span>2018年董事会决议：硬件综合净利润率永久≤5%  </span></p></li><li><p><span>全球化路径：  </span></p><ul><li><p><span>2014年印度首战 → 2017年登顶市场份额第一  </span></p></li><li><p><span>2019年欧洲突破 → 西班牙公开市场第一  </span></p></li></ul></li></ul><p><strong><span>2. 品牌重塑</span></strong><span> </span></p><ul><li><p><span>2019年分拆：Redmi（极致性价比） vs 小米（高端技术）  </span></p></li><li><p><span>高端化里程碑：  </span></p><ul><li><p><span>小米11系列站稳6000-7000元价位  </span></p></li><li><p><span>首款万元折叠屏MIX FOLD发布  </span></p></li></ul></li></ul><hr/><h4 id="Chapter4NewDecadeStrategy"><strong><span>第四章 新十年战略</span></strong><span> </span></h4><p><strong><span>1. 三大铁律</span></strong><span> </span></p><ol start=""><li><p><span>技术为本：投资近百家硬核科技公司（芯片/自动驾驶/AI）  </span></p></li><li><p><span>性价比为纲：维持"感动人心，价格厚道"原则  </span></p></li><li><p><span>做最酷产品：折叠屏/屏下相机等前沿技术落地  </span></p></li></ol><p><strong><span>2. 核心战略："手机×AIoT"</span></strong><span> </span></p><ul><li><p><span>手机：硬件+软件+互联网体验中枢  </span></p></li><li><p><span>AIoT：智能设备全场景互联（护城河构建）  </span></p></li><li><p><span>乘法效应：数据/流量/服务生态协同  </span></p></li></ul><p><strong><span>3. 三大策略</span></strong><span> </span></p><ul><li><p><span>重新创业：保持初创企业敏捷性  </span></p></li><li><p><span>互联网+制造：数字化赋能供应链  </span></p></li><li><p><span>行稳致远：平衡规模与质量增长  </span></p></li></ul><p> </p><h3 id="XiaomiMethodologyInterpretationofInternetThinking"><span>小米方法论：互联网思维解读  </span></h3><hr/><h4 id="Chapter5MyunderstandingofInternetthinking"><strong><span>第五章 我对互联网思维的理解</span></strong><span> </span></h4><hr/><h3 id="1EvolutionoftheEssenceoftheInternet"><strong><span>一、互联网本质认知演进</span></strong><span> </span></h3><figure class="table-figure"><table><thead><tr><th><strong><span>阶段</span></strong></th><th><strong><span>核心认知</span></strong></th><th><strong><span>关键实践</span></strong></th></tr></thead><tbody><tr><td><strong><span>1997-2007探索期</span></strong></td><td><span>互联网是工具，终将融入所有行业</span></td><td><span>金山转型互联网动员令（2005）</span></td></tr><tr><td><strong><span>卓越网时期</span></strong></td><td><span>电商是传统企业触网最佳路径</span></td><td><span>放弃软件下载业务，全面转型电子商务</span></td></tr><tr><td><strong><span>移动互联网前瞻</span></strong></td><td><span>手机上网是未来趋势</span></td><td><span>2006年投资乐讯/UCWeb，任UCWeb董事长</span></td></tr></tbody></table></figure><hr/><h3 id="2CoreelementsofInternetmethodology"><strong><span>二、互联网方法论核心要素</span></strong><span> </span></h3><div class="md-diagram-panel md-fences-adv-panel" lang="mermaid  "><svg aria-roledescription="flowchart-v2" class="flowchart mermaid-svg" id="mermaidChart0" role="graphics-document document" style="max-width: 784px;" viewbox="0 0 784 278" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>#mermaidChart0{font-family:sans-serif;font-size:16px;fill:#333;}#mermaidChart0 .error-icon{fill:#552222;}#mermaidChart0 .error-text{fill:#552222;stroke:#552222;}#mermaidChart0 .edge-thickness-normal{stroke-width:1px;}#mermaidChart0 .edge-thickness-thick{stroke-width:3.5px;}#mermaidChart0 .edge-pattern-solid{stroke-dasharray:0;}#mermaidChart0 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaidChart0 .edge-pattern-dashed{stroke-dasharray:3;}#mermaidChart0 .edge-pattern-dotted{stroke-dasharray:2;}#mermaidChart0 .marker{fill:#333333;stroke:#333333;}#mermaidChart0 .marker.cross{stroke:#333333;}#mermaidChart0 svg{font-family:sans-serif;font-size:16px;}#mermaidChart0 p{margin:0;}#mermaidChart0 .label{font-family:sans-serif;color:#333;}#mermaidChart0 .cluster-label text{fill:#333;}#mermaidChart0 .cluster-label span{color:#333;}#mermaidChart0 .cluster-label span p{background-color:transparent;}#mermaidChart0 .label text,#mermaidChart0 span{fill:#333;color:#333;}#mermaidChart0 .node rect,#mermaidChart0 .node circle,#mermaidChart0 .node ellipse,#mermaidChart0 .node polygon,#mermaidChart0 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaidChart0 .rough-node .label text,#mermaidChart0 .node .label text,#mermaidChart0 .image-shape .label,#mermaidChart0 .icon-shape .label{text-anchor:middle;}#mermaidChart0 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaidChart0 .rough-node .label,#mermaidChart0 .node .label,#mermaidChart0 .image-shape .label,#mermaidChart0 .icon-shape .label{text-align:center;}#mermaidChart0 .node.clickable{cursor:pointer;}#mermaidChart0 .root .anchor path{fill:#333333!important;stroke-width:0;stroke:#333333;}#mermaidChart0 .arrowheadPath{fill:#333333;}#mermaidChart0 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaidChart0 .flowchart-link{stroke:#333333;fill:none;}#mermaidChart0 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaidChart0 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaidChart0 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaidChart0 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaidChart0 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaidChart0 .cluster text{fill:#333;}#mermaidChart0 .cluster span{color:#333;}#mermaidChart0 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaidChart0 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaidChart0 rect.text{fill:none;stroke-width:0;}#mermaidChart0 .icon-shape,#mermaidChart0 .image-shape{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaidChart0 .icon-shape p,#mermaidChart0 .image-shape p{background-color:rgba(232,232,232, 0.8);padding:2px;}#mermaidChart0 .icon-shape rect,#mermaidChart0 .image-shape rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaidChart0 :root{--mermaid-alt-font-family:sans-serif;}</style><g><marker class="marker flowchart-v2" id="mermaidChart0_flowchart-v2-pointEnd" markerheight="8" markerunits="userSpaceOnUse" markerwidth="8" orient="auto" refx="5" refy="5" viewbox="0 0 10 10"><path class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker class="marker flowchart-v2" id="mermaidChart0_flowchart-v2-pointStart" markerheight="8" markerunits="userSpaceOnUse" markerwidth="8" orient="auto" refx="4.5" refy="5" viewbox="0 0 10 10"><path class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker class="marker flowchart-v2" id="mermaidChart0_flowchart-v2-circleEnd" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="11" refy="5" viewbox="0 0 10 10"><circle class="arrowMarkerPath" cx="5" cy="5" r="5" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker class="marker flowchart-v2" id="mermaidChart0_flowchart-v2-circleStart" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="-1" refy="5" viewbox="0 0 10 10"><circle class="arrowMarkerPath" cx="5" cy="5" r="5" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker class="marker cross flowchart-v2" id="mermaidChart0_flowchart-v2-crossEnd" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="12" refy="5.2" viewbox="0 0 11 11"><path class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker class="marker cross flowchart-v2" id="mermaidChart0_flowchart-v2-crossStart" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="-1" refy="5.2" viewbox="0 0 11 11"><path class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M358,47.552L321.333,54.126C284.667,60.701,211.333,73.851,174.667,83.925C138,94,138,101,138,104.5L138,108" id="L_A_B_0" marker-end="url(#mermaidChart0_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M428,62L428,66.167C428,70.333,428,78.667,428,86.333C428,94,428,101,428,104.5L428,108" id="L_A_C_1" marker-end="url(#mermaidChart0_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M498,49.331L528.667,55.609C559.333,61.887,620.667,74.444,651.333,84.222C682,94,682,101,682,104.5L682,108" id="L_A_D_2" marker-end="url(#mermaidChart0_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M138,166L138,170.167C138,174.333,138,182.667,138,190.333C138,198,138,205,138,208.5L138,212" id="L_B_E_3" marker-end="url(#mermaidChart0_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M428,166L428,170.167C428,174.333,428,182.667,428,190.333C428,198,428,205,428,208.5L428,212" id="L_C_F_4" marker-end="url(#mermaidChart0_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M682,166L682,170.167C682,174.333,682,182.667,682,190.333C682,198,682,205,682,208.5L682,212" id="L_D_G_5" marker-end="url(#mermaidChart0_flowchart-v2-pointEnd)" style=""></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-0" transform="translate(428, 35)"><rect class="basic label-container" height="54" style="" width="140" x="-70" y="-27"></rect><g class="label" style="" transform="translate(-40, -12)"><rect></rect><foreignobject height="24" width="80"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>互联网思维</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-B-1" transform="translate(138, 139)"><rect class="basic label-container" height="54" rx="5" ry="5" style="" width="94" x="-47" y="-27"></rect><g class="label" style="" transform="translate(-32, -12)"><rect></rect><foreignobject height="24" width="64"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>工具属性</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-C-3" transform="translate(428, 139)"><rect class="basic label-container" height="54" rx="5" ry="5" style="" width="94" x="-47" y="-27"></rect><g class="label" style="" transform="translate(-32, -12)"><rect></rect><foreignobject height="24" width="64"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>价值取向</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-D-5" transform="translate(682, 139)"><rect class="basic label-container" height="54" rx="5" ry="5" style="" width="126" x="-63" y="-27"></rect><g class="label" style="" transform="translate(-48, -12)"><rect></rect><foreignobject height="24" width="96"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>社会组织机制</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-E-7" transform="translate(138, 243)"><rect class="basic label-container" height="54" style="" width="260" x="-130" y="-27"></rect><g class="label" style="" transform="translate(-100, -12)"><rect></rect><foreignobject height="24" width="200"><div style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>高效连接（信息/资金/物流）</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-F-9" transform="translate(428, 243)"><rect class="basic label-container" height="54" style="" width="220" x="-110" y="-27"></rect><g class="label" style="" transform="translate(-80, -12)"><rect></rect><foreignobject height="24" width="160"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>普惠公平（知识平权）</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-G-11" transform="translate(682, 243)"><rect class="basic label-container" height="54" style="" width="188" x="-94" y="-27"></rect><g class="label" style="" transform="translate(-64, -12)"><rect></rect><foreignobject height="24" width="128"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>人与机构彼此赋能</p></span></div></foreignobject></g></g></g></g></g></svg></div><hr/><h3 id="3Internetcompanyoperationrules"><strong><span>三、互联网公司运作法则</span></strong><span> </span></h3><ol start=""><li><p><strong><span>核心模式</span></strong><span> </span></p><ul><li><p><span>开放合作：打破封闭体系（如WPS兼容Office）  </span></p></li><li><p><span>机器盈利：边际成本趋零（服务器7×24自动服务）  </span></p></li></ul></li><li><p><strong><span>营销策略</span></strong><span> </span></p><ul><li><p><span>口碑驱动：用户自发传播（MIUI社区模式）  </span></p></li><li><p><span>网盟推广：跨平台流量合作  </span></p></li></ul></li><li><p><strong><span>管理特征</span></strong><span> </span></p><ul><li><p><span>IT化系统：业务全流程数字化（金山量化管理）  </span></p></li><li><p><span>低人依赖：知识管理系统化（应对人员流动）  </span></p></li></ul></li></ol><hr/><h3 id="4Comparisonoftheconclusionsoftwolongtermexams"><strong><span>四、两次长考结论对比</span></strong><span> </span></h3><figure class="table-figure"><table><thead><tr><th><strong><span>首次思考（2000年）</span></strong></th><th><strong><span>二次思考（2005年）</span></strong></th></tr></thead><tbody><tr><td><span>1. 所有公司终成互联网公司</span></td><td><span>1. 开放合作是成功关键</span></td></tr><tr><td><span>2. 电商是最优触网路径</span></td><td><span>2. 服务模式取代产品售卖</span></td></tr><tr><td><span>3. 软件下载无前途</span></td><td><span>3. 移动互联网是未来十年热点</span></td></tr></tbody></table></figure><hr/><h3 id="5TheprocessofformationofSevencharacterSkills"><strong><span>五、"七字诀"形成历程</span></strong><span> </span></h3><p><strong><span>1. 方法论迭代</span></strong><span> </span></p><ul><li><p><strong><span>第一版（2008）</span></strong><span>：互联、全天候、快速  </span></p></li><li><p><strong><span>第二版（2010）</span></strong><span>：专注、极致、口碑、快  </span></p></li></ul><p><strong><span>2. 实践验证案例</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>关键词</span></strong></th><th><strong><span>MIUI开发实践</span></strong></th></tr></thead><tbody><tr><td><span>专注</span></td><td><span>初期仅做4大核心功能（电话/短信/通讯录/桌面）</span></td></tr><tr><td><span>极致</span></td><td><span>百变锁屏主题模拟任意机型</span></td></tr><tr><td><span>口碑</span></td><td><span>10万发烧友参与功能投票</span></td></tr><tr><td><span>快</span></td><td><span>每周迭代更新机制</span></td></tr></tbody></table></figure><hr/><h3 id="6Internetservicetransformation"><strong><span>六、互联网服务化转型</span></strong><span> </span></h3><ol start=""><li><p><strong><span>软件→服务认知</span></strong><span> </span></p><ul><li><p><span>传统软件：一次性产品售卖（如WPS光盘版）  </span></p></li><li><p><span>互联网服务：持续价值输出（如云文档协作）  </span></p></li></ul></li><li><p><strong><span>服务模式特征</span></strong><span> </span></p><ul><li><p><span>用户直连：实时收集反馈（论坛/社区互动）  </span></p></li><li><p><span>数据驱动：版本迭代基于用户行为分析  </span></p></li></ul></li></ol><p> </p><h3 id="Chapter6TheInternetSevencharacterSkill"><strong><span>第六章 互联网七字诀</span></strong><span> </span></h3><p> </p><hr/><h4 id="1Focus"><strong><span>一、专注</span></strong><span> </span></h4><p><strong><span>1. 核心定义</span></strong><span> </span></p><ul><li><p><span>将资源聚焦于核心目标（"把鸡蛋放在一个篮子里"）  </span></p></li><li><p><span>四大支撑要素：  </span></p><ul><li><p><span>清晰的使命与愿景  </span></p></li><li><p><span>深刻的行业洞察与用户需求挖掘  </span></p></li><li><p><span>明确目标及匹配能力  </span></p></li><li><p><span>克制贪婪（少即是多）  </span></p></li></ul></li></ul><p><strong><span>2. 使命与愿景实践</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>时间节点</span></strong></th><th><strong><span>小米实践</span></strong></th></tr></thead><tbody><tr><td><strong><span>2014年7月</span></strong></td><td><span>首次明确使命："让每个人都能享受科技带来的乐趣"；愿景："做用户心中最酷的公司"</span></td></tr><tr><td><strong><span>当前版本</span></strong></td><td><span>使命升级为"始终坚持做‘感动人心、价格厚道’的好产品，让全球每个人都能享受科技带来的美好生活"</span></td></tr></tbody></table></figure><p><strong><span>3. 克制贪婪方法论</span></strong><span> </span></p><ul><li><p><strong><span>单点切入原则</span></strong><span>：  </span></p><ol start=""><li><p><span>解决用户最迫切需求（如MIUI初期仅开发4大核心功能）  </span></p></li><li><p><span>需求具备普遍性（确保市场前景）  </span></p></li><li><p><span>快速开发降低风险（缩短研发周期）  </span></p></li></ol></li><li><p><strong><span>业务扩张四校验标准</span></strong><span>：  </span></p><ol start=""><li><p><span>是否符合公司战略  </span></p></li><li><p><span>能否与核心业务强协同  </span></p></li><li><p><span>能否提供一致性用户体验  </span></p></li><li><p><span>资源是否匹配  </span></p></li></ol></li></ul><p><strong><span>4. 全局对表机制</span></strong><span> </span></p><ul><li><p><strong><span>OKR实时校验</span></strong><span>：  </span></p><ul><li><p><span>目标逐层分解（公司级O→部门KR→团队O）  </span></p></li><li><p><span>跨团队协同验证（防止部门目标背离）  </span></p></li></ul></li><li><p><strong><span>三问校验法</span></strong><span>（每项业务需回答）：  </span></p><ol start=""><li><p><span>对核心战略的贡献价值  </span></p></li><li><p><span>是否带动其他业务增长  </span></p></li><li><p><span>资源消耗合理性  </span></p></li></ol></li></ul><hr/><h4 id="2Extreme"><strong><span>二、极致</span></strong><span> </span></h4><p><strong><span>1. 双重内涵</span></strong><span> </span></p><ul><li><p><strong><span>心智投入</span></strong><span>：挑战极限（如不锈钢边框32小时加工工艺）  </span></p></li><li><p><strong><span>追求最优解</span></strong><span>：基于用户需求的简化/集成方案  </span></p></li></ul><p><strong><span>2. 实践案例对比</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>正向案例</span></strong></th><th><strong><span>反面案例</span></strong></th></tr></thead><tbody><tr><td><span>小米4不锈钢边框：40道制程/193道工序，成本超预算300%</span></td><td><span>卡针过度设计：用户仅需基本功能，铣刻标识无实用价值</span></td></tr><tr><td><span>电路板工整设计：保障整体品质稳定性</span></td><td><span>螺丝钉标识雕刻：用户无感知的"自嗨"投入</span></td></tr></tbody></table></figure><p><strong><span>3. 最优解法则</span></strong><span> </span></p><ul><li><p><strong><span>时代性</span></strong><span>：显像管时代特丽珑技术最优，但被液晶技术取代  </span></p></li><li><p><strong><span>验证三问</span></strong><span>：  </span></p><ol start=""><li><p><span>是否为用户真实需求？  </span></p></li><li><p><span>能否形成核心竞争力？  </span></p></li><li><p><span>是否构建长期壁垒？  </span></p></li></ol></li></ul><p><strong><span>4. 任天堂启示</span></strong><span> </span></p><ul><li><p><span>核心理念：关注玩家体验而非竞争（"敌人是不关心玩家的思想"）  </span></p></li><li><p><span>文化要求：全员必须是游戏玩家  </span></p></li></ul><hr/><h4 id="3Wordofmouth"><strong><span>三、口碑</span></strong><span> </span></h4><p><strong><span>1. 口碑构建逻辑</span></strong><span> </span></p><ul><li><p><strong><span>超预期公式</span></strong><span>：产品价值 &gt; 用户心理预期（可比档位）  </span></p></li><li><p><strong><span>全触点管理</span></strong><span>：产品（性能/设计/定价）+ 服务 + 沟通  </span></p></li></ul><p><strong><span>2. 口碑验证三原则</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>原则</span></strong></th><th><strong><span>实施方法</span></strong></th></tr></thead><tbody><tr><td><span>多路交叉验证</span></td><td><span>社区/社交媒体/客服多渠道数据比对</span></td></tr><tr><td><span>分层关注</span></td><td><span>核心用户看"意见点"，大众用户看"印象面"</span></td></tr><tr><td><span>直面真实</span></td><td><span>区分铁杆用户批评与恶意攻击</span></td></tr></tbody></table></figure><p><strong><span>3. 阈值管理</span></strong><span> </span></p><ul><li><p><strong><span>案例警示</span></strong><span>：某高端产品因品控标准未升级导致口碑暴跌  </span></p></li><li><p><strong><span>应对策略</span></strong><span>：持续追踪行业动向与需求升级  </span></p></li></ul><p><strong><span>4. 品牌建设体系</span></strong><span> </span></p><ul><li><p><strong><span>2019年升级举措</span></strong><span>：  </span></p><ul><li><p><span>拆分小米/Redmi品牌（高端 vs 性价比）  </span></p></li><li><p><span>新标识发布（新增Xiaomi字母标识）  </span></p></li></ul></li><li><p><strong><span>量化工具</span></strong><span>：  </span></p><ul><li><p><span>NPS（用户净推荐值）  </span></p></li><li><p><span>BHT（品牌健康度：认知度/偏好度/第一提及率）  </span></p></li></ul></li></ul><hr/><h4 id="4Quick"><strong><span>四、快</span></strong><span> </span></h4><p><strong><span>1. 四种能力模型</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>能力维度</span></strong></th><th><strong><span>MIUI开发范例</span></strong></th></tr></thead><tbody><tr><td><span>洞察快</span></td><td><span>发烧友社区实时反馈需求</span></td></tr><tr><td><span>响应快</span></td><td><span>四格反馈报告48小时内处理</span></td></tr><tr><td><span>决策快</span></td><td><span>用户投票决定功能优先级</span></td></tr><tr><td><span>改善快</span></td><td><span>每周迭代更新机制</span></td></tr></tbody></table></figure><p><strong><span>2. 快慢辩证法</span></strong><span> </span></p><ul><li><p><strong><span>局部慢保障全局快</span></strong><span>：  </span></p><ul><li><p><span>客服品质优先（2016年暂停扩张，提升服务标准）  </span></p></li><li><p><span>战略思考避免"战术勤奋掩盖战略懒惰"（如早期忽视品牌建设教训）  </span></p></li></ul></li></ul><p><strong><span>3. 失败教训</span></strong><span> </span></p><ul><li><p><strong><span>2015年危机根源</span></strong><span>：  </span></p><ul><li><p><span>高速增长掩盖供应链/交付问题  </span></p></li><li><p><span>品牌建设缺乏系统性规划  </span></p></li></ul></li></ul><p> </p><h3 id="Part3PracticeofXiaomismethodologyTechnologybased"><strong><span>第三部分 小米方法论的实践：技术为本</span></strong><span> </span></h3><p> </p><hr/><h4 id="1Theessentialattributesoftechnologycompanies"><strong><span>一、科技公司本质属性</span></strong><span> </span></h4><p><strong><span>1. 核心定义</span></strong><span> </span></p><ul><li><p><span>小米定位："以手机、智能硬件和IoT网络为核心的消费电子和智能制造公司"  </span></p></li><li><p><span>业务模式演进：  </span></p><ul><li><p><strong><span>铁人三项1.0</span></strong><span>：硬件+软件+互联网  </span></p></li><li><p><strong><span>铁人三项2.0</span></strong><span>：硬件+互联网+新零售  </span></p></li></ul></li></ul><p><strong><span>2. 技术驱动实践</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>技术领域</span></strong></th><th><strong><span>关键突破</span></strong></th><th><strong><span>典型案例</span></strong></th></tr></thead><tbody><tr><td><strong><span>硬件工艺</span></strong></td><td><span>不锈钢/陶瓷机身工艺</span></td><td><span>小米4奥氏体304不锈钢边框（32小时加工）</span></td></tr><tr><td><strong><span>交互形态</span></strong></td><td><span>跨终端AI语音体系</span></td><td><span>"小爱同学"全场景覆盖（手机/音箱/电视等）</span></td></tr><tr><td><strong><span>通信技术</span></strong></td><td><span>5G/6G预研布局</span></td><td><span>蜂窝网络标准化团队组建</span></td></tr><tr><td><strong><span>充电技术</span></strong></td><td><span>高速充电方案</span></td><td><span>120W有线秒充首发</span></td></tr></tbody></table></figure><p><strong><span>3. 技术创新分类</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>类型</span></strong></th><th><strong><span>定义</span></strong></th><th><strong><span>小米实践</span></strong></th></tr></thead><tbody><tr><td><span>集成式创新</span></td><td><span>现有技术组合创新</span></td><td><span>MIUI基于安卓深度定制</span></td></tr><tr><td><span>自主创新</span></td><td><span>自主知识产权技术</span></td><td><span>澎湃影像芯片研发</span></td></tr><tr><td><span>颠覆式创新</span></td><td><span>底层核心技术突破</span></td><td><span>全陶瓷机身工艺探索</span></td></tr></tbody></table></figure><hr/><h4 id="2Technicalarchitecture"><strong><span>二、技术体系架构</span></strong><span> </span></h4><p><strong><span>1. 研发管理结构</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>研发层级</span></strong></th><th><strong><span>目标周期</span></strong></th><th><strong><span>核心任务</span></strong></th></tr></thead><tbody><tr><td><span>当前产品</span></td><td><span>即时交付</span></td><td><span>保障量产质量</span></td></tr><tr><td><span>预研1~3年</span></td><td><span>中期规划</span></td><td><span>构建差异化竞争力（如折叠屏技术）</span></td></tr><tr><td><span>预研3~5年+</span></td><td><span>长期布局</span></td><td><span>颠覆性技术储备（如6G通信）</span></td></tr></tbody></table></figure><p><strong><span>2. 技术架构分层</span></strong><span> </span></p><ol start=""><li><p><strong><span>感知层</span></strong><span>：光学/声学/传感器技术  </span></p></li><li><p><strong><span>通信层</span></strong><span>：5G/Wi-Fi 6/蓝牙协议  </span></p></li><li><p><strong><span>AI层</span></strong><span>：统一AI能力架构（小米大脑）  </span></p></li><li><p><strong><span>系统层</span></strong><span>：跨终端系统融合（手机/IoT/汽车）  </span></p></li><li><p><strong><span>计算层</span></strong><span>：芯片集群（自研+合作）  </span></p></li><li><p><strong><span>输出层</span></strong><span>：显示/声学/自动控制技术  </span></p></li></ol><hr/><h4 id="3Engineerculturalpractice"><strong><span>三、工程师文化实践</span></strong><span> </span></h4><p><strong><span>1. 文化基因来源</span></strong><span> </span></p><ul><li><p><span>金山软件传统："程序员是老大"的尊重文化  </span></p></li><li><p><span>小米核心理念：工程师主导创新（如MIUI团队初期架构）  </span></p></li></ul><p><strong><span>2. 创新管理原则</span></strong><span> </span></p><ul><li><p><strong><span>包容失败</span></strong><span>：允许99%试错率（如早期芯片研发教训）  </span></p></li><li><p><strong><span>自驱机制</span></strong><span>：工程师自主立项（非自上而下指派）  </span></p></li><li><p><strong><span>资源保障</span></strong><span>：  </span></p><ul><li><p><span>2021年招聘5000名工程师（占当时员工20%）  </span></p></li><li><p><span>2022年继续招聘同等规模技术人才  </span></p></li></ul></li></ul><hr/><h4 id="4Fiveelementsofengineeringthinking"><strong><span>四、工程思维五要素</span></strong><span> </span></h4><figure class="table-figure"><table><thead><tr><th><strong><span>要素</span></strong></th><th><strong><span>实施要点</span></strong></th><th><strong><span>案例对照</span></strong></th></tr></thead><tbody><tr><td><strong><span>使命驱动</span></strong></td><td><span>聚集人才与资源</span></td><td><span>"让全球享受科技美好生活"凝聚团队</span></td></tr><tr><td><strong><span>第一性原理</span></strong></td><td><span>回归本质需求</span></td><td><span>"感动人心、价格厚道"的产品定义</span></td></tr><tr><td><strong><span>系统重构</span></strong></td><td><span>全链路效率优化</span></td><td><span>新零售模式打通线上线下</span></td></tr><tr><td><strong><span>第一扳手</span></strong></td><td><span>解决最迫切问题</span></td><td><span>初期专注MIUI四大核心功能开发</span></td></tr><tr><td><strong><span>快速迭代</span></strong></td><td><span>小步验证持续改进</span></td><td><span>每周操作系统更新机制</span></td></tr></tbody></table></figure><hr/><h4 id="5Keylessons"><strong><span>五、关键教训</span></strong><span> </span></h4><ul><li><p><strong><span>芯片业务反思</span></strong><span>：  </span></p><ul><li><p><span>错误低估研发难度（技术理解不足）  </span></p></li><li><p><span>路径选择失误（未遵循客观规律）  </span></p></li></ul></li><li><p><strong><span>品牌建设滞后</span></strong><span>：早期高速增长掩盖系统性规划缺失  </span></p></li></ul><h3 id="Chapter8Makefriendswithusers"><strong><span>第八章 和用户交朋友</span></strong><span> </span></h3><hr/><h4 id="1Coreconceptofuserrelationship"><strong><span>一、用户关系核心理念</span></strong><span> </span></h4><p><strong><span>1. 本质定位</span></strong><span> </span></p><ul><li><p><strong><span>互联网思维群众路线</span></strong><span>：  </span></p><ul><li><p><span>一切为了用户（产品定义）  </span></p></li><li><p><span>一切依靠用户（需求洞察）  </span></p></li><li><p><span>从用户中来（社区反馈）  </span></p></li><li><p><span>到用户中去（迭代优化）  </span></p></li></ul></li></ul><p><strong><span>2. 核心实践</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>策略</span></strong></th><th><strong><span>实施方式</span></strong></th><th><strong><span>案例</span></strong></th></tr></thead><tbody><tr><td><strong><span>性价比诚意</span></strong></td><td><span>硬件综合净利润率≤5%（2018年承诺）</span></td><td><span>小米11 Ultra（6000元价位，净利润率保持1%）</span></td></tr><tr><td><strong><span>新媒体直连</span></strong></td><td><span>全员社区/微博直面用户</span></td><td><span>初期合伙人参与MIUI论坛功能投票</span></td></tr><tr><td><strong><span>用户参与治理</span></strong></td><td><span>邀请用户参与产品会议</span></td><td><span>扫地机器人开发需求共创会</span></td></tr></tbody></table></figure><hr/><h4 id="2Learnfromtheopeningcustomermodel"><strong><span>二、开市客模式借鉴</span></strong><span> </span></h4><figure class="table-figure"><table><thead><tr><th><strong><span>规则</span></strong></th><th><strong><span>小米实践映射</span></strong></th><th><strong><span>效果</span></strong></th></tr></thead><tbody><tr><td><strong><span>商品亲自试用</span></strong></td><td><span>创始人参与产品测试（如MIX FOLD折叠测试）</span></td><td><span>确保产品体验可靠性</span></td></tr><tr><td><strong><span>SKU极简</span></strong></td><td><span>生态链产品每品类仅2-3款（如移动电源/手环）</span></td><td><span>减少用户选择焦虑</span></td></tr><tr><td><strong><span>毛利率控制</span></strong></td><td><span>硬件利润红线管理</span></td><td><span>用户闭眼购买信任建立</span></td></tr></tbody></table></figure><hr/><h4 id="3Userinteractionmechanism"><strong><span>三、用户互动机制</span></strong><span> </span></h4><p><strong><span>1. 新媒体运营原则</span></strong><span> </span></p><ul><li><p><strong><span>必要性代价</span></strong><span>：允许员工犯错，坚守沟通阵地  </span></p></li><li><p><strong><span>沟通层级</span></strong><span>：  </span></p><ul><li><p><span>产品经理：功能需求收集  </span></p></li><li><p><span>工程师：技术问题解答  </span></p></li><li><p><span>高管：战略方向同步  </span></p></li></ul></li></ul><p><strong><span>2. 用户信任构建</span></strong><span> </span></p><ul><li><p><strong><span>尖叫产品标准</span></strong><span>：  </span></p><ol start=""><li><p><span>用户自发排队购买（如小米1首发）  </span></p></li><li><p><span>主动推荐率≥30%（NPS指标）  </span></p></li></ol></li><li><p><strong><span>长期承诺兑现</span></strong><span>：  </span></p><ul><li><p><span>4年累计硬件利润返还用户超10亿元  </span></p></li></ul></li></ul><hr/><h3 id="Chapter9PopularProductMode"><strong><span>第九章 爆品模式</span></strong><span> </span></h3><hr/><h4 id="1DefinitionandConditionsofPopularProducts"><strong><span>一、爆品定义与条件</span></strong><span> </span></h4><p><strong><span>1. 核心特征</span></strong><span> </span></p><ul><li><p><span>单款（红米Note系列）  </span></p></li><li><p><span>精品（年度旗舰机型）  </span></p></li><li><p><span>海量（红米1代4460万台）  </span></p></li><li><p><span>长周期（小米手环5代持续热销）  </span></p></li></ul><p><strong><span>2. 产生条件</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>条件</span></strong></th><th><strong><span>小米实践</span></strong></th></tr></thead><tbody><tr><td><span>工业化大生产</span></td><td><span>富士康联合研发（不锈钢边框32小时工艺）</span></td></tr><tr><td><span>大众定价</span></td><td><span>1999元旗舰机颠覆行业</span></td></tr><tr><td><span>体验创新</span></td><td><span>全面屏MIX系列（陶瓷机身工艺）</span></td></tr></tbody></table></figure><hr/><h4 id="2Fourelementsofhotproductscreation"><strong><span>二、爆品打造四要素</span></strong><span> </span></h4><div class="md-diagram-panel md-fences-adv-panel" lang="mermaid  "><svg aria-roledescription="flowchart-v2" class="flowchart mermaid-svg" id="mermaidChart1" role="graphics-document document" style="max-width: 1206px;" viewbox="0 0 1206 302" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>#mermaidChart1{font-family:sans-serif;font-size:16px;fill:#333;}#mermaidChart1 .error-icon{fill:#552222;}#mermaidChart1 .error-text{fill:#552222;stroke:#552222;}#mermaidChart1 .edge-thickness-normal{stroke-width:1px;}#mermaidChart1 .edge-thickness-thick{stroke-width:3.5px;}#mermaidChart1 .edge-pattern-solid{stroke-dasharray:0;}#mermaidChart1 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaidChart1 .edge-pattern-dashed{stroke-dasharray:3;}#mermaidChart1 .edge-pattern-dotted{stroke-dasharray:2;}#mermaidChart1 .marker{fill:#333333;stroke:#333333;}#mermaidChart1 .marker.cross{stroke:#333333;}#mermaidChart1 svg{font-family:sans-serif;font-size:16px;}#mermaidChart1 p{margin:0;}#mermaidChart1 .label{font-family:sans-serif;color:#333;}#mermaidChart1 .cluster-label text{fill:#333;}#mermaidChart1 .cluster-label span{color:#333;}#mermaidChart1 .cluster-label span p{background-color:transparent;}#mermaidChart1 .label text,#mermaidChart1 span{fill:#333;color:#333;}#mermaidChart1 .node rect,#mermaidChart1 .node circle,#mermaidChart1 .node ellipse,#mermaidChart1 .node polygon,#mermaidChart1 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaidChart1 .rough-node .label text,#mermaidChart1 .node .label text,#mermaidChart1 .image-shape .label,#mermaidChart1 .icon-shape .label{text-anchor:middle;}#mermaidChart1 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaidChart1 .rough-node .label,#mermaidChart1 .node .label,#mermaidChart1 .image-shape .label,#mermaidChart1 .icon-shape .label{text-align:center;}#mermaidChart1 .node.clickable{cursor:pointer;}#mermaidChart1 .root .anchor path{fill:#333333!important;stroke-width:0;stroke:#333333;}#mermaidChart1 .arrowheadPath{fill:#333333;}#mermaidChart1 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaidChart1 .flowchart-link{stroke:#333333;fill:none;}#mermaidChart1 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaidChart1 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaidChart1 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaidChart1 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaidChart1 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaidChart1 .cluster text{fill:#333;}#mermaidChart1 .cluster span{color:#333;}#mermaidChart1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaidChart1 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaidChart1 rect.text{fill:none;stroke-width:0;}#mermaidChart1 .icon-shape,#mermaidChart1 .image-shape{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaidChart1 .icon-shape p,#mermaidChart1 .image-shape p{background-color:rgba(232,232,232, 0.8);padding:2px;}#mermaidChart1 .icon-shape rect,#mermaidChart1 .image-shape rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaidChart1 :root{--mermaid-alt-font-family:sans-serif;}</style><g><marker class="marker flowchart-v2" id="mermaidChart1_flowchart-v2-pointEnd" markerheight="8" markerunits="userSpaceOnUse" markerwidth="8" orient="auto" refx="5" refy="5" viewbox="0 0 10 10"><path class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker class="marker flowchart-v2" id="mermaidChart1_flowchart-v2-pointStart" markerheight="8" markerunits="userSpaceOnUse" markerwidth="8" orient="auto" refx="4.5" refy="5" viewbox="0 0 10 10"><path class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker class="marker flowchart-v2" id="mermaidChart1_flowchart-v2-circleEnd" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="11" refy="5" viewbox="0 0 10 10"><circle class="arrowMarkerPath" cx="5" cy="5" r="5" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker class="marker flowchart-v2" id="mermaidChart1_flowchart-v2-circleStart" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="-1" refy="5" viewbox="0 0 10 10"><circle class="arrowMarkerPath" cx="5" cy="5" r="5" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker class="marker cross flowchart-v2" id="mermaidChart1_flowchart-v2-crossEnd" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="12" refy="5.2" viewbox="0 0 11 11"><path class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker class="marker cross flowchart-v2" id="mermaidChart1_flowchart-v2-crossStart" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="-1" refy="5.2" viewbox="0 0 11 11"><path class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M525,43.723L460.5,50.935C396,58.148,267,72.574,202.5,83.287C138,94,138,101,138,104.5L138,108" id="L_A_B_0" marker-end="url(#mermaidChart1_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M525,61.168L512.167,65.473C499.333,69.778,473.667,78.389,460.833,86.195C448,94,448,101,448,104.5L448,108" id="L_A_C_1" marker-end="url(#mermaidChart1_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M681,61.168L693.833,65.473C706.667,69.778,732.333,78.389,745.167,86.195C758,94,758,101,758,104.5L758,108" id="L_A_D_2" marker-end="url(#mermaidChart1_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M681,43.723L745.5,50.935C810,58.148,939,72.574,1003.5,83.287C1068,94,1068,101,1068,104.5L1068,108" id="L_A_E_3" marker-end="url(#mermaidChart1_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M138,166L138,170.167C138,174.333,138,182.667,138,190.333C138,198,138,205,138,208.5L138,212" id="L_B_F_4" marker-end="url(#mermaidChart1_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M448,166L448,170.167C448,174.333,448,182.667,448,190.333C448,198,448,205,448,208.5L448,212" id="L_C_G_5" marker-end="url(#mermaidChart1_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M758,166L758,170.167C758,174.333,758,182.667,758,190.333C758,198,758,205,758,208.5L758,212" id="L_D_H_6" marker-end="url(#mermaidChart1_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M1068,166L1068,170.167C1068,174.333,1068,182.667,1068,190.333C1068,198,1068,205,1068,208.5L1068,212" id="L_E_I_7" marker-end="url(#mermaidChart1_flowchart-v2-pointEnd)" style=""></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-12" transform="translate(603, 35)"><rect class="basic label-container" height="54" style="" width="156" x="-78" y="-27"></rect><g class="label" style="" transform="translate(-48, -12)"><rect></rect><foreignobject height="24" width="96"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>爆品成功要素</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-B-13" transform="translate(138, 139)"><rect class="basic label-container" height="54" rx="5" ry="5" style="" width="126" x="-63" y="-27"></rect><g class="label" style="" transform="translate(-48, -12)"><rect></rect><foreignobject height="24" width="96"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>精准需求洞察</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-C-15" transform="translate(448, 139)"><rect class="basic label-container" height="54" rx="5" ry="5" style="" width="126" x="-63" y="-27"></rect><g class="label" style="" transform="translate(-48, -12)"><rect></rect><foreignobject height="24" width="96"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>超预期产品力</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-D-17" transform="translate(758, 139)"><rect class="basic label-container" height="54" rx="5" ry="5" style="" width="126" x="-63" y="-27"></rect><g class="label" style="" transform="translate(-48, -12)"><rect></rect><foreignobject height="24" width="96"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>惊喜定价策略</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-E-19" transform="translate(1068, 139)"><rect class="basic label-container" height="54" rx="5" ry="5" style="" width="142" x="-71" y="-27"></rect><g class="label" style="" transform="translate(-56, -12)"><rect></rect><foreignobject height="24" width="112"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>全链路效率优化</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-F-21" transform="translate(138, 255)"><rect class="basic label-container" height="78" style="" width="260" x="-130" y="-39"></rect><g class="label" style="" transform="translate(-100, -24)"><rect></rect><foreignobject height="48" width="200"><div style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>痛点分层：个体→行业→社会</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-G-23" transform="translate(448, 255)"><rect class="basic label-container" height="78" style="" width="260" x="-130" y="-39"></rect><g class="label" style="" transform="translate(-100, -24)"><rect></rect><foreignobject height="48" width="200"><div style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>全面优秀+单点突破（120W快充）</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-H-25" transform="translate(758, 255)"><rect class="basic label-container" height="78" style="" width="260" x="-130" y="-39"></rect><g class="label" style="" transform="translate(-100, -24)"><rect></rect><foreignobject height="48" width="200"><div style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>击穿行业惯性（硬件利润≤5%）</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-I-27" transform="translate(1068, 255)"><rect class="basic label-container" height="78" style="" width="260" x="-130" y="-39"></rect><g class="label" style="" transform="translate(-100, -24)"><rect></rect><foreignobject height="48" width="200"><div style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>SKU精简（生态链每品类≤3款）</p></span></div></foreignobject></g></g></g></g></g></svg></div><hr/><h4 id="Threeorfourkeyabilities"><strong><span>三、四项关键能力</span></strong><span> </span></h4><p><strong><span>1. 未来洞察</span></strong><span> </span></p><ul><li><p><strong><span>明天属性案例</span></strong><span>：  </span></p><ul><li><p><span>智能手机替代功能机  </span></p></li><li><p><span>扫地机器人LDS激光导航技术  </span></p></li></ul></li></ul><p><strong><span>2. 需求取舍</span></strong><span> </span></p><ul><li><p><strong><span>红米开发逻辑</span></strong><span>：  </span></p><ul><li><p><span>核心需求：续航/信号稳定性  </span></p></li><li><p><span>舍弃：金属机身/高端摄像  </span></p></li></ul></li></ul><p><strong><span>3. 技术创新</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>领域</span></strong></th><th><strong><span>跨界重组案例</span></strong></th></tr></thead><tbody><tr><td><span>材料工艺</span></td><td><span>MIX陶瓷源自烤瓷牙技术</span></td></tr><tr><td><span>传感器</span></td><td><span>工业相机技术用于扫地机路径规划</span></td></tr></tbody></table></figure><p><strong><span>4. 精准触达</span></strong><span> </span></p><ul><li><p><strong><span>小白模式实践</span></strong><span>：  </span></p><ul><li><p><span>产品经理入职首月禁用专业术语  </span></p></li><li><p><span>用户测试盲测占比≥50%  </span></p></li></ul></li></ul><h3 id="Chapter10HighefficiencyModel"><strong><span>第十章 高效率模型</span></strong><span> </span></h3><hr/><h4 id="1Efficiencymodelcore"><strong><span>一、效率模型核心</span></strong><span> </span></h4><p><strong><span>1. 解决两大矛盾</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>矛盾</span></strong></th><th><strong><span>解决策略</span></strong></th><th><strong><span>关键数据</span></strong></th></tr></thead><tbody><tr><td><span>"好"与"便宜"</span></td><td><span>爆品模式+全链路效率优化</span></td><td><span>硬件净利润率≤5%（2018年承诺）</span></td></tr><tr><td><span>低毛利定价与企业盈利</span></td><td><span>互联网服务交叉补贴</span></td><td><span>2021年互联网收入282亿元</span></td></tr></tbody></table></figure><p><strong><span>2. 定价五要素拆解</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>成本构成</span></strong></th><th><strong><span>小米优化方式</span></strong></th><th><strong><span>案例效果</span></strong></th></tr></thead><tbody><tr><td><span>制造/服务分摊</span></td><td><span>爆品海量生产（红米Note系列2743万台）</span></td><td><span>单台成本下降40%</span></td></tr><tr><td><span>研发分摊</span></td><td><span>长周期产品迭代（MIUI每周更新）</span></td><td><span>年均研发投入超100亿</span></td></tr><tr><td><span>市场推广</span></td><td><span>新媒体零费用（早期社区运营）</span></td><td><span>小米1首发零广告投入</span></td></tr><tr><td><span>销售渠道</span></td><td><span>自有电商+直供模式</span></td><td><span>渠道成本占比＜5%</span></td></tr><tr><td><span>利润</span></td><td><span>硬件利润红线控制</span></td><td><span>2021年硬件净利率1%</span></td></tr></tbody></table></figure><hr/><h4 id="2Triathlonmode"><strong><span>二、铁人三项模式</span></strong><span> </span></h4><div class="md-diagram-panel md-fences-adv-panel" lang="mermaid  "><svg aria-roledescription="flowchart-v2" class="flowchart mermaid-svg" id="mermaidChart2" role="graphics-document document" style="max-width: 602.625px;" viewbox="0 0 602.625 278" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>#mermaidChart2{font-family:sans-serif;font-size:16px;fill:#333;}#mermaidChart2 .error-icon{fill:#552222;}#mermaidChart2 .error-text{fill:#552222;stroke:#552222;}#mermaidChart2 .edge-thickness-normal{stroke-width:1px;}#mermaidChart2 .edge-thickness-thick{stroke-width:3.5px;}#mermaidChart2 .edge-pattern-solid{stroke-dasharray:0;}#mermaidChart2 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaidChart2 .edge-pattern-dashed{stroke-dasharray:3;}#mermaidChart2 .edge-pattern-dotted{stroke-dasharray:2;}#mermaidChart2 .marker{fill:#333333;stroke:#333333;}#mermaidChart2 .marker.cross{stroke:#333333;}#mermaidChart2 svg{font-family:sans-serif;font-size:16px;}#mermaidChart2 p{margin:0;}#mermaidChart2 .label{font-family:sans-serif;color:#333;}#mermaidChart2 .cluster-label text{fill:#333;}#mermaidChart2 .cluster-label span{color:#333;}#mermaidChart2 .cluster-label span p{background-color:transparent;}#mermaidChart2 .label text,#mermaidChart2 span{fill:#333;color:#333;}#mermaidChart2 .node rect,#mermaidChart2 .node circle,#mermaidChart2 .node ellipse,#mermaidChart2 .node polygon,#mermaidChart2 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaidChart2 .rough-node .label text,#mermaidChart2 .node .label text,#mermaidChart2 .image-shape .label,#mermaidChart2 .icon-shape .label{text-anchor:middle;}#mermaidChart2 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaidChart2 .rough-node .label,#mermaidChart2 .node .label,#mermaidChart2 .image-shape .label,#mermaidChart2 .icon-shape .label{text-align:center;}#mermaidChart2 .node.clickable{cursor:pointer;}#mermaidChart2 .root .anchor path{fill:#333333!important;stroke-width:0;stroke:#333333;}#mermaidChart2 .arrowheadPath{fill:#333333;}#mermaidChart2 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaidChart2 .flowchart-link{stroke:#333333;fill:none;}#mermaidChart2 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaidChart2 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaidChart2 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaidChart2 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaidChart2 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaidChart2 .cluster text{fill:#333;}#mermaidChart2 .cluster span{color:#333;}#mermaidChart2 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaidChart2 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaidChart2 rect.text{fill:none;stroke-width:0;}#mermaidChart2 .icon-shape,#mermaidChart2 .image-shape{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaidChart2 .icon-shape p,#mermaidChart2 .image-shape p{background-color:rgba(232,232,232, 0.8);padding:2px;}#mermaidChart2 .icon-shape rect,#mermaidChart2 .image-shape rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaidChart2 :root{--mermaid-alt-font-family:sans-serif;}</style><g><marker class="marker flowchart-v2" id="mermaidChart2_flowchart-v2-pointEnd" markerheight="8" markerunits="userSpaceOnUse" markerwidth="8" orient="auto" refx="5" refy="5" viewbox="0 0 10 10"><path class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker class="marker flowchart-v2" id="mermaidChart2_flowchart-v2-pointStart" markerheight="8" markerunits="userSpaceOnUse" markerwidth="8" orient="auto" refx="4.5" refy="5" viewbox="0 0 10 10"><path class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker class="marker flowchart-v2" id="mermaidChart2_flowchart-v2-circleEnd" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="11" refy="5" viewbox="0 0 10 10"><circle class="arrowMarkerPath" cx="5" cy="5" r="5" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker class="marker flowchart-v2" id="mermaidChart2_flowchart-v2-circleStart" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="-1" refy="5" viewbox="0 0 10 10"><circle class="arrowMarkerPath" cx="5" cy="5" r="5" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker class="marker cross flowchart-v2" id="mermaidChart2_flowchart-v2-crossEnd" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="12" refy="5.2" viewbox="0 0 11 11"><path class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker class="marker cross flowchart-v2" id="mermaidChart2_flowchart-v2-crossStart" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="-1" refy="5.2" viewbox="0 0 11 11"><path class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M124,35L132.167,35C140.333,35,156.667,35,168.333,35C180,35,187,35,190.5,35L194,35" id="L_A_B_0" marker-end="url(#mermaidChart2_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M132,139L138.833,139C145.667,139,159.333,139,171.645,139C183.956,139,194.911,139,200.389,139L205.867,139" id="L_C_D_1" marker-end="url(#mermaidChart2_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M148,243L152.167,243C156.333,243,164.667,243,176.673,243C188.68,243,204.359,243,212.199,243L220.039,243" id="L_E_F_2" marker-end="url(#mermaidChart2_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M388.625,35L392.792,35C396.958,35,405.292,35,421.699,47.36C438.107,59.719,462.588,84.439,474.829,96.798L487.07,109.158" id="L_B_G_3" marker-end="url(#mermaidChart2_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M376.758,139L382.902,139C389.047,139,401.336,139,410.98,139C420.625,139,427.625,139,431.125,139L434.625,139" id="L_D_G_4" marker-end="url(#mermaidChart2_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M362.586,243L371.092,243C379.599,243,396.612,243,417.359,230.64C438.107,218.281,462.588,193.561,474.829,181.202L487.07,168.842" id="L_F_G_5" marker-end="url(#mermaidChart2_flowchart-v2-pointEnd)" style=""></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-28" transform="translate(78, 35)"><rect class="basic label-container" height="54" style="" width="92" x="-46" y="-27"></rect><g class="label" style="" transform="translate(-16, -12)"><rect></rect><foreignobject height="24" width="32"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>硬件</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-B-29" transform="translate(293.3125, 35)"><rect class="basic label-container" height="54" rx="5" ry="5" style="" width="190.625" x="-95.3125" y="-27"></rect><g class="label" style="" transform="translate(-80.3125, -12)"><rect></rect><foreignobject height="24" width="160.625"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>爆品策略：手机×AIoT</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-C-30" transform="translate(78, 139)"><rect class="basic label-container" height="54" style="" width="108" x="-54" y="-27"></rect><g class="label" style="" transform="translate(-24, -12)"><rect></rect><foreignobject height="24" width="48"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>新零售</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-D-31" transform="translate(293.3125, 139)"><rect class="basic label-container" height="54" rx="5" ry="5" style="" width="166.890625" x="-83.4453125" y="-27"></rect><g class="label" style="" transform="translate(-68.4453125, -12)"><rect></rect><foreignobject height="24" width="136.890625"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>小米之家+电商直营</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-E-32" transform="translate(78, 243)"><rect class="basic label-container" height="54" style="" width="140" x="-70" y="-27"></rect><g class="label" style="" transform="translate(-40, -12)"><rect></rect><foreignobject height="24" width="80"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>互联网服务</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-F-33" transform="translate(293.3125, 243)"><rect class="basic label-container" height="54" rx="5" ry="5" style="" width="138.546875" x="-69.2734375" y="-27"></rect><g class="label" style="" transform="translate(-54.2734375, -12)"><rect></rect><foreignobject height="24" width="108.546875"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>广告/游戏/金融</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-G-37" transform="translate(516.625, 139)"><rect class="basic label-container" height="54" style="" width="156" x="-78" y="-27"></rect><g class="label" style="" transform="translate(-48, -12)"><rect></rect><foreignobject height="24" width="96"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>用户增长飞轮</p></span></div></foreignobject></g></g></g></g></g></svg></div><p><strong><span>1. 硬件模块</span></strong><span> </span></p><ul><li><p><span>核心载体：智能手机（占营收60%）  </span></p></li><li><p><span>技术突破：120W快充/陶瓷机身工艺  </span></p></li></ul><p><strong><span>2. 新零售模块</span></strong><span> </span></p><ul><li><p><span>线下效率指标：  </span></p><ul><li><p><span>坪效27万元/年（超苹果Store）  </span></p></li><li><p><span>费用率10%（传统渠道17-23%）  </span></p></li></ul></li></ul><p><strong><span>3. 互联网模块</span></strong><span> </span></p><ul><li><p><span>变现路径：MIUI主题商店/应用分发  </span></p></li><li><p><span>用户粘性：全球MIUI月活5.1亿（2021）  </span></p></li></ul><hr/><h3 id="Chapter11NewRetail"><strong><span>第十一章 新零售</span></strong><span> </span></h3><hr/><h4 id="1Channelevolutionprocess"><strong><span>一、渠道演变历程</span></strong><span> </span></h4><p><strong><span>1. 阶段对比</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>阶段</span></strong></th><th><strong><span>核心模式</span></strong></th><th><strong><span>问题与突破</span></strong></th></tr></thead><tbody><tr><td><span>纯电商期（2011-2015）</span></td><td><span>小米官网直销</span></td><td><span>下沉市场覆盖不足</span></td></tr><tr><td><span>探索期（2016-2017）</span></td><td><span>小米之家直营</span></td><td><span>安阳模式渠道失控</span></td></tr><tr><td><span>成熟期（2018-至今）</span></td><td><span>PPP合作+全链路数字化</span></td><td><span>印度市场份额连续5年第一</span></td></tr></tbody></table></figure><p><strong><span>2. 关键教训</span></strong><span> </span></p><ul><li><p><strong><span>安阳模式缺陷</span></strong><span>：  </span></p><ol start=""><li><p><span>渠道商自主权过大（货物所有权转移）  </span></p></li><li><p><span>缺乏系统支撑（无统一数据平台）  </span></p></li><li><p><span>组织架构混乱（多团队区域冲突）  </span></p></li></ol></li></ul><p><strong><span>3. 印度PPP模式成功要素</span></strong><span>：  </span></p><ul><li><p><span>网格化独家合作  </span></p></li><li><p><span>品牌露出标准化  </span></p></li><li><p><span>数据实时闭环管理  </span></p></li></ul><hr/><h4 id="2XiaomiHomeOperationModel"><strong><span>二、小米之家运营模型</span></strong><span> </span></h4><p><strong><span>1. 结构对比</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>维度</span></strong></th><th><strong><span>传统零售</span></strong></th><th><strong><span>小米之家</span></strong></th></tr></thead><tbody><tr><td><span>渠道层级</span></td><td><span>4-5级（品牌→省代→市代→零售商）</span></td><td><span>1级（品牌直营/合作）</span></td></tr><tr><td><span>费用率</span></td><td><span>17%-23%</span></td><td><span>10%</span></td></tr><tr><td><span>库存周转</span></td><td><span>45-60天</span></td><td><span>21天</span></td></tr><tr><td><span>数据闭环</span></td><td><span>割裂</span></td><td><span>全链路数字化（交易即数据）</span></td></tr></tbody></table></figure><p><strong><span>2. 合作原则</span></strong><span> </span></p><ul><li><p><span>货物所有权归属小米（降低渠道商风险）  </span></p></li><li><p><span>收益分配：渠道商＞小米（单笔利润让渡）  </span></p></li><li><p><span>投资回报公式：</span><br/><span>ROI = (毛利率 - 费用率) × 年周转次数</span><br/><span>（例：10%毛利率×18次年周转=180% ROI）  </span></p></li></ul><hr/><h4 id="IIIRetailessentialpractice"><strong><span>三、零售本质实践</span></strong><span> </span></h4><p><strong><span>1. 双极目标</span></strong><span> </span></p><ul><li><p><strong><span>效率革命</span></strong><span>：  </span></p><ul><li><p><span>线上线下同价（消除渠道价差）  </span></p></li><li><p><span>SKU精简至4000（开市客模式借鉴）  </span></p></li></ul></li><li><p><strong><span>体验升级</span></strong><span>：  </span></p><ul><li><p><span>场景化陈列（智能家居联动演示）  </span></p></li><li><p><span>免费产品体验（手机30天无理由退货）  </span></p></li></ul></li></ul><p><strong><span>2. 数字化工具</span></strong><span> </span></p><ul><li><p><span>实时销售看板（分钟级库存更新）  </span></p></li><li><p><span>用户行为热力图（优化店面布局）  </span></p></li><li><p><span>AI选品算法（区域消费偏好匹配）  </span></p></li></ul><p> </p><h3 id="Part4Xiaomimethodologyandindustrialecology"><strong><span>第四部分 小米方法论与产业生态</span></strong><span> </span></h3><hr/><h3 id="Chapter12EcologicalChainModel"><strong><span>第十二章 生态链模式</span></strong><span> </span></h3><hr/><h4 id="1Corelogicoftheecologicalchainmodel"><strong><span>一、生态链模式核心逻辑</span></strong><span> </span></h4><p><strong><span>1. 三大动因</span></strong><span> </span></p><ol start=""><li><p><strong><span>行业变革</span></strong><span>：改变100个行业的面貌（2014年启动）  </span></p></li><li><p><strong><span>AIoT布局</span></strong><span>：支撑"手机×AIoT"战略（1+4+X产品矩阵）  </span></p></li><li><p><strong><span>流量与品牌</span></strong><span>：完善电商产品组合，提升用户访问频次  </span></p></li></ol><p><strong><span>2. 合作原则</span></strong><span> </span></p><ul><li><p><span>不控股投资（平均持股≤20%）  </span></p></li><li><p><span>聚焦认同小米价值观的创业团队  </span></p></li><li><p><span>输出方法论：专注/极致/口碑/快  </span></p></li></ul><hr/><h4 id="2Analysisofcasestudiesonexplosiveproductsinecologicalchain"><strong><span>二、生态链爆品案例解析</span></strong><span> </span></h4><figure class="table-figure"><table><thead><tr><th><strong><span>产品</span></strong></th><th><strong><span>突破策略</span></strong></th><th><strong><span>市场成果</span></strong></th></tr></thead><tbody><tr><td><strong><span>移动电源</span></strong></td><td><span>使用笔记本回收电芯，定价69元（行业均价200+）</span></td><td><span>全球销量超1亿台，市占率第一</span></td></tr><tr><td><strong><span>手环</span></strong></td><td><span>定价79元（国际品牌千元级），集成运动/睡眠监测</span></td><td><span>两年销量2000万只，激活智能穿戴大众市场</span></td></tr><tr><td><strong><span>空气净化器</span></strong></td><td><span>击穿"蚂蚁市场"，CADR值≥310m³/h</span></td><td><span>发布4个月获网络口碑指数第一</span></td></tr><tr><td><strong><span>插线板</span></strong></td><td><span>集成3个USB接口，内部电路精密如芯片</span></td><td><span>49元定价，单日销量24.7万支（2015年米粉节）</span></td></tr><tr><td><strong><span>扫地机器人</span></strong></td><td><span>LDS激光导航技术（成本降低70%）</span></td><td><span>推动行业渗透率从＜1%提升至10%</span></td></tr><tr><td><strong><span>米家台灯</span></strong></td><td><span>极简设计+红色电源线点睛</span></td><td><span>获iF设计金奖，用户好评率＞95%</span></td></tr></tbody></table></figure><hr/><h4 id="3Qualityconceptanddesignconcept"><strong><span>三、质量观与设计理念</span></strong><span> </span></h4><p><strong><span>1. 质量分层</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>质量类型</span></strong></th><th><strong><span>定义</span></strong></th><th><strong><span>案例要求</span></strong></th></tr></thead><tbody><tr><td><span>硬质量</span></td><td><span>基础功能可靠性（寿命/安全性）</span></td><td><span>插线板内部布线精密符合国标</span></td></tr><tr><td><span>软质量</span></td><td><span>用户体验优化（美观/易用性）</span></td><td><span>手机信号短暂波动需改进</span></td></tr></tbody></table></figure><p><strong><span>2. 设计五原则</span></strong><span> </span></p><ol start=""><li><p><span>明确设计目的（用户体验导向）  </span></p></li><li><p><span>统一设计理念（如米家极简风格）  </span></p></li><li><p><span>牵引业务解决方案（非单纯视觉）  </span></p></li><li><p><span>建立设计人才培养体系  </span></p></li><li><p><span>给予设计师充分创新空间  </span></p></li></ol><hr/><h4 id="4Ecochain20upgrade"><strong><span>四、生态链2.0升级</span></strong><span> </span></h4><p><strong><span>1. 边界定义</span></strong><span> </span></p><ul><li><p><strong><span>业务聚焦</span></strong><span>：紧密围绕"手机×AIoT"战略  </span></p></li><li><p><strong><span>科技属性</span></strong><span>：突出产品技术领先性（如智能家居互联）  </span></p></li></ul><p><strong><span>2. 关键变革</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>维度</span></strong></th><th><span>生态链1.0</span></th><th><span>生态链2.0</span></th></tr></thead><tbody><tr><td><span>产品策略</span></td><td><span>单点爆品突破</span></td><td><span>爆品矩阵+体系化体验（互联互通）</span></td></tr><tr><td><span>技术支撑</span></td><td><span>方法论输出</span></td><td><span>自建技术平台（芯片/算法）</span></td></tr><tr><td><span>合作深度</span></td><td><span>孵化扶持</span></td><td><span>联合研发+产业链整合</span></td></tr></tbody></table></figure><p><strong><span>3. 爆品三阶段模型</span></strong><span> </span></p><div class="md-diagram-panel md-fences-adv-panel" lang="mermaid  "><svg aria-roledescription="flowchart-v2" class="flowchart mermaid-svg" id="mermaidChart3" role="graphics-document document" style="max-width: 246px;" viewbox="0 0 246 638" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>#mermaidChart3{font-family:sans-serif;font-size:16px;fill:#333;}#mermaidChart3 .error-icon{fill:#552222;}#mermaidChart3 .error-text{fill:#552222;stroke:#552222;}#mermaidChart3 .edge-thickness-normal{stroke-width:1px;}#mermaidChart3 .edge-thickness-thick{stroke-width:3.5px;}#mermaidChart3 .edge-pattern-solid{stroke-dasharray:0;}#mermaidChart3 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaidChart3 .edge-pattern-dashed{stroke-dasharray:3;}#mermaidChart3 .edge-pattern-dotted{stroke-dasharray:2;}#mermaidChart3 .marker{fill:#333333;stroke:#333333;}#mermaidChart3 .marker.cross{stroke:#333333;}#mermaidChart3 svg{font-family:sans-serif;font-size:16px;}#mermaidChart3 p{margin:0;}#mermaidChart3 .label{font-family:sans-serif;color:#333;}#mermaidChart3 .cluster-label text{fill:#333;}#mermaidChart3 .cluster-label span{color:#333;}#mermaidChart3 .cluster-label span p{background-color:transparent;}#mermaidChart3 .label text,#mermaidChart3 span{fill:#333;color:#333;}#mermaidChart3 .node rect,#mermaidChart3 .node circle,#mermaidChart3 .node ellipse,#mermaidChart3 .node polygon,#mermaidChart3 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaidChart3 .rough-node .label text,#mermaidChart3 .node .label text,#mermaidChart3 .image-shape .label,#mermaidChart3 .icon-shape .label{text-anchor:middle;}#mermaidChart3 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaidChart3 .rough-node .label,#mermaidChart3 .node .label,#mermaidChart3 .image-shape .label,#mermaidChart3 .icon-shape .label{text-align:center;}#mermaidChart3 .node.clickable{cursor:pointer;}#mermaidChart3 .root .anchor path{fill:#333333!important;stroke-width:0;stroke:#333333;}#mermaidChart3 .arrowheadPath{fill:#333333;}#mermaidChart3 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaidChart3 .flowchart-link{stroke:#333333;fill:none;}#mermaidChart3 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaidChart3 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaidChart3 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaidChart3 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaidChart3 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaidChart3 .cluster text{fill:#333;}#mermaidChart3 .cluster span{color:#333;}#mermaidChart3 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaidChart3 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaidChart3 rect.text{fill:none;stroke-width:0;}#mermaidChart3 .icon-shape,#mermaidChart3 .image-shape{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaidChart3 .icon-shape p,#mermaidChart3 .image-shape p{background-color:rgba(232,232,232, 0.8);padding:2px;}#mermaidChart3 .icon-shape rect,#mermaidChart3 .image-shape rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaidChart3 :root{--mermaid-alt-font-family:sans-serif;}</style><g><marker class="marker flowchart-v2" id="mermaidChart3_flowchart-v2-pointEnd" markerheight="8" markerunits="userSpaceOnUse" markerwidth="8" orient="auto" refx="5" refy="5" viewbox="0 0 10 10"><path class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker class="marker flowchart-v2" id="mermaidChart3_flowchart-v2-pointStart" markerheight="8" markerunits="userSpaceOnUse" markerwidth="8" orient="auto" refx="4.5" refy="5" viewbox="0 0 10 10"><path class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker class="marker flowchart-v2" id="mermaidChart3_flowchart-v2-circleEnd" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="11" refy="5" viewbox="0 0 10 10"><circle class="arrowMarkerPath" cx="5" cy="5" r="5" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker class="marker flowchart-v2" id="mermaidChart3_flowchart-v2-circleStart" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="-1" refy="5" viewbox="0 0 10 10"><circle class="arrowMarkerPath" cx="5" cy="5" r="5" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker class="marker cross flowchart-v2" id="mermaidChart3_flowchart-v2-crossEnd" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="12" refy="5.2" viewbox="0 0 11 11"><path class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker class="marker cross flowchart-v2" id="mermaidChart3_flowchart-v2-crossStart" markerheight="11" markerunits="userSpaceOnUse" markerwidth="11" orient="auto" refx="-1" refy="5.2" viewbox="0 0 11 11"><path class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M123,62L123,66.167C123,70.333,123,78.667,123,86.333C123,94,123,101,123,104.5L123,108" id="L_A_B_0" marker-end="url(#mermaidChart3_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M123,166L123,170.167C123,174.333,123,182.667,123,190.333C123,198,123,205,123,208.5L123,212" id="L_B_C_1" marker-end="url(#mermaidChart3_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M123,270L123,274.167C123,278.333,123,286.667,123,294.333C123,302,123,309,123,312.5L123,316" id="L_C_D_2" marker-end="url(#mermaidChart3_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M123,398L123,402.167C123,406.333,123,414.667,123,422.333C123,430,123,437,123,440.5L123,444" id="L_D_E_3" marker-end="url(#mermaidChart3_flowchart-v2-pointEnd)" style=""></path><path class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" d="M123,502L123,506.167C123,510.333,123,518.667,123,526.333C123,534,123,541,123,544.5L123,548" id="L_E_F_4" marker-end="url(#mermaidChart3_flowchart-v2-pointEnd)" style=""></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignobject height="0" width="0"><div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-38" transform="translate(123, 35)"><rect class="basic label-container" height="54" style="" width="176.453125" x="-88.2265625" y="-27"></rect><g class="label" style="" transform="translate(-58.2265625, -12)"><rect></rect><foreignobject height="24" width="116.453125"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>阶段一:单点突破</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-B-39" transform="translate(123, 139)"><rect class="basic label-container" height="54" rx="5" ry="5" style="" width="157.203125" x="-78.6015625" y="-27"></rect><g class="label" style="" transform="translate(-63.6015625, -12)"><rect></rect><foreignobject height="24" width="127.203125"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>单SPU市占率达标</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-C-41" transform="translate(123, 243)"><rect class="basic label-container" height="54" style="" width="176.453125" x="-88.2265625" y="-27"></rect><g class="label" style="" transform="translate(-58.2265625, -12)"><rect></rect><foreignobject height="24" width="116.453125"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>阶段二:爆品矩阵</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-D-43" transform="translate(123, 359)"><rect class="basic label-container" height="78" rx="5" ry="5" style="" width="230" x="-115" y="-39"></rect><g class="label" style="" transform="translate(-100, -24)"><rect></rect><foreignobject height="48" width="200"><div style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>多SPU覆盖人群,进入品类前三</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-E-45" transform="translate(123, 475)"><rect class="basic label-container" height="54" style="" width="176.453125" x="-88.2265625" y="-27"></rect><g class="label" style="" transform="translate(-58.2265625, -12)"><rect></rect><foreignobject height="24" width="116.453125"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>阶段三:定义行业</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-F-47" transform="translate(123, 591)"><rect class="basic label-container" height="78" rx="5" ry="5" style="" width="230" x="-115" y="-39"></rect><g class="label" style="" transform="translate(-100, -24)"><rect></rect><foreignobject height="48" width="200"><div style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>技术持续投入,用户依赖度提升</p></span></div></foreignobject></g></g></g></g></g></svg></div><hr/><h3 id="Chapter13IntelligentManufacturing"><strong><span>第十三章 智能制造</span></strong><span> </span></h3><hr/><h4 id="1Manufacturingefficiencyimprovementpath"><strong><span>一、制造效率提升路径</span></strong><span> </span></h4><p><strong><span>1. 三阶段策略</span></strong><span> </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>阶段</span></strong></th><th><strong><span>举措</span></strong></th><th><strong><span>成果</span></strong></th></tr></thead><tbody><tr><td><span>初期（2010）</span></td><td><span>自动化测试替代人工（首代手机）</span></td><td><span>检测效率提升300%</span></td></tr><tr><td><span>中期（2014）</span></td><td><span>联合研发工艺升级（不锈钢边框）</span></td><td><span>加工精度达±0.01mm</span></td></tr><tr><td><span>当前（2018+）</span></td><td><span>智能工厂建设（北京亦庄）</span></td><td><span>黑灯工厂，自动化率75%</span></td></tr></tbody></table></figure><p><strong><span>2. 供应链扶持</span></strong><span> </span></p><ul><li><p><strong><span>基金规模</span></strong><span>：百亿级（政府+小米+社会资本）  </span></p></li><li><p><strong><span>投资重点</span></strong><span>：先进装备/核心器件制造商  </span></p></li><li><p><strong><span>典型案例</span></strong><span>：机械臂成本十年降90%  </span></p></li></ul><hr/><h4 id="2Threemajorproblemsandsolutionsforintelligentmanufacturing"><strong><span>二、智能制造三大难题与解法</span></strong><span> </span></h4><figure class="table-figure"><table><thead><tr><th><strong><span>难题</span></strong></th><th><strong><span>根源</span></strong></th><th><strong><span>小米策略</span></strong></th></tr></thead><tbody><tr><td><span>装备成本高</span></td><td><span>核心部件依赖进口</span></td><td><span>投资国产机械臂本体/光源企业</span></td></tr><tr><td><span>产线灵活差</span></td><td><span>非标自动化设备</span></td><td><span>平台化/模组化生产线设计</span></td></tr><tr><td><span>生态封闭</span></td><td><span>技术壁垒与专利保护</span></td><td><span>开放标准+数据共享（联合蓝思/龙旗）</span></td></tr></tbody></table></figure><p><strong><span>1. 智能工厂核心要素</span></strong><span> </span></p><ul><li><p><strong><span>平台化</span></strong><span>：快速换线（＜24小时）  </span></p></li><li><p><strong><span>模组化</span></strong><span>：功能单元自由组合  </span></p></li><li><p><strong><span>小型化</span></strong><span>：占地减少50%，能耗降低30%  </span></p></li></ul><hr/><h4 id="3Futuregoalsofmanufacturingend"><strong><span>三、制造端未来目标</span></strong><span> </span></h4><ol start=""><li><p><strong><span>装备输出</span></strong><span>：向行业提供标准化智能设备  </span></p></li><li><p><strong><span>系统复制</span></strong><span>：输出工厂运营方案（如小米与蓝思合作）  </span></p></li><li><p><strong><span>生态共建</span></strong><span>：推动国产装备商市占率提升至40%+  </span></p></li></ol><h3 id="Part5ThinkingabouttheevolutionofXiaomismethodology"><strong><span>第五部分 小米方法论的演进思考</span></strong><span> </span></h3><hr/><h3 id="Chapter14ThoughtsontheEvolutionofXiaomiMethodology"><strong><span>第十四章 小米方法论的演进思考</span></strong><span> </span></h3><h4 id="1Bewareofthetrapofuneconomicscale"><strong><span>一、警惕“规模不经济”陷阱</span></strong><span> </span></h4><ol start=""><li><p><strong><span>流量与用户增长的矛盾</span></strong><span> </span></p><ul><li><p><strong><span>注意力经济</span></strong><span>：通过极致爆品和口碑吸引用户注意力，但过度依赖外部流量会导致成本攀升、效率下降。  </span></p></li><li><p><strong><span>陷阱表现</span></strong><span>：规模扩张反而导致用户价值稀释（如盲目SKU扩张引发研发分散、品牌模糊）。  </span></p></li><li><p><strong><span>解决路径</span></strong><span>：构建用户闭环，避免流量“空转”（案例：小米生态链用户反哺手机销售）。  </span></p></li></ul></li><li><p><strong><span>闭环构建的关键性</span></strong><span> </span></p><ul><li><p><strong><span>原始模型</span></strong><span>：MIUI→手机→社区→小米网→生态链，形成自循环用户沉淀。  </span></p></li><li><p><strong><span>缺口反思</span></strong><span>：外部电商平台导致用户流失（如全网电商流量未有效回流自有体系）。  </span></p></li><li><p><strong><span>闭环升级</span></strong><span>：用户沉淀需以互动为核心（如小米社区、米家App增强用户粘性）。  </span></p></li></ul></li></ol><hr/><h4 id="2Formulatethethreemajorironlaws"><strong><span>二、制定“三大铁律”</span></strong><span> </span></h4><ol start=""><li><p><strong><span>技术为本</span></strong><span> </span></p><ul><li><p><strong><span>生存逻辑</span></strong><span>：技术是应对全球竞争的核心（如小米澎湃芯片、快充技术投入）。  </span></p></li><li><p><strong><span>长期战略</span></strong><span>：5年千亿研发投入，聚焦AIoT、影像、通信等领域。  </span></p></li></ul></li><li><p><strong><span>性价比为纲</span></strong><span> </span></p><ul><li><p><strong><span>效率根基</span></strong><span>：性价比≠低价，而是高效率支撑的合理定价（Redmi Note系列全球销量破亿）。  </span></p></li><li><p><strong><span>用户信任</span></strong><span>：通过“价格厚道”建立长期关系（案例：小米硬件综合利润率≤5%承诺）。  </span></p></li></ul></li><li><p><strong><span>做最酷的产品</span></strong><span> </span></p><ul><li><p><strong><span>双面定义</span></strong><span>：用户体验极致化 + 工程师创新释放（案例：MIX系列全面屏引领行业）。  </span></p></li><li><p><strong><span>竞争壁垒</span></strong><span>：技术酷（如隔空充电）与设计酷（如透明电视）并重。  </span></p></li></ul></li></ol><hr/><h4 id="3Xiaomisstrategicthinkingoncarmanufacturing"><strong><span>三、小米造车的战略思考</span></strong><span> </span></h4><ol start=""><li><p><strong><span>终局意识的三层推演</span></strong><span> </span></p><ul><li><p><strong><span>业务终局</span></strong><span>：智能汽车与手机生态协同（车机互联、AIoT场景扩展）。  </span></p></li><li><p><strong><span>行业终局</span></strong><span>：全球前五（年销千万辆）是生存门槛（参考特斯拉、比亚迪路径）。  </span></p></li><li><p><strong><span>用户检验</span></strong><span>：1%米粉支持即可实现梦幻开局（小米社区5000万活跃用户基础）。  </span></p></li></ul></li><li><p><strong><span>规避“三大坑”</span></strong><span> </span></p><ul><li><p><strong><span>认知错位</span></strong><span>：避免低估汽车工业复杂度（如自建工厂而非代工）。  </span></p></li><li><p><strong><span>惯性思维</span></strong><span>：拒绝照搬手机打法（独立团队、全新供应链体系）。  </span></p></li><li><p><strong><span>偶像包袱</span></strong><span>：首款产品聚焦核心体验（如智能座舱、自动驾驶），而非全面对标。  </span></p></li></ul></li></ol><hr/><h4 id="4Highendstrategylifeanddeathbattle"><strong><span>四、高端化战略：生死之战</span></strong><span> </span></h4><ol start=""><li><p><strong><span>方法论框架</span></strong><span> </span></p><ul><li><p><strong><span>核心要素</span></strong><span>：  </span></p><ul><li><p><strong><span>品牌</span></strong><span>：科技+人文的品牌升级（签约徕卡、打造影像旗舰）。  </span></p></li><li><p><strong><span>用户</span></strong><span>：高端圈层渗透（小米12 Ultra商务用户占比提升）。  </span></p></li><li><p><strong><span>产品</span></strong><span>：技术突破（澎湃C1芯片）、设计革新（陶瓷机身）。  </span></p></li></ul></li><li><p><strong><span>支撑体系</span></strong><span>：  </span></p><ul><li><p><strong><span>价格</span></strong><span>：站稳6000+价位（折叠屏MIX Fold系列）。  </span></p></li><li><p><strong><span>渠道</span></strong><span>：小米之家旗舰店进驻核心商圈（如北京王府井）。  </span></p></li><li><p><strong><span>服务</span></strong><span>：专属客服、以旧换新等增值服务。  </span></p></li></ul></li></ul></li><li><p><strong><span>虹吸效应与生存逻辑</span></strong><span> </span></p><ul><li><p><strong><span>市场规律</span></strong><span>：高端市场主导品牌话语权（苹果iPhone利润占比行业60%）。  </span></p></li><li><p><strong><span>小米困境</span></strong><span>：中端份额受挤压（华为空缺未被完全承接），高端突破成唯一出路。  </span></p></li></ul></li></ol><hr/><h4 id="5Thegrowthtestofmethodology"><strong><span>五、方法论的成长考验</span></strong><span> </span></h4><ol start=""><li><p><strong><span>解放思想与实事求是</span></strong><span> </span></p><ul><li><p><strong><span>轻资产 vs 重投入</span></strong><span>：自建智能工厂平衡效率与护城河（北京亦庄工厂投产）。  </span></p></li><li><p><strong><span>用户导向</span></strong><span>：全渠道融合（电商+线下+社群）覆盖多元场景。  </span></p></li></ul></li><li><p><strong><span>长期积累逻辑</span></strong><span> </span></p><ul><li><p><strong><span>效率与毛利的平衡</span></strong><span>：低毛利下的技术“滚雪球”（研发费用年增30%）。  </span></p></li><li><p><strong><span>战略耐心</span></strong><span>：造车周期容忍亏损，聚焦长期生态价值。  </span></p></li></ul></li></ol><hr/><h4 id="PostscriptTheessenceofXiaomimodel"><strong><span>后记：小米模式的本质</span></strong><span> </span></h4><ul><li><p><strong><span>模型对立</span></strong><span>：  </span></p><ul><li><p><strong><span>溢价模型</span></strong><span>：依赖信息不对称（传统奢侈品逻辑）。  </span></p></li><li><p><strong><span>性价比模型</span></strong><span>：价值回归（Costco模式硬件化）。  </span></p></li></ul></li><li><p><strong><span>社会价值</span></strong><span>：打破非合作博弈，实现“最大多数人的最大幸福”（全球MIUI月活用户超5亿）。  </span></p></li><li><p><strong><span>终极目标</span></strong><span>：通过高效模型推动产业进步（带动中国供应链升级，如华星光电、蓝思科技）。  </span></p></li></ul><p> </p></div></div>
+</body>
+</html>

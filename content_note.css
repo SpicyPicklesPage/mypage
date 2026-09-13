@@ -1,0 +1,58 @@
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  padding: 5px;
+  z-index: 11;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%); /* 默认隐藏 */
+}
+
+#sidebar.visible {
+  transform: translateX(0); /* 显示时恢复原位 */
+}
+
+#sidebar-toggle {
+  position: fixed;
+  left: 10px;
+  top: 20px;
+  z-index: 12;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 3px; /* 添加圆角 */
+  padding: 2px 5px; /* 减小内边距 */
+  font-size: 12px; /* 减小字体大小 */
+  width: 24px; /* 固定宽度 */
+  height: 24px; /* 固定高度 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* 添加轻微阴影 */
+}
+
+#sidebar-toggle.visible {
+  left: 210px; /* 侧边栏显示时按钮右移 */
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 5px;
+}
+
+#sidebar ul li a:hover {
+  background-color: #ddd;
+}

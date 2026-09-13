@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>愤怒的拆迁队：终极物理版</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: #f0f2f5;
+      text-align: center;
+      padding: 20px;
+      color: #5d5d5d;
+      user-select: none;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .controls {
+      margin-bottom: 15px;
+      padding: 12px 20px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 20px rgba(180, 180, 200, 0.2);
+      backdrop-filter: blur(15px);
+      flex-wrap: wrap;
+      justify-content: center;
+      z-index: 100;
+      position: relative;
+    }
+
+    #displayCanvas {
+      border-radius: 16px;
+      image-rendering: pixelated;
+      cursor: crosshair;
+      max-height: 82vh;
+      max-width: 92vw;
+      box-shadow: 0 15px 40px rgba(100, 100, 140, 0.15);
+      background: #fff;
+    }
+
+    .btn {
+      background-color: #9facca;
+      color: white;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 24px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      white-space: nowrap;
+      box-shadow: 0 3px 6px rgba(159, 172, 202, 0.3);
+    }
+
+    .btn:hover {
+      background-color: #889bbd;
+      transform: translateY(-1px);
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+      box-shadow: none;
+    }
+
+    .btn-upload {
+      background-color: #e88a8a;
+    }
+
+    .btn-upload:hover {
+      background-color: #d67676;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    input[type="range"] {
+      accent-color: #9facca;
+      cursor: pointer;
+      width: 80px;
+    }
+
+    .label {
+      font-size: 13px;
+      color: #777;
+      font-weight: 500;
+    }
+
+    .divider {
+      width: 1px;
+      height: 20px;
+      background: #ccc;
+      margin: 0 5px;
+    }
+
+    .checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 13px;
+      color: #777;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    input[type="checkbox"] {
+      accent-color: #9facca;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    .hint-text {
+      font-size: 14px;
+      color: #8aa;
+      margin-bottom: 10px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="controls">
+      <label class="btn btn-upload">
+        🏢 上传建筑
+        <input type="file" id="uploadBuilding" accept="image/*">
+      </label>
+
+      <label class="btn btn-upload" style="background-color: #81ecec; color:#555;">
+        🐤 上传炮弹
+        <input type="file" id="uploadProjectile" accept="image/*">
+      </label>
+
+      <div class="divider"></div>
+      <label class="checkbox-wrapper"><input type="checkbox" id="removeWhiteBg" checked><span>去白底</span></label>
+      <label class="checkbox-wrapper"><input type="checkbox" id="structuralCollapse" checked><span>物理崩塌</span></label>
+      <div class="divider"></div>
+      <span class="label">精细度</span><input type="range" id="resolution" min="50" max="150" value="80">
+      <span class="label">威力</span><input type="range" id="explosionPower" min="10" max="150" value="90">
+      <div class="divider"></div>
+      <button class="btn" onclick="resetScene()">🔄 重置</button>
+    </div>
+
+    <div class="hint-text">
+      🎯 拖拽左侧弹弓发射！(已修复重置卡死问题，炮弹更大更慢)
+    </div>
+
+    <canvas id="displayCanvas"></canvas>
+    <canvas id="hiddenCanvas" style="display:none;"></canvas>
+    <canvas id="bgCanvas" style="display:none;"></canvas>
+  </div>
+
+  <script>
+    const displayCanvas = document.getElementById('displayCanvas');
+    const displayCtx = displayCanvas.getContext('2d');
+    const hiddenCanvas = document.getElementById('hiddenCanvas');
+    const hiddenCtx = hiddenCanvas.getContext('2d');
+    const bgCanvas = document.getElementById('bgCanvas');
+    const bgCtx = bgCanvas.getContext('2d');
+
+    const sliderRes = document.getElementById('resolution');
+    const sliderPower = document.getElementById('explosionPower');
+    const checkboxRemoveWhite = document.getElementById('removeWhiteBg');
+    const checkboxCollapse = document.getElementById('structuralCollapse');
+
+    let uploadedBuildingImg = null;
+    let projectileSprite = null;
+    let projectileRenderW = 40;
+    let projectileRenderH = 40;
+
+    let pixelScale = 10;
+
+    // --- 核心变量 ---
+    let activeParticles = [];
+    let fireEffects = [];
+    let debrisFires = [];
+
+    let isAnimating = false;
+    let animationId = null;
+
+    let buildingGrid = [];
+    let buildingGridWidth = 0;
+    let buildingGridHeight = 0;
+    let structuralGroundRow = -1;
+
+    let capacityGrid = [];
+    let gridCols = 0; let gridRows = 0;
+    const Z_CAPACITY_LIMIT = 5;
+
+    let buildingStartX = 0;
+    let buildingStartY = 0;
+    let groundLineY = 0;
+
+    let needsStructuralCheck = false;
+
+    // --- 投射物变量 ---
+    // 增加尺寸，降低速度
+    const PROJ_MAX_SIZE = 70; // 炮弹最大尺寸
+    const LAUNCH_SPEED_MULT = 0.15; // 降低速度系数 (之前是0.25)
+
+    let projectile = {
+      active: false,
+      x: 100, y: 300,
+      vx: 0, vy: 0,
+      radius: 20,
+      isDragging: false,
+      startX: 120, startY: 400 // 弹弓位置
+    };
+
+    const gamePalette = [[240, 240, 240], [200, 200, 200], [130, 130, 130], [70, 70, 80], [215, 70, 70], [160, 40, 40], [240, 180, 70], [170, 120, 60], [100, 200, 255], [60, 110, 200], [110, 220, 110], [60, 140, 60], [245, 235, 210], [45, 45, 50], [255, 99, 71], [50, 205, 50], [255, 182, 193], [173, 216, 230]];
+    const cuteFirePalette = ["#FFB347", "#FFD700", "#FF8C69", "#FFA07A"];
+
+    window.onload = () => {
+      createDefaultProjectile(); // 默认创建一个炮弹
+      resetScene();
+    };
+
+    // 上传监听
+    document.getElementById('uploadBuilding').addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        uploadedBuildingImg = new Image();
+        uploadedBuildingImg.onload = () => resetScene();
+        uploadedBuildingImg.src = event.target.result;
+      }
+      reader.readAsDataURL(file);
+    });
+
+    document.getElementById('uploadProjectile').addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const img = new Image();
+        img.onload = () => { processProjectileImage(img); }
+        img.src = event.target.result;
+      }
+      reader.readAsDataURL(file);
+    });
+
+    function createDefaultProjectile() {
+      const tempC = document.createElement('canvas');
+      tempC.width = 60; tempC.height = 60;
+      const tCtx = tempC.getContext('2d');
+      tCtx.fillStyle = '#ff7675';
+      tCtx.beginPath(); tCtx.arc(30, 30, 28, 0, Math.PI * 2); tCtx.fill();
+      tCtx.fillStyle = '#fff'; tCtx.font = '30px serif'; tCtx.fillText('💣', 15, 40);
+      projectileSprite = tempC;
+      projectileRenderW = 60; projectileRenderH = 60;
+    }
+
+    function processProjectileImage(img) {
+      const tempC = document.createElement('canvas');
+      tempC.width = img.width;
+      tempC.height = img.height;
+      const tempCtx = tempC.getContext('2d');
+      tempCtx.drawImage(img, 0, 0);
+
+      const data = tempCtx.getImageData(0, 0, img.width, img.height).data;
+      let minX = img.width, minY = img.height, maxX = 0, maxY = 0;
+      let found = false;
+
+      for (let y = 0; y < img.height; y++) {
+        for (let x = 0; x < img.width; x++) {
+          const alpha = data[(y * img.width + x) * 4 + 3];
+          if (alpha > 20) {
+            if (x < minX) minX = x;
+            if (x > maxX) maxX = x;
+            if (y < minY) minY = y;
+            if (y > maxY) maxY = y;
+            found = true;
+          }
+        }
+      }
+
+      if (!found) { alert("图片无效"); return; }
+
+      const w = maxX - minX + 1;
+      const h = maxY - minY + 1;
+      const cutC = document.createElement('canvas');
+      cutC.width = w; cutC.height = h;
+      cutC.getContext('2d').drawImage(tempC, minX, minY, w, h, 0, 0, w, h);
+
+      projectileSprite = cutC;
+
+      // 计算渲染尺寸 (增大)
+      if (w > h) {
+        projectileRenderW = PROJ_MAX_SIZE;
+        projectileRenderH = PROJ_MAX_SIZE * (h / w);
+      } else {
+        projectileRenderH = PROJ_MAX_SIZE;
+        projectileRenderW = PROJ_MAX_SIZE * (w / h);
+      }
+
+      if (!isAnimating) animate();
+    }
+
+    sliderRes.addEventListener('input', () => { if (uploadedBuildingImg && !isAnimating) resetScene(); });
+    checkboxRemoveWhite.addEventListener('change', () => { if (uploadedBuildingImg && !isAnimating) resetScene(); });
+    checkboxCollapse.addEventListener('change', () => { if (uploadedBuildingImg) needsStructuralCheck = true; if (!isAnimating) animate(); });
+
+    // --- 交互逻辑 ---
+    displayCanvas.addEventListener('mousedown', (e) => {
+      const rect = displayCanvas.getBoundingClientRect();
+      const mouseX = (e.clientX - rect.left) * (displayCanvas.width / rect.width);
+      const mouseY = (e.clientY - rect.top) * (displayCanvas.height / rect.height);
+
+      // 如果在弹弓附近，优先触发弹弓
+      if (!projectile.active) {
+        const dx = mouseX - projectile.x;
+        const dy = mouseY - projectile.y;
+        if (dx * dx + dy * dy < 4000) {
+          projectile.isDragging = true;
+          displayCanvas.style.cursor = 'grabbing';
+          return;
+        }
+      }
+
+      // 上帝之手：直接点击爆破
+      if (uploadedBuildingImg && !projectile.isDragging) {
+        triggerExplosion(e.clientX, e.clientY, true);
+      }
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (projectile.isDragging) {
+        const rect = displayCanvas.getBoundingClientRect();
+        const mouseX = (e.clientX - rect.left) * (displayCanvas.width / rect.width);
+        const mouseY = (e.clientY - rect.top) * (displayCanvas.height / rect.height);
+
+        const dx = mouseX - projectile.startX;
+        const dy = mouseY - projectile.startY;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const maxDrag = 150;
+
+        if (dist > maxDrag) {
+          const angle = Math.atan2(dy, dx);
+          projectile.x = projectile.startX + Math.cos(angle) * maxDrag;
+          projectile.y = projectile.startY + Math.sin(angle) * maxDrag;
+        } else {
+          projectile.x = mouseX;
+          projectile.y = mouseY;
+        }
+
+        if (!isAnimating) { isAnimating = true; animate(); }
+      }
+    });
+
+    window.addEventListener('mouseup', (e) => {
+      if (projectile.isDragging) {
+        projectile.isDragging = false;
+        projectile.active = true;
+        displayCanvas.style.cursor = 'crosshair';
+
+        // 发射速度
+        const dx = projectile.startX - projectile.x;
+        const dy = projectile.startY - projectile.y;
+
+        projectile.vx = dx * LAUNCH_SPEED_MULT;
+        projectile.vy = dy * LAUNCH_SPEED_MULT;
+
+        if (!isAnimating) animate();
+      }
+    });
+
+
+    function initCanvasSize() {
+      displayCanvas.width = 960; displayCanvas.height = 600;
+      bgCanvas.width = 960; bgCanvas.height = 600;
+      groundLineY = displayCanvas.height - 100;
+
+      resetProjectile();
+    }
+
+    function resetProjectile() {
+      projectile.startX = 120;
+      projectile.startY = groundLineY - 120;
+      projectile.x = projectile.startX;
+      projectile.y = projectile.startY;
+      projectile.active = false;
+      projectile.vx = 0; projectile.vy = 0;
+      projectile.isDragging = false;
+    }
+
+    // --- 绘制卡通弹弓 ---
+    function drawSlingshot(ctx, x, y, isFront) {
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+
+      const forkTop = y - 40;
+      const forkL = x - 25;
+      const forkR = x + 25;
+
+      if (!isFront) {
+        // 后支架
+        ctx.beginPath();
+        ctx.lineWidth = 10;
+        ctx.strokeStyle = '#8B4513'; // 深木色
+        ctx.moveTo(x, y);
+        ctx.lineTo(forkL, forkTop);
+        ctx.stroke();
+
+        // 皮筋 (后段)
+        if (projectile.isDragging || !projectile.active) {
+          ctx.beginPath();
+          ctx.lineWidth = 6;
+          ctx.strokeStyle = '#333';
+          ctx.moveTo(forkL, forkTop);
+          // 连到物体中心
+          ctx.lineTo(projectile.x, projectile.y);
+          ctx.stroke();
+        }
+      } else {
+        // 前支架
+        ctx.beginPath();
+        ctx.lineWidth = 10;
+        ctx.strokeStyle = '#A0522D'; // 稍浅木色，立体感
+        ctx.moveTo(x, y);
+        ctx.lineTo(forkR, forkTop);
+        ctx.moveTo(x, y);
+        ctx.lineTo(x, y + 60); // 手柄
+        ctx.stroke();
+
+        // 皮筋 (前段)
+        if (projectile.isDragging || !projectile.active) {
+          ctx.beginPath();
+          ctx.lineWidth = 6;
+          ctx.strokeStyle = '#444';
+          ctx.moveTo(forkR, forkTop);
+          ctx.lineTo(projectile.x, projectile.y);
+          ctx.stroke();
+        }
+      }
+    }
+
+    function drawTrajectory() {
+      if (!projectile.isDragging) return;
+      const dx = projectile.startX - projectile.x;
+      const dy = projectile.startY - projectile.y;
+      let simVX = dx * LAUNCH_SPEED_MULT;
+      let simVY = dy * LAUNCH_SPEED_MULT;
+      let simX = projectile.x;
+      let simY = projectile.y;
+
+      displayCtx.beginPath();
+      displayCtx.moveTo(simX, simY);
+      for (let i = 0; i < 40; i++) {
+        simX += simVX; simY += simVY; simVY += 0.5;
+        displayCtx.lineTo(simX, simY);
+      }
+      displayCtx.strokeStyle = "rgba(255, 255, 255, 0.6)";
+      displayCtx.setLineDash([5, 5]); displayCtx.lineWidth = 3; displayCtx.stroke(); displayCtx.setLineDash([]);
+    }
+
+    function drawSophisticatedCityBg(ctx, w, h) {
+      let skyGrad = ctx.createLinearGradient(0, 0, 0, h);
+      skyGrad.addColorStop(0, "#E0C3FC"); skyGrad.addColorStop(0.5, "#8EC5FC"); skyGrad.addColorStop(1, "#E0F7FA");
+      ctx.fillStyle = skyGrad; ctx.fillRect(0, 0, w, h);
+      let sunGrad = ctx.createRadialGradient(w * 0.8, h * 0.2, 10, w * 0.8, h * 0.2, 80);
+      sunGrad.addColorStop(0, "rgba(255, 255, 240, 0.8)"); sunGrad.addColorStop(1, "rgba(255, 255, 255, 0)");
+      ctx.fillStyle = sunGrad; ctx.beginPath(); ctx.arc(w * 0.8, h * 0.2, 80, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "#C4D7ED"; for (let i = 0; i < 12; i++) { let bw = Math.random() * 60 + 40; let bh = Math.random() * h * 0.2 + 80; let bx = i * 90 - 30; ctx.fillRect(bx, groundLineY - bh, bw, bh); }
+      ctx.fillStyle = "#ABC8E2"; for (let i = 0; i < 8; i++) { let bw = Math.random() * 80 + 50; let bh = Math.random() * h * 0.3 + 120; let bx = i * 130 + 20; ctx.fillRect(bx, groundLineY - bh, bw, bh); }
+      for (let i = 0; i < 6; i++) {
+        ctx.fillStyle = "#889BB6"; let bw = Math.random() * 100 + 70; let bh = Math.random() * h * 0.35 + 150; let bx = i * 180 - 50; let by = groundLineY - bh; ctx.fillRect(bx, by, bw, bh);
+        ctx.fillStyle = "rgba(255, 253, 230, 0.5)"; for (let wy = by + 20; wy < groundLineY - 20; wy += 20) { for (let wx = bx + 15; wx < bx + bw - 15; wx += 15) { if (Math.random() > 0.4) ctx.fillRect(wx, wy, 8, 10); } }
+      }
+      ctx.fillStyle = "#B0BEC5"; ctx.fillRect(0, groundLineY, w, h - groundLineY);
+      ctx.fillStyle = "rgba(255,255,255,0.4)"; ctx.fillRect(0, groundLineY + 5, w, 2);
+    }
+
+    function getNearestColor(r, g, b) {
+      let minDist = Infinity; let bestColor = gamePalette[0];
+      for (let p of gamePalette) {
+        let dist = (r - p[0]) ** 2 + (g - p[1]) ** 2 + (b - p[2]) ** 2;
+        if (dist < minDist) { minDist = dist; bestColor = p; }
+      }
+      return `rgb(${bestColor[0]}, ${bestColor[1]}, ${bestColor[2]})`;
+    }
+
+    function isGridFull(r, c) {
+      if (r >= gridRows) return true;
+      if (r < 0) return false;
+      if (c < 0 || c >= gridCols) return true;
+      return capacityGrid[r][c] >= Z_CAPACITY_LIMIT;
+    }
+
+    // --- 【修复】重置逻辑 ---
+    function resetScene() {
+      if (animationId) cancelAnimationFrame(animationId);
+      // 彻底重置状态
+      isAnimating = false;
+      activeParticles = [];
+      explosionEffects = [];
+      debrisFires = [];
+      needsStructuralCheck = false;
+
+      initCanvasSize();
+      drawSophisticatedCityBg(bgCtx, bgCanvas.width, bgCanvas.height);
+
+      if (!uploadedBuildingImg) { drawFrame(); return; }
+
+      const resolution = parseInt(sliderRes.value);
+      const targetDisplayWidth = displayCanvas.width * 0.7;
+      pixelScale = Math.max(2, Math.floor(targetDisplayWidth / resolution));
+
+      const hiddenWidth = resolution;
+      const scaleRatio = hiddenWidth / uploadedBuildingImg.width;
+      const hiddenHeight = Math.floor(uploadedBuildingImg.height * scaleRatio);
+
+      buildingGridWidth = hiddenWidth;
+      buildingGridHeight = hiddenHeight;
+
+      gridCols = Math.ceil(displayCanvas.width / pixelScale);
+      gridRows = Math.ceil(displayCanvas.height / pixelScale);
+      capacityGrid = Array.from({ length: gridRows }, () => Array(gridCols).fill(0));
+
+      buildingGrid = Array.from({ length: hiddenHeight }, () => Array(hiddenWidth).fill(null));
+
+      hiddenCanvas.width = hiddenWidth; hiddenCanvas.height = hiddenHeight;
+      hiddenCtx.clearRect(0, 0, hiddenWidth, hiddenHeight);
+      hiddenCtx.drawImage(uploadedBuildingImg, 0, 0, hiddenWidth, hiddenHeight);
+
+      const imgData = hiddenCtx.getImageData(0, 0, hiddenWidth, hiddenHeight);
+      const data = imgData.data;
+      const shouldRemoveWhite = checkboxRemoveWhite.checked;
+
+      let lowestY = -1;
+      for (let y = 0; y < hiddenHeight; y++) {
+        for (let x = 0; x < hiddenWidth; x++) {
+          const i = (y * hiddenWidth + x) * 4;
+          const r = data[i], g = data[i + 1], b = data[i + 2], a = data[i + 3];
+          if (a < 128) continue;
+          if (shouldRemoveWhite && r > 240 && g > 240 && b > 240) continue;
+
+          buildingGrid[y][x] = getNearestColor(r, g, b);
+          if (y > lowestY) lowestY = y;
+        }
+      }
+
+      if (lowestY === -1) { drawFrame(); return; }
+
+      structuralGroundRow = lowestY;
+      const buildingDisplayWidth = hiddenWidth * pixelScale;
+      buildingStartX = displayCanvas.width - buildingDisplayWidth - 50;
+      buildingStartY = groundLineY - (lowestY + 1) * pixelScale;
+
+      // 强制重绘一帧以显示初始状态
+      drawFrame();
+    }
+
+    // ... (performStructuralAnalysis & dropFloatingChunk 保持不变，省略以节省空间，功能逻辑与之前完全一致) ...
+    function performStructuralAnalysis() { if (!checkboxCollapse.checked) return; if (structuralGroundRow === -1) return; let isStable = Array.from({ length: buildingGridHeight }, () => new Uint8Array(buildingGridWidth).fill(0)); let queue = []; const anchorRow = structuralGroundRow; for (let x = 0; x < buildingGridWidth; x++) { if (buildingGrid[anchorRow][x]) { isStable[anchorRow][x] = 1; queue.push({ x: x, y: anchorRow }); } } const directions = [[0, -1], [0, 1], [-1, 0], [1, 0], [-1, -1], [-1, 1], [1, -1], [1, 1]]; let head = 0; while (head < queue.length) { let curr = queue[head++]; for (let d of directions) { const nx = curr.x + d[0]; const ny = curr.y + d[1]; if (nx >= 0 && nx < buildingGridWidth && ny >= 0 && ny < buildingGridHeight) { if (buildingGrid[ny][nx] && isStable[ny][nx] === 0) { isStable[ny][nx] = 1; queue.push({ x: nx, y: ny }); } } } } let visitedUnstable = Array.from({ length: buildingGridHeight }, () => new Uint8Array(buildingGridWidth).fill(0)); let chunksFound = false; for (let y = 0; y < buildingGridHeight; y++) { for (let x = 0; x < buildingGridWidth; x++) { if (buildingGrid[y][x] && isStable[y][x] === 0 && visitedUnstable[y][x] === 0) { dropFloatingChunk(x, y, visitedUnstable); chunksFound = true; } } } if (chunksFound && !isAnimating) { isAnimating = true; animate(); } } function dropFloatingChunk(startX, startY, visitedUnstable) { let chunkQueue = [{ x: startX, y: startY }]; let chunkParticles = []; visitedUnstable[startY][startX] = 1; let c = buildingGrid[startY][startX]; buildingGrid[startY][startX] = null; chunkParticles.push({ x: startX, y: startY, color: c }); const directions = [[0, -1], [0, 1], [-1, 0], [1, 0]]; let head = 0; while (head < chunkQueue.length) { let curr = chunkQueue[head++]; for (let d of directions) { const nx = curr.x + d[0]; const ny = curr.y + d[1]; if (nx >= 0 && nx < buildingGridWidth && ny >= 0 && ny < buildingGridHeight) { if (buildingGrid[ny][nx] && visitedUnstable[ny][nx] === 0) { visitedUnstable[ny][nx] = 1; let col = buildingGrid[ny][nx]; buildingGrid[ny][nx] = null; chunkQueue.push({ x: nx, y: ny }); chunkParticles.push({ x: nx, y: ny, color: col }); } } } } let rotSpeed = (Math.random() - 0.5) * 0.05; let initialVx = (Math.random() - 0.5) * 0.3; let initialVy = 0.5; for (let p of chunkParticles) { const pX = buildingStartX + p.x * pixelScale; const pY = buildingStartY + p.y * pixelScale; activeParticles.push({ x: pX, y: pY, vx: initialVx, vy: initialVy, color: p.color, rotation: 0, rotSpeed: rotSpeed, zIndex: Math.random(), isStopped: false, size: pixelScale }); } }
+
+    function triggerExplosion(clientX, clientY, isMouseClick = false) {
+      isAnimating = true;
+
+      const rect = displayCanvas.getBoundingClientRect();
+      const scaleX = displayCanvas.width / rect.width;
+      const scaleY = displayCanvas.height / rect.height;
+      const clickX = isMouseClick ? (clientX - rect.left) * scaleX : clientX;
+      const clickY = isMouseClick ? (clientY - rect.top) * scaleY : clientY;
+      const userPower = parseInt(sliderPower.value);
+
+      const fireCount = userPower * 2.5;
+      for (let i = 0; i < fireCount; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = Math.random() * (userPower * 0.2) + 3;
+        fireEffects.push({
+          x: clickX, y: clickY, vx: Math.cos(angle) * speed, vy: Math.sin(angle) * speed,
+          size: Math.random() * 30 + 15, life: 1.0, decay: Math.random() * 0.04 + 0.01,
+          hue: Math.random() * 20 + 20
+        });
+      }
+
+      const relativeX = clickX - buildingStartX;
+      const relativeY = clickY - buildingStartY;
+      const gridClickX = Math.floor(relativeX / pixelScale);
+      const gridClickY = Math.floor(relativeY / pixelScale);
+
+      const blastRadius = Math.floor(userPower / 150 * 15 + 2);
+      const radiusSq = blastRadius * blastRadius;
+      let hasExploded = false;
+
+      for (let y = gridClickY - blastRadius; y <= gridClickY + blastRadius; y++) {
+        for (let x = gridClickX - blastRadius; x <= gridClickX + blastRadius; x++) {
+          if (y < 0 || y >= buildingGridHeight || x < 0 || x >= buildingGridWidth) continue;
+          if (buildingGrid[y][x]) {
+            const dx = x - gridClickX;
+            const dy = y - gridClickY;
+            if (dx * dx + dy * dy <= radiusSq) {
+              const color = buildingGrid[y][x];
+              buildingGrid[y][x] = null;
+              const pX = buildingStartX + x * pixelScale;
+              const pY = buildingStartY + y * pixelScale;
+              const pCenterX = pX + pixelScale / 2;
+              const pCenterY = pY + pixelScale / 2;
+              const physDx = pCenterX - clickX;
+              const physDy = pCenterY - clickY;
+              const physDist = Math.sqrt(physDx * physDx + physDy * physDy);
+              const angle = Math.atan2(physDy, physDx);
+              let force = (userPower / (physDist * 0.05 + 1)) * (0.8 + Math.random() * 0.5);
+
+              activeParticles.push({
+                x: pX, y: pY,
+                vx: Math.cos(angle) * force * 1.8,
+                vy: Math.sin(angle) * force - (userPower * 0.2 + 3),
+                color: color,
+                rotation: 0, rotSpeed: (Math.random() - 0.5) * (userPower * 0.04),
+                zIndex: Math.random(), isStopped: false, size: pixelScale
+              });
+              hasExploded = true;
+            }
+          }
+        }
+      }
+      if (hasExploded) needsStructuralCheck = true;
+    }
+
+    function drawCuteFire(x, y, size, frame) {
+      displayCtx.save();
+      displayCtx.translate(x + size / 2, y + size / 2);
+      let scaleY = frame === 0 ? 0.9 : (frame === 1 ? 1.1 : 1.0);
+      let offsetY = frame === 0 ? size * 0.1 : (frame === 1 ? -size * 0.1 : 0);
+      displayCtx.fillStyle = cuteFirePalette[0];
+      displayCtx.beginPath(); displayCtx.ellipse(0, offsetY, size * 0.6, size * 0.7 * scaleY, 0, 0, Math.PI * 2); displayCtx.fill();
+      displayCtx.fillStyle = cuteFirePalette[1];
+      displayCtx.beginPath(); displayCtx.ellipse(0, offsetY + size * 0.2, size * 0.3, size * 0.4 * scaleY, 0, 0, Math.PI * 2); displayCtx.fill();
+      displayCtx.restore();
+    }
+
+    function animate() {
+      if (needsStructuralCheck) { performStructuralAnalysis(); needsStructuralCheck = false; }
+
+      displayCtx.drawImage(bgCanvas, 0, 0);
+
+      // 绘制弹弓后半部分 (后支架 + 皮筋)
+      drawSlingshot(displayCtx, projectile.startX, projectile.startY, false);
+
+      if (isAnimating && fireEffects.length > 0) {
+        displayCtx.fillStyle = 'rgba(255,245,235,0.25)';
+        displayCtx.fillRect(0, 0, displayCanvas.width, displayCanvas.height);
+      }
+
+      drawStaticBuilding();
+
+      // 绘制投射物 (在弹弓皮筋和前支架之间)
+      if (projectile.active) {
+        projectile.x += projectile.vx; projectile.y += projectile.vy; projectile.vy += 0.5; // 重力
+        displayCtx.save(); displayCtx.translate(projectile.x, projectile.y);
+        let angle = Math.atan2(projectile.vy, projectile.vx);
+        displayCtx.rotate(angle);
+        // 保持比例绘制
+        displayCtx.drawImage(projectileSprite, -projectileRenderW / 2, -projectileRenderH / 2, projectileRenderW, projectileRenderH);
+        displayCtx.restore();
+
+        const relativeX = projectile.x - buildingStartX;
+        const relativeY = projectile.y - buildingStartY;
+        const gridX = Math.floor(relativeX / pixelScale);
+        const gridY = Math.floor(relativeY / pixelScale);
+
+        if (projectile.y > groundLineY) {
+          projectile.active = false; resetProjectile();
+        } else if (gridX >= 0 && gridX < buildingGridWidth && gridY >= 0 && gridY < buildingGridHeight) {
+          if (buildingGrid[gridY][gridX]) {
+            triggerExplosion(projectile.x, projectile.y, false);
+            projectile.active = false; resetProjectile();
+          }
+        }
+      } else if (projectileSprite) {
+        drawTrajectory();
+        displayCtx.drawImage(projectileSprite, projectile.x - projectileRenderW / 2, projectile.y - projectileRenderH / 2, projectileRenderW, projectileRenderH);
+      }
+
+      // 绘制弹弓前半部分 (前支架 + 皮筋前段)
+      drawSlingshot(displayCtx, projectile.startX, projectile.startY, true);
+
+      // 绘制粒子和特效 (保持不变)
+      displayCtx.globalCompositeOperation = 'lighter';
+      for (let i = fireEffects.length - 1; i >= 0; i--) {
+        let f = fireEffects[i]; f.x += f.vx; f.y += f.vy; f.vy -= 0.15; f.vx *= 0.96; f.vy *= 0.96; f.life -= f.decay; f.size *= 0.97;
+        if (f.life <= 0 || f.size < 1) { fireEffects.splice(i, 1); continue; }
+        const lightness = f.life * 40 + 50; const alpha = f.life;
+        displayCtx.fillStyle = `hsla(${f.hue}, 80%, ${lightness}%, ${alpha})`;
+        displayCtx.beginPath(); displayCtx.arc(f.x, f.y, f.size, 0, Math.PI * 2); displayCtx.fill();
+      }
+      displayCtx.globalCompositeOperation = 'source-over';
+
+      let allStopped = true;
+      if (fireEffects.length > 0 || projectile.active || projectile.isDragging) allStopped = false;
+
+      for (let p of activeParticles) {
+        if (p.isStopped) continue;
+        allStopped = false;
+        p.vy += 0.6; p.x += p.vx; p.y += p.vy; p.rotation += p.rotSpeed; p.vx *= 0.99;
+        if (p.x <= 0) { p.x = 0; p.vx *= -0.6; }
+        if (p.x >= displayCanvas.width - p.size) { p.x = displayCanvas.width - p.size; p.vx *= -0.6; }
+        let gridX = Math.floor((p.x + p.size / 2) / pixelScale); let gridY = Math.floor((p.y + p.size / 2) / pixelScale);
+        if (gridX < 0) gridX = 0; if (gridX >= gridCols) gridX = gridCols - 1;
+        if (p.vy > 0 && isGridFull(gridY + 1, gridX)) {
+          if (!isGridFull(gridY, gridX)) {
+            p.isStopped = true; p.vx = 0; p.vy = 0; p.rotSpeed = 0;
+            p.y = gridY * pixelScale + (Math.random() * pixelScale * 0.5);
+            p.x = gridX * pixelScale + (Math.random() - 0.5) * pixelScale * 0.5;
+            if (gridY >= 0 && gridY < gridRows && gridX >= 0 && gridX < gridCols) capacityGrid[gridY][gridX]++;
+          } else {
+            let leftFull = isGridFull(gridY + 1, gridX - 1); let rightFull = isGridFull(gridY + 1, gridX + 1);
+            if (!leftFull && !rightFull) { p.vx += (Math.random() > 0.5 ? -2 : 2); p.vy *= 0.5; }
+            else if (!leftFull) { p.vx -= 2; p.vy *= 0.5; } else if (!rightFull) { p.vx += 2; p.vy *= 0.5; } else { p.y -= pixelScale * 0.3; p.vy *= -0.4; }
+          }
+        }
+        if (p.y > groundLineY - p.size) {
+          if (!p.isStopped) {
+            p.isStopped = true; p.y = groundLineY - p.size + (Math.random() * pixelScale * 0.3);
+            if (gridX >= 0 && gridX < gridCols) {
+              let groundGridY = Math.floor(groundLineY / pixelScale) - 1;
+              if (groundGridY >= 0 && groundGridY < gridRows && capacityGrid[groundGridY][gridX] < Z_CAPACITY_LIMIT) { capacityGrid[groundGridY][gridX]++; }
+            }
+          }
+        }
+      }
+
+      activeParticles.sort((a, b) => a.zIndex - b.zIndex);
+      for (let p of activeParticles) { drawRotatedRect(p.x, p.y, p.size, p.color, p.rotation); }
+
+      if (isAnimating && Math.random() < 0.15 && debrisFires.length < 50) {
+        let gx = Math.floor(Math.random() * gridCols); let gy = -1;
+        for (let y = gridRows - 1; y >= 0; y--) { if (capacityGrid[y][gx] > 0) { gy = y; } else if (gy !== -1) { break; } }
+        if (gy !== -1) { debrisFires.push({ gridX: gx, gridY: gy, life: 100 + Math.random() * 200, frame: Math.floor(Math.random() * 3), timer: 0, size: pixelScale * (1.5 + Math.random()) }); }
+      }
+      for (let i = debrisFires.length - 1; i >= 0; i--) {
+        let f = debrisFires[i]; f.life--; f.timer++; if (f.timer > 8) { f.frame = (f.frame + 1) % 3; f.timer = 0; }
+        if (f.life <= 0) { debrisFires.splice(i, 1); continue; }
+        allStopped = false; let drawX = f.gridX * pixelScale; let drawY = f.gridY * pixelScale - f.size * 0.6; drawCuteFire(drawX, drawY, f.size, f.frame);
+      }
+
+      if (!allStopped || debrisFires.length > 0) { animationId = requestAnimationFrame(animate); } else { isAnimating = false; animationId = null; }
+    }
+
+    function drawStaticBuilding() { for (let y = 0; y < buildingGridHeight; y++) { for (let x = 0; x < buildingGridWidth; x++) { const color = buildingGrid[y][x]; if (color) { displayCtx.fillStyle = color; displayCtx.fillRect(buildingStartX + x * pixelScale, buildingStartY + y * pixelScale, pixelScale, pixelScale); } } } }
+    function drawRotatedRect(x, y, size, color, rotation) { displayCtx.save(); displayCtx.translate(x + size / 2, y + size / 2); displayCtx.rotate(rotation); displayCtx.fillStyle = "rgba(160,150,160,0.2)"; displayCtx.fillRect(-size / 2 + size * 0.2, -size / 2 + size * 0.2, size, size); displayCtx.fillStyle = color; displayCtx.fillRect(-size / 2 - 0.1, -size / 2 - 0.1, size + 0.2, size + 0.2); displayCtx.restore(); }
+    function drawFrame() { displayCtx.drawImage(bgCanvas, 0, 0); drawSlingshot(displayCtx, projectile.startX, projectile.startY, false); drawStaticBuilding(); drawSlingshot(displayCtx, projectile.startX, projectile.startY, true); activeParticles.sort((a, b) => a.zIndex - b.zIndex); for (let p of activeParticles) { drawRotatedRect(p.x, p.y, p.size, p.color, p.rotation); } }
+  </script>
+
+</body>
+
+</html>

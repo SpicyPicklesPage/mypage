@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/><meta content="width=device-width initial-scale=1" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"/><style type="text/css">html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+
+</style><title>《六顶思考帽》读书笔记梳理</title>
+<link href="content_note.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<button id="sidebar-toggle"></button><div id="sidebar">
+  <h2>目录</h2>
+  <ul>
+        <ul>
+            <li><a href="#SixThinkingHatsReadingNotesCollecting">《六顶思考帽》读书笔记梳理</a></li>
+    <ul>
+                <li><a href="#sequence">序</a></li>
+                <li><a href="#01Introduction">01 引言</a></li>
+                <li><a href="#02Sixhatssixcolors">02 六顶帽子，六种颜色</a></li>
+                <li><a href="#03UsingtheThinkingHat">03 使用思考帽</a></li>
+                <li><a href="#BlueThinkingHat">蓝色思考帽</a></li>
+                <li><a href="#BlueHatThinkingExample">蓝帽思考示例</a></li>
+                <li><a href="#SummaryThecorevalueofbluehat">总结：蓝帽的核心价值</a></li>
+    </ul>
+            <li><a href="#"></a></li>
+    <ul>
+                <li><a href="#Whitethinkinghat">白色思考帽</a></li>
+                <li><a href="#Redthinkinghat">红色思考帽</a></li>
+                <li><a href="#WhitehatvsRedhat">白帽与红帽对比</a></li>
+                <li><a href="#Practicalpoints">实践要点</a></li>
+                <li><a href="#SummaryThecorevalueofwhitehatandredhat">小结：白帽与红帽的核心价值</a></li>
+    </ul>
+            <li><a href="#"></a></li>
+    <ul>
+                <li><a href="#Yellowthinkinghat">黄色思考帽</a></li>
+                <li><a href="#Blackthinkinghat">黑色思考帽</a></li>
+                <li><a href="#Comparisonbetweenyellowhatandblackhat">黄帽与黑帽对比</a></li>
+                <li><a href="#Practicalpoints">实践要点</a></li>
+                <li><a href="#SummaryThecorevalueofyellowhatsandblackhats">小结：黄帽与黑帽的核心价值</a></li>
+                <li><a href="#Greenthinkinghat">绿色思考帽</a></li>
+                <li><a href="#SummaryofSixThinkingHats">六顶思考帽总结</a></li>
+                <li><a href="#Thecorevalueofthewholebook">全书核心价值</a></li>
+                <li><a href="#Areviewofclassiccases">经典案例回顾</a></li>
+                <li><a href="#Recommendedscenarios">适用场景推荐</a></li>
+                <li><a href="#Conclusion">结语</a></li>
+                </ul>
+</div>
+<script src="sidebar.js"></script>
+    <div class="typora-export-content">
+<div class="" id="write"><h3 id="SixThinkingHatsReadingNotesCollecting"><strong><span>《六顶思考帽》读书笔记梳理</span></strong></h3><hr/><h4 id="sequence"><strong><span>序</span></strong></h4><ul><li><p><strong><span>思考的误区与混乱</span></strong></p><ul><li><p><span>多数人对自身思考能力满意，实则陷入“证明自我正确”的误区，而非真正解决问题。</span></p></li><li><p><span>思考的混乱源于同时处理过多元素（情感、逻辑、信息等），如同杂耍时球太多而失控。</span></p></li><li><p><strong><span>六顶思考帽的价值</span></strong><span>：通过“平行思考”引导思考方向，避免对抗性辩论，提升效率。</span></p></li></ul></li><li><p><strong><span>西方思维的局限性</span></strong></p><ul><li><p><span>传统西方思维过度依赖“黑帽”（批判性思维），虽能防错，但抑制创新与建设性。</span></p></li><li><p><strong><span>简化的力量</span></strong><span>：用颜色标签区分思考模式，比复杂心理学概念更易记忆和应用。</span></p></li></ul></li></ul><hr/><h4 id="01Introduction"><strong><span>01 引言</span></strong></h4><ul><li><p><strong><span>平行思考 vs 辩论</span></strong></p><ul><li><p><strong><span>辩论的缺陷</span></strong><span>：对抗性冲突易导致对立，缺乏建设性。案例：不同视角观察别墅的四人争论不休，但平行思考要求共同绕行观察每一面，最终全面理解。</span></p></li><li><p><strong><span>方向标签的意义</span></strong><span>：六顶思考帽为思考提供“方向指令”，而非描述现状或给人贴标签（如“乐观者”“批判者”）。</span></p></li></ul></li><li><p><strong><span>动态世界的需求</span></strong></p><ul><li><p><span>传统标准情境在稳定世界有效，但在快速变化的环境中失效，需灵活思考框架。</span></p></li><li><p><strong><span>中立客观的思考</span></strong><span>：六顶思考帽避免自我展示或攻击他人，聚焦议题本身。</span></p></li></ul></li></ul><hr/><h4 id="02Sixhatssixcolors"><strong><span>02 六顶帽子，六种颜色</span></strong></h4><ul><li><p><strong><span>颜色与功能</span></strong></p><figure class="table-figure"><table><thead><tr><th style="text-align:center;"><span>帽子</span></th><th style="text-align:center;"><span>颜色象征</span></th><th style="text-align:center;"><span>功能</span></th></tr></thead><tbody><tr><td style="text-align:center;"><span>蓝帽</span></td><td style="text-align:center;"><span>天空（控制）</span></td><td style="text-align:center;"><span>管理思考流程，制定规则与总结</span></td></tr><tr><td style="text-align:center;"><span>白帽</span></td><td style="text-align:center;"><span>中立（事实）</span></td><td style="text-align:center;"><span>提供客观数据与信息</span></td></tr><tr><td style="text-align:center;"><span>红帽</span></td><td style="text-align:center;"><span>情感（火焰）</span></td><td style="text-align:center;"><span>表达直觉、情绪与预感</span></td></tr><tr><td style="text-align:center;"><span>黄帽</span></td><td style="text-align:center;"><span>阳光（积极）</span></td><td style="text-align:center;"><span>寻找价值与可行性</span></td></tr><tr><td style="text-align:center;"><span>黑帽</span></td><td style="text-align:center;"><span>谨慎（严肃）</span></td><td style="text-align:center;"><span>识别风险与缺陷</span></td></tr><tr><td style="text-align:center;"><span>绿帽</span></td><td style="text-align:center;"><span>生长（创意）</span></td><td style="text-align:center;"><span>提出新观点与替代方案</span></td></tr></tbody></table></figure></li><li><p><strong><span>配对逻辑</span></strong></p><ul><li><p><span>白帽（事实）与红帽（情感）互补，确保理性与感性平衡；</span></p></li><li><p><span>黄帽（积极）与黑帽（批判）配对，避免过度乐观或悲观；</span></p></li><li><p><span>绿帽（创新）与蓝帽（控制）结合，确保创意在框架内推进。</span></p></li></ul></li></ul><hr/><h4 id="03UsingtheThinkingHat"><strong><span>03 使用思考帽</span></strong></h4><ul><li><p><strong><span>两种使用模式</span></strong></p><ol start=""><li><p><span>单独使用</span></p><ul><li><p><span>针对性解决特定问题（如用红帽释放情绪，用白帽澄清事实）。</span></p></li><li><p><span>示例：管理者要求团队“戴上红帽”表达对裁员的情感，避免猜忌。</span></p></li></ul></li><li><p><span>序列使用</span></p><ul><li><p><span>预设顺序（推荐新手）：如蓝帽（目标）→ 白帽（数据）→ 绿帽（创意）→ 黄帽/黑帽（评估）→ 蓝帽（总结）。</span></p></li><li><p><strong><span>动态调整</span></strong><span>：熟练后可灵活切换，如蓝帽临时插入“暂停黑帽，启用绿帽”。</span></p></li></ul></li></ol></li><li><p><strong><span>关键纪律</span></strong></p><ul><li><p><strong><span>严格聚焦当前帽子</span></strong><span>：避免混淆模式（如红帽下禁止论证情感合理性）。</span></p></li><li><p><strong><span>时间管理</span></strong><span>：每帽设置短时限（如每人1分钟），必要时延长。</span></p></li></ul></li><li><p><strong><span>会议流程设计</span></strong></p><ul><li><p><strong><span>开场与收尾必用蓝帽</span></strong><span>：明确目标、总结成果。</span></p></li><li><p><strong><span>情感前置</span></strong><span>：若议题敏感，先用红帽释放情绪，再理性讨论。</span></p></li></ul></li></ul><hr/><h4 id="BlueThinkingHat"><strong><span>蓝色思考帽</span></strong></h4><ul><li><p><strong><span>核心功能</span></strong></p><ul><li><p><strong><span>掌控全局</span></strong><span>：设计思考程序（如会议议程）、监控纪律、归纳结论。</span></p></li><li><p><strong><span>类比</span></strong><span>：乐队指挥或软件程序员，编排思考步骤。</span></p></li></ul></li><li><p><strong><span>四大应用场景</span></strong></p><ol start=""><li><p><strong><span>专注与定义问题</span></strong></p><ul><li><p><span>明确思考任务（如“制定应对竞品降价的方案”）。</span></p></li><li><p><span>区分“钓鱼式问题”（探索性）与“射击式问题”（验证性）。</span></p></li><li><p><span>案例：滑雪场问题被重新定义为“交通方案问题”。</span></p></li></ul></li><li><p><strong><span>程序设计</span></strong></p><ul><li><p><span>设计思考流程（如白帽→绿帽→黄帽→黑帽）。</span></p></li><li><p><span>动态调整：如发现创意不足时插入绿帽时间。</span></p></li></ul></li><li><p><strong><span>归纳与总结</span></strong></p><ul><li><p><span>记录冲突点（如“争论焦点：是否属于掠夺性定价”）。</span></p></li><li><p><span>撰写报告时需客观中立，避免个人偏见。</span></p></li></ul></li><li><p><strong><span>控制与监控</span></strong></p><ul><li><p><span>主持人角色：维持纪律（如制止偏离焦点的发言）。</span></p></li><li><p><span>冲突管理：记录分歧点，延后深入讨论。</span></p></li></ul></li></ol></li><li><p><strong><span>关键原则</span></strong></p><ul><li><p><strong><span>形式感与中立性</span></strong><span>：蓝帽的权威性来自程序公正，而非个人权力。</span></p></li><li><p><strong><span>灵活切换角色</span></strong><span>：任何成员均可提出蓝帽建议（如“现在应回归白帽数据”）。</span></p></li></ul></li></ul><hr/><h4 id="BlueHatThinkingExample"><strong><span>蓝帽思考示例</span></strong></h4><ul><li><p><strong><span>会议开场</span></strong></p><blockquote><p><span>“本次蓝帽目标是制定新产品的定价策略，需依次使用白帽（市场数据）、绿帽（创意）、黄帽/黑帽（可行性评估）。”</span></p></blockquote></li><li><p><strong><span>冲突处理</span></strong></p><blockquote><p><span>“当前争论偏离核心问题，请暂停黑帽，戴上白帽回顾数据。”</span></p></blockquote></li><li><p><strong><span>总结阶段</span></strong></p><blockquote><p><span>“蓝帽总结：已列出三种方案，下一步需财务部评估成本。”</span></p></blockquote></li></ul><hr/><h4 id="SummaryThecorevalueofbluehat"><strong><span>总结：蓝帽的核心价值</span></strong></h4><ul><li><p><span>赋予思考明确的结构与方向，避免无序争论；</span></p></li><li><p><span>通过程序公正提升团队协作效率，确保每个视角被充分探索。</span></p></li></ul><h3 id=""></h3><hr/><h4 id="Whitethinkinghat"><strong><span>白色思考帽</span></strong><span> </span></h4><ul><li><p><strong><span>核心功能</span></strong><span> </span></p><ul><li><p><strong><span>中立性与客观性</span></strong><span>：专注于可验证的事实、数据及他人观点，避免个人解读或情感介入。  </span></p></li><li><p><strong><span>信息分层</span></strong><span> </span></p><ul><li><p><strong><span>一级事实</span></strong><span>：已核实的数据（如“火鸡肉销量增长25%”）；  </span></p></li><li><p><strong><span>二级事实</span></strong><span>：未经核实但被广泛接受的信息（如“市场调查显示消费者认为火鸡肉更健康”）。  </span></p></li></ul></li></ul></li><li><p><strong><span>应用场景</span></strong><span> </span></p><ol start=""><li><p><strong><span>会议背景搭建</span></strong><span> </span></p><ul><li><p><span>在讨论前提供基础数据（如“上季度市场份额数据：A产品35%，B产品28%”）。  </span></p></li></ul></li><li><p><strong><span>验证提议可行性</span></strong><span> </span></p><ul><li><p><span>检查方案是否符合已知事实（如“现有成本数据是否支持降价策略？”）。  </span></p></li></ul></li></ol></li><li><p><strong><span>关键原则</span></strong><span> </span></p><ul><li><p><strong><span>区分事实与解读</span></strong><span>：仅陈述可观测的信息，避免嵌入隐含结论。  </span></p><ul><li><p><span>错误示例：“火鸡肉销量增长是因消费者追求健康”（此为黄帽/绿帽解读）。  </span></p></li><li><p><span>正确示例：“火鸡肉销量增长25%，同期健康食品市场整体增长18%”。  </span></p></li></ul></li><li><p><strong><span>提问类型</span></strong><span> </span></p><ul><li><p><strong><span>钓鱼式问题</span></strong><span>（探索性）：如“哪些因素可能影响消费者选择？”  </span></p></li><li><p><strong><span>射击式问题</span></strong><span>（验证性）：如“去年Q4销售额是否达到预期？”  </span></p></li></ul></li></ul></li><li><p><strong><span>案例解析</span></strong><span> </span></p><ul><li><p><strong><span>法庭证词</span></strong><span>：证人仅陈述“被告6:30返回公寓”而非推断其赌博，体现白帽纪律。  </span></p></li><li><p><strong><span>市场分析</span></strong><span>：区分“销量数据”与“消费者动机调查结果”，避免混淆事实与推测。  </span></p></li></ul></li></ul><hr/><h4 id="Redthinkinghat"><strong><span>红色思考帽</span></strong><span> </span></h4><ul><li><p><strong><span>核心功能</span></strong><span> </span></p><ul><li><p><strong><span>合法化情绪表达</span></strong><span>：允许直觉、情感与预感直接呈现，无需逻辑辩护。  </span></p></li><li><p><strong><span>情绪分类</span></strong><span> </span></p><ul><li><p><strong><span>背景情绪</span></strong><span>（如对风险的恐惧）；  </span></p></li><li><p><strong><span>触发情绪</span></strong><span>（如因他人言论感到被冒犯）；  </span></p></li><li><p><strong><span>价值观驱动情绪</span></strong><span>（如对自由的强烈捍卫）。  </span></p></li></ul></li></ul></li><li><p><strong><span>应用场景</span></strong><span> </span></p><ol start=""><li><p><strong><span>决策前情感释放</span></strong><span> </span></p><ul><li><p><span>在理性讨论前明确团队情绪倾向（如“多数成员对并购案感到不安”）。  </span></p></li></ul></li><li><p><strong><span>直觉验证</span></strong><span> </span></p><ul><li><p><span>经验驱动的预感（如地产商凭直觉判断某地块潜力）。  </span></p></li></ul></li><li><p><strong><span>冲突管理</span></strong><span> </span></p><ul><li><p><span>公开表达对会议进程的不满（如“红帽反馈：当前讨论方式令人焦虑”）。  </span></p></li></ul></li></ol></li><li><p><strong><span>关键原则</span></strong><span> </span></p><ul><li><p><strong><span>禁止解释</span></strong><span>：仅描述情感状态，如“我反对此方案”而非“因成本过高而反对”。  </span></p></li><li><p><strong><span>中立选项</span></strong><span>：允许“困惑”“矛盾”等复杂情感表述，但需具体化（如“支持目标但担忧执行风险”）。  </span></p></li></ul></li><li><p><strong><span>案例解析</span></strong><span> </span></p><ul><li><p><strong><span>商业决策</span></strong><span>：尽管数据支持维持价格，但直觉坚持“降价是夺回市场的唯一选择”。  </span></p></li><li><p><strong><span>谈判场景</span></strong><span>：工会代表强调“跨界线操作对生产效率的情绪价值”，推动条款调整。  </span></p></li></ul></li><li><p><strong><span>情绪与逻辑的互动</span></strong><span> </span></p><ul><li><p><strong><span>认知重塑情绪</span></strong><span>：通过视角转换改变情感反应（如将失败视为“弱点识别机会”）。  </span></p></li><li><p><strong><span>情绪驱动决策</span></strong><span>：最终选择需满足情感需求（如“方案需平衡短期收益与长期团队士气”）。  </span></p></li></ul></li></ul><hr/><h4 id="WhitehatvsRedhat"><strong><span>白帽与红帽对比</span></strong><span> </span></h4><figure class="table-figure"><table><thead><tr><th><strong><span>维度</span></strong></th><th><strong><span>白帽</span></strong></th><th><strong><span>红帽</span></strong></th></tr></thead><tbody><tr><td><strong><span>焦点</span></strong></td><td><span>外部客观信息</span></td><td><span>内部主观体验</span></td></tr><tr><td><strong><span>表达限制</span></strong></td><td><span>禁止个人观点</span></td><td><span>禁止逻辑辩护</span></td></tr><tr><td><strong><span>典型用语</span></strong></td><td><span>“数据显示…”“据报告称…”</span></td><td><span>“我感觉…”“直觉告诉我…”</span></td></tr><tr><td><strong><span>会议阶段</span></strong></td><td><span>开场（背景）、结尾（验证）</span></td><td><span>敏感议题前置、冲突节点介入</span></td></tr></tbody></table></figure><hr/><h4 id="Practicalpoints"><strong><span>实践要点</span></strong><span> </span></h4><ul><li><p><strong><span>白帽陷阱</span></strong><span>：避免将推测伪装成事实（如“消费者显然更喜欢…”→ 应改为“调查中60%受访者表示偏好…”）。  </span></p></li><li><p><strong><span>红帽滥用</span></strong><span>：警惕情绪绑架决策（如频繁以“直觉反对”阻碍进展，需结合黄/黑帽分析）。  </span></p></li><li><p><strong><span>协同使用</span></strong><span>：  </span></p><ul><li><p><strong><span>争议解决</span></strong><span>：先用红帽释放对立情绪，再用白帽澄清事实；  </span></p></li><li><p><strong><span>创新会议</span></strong><span>：白帽提供数据支持 → 红帽激发热情 → 绿帽生成创意。  </span></p></li></ul></li></ul><hr/><h4 id="SummaryThecorevalueofwhitehatandredhat"><strong><span>小结：白帽与红帽的核心价值</span></strong><span> </span></h4><ul><li><p><strong><span>白帽</span></strong><span>：构建可信的决策基础，避免“信息真空”导致的臆断；  </span></p></li><li><p><strong><span>红帽</span></strong><span>：揭示隐藏的驱动力，使情感从干扰项转化为决策资源。</span></p></li></ul><h3 id=""></h3><hr/><h4 id="Yellowthinkinghat"><strong><span>黄色思考帽</span></strong><span> </span></h4><ul><li><p><strong><span>核心功能</span></strong><span> </span></p><ul><li><p><strong><span>积极探索价值</span></strong><span>：主动寻找方案中的优点、可行性及潜在收益，而非被动等待价值显现。  </span></p></li><li><p><strong><span>建设性思考</span></strong><span>：提出具体方案（如“建水坝解决供水问题”），并推动其落地。  </span></p></li><li><p><strong><span>逻辑支持</span></strong><span>：所有乐观评估需基于经验、数据或合理推测（如“利率下降可能推高证券价格”）。  </span></p></li></ul></li><li><p><strong><span>应用场景</span></strong><span> </span></p><ol start=""><li><p><strong><span>机会评估</span></strong><span>：发现隐藏价值（如企业家识别地块潜力）。  </span></p></li><li><p><strong><span>方案优化</span></strong><span>：针对黑帽指出的缺陷提出改进（如“引入第三方监管避免私营企业垄断”）。  </span></p></li><li><p><strong><span>愿景驱动</span></strong><span>：描绘最佳可能结果（如“若技术突破，市场份额可翻倍”）。  </span></p></li></ol></li><li><p><strong><span>关键原则</span></strong><span> </span></p><ul><li><p><strong><span>从最佳可能出发</span></strong><span>：先假设最大收益，再逐步验证合理性。  </span></p></li><li><p><strong><span>区分有效性与创新性</span></strong><span>：黄帽关注可行性（如沿用成熟方案），绿帽负责突破性创意。  </span></p></li><li><p><strong><span>避免“虚妄希望”</span></strong><span>：需结合行动路径（如“降价策略需配套成本控制措施”）。  </span></p></li></ul></li><li><p><strong><span>案例解析</span></strong><span> </span></p><ul><li><p><strong><span>水利方案</span></strong><span>：黄帽提出“建水坝形成水库”，虽非创新但基于现有技术有效；  </span></p></li><li><p><strong><span>连锁酒店盈利假设</span></strong><span>：通过“假如入住率提升至70%”探索潜在收益边界。  </span></p></li></ul></li></ul><hr/><h4 id="Blackthinkinghat"><strong><span>黑色思考帽</span></strong><span> </span></h4><ul><li><p><strong><span>核心功能</span></strong><span> </span></p><ul><li><p><strong><span>风险识别</span></strong><span>：基于逻辑指出缺陷（如“降价可能导致利润无法覆盖成本”）。  </span></p></li><li><p><strong><span>合规性检查</span></strong><span>：确保方案符合法律、道德及经验（如“垄断定价违反反托拉斯法”）。  </span></p></li><li><p><strong><span>批判性验证</span></strong><span>：质疑数据可靠性或逻辑漏洞（如“犯罪率下降是否因政策而非经济环境？”）。  </span></p></li></ul></li><li><p><strong><span>应用场景</span></strong><span> </span></p><ol start=""><li><p><strong><span>决策过滤</span></strong><span>：筛除非可行方案（如“过去三次降价均未提振销量”）。  </span></p></li><li><p><strong><span>流程纠偏</span></strong><span>：指出思考中的错误（如“结论与数据矛盾”）。  </span></p></li><li><p><strong><span>风险评估</span></strong><span>：预判未来隐患（如“技术依赖可能导致供应链中断”）。  </span></p></li></ol></li><li><p><strong><span>关键原则</span></strong><span> </span></p><ul><li><p><strong><span>逻辑必要性</span></strong><span>：批判需基于事实或合理推断，非情绪化（如“根据历史数据，此方案失败概率80%”）。  </span></p></li><li><p><strong><span>避免过度批判</span></strong><span>：警惕“为批判而批判”，需结合黄帽提出改进建议。  </span></p></li><li><p><strong><span>时间维度平衡</span></strong><span>：既参考过去经验（如“竞品跟降导致价格战”），也预判未来变化（如“新技术可能颠覆市场”）。  </span></p></li></ul></li><li><p><strong><span>案例解析</span></strong><span> </span></p><ul><li><p><strong><span>降价策略批判</span></strong><span>：黑帽指出“过去降价未达预期销量，且引发竞品跟降”；  </span></p></li><li><p><strong><span>监禁政策质疑</span></strong><span>：数据未证明“严刑峻法降低犯罪率”，需更多证据支持。  </span></p></li></ul></li></ul><hr/><h4 id="Comparisonbetweenyellowhatandblackhat"><strong><span>黄帽与黑帽对比</span></strong><span> </span></h4><figure class="table-figure"><table><thead><tr><th><strong><span>维度</span></strong></th><th><strong><span>黄帽</span></strong></th><th><strong><span>黑帽</span></strong></th></tr></thead><tbody><tr><td><strong><span>焦点</span></strong></td><td><span>价值、机会、可行性</span></td><td><span>风险、缺陷、障碍</span></td></tr><tr><td><strong><span>思维导向</span></strong></td><td><span>积极假设（最佳可能）</span></td><td><span>谨慎验证（最坏可能）</span></td></tr><tr><td><strong><span>输出形式</span></strong></td><td><span>方案提议、收益预测</span></td><td><span>风险预警、逻辑质疑</span></td></tr><tr><td><strong><span>依赖基础</span></strong></td><td><span>经验+逻辑+愿景</span></td><td><span>数据+逻辑+历史教训</span></td></tr><tr><td><strong><span>会议阶段</span></strong></td><td><span>方案生成、机会探索</span></td><td><span>方案筛选、风险控制</span></td></tr></tbody></table></figure><hr/><h4 id="Practicalpoints"><strong><span>实践要点</span></strong><span> </span></h4><ul><li><p><strong><span>黄帽陷阱</span></strong><span>：  </span></p><ul><li><p><span>过度乐观脱离实际（如“假设市场增长100%但无数据支持”）；  </span></p></li><li><p><span>混淆“有效”与“创新”（如忽视绿帽的突破性作用）。  </span></p></li></ul></li><li><p><strong><span>黑帽滥用</span></strong><span>：  </span></p><ul><li><p><span>批判缺乏依据（如“直觉认为会失败”应属红帽范畴）；  </span></p></li><li><p><span>扼杀早期创意（如在绿帽阶段过早介入批判）。  </span></p></li></ul></li><li><p><strong><span>协同使用</span></strong><span>：  </span></p><ul><li><p><strong><span>方案迭代</span></strong><span>：黄帽提议 → 黑帽验证 → 黄帽修正 → 黑帽再审；  </span></p></li><li><p><strong><span>风险评估</span></strong><span>：黑帽列出风险 → 黄帽设计应对措施（如“引入保险对冲技术风险”）。  </span></p></li></ul></li></ul><hr/><h4 id="SummaryThecorevalueofyellowhatsandblackhats"><strong><span>小结：黄帽与黑帽的核心价值</span></strong><span> </span></h4><ul><li><p><strong><span>黄帽</span></strong><span>：推动行动力，将愿景转化为具体方案，避免“分析瘫痪”；  </span></p></li><li><p><strong><span>黑帽</span></strong><span>：充当安全网，确保决策经得起逻辑与现实的考验。  </span></p></li><li><p><strong><span>互补性</span></strong><span>：二者如硬币两面，共同构成理性决策的完整评估体系。</span></p></li></ul><p> </p><hr/><h4 id="Greenthinkinghat"><strong><span>绿色思考帽</span></strong><span> </span></h4><ul><li><p><strong><span>核心功能</span></strong><span> </span></p><ul><li><p><strong><span>创造性突破</span></strong><span>：生成新创意、新视角及替代方案，突破既有思维框架。  </span></p></li><li><p><strong><span>激发与探索</span></strong><span>：通过“激发”跳出常规模式（如“假设汽车轮子为方形”），推动思维跳跃。  </span></p></li><li><p><strong><span>备选路线开发</span></strong><span>：主动寻找多种解决方案，避免满足于首个答案（如“降价策略的10种变形方案”）。  </span></p></li></ul></li><li><p><strong><span>应用场景</span></strong><span> </span></p><ol start=""><li><p><strong><span>创意僵局</span></strong><span>：当讨论陷入重复时，刻意启动绿帽（如“现有方案无突破，需绿帽生成新视角”）。  </span></p></li><li><p><strong><span>风险应对</span></strong><span>：针对黑帽指出的缺陷设计替代方案（如“如何降低私营垄断风险？引入第三方监管”）。  </span></p></li><li><p><strong><span>框架质疑</span></strong><span>：挑战现有假设（如“是否必须通过降价竞争？探索品牌溢价可能性”）。  </span></p></li></ol></li><li><p><strong><span>关键原则</span></strong><span> </span></p><ul><li><p><strong><span>行动导向</span></strong><span>：用“垫脚石”思维将创意转化为行动路径（如“荣誉制商店→随机抽查账单平衡误差”）。  </span></p></li><li><p><strong><span>延迟批判</span></strong><span>：创意萌芽期禁用黑帽，保护脆弱新想法（如“暂不评估可行性，先记录所有点子”）。  </span></p></li><li><p><strong><span>刻意练习</span></strong><span>：创造力是可通过绿帽机制训练的技能，非仅依赖天赋。  </span></p></li></ul></li><li><p><strong><span>案例解析</span></strong><span> </span></p><ul><li><p><strong><span>激发法应用</span></strong><span>：“破”(Po)汽车轮子为方形 → 引发对非圆形轮胎稳定性的技术探索；  </span></p></li><li><p><strong><span>备选路线</span></strong><span>：价格策略不仅“涨/降/维持”，可细分时段、产品线或捆绑折扣。  </span></p></li></ul></li></ul><hr/><h4 id="SummaryofSixThinkingHats"><strong><span>六顶思考帽总结</span></strong><span> </span></h4><ul><li><p><strong><span>核心优势</span></strong><span> </span></p><ol start=""><li><p><strong><span>简化复杂性</span></strong><span>：  </span></p><ul><li><p><span>每次仅处理单一思考方向，避免混乱（如会议中全员同步使用同色帽）；  </span></p></li><li><p><span>类比“地图导航”，清晰呈现所有路径后选择最优解。  </span></p></li></ul></li><li><p><strong><span>促进思维转换</span></strong><span>：  </span></p><ul><li><p><span>允许角色切换（如批判者转为创意思考者），减少自我防御；  </span></p></li><li><p><span>形式化用语降低冲突（如“请戴黑帽指出风险”替代“你总是泼冷水”）。  </span></p></li></ul></li><li><p><strong><span>共同语言构建</span></strong><span>：  </span></p><ul><li><p><span>组织内统一思维框架，提升沟通效率（如新成员快速理解“绿帽时间=创意时间”）。  </span></p></li></ul></li></ol></li><li><p><strong><span>决策流程示例</span></strong><span> </span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" lang="" spellcheck="false"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.52344px; left: 8px;"><textarea autocapitalize="off" autocorrect="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class="CodeMirror-line" role="presentation"><span role="presentation" style="padding-right: 0.1px;">蓝帽（目标设定）→ 白帽（数据整理）→ 绿帽（创意生成）→ 黄帽（价值评估）→ 黑帽（风险审核）→ 红帽（直觉选择）→ 蓝帽（行动规划）  </span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 23px;"></div><div class="CodeMirror-gutters" style="display: none; height: 23px;"></div></div></div></pre></li><li><p><strong><span>实践要点</span></strong><span> </span></p><ul><li><p><strong><span>避免滥用</span></strong><span>：  </span></p><ul><li><p><span>绿帽后需接黄/黑帽验证，防止空想；  </span></p></li><li><p><span>黑帽不可过度压制黄帽积极性。  </span></p></li></ul></li><li><p><strong><span>情感最终裁决</span></strong><span>：  </span></p><ul><li><p><span>所有理性分析终由红帽情感驱动决策（如数据支持方案A，但团队更倾向方案B的愿景）。  </span></p></li></ul></li></ul></li><li><p><strong><span>文化适应性</span></strong><span>：  </span></p><ul><li><p><span>在抵触辩论的文化中（如东亚企业），平行思考更易被接受；  </span></p></li><li><p><span>在批判传统强的环境（如法律、审计），需强调黄/绿帽的合法性。  </span></p></li></ul></li></ul><hr/><h4 id="Thecorevalueofthewholebook"><strong><span>全书核心价值</span></strong><span> </span></h4><ol start=""><li><p><strong><span>对抗思维混乱</span></strong><span>：将情感、逻辑、数据等分离处理，降低认知负荷；  </span></p></li><li><p><strong><span>提升决策质量</span></strong><span>：通过系统化探索，减少盲点与偏见；  </span></p></li><li><p><strong><span>加速共识形成</span></strong><span>：避免对抗性辩论，聚焦共同目标；  </span></p></li><li><p><strong><span>赋能创造力</span></strong><span>：为“疯狂创意”提供安全表达空间。  </span></p></li></ol><hr/><h4 id="Areviewofclassiccases"><strong><span>经典案例回顾</span></strong><span> </span></h4><ul><li><p><strong><span>别墅观察</span></strong><span>：平行思考避免视角争论，全面认知问题；  </span></p></li><li><p><strong><span>火鸡肉销量</span></strong><span>：白帽区分事实与解读，防止数据误导；  </span></p></li><li><p><strong><span>监禁政策</span></strong><span>：黑帽质疑经验相关性，推动证据核查；  </span></p></li><li><p><strong><span>方形车轮</span></strong><span>：绿帽激发技术突破可能性。  </span></p></li></ul><hr/><h4 id="Recommendedscenarios"><strong><span>适用场景推荐</span></strong><span> </span></h4><figure class="table-figure"><table><thead><tr><th><strong><span>场景</span></strong></th><th><strong><span>推荐帽序</span></strong></th><th><strong><span>关键收益</span></strong></th></tr></thead><tbody><tr><td><strong><span>战略规划</span></strong></td><td><span>蓝→白→绿→黄→黑→红→蓝</span></td><td><span>平衡创新与风险，确保落地可行性</span></td></tr><tr><td><strong><span>冲突调解</span></strong></td><td><span>红（情感释放）→白（事实澄清）→绿（解决方案）</span></td><td><span>降低情绪干扰，聚焦问题解决</span></td></tr><tr><td><strong><span>产品创新</span></strong></td><td><span>绿→黄→黑→绿（迭代）→蓝</span></td><td><span>激发创意并快速验证优化</span></td></tr><tr><td><strong><span>风险评估</span></strong></td><td><span>蓝→黑→黄→蓝</span></td><td><span>全面识别隐患，设计应对策略</span></td></tr></tbody></table></figure><hr/><h4 id="Conclusion"><strong><span>结语</span></strong><span> </span></h4><p><span>六顶思考帽通过“颜色标签”将抽象思维具象化，提供了一种高效、中立且包容的思考语言。它不仅是工具，更是促进组织智慧协同的底层操作系统——在复杂决策中化混乱为秩序，在创新探索中化约束为自由。</span></p></div></div>
+</body>
+</html>

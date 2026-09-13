@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/><meta content="width=device-width initial-scale=1" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"/><style type="text/css">html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+
+</style><title>麦肯锡高效工作法</title>
+<link href="content_note.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<button id="sidebar-toggle"></button><div id="sidebar">
+  <h2>目录</h2>
+  <ul>
+    <ul>
+        <li><a href="#McKinseysefficientworkingmethod">麦肯锡高效工作法</a></li>
+    <ul>
+            <li><a href="#Keypointsofthecopyrightpage">版权页要点</a></li>
+            <li><a href="#Prefacecorelogic">前言核心逻辑</a></li>
+    </ul>
+        <li><a href="#Chapter1TheStrongestThinkingMethodforMcKinseyConsultantsMinimizingThinkingMethod">第一章 麦肯锡顾问的最强思考法：最小化思考法</a></li>
+        <ul>
+                <li><a href="#01Decisivelygiveupunimportantwork">01 果断舍弃不重要的工作</a></li>
+                <li><a href="#02Usetheminimumstrengthtoachievethegreatestresults">02 用最小力量取得最大成果</a></li>
+                <li><a href="#03Prioritytohighvaluework">03 优先安排高价值工作</a></li>
+                <li><a href="#04AssumptionandVerificationLoop">04 假设与验证循环</a></li>
+                <li><a href="#05Overallperspectiveanddesigndrawings">05 整体视角与设计图</a></li>
+                <li><a href="#06EmptyRainUmbrellaframe">06 “空·雨·伞”框架</a></li>
+                <li><a href="#07ProcessDesignandSkillOptimization">07 流程设计与技能优化</a></li>
+        </ul>
+        <li><a href="#Chapter2McKinseyConsultantsStrongestReasoningFindingProblemsthroughAssumptions">第二章 麦肯锡顾问的最强推理：通过假设找到问题</a></li>
+        <ul>
+                <li><a href="#01Assumptiondriveswork">01 假设驱动工作</a></li>
+                <li><a href="#02Informationcollectionandverification">02 信息收集与验证</a></li>
+                <li><a href="#03MatrixAnalysisandCreativeBreakthrough">03 矩阵分析与创意突破</a></li>
+                <li><a href="#04Nonlinearthinking">04 非线性思维</a></li>
+                <li><a href="#05Theprincipleofliveism">05 现场主义原则</a></li>
+                <li><a href="#06Iterationfromzerothinkingandassumption">06 从零思考与假设迭代</a></li>
+                <li><a href="#07HypothesisExpressionandFramework">07 假设表达与框架</a></li>
+    </ul>
+            <li><a href="#SummaryMinimizethecorechainofthinkingmethod">总结：最小化思考法核心链条</a></li>
+            <li><a href="#Chapter3OveralldesignofMcKinseyConsultantWorkneedstobearrangedfromtheoverallsituation">第三章 麦肯锡顾问的整体设计：从大局需要安排工作</a></li>
+    <ul>
+                <li><a href="#01Overalldesignprinciplesandtools">01 整体设计原则与工具</a></li>
+                <li><a href="#02Singlepageoveralldesigndrawing">02 单页化整体设计图</a></li>
+                <li><a href="#03Keypointsandsidevalueoftheprocess">03 流程关键点与副价值</a></li>
+                <li><a href="#04Frameworkguaranteeefficiency3Cmodel">04 框架保障效率：3C模型</a></li>
+                <li><a href="#05Processsegmentationandbusinesssystem">05 流程细分与商业系统</a></li>
+                <li><a href="#06LogicTreeandNoOmissionThinking">06 逻辑树与无遗漏思维</a></li>
+                <li><a href="#07QuantitativeandQualitativeWorkManagement">07 定量与定性工作管理</a></li>
+                <li><a href="#08Timeawarecalibration">08 时间感知校准</a></li>
+    </ul>
+            <li><a href="#Chapter4ThecoreawarenessofMcKinseyConsultantsResultsdeterminevalue">第四章 麦肯锡顾问的核心意识：成果决定价值</a></li>
+    <ul>
+                <li><a href="#01Thedesignofresultseliminatesuselessefforts">01 成果设计消除无用功</a></li>
+                <li><a href="#023ruleandefficientexpression">02 “3”法则与高效表达</a></li>
+                <li><a href="#03Themanagersexpectationsvalue">03 管理上司期待值</a></li>
+                <li><a href="#048020RulesandQualityChoice">04 80/20法则与品质取舍</a></li>
+                <li><a href="#05Periodsettingandfragmenttime">05 期限设定与碎片时间</a></li>
+    </ul>
+            <li><a href="#SummaryThecollaborativelogicofoveralldesignandresultdesign">总结：整体设计与成果设计的协同逻辑</a></li>
+            <li><a href="#Chapter5McKinseyConsultantIndepthWorkArrangementVisualizingWork">第五章 麦肯锡顾问深度工作安排术：将工作可视化</a></li>
+    <ul>
+                <li><a href="#01Threestepstoscheduleaworksheet">01 工作表安排的三个步骤</a></li>
+                <li><a href="#02Focusonimprovingthevalueby10times">02 集中精力提升10倍价值的工作</a></li>
+                <li><a href="#03Overallimprovementtakesprecedenceoverlocaloptimization">03 整体改善优先于局部优化</a></li>
+                <li><a href="#04Breakthroughimprovementsdrivenbyinspirationacrossindustries">04 跨行业灵感驱动突破性改善</a></li>
+    </ul>
+            <li><a href="#Chapter6McKinseyConsultantsDailyHabitsAlwaysKeepYourFeetSharp">第六章 麦肯锡顾问的日常习惯：时刻保持五官的敏锐</a></li>
+    <ul>
+                <li><a href="#01FiveSensesandCreativeInspiration">01 五感敏锐与创意激发</a></li>
+                <li><a href="#02Workrhythmisrelaxedandrelaxed">02 工作节奏张弛有度</a></li>
+                <li><a href="#03Developstrategicplansbasedonyears">03 以年为单位制定战略计划</a></li>
+                <li><a href="#0420minutesofquiettimeeveryday">04 每日20分钟“安静时间”</a></li>
+                <li><a href="#05Singletaskandmultitaskworkstrategies">05 单任务型与多任务型工作策略</a></li>
+                <li><a href="#06OrganizingnotebooksThinkingandTaskManagementTools">06 整理笔记本：思维与任务管理工具</a></li>
+                </ul>
+</div>
+<script src="sidebar.js"></script>
+    
+    
+    
+    <div class="typora-export-content">
+<div class="" id="write"><h2 id="McKinseysefficientworkingmethod"><span>麦肯锡高效工作法</span></h2><h3 id="Keypointsofthecopyrightpage"><strong><span>版权页要点</span></strong><span> </span></h3><ul><li><p><strong><span>时间管理原则</span></strong><span>：预估时间×2以应对不确定性；  </span></p></li><li><p><strong><span>工作安排三核心</span></strong><span>：  </span></p><ol start=""><li><p><span>聚焦价值核心；  </span></p></li><li><p><span>优化整体效率；  </span></p></li><li><p><span>实现关键突破。  </span></p></li></ol></li></ul><hr/><h3 id="Prefacecorelogic"><strong><span>前言核心逻辑</span></strong><span> </span></h3><ul><li><p><strong><span>顾问核心能力</span></strong><span>：深度理解客户行业，提供颠覆性解决方案；  </span></p></li><li><p><strong><span>最小化思考法定义</span></strong><span>：  </span></p><ul><li><p><span>以最小资源投入创造最大价值；  </span></p></li><li><p><strong><span>核心逻辑</span></strong><span>：成果在行动前已由价值选择和假设决定。  </span></p></li></ul></li></ul><hr/><h2 id="Chapter1TheStrongestThinkingMethodforMcKinseyConsultantsMinimizingThinkingMethod"><strong><span>第一章 麦肯锡顾问的最强思考法：最小化思考法</span></strong><span> </span></h2><hr/><h4 id="01Decisivelygiveupunimportantwork"><strong><span>01 果断舍弃不重要的工作</span></strong><span> </span></h4><ul><li><p><strong><span>核心原则</span></strong><span>：  </span></p><ul><li><p><strong><span>聚焦法则</span></strong><span>：仅保留20%高价值任务，舍弃80%低效工作；  </span></p></li><li><p><strong><span>德鲁克观点</span></strong><span>：“一次只做一件事”是高效核心。  </span></p></li></ul></li><li><p><strong><span>反例警示</span></strong><span>：  </span></p><ul><li><p><span>任务分散导致资源浪费（如同时处理5个项目→成果平庸）。  </span></p></li></ul></li></ul><hr/><h4 id="02Usetheminimumstrengthtoachievethegreatestresults"><strong><span>02 用最小力量取得最大成果</span></strong><span> </span></h4><ul><li><p><strong><span>品质与效率的统一</span></strong><span>：  </span></p><ul><li><p><strong><span>高品质标准</span></strong><span>：独创性行动（如定制化客户解决方案）；  </span></p></li><li><p><strong><span>高效率标准</span></strong><span>：快速定位问题→解决（如1小时内完成竞品分析）。  </span></p></li></ul></li><li><p><strong><span>工具应用</span></strong><span>：  </span></p><ul><li><p><span>甘特图规划阶段任务（示意图需补充）；  </span></p></li><li><p><span>番茄工作法保持专注。  </span></p></li></ul><p><img alt="image-20250423202447468" referrerpolicy="no-referrer" src=".\image\McKinsey\image-20250423202447468.png"/></p></li></ul><hr/><h4 id="03Prioritytohighvaluework"><strong><span>03 优先安排高价值工作</span></strong><span> </span></h4><ul><li><p><strong><span>价值定义与挖掘</span></strong><span>：  </span></p><ul><li><p><strong><span>价值=解决痛点</span></strong><span>（如优化会议茶水提升决策效率）；  </span></p></li><li><p><strong><span>案例</span></strong><span>：行政人员通过优化打印流程节省团队日均1小时。  </span></p></li></ul></li><li><p><strong><span>价值驱动思维</span></strong><span>：  </span></p><ul><li><p><span>从“做什么”转向“创造什么价值”；  </span></p></li><li><p><strong><span>关键作用</span></strong><span>：明确价值可预判结果（如提案前已锁定客户需求）。  </span></p></li></ul></li></ul><hr/><h4 id="04AssumptionandVerificationLoop"><strong><span>04 假设与验证循环</span></strong><span> </span></h4><ul><li><p><strong><span>三步技术框架</span></strong><span>：  </span></p><ol start=""><li><p><strong><span>假设建立</span></strong><span>（例：销售技巧共享提升团队业绩）；  </span></p></li><li><p><strong><span>整体设计</span></strong><span>（分解为培训、平台搭建、数据跟踪）；  </span></p></li><li><p><strong><span>成果设计</span></strong><span>（定义KPI：销售转化率提升15%）。  </span></p></li></ol></li><li><p><strong><span>假设本质</span></strong><span>：  </span></p><ul><li><p><span>临时答案，需持续验证（如A/B测试不同销售策略）。  </span></p></li></ul></li></ul><hr/><h4 id="05Overallperspectiveanddesigndrawings"><strong><span>05 整体视角与设计图</span></strong><span> </span></h4><ul><li><p><strong><span>设计图价值</span></strong><span>：  </span></p><ul><li><p><span>避免“盲人摸象式”工作（如仅关注数据收集忽视分析）；  </span></p></li><li><p><strong><span>案例</span></strong><span>：项目延误因未预判资源冲突。  </span></p></li></ul></li><li><p><strong><span>关键工具</span></strong><span>：  </span></p><ul><li><p><span>思维导图梳理任务关联性；  </span></p></li><li><p><span>流程图识别关键路径。  </span></p></li></ul></li></ul><hr/><h4 id="06EmptyRainUmbrellaframe"><strong><span>06 “空·雨·伞”框架</span></strong><span> </span></h4><ul><li><p><strong><span>三步分析法</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>步骤</span></strong></th><th><strong><span>内容</span></strong></th><th><strong><span>案例</span></strong></th></tr></thead><tbody><tr><td><strong><span>空</span></strong></td><td><span>事实（数据/现象）</span></td><td><span>中年男性客户复购率低于行业均值</span></td></tr><tr><td><strong><span>雨</span></strong></td><td><span>解释（问题本质）</span></td><td><span>产品定位不符合该群体需求</span></td></tr><tr><td><strong><span>伞</span></strong></td><td><span>行动（解决方案）</span></td><td><span>开发健康主题新品并调整营销话术</span></td></tr></tbody></table></figure></li><li><p><strong><span>成果设计</span></strong><span>：框架强制结构化思考，避免逻辑漏洞。  </span></p></li></ul><p><img alt="image-20250423203143269" referrerpolicy="no-referrer" src=".\image\McKinsey\image-20250423203143269.png"/></p><hr/><h4 id="07ProcessDesignandSkillOptimization"><strong><span>07 流程设计与技能优化</span></strong><span> </span></h4><ul><li><p><strong><span>双维度工作安排</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>类型</span></strong></th><th><strong><span>重点</span></strong></th><th><strong><span>案例</span></strong></th></tr></thead><tbody><tr><td><strong><span>流程设计</span></strong></td><td><span>最短路径实现目标</span></td><td><span>销售流程：需求分析→方案定制→谈判</span></td></tr><tr><td><strong><span>技能优化</span></strong></td><td><span>单点效率突破</span></td><td><span>Excel宏提升数据处理速度50%</span></td></tr></tbody></table></figure></li><li><p><strong><span>误区警示</span></strong><span>：仅优化单点技能（如PPT美化）无法解决系统低效。  </span></p></li></ul><hr/><h2 id="Chapter2McKinseyConsultantsStrongestReasoningFindingProblemsthroughAssumptions"><strong><span>第二章 麦肯锡顾问的最强推理：通过假设找到问题</span></strong><span> </span></h2><hr/><h4 id="01Assumptiondriveswork"><strong><span>01 假设驱动工作</span></strong><span> </span></h4><ul><li><p><strong><span>假设的价值</span></strong><span>：  </span></p><ul><li><p><span>将模糊问题具体化（例：“用户流失”→“付费流程复杂导致流失”）；  </span></p></li><li><p><strong><span>反例</span></strong><span>：无假设→盲目收集100页无效数据。  </span></p></li></ul></li><li><p><strong><span>验证逻辑</span></strong><span>：  </span></p><ul><li><p><span>即使错误假设也能推进认知（如验证“价格过高”假设→发现真实痛点为服务响应慢）。  </span></p></li></ul></li></ul><hr/><h4 id="02Informationcollectionandverification"><strong><span>02 信息收集与验证</span></strong><span> </span></h4><ul><li><p><strong><span>高质量信息源</span></strong><span>：  </span></p><ul><li><p><strong><span>第一手信息</span></strong><span>：客户现场观察、深度访谈（15人样本法则）；  </span></p></li><li><p><strong><span>二手信息批判</span></strong><span>：网络数据需追问“So What？”（如行业报告→提取细分市场机会）。  </span></p></li></ul></li><li><p><strong><span>提问技术</span></strong><span>：  </span></p><ul><li><p><span>假设先行（例：“中年男性偏好低糖食品”假设→设计10个针对性问题）；  </span></p></li><li><p><span>30分钟快速验证模型。  </span></p></li></ul></li></ul><hr/><h4 id="03MatrixAnalysisandCreativeBreakthrough"><strong><span>03 矩阵分析与创意突破</span></strong><span> </span></h4><ul><li><p><strong><span>矩阵应用</span></strong><span>：  </span></p><ul><li><p><strong><span>双轴设定</span></strong><span>（如用户年龄 vs. 消费频率）；  </span></p></li><li><p><strong><span>案例</span></strong><span>：定位空白市场（高频消费的老年群体未被满足）。  </span></p></li></ul></li><li><p><strong><span>数据支撑</span></strong><span>：矩阵需结合实地调研（如竞品店铺蹲点统计）。  </span></p></li></ul><p><img alt="image-20250423203612162" referrerpolicy="no-referrer" src=".\image\McKinsey\image-20250423203612162.png"/></p><hr/><h4 id="04Nonlinearthinking"><strong><span>04 非线性思维</span></strong><span> </span></h4><ul><li><p><strong><span>创意生成机制</span></strong><span>：  </span></p><ul><li><p><span>跨领域联想（例：电商物流经验→优化医院药品配送）；  </span></p></li><li><p><strong><span>积累策略</span></strong><span>：日常接触多元信息（如科技+人文领域内容）。  </span></p></li></ul></li><li><p><strong><span>工具应用</span></strong><span>：  </span></p><ul><li><p><span>灵感笔记随时记录；  </span></p></li><li><p><span>月度跨行业案例研究。  </span></p></li></ul></li></ul><hr/><h4 id="05Theprincipleofliveism"><strong><span>05 现场主义原则</span></strong><span> </span></h4><ul><li><p><strong><span>信息验证铁律</span></strong><span>：  </span></p><ul><li><p><span>网络数据仅为线索（如电商评论→线下体验产品真实使用场景）；  </span></p></li><li><p><strong><span>反例</span></strong><span>：依赖二手报告→误判市场趋势。  </span></p></li></ul></li><li><p><strong><span>执行方法</span></strong><span>：  </span></p><ul><li><p><span>每周2次客户现场拜访；  </span></p></li><li><p><span>竞品实际试用（如购买3款竞品分析用户体验）。  </span></p></li></ul></li></ul><hr/><h4 id="06Iterationfromzerothinkingandassumption"><strong><span>06 从零思考与假设迭代</span></strong><span> </span></h4><ul><li><p><strong><span>原点思考法</span></strong><span>：  </span></p><ul><li><p><span>追问“真正问题是什么？”（例：销售额下降→真因是渠道冲突而非产品力）；  </span></p></li><li><p><strong><span>工具</span></strong><span>：5Why分析法连续追问。  </span></p></li></ul></li><li><p><strong><span>假设迭代</span></strong><span>：  </span></p><ul><li><p><span>允许失败（例：3次假设修正锁定真因）；  </span></p></li><li><p><span>平衡执着与开放（如保留20%精力探索其他可能性）。  </span></p></li></ul></li></ul><hr/><h4 id="07HypothesisExpressionandFramework"><strong><span>07 假设表达与框架</span></strong><span> </span></h4><ul><li><p><strong><span>标准化表达</span></strong><span>：  </span></p><ul><li><p><span>一句话公式：【用户群体】+【需求】+【解决方案】</span><br/><span>（例：“中年男性商务人士需健康零食提升办公体验”）；  </span></p></li></ul></li><li><p><strong><span>框架加速思考</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>框架类型</span></strong></th><th><strong><span>应用场景</span></strong></th><th><strong><span>案例</span></strong></th></tr></thead><tbody><tr><td><strong><span>SWOT</span></strong></td><td><span>战略分析</span></td><td><span>新市场进入风险评估</span></td></tr><tr><td><strong><span>PDCA</span></strong></td><td><span>流程优化</span></td><td><span>客户投诉处理周期缩短</span></td></tr><tr><td><strong><span>用户旅程图</span></strong></td><td><span>体验设计</span></td><td><span>优化APP注册转化率</span></td></tr></tbody></table></figure></li></ul><hr/><h3 id="SummaryMinimizethecorechainofthinkingmethod"><strong><span>总结：最小化思考法核心链条</span></strong><span> </span></h3><ol start=""><li><p><strong><span>价值锚定</span></strong><span>：通过“空·雨·伞”明确核心问题；  </span></p></li><li><p><strong><span>假设驱动</span></strong><span>：快速建立-验证-修正循环；  </span></p></li><li><p><strong><span>全局把控</span></strong><span>：流程设计避免碎片化执行；  </span></p></li><li><p><strong><span>信息批判</span></strong><span>：现场主义原则+非线性思维。  </span></p></li></ol><p><span>（注：原文图片路径需替换为实际图表说明。）</span></p><h3 id="Chapter3OveralldesignofMcKinseyConsultantWorkneedstobearrangedfromtheoverallsituation"><span>第三章 麦肯锡顾问的整体设计：从大局需要安排工作</span></h3><hr/><h4 id="01Overalldesignprinciplesandtools"><strong><span>01 整体设计原则与工具</span></strong><span> </span></h4><ul><li><p><strong><span>核心逻辑</span></strong><span>：  </span></p><ul><li><p><span>以最终成果物逆推任务流程，避免“盲人摸象”式工作；  </span></p></li><li><p><strong><span>工具</span></strong><span>：生产进度表（甘特图）可视化时间与任务节点。  </span></p></li></ul></li><li><p><strong><span>设计图四要素</span></strong><span>：  </span></p><ol start=""><li><p><span>全盘覆盖必要作业；  </span></p></li><li><p><span>明确阶段期限；  </span></p></li><li><p><span>单页化呈现；  </span></p></li><li><p><span>标注最终成果物（如市场分析报告）。  </span></p></li></ol></li><li><p><strong><span>案例</span></strong><span>：  </span></p><ul><li><p><span>未使用设计图→项目因资源冲突延误；  </span></p></li><li><p><span>使用设计图→提前识别风险，调整优先级。  </span></p></li></ul><p> </p></li></ul><hr/><h4 id="02Singlepageoveralldesigndrawing"><strong><span>02 单页化整体设计图</span></strong><span> </span></h4><ul><li><p><strong><span>执行步骤</span></strong><span>：  </span></p><ol start=""><li><p><span>汇总多项目任务至单页（例：A项目调研+B项目方案设计）；  </span></p></li><li><p><span>每日开工前筛选当日高优先级任务（紧急度+耗时性）；  </span></p></li><li><p><span>优先处理临近期限任务（如客户提案终稿需3天内提交）。  </span></p></li></ol></li><li><p><strong><span>优势</span></strong><span>：  </span></p><ul><li><p><span>避免多任务管理混乱；  </span></p></li><li><p><span>快速定位瓶颈任务（如数据清洗占整体时间40%）。  </span></p></li></ul><p><img alt="image-20250423204059393" referrerpolicy="no-referrer" src=".\image\McKinsey\image-20250423204059393.png"/></p></li></ul><hr/><h4 id="03Keypointsandsidevalueoftheprocess"><strong><span>03 流程关键点与副价值</span></strong><span> </span></h4><ul><li><p><strong><span>副价值理论</span></strong><span>：  </span></p><ul><li><p><span>最终价值由阶段成果累积（例：提高销量=市场分析+策略制定+执行验证）；  </span></p></li><li><p><strong><span>检查点设定</span></strong><span>：各阶段需达标副价值（如市场分析阶段输出用户画像）。  </span></p></li></ul></li><li><p><strong><span>反例警示</span></strong><span>：  </span></p><ul><li><p><span>跳过需求调研→方案偏离客户实际需求→返工。  </span></p></li></ul><p><img alt="image-20250423204223568" referrerpolicy="no-referrer" src=".\image\McKinsey\image-20250423204223568.png"/></p></li></ul><hr/><h4 id="04Frameworkguaranteeefficiency3Cmodel"><strong><span>04 框架保障效率：3C模型</span></strong><span> </span></h4><ul><li><p><strong><span>3C框架应用</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>维度</span></strong></th><th><strong><span>分析内容</span></strong></th><th><strong><span>案例（智能手机行业）</span></strong></th></tr></thead><tbody><tr><td><strong><span>顾客</span></strong></td><td><span>市场规模、需求趋势</span></td><td><span>过去5年销量年增12%</span></td></tr><tr><td><strong><span>竞争对手</span></strong></td><td><span>竞品策略、市场份额</span></td><td><span>某竞品Q2市占率提升至25%</span></td></tr><tr><td><strong><span>自己公司</span></strong></td><td><span>优势、劣势、资源匹配度</span></td><td><span>技术领先但渠道覆盖率不足</span></td></tr></tbody></table></figure></li><li><p><strong><span>作用</span></strong><span>：  </span></p><ul><li><p><span>限定信息收集范围，避免冗余（如仅收集3C相关数据）；  </span></p></li><li><p><span>标准化分析流程，降低遗漏风险。  </span></p></li></ul><p><img alt="image-20250423204329789" referrerpolicy="no-referrer" src=".\image\McKinsey\image-20250423204329789.png"/></p></li></ul><hr/><h4 id="05Processsegmentationandbusinesssystem"><strong><span>05 流程细分与商业系统</span></strong><span> </span></h4><ul><li><p><strong><span>商业系统框架</span></strong><span>：  </span></p><ul><li><p><strong><span>流程分解</span></strong><span>：商品开发→制造→营销→物流→销售→售后；  </span></p></li><li><p><strong><span>细分价值</span></strong><span>：  </span></p><ul><li><p><span>识别关键环节（例：营销阶段需竞品对比分析）；  </span></p></li><li><p><span>避免笼统归类（如“销售”拆解为需求挖掘、方案定制、谈判）。  </span></p></li></ul></li></ul></li><li><p><strong><span>首次任务处理</span></strong><span>：  </span></p><ul><li><p><span>初稿设计图允许遗漏→提交上司审核→迭代完善（如补充风险预案）。  </span></p></li></ul></li></ul><hr/><h4 id="06LogicTreeandNoOmissionThinking"><strong><span>06 逻辑树与无遗漏思维</span></strong><span> </span></h4><ul><li><p><strong><span>逻辑树应用</span></strong><span>：  </span></p><ul><li><p><strong><span>问题分解</span></strong><span>：销售额下降→产品力不足/渠道失效/用户流失；  </span></p></li><li><p><strong><span>执行步骤</span></strong><span>：  </span></p><ol start=""><li><p><span>列出所有可能因素；  </span></p></li><li><p><span>排除重复项；  </span></p></li><li><p><span>聚焦高概率真因（如用户流失因服务响应慢）。  </span></p></li></ol></li></ul></li></ul><hr/><h4 id="07QuantitativeandQualitativeWorkManagement"><strong><span>07 定量与定性工作管理</span></strong><span> </span></h4><ul><li><p><strong><span>分类与策略</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>类型</span></strong></th><th><strong><span>特点</span></strong></th><th><strong><span>优化方法</span></strong></th></tr></thead><tbody><tr><td><strong><span>定量工作</span></strong></td><td><span>重复性强、耗时固定</span></td><td><span>自动化工具（如Excel宏提速50%）</span></td></tr><tr><td><strong><span>定性工作</span></strong></td><td><span>创意需求高、结果不确定</span></td><td><span>模板化（如提案框架：背景+方案+收益）</span></td></tr></tbody></table></figure></li><li><p><strong><span>时间分配</span></strong><span>：  </span></p><ul><li><p><span>定量工作优先保证时间（如数据录入）；  </span></p></li><li><p><span>定性工作预留弹性（如策略讨论需2小时专注时段）。  </span></p></li></ul></li></ul><hr/><h4 id="08Timeawarecalibration"><strong><span>08 时间感知校准</span></strong><span> </span></h4><ul><li><p><strong><span>常见误区</span></strong><span>：  </span></p><ul><li><p><span>混淆“应做”与“想做”（例：花3小时美化PPT而非优化内容）；  </span></p></li><li><p><span>乐观估算（如认为报告撰写仅需2小时→实际耗时6小时）。  </span></p></li></ul></li><li><p><strong><span>校准方法</span></strong><span>：  </span></p><ul><li><p><span>新手：预估时间×2；  </span></p></li><li><p><span>经验者：记录实际耗时，建立个人时间数据库。  </span></p></li></ul></li></ul><hr/><h3 id="Chapter4ThecoreawarenessofMcKinseyConsultantsResultsdeterminevalue"><strong><span>第四章 麦肯锡顾问的核心意识：成果决定价值</span></strong><span> </span></h3><hr/><h4 id="01Thedesignofresultseliminatesuselessefforts"><strong><span>01 成果设计消除无用功</span></strong><span> </span></h4><ul><li><p><strong><span>成果设计定义</span></strong><span>：  </span></p><ul><li><p><span>明确最终输出物标准（例：市场报告需包含3个竞品对比+5年趋势图）；  </span></p></li></ul></li><li><p><strong><span>案例对比</span></strong><span>：  </span></p><ul><li><p><span>无目标→收集100页无关数据；  </span></p></li><li><p><span>有目标→仅收集关键竞品数据，3天完成报告。  </span></p></li></ul></li></ul><hr/><h4 id="023ruleandefficientexpression"><strong><span>02 “3”法则与高效表达</span></strong><span> </span></h4><ul><li><p><strong><span>结构化表达</span></strong><span>：  </span></p><ul><li><p><strong><span>资料制作</span></strong><span>：3核心观点，每点3子项（例：新品推广策略→定价+渠道+宣传）；  </span></p></li><li><p><strong><span>提案逻辑</span></strong><span>：主张+3个支撑依据（如“拓展老年市场”需人口数据、消费调研、竞品空白）。  </span></p></li></ul></li><li><p><strong><span>优势</span></strong><span>：降低听众认知负荷，提升决策效率。  </span></p></li></ul><hr/><h4 id="03Themanagersexpectationsvalue"><strong><span>03 管理上司期待值</span></strong><span> </span></h4><ul><li><p><strong><span>沟通框架</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>要素</span></strong></th><th><strong><span>内容</span></strong></th><th><strong><span>案例（企划书需求）</span></strong></th></tr></thead><tbody><tr><td><strong><span>难度</span></strong></td><td><span>任务复杂程度</span></td><td><span>需包含财务测算与风险评估</span></td></tr><tr><td><strong><span>背景</span></strong></td><td><span>任务目标与关联影响</span></td><td><span>为Q4市场扩张提供依据</span></td></tr><tr><td><strong><span>期限</span></strong></td><td><span>明确截止时间</span></td><td><span>下周三18:00前提交初稿</span></td></tr></tbody></table></figure></li><li><p><strong><span>反例</span></strong><span>：模糊指令（“做个方案”）→成果不符预期→重复修改。  </span></p></li></ul><hr/><h4 id="048020RulesandQualityChoice"><strong><span>04 80/20法则与品质取舍</span></strong><span> </span></h4><ul><li><p><strong><span>执行策略</span></strong><span>：  </span></p><ul><li><p><strong><span>80%品质</span></strong><span>：快速交付可用成果（例：原型图初稿）；  </span></p></li><li><p><strong><span>100%品质</span></strong><span>：仅限关键任务（如客户终版提案）。  </span></p></li></ul></li><li><p><strong><span>验证驱动</span></strong><span>：  </span></p><ul><li><p><span>假设先行（例：“价格敏感是主因”→快速抽样验证）；  </span></p></li><li><p><span>避免过度打磨（如PPT动画耗时3小时仅提升观感5%）。  </span></p></li></ul></li></ul><hr/><h4 id="05Periodsettingandfragmenttime"><strong><span>05 期限设定与碎片时间</span></strong><span> </span></h4><ul><li><p><strong><span>期限效应应用</span></strong><span>：  </span></p><ul><li><p><strong><span>长任务</span></strong><span>：拆解为子任务并设截止点（如报告分3部分，每部分限时2小时）；  </span></p></li><li><p><strong><span>碎片时间</span></strong><span>：定义微任务（5分钟回复邮件/10分钟整理会议纪要）。  </span></p></li></ul></li><li><p><strong><span>紧急任务处理</span></strong><span>：  </span></p><ul><li><p><span>不重要但紧急：效率优先（例：5分钟填报销单）；  </span></p></li><li><p><span>重要且紧急：短时限+专注冲刺（如1小时完成提案大纲）。  </span></p></li></ul></li></ul><hr/><h3 id="SummaryThecollaborativelogicofoveralldesignandresultdesign"><strong><span>总结：整体设计与成果设计的协同逻辑</span></strong><span> </span></h3><ol start=""><li><p><strong><span>全局把控</span></strong><span>：通过框架（3C、逻辑树）与流程设计避免盲点；  </span></p></li><li><p><strong><span>阶段控制</span></strong><span>：以副价值为检查点，确保各环节质量；  </span></p></li><li><p><strong><span>成果导向</span></strong><span>：明确输出物标准，平衡品质与效率（80/20法则）；  </span></p></li><li><p><strong><span>时间管理</span></strong><span>：期限效应+碎片利用提升执行力。  </span></p></li></ol><p><span>（注：原文图片路径需替换为实际图表说明。）</span></p><h3 id="Chapter5McKinseyConsultantIndepthWorkArrangementVisualizingWork"><strong><span>第五章 麦肯锡顾问深度工作安排术：将工作可视化</span></strong><span> </span></h3><hr/><h4 id="01Threestepstoscheduleaworksheet"><strong><span>01 工作表安排的三个步骤</span></strong><span> </span></h4><ul><li><p><strong><span>“商业系统型”工作法</span></strong><span>：  </span></p><ol start=""><li><p><strong><span>流程</span></strong><span>：明确创造价值的整体流程（如“发现行业成功模式”）；  </span></p></li><li><p><strong><span>分解</span></strong><span>：将流程拆分为关键阶段（如“确认目的→成果物→假设→调查→制作成果物”）；  </span></p></li><li><p><strong><span>要素</span></strong><span>：列举各阶段具体作业（如调研方法、数据分析工具选择）。  </span></p></li></ol></li><li><p><strong><span>可视化工具</span></strong><span>：  </span></p><ul><li><p><span>使用流程图或甘特图（示意图需补充实际内容），确保作业顺序和时间节点清晰。  </span></p></li></ul><p><img alt="image-20250423204942158" referrerpolicy="no-referrer" src=".\image\McKinsey\image-20250423204942158.png"/></p></li></ul><hr/><h4 id="02Focusonimprovingthevalueby10times"><strong><span>02 集中精力提升10倍价值的工作</span></strong><span> </span></h4><ul><li><p><strong><span>案例：销售效率革命</span></strong><span>：  </span></p><ul><li><p><strong><span>现状</span></strong><span>：普通销售成功率20%，你的成功率60%；  </span></p></li><li><p><strong><span>优化策略</span></strong><span>：  </span></p><ol start=""><li><p><strong><span>分工</span></strong><span>：将非核心作业（预约、资料制作）交给他人，专注现场谈判；  </span></p></li><li><p><strong><span>规模化</span></strong><span>：团队拜访客户量翻倍（200人/月），总成交率提升至120%；  </span></p></li><li><p><strong><span>培训</span></strong><span>：传授经验使团队成功率提升至40%，整体效率翻倍。  </span></p></li></ol></li></ul></li><li><p><strong><span>核心原则</span></strong><span>：  </span></p><ul><li><p><strong><span>20/80法则</span></strong><span>：80%精力投入20%高价值任务（如关键客户谈判）。  </span></p></li></ul></li></ul><hr/><h4 id="03Overallimprovementtakesprecedenceoverlocaloptimization"><strong><span>03 整体改善优先于局部优化</span></strong><span> </span></h4><ul><li><p><strong><span>改善方向</span></strong><span>：  </span></p><ul><li><p><strong><span>识别瓶颈</span></strong><span>：耗时最长、影响全局的作业（如数据分析耗时影响报告进度）；  </span></p></li><li><p><strong><span>工数占比</span></strong><span>：统计耗时占比高的任务（如调研占60%时间）。  </span></p></li></ul></li><li><p><strong><span>优化策略</span></strong><span>：  </span></p><ul><li><p><strong><span>技术投资</span></strong><span>：引入自动化工具缩短数据处理时间；  </span></p></li><li><p><strong><span>流程重组</span></strong><span>：合并重复步骤（如将数据收集与初步分析同步进行）。  </span></p></li></ul></li><li><p><strong><span>反例警示</span></strong><span>：仅优化单一环节（如提升PPT制作速度）无法解决整体效率低下。  </span></p></li></ul><hr/><h4 id="04Breakthroughimprovementsdrivenbyinspirationacrossindustries"><strong><span>04 跨行业灵感驱动突破性改善</span></strong><span> </span></h4><ul><li><p><strong><span>方法论</span></strong><span>：  </span></p><ul><li><p><strong><span>类比思维</span></strong><span>：借鉴其他行业模式（如餐饮业快速服务流程应用于客户响应）；  </span></p></li><li><p><strong><span>案例参考</span></strong><span>：医疗行业的分诊制度→优化客户问题优先级处理。  </span></p></li></ul></li><li><p><strong><span>执行步骤</span></strong><span>：  </span></p><ol start=""><li><p><span>研究目标行业标杆案例；  </span></p></li><li><p><span>提取可迁移的核心逻辑；  </span></p></li><li><p><span>结合自身场景调整落地。  </span></p></li></ol></li></ul><hr/><h3 id="Chapter6McKinseyConsultantsDailyHabitsAlwaysKeepYourFeetSharp"><strong><span>第六章 麦肯锡顾问的日常习惯：时刻保持五官的敏锐</span></strong><span> </span></h3><hr/><h4 id="01FiveSensesandCreativeInspiration"><strong><span>01 五感敏锐与创意激发</span></strong><span> </span></h4><ul><li><p><strong><span>生活习惯</span></strong><span>：  </span></p><ul><li><p><strong><span>高品质睡眠</span></strong><span>：固定作息时间，保证7小时深度睡眠；  </span></p></li><li><p><strong><span>散步习惯</span></strong><span>：每日早晨散步30分钟，促进血清素分泌，提升专注力。  </span></p></li></ul></li><li><p><strong><span>科学依据</span></strong><span>：  </span></p><ul><li><p><span>血清素提高情绪稳定性，降低决策疲劳；  </span></p></li><li><p><span>自然光照调节生物钟，增强大脑活跃度。  </span></p></li></ul></li></ul><hr/><h4 id="02Workrhythmisrelaxedandrelaxed"><strong><span>02 工作节奏张弛有度</span></strong><span> </span></h4><ul><li><p><strong><span>时间管理策略</span></strong><span>：  </span></p><ul><li><p><strong><span>早睡早起</span></strong><span>：早晨处理高脑力任务（如策略制定）；  </span></p></li><li><p><strong><span>输入输出平衡</span></strong><span>：  </span></p><ul><li><p><span>输入：每周阅读行业报告、参加专业培训；  </span></p></li><li><p><span>输出：每日总结工作成果，提炼方法论。  </span></p></li></ul></li><li><p><strong><span>锁定休息日</span></strong><span>：周末完全脱离工作，进行兴趣活动（如运动、艺术）。  </span></p></li></ul></li></ul><hr/><h4 id="03Developstrategicplansbasedonyears"><strong><span>03 以年为单位制定战略计划</span></strong><span> </span></h4><ul><li><p><strong><span>长期目标分解</span></strong><span>：  </span></p><ul><li><p><strong><span>案例：3年创业计划</span></strong><span>：  </span></p><ul><li><p><strong><span>第1年</span></strong><span>：掌握核心技能（如财务管理、市场分析）；  </span></p></li><li><p><strong><span>第2年</span></strong><span>：积累30名潜在客户；  </span></p></li><li><p><strong><span>第3年</span></strong><span>：完成商业模式验证。  </span></p></li></ul></li></ul></li><li><p><strong><span>执行工具</span></strong><span>：  </span></p><ul><li><p><strong><span>月度挂历</span></strong><span>：标注关键里程碑（如客户签约节点），每日卫生间查看。  </span></p></li></ul></li></ul><hr/><h4 id="0420minutesofquiettimeeveryday"><strong><span>04 每日20分钟“安静时间”</span></strong><span> </span></h4><ul><li><p><strong><span>实践方法</span></strong><span>：  </span></p><ul><li><p><strong><span>冥想/放空</span></strong><span>：关闭电子设备，静坐或闭目养神；  </span></p></li><li><p><strong><span>环境隔离</span></strong><span>：选择无干扰空间（如会议室角落、家中书房）。  </span></p></li></ul></li><li><p><strong><span>作用机制</span></strong><span>：  </span></p><ul><li><p><span>大脑默认模式网络激活，促进跨领域信息连接；  </span></p></li><li><p><span>非线性思考（如灵感迸发）在放松状态下更易触发。  </span></p></li></ul></li></ul><hr/><h4 id="05Singletaskandmultitaskworkstrategies"><strong><span>05 单任务型与多任务型工作策略</span></strong><span> </span></h4><ul><li><p><strong><span>类型对比与策略</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>类型</span></strong></th><th><strong><span>优势</span></strong></th><th><strong><span>劣势</span></strong></th><th><strong><span>优化策略</span></strong></th></tr></thead><tbody><tr><td><strong><span>单任务型</span></strong></td><td><span>高专注力，品质稳定</span></td><td><span>效率低，多任务易焦虑</span></td><td><span>80/20法则，聚焦核心任务</span></td></tr><tr><td><strong><span>多任务型</span></strong></td><td><span>处理速度快，灵活性强</span></td><td><span>易半途而废，品质波动</span></td><td><span>优先级排序，关键任务单线程处理</span></td></tr></tbody></table></figure></li></ul><hr/><h4 id="06OrganizingnotebooksThinkingandTaskManagementTools"><strong><span>06 整理笔记本：思维与任务管理工具</span></strong><span> </span></h4><ul><li><p><strong><span>笔记本功能</span></strong><span>：  </span></p><ul><li><p><strong><span>灵感记录</span></strong><span>：随时捕捉碎片化创意；  </span></p></li><li><p><strong><span>任务分解</span></strong><span>：将大项目拆解为可执行步骤（如“客户调研→数据清洗→分析建模”）；  </span></p></li><li><p><strong><span>进度追踪</span></strong><span>：每日勾选完成项，可视化成就感。  </span></p></li></ul></li><li><p><strong><span>结构示例</span></strong><span>（示意图需补充实际内容）：  </span></p><ul><li><p><span>左侧：待办事项清单；  </span></p></li><li><p><span>右侧：灵感区与关键指标记录。  </span></p></li></ul></li></ul><p><img alt="image-20250423205215396" referrerpolicy="no-referrer" src=".\image\McKinsey\image-20250423205215396.png"/></p></div></div>
+</body>
+</html>

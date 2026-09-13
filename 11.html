@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>全自由度骨骼链绑定-最终版</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css" />
+  <style>
+    /* --- 1. 全局设置 --- */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+      touch-action: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    #scene {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    /* --- 背景结构 --- */
+    #bg-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .bg-layer-common {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('fireworks/background.png');
+      /* 请替换背景图 */
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+    }
+
+    #bg-blurred {
+      filter: blur(15px);
+      transform: scale(1.05);
+    }
+
+    #bg-sharp-mask {
+      --mask-x: 50%;
+      --mask-y: 80%;
+      -webkit-mask-image: radial-gradient(circle at var(--mask-x) var(--mask-y), black 0%, black 150px, transparent 250px);
+      mask-image: radial-gradient(circle at var(--mask-x) var(--mask-y), black 0%, black 150px, transparent 250px);
+      will-change: mask-image, -webkit-mask-image;
+    }
+
+    /* --- 【新增】烟花特效元素 --- */
+    /* 上升的尾迹 */
+    #firework-trail {
+      position: absolute;
+      width: 3px;
+      height: 30px;
+      /* 金黄色渐变发光 */
+      background: linear-gradient(to top, rgba(210, 181, 73, 0), #fff7cc, #ffffff);
+      box-shadow: 0 0 15px #ffdd55, 0 0 30px #ffffff;
+      border-radius: 50% 50% 0 0;
+      /* 在角色后面，背景前面 */
+      z-index: 5;
+      pointer-events: none;
+      display: none;
+      transform-origin: bottom center;
+    }
+
+    /* 爆炸GIF容器 */
+    #firework-explosion {
+      position: absolute;
+      /* 居中定位 */
+      transform: translate(-50%, -50%);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 6;
+      pointer-events: none;
+      display: none;
+    }
+
+    /* --- 角色容器 (整体缩放) --- */
+    #character-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 10;
+      transform-origin: 50% 120%;
+      will-change: transform;
+    }
+
+    /* --- 2. 骨骼通用样式 --- */
+    .bone {
+      position: absolute;
+      will-change: transform, left, top, filter;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      pointer-events: none;
+    }
+
+    /* 调试用的红点 (默认关闭) */
+    .debug-dot {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+      pointer-events: none;
+      display: none;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .dot-pivot {
+      background-color: #00ff00;
+    }
+
+    .dot-link {
+      background-color: #00ffff;
+    }
+
+    .dot-torso {
+      background-color: #ff00ff;
+      border-color: white;
+    }
+
+    /* --- 3. 部件样式 --- */
+    #body-torso {
+      position: absolute;
+      width: 840px;
+      height: 900vh;
+      left: 50px;
+      background-image: url('fireworks/fullbody.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: top center;
+      z-index: 1;
+      will-change: left, top, filter;
+    }
+
+    #upper-arm {
+      background-image: url('fireworks/upperarm.png');
+      z-index: 2;
+    }
+
+    #forearm {
+      background-image: url('fireworks/lowerarm.png');
+      z-index: 3;
+    }
+
+    #hand {
+      background-image: url('fireworks/hands.png');
+      z-index: 4;
+      cursor: grab;
+      pointer-events: auto;
+      transition: filter 0.2s ease-out, transform 0.1s linear;
+    }
+
+    #hand.hand-open {
+      cursor: default;
+      z-index: 1;
+    }
+
+    .hand-blur-anim {
+      filter: blur(8px) !important;
+    }
+
+    /* --- 4. UI 元素 --- */
+    /* --- 4. UI 元素 --- */
+    #tip {
+      position: absolute;
+      bottom: 80%;
+      width: 100%;
+      text-align: center;
+
+      /* --- 关键修改：应用字体 --- */
+      font-family: "LXGW WenKai Screen", sans-serif;
+
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      /* 治愈系字体可以稍微大一点点 */
+      letter-spacing: 1px;
+      /* 增加字间距更有呼吸感 */
+
+      pointer-events: none;
+      z-index: 100;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      transition: opacity 0.3s;
+    }
+
+    #tip-1 {
+      position: absolute;
+      bottom: 75%;
+      width: 100%;
+      text-align: center;
+
+      /* --- 关键修改：应用字体 --- */
+      font-family: "LXGW WenKai Screen", sans-serif;
+
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 10px;
+      /* 治愈系字体可以稍微大一点点 */
+      letter-spacing: 1px;
+      /* 增加字间距更有呼吸感 */
+
+      pointer-events: none;
+      z-index: 100;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      transition: opacity 0.3s;
+    }
+
+    #reset-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 30px;
+      cursor: pointer;
+      z-index: 200;
+      backdrop-filter: blur(5px);
+      display: none;
+    }
+
+    #reset-btn:active {
+      background: rgba(255, 255, 255, 0.4);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="scene">
+    <div id="bg-container">
+      <div id="bg-blurred" class="bg-layer-common"></div>
+      <div id="bg-sharp-mask" class="bg-layer-common"></div>
+    </div>
+
+    <div id="firework-trail"></div>
+    <div id="firework-explosion"></div>
+
+    <div id="tip">你如果，缓缓把手举起来，<br>举到顶，<br>再突然张开五指，<br>那恭喜你，<br>你刚刚给自己放了一个烟花。</div>
+    <div id="tip-1"><br>《一次最多放两个》 杨一午</div>
+
+    <button id="reset-btn">再放一个</button>
+
+    <div id="character-container">
+      <div id="body-torso">
+        <div class="debug-dot dot-torso"></div>
+      </div>
+      <div id="upper-arm" class="bone">
+        <div class="debug-dot dot-pivot"></div>
+        <div class="debug-dot dot-link"></div>
+      </div>
+      <div id="forearm" class="bone">
+        <div class="debug-dot dot-pivot"></div>
+        <div class="debug-dot dot-link"></div>
+      </div>
+      <div id="hand" class="bone">
+        <div class="debug-dot dot-pivot"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const DEBUG_MODE = false; // 关闭调试模式以获得最佳视觉效果
+
+    const SIZES = {
+      upper: { w: 110, h: 180 },
+      fore: { w: 80, h: 185 },
+      hand: { w: 60, h: 75 },
+      handOpen: { w: 100, h: 120 }
+    };
+
+    const ASSETS_CONFIG = {
+      images: {
+        handNormal: 'fireworks/hands.png',
+        handOpen: 'fireworks/hand-open.png',
+        // 【新增】烟花爆炸GIF路径
+        explosion: 'fireworks/explosion.gif'
+      },
+      boneLengths: { upper: 150, fore: 170 },
+      anchors: {
+        upper: { pivot: { x: 15, y: 20 }, link: { x: -20, y: 160 } },
+        fore: { pivot: { x: 0, y: 20 }, link: { x: 0, y: 185 } },
+        hand: { pivot: { x: -10, y: 0 } },
+        handOpen: { pivot: { x: 8, y: 5 } }
+      },
+      torsoAnchor: { x: 140, y: 350 }
+    };
+
+    const SYS_CONFIG = {
+      shoulderXRatio: 0.15,
+      shoulderYBaseRatio: 0.95,
+      maxLift: 250,
+      fireThreshold: 0.4,
+      maxBlur: { body: 3, upper: 2, fore: 1 },
+      minScale: 0.6,
+
+      // 【新增】烟花配置
+      firework: {
+        trailDuration: 600, // 上升耗时 (毫秒)
+        explosionSize: 400,  // 爆炸GIF显示大小 (像素)
+        explosionDuration: 50000 // GIF显示时长 (毫秒)
+      }
+    };
+
+    const scene = document.getElementById('scene');
+    const bgSharpMask = document.getElementById('bg-sharp-mask');
+    const characterContainer = document.getElementById('character-container');
+    const bodyTorso = document.getElementById('body-torso');
+    const upperArm = document.getElementById('upper-arm');
+    const forearm = document.getElementById('forearm');
+    const hand = document.getElementById('hand');
+    const tip = document.getElementById('tip');
+    const tip_1 = document.getElementById('tip-1');
+
+    const resetBtn = document.getElementById('reset-btn');
+    // 获取新元素
+    const fireworkTrail = document.getElementById('firework-trail');
+    const fireworkExplosion = document.getElementById('firework-explosion');
+
+
+    let state = {
+      w: window.innerWidth, h: window.innerHeight,
+      shoulderX: 0, shoulderY: 0, targetX: 0, targetY: 0,
+      isDragging: false, hasFired: false, bodyWidth: 0,
+      bones: { upper: { length: 0, correctionAngle: 0 }, fore: { length: 0, correctionAngle: 0 } }
+    };
+
+    function init() {
+      state.w = window.innerWidth; state.h = window.innerHeight;
+      state.bodyWidth = bodyTorso.offsetWidth;
+      applySize(upperArm, SIZES.upper); applySize(forearm, SIZES.fore); applySize(hand, SIZES.hand);
+      calculateBoneGeometry('upper', SIZES.upper); calculateBoneGeometry('fore', SIZES.fore);
+
+      if (DEBUG_MODE) {
+        document.querySelectorAll('.debug-dot').forEach(el => el.style.display = 'block');
+        setDebugDot(bodyTorso, '.dot-torso', { x: ASSETS_CONFIG.torsoAnchor.x, y: ASSETS_CONFIG.torsoAnchor.y }, false);
+        setDebugDot(upperArm, '.dot-pivot', ASSETS_CONFIG.anchors.upper.pivot);
+        setDebugDot(upperArm, '.dot-link', ASSETS_CONFIG.anchors.upper.link);
+        setDebugDot(forearm, '.dot-pivot', ASSETS_CONFIG.anchors.fore.pivot);
+        setDebugDot(forearm, '.dot-link', ASSETS_CONFIG.anchors.fore.link);
+        setDebugDot(hand, '.dot-pivot', ASSETS_CONFIG.anchors.hand.pivot);
+      }
+
+      state.hasFired = false; state.isDragging = false;
+      hand.style.backgroundImage = `url('${ASSETS_CONFIG.images.handNormal}')`;
+      hand.classList.remove('hand-open'); hand.classList.remove('hand-blur-anim');
+      hand.style.filter = ''; bodyTorso.style.filter = ''; upperArm.style.filter = ''; forearm.style.filter = '';
+      characterContainer.style.transform = `scale(1)`;
+
+      // 【新增】重置烟花元素
+      fireworkTrail.style.display = 'none';
+      fireworkExplosion.style.display = 'none';
+      fireworkExplosion.style.backgroundImage = ''; // 清除GIF以确保下次重新加载
+
+      resetBtn.style.display = 'none'; tip.style.opacity = 1; tip_1.style.opacity = 1;
+      state.targetX = state.w / 2; state.targetY = state.h * 0.75;
+      updateSystem();
+    }
+
+    function updateSystem() {
+      let liftRange = state.h * 0.6;
+      let liftFactor = Math.max(0, Math.min(1, (state.h * 0.9 - state.targetY) / liftRange));
+
+      state.shoulderX = state.w * SYS_CONFIG.shoulderXRatio;
+      state.shoulderY = (state.h * SYS_CONFIG.shoulderYBaseRatio) - (liftFactor * SYS_CONFIG.maxLift);
+
+      bodyTorso.style.left = (state.shoulderX - (state.bodyWidth / 2) - ASSETS_CONFIG.torsoAnchor.x) + 'px';
+      bodyTorso.style.top = (state.shoulderY - ASSETS_CONFIG.torsoAnchor.y) + 'px';
+
+      updateVisualEffects(liftFactor);
+      solveIK(state.targetX, state.targetY);
+    }
+
+    function updateVisualEffects(factor) {
+      bodyTorso.style.filter = `blur(${factor * SYS_CONFIG.maxBlur.body}px)`;
+      upperArm.style.filter = `blur(${factor * SYS_CONFIG.maxBlur.upper}px)`;
+      forearm.style.filter = `blur(${factor * SYS_CONFIG.maxBlur.fore}px)`;
+
+      let maskYPercent = 80 - (factor * 55);
+      bgSharpMask.style.setProperty('--mask-y', maskYPercent + '%');
+
+      let currentScale = 1 - (factor * (1 - SYS_CONFIG.minScale));
+      characterContainer.style.transform = `scale(${currentScale})`;
+    }
+
+    function checkTrigger(y) {
+      if (state.hasFired) return;
+      if (y < state.h * SYS_CONFIG.fireThreshold) { fire(); }
+    }
+
+    function fire() {
+      state.hasFired = true; state.isDragging = false;
+
+      // 1. 手部动作
+      hand.classList.add('hand-blur-anim');
+      setTimeout(() => {
+        hand.style.backgroundImage = `url('${ASSETS_CONFIG.images.handOpen}')`;
+        hand.classList.add('hand-open');
+        applySize(hand, SIZES.handOpen);
+        setTimeout(() => { hand.classList.remove('hand-blur-anim'); }, 200);
+      }, 50);
+      let finalY = state.targetY - 50;
+      animateTo(finalY, 300);
+
+      // 2. 【核心新增】发射烟花 (传入当前手的位置)
+      launchFirework(state.targetX, state.targetY);
+
+      // 3. UI 更新
+      tip.style.opacity = 0;
+      tip_1.style.opacity = 0;
+
+      // 延迟显示重置按钮，等待烟花放完
+      setTimeout(() => { resetBtn.style.display = 'block'; }, SYS_CONFIG.firework.trailDuration + 500);
+    }
+
+    // 【新增】烟花发射函数
+    function launchFirework(startX, startY) {
+      // A. 准备发射点
+      fireworkTrail.style.display = 'block';
+      fireworkTrail.style.left = startX + 'px';
+      // 从手稍微靠下一点的位置发出
+      fireworkTrail.style.top = (startY - 50) + 'px';
+
+      // 目标高度 (屏幕顶部附近)
+      const targetY = state.h * 0.1;
+      const travelDist = startY - targetY;
+
+      // B. 使用 Web Animations API 执行上升动画
+      const trailAnim = fireworkTrail.animate([
+        // 初始状态
+        { top: (startY + 100) + 'px', height: '30px', opacity: 1, transform: 'scaleY(1)' },
+        // 中途拉伸 (加速感)
+        { height: '150px', opacity: 1, transform: 'scaleY(1.5)', offset: 0.8 },
+        // 终点状态 (到达顶部收缩消失)
+        { top: (targetY + 100) + 'px', height: '10px', opacity: 0, transform: 'scaleY(0.5)' }
+      ], {
+        duration: SYS_CONFIG.firework.trailDuration,
+        easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)', // easeOutQuad
+        fill: 'forwards'
+      });
+
+      // C. 动画结束时触发爆炸
+      trailAnim.onfinish = () => {
+        fireworkTrail.style.display = 'none'; // 隐藏尾迹
+
+        // 显示爆炸GIF
+        fireworkExplosion.style.display = 'block';
+        fireworkExplosion.style.left = startX + 'px';
+        fireworkExplosion.style.top = (targetY + 100) + 'px';
+        fireworkExplosion.style.width = SYS_CONFIG.firework.explosionSize + 'px';
+        fireworkExplosion.style.height = SYS_CONFIG.firework.explosionSize + 'px';
+
+        // 【关键】强制重载GIF，确保每次都从头播放
+        // 通过添加一个随机的时间戳参数来实现
+        const gifPath = `${ASSETS_CONFIG.images.explosion}?t=${new Date().getTime()}`;
+        fireworkExplosion.style.backgroundImage = `url('${gifPath}')`;
+
+        // 播放一段时间后隐藏
+        setTimeout(() => {
+          fireworkExplosion.style.display = 'none';
+        }, SYS_CONFIG.firework.explosionDuration);
+      };
+    }
+
+    function animateTo(targetY, duration) {
+      let startY = state.targetY; let startTime = null;
+      function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        let progress = Math.min((timestamp - startTime) / duration, 1);
+        state.targetY = startY + (targetY - startY) * progress;
+        updateSystem();
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    function handleInput(e) {
+      if (state.hasFired) return; if (!state.isDragging) return;
+      e.preventDefault();
+      let clientY = e.touches ? e.touches[0].clientY : e.clientX;
+      if (!e.touches) clientY = e.clientY;
+
+      state.targetX = state.w / 2; state.targetY = clientY;
+      updateSystem(); checkTrigger(clientY);
+    }
+
+    // IK / Bone Functions (保持不变)
+    function calculateBoneGeometry(name, size) {
+      const anchors = ASSETS_CONFIG.anchors[name];
+      let dx = anchors.link.x - anchors.pivot.x; let dy = anchors.link.y - anchors.pivot.y;
+      state.bones[name].length = Math.sqrt(dx * dx + dy * dy);
+      state.bones[name].correctionAngle = Math.atan2(dy, dx) - (Math.PI / 2);
+    }
+    function solveIK(tx, ty) {
+      const lenUpper = state.bones.upper.length; const lenFore = state.bones.fore.length;
+      const { shoulderX, shoulderY } = state;
+      let dx = tx - shoulderX, dy = ty - shoulderY;
+      let dist = Math.sqrt(dx * dx + dy * dy);
+      let maxReach = lenUpper + lenFore;
+      if (dist >= maxReach) {
+        dist = maxReach - 0.1; let angle = Math.atan2(dy, dx);
+        tx = shoulderX + Math.cos(angle) * dist; ty = shoulderY + Math.sin(angle) * dist;
+      }
+      let alpha = Math.atan2(dy, dx);
+      let cosA = (dist * dist + lenUpper * lenUpper - lenFore * lenFore) / (2 * dist * lenUpper);
+      let angleA = Math.acos(Math.max(-1, Math.min(1, cosA)));
+      let cosB = (lenUpper * lenUpper + lenFore * lenFore - dist * dist) / (2 * lenUpper * lenFore);
+      let angleB = Math.acos(Math.max(-1, Math.min(1, cosB)));
+      let theta1 = alpha + angleA; let theta2 = theta1 - (Math.PI - angleB);
+      const deg = 180 / Math.PI; const anchors = ASSETS_CONFIG.anchors;
+
+      let rotUpper = (theta1 * deg) - (state.bones.upper.correctionAngle * deg);
+      setBone(upperArm, shoulderX, shoulderY, rotUpper, anchors.upper.pivot);
+      let elbowX = shoulderX + Math.cos(theta1) * lenUpper; let elbowY = shoulderY + Math.sin(theta1) * lenUpper;
+      let rotFore = (theta2 * deg) - (state.bones.fore.correctionAngle * deg);
+      setBone(forearm, elbowX, elbowY, rotFore, anchors.fore.pivot);
+      let wristX = elbowX + Math.cos(theta2) * lenFore; let wristY = elbowY + Math.sin(theta2) * lenFore;
+      let currentHandAnchor = state.hasFired ? anchors.handOpen.pivot : anchors.hand.pivot;
+      setBone(hand, wristX, wristY, rotFore, currentHandAnchor);
+      if (DEBUG_MODE) setDebugDot(hand, '.dot-pivot', currentHandAnchor);
+    }
+    function setBone(el, x, y, rotationDeg, anchor) {
+      let width = parseFloat(el.style.width);
+      let pivotX = (width / 2) + anchor.x; let pivotY = anchor.y;
+      el.style.transformOrigin = `${pivotX}px ${pivotY}px`;
+      el.style.left = (x - pivotX) + 'px'; el.style.top = (y - pivotY) + 'px';
+      el.style.transform = `rotate(${rotationDeg - 90}deg)`;
+    }
+    function applySize(el, size) { el.style.width = size.w + 'px'; el.style.height = size.h + 'px'; }
+    function setDebugDot(el, selector, anchor, isCentered = true) {
+      let dot = el.querySelector(selector);
+      if (dot) {
+        let width = parseFloat(el.style.width) || 0;
+        let left = isCentered ? (width / 2) + anchor.x : anchor.x;
+        dot.style.left = left + 'px'; dot.style.top = anchor.y + 'px';
+      }
+    }
+
+    hand.addEventListener('mousedown', (e) => { if (state.hasFired) return; state.isDragging = true; handleInput(e); });
+    hand.addEventListener('touchstart', (e) => { if (state.hasFired) return; state.isDragging = true; handleInput(e); }, { passive: false });
+    window.addEventListener('mousemove', handleInput);
+    window.addEventListener('touchmove', handleInput, { passive: false });
+    window.addEventListener('mouseup', () => state.isDragging = false);
+    window.addEventListener('touchend', () => state.isDragging = false);
+    window.addEventListener('resize', init);
+    resetBtn.addEventListener('click', init);
+
+    setTimeout(init, 100);
+  </script>
+</body>
+
+</html>

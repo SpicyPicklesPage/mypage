@@ -1,0 +1,17 @@
+/* 隐藏二级子菜单 */
+.sub-dropdown {
+    display: none;
+    position: absolute;
+    left: 100%; /* 定位到一级菜单的右侧 */
+    top: 0;
+    background-color: #333;
+    min-width: 160px; /* 设置二级菜单的最小宽度 */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* 悬停在一级子菜单项时显示二级子菜单 */
+.dropdown-content a:hover + .sub-dropdown, 
+.sub-dropdown:hover {
+    display: block;
+}

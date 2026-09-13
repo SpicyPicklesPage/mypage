@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>送你一朵烟花</title>
+  <style>
+    /* --- 全局配置 --- */
+    :root {
+      --bg-color: #1a0b1e;
+      --skin-color: #f0c0a0;
+      --sleeve-main: #3a2b42;
+      --sleeve-dark: #2a1b32;
+      /* 阴影色，用于表现褶皱 */
+      --pixel-size: 4px;
+      --scale: 6;
+      /* 放大倍数 */
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: var(--bg-color);
+      touch-action: none;
+      user-select: none;
+    }
+
+    #scene {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* 背景天空 */
+    #sky {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, var(--bg-color), #000);
+      opacity: 0;
+      transition: opacity 0.5s;
+      z-index: 1;
+    }
+
+    canvas {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* --- 人物前景 (虚化) --- */
+    .char-blur {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 20;
+      pointer-events: none;
+      filter: blur(10px);
+      transform: scale(1.2);
+      transform-origin: bottom left;
+    }
+
+    .head {
+      width: 180px;
+      height: 190px;
+      background: #2a1b2e;
+      border-radius: 50% 60% 0 0;
+      position: absolute;
+      bottom: 80px;
+      left: -40px;
+    }
+
+    .neck {
+      width: 50px;
+      height: 70px;
+      background: var(--skin-color);
+      position: absolute;
+      bottom: 90px;
+      left: 125px;
+      border-radius: 20px;
+    }
+
+    .shoulder {
+      width: 300px;
+      height: 100px;
+      background: #3a2b42;
+      position: absolute;
+      bottom: 0;
+      left: -50px;
+      border-radius: 0 150px 0 0;
+    }
+
+    /* --- 手臂整体容器 --- */
+    #arm-group {
+      position: absolute;
+      left: 55%;
+      bottom: -15vh;
+      /* 初始位置藏得更深一点 */
+      z-index: 30;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: grab;
+      transition: transform 0.1s linear;
+    }
+
+    #arm-group:active {
+      cursor: grabbing;
+    }
+
+    /* 像素缩放容器 */
+    .pixel-scale {
+      font-size: var(--pixel-size);
+      transform: scale(var(--scale));
+      transform-origin: top center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* 1. 手部 (Box Shadow 绘制) */
+    .hand {
+      width: 1em;
+      height: 1em;
+      color: var(--skin-color);
+      position: relative;
+      z-index: 5;
+      margin-bottom: 0;
+      transition: margin-bottom 0.2s;
+    }
+
+    /* 拳头 */
+    .hand.fist {
+      /* 底部留出 3em 宽 */
+      box-shadow:
+        2em 0em, 3em 0em, 4em 0em,
+        1em 1em, 2em 1em, 3em 1em, 4em 1em, 5em 1em,
+        1em 2em, 2em 2em, 3em 2em, 4em 2em, 5em 2em,
+        2em 3em, 3em 3em, 4em 3em;
+    }
+
+    /* 张开手 */
+    .hand.open {
+      transform: translateY(-2em);
+      box-shadow:
+        3em 0em, 3em 1em, 3em 2em,
+        4em 1em, 4em 2em,
+        2em 1em, 2em 2em,
+        1em 2em, 0em 3em,
+        5em 3em, 6em 4em,
+        1em 3em, 2em 3em, 3em 3em, 4em 3em,
+        2em 4em, 3em 4em, 4em 4em;
+    }
+
+    /* --- 2. 三段式袖子 (解决“太长无弧度”问题) --- */
+
+    /* 第一段：手腕 (最细) */
+    .sleeve-wrist {
+      width: 3em;
+      /* 对应手腕宽度 */
+      height: 4em;
+      background: var(--sleeve-main);
+      margin-top: -0.1em;
+      /* 无缝连接 */
+      z-index: 4;
+      position: relative;
+      /* 简单的内阴影增加立体感 */
+      box-shadow: inset 0.5em 0 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* 第二段：前臂 (变粗，制造阶梯弧度) */
+    .sleeve-forearm {
+      width: 4em;
+      /* 比手腕宽 */
+      height: 8em;
+      background: var(--sleeve-main);
+      z-index: 3;
+      margin-top: 0;
+      position: relative;
+      /* 顶部深色条，模拟衣服褶皱/接缝 */
+      border-top: 0.5em solid var(--sleeve-dark);
+      box-shadow: inset 0.5em 0 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* 第三段：上臂/袖管 (最粗) */
+    .sleeve-upper {
+      width: 5em;
+      /* 最宽 */
+      height: 40em;
+      /* 长一点，保证底部不穿帮 */
+      background: var(--sleeve-main);
+      z-index: 2;
+      position: relative;
+      border-top: 0.5em solid var(--sleeve-dark);
+      box-shadow: inset 0.5em 0 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* 提示文字 */
+    #tip {
+      position: absolute;
+      bottom: 30%;
+      width: 100%;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+      font-family: sans-serif;
+      font-size: 16px;
+      pointer-events: none;
+      z-index: 40;
+      animation: float 2s infinite;
+    }
+
+    @keyframes float {
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="scene">
+    <div id="sky"></div>
+    <canvas id="cvs"></canvas>
+    <div id="tip">按住拳头，举向天空</div>
+
+    <div class="char-blur">
+      <div class="shoulder"></div>
+      <div class="head"></div>
+      <div class="neck"></div>
+    </div>
+
+    <div id="arm-group">
+      <div class="pixel-scale">
+        <div class="hand fist" id="hand"></div>
+
+        <div class="sleeve-wrist"></div>
+        <div class="sleeve-forearm"></div>
+        <div class="sleeve-upper"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const arm = document.getElementById('arm-group');
+    const hand = document.getElementById('hand');
+    const sky = document.getElementById('sky');
+    const tip = document.getElementById('tip');
+    const cvs = document.getElementById('cvs');
+    const ctx = cvs.getContext('2d');
+
+    let w, h, isDrag = false, startY = 0, curY = 0, fired = false;
+
+    function resize() { w = cvs.width = window.innerWidth; h = cvs.height = window.innerHeight; }
+    window.onresize = resize; resize();
+
+    function start(y) { if (!fired) { isDrag = true; startY = y; tip.style.opacity = 0; } }
+    function move(y) {
+      if (!isDrag || fired) return;
+      let d = Math.min(0, y - startY);
+
+      // 限制：最大只允许拖动屏幕高度的 60%，防止胳膊拉太长
+      if (d < -h * 0.6) d = -h * 0.6;
+
+      curY = d;
+      arm.style.transform = `translateX(-50%) translateY(${d}px)`;
+      // 背景变色更加灵敏
+      sky.style.opacity = Math.min(Math.abs(d) / (h * 0.4), 1);
+    }
+    function end() {
+      if (!isDrag || fired) return; isDrag = false;
+      // 触发门槛降低到 35%
+      if (Math.abs(curY) > h * 0.35) fire();
+      else {
+        arm.style.transition = '0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+        arm.style.transform = `translateX(-50%) translateY(0)`;
+        sky.style.opacity = 0; tip.style.opacity = 1;
+        setTimeout(() => arm.style.transition = '0.1s linear', 300);
+      }
+    }
+
+    window.onmousedown = e => start(e.clientY);
+    window.onmousemove = e => move(e.clientY);
+    window.onmouseup = end;
+    window.ontouchstart = e => { e.preventDefault(); start(e.touches[0].clientY); }
+    window.ontouchmove = e => { e.preventDefault(); move(e.touches[0].clientY); }
+    window.ontouchend = end;
+
+    function fire() {
+      fired = true;
+      // 发射时稍微冲一下，不用冲太高
+      let target = curY - 50;
+      arm.style.transition = '0.2s ease-out';
+      arm.style.transform = `translateX(-50%) translateY(${target}px)`;
+
+      setTimeout(() => {
+        hand.className = 'hand open';
+        let rect = hand.getBoundingClientRect();
+        // 爆炸位置
+        createParticles(rect.left + rect.width / 2, rect.top + rect.height / 2, true);
+
+        setTimeout(() => {
+          arm.style.transition = '2s ease-in';
+          arm.style.opacity = '0';
+          arm.style.transform = `translateX(-50%) translateY(200px)`;
+          setInterval(() => createParticles(Math.random() * w, Math.random() * h * 0.7, false), 800);
+        }, 800);
+      }, 200);
+    }
+
+    let parts = [];
+    function createParticles(x, y, big) {
+      let c = big ? 100 : 50;
+      let colors = ['#ff4d4d', '#ffcc00', '#33ccff', '#ffffff', '#ff99cc'];
+      for (let i = 0; i < c; i++) {
+        let a = Math.random() * 6.28;
+        let s = Math.random() * (big ? 10 : 5) + 2;
+        parts.push({ x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s, life: 1, color: colors[Math.floor(Math.random() * colors.length)] });
+      }
+    }
+
+    (function loop() {
+      ctx.fillStyle = 'rgba(26,11,30,0.2)'; ctx.fillRect(0, 0, w, h);
+      parts.forEach((p, i) => {
+        p.x += p.vx; p.y += p.vy; p.vy += 0.15; p.life -= 0.02;
+        ctx.globalAlpha = p.life; ctx.fillStyle = p.color; ctx.fillRect(p.x, p.y, 4, 4);
+        if (p.life <= 0) parts.splice(i, 1);
+      });
+      requestAnimationFrame(loop);
+    })();
+  </script>
+</body>
+
+</html>

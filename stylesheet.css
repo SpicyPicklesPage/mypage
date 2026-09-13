@@ -1,0 +1,362 @@
+/* 导航栏基本样式 */
+nav {
+  position: fixed;
+  /* 固定位置 */
+  /* overflow: hidden; */
+  top: 0;
+  left: 0%;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+  /* 确保目录在其他内容之上 */
+}
+
+nav ul {
+  display: flex;
+  /* 启用 flexbox */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  /* 等分空间 */
+}
+
+
+nav ul li {
+  flex: 1;
+  /* 分配相同的空间给每个元素 */
+  text-align: center;
+  /* 使文本在每个元素内居中 */
+}
+
+nav ul li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+/* 悬停效果 */
+nav ul li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #555;
+  display: block;
+  /* 填充整个列表项 */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 导航栏样式 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* 横幅样式 */
+.banner {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid #ffffff;
+}
+
+/* 画廊样式 */
+/* 画廊样式 */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  /* 适应内容的宽度 */
+  grid-auto-rows: minmax(150px, auto);
+  /* 至少150px的行高，但可以根据内容增长 */
+  grid-gap: 10px;
+  /* 网格间隙 */
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    /* 屏幕较小时，每行2个图片 */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    /* 更小屏幕时，每行1个图片 */
+  }
+}
+
+/* 图片的基础样式 */
+.gallery img {
+  width: 100%;
+  /* 图片宽度填满容器 */
+  height: 300px;
+  /* 设置一个固定高度或根据比例 */
+  object-fit: cover;
+  /* 覆盖整个容器，多余的部分会被裁减 */
+  transition: filter 1s ease;
+  /* 平滑过渡效果，持续1秒 */
+}
+
+/* 图片信息的容器样式 */
+.image-info {
+  pointer-events: auto;
+  /* 允许鼠标事件 */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: none;
+  padding: 10px;
+  text-align: right;
+  font-size: 0.2em;
+  line-height: 0.9;
+  margin: -10px;
+}
+
+.image-container {
+  /* 如果需要，根据图片的宽高比设置跨列和跨行 */
+  grid-column: span 1;
+  grid-row: span 2;
+  /* 可能需要根据图片实际情况进行调整 */
+}
+
+.image-container img {
+  width: 100%;
+  /* 设置图片宽度为容器的100% */
+  height: 100%;
+  /* 设置图片高度为容器的100% */
+  object-fit: cover;
+  /* 裁剪并填充整个容器，保持宽高比 */
+}
+
+.image-info .description {
+  text-align: right;
+  /* 文本靠右对齐 */
+  font-size: 0.2em;
+  /* 缩小字体大小 */
+  line-height: 0.2;
+  /* 减小行距 */
+  margin: 0;
+  /* 移除外边距，如果有的话 */
+
+}
+
+/* 鼠标悬停时显示图片信息 */
+.gallery div:hover .image-info {
+  display: block;
+  opacity: 0.8;
+  /* 透明度 */
+}
+
+/* 页脚样式 */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+/* 加载更多图片提示 */
+#loading {
+  text-align: center;
+  padding: 10px;
+  display: none;
+}
+
+
+#gallery {
+  position: relative;
+  width: 99%;
+  margin: 0 auto;
+}
+
+.image-container {
+  position: absolute;
+  padding: 2px;
+  /* 极小缝隙 */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* 这里的 top/left 过渡能让填缝过程看得很清楚 */
+  transition: top 0.4s ease, left 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.image-content-wrapper {
+  position: relative;
+  border-radius: 2px;
+  background: #eee;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 【核心】允许裁剪，配合强制填缝 */
+  display: block;
+}
+
+#loading {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* 让图片卡片显示“可点击”的手型 */
+.image-content-wrapper {
+  cursor: zoom-in;
+}
+
+/* --- 优雅的灯箱 (Lightbox) 样式 --- */
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  /* 深色背景 */
+  backdrop-filter: blur(10px);
+  /* 核心：毛玻璃效果，显得很高级 */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  /* 隐藏时不响应点击 */
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#lightbox.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  /* 图片悬浮感阴影 */
+  border-radius: 4px;
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  /* 弹性放大动画 */
+}
+
+#lightbox.active img {
+  transform: scale(1);
+}
+
+/* --- 灯箱底部的信息条 --- */
+#lightbox-info {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Helvetica Neue', sans-serif;
+  pointer-events: none;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s 0.1s;
+  /* 稍微延迟显示 */
+}
+
+#lightbox.active #lightbox-info {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#lightbox-info h3 {
+  margin: 0 0 5px 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+#lightbox-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* 关闭按钮 (虽然点击背景也能关，但留个按钮符合直觉) */
+#lightbox-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  z-index: 1001;
+}
+
+#lightbox-close:hover {
+  opacity: 1;
+}
+
+.filler-item {
+  /* 继承 image-container 的基本属性，但可以做特殊处理 */
+  pointer-events: none;
+  /* 填充物不需要响应点击（不打开灯箱） */
+}
+
+.filler-item .image-content-wrapper {
+  background-color: transparent !important;
+  /* 确保背景透明，为了混合模式生效 */
+  box-shadow: none;
+  /* 填充物可以去掉阴影，显得更平面化，不抢戏 */
+  border-radius: 0;
+  /* 可选：去掉圆角，更像背景的一部分 */
+}
+
+.filler-item img {
+  /* 【核心】正片叠底：让白底变透明，融入背景 */
+  mix-blend-mode: multiply;
+  /* 保证石膏像完整显示，不被裁切，居中 */
+  object-fit: contain;
+  /* 给一点内边距，让石膏像不要撑得太满，呼吸感更好 */
+  padding: 20px;
+  /* 稍微降低一点透明度，让它不那么抢眼 */
+  opacity: 0.8;
+}

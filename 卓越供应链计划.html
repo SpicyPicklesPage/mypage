@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/><meta content="width=device-width initial-scale=1" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"/><style type="text/css">html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+
+</style><title>卓越供应链计划</title>
+<link href="content_note.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<button id="sidebar-toggle"></button><div id="sidebar">
+  <h2>目录</h2>
+  <ul>
+        <ul>
+            <li><a href="#Chapter1Whydohighinventoryhighoutofstockandhighcostcoexist">第1章 为何高库存、高缺货、高成本并存</a></li>
+    <ul>
+                <li><a href="#Corecontradiction">核心矛盾</a></li>
+                <li><a href="#11Causesofhighinventory">1.1 高库存的成因</a></li>
+                <li><a href="#12Theillusionandtruthofhighstockoutage">1.2 高缺货的假象与真相</a></li>
+                <li><a href="#13Structuralcontradictionbetweenhighinventoryandhighstockoutage">1.3 高库存与高缺货并存的结构性矛盾</a></li>
+                <li><a href="#14Highcostunderlyinglogic">1.4 高成本的底层逻辑</a></li>
+    </ul>
+            <li><a href="#Chapter2Thetoptenschoolsinthebusinesscommunitytoimproveproductionandsalescollaboration">第2章 企业界改善产销协同的十大流派</a></li>
+    <ul>
+                <li><a href="#Categoryandcoreperspectives">流派分类与核心观点</a></li>
+                <li><a href="#SummaryVolatilityAbsorptionStrategyvsVolatilityManagementStrategy">总结：波动吸收派 vs. 波动管理派</a></li>
+    </ul>
+            <li><a href="#Chapter3Seventreasuresforimprovingproductionandsalescoordinationinthemanagementtheorycommunity">第3章 管理理论界改善产销协同的七大宝典</a></li>
+    <ul>
+                <li><a href="#Theoreticalclassificationandcorelogic">理论分类与核心逻辑</a></li>
+                <li><a href="#31ToyotaLeanMethodology">3.1 丰田精益方法论</a></li>
+                <li><a href="#32TOCConstraintTheory">3.2 TOC（约束理论）</a></li>
+                <li><a href="#33Huaweiartillerytheory">3.3 华为炮火论</a></li>
+                <li><a href="#34DruckerTargetManagementTheory">3.4 德鲁克目标管理理论</a></li>
+                <li><a href="#35AmoebaBusinessPhilosophy">3.5 阿米巴经营哲学</a></li>
+                <li><a href="#36SCORmodel">3.6 SCOR模型</a></li>
+                <li><a href="#37SOPSalesOperationsPlan">3.7 S&OP（销售与运营计划）</a></li>
+                <li><a href="#SummaryTheparadoxoflocaloptimizationandglobalcoordination">总结：局部优化与全局协同的悖论</a></li>
+    </ul>
+            <li><a href="#Chapter4Integratedsupplychainmanagementistheunderlyinglogicofproductionandsalescollaboration">第4章 集成供应链管理是产销协同的底层逻辑</a></li>
+    <ul>
+                <li><a href="#Corelogic">核心逻辑</a></li>
+                <li><a href="#41Methodologyofmethodologyreductionismholismandsystemism">4.1 方法论的方法论：还原论、整体论与系统论</a></li>
+                <li><a href="#42Practiceofmethodologyinthemanagementindustrymassmanagementvselitemanagement">4.2 方法论在管理界的实践：大众管理派 vs. 精英管理派</a></li>
+                <li><a href="#43Theessentialdifferencebetweensupplychainandsupplychainmanagement">4.3 供应链与供应链管理的本质区别</a></li>
+                <li><a href="#44EndtoendsupplychainvsIntegratedsupplychainmanagement">4.4 端到端供应链 vs. 集成供应链管理</a></li>
+                <li><a href="#45Comparisonofthefivemajorproductionandsalesmanagementmodels">4.5 五大产销管理模式对比</a></li>
+                <li><a href="#SummaryThecorevalueofintegratedsupplychainprograms">总结：集成供应链计划的核心价值</a></li>
+    </ul>
+            <li><a href="#Chapter5Systemframeworkforintegratedsupplychainplanningmanagement">第5章 集成供应链计划管理的体系框架</a></li>
+    <ul>
+                <li><a href="#Corelogic">核心逻辑</a></li>
+                <li><a href="#51Positioningandframeworkforintegratedsupplychainplanningmanagement">5.1 集成供应链计划管理的定位与框架</a></li>
+                <li><a href="#52Threeultimatemissionsfullcyclecoverageofresourceplanning">5.2 三大终极使命：资源规划的全周期覆盖</a></li>
+                <li><a href="#53Threemajorcompilationlogicstradeoffsdrivesandsuperposition">5.3 三大编制逻辑：权衡、驱动与叠加</a></li>
+                <li><a href="#54Threecorefeaturesindependenceintegrationandlayering">5.4 三大核心特征：独立、集成、分层</a></li>
+                <li><a href="#55Sixmajorbusinessmodulesfromtopleveldesigntocapacitybuilding">5.5 六大业务模块：从顶层设计到能力建设</a></li>
+                <li><a href="#56Positioningofinventoryinplanningmanagement">5.6 库存在计划管理中的定位</a></li>
+                <li><a href="#57Therelationshipbetweenplanningsystemandexecutionsystem">5.7 计划体系与执行体系的关系</a></li>
+                <li><a href="#SummaryThevalueoftheplanexceedsfactoryproductionschedule">总结：计划的价值超越工厂排产</a></li>
+    </ul>
+            <li><a href="#Chapter6ToplevelDesignofIntegratedSupplyChainPlanningManagement">第6章 集成供应链计划管理之顶层设计</a></li>
+    <ul>
+                <li><a href="#Corelogic">核心逻辑</a></li>
+                <li><a href="#61PositioningDesignFromMessengertoChiefofStaff">6.1 定位设计：从传令兵到参谋长</a></li>
+                <li><a href="#62PatterndesignCombinationlogicofthousandsoffieldsandthousandsofchains">6.2 模式设计：千场千链的组合逻辑</a></li>
+                <li><a href="#63StrategyDesignResearchproductionsalesthreedimensionalcollaboration">6.3 策略设计：研-产-销三维协同</a></li>
+                <li><a href="#SummarySynergyisthelifelineofstrategy">总结：协同是策略的生命线</a></li>
+    </ul>
+            <li><a href="#Chapter7PlanningSystemDesignforIntegratedSupplyChainPlanningManagement">第7章 集成供应链计划管理之计划体系设计</a></li>
+    <ul>
+                <li><a href="#Corelogic">核心逻辑</a></li>
+                <li><a href="#71Planningsystemframeworkthreelayerprogressionandtwowayconstraints">7.1 计划体系框架：三层递进与双向约束</a></li>
+                <li><a href="#72RequirementsPlanningDesignFromStrategyDeductiontoExecutionFreeze">7.2 需求计划设计：从战略推演到执行冻结</a></li>
+                <li><a href="#73Mainplandesignresourcematchingandscenesimulation">7.3 主计划设计：资源匹配与场景模拟</a></li>
+                <li><a href="#74Supplyplandesignexecutionflexibilityandglobalgame">7.4 供应计划设计：执行灵活性与全局博弈</a></li>
+                <li><a href="#75InventoryManagementBreakthroughofSystemicDilemma">7.5 库存管理：突破系统性困局</a></li>
+                <li><a href="#SummaryThestrategicvalueofplanningstratification">总结：计划分层的战略价值</a></li>
+    </ul>
+            <li><a href="#Chapter8IntegratedSupplyChainPlanningManagementandProductionandSalesCollaborativeProcessDesign">第8章 集成供应链计划管理之产销协同流程设计</a></li>
+    <ul>
+                <li><a href="#Corelogic">核心逻辑</a></li>
+                <li><a href="#81ThenatureofSOPandcommonmisunderstandings">8.1 S&OP的本质与常见误解</a></li>
+                <li><a href="#82ThetoptencorevaluesofSOP">8.2 S&OP的十大核心价值</a></li>
+                <li><a href="#83FourelementsofSOPdesign">8.3 S&OP设计四要素</a></li>
+                <li><a href="#84SOPsChallengesandBreakthroughsinChineseEnterprises">8.4 S&OP在中国企业的挑战与破局</a></li>
+                <li><a href="#85SOPextensionIBPandSOE">8.5 S&OP的扩展：IBP与S&OE</a></li>
+                <li><a href="#86ExternalcollaborationfromVMItoCPFR">8.6 外部协同：从VMI到CPFR</a></li>
+                <li><a href="#SummaryThecoordinatedwisdomoftheformandthespiritgathering">总结：形散神聚的协同智慧</a></li>
+    </ul>
+            <li><a href="#Chapter9MonitoringPlatformDesignforIntegratedSupplyChainPlanningManagement">第9章 集成供应链计划管理之监控平台设计</a></li>
+    <ul>
+                <li><a href="#Corelogic">核心逻辑</a></li>
+                <li><a href="#91Principlesofperformanceindicatordesignfromresultstoprocess">9.1 绩效指标设计原则：从结果到过程</a></li>
+                <li><a href="#92Controltowerlandingdualdriveofbusinessandtechnology">9.2 控制塔落地：业务与技术双驱动</a></li>
+                <li><a href="#93Functionaldimensionindicatorsrefinedcomputinglogic">9.3 职能维度指标：精细化计算逻辑</a></li>
+                <li><a href="#94Characteristicdimensionindicatorspanoramicassessmentofsupplychaincapabilities">9.4 特征维度指标：供应链能力全景评估</a></li>
+                <li><a href="#95DepartmentPerformancevsEnterprisePerformanceGameandBreakthrough">9.5 部门绩效 vs 企业绩效：博弈与破局</a></li>
+                <li><a href="#96Industrybenchmarkingtrapanincomparabledatagame">9.6 行业对标陷阱：不可比的数据游戏</a></li>
+                <li><a href="#SummaryRulesaremoreimportantthanassessmentandprocessesarebetterthanresults">总结：规则重于考核，过程优于结果</a></li>
+    </ul>
+            <li><a href="#Chapter10OrganizationalStructureDesignforIntegratedSupplyChainPlanningManagement">第10章 集成供应链计划管理之组织架构设计</a></li>
+    <ul>
+                <li><a href="#Corelogic">核心逻辑</a></li>
+                <li><a href="#101Functionaldesignthreelayerarchitectureofbusinessmiddleplatform">10.1 职能设计：业务中台的三层架构</a></li>
+                <li><a href="#102KeyFunctionDesignLogic">10.2 关键职能设计逻辑</a></li>
+                <li><a href="#103ContinuousOptimizationFunctionSeparationofLegislationandLawEnforcement">10.3 持续优化职能：立法与执法的分离</a></li>
+                <li><a href="#104Groupandterritorialstructurethreemodelsofcentralizedanddecentralizedpower">10.4 集团与属地架构：集权分权三模式</a></li>
+                <li><a href="#105FunctionalorientationvsProductorientationsupplychain">10.5 职能导向 vs 产品导向供应链</a></li>
+                <li><a href="#106OrganizationalStructureCaseHighlyIntegratedConsumerProductsEnterprises">10.6 组织架构案例：高度集成的消费品企业</a></li>
+                <li><a href="#SummaryPlatformbasedtransformationrespondstofrontenddivergence">总结：平台化转型应对前端发散</a></li>
+    </ul>
+            <li><a href="#Chapter13SupplyChainManagementChangePracticeandCaseSharing">第13章 供应链管理变革实践和案例分享</a></li>
+    <ul>
+                <li><a href="#Corelogic">核心逻辑</a></li>
+                <li><a href="#131Fivemajorchallengestochangeacomprehensivegamefromconcepttointerests">13.1 变革五大挑战：从理念到利益的全面博弈</a></li>
+                <li><a href="#132Sixmajorstrategiesforreformbreakingthesituationthroughbothsoftandhard">13.2 变革六大对策：软硬兼施破局</a></li>
+                <li><a href="#133ChangeCasesSuccessorFailureRevelation">13.3 变革案例：成败启示录</a></li>
+    </ul>
+            <li><a href="#Chapter14PracticeandCaseSharingofDigitalTransformationofSupplyChainManagement">第14章 供应链管理数字化转型实践和案例分享</a></li>
+    <ul>
+                <li><a href="#Corelogic">核心逻辑</a></li>
+                <li><a href="#141Twostagesoftransformationfromseeingtoforesight">14.1 转型两阶段：从看见到预见</a></li>
+                <li><a href="#142TechnologyApplicationChemicalFusionofAlgorithmsandBusiness">14.2 技术应用：算法与业务的化学融合</a></li>
+                <li><a href="#143TransformationTrapTheBalancebetweenDataandHumanNature">14.3 转型陷阱：数据与人性的平衡</a></li>
+                <li><a href="#144FutureTrendsManagementDiversityImprovementandOrganizationalRestructuring">14.4 未来趋势：管理升维与组织重构</a></li>
+                <li><a href="#SummaryThedoublehelixofdigitalizationandchange">总结：数字化与变革的双螺旋</a></li>
+                </ul>
+</div>
+<script src="sidebar.js"></script>
+    <div class="typora-export-content">
+<div class="" id="write"><h3 id="Chapter1Whydohighinventoryhighoutofstockandhighcostcoexist"><strong><span>第1章 为何高库存、高缺货、高成本并存</span></strong><span> </span></h3><h4 id="Corecontradiction"><strong><span>核心矛盾</span></strong><span> </span></h4><p><span>企业面临“三高”常态化问题（高库存、高缺货、高成本），本质是供应链协同失效的结果。库存与缺货是显性现象，但背后是多方因素的综合作用，需通过系统性协同改善而非单一优化。</span></p><hr/><h4 id="11Causesofhighinventory"><strong><span>1.1 高库存的成因</span></strong><span> </span></h4><ol start=""><li><p><strong><span>生产节奏失衡</span></strong><span>：为平衡生产波动，被迫生产暂时不需要的库存。  </span></p></li><li><p><strong><span>批量冗余</span></strong><span>：经济批量采购/生产导致冗余库存，增加报废风险（如材料过期）。  </span></p></li><li><p><strong><span>淡季囤货策略</span></strong><span>：为应对旺季需求激进的囤货，可能因需求预测偏差形成冗余。  </span></p></li><li><p><strong><span>安全心理作祟</span></strong><span>：因缺乏对供应链的信心，人为推高库存以获取“安全感”。</span></p></li></ol><hr/><h4 id="12Theillusionandtruthofhighstockoutage"><strong><span>1.2 高缺货的假象与真相</span></strong><span> </span></h4><p><span>缺货并非全为真实缺货，存在四类“假缺货”：  </span></p><ol start=""><li><p><strong><span>快速交付压力</span></strong><span>：为满足高交付率承诺，提前锁定库存，导致其他订单缺货。  </span></p></li><li><p><strong><span>业绩驱动</span></strong><span>：为完成短期业绩目标，故意制造缺货假象（如促销囤货后缺货）。  </span></p></li><li><p><strong><span>ATP规则不当</span></strong><span>：系统可用性检查规则设计不合理（如未预留安全库存），导致有货却显示缺货。  </span></p></li><li><p><strong><span>重复下单</span></strong><span>：同一需求多次下单，导致库存被重复占用，实际可用量不足。</span></p></li></ol><hr/><h4 id="13Structuralcontradictionbetweenhighinventoryandhighstockoutage"><strong><span>1.3 高库存与高缺货并存的结构性矛盾</span></strong><span> </span></h4><p><strong><span>后端（生产/采购/物流）问题：</span></strong><span> </span></p><ol start=""><li><p><strong><span>先进先出失效</span></strong><span>：未严格执行先进先出，导致库存陈旧（滞库）与新品缺货并存。  </span></p></li><li><p><strong><span>新鲜度损失</span></strong><span>：高库存导致产品过期或降级，有库存但无法满足质量要求。  </span></p></li><li><p><strong><span>战略采购弊端</span></strong><span>：集中采购虽降低成本，但灵活性不足，部分物料短缺与冗余共存。  </span></p></li><li><p><strong><span>责任推诿</span></strong><span>：部门间为厘清责任延迟决策，加剧库存与缺货矛盾。  </span></p></li></ol><p><strong><span>前端（销售/产品）问题：</span></strong><span> </span></p><ol start=""><li><p><strong><span>发货节奏失衡</span></strong><span>：集中发货导致部分区域库存积压，其他区域缺货。  </span></p></li><li><p><strong><span>满载/齐套交付压力</span></strong><span>：过度追求满载率或产品齐套性，牺牲部分订单的及时交付。  </span></p></li><li><p><strong><span>长尾产品失控</span></strong><span>：长尾SKU管理粗放，部分产品积压，畅销品却缺货。  </span></p></li><li><p><strong><span>降本副作用</span></strong><span>：为降本采用低质材料或工艺，导致返工率高，库存与缺货交替出现。  </span></p></li><li><p><strong><span>预测偏差</span></strong><span>：销售预测不准，生产计划与需求脱节，部分产品过剩，部分短缺。</span></p></li></ol><hr/><h4 id="14Highcostunderlyinglogic"><strong><span>1.4 高成本的底层逻辑</span></strong><span> </span></h4><ol start=""><li><p><strong><span>库存持有成本</span></strong><span>：资金占用、仓储费用、过期风险等。  </span></p></li><li><p><strong><span>缺货损失</span></strong><span>：客户流失、紧急调货成本、商誉损害。  </span></p></li><li><p><strong><span>隐性成本</span></strong><span>：为“不缺货”过度投入资源（如冗余产能、高价采购）。  </span></p></li><li><p><strong><span>切换成本</span></strong><span>：库存与缺货频繁切换导致的计划调整、生产切换等额外开支。  </span></p></li></ol><p><strong><span>总结</span></strong><span>：三高问题的根源是部门间目标冲突与协同缺失（如销售追求交付、生产追求稳定、采购追求低价），局部优化反而加剧全局矛盾。</span></p><p> </p><p><img alt="image-20250424180502007" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424180502007.png"/></p><hr/><h3 id="Chapter2Thetoptenschoolsinthebusinesscommunitytoimproveproductionandsalescollaboration"><strong><span>第2章 企业界改善产销协同的十大流派</span></strong><span> </span></h3><h4 id="Categoryandcoreperspectives"><strong><span>流派分类与核心观点</span></strong><span> </span></h4><ol start=""><li><p><strong><span>运动派</span></strong><span> </span></p><ul><li><p><strong><span>观点</span></strong><span>：问题源于管理不到位，通过短期运动式整顿（如清库存、抓交付）快速见效。  </span></p></li><li><p><strong><span>局限</span></strong><span>：治标不治本，矛盾易复发（如清库存后缺货率上升）。  </span></p></li></ul></li><li><p><strong><span>系统派</span></strong><span> </span></p><ul><li><p><strong><span>观点</span></strong><span>：通过系统（如ERP、APS）固化流程，提升执行效率。  </span></p></li><li><p><strong><span>局限</span></strong><span>：系统与业务逻辑脱节（如预算系统未适配企业实际），反而增加管理负担。  </span></p></li></ul></li><li><p><strong><span>激励派</span></strong><span> </span></p><ul><li><p><strong><span>观点</span></strong><span>：通过绩效考核（如库存周转率、交付率）驱动行为改善。  </span></p></li><li><p><strong><span>局限</span></strong><span>：指标博弈（如为达标牺牲长期利益），过程管理缺失。  </span></p></li></ul></li><li><p><strong><span>组织派</span></strong><span> </span></p><ul><li><p><strong><span>观点</span></strong><span>：通过组织调整（如合并计划与销售部门）解决协同问题。  </span></p></li><li><p><strong><span>局限</span></strong><span>：掩盖问题而非解决（如合并后责任模糊）。  </span></p></li></ul></li><li><p><strong><span>交付派</span></strong><span> </span></p><ul><li><p><strong><span>观点</span></strong><span>：以订单交付为唯一目标，优先满足客户需求。  </span></p></li><li><p><strong><span>局限</span></strong><span>：忽视前端预测与后端能力匹配（如盲目承诺导致成本飙升）。  </span></p></li></ul></li><li><p><strong><span>库存派</span></strong><span> </span></p><ul><li><p><strong><span>观点</span></strong><span>：优化库存策略（如动态安全库存）平衡供需。  </span></p></li><li><p><strong><span>局限</span></strong><span>：库存是结果而非原因，需同步解决预测与生产问题。  </span></p></li></ul></li><li><p><strong><span>精益派</span></strong><span> </span></p><ul><li><p><strong><span>观点</span></strong><span>：通过柔性生产（如小批量、快速换线）吸收需求波动。  </span></p></li><li><p><strong><span>局限</span></strong><span>：过度柔性可能导致生产成本上升（如设备利用率下降）。  </span></p></li></ul></li><li><p><strong><span>预测派</span></strong><span> </span></p><ul><li><p><strong><span>观点</span></strong><span>：改善预测精度（如引入AI算法）以优化供应链源头。  </span></p></li><li><p><strong><span>局限</span></strong><span>：预测永远存在误差，需与库存、生产策略联动。  </span></p></li></ul></li><li><p><strong><span>流程派</span></strong><span> </span></p><ul><li><p><strong><span>观点</span></strong><span>：通过流程标准化（如S&amp;OP会议）提升决策一致性。  </span></p></li><li><p><strong><span>局限</span></strong><span>：流程无法替代核心决策逻辑（如需求优先级判断）。  </span></p></li></ul></li><li><p><strong><span>外部协同派</span></strong><span> </span></p><ul><li><p><strong><span>供应商协同（VMI）</span></strong><span>：转移库存压力至供应商，但成本可能回流（如次年涨价）。  </span></p></li><li><p><strong><span>客户协同</span></strong><span>：与下游共享需求信息（如协同预测），但需平衡话语权（如大客户主导）。  </span></p></li></ul></li></ol><hr/><h4 id="SummaryVolatilityAbsorptionStrategyvsVolatilityManagementStrategy"><strong><span>总结：波动吸收派 vs. 波动管理派</span></strong><span> </span></h4><ol start=""><li><p><strong><span>波动吸收派</span></strong><span> </span></p><ul><li><p><strong><span>核心</span></strong><span>：后端（生产、库存、供应商）吸收前端波动（如需求变化）。  </span></p></li><li><p><strong><span>典型手段</span></strong><span>：安全库存、柔性生产、VMI。  </span></p></li></ul></li><li><p><strong><span>波动管理派</span></strong><span> </span></p><ul><li><p><strong><span>核心</span></strong><span>：主动管理前端波动（如优化预测、控制产品复杂度）。  </span></p></li><li><p><strong><span>典型手段</span></strong><span>：需求管理、产品标准化、销售策略协同。  </span></p></li></ul></li></ol><p><strong><span>关键区别</span></strong><span>：  </span></p><ul><li><p><span>吸收派被动应对，管理派主动干预。  </span></p></li><li><p><span>供应链管理的终极目标是“减少需吸收的波动量”（如通过预测优化降低安全库存需求）。  </span></p></li></ul><p><strong><span>启示</span></strong><span>：  </span></p><ul><li><p><span>仅靠后端吸收波动成本高昂，需前后端协同管理波动源头。  </span></p></li><li><p><span>供应链改善需平衡“管理波动”与“吸收波动”的策略组合</span></p></li></ul><p> </p><hr/><h3 id="Chapter3Seventreasuresforimprovingproductionandsalescoordinationinthemanagementtheorycommunity"><strong><span>第3章 管理理论界改善产销协同的七大宝典</span></strong><span> </span></h3><h4 id="Theoreticalclassificationandcorelogic"><strong><span>理论分类与核心逻辑</span></strong><span> </span></h4><p><span>供应链协同改善理论可分为两类：</span><strong><span>局部优化型</span></strong><span>（聚焦单一环节效率）与</span><strong><span>全局协同型</span></strong><span>（强调跨部门/链路协作）。前者实施难度低但易引发新矛盾，后者系统性强但需组织变革支撑。</span></p><hr/><h4 id="31ToyotaLeanMethodology"><strong><span>3.1 丰田精益方法论</span></strong><span> </span></h4><p><strong><span>核心观点</span></strong><span>：  </span></p><ul><li><p><span>通过消除浪费（如过量生产、库存）实现现场效率最大化，核心工具包括JIT（准时制）、看板管理等。</span><br/><strong><span>局限性</span></strong><span>：  </span></p></li></ul><ol start=""><li><p><strong><span>局部优化陷阱</span></strong><span>：擅长车间级改善，但忽视供应链全局（如物料相关性、BOM复杂度）。  </span></p></li><li><p><strong><span>环境适应性差</span></strong><span>：需求波动剧烈时，精益的“零库存”理想易导致缺货（如快消品促销期）。</span><br/><strong><span>案例</span></strong><span>：  </span></p></li></ol><ul><li><p><span>2018年Gartner全球供应链25强中80%为快消企业，其同质化、低利润特性与精益理念冲突（需全局协同而非单一环节优化）。  </span></p></li></ul><hr/><h4 id="32TOCConstraintTheory"><strong><span>3.2 TOC（约束理论）</span></strong><span> </span></h4><p><strong><span>核心观点</span></strong><span>：  </span></p><ul><li><p><span>以瓶颈资源（鼓）为中心，通过DBR（鼓-缓冲-绳）协调生产节奏：瓶颈前拉式、瓶颈后推式生产。</span><br/><strong><span>局限性</span></strong><span>：  </span></p></li></ul><ol start=""><li><p><strong><span>假设理想化</span></strong><span>：要求需求明确、供应稳定，忽视外部市场波动（如突发性订单激增）。  </span></p></li><li><p><strong><span>简化复杂性</span></strong><span>：未考虑产品复杂度对生产的影响（如多SKU切换加剧瓶颈压力）。</span><br/><strong><span>对比精益</span></strong><span>：  </span></p></li></ol><ul><li><p><span>TOC强调整体观，但过度简化供应链生态（如忽略成品库存对客户满意度的影响）。  </span></p></li></ul><hr/><h4 id="33Huaweiartillerytheory"><strong><span>3.3 华为炮火论</span></strong><span> </span></h4><p><strong><span>核心观点</span></strong><span>：  </span></p><ul><li><p><span>“让听见炮火的人指挥”：一线人员（如区域销售）拥有决策权以快速响应需求。</span><br/><strong><span>实施前提</span></strong><span>：  </span></p></li></ul><ol start=""><li><p><strong><span>信息透明化</span></strong><span>：前线需完整反馈市场动态（如竞品价格、促销规模及周期）。  </span></p></li><li><p><strong><span>中央管控平衡</span></strong><span>：跨国公司常采用“信息上报+中央决策”模式，避免一线权力滥用。</span><br/><strong><span>案例</span></strong><span>：  </span></p></li></ol><ul><li><p><span>华为项目型交付中，前线可调动资源，但需遵循总部制定的战略优先级和资源分配规则。  </span></p></li></ul><hr/><h4 id="34DruckerTargetManagementTheory"><strong><span>3.4 德鲁克目标管理理论</span></strong><span> </span></h4><p><strong><span>核心观点</span></strong><span>：  </span></p><ul><li><p><span>通过自下而上的目标分解（如个人→部门→企业）激发自驱力，替代强制管控。</span><br/><strong><span>局限性</span></strong><span>：  </span></p></li><li><p><strong><span>目标互斥性</span></strong><span>：在复杂产销关系中，部门目标冲突难以调和（如销售追求交付VS生产追求稳定）。</span><br/><strong><span>典型冲突</span></strong><span>：  </span></p></li><li><p><span>销售为达成个人KPI承诺超量订单，导致生产计划频繁调整、成本上升。  </span></p></li></ul><hr/><h4 id="35AmoebaBusinessPhilosophy"><strong><span>3.5 阿米巴经营哲学</span></strong><span> </span></h4><p><strong><span>核心观点</span></strong><span>：  </span></p><ul><li><p><span>将组织拆分为独立核算单元（阿米巴），通过局部极致化实现整体效益。</span><br/><strong><span>局限性</span></strong><span>：  </span></p></li><li><p><strong><span>局部与全局矛盾</span></strong><span>：阿米巴单元可能为自身利益牺牲协同（如生产部门拒绝小批量订单以降低单位成本）。  </span></p></li></ul><hr/><h4 id="36SCORmodel"><strong><span>3.6 SCOR模型</span></strong><span> </span></h4><p><strong><span>核心框架</span></strong><span>：  </span></p><ul><li><p><span>4P递进式改善：绩效指标（Performance）→流程（Process）→最佳实践（Practice）→人员技能（People）。</span><br/><strong><span>局限性</span></strong><span>：  </span></p></li></ul><ol start=""><li><p><strong><span>覆盖范围局限</span></strong><span>：聚焦供应端（生产、库存），忽视销售与产品协同（如未纳入需求预测流程）。  </span></p></li><li><p><strong><span>静态模型缺陷</span></strong><span>：难以应对动态市场变化（如疫情期间供应链中断场景）。  </span></p></li></ol><p> </p><p><img alt="image-20250424180542223" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424180542223.png"/></p><hr/><h4 id="37SOPSalesOperationsPlan"><strong><span>3.7 S&amp;OP（销售与运营计划）</span></strong><span> </span></h4><p><strong><span>核心价值</span></strong><span>：  </span></p><ul><li><p><span>打破部门壁垒，实现研、产、销三方协同（如需求计划与产能匹配）。</span><br/><strong><span>实施难点</span></strong><span>：  </span></p></li></ul><ol start=""><li><p><strong><span>权力再分配</span></strong><span>：需高层介入平衡部门利益（如销售让渡部分决策权给供应链）。  </span></p></li><li><p><strong><span>数据一致性</span></strong><span>：各部门数据口径不一（如销售定义“交付率”为订单满足率，物流定义为准时发货率）。</span><br/><strong><span>流派对比</span></strong><span>：  </span></p></li></ol><ul><li><p><strong><span>Dick Ling派</span></strong><span>：强调销售与供应端直接协同。  </span></p></li><li><p><strong><span>Oliver Wight派</span></strong><span>：主张研产销三方协同，增加产品端（如新品上市计划）参与。  </span></p></li></ul><hr/><h4 id="SummaryTheparadoxoflocaloptimizationandglobalcoordination"><strong><span>总结：局部优化与全局协同的悖论</span></strong><span> </span></h4><ol start=""><li><p><strong><span>局部优化“易成功”的真相</span></strong><span>：  </span></p><ul><li><p><span>改善范围小、阻力低（如精益优化车间布局），但可能加剧系统矛盾（如降低库存导致交付率下降）。  </span></p></li></ul></li><li><p><strong><span>全局协同“高失败率”的根源</span></strong><span>：  </span></p><ul><li><p><span>需重构组织权责（如S&amp;OP要求销售共享预测权）、牺牲部门利益，依赖高层强推而非自发支持。  </span></p></li></ul></li><li><p><strong><span>破局关键</span></strong><span>：  </span></p><ul><li><p><strong><span>自上而下设计</span></strong><span>：通过战略目标对齐（如企业级库存周转率指标）弱化部门博弈。  </span></p></li><li><p><strong><span>容忍阶段性冲突</span></strong><span>：协同初期允许合理损耗（如短期成本上升），换取长期系统效益。</span></p></li></ul></li></ol><p> </p><hr/><h3 id="Chapter4Integratedsupplychainmanagementistheunderlyinglogicofproductionandsalescollaboration"><strong><span>第4章 集成供应链管理是产销协同的底层逻辑</span></strong><span> </span></h3><h4 id="Corelogic"><strong><span>核心逻辑</span></strong><span> </span></h4><p><span>供应链管理的本质是</span><strong><span>系统论思维</span></strong><span>的实践，需通过管理“要素间的连接关系”而非单一要素优化，解决高库存、高缺货等协同失效问题。其终极目标是实现</span><strong><span>全局最优</span></strong><span>，而非局部利益最大化。</span></p><hr/><h4 id="41Methodologyofmethodologyreductionismholismandsystemism"><strong><span>4.1 方法论的方法论：还原论、整体论与系统论</span></strong><span> </span></h4><ol start=""><li><p><strong><span>还原论</span></strong><span>：  </span></p><ul><li><p><strong><span>定义</span></strong><span>：将复杂问题拆解为独立模块分析（如绩效考核拆分为部门KPI）。  </span></p></li><li><p><strong><span>局限</span></strong><span>：忽视模块间关联性（如销售KPI达标可能导致生产计划混乱）。  </span></p></li></ul></li><li><p><strong><span>整体论与系统论</span></strong><span>：  </span></p><ul><li><p><strong><span>系统三要件</span></strong><span>（梅多斯理论）：  </span></p><ul><li><p><strong><span>要素</span></strong><span>：企业职能部门（销售、生产、采购等）。  </span></p></li><li><p><strong><span>连接</span></strong><span>：协同规则（如S&amp;OP会议机制）。  </span></p></li><li><p><strong><span>功能</span></strong><span>：企业战略目标（如成本领先或差异化）。  </span></p></li></ul></li><li><p><strong><span>关键结论</span></strong><span>：  </span></p><ul><li><p><span>更换要素（如换CEO）无法解决问题，需重构连接关系（如产销协同流程）。  </span></p></li><li><p><span>系统功能（战略目标）决定行为模式（如民生保障企业优先稳定而非利润）。  </span></p></li></ul></li></ul></li><li><p><strong><span>系统变化机制</span></strong><span>：  </span></p><ul><li><p><strong><span>增强回路</span></strong><span>（正反馈）：如销售增长→产能扩张→成本下降→进一步增长。  </span></p></li><li><p><strong><span>调节回路</span></strong><span>（负反馈）：如库存积压→降价清仓→利润下降→抑制扩张。  </span></p></li><li><p><strong><span>反馈延迟</span></strong><span>：  </span></p><ul><li><p><strong><span>案例</span></strong><span>：啤酒分销商因订单到货延迟，库存波动加剧（类似“淋浴水温震荡”）。  </span></p></li><li><p><strong><span>应对</span></strong><span>：延长决策观察期（如销量连续6天上涨再补货）。  </span></p></li></ul></li></ul></li></ol><hr/><h4 id="42Practiceofmethodologyinthemanagementindustrymassmanagementvselitemanagement"><strong><span>4.2 方法论在管理界的实践：大众管理派 vs. 精英管理派</span></strong><span> </span></h4><figure class="table-figure"><table><thead><tr><th><strong><span>流派</span></strong></th><th><strong><span>思想基础</span></strong></th><th><strong><span>核心观点</span></strong></th><th><strong><span>供应链映射</span></strong></th></tr></thead><tbody><tr><td><strong><span>大众管理派</span></strong></td><td><span>还原论</span></td><td><span>自下而上目标分解（德鲁克目标管理）</span></td><td><span>部门KPI导向（如库存周转率优化）</span></td></tr><tr><td><strong><span>精英管理派</span></strong></td><td><span>系统论</span></td><td><span>自上而下全局协同（赫伯特·西蒙）</span></td><td><span>集成供应链计划（平衡研产销矛盾）</span></td></tr></tbody></table></figure><p><strong><span>数字化启示</span></strong><span>：精英管理派更适配数字时代，需通过数据驱动全局决策（如动态安全库存算法）。</span></p><hr/><h4 id="43Theessentialdifferencebetweensupplychainandsupplychainmanagement"><strong><span>4.3 供应链与供应链管理的本质区别</span></strong><span> </span></h4><ol start=""><li><p><strong><span>供应链（要素集合）</span></strong><span>：  </span></p><ul><li><p><strong><span>定义</span></strong><span>：从原材料到客户的实物流、信息流、资金流网络（APICS）。  </span></p></li><li><p><strong><span>核心</span></strong><span>：物理实体存在（如工厂、仓库、运输工具）。  </span></p></li></ul></li><li><p><strong><span>供应链管理（连接关系管理）</span></strong><span>：  </span></p><ul><li><p><strong><span>定义</span></strong><span>：通过设计、计划、执行、监控实现全局最优（如动态产能分配）。  </span></p></li><li><p><strong><span>特征</span></strong><span>：  </span></p><ul><li><p><span>无部门利益，仅追求企业整体目标。  </span></p></li><li><p><span>需平衡“自上而下统筹”与“自下而上创新”（如惠普转型案例）。  </span></p></li></ul></li></ul></li></ol><p><strong><span>惠普案例启示</span></strong><span>：  </span></p><ul><li><p><strong><span>自下而上</span></strong><span>：1960年代分散创新错过计算机机遇。  </span></p></li><li><p><strong><span>自上而下</span></strong><span>：1990年代CEO杨致远强推集中研发，小型机市场份额从13升至第3。  </span></p></li></ul><hr/><h4 id="44EndtoendsupplychainvsIntegratedsupplychainmanagement"><strong><span>4.4 端到端供应链 vs. 集成供应链管理</span></strong><span> </span></h4><figure class="table-figure"><table><thead><tr><th><strong><span>概念</span></strong></th><th><strong><span>核心</span></strong></th><th><strong><span>典型实践</span></strong></th></tr></thead><tbody><tr><td><strong><span>端到端供应链</span></strong></td><td><span>全流程可视化（如库存状态跟踪）</span></td><td><span>订单执行系统（OMS）、物流追踪平台</span></td></tr><tr><td><strong><span>端到端供应链管理</span></strong></td><td><span>主动干预流程（如动态调整交货优先级）</span></td><td><span>需求感知响应（如促销期库存预置）</span></td></tr><tr><td><strong><span>集成供应链</span></strong></td><td><span>物理资源整合（集中采购、共享物流）</span></td><td><span>区域配送中心（RDC）、VMI模式</span></td></tr><tr><td><strong><span>集成供应链管理</span></strong></td><td><span>化学式协同（计划驱动全局优化）</span></td><td><span>集成计划部门（统筹销售预测与产能分配）</span></td></tr></tbody></table></figure><hr/><h4 id="45Comparisonofthefivemajorproductionandsalesmanagementmodels"><strong><span>4.5 五大产销管理模式对比</span></strong><span> </span></h4><ol start=""><li><p><strong><span>产销服从</span></strong><span>（幼儿园强势分苹果）：  </span></p><ul><li><p><strong><span>场景</span></strong><span>：初创期，销售主导，后端被动响应。  </span></p></li><li><p><strong><span>风险</span></strong><span>：规模扩张后协同失效（如生产无法匹配需求波动）。  </span></p></li></ul></li></ol><p><img alt="image-20250424180627635" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424180627635.png"/></p><ol start="2"><li><p><strong><span>产销博弈</span></strong><span>（小朋友挑战分苹果权威）：  </span></p><ul><li><p><strong><span>场景</span></strong><span>：成长期，部门利益冲突（如销售承诺超产能订单）。  </span></p></li></ul><ul><li><p><strong><span>过渡形态</span></strong><span>：委员会协调（增加沟通成本）。  </span></p></li></ul></li></ol><p><img alt="image-20250424180650829" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424180650829.png"/></p><ol start="3"><li><p><strong><span>二元产销交易</span></strong><span>（分两堆苹果自主交换）：  </span></p><ul><li><p><strong><span>场景</span></strong><span>：成熟期，前后端独立核算（如销售与制造签订内部协议）。  </span></p></li></ul><ul><li><p><strong><span>局限</span></strong><span>：短期降本有效，长期割裂协同（如销售囤积库存保KPI）。  </span></p></li></ul></li></ol><p><img alt="image-20250424180710597" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424180710597.png"/></p><ol start="3"><li><p><strong><span>多元产销交易</span></strong><span>（阿米巴式分N堆苹果）：  </span></p><ul><li><p><strong><span>场景</span></strong><span>：多元化集团，激发单元活力（如各产品线独立经营）。  </span></p></li></ul><ul><li><p><strong><span>风险</span></strong><span>：局部优化牺牲全局（如产品线争抢产能导致交付延迟）。 </span></p></li></ul></li></ol><p><img alt="image-20250424180732772" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424180732772.png"/><span> </span></p><ol start="5"><li><p><strong><span>产销协同</span></strong><span>（专人科学分苹果）：  </span></p><ul><li><p><strong><span>硬组织模式</span></strong><span>：强计划管控（周计划级干预），风险依赖计划部门能力。  </span></p></li></ul><ul><li><p><strong><span>软协同模式</span></strong><span>：规则驱动（主计划约束执行层），平衡灵活性与一致性。  </span></p></li></ul></li></ol><p><img alt="image-20250424180754246" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424180754246.png"/></p><hr/><h4 id="SummaryThecorevalueofintegratedsupplychainprograms"><strong><span>总结：集成供应链计划的核心价值</span></strong><span> </span></h4><ol start=""><li><p><strong><span>系统论载体</span></strong><span>：通过计划连接销售、生产、采购，管理反馈延迟（如动态安全库存调整）。  </span></p></li><li><p><strong><span>全局最优引擎</span></strong><span>：  </span></p><ul><li><p><strong><span>硬实力</span></strong><span>：数据建模（如需求预测算法）。  </span></p></li><li><p><strong><span>软实力</span></strong><span>：跨部门信任（如老兵推动协同）。  </span></p></li></ul></li><li><p><strong><span>变革路径</span></strong><span>：从硬组织（强管控）过渡到软协同（规则驱动），适配组织文化（如惠普转型经验）。  </span></p></li></ol><p><strong><span>关键结论</span></strong><span>：供应链管理不是刚需，但却是突破“三高”困局的唯一系统性解药。</span></p><p> </p><hr/><h3 id="Chapter5Systemframeworkforintegratedsupplychainplanningmanagement"><strong><span>第5章 集成供应链计划管理的体系框架</span></strong><span> </span></h3><h4 id="Corelogic"><strong><span>核心逻辑</span></strong><span> </span></h4><p><span>集成供应链计划管理体系是产销协同的</span><strong><span>顶层设计框架</span></strong><span>，通过“防火”（事前规划）而非“救火”（事后应对）实现全局最优。其核心在于</span><strong><span>分层管理</span></strong><span>（中长期资源规划→短期执行计划）与</span><strong><span>系统权衡</span></strong><span>（跨职能利益平衡），而非单一环节优化。</span></p><hr/><h4 id="51Positioningandframeworkforintegratedsupplychainplanningmanagement"><strong><span>5.1 集成供应链计划管理的定位与框架</span></strong><span> </span></h4><ol start=""><li><p><strong><span>三层架构</span></strong><span>：  </span></p><ul><li><p><strong><span>顶层设计</span></strong><span>（定位、模式、策略）：决定50%以上协同效率（如选择成本优先或交付优先战略）。  </span></p></li><li><p><strong><span>中层资源规划</span></strong><span>（S&amp;OP流程、中长期计划）：解决产能布局、库存水位设定等资源匹配问题。  </span></p></li><li><p><strong><span>基层执行</span></strong><span>（S&amp;OE流程、短期计划）：处理生产排程、采购到货等日常运营。  </span></p></li></ul></li><li><p><strong><span>闭环监控</span></strong><span>：通过计划与执行数据对比（如实际库存 vs. 目标库存），动态预警并调整策略。  </span></p></li></ol><p><strong><span>对比传统ERP</span></strong><span>：传统系统缺乏层级划分，短期计划常以高成本突破中长期约束（如紧急调货推高物流费用）。  </span></p><p> </p><p><img alt="image-20250424181103763" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424181103763.png"/></p><hr/><h4 id="52Threeultimatemissionsfullcyclecoverageofresourceplanning"><strong><span>5.2 三大终极使命：资源规划的全周期覆盖</span></strong><span> </span></h4><ol start=""><li><p><strong><span>资源布局计划（供应网络计划）</span></strong><span>：  </span></p><ul><li><p><strong><span>目标</span></strong><span>：设计全球供应网络（如工厂选址、仓库分布）。  </span></p></li><li><p><strong><span>案例</span></strong><span>：疫情期间芯片短缺暴露布局缺陷（过度集中亚洲工厂）。  </span></p></li></ul></li><li><p><strong><span>资源配置计划（主计划）</span></strong><span>：  </span></p><ul><li><p><strong><span>目标</span></strong><span>：匹配资源与需求（如产能分配、安全库存设定）。  </span></p></li><li><p><strong><span>挑战</span></strong><span>：管理层经验决策易导致拆东补西（如挪用A产品产能补B产品缺口）。  </span></p></li></ul></li><li><p><strong><span>资源使用计划（执行计划）</span></strong><span>：  </span></p><ul><li><p><strong><span>目标</span></strong><span>：落地日常运营（如生产排程、采购订单）。  </span></p></li><li><p><strong><span>误区</span></strong><span>：企业过度聚焦执行层，忽视问题根源在中长期规划（如缺货因产能不足而非排产失误）。  </span></p></li></ul></li></ol><p><strong><span>关键结论</span></strong><span>：  </span></p><ul><li><p><span>环境增长期掩盖规划缺陷（生产即销售），波动期凸显资源布局价值。  </span></p></li><li><p><span>执行层问题（如交付延迟）需在中长期计划中寻找答案。  </span></p></li></ul><hr/><h4 id="53Threemajorcompilationlogicstradeoffsdrivesandsuperposition"><strong><span>5.3 三大编制逻辑：权衡、驱动与叠加</span></strong><span> </span></h4><figure class="table-figure"><table><thead><tr><th><strong><span>逻辑类型</span></strong></th><th><strong><span>适用层级</span></strong></th><th><strong><span>核心机制</span></strong></th><th><strong><span>典型工具</span></strong></th></tr></thead><tbody><tr><td><strong><span>权衡制</span></strong></td><td><span>资源布局/配置计划</span></td><td><span>全局利益平衡（如成本 vs. 交付）</span></td><td><span>S&amp;OP会议、线性规划模型</span></td></tr><tr><td><strong><span>驱动制</span></strong></td><td><span>资源使用计划</span></td><td><span>订单/库存/预测触发执行</span></td><td><span>DDMRP、TOC鼓-缓冲-绳</span></td></tr><tr><td><strong><span>叠加制</span></strong></td><td><span>需求计划</span></td><td><span>多因素修正（基线+促销+市场趋势）</span></td><td><span>统计预测+专家调整</span></td></tr></tbody></table></figure><p><strong><span>案例解析</span></strong><span>：  </span></p><ul><li><p><strong><span>权衡制</span></strong><span>：新品上市需权衡营销需求（快速铺货）与产能限制（爬坡期产量低）。  </span></p></li><li><p><strong><span>驱动制</span></strong><span>：按订单生产（MTO）模式下，生产计划由客户订单直接驱动。  </span></p></li><li><p><strong><span>叠加制</span></strong><span>：需求预测=历史销量（60%）+促销计划（30%）+竞品动向（10%）。  </span></p></li></ul><hr/><h4 id="54Threecorefeaturesindependenceintegrationandlayering"><strong><span>5.4 三大核心特征：独立、集成、分层</span></strong><span> </span></h4><ol start=""><li><p><strong><span>独立（三不靠）</span></strong><span>：  </span></p><ul><li><p><span>计划部门需独立于执行部门（如生产、销售），避免利益绑架（如销售施压修改交付优先级）。  </span></p></li></ul></li><li><p><strong><span>集成（三位一体）</span></strong><span>：  </span></p><ul><li><p><strong><span>横向跨职能</span></strong><span>：整合需求计划、生产计划、补货计划（如促销期协同销售调整库存策略）。  </span></p></li><li><p><strong><span>纵向跨层级</span></strong><span>：中长期计划约束短期执行（如年度产能规划约束月度排产）。  </span></p></li></ul></li><li><p><strong><span>分层（防火 vs. 救火）</span></strong><span>：  </span></p><ul><li><p><strong><span>规划层</span></strong><span>（防火）：减少问题发生（如通过产能预留避免旺季缺货）。  </span></p></li><li><p><strong><span>计划层</span></strong><span>（控火）：控制问题影响（如动态调整安全库存缓冲）。  </span></p></li><li><p><strong><span>执行层</span></strong><span>（救火）：快速解决问题（如紧急调拨邻近仓库库存）。  </span></p></li></ul></li></ol><p><strong><span>典型冲突</span></strong><span>：  </span></p><ul><li><p><span>执行层为达成交付KPI，高价空运补货，推高成本（救火）。  </span></p></li><li><p><span>规划层通过增设区域仓，降低运输成本（防火）。  </span></p></li></ul><hr/><h4 id="55Sixmajorbusinessmodulesfromtopleveldesigntocapacitybuilding"><strong><span>5.5 六大业务模块：从顶层设计到能力建设</span></strong><span> </span></h4><ol start=""><li><p><strong><span>顶层设计</span></strong><span>（第6章）：  </span></p><ul><li><p><span>定位（成本导向/交付导向）、模式（推式/拉式）、策略（库存水位规则）。  </span></p></li></ul></li><li><p><strong><span>计划体系</span></strong><span>（第7章）：  </span></p><ul><li><p><span>构建资源布局→配置→使用三层计划，避免短期计划架空中长期规划。  </span></p></li></ul></li><li><p><strong><span>产销协同流程</span></strong><span>（第8章）：  </span></p><ul><li><p><span>S&amp;OP（中长期）与S&amp;OE（短期）衔接，如月度产销会决议驱动周排产计划。  </span></p></li></ul></li><li><p><strong><span>监控平台</span></strong><span>（第9章）：  </span></p><ul><li><p><span>跟踪计划达成率、库存周转率等指标，预警偏差（如实际销量低于预测20%）。  </span></p></li></ul></li><li><p><strong><span>组织架构</span></strong><span>（第10章）：  </span></p><ul><li><p><span>设立独立计划部门，明确权责（如计划总监直接向COO汇报）。  </span></p></li></ul></li><li><p><strong><span>团队能力</span></strong><span>（第11章）：  </span></p><ul><li><p><strong><span>硬技能</span></strong><span>：数据建模（如需求预测算法）、系统操作（如APS工具）。  </span></p></li><li><p><strong><span>软技能</span></strong><span>：跨部门沟通（如说服销售接受交付优先级规则）。  </span></p></li></ul></li></ol><hr/><h4 id="56Positioningofinventoryinplanningmanagement"><strong><span>5.6 库存在计划管理中的定位</span></strong><span> </span></h4><ol start=""><li><p><strong><span>库存是结果，非原因</span></strong><span>：  </span></p><ul><li><p><span>高库存/缺货是资源规划失当的表现（如安全库存设定未考虑需求波动）。  </span></p></li></ul></li><li><p><strong><span>三层库存管理</span></strong><span>：  </span></p><ul><li><p><strong><span>事前</span></strong><span>（顶层设计）：选择库存策略（如按ABC分类设定服务水平）。  </span></p></li><li><p><strong><span>事中</span></strong><span>（资源规划）：推演未来库存水位（如S&amp;OP会议评估促销期库存需求）。  </span></p></li><li><p><strong><span>事后</span></strong><span>（执行监控）：预警呆滞库存（如库龄超90天产品自动触发清理流程）。  </span></p></li></ul></li></ol><p><strong><span>误区警示</span></strong><span>：单纯优化库存参数（如降低安全库存）可能加剧缺货，需系统规划。  </span></p><hr/><h4 id="57Therelationshipbetweenplanningsystemandexecutionsystem"><strong><span>5.7 计划体系与执行体系的关系</span></strong><span> </span></h4><ol start=""><li><p><strong><span>计划体系</span></strong><span>：  </span></p><ul><li><p><span>上层建筑，定义规则（如产能分配优先级、最大库存阈值）。  </span></p></li></ul></li><li><p><strong><span>执行体系</span></strong><span>：  </span></p><ul><li><p><span>落地操作，受计划约束（如生产按主计划排程，采购按补货计划下单）。</span><br/><strong><span>互动逻辑</span></strong><span>：  </span></p></li></ul></li></ol><ul><li><p><span>执行反馈（如生产欠产）触发计划调整（如修订后续排产）。  </span></p></li><li><p><span>计划迭代（如缩短S&amp;OP周期）提升执行灵活性。  </span></p></li></ul><hr/><h4 id="SummaryThevalueoftheplanexceedsfactoryproductionschedule"><strong><span>总结：计划的价值超越工厂排产</span></strong><span> </span></h4><ol start=""><li><p><strong><span>全局视角</span></strong><span>：计划部门是供应链的“大脑”，统筹研-产-销-物流全链路。  </span></p></li><li><p><strong><span>协同升级</span></strong><span>：从流程协同（如S&amp;OP会议）进阶为数据协同（如需求预测共享）。  </span></p></li><li><p><strong><span>长期主义</span></strong><span>：资源规划能力是企业抗风险（如疫情、贸易战）的核心竞争力。  </span></p></li></ol><p><strong><span>关键结论</span></strong><span>：供应链管理的最高境界是“看不见的计划”——通过前瞻性布局，让问题根本无需发生。</span></p><p> </p><hr/><h3 id="Chapter6ToplevelDesignofIntegratedSupplyChainPlanningManagement"><strong><span>第6章 集成供应链计划管理之顶层设计</span></strong><span> </span></h3><h4 id="Corelogic"><strong><span>核心逻辑</span></strong><span> </span></h4><p><span>顶层设计是集成供应链计划管理的</span><strong><span>战略底座</span></strong><span>，通过定位、模式、策略三重设计，将企业战略转化为可落地的产销协同规则。其本质是</span><strong><span>平衡艺术</span></strong><span>——在销售激进性与供应稳定性间找到动态均衡，而非单一环节优化。</span></p><hr/><h4 id="61PositioningDesignFromMessengertoChiefofStaff"><strong><span>6.1 定位设计：从传令兵到参谋长</span></strong><span> </span></h4><ol start=""><li><p><strong><span>被动承接型（传令兵）</span></strong><span>：  </span></p><ul><li><p><strong><span>特征</span></strong><span>：计划部门仅传递需求信息（如销售预测→生产计划），缺乏决策影响力。  </span></p></li><li><p><strong><span>弊端</span></strong><span>：  </span></p><ul><li><p><span>沦为“数据搬运工”，无法干预前端决策（如销售过度承诺交付时效）。  </span></p></li><li><p><span>后端被动执行，易引发资源错配（如旺季产能不足导致紧急外包成本飙升）。  </span></p></li></ul></li></ul></li><li><p><strong><span>主动担当型（参谋长）</span></strong><span>：  </span></p><ul><li><p><strong><span>特征</span></strong><span>：计划部门参与策略制定（如促销计划评审、新品上市节奏规划）。  </span></p></li><li><p><strong><span>实践要点</span></strong><span>：  </span></p><ul><li><p><strong><span>数据赋能</span></strong><span>：通过需求预测模型量化销售策略风险（如预测偏差率超20%时预警）。  </span></p></li><li><p><strong><span>组织保障</span></strong><span>：计划部门与销售、生产平级（一级部门），拥有跨部门协调权。  </span></p></li><li><p><strong><span>产业链整合</span></strong><span>：延伸协同至客户（共享库存可视性）与供应商（联合产能规划）。  </span></p></li></ul></li></ul></li></ol><p><strong><span>案例对比</span></strong><span>：  </span></p><ul><li><p><strong><span>被动型</span></strong><span>：某快消企业计划部按销售预测直接排产，未考虑产线切换成本，导致频繁换线效率损失15%。  </span></p></li><li><p><strong><span>主动型</span></strong><span>：某电子企业计划部介入销售策略，建议将新品发布会延后2周以匹配供应商物料准备周期，降低首发缺货风险30%。  </span></p></li></ul><hr/><h4 id="62PatterndesignCombinationlogicofthousandsoffieldsandthousandsofchains"><strong><span>6.2 模式设计：千场千链的组合逻辑</span></strong><span> </span></h4><ol start=""><li><p><strong><span>需求计划模式（叠加制）</span></strong><span>：  </span></p><ul><li><p><strong><span>预测路径</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>类型</span></strong></th><th><strong><span>适用场景</span></strong></th><th><strong><span>风险</span></strong></th></tr></thead><tbody><tr><td><span>自上而下（总部分解）</span></td><td><span>标准化产品（如大宗商品）</span></td><td><span>忽视区域差异（如北方滞销南方缺货）</span></td></tr><tr><td><span>自下而上（区域提报）</span></td><td><span>定制化产品（如工业设备）</span></td><td><span>区域博弈虚高预测（如为争取资源夸大需求）</span></td></tr><tr><td><span>协同预测（上下结合）</span></td><td><span>多渠道复杂业态（如全渠道零售）</span></td><td><span>数据整合难度高（需统一预测平台支撑）</span></td></tr></tbody></table></figure></li></ul></li><li><p><strong><span>资源规划模式（权衡制）</span></strong><span>：  </span></p><ul><li><p><strong><span>典型冲突</span></strong><span>：  </span></p><ul><li><p><strong><span>成本 vs. 交付</span></strong><span>：选择低成本海运（30天）或高成本空运（3天）。  </span></p></li><li><p><strong><span>规模 vs. 柔性</span></strong><span>：大批量生产降本 vs. 小批量快速响应需求波动。  </span></p></li></ul></li><li><p><strong><span>工具应用</span></strong><span>：线性规划模型量化最优解（如设定交付时效95%分位线下的最低成本路径）。  </span></p></li></ul></li><li><p><strong><span>执行驱动模式（驱动制）</span></strong><span>：  </span></p><ul><li><p><strong><span>生产触发逻辑</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>模式</span></strong></th><th><strong><span>定义</span></strong></th><th><strong><span>适用产品</span></strong></th><th><strong><span>库存风险</span></strong></th></tr></thead><tbody><tr><td><span>MTO</span></td><td><span>按订单生产（零库存）</span></td><td><span>定制化（如特种机械）</span></td><td><span>低（无成品库存）</span></td></tr><tr><td><span>MTS</span></td><td><span>按库存生产（预测驱动）</span></td><td><span>标品快消（如瓶装水）</span></td><td><span>高（依赖预测精度）</span></td></tr><tr><td><span>MTF</span></td><td><span>按预测生产（半成品）</span></td><td><span>长交期组件（如芯片）</span></td><td><span>中（半成品可调配）</span></td></tr></tbody></table></figure></li></ul></li></ol><p><strong><span>场景示例</span></strong><span>：  </span></p><ul><li><p><strong><span>MTS困境</span></strong><span>：某饮料企业为降本采用大批量生产，但因促销预测偏差，导致50万箱临期品报废。  </span></p></li><li><p><strong><span>MTF破局</span></strong><span>：某车企按预测生产通用底盘，接单后快速组装差异化配置，交付周期缩短40%。  </span></p></li></ul><hr/><h4 id="63StrategyDesignResearchproductionsalesthreedimensionalcollaboration"><strong><span>6.3 策略设计：研-产-销三维协同</span></strong><span> </span></h4><ol start=""><li><p><strong><span>产品策略（指挥棒）</span></strong><span>：  </span></p><ul><li><p><strong><span>市场导向设计</span></strong><span>：  </span></p><ul><li><p><strong><span>复杂度管理</span></strong><span>：SKU精简（如宝洁将护发素规格从40种减至15种），降低生产换线成本。  </span></p></li><li><p><strong><span>延迟策略</span></strong><span>：通用化设计+末端定制（如戴尔电脑按订单安装内存/硬盘）。  </span></p></li></ul></li><li><p><strong><span>供应适配设计</span></strong><span>：  </span></p><ul><li><p><strong><span>包装标准化</span></strong><span>：冷冻食品统一使用-18℃冷链箱，降低物流复杂度。  </span></p></li><li><p><strong><span>模块化BOM</span></strong><span>：家电企业通用电源模块，缩短供应商交货周期。  </span></p></li></ul></li></ul></li><li><p><strong><span>销售策略（冲锋号）</span></strong><span>：  </span></p><ul><li><p><strong><span>订单交付分级</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>客户等级</span></strong></th><th><strong><span>交付时效</span></strong></th><th><strong><span>溢价权限</span></strong></th><th><strong><span>库存保障</span></strong></th></tr></thead><tbody><tr><td><span>战略客户</span></td><td><span>24小时</span></td><td><span>可加价20%</span></td><td><span>安全库存+专线物流</span></td></tr><tr><td><span>普通客户</span></td><td><span>72小时</span></td><td><span>标准价格</span></td><td><span>共享库存池</span></td></tr><tr><td><span>长尾客户</span></td><td><span>5工作日</span></td><td><span>预付款优先</span></td><td><span>按单生产</span></td></tr></tbody></table></figure></li><li><p><strong><span>促销节奏管控</span></strong><span>：  </span></p><ul><li><p><span>避免集中促销（如双11分波段预售），平滑生产负荷。  </span></p></li><li><p><span>协同计划部预置库存（如提前30天按促销量50%备货，动态调整）。  </span></p></li></ul></li></ul></li><li><p><strong><span>供应策略（压舱石）</span></strong><span>：  </span></p><ul><li><p><strong><span>产能弹性设计</span></strong><span>：  </span></p><ul><li><p><strong><span>旺季策略</span></strong><span>：租赁临时产线+外包非核心工序（如食品企业旺季外包包装环节）。  </span></p></li><li><p><strong><span>淡季策略</span></strong><span>：设备维护+员工培训，储备柔性产能。  </span></p></li></ul></li><li><p><strong><span>采购联盟</span></strong><span>：联合行业伙伴集中议价（如家电企业联合采购铜材降低单价）。  </span></p></li></ul></li></ol><p><strong><span>失败案例警示</span></strong><span>：  </span></p><ul><li><p><strong><span>案例一</span></strong><span>：某饮料企业推新品，销售激进铺货但生产线仅支持大批量生产，导致50%产品临期报废。  </span></p></li><li><p><strong><span>案例四</span></strong><span>：企业从收入导向转利润导向，未同步调整供应策略（如淘汰高成本供应商），净利率仅从1.5%提升至2%。  </span></p></li></ul><hr/><h4 id="SummarySynergyisthelifelineofstrategy"><strong><span>总结：协同是策略的生命线</span></strong><span> </span></h4><ol start=""><li><p><strong><span>纵向承接战略</span></strong><span>：  </span></p><ul><li><p><span>通过产销策略联动（如产品定位→交付优先级→产能预留）将战略分解为可执行规则。  </span></p></li></ul></li><li><p><strong><span>横向动态平衡</span></strong><span>：  </span></p><ul><li><p><span>销售激进时供应同步敏捷（如缩短生产周期），销售保守时供应侧重降本（如批量采购）。  </span></p></li></ul></li><li><p><strong><span>中台能力构建</span></strong><span>：  </span></p><ul><li><p><span>计划部门需兼备数据建模（如需求预测算法）与商业洞察（如竞品分析），成为战略落地枢纽。  </span></p></li></ul></li></ol><p><strong><span>关键结论</span></strong><span>：  </span></p><ul><li><p><span>顶层设计决定了供应链管理是“救火队”还是“防火墙”。  </span></p></li><li><p><span>没有策略协同的供应链优化，如同在流沙上建高楼——局部越精细，全局越脆弱。</span></p></li></ul><hr/><h3 id="Chapter7PlanningSystemDesignforIntegratedSupplyChainPlanningManagement"><strong><span>第7章 集成供应链计划管理之计划体系设计</span></strong><span> </span></h3><h4 id="Corelogic"><strong><span>核心逻辑</span></strong><span> </span></h4><p><span>计划体系是集成供应链管理的</span><strong><span>中枢神经</span></strong><span>，通过分层（中长期→短期）与分权（全局统筹→局部执行）实现“防火”与“救火”协同。其核心矛盾是</span><strong><span>资源错配</span></strong><span>，解决之道在于“主计划”的立体化资源匹配与动态场景模拟。</span></p><hr/><h4 id="71Planningsystemframeworkthreelayerprogressionandtwowayconstraints"><strong><span>7.1 计划体系框架：三层递进与双向约束</span></strong><span> </span></h4><ol start=""><li><p><strong><span>需求计划</span></strong><span>：  </span></p><ul><li><p><strong><span>层级</span></strong><span>：长期（18个月）、中期（12个月）、短期（3-6个月）。  </span></p></li><li><p><strong><span>关键差异</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>层级</span></strong></th><th><strong><span>目标</span></strong></th><th><strong><span>编制焦点</span></strong></th><th><strong><span>精度要求</span></strong></th></tr></thead><tbody><tr><td><span>长期</span></td><td><span>战略资源布局（如工厂选址）</span></td><td><span>品类/区域层面预测</span></td><td><span>±30%</span></td></tr><tr><td><span>中期</span></td><td><span>产能与物料预判（如旺季备货）</span></td><td><span>SKU层面预测</span></td><td><span>±20%</span></td></tr><tr><td><span>短期</span></td><td><span>执行驱动（如生产排程）</span></td><td><span>订单级滚动预测</span></td><td><span>±10%</span></td></tr></tbody></table></figure></li></ul></li><li><p><strong><span>主计划（资源配置中枢）</span></strong><span>：  </span></p><ul><li><p><strong><span>承上启下</span></strong><span>：承接战略目标（如利润率15%），拆解为产能分配、库存水位等可执行规则。  </span></p></li><li><p><strong><span>动态约束</span></strong><span>：长期计划是中期计划的“天花板”，中期计划约束短期执行（如月度产能上限）。  </span></p></li></ul></li><li><p><strong><span>供应计划</span></strong><span>：  </span></p><ul><li><p><strong><span>执行导向</span></strong><span>：按主计划约束落地生产/采购/物流指令，关注可操作性（如生产换线成本最小化）。  </span></p></li></ul></li></ol><p><img alt="image-20250424181152987" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424181152987.png"/></p><p><strong><span>案例对比</span></strong><span>：  </span></p><ul><li><p><strong><span>无主计划企业</span></strong><span>：某服装企业直接按销售预测排产，未考虑面料采购周期，导致旺季面料短缺，交付延迟30%。  </span></p></li><li><p><strong><span>主计划驱动企业</span></strong><span>：某家电企业通过主计划提前6个月锁定关键芯片产能，确保新品首发供应。  </span></p></li></ul><hr/><h4 id="72RequirementsPlanningDesignFromStrategyDeductiontoExecutionFreeze"><strong><span>7.2 需求计划设计：从战略推演到执行冻结</span></strong><span> </span></h4><ol start=""><li><p><strong><span>中长期需求计划</span></strong><span>：  </span></p><ul><li><p><strong><span>编制逻辑</span></strong><span>：  </span></p><ul><li><p><strong><span>假设驱动</span></strong><span>：记录GDP增长、政策变化等外部变量（如假设原材料关税上调5%）。  </span></p></li><li><p><strong><span>叠加修正</span></strong><span>：基线预测+市场活动增量+产品迭代影响。  </span></p></li></ul></li><li><p><strong><span>组织协作</span></strong><span>：市场部主导（提供行业趋势），高层参与（战略对齐）。  </span></p></li></ul></li></ol><p><img alt="image-20250424181309224" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424181309224.png"/></p><ol start="2"><li><p><strong><span>短期需求计划</span></strong><span>：  </span></p><ul><li><p><strong><span>冻结期管理</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>阶段</span></strong></th><th><strong><span>时长</span></strong></th><th><strong><span>调整权限</span></strong></th><th><strong><span>示例</span></strong></th></tr></thead><tbody><tr><td><span>计划期</span></td><td><span>6周</span></td><td><span>允许调整（±20%）</span></td><td><span>第1-2周：锁定生产批次</span></td></tr><tr><td><span>执行冻结期</span></td><td><span>2周</span></td><td><span>仅紧急订单可触发变更（审批制）</span></td><td><span>第3-4周：禁止排产变动</span></td></tr></tbody></table></figure></li></ul><ul><li><p><strong><span>预测更新悖论</span></strong><span>：  </span></p><ul><li><p><strong><span>过度调整</span></strong><span>：某快消企业日更预测，导致生产线频繁换线，效率下降25%。  </span></p></li><li><p><strong><span>客户协同</span></strong><span>：某工业设备企业要求客户提前14天下单，预测准确率提升至85%。  </span></p></li></ul></li></ul></li></ol><p> </p><hr/><h4 id="73Mainplandesignresourcematchingandscenesimulation"><strong><span>7.3 主计划设计：资源匹配与场景模拟</span></strong><span> </span></h4><ol start=""><li><p><strong><span>输入输出模型</span></strong><span>：  </span></p><ul><li><p><strong><span>七类输入</span></strong><span>：  </span></p><ol start=""><li><p><span>需求类（预测、订单）  </span></p></li><li><p><span>供应类（产能、供应商交期）  </span></p></li><li><p><span>网络类（仓库分布、物流成本）  </span></p></li><li><p><span>约束类（法规、环保限制）  </span></p></li><li><p><span>策略类（交付优先级、成本目标）  </span></p></li><li><p><span>财务类（预算、利润率）  </span></p></li><li><p><span>优化目标（成本最低/交付最快）。  </span></p></li></ol></li><li><p><strong><span>三类输出</span></strong><span>：  </span></p><ol start=""><li><p><span>资源计划（产能分配表、库存水位）  </span></p></li><li><p><span>场景模拟（如疫情封控下的应急方案）  </span></p></li><li><p><span>策略建议（如建议销售延迟新品发布）。  </span></p></li></ol></li></ul></li></ol><p><img alt="image-20250424181412952" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424181412952.png"/></p><ol start="2"><li><p><strong><span>运筹优化技术</span></strong><span>：  </span></p><ul><li><p><strong><span>典型应用</span></strong><span>：遗传算法求解生产批量问题，平衡换线成本与库存持有成本。  </span></p></li></ul><ul><li><p><strong><span>失败教训</span></strong><span>：某车企仅用Excel手动排产，未考虑涂装车间瓶颈，导致月度产能浪费15%。  </span></p></li></ul></li></ol><hr/><h4 id="74Supplyplandesignexecutionflexibilityandglobalgame"><strong><span>7.4 供应计划设计：执行灵活性与全局博弈</span></strong><span> </span></h4><ol start=""><li><p><strong><span>组织模式对比</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>模式</span></strong></th><th><strong><span>优点</span></strong></th><th><strong><span>缺点</span></strong></th><th><strong><span>适用场景</span></strong></th></tr></thead><tbody><tr><td><span>属地化管理</span></td><td><span>执行高效（如工厂自主排产）</span></td><td><span>协同性差（如区域库存积压）</span></td><td><span>产品标准化、区域独立性高</span></td></tr><tr><td><span>总部集中管控</span></td><td><span>全局优化（如跨工厂调拨）</span></td><td><span>灵活性低（响应市场延迟）</span></td><td><span>需求波动大、资源受限</span></td></tr><tr><td><span>双线汇报（虚线）</span></td><td><span>平衡效率与协同</span></td><td><span>权责模糊（如计划与生产冲突）</span></td><td><span>转型期企业</span></td></tr></tbody></table></figure></li><li><p><strong><span>补货调拨挑战</span></strong><span>：  </span></p><ul><li><p><strong><span>最后一公里博弈</span></strong><span>：某连锁餐饮企业计划部试图集中管理分仓库存，遭区域销售抵制（担心失去灵活性），最终妥协为总部制定安全库存规则，区域自主微调。  </span></p></li><li><p><strong><span>权力再分配</span></strong><span>：某零售企业将补货权收归总部后，滞销SKU库存降低40%，但紧急订单满足率下降15%。  </span></p></li></ul></li></ol><hr/><h4 id="75InventoryManagementBreakthroughofSystemicDilemma"><strong><span>7.5 库存管理：突破系统性困局</span></strong><span> </span></h4><ol start=""><li><p><strong><span>库存全景管理</span></strong><span>：  </span></p><ul><li><p><strong><span>事前策略</span></strong><span>：主计划设定品类级库存周转目标（如3C产品≤30天）。  </span></p></li><li><p><strong><span>事中推演</span></strong><span>：S&amp;OP会议评估促销期库存需求，预判慢动风险。  </span></p></li><li><p><strong><span>事后监控</span></strong><span>：控制塔实时跟踪库龄，超90天自动触发清理流程。  </span></p></li></ul></li><li><p><strong><span>安全库存认知颠覆</span></strong><span>：  </span></p><ul><li><p><strong><span>消耗性使命</span></strong><span>：某医疗器械企业允许安全库存被“击穿”（如疫情期优先保障医院供应），后续通过产能弹性恢复。  </span></p></li><li><p><strong><span>波动放大器</span></strong><span>：某食品企业为达成季度目标，月末强行向渠道压货，次月退货率高达25%。  </span></p></li></ul></li></ol><hr/><h4 id="SummaryThestrategicvalueofplanningstratification"><strong><span>总结：计划分层的战略价值</span></strong><span> </span></h4><ol start=""><li><p><strong><span>中长期计划“防火”</span></strong><span>：  </span></p><ul><li><p><span>通过资源布局（如区域仓建设）减少执行层救火频次。  </span></p></li><li><p><span>场景模拟（如供应链中断预案）提升企业抗风险能力。  </span></p></li></ul></li><li><p><strong><span>短期计划“救火”</span></strong><span>：  </span></p><ul><li><p><span>在约束框架内（如产能上限）最大化执行效率。  </span></p></li><li><p><span>异常管理（如供应商延期）反向推动主计划优化。  </span></p></li></ul></li></ol><p><img alt="image-20250424181541000" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424181541000.png"/></p><p><strong><span>关键结论</span></strong><span>：  </span></p><ul><li><p><span>没有主计划的供应链如同“盲人摸象”——局部清晰，全局混沌。  </span></p></li><li><p><span>库存问题本质是产销协同失效的“温度计”，治病需寻病灶而非仅退烧。</span></p></li></ul><p> </p><h3 id="Chapter8IntegratedSupplyChainPlanningManagementandProductionandSalesCollaborativeProcessDesign"><strong><span>第8章 集成供应链计划管理之产销协同流程设计</span></strong><span> </span></h3><h4 id="Corelogic"><strong><span>核心逻辑</span></strong><span> </span></h4><p><span>产销协同流程是集成供应链管理的</span><strong><span>决策中枢</span></strong><span>，通过S&amp;OP（防火式协同）与S&amp;OE（救火式协同）双轨制，实现战略落地与执行纠偏。其本质是</span><strong><span>共识达成机制</span></strong><span>，而非单纯的信息传递或会议体系。</span></p><hr/><h4 id="81ThenatureofSOPandcommonmisunderstandings"><strong><span>8.1 S&amp;OP的本质与常见误解</span></strong><span> </span></h4><ol start=""><li><p><strong><span>定义对比</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>定义来源</span></strong></th><th><strong><span>核心观点</span></strong></th><th><strong><span>关键差异</span></strong></th></tr></thead><tbody><tr><td><span>Oliver Wight</span></td><td><span>跨职能集成管理流程，管理层持续推动</span></td><td><span>强调流程的持续性与管理层参与</span></td></tr><tr><td><span>APICS</span></td><td><span>衔接战略与运营的企业级流程，提供全局洞察</span></td><td><span>突出战略与业务衔接的桥梁作用</span></td></tr></tbody></table></figure></li><li><p><strong><span>七大误解澄清</span></strong><span>：  </span></p><ul><li><p><strong><span>误解1</span></strong><span>：S&amp;OP是计划 → </span><strong><span>真相</span></strong><span>：是决策流程（如通过会议输出产能分配方案）。  </span></p></li><li><p><strong><span>误解2</span></strong><span>：S&amp;OP依赖系统 → </span><strong><span>真相</span></strong><span>：系统仅辅助数据准备（如需求预测工具）。  </span></p></li><li><p><strong><span>误解3</span></strong><span>：S&amp;OP=需求计划 → </span><strong><span>真相</span></strong><span>：需求计划是输入，S&amp;OP需平衡供需与财务目标。  </span></p></li><li><p><strong><span>误解4</span></strong><span>：S&amp;OP=开会 → </span><strong><span>真相</span></strong><span>：会议是载体，共识与决策是目的（如新品上市节奏决议）。  </span></p></li><li><p><strong><span>误解5</span></strong><span>：S&amp;OP改变文化 → </span><strong><span>真相</span></strong><span>：文化冲突是副作用，非目标（如打破部门壁垒是结果）。  </span></p></li></ul></li></ol><p><strong><span>典型案例</span></strong><span>：某外企将S&amp;OP误设为“月度预测评审会”，仅传递数据未解决资源冲突，导致流程形同虚设。</span></p><p><img alt="image-20250424181840955" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424181840955.png"/></p><hr/><h4 id="82ThetoptencorevaluesofSOP"><strong><span>8.2 S&amp;OP的十大核心价值</span></strong><span> </span></h4><ol start=""><li><p><strong><span>共识达成</span></strong><span>：在全局利益与部门利益冲突时（如销售激进扩张 vs 产能限制），通过流程化解博弈。  </span></p></li><li><p><strong><span>决策保护</span></strong><span>：供应链计划部门提供选项（如扩产或外包），管理层集体决策降低个人风险。  </span></p></li><li><p><strong><span>战略纠偏</span></strong><span>：通过财务目标（如利润率）监控运营偏离（如库存积压超阈值）。  </span></p></li><li><p><strong><span>行为引导</span></strong><span>：强制销售与供应部门共同审视中长期风险（如原材料涨价预判）。  </span></p></li><li><p><strong><span>文化转型</span></strong><span>：家族企业通过S&amp;OP建立职业经理人决策机制，减少“一言堂”。  </span></p></li></ol><p><strong><span>场景示例</span></strong><span>：某快消企业S&amp;OP会议中，计划部提出“缩减SKU以降低生产复杂度”，销售与研发部门经数据辩论后达成一致，次年库存周转率提升25%。</span></p><hr/><h4 id="83FourelementsofSOPdesign"><strong><span>8.3 S&amp;OP设计四要素</span></strong><span> </span></h4><ol start=""><li><p><strong><span>组织设计</span></strong><span>：  </span></p><ul><li><p><strong><span>虚拟团队角色</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>角色</span></strong></th><th><strong><span>职责</span></strong></th></tr></thead><tbody><tr><td><span>业务负责人(BL)</span></td><td><span>最终决策者（如CEO）</span></td></tr><tr><td><span>会议推动者(MF)</span></td><td><span>流程协调与议题管理（如供应链总监）</span></td></tr><tr><td><span>必须参会人员(MA)</span></td><td><span>研产销核心部门负责人</span></td></tr></tbody></table></figure></li></ul></li><li><p><strong><span>会议体系</span></strong><span>：  </span></p><ul><li><p><strong><span>五层会议架构</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>会议类型</span></strong></th><th><strong><span>核心议题</span></strong></th><th><strong><span>输出</span></strong></th></tr></thead><tbody><tr><td><span>产品计划评估</span></td><td><span>新品上市节奏与旧品退市计划</span></td><td><span>产品生命周期路线图</span></td></tr><tr><td><span>需求计划评估</span></td><td><span>滚动预测准确性分析与修正</span></td><td><span>共识版需求预测</span></td></tr><tr><td><span>供应计划评估</span></td><td><span>产能缺口与供应商风险评估</span></td><td><span>产能扩建/外包方案</span></td></tr><tr><td><span>财务计划评估</span></td><td><span>收入/利润目标与运营计划匹配度</span></td><td><span>财务可行性报告</span></td></tr><tr><td><span>决策评估</span></td><td><span>战略级议题决议（如区域市场退出）</span></td><td><span>管理层签署的行动计划</span></td></tr></tbody></table></figure></li></ul></li><li><p><strong><span>内容设计</span></strong><span>：  </span></p><ul><li><p><strong><span>输入</span></strong><span>：需求预测、产能报告、财务预算。  </span></p></li><li><p><strong><span>输出</span></strong><span>：资源分配方案、风险应对策略。  </span></p></li><li><p><strong><span>工具</span></strong><span>：KPI仪表盘（如库存周转率、交付率）、What-If场景模拟（如汇率波动对成本影响）。  </span></p></li></ul></li><li><p><strong><span>决策支持</span></strong><span>：  </span></p><ul><li><p><strong><span>KPI监控</span></strong><span>：设置偏差阈值（如预测误差超15%触发复盘）。  </span></p></li><li><p><strong><span>场景模拟</span></strong><span>：通过算法模型评估不同决策的经济性（如自建仓 vs 第三方物流）。  </span></p></li></ul></li></ol><p><img alt="image-20250424181709783" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424181709783.png"/></p><hr/><h4 id="84SOPsChallengesandBreakthroughsinChineseEnterprises"><strong><span>8.4 S&amp;OP在中国企业的挑战与破局</span></strong><span> </span></h4><ol start=""><li><p><strong><span>五大实施困境</span></strong><span>：  </span></p><ul><li><p><strong><span>误区</span></strong><span>：认为S&amp;OP可替代供应链计划体系 → </span><strong><span>现实</span></strong><span>：需先建主计划（如中长期资源匹配模型）。  </span></p></li><li><p><strong><span>文化冲突</span></strong><span>：管理层不愿自我约束（如放弃“拍脑袋”决策习惯）。  </span></p></li><li><p><strong><span>数据基础弱</span></strong><span>：缺失集成计划平台，依赖Excel手动整合（如需求与生产数据分离）。  </span></p></li></ul></li><li><p><strong><span>破局路径</span></strong><span>：  </span></p><ul><li><p><strong><span>分步实施</span></strong><span>：从“硬组织协同”（强管控）过渡到“软协同”（规则驱动）。  </span></p></li><li><p><strong><span>一把手工程</span></strong><span>：CEO需参与关键会议并遵守流程（如签署S&amp;OP决议文件）。  </span></p></li><li><p><strong><span>技术赋能</span></strong><span>：引入APS（高级计划系统）支持场景模拟（如动态产能规划）。  </span></p></li></ul></li></ol><p><strong><span>失败案例</span></strong><span>：某民企强推S&amp;OP但未建主计划，会议沦为“扯皮会”，半年后流程废止。</span></p><hr/><h4 id="85SOPextensionIBPandSOE"><strong><span>8.5 S&amp;OP的扩展：IBP与S&amp;OE</span></strong><span> </span></h4><ol start=""><li><p><strong><span>IBP（集成业务计划）</span></strong><span>：  </span></p><ul><li><p><strong><span>升级点</span></strong><span>：  </span></p><ul><li><p><strong><span>目标</span></strong><span>：从供需平衡升级到战略-财务-运营三位一体。  </span></p></li><li><p><strong><span>技术</span></strong><span>：AI驱动多场景模拟（如疫情封控下的应急供应链）。  </span></p></li><li><p><strong><span>频率</span></strong><span>：从月度决策到实时响应（如大宗商品价格波动触发策略调整）。  </span></p></li></ul></li></ul></li><li><p><strong><span>S&amp;OE（销售与运营执行）</span></strong><span>：  </span></p><ul><li><p><strong><span>定位</span></strong><span>：S&amp;OP的“执行版”，聚焦周/日级问题（如物流甩货应对）。  </span></p></li><li><p><strong><span>典型应用</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>场景</span></strong></th><th><strong><span>S&amp;OP动作</span></strong></th><th><strong><span>S&amp;OE动作</span></strong></th></tr></thead><tbody><tr><td><span>需求突增</span></td><td><span>评估扩产可行性</span></td><td><span>协调临时加班与物流加急</span></td></tr><tr><td><span>供应商断供</span></td><td><span>寻找替代供应商</span></td><td><span>调配现有库存优先保障战略客户</span></td></tr></tbody></table></figure></li></ul></li></ol><hr/><h4 id="86ExternalcollaborationfromVMItoCPFR"><strong><span>8.6 外部协同：从VMI到CPFR</span></strong><span> </span></h4><ol start=""><li><p><strong><span>六种协同模式</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>层级</span></strong></th><th><strong><span>与供应商协同</span></strong></th><th><strong><span>与客户协同</span></strong></th></tr></thead><tbody><tr><td><strong><span>执行层</span></strong></td><td><span>VMI（库存共享）</span></td><td><span>自动补货（如零售POS数据驱动）</span></td></tr><tr><td><strong><span>计划层</span></strong></td><td><span>联合产能规划（如芯片预购）</span></td><td><span>CPFR（协同预测补货）</span></td></tr><tr><td><strong><span>策略层</span></strong></td><td><span>联合研发（如定制化原材料）</span></td><td><span>战略合作（如独家供应协议）</span></td></tr></tbody></table></figure></li><li><p><strong><span>赋能模式选择</span></strong><span>：  </span></p><ul><li><p><strong><span>加法赋能</span></strong><span>：教会客户自主管理（如培训经销商使用预测工具）。  </span></p></li><li><p><strong><span>减法赋能</span></strong><span>：品牌商主导决策（如可口可乐直控终端库存）。  </span></p></li></ul></li></ol><p><strong><span>案例对比</span></strong><span>：  </span></p><ul><li><p><strong><span>加法赋能</span></strong><span>：某家电企业要求经销商提报预测，但数据质量差，协同失败。  </span></p></li><li><p><strong><span>减法赋能</span></strong><span>：某乳企为连锁超市管理库存，缺货率下降18%，但渠道控制力削弱。  </span></p></li></ul><hr/><h4 id="SummaryThecoordinatedwisdomoftheformandthespiritgathering"><strong><span>总结：形散神聚的协同智慧</span></strong><span> </span></h4><ol start=""><li><p><strong><span>核心</span></strong><span>：S&amp;OP的成败取决于“神”（中长期计划）而非“形”（会议次数）。  </span></p></li><li><p><strong><span>落地铁律</span></strong><span>：  </span></p><ul><li><p><span>先有供应链计划体系，再有S&amp;OP流程。  </span></p></li><li><p><span>管理层变革意愿 &gt; 流程设计 &gt; 技术工具。  </span></p></li></ul></li><li><p><strong><span>终极目标</span></strong><span>：通过共识减少内耗，让资源分配从“零和博弈”走向“全局最优”。</span></p></li></ol><h3 id="Chapter9MonitoringPlatformDesignforIntegratedSupplyChainPlanningManagement"><strong><span>第9章 集成供应链计划管理之监控平台设计</span></strong><span> </span></h3><h4 id="Corelogic"><strong><span>核心逻辑</span></strong><span> </span></h4><p><span>监控平台是集成供应链管理的</span><strong><span>闭环反馈机制</span></strong><span>，通过指标设计与数据治理实现“以用代治”——用数据驱动决策优化，而非单纯考核结果。其核心矛盾是</span><strong><span>部门绩效与全局利益的博弈</span></strong><span>，需通过过程规则设计而非结果考核破局。</span></p><hr/><h4 id="91Principlesofperformanceindicatordesignfromresultstoprocess"><strong><span>9.1 绩效指标设计原则：从结果到过程</span></strong><span> </span></h4><ol start=""><li><p><strong><span>四类企业指标演进</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>类型</span></strong></th><th><strong><span>关注重点</span></strong></th><th><strong><span>典型指标</span></strong></th><th><strong><span>局限</span></strong></th></tr></thead><tbody><tr><td><span>财务结果导向</span></td><td><span>收入、成本、周转率</span></td><td><span>库存周转天数、净利润率</span></td><td><span>滞后性（无法指导过程优化）</span></td></tr><tr><td><span>业务过程导向</span></td><td><span>订单交付、生产效率</span></td><td><span>OTIF（足量准时交付率）、生产计划执行率</span></td><td><span>割裂性（忽视跨部门联动）</span></td></tr><tr><td><span>供应链综合导向</span></td><td><span>复杂度、可靠性、柔性</span></td><td><span>供应链协同指数、SKU集中度</span></td><td><span>抽象性（需数据建模支持）</span></td></tr><tr><td><span>战略承接导向</span></td><td><span>战略匹配度、组织适配性</span></td><td><span>产品策略执行偏差率、资源规划准确率</span></td><td><span>依赖高层洞察（难以量化）</span></td></tr></tbody></table></figure></li></ol><p><strong><span>关键原则</span></strong><span>：  </span></p><ul><li><p><strong><span>过程优先</span></strong><span>：订单交付率需区分“客户要求交期”与“企业承诺交期”，避免盲目承诺。  </span></p></li><li><p><strong><span>数据治理</span></strong><span>：通过S&amp;OP流程反推数据质量提升（如预测偏差率统计倒逼需求计划规范）。  </span></p></li></ul><hr/><h4 id="92Controltowerlandingdualdriveofbusinessandtechnology"><strong><span>9.2 控制塔落地：业务与技术双驱动</span></strong><span> </span></h4><ol start=""><li><p><strong><span>业务实现三步法</span></strong><span>：  </span></p><ul><li><p><strong><span>Step1需求梳理</span></strong><span>：明确监控范围（如订单履约、库存健康度、产能利用率）。  </span></p></li><li><p><strong><span>Step2指标设计</span></strong><span>：  </span></p><ul><li><p><strong><span>订单交付率</span></strong><span>：按行（订单行）、数量（总量）、整单（齐套）三种计算口径。  </span></p></li><li><p><strong><span>库存周转天数</span></strong><span>：供应链视角需用预测销量替代历史销量（如未来3个月预测均值）。  </span></p></li></ul></li><li><p><strong><span>Step3数据验证</span></strong><span>：清洗底层数据（如ERP与MES系统库存数据对齐）。  </span></p></li></ul></li><li><p><strong><span>技术实现路径</span></strong><span>：  </span></p><ul><li><p><strong><span>数据整合</span></strong><span>：ETL工具抽取CRM、ERP、SRM数据，线下Excel通过提报接口接入。  </span></p></li><li><p><strong><span>BI构建</span></strong><span>：Power BI/Tableau搭建仪表盘，动态监控KPI（如库存水位预警）。  </span></p></li><li><p><strong><span>治理闭环</span></strong><span>：通过计划决策驱动数据治理（如缺货分析倒逼BOM准确性提升）。  </span></p></li></ul></li></ol><p><strong><span>失败案例</span></strong><span>：某企业直接采购BI工具，未梳理业务规则，导致库存周转天数计算与实际业务脱节（财务与供应链口径冲突）。  </span></p><hr/><h4 id="93Functionaldimensionindicatorsrefinedcomputinglogic"><strong><span>9.3 职能维度指标：精细化计算逻辑</span></strong><span> </span></h4><ol start=""><li><p><strong><span>订单交付率</span></strong><span>：  </span></p><ul><li><p><strong><span>OTIF（足量准时交付率）</span></strong><span>：承诺交期内足量交付订单行占比。  </span></p></li><li><p><strong><span>UFR（数量交付率）</span></strong><span>：实际交付量/需求总量，忽略时效性。  </span></p></li><li><p><strong><span>齐套交付率</span></strong><span>：整单所有SKU按时交付比例（如汽车组装缺一颗螺丝即失败）。  </span></p></li></ul></li><li><p><strong><span>库存周转天数</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>视角</span></strong></th><th><strong><span>公式</span></strong></th><th><strong><span>应用场景</span></strong></th></tr></thead><tbody><tr><td><span>财务谨慎原则</span></td><td><span>（期初库存+期末库存）/2 ÷ 年销售成本 × 365</span></td><td><span>财报披露（如上市公司审计）</span></td></tr><tr><td><span>供应链动态管理</span></td><td><span>日均库存 ÷ 未来90天预测日均销量 × 90</span></td><td><span>库存健康度预警（如旺季备货）</span></td></tr></tbody></table></figure></li><li><p><strong><span>慢动库存判定</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>方法</span></strong></th><th><strong><span>定义</span></strong></th><th><strong><span>适用行业</span></strong></th></tr></thead><tbody><tr><td><span>库存周转天数法</span></td><td><span>库龄超阈值（如90天）</span></td><td><span>通用制造业（如机械装备）</span></td></tr><tr><td><span>效期法</span></td><td><span>效期过半（如食品保质期12个月剩6个月）</span></td><td><span>快消品（饮料、乳制品）</span></td></tr><tr><td><span>库位移动法</span></td><td><span>3个月无出入库记录</span></td><td><span>第三方物流（如备件仓）</span></td></tr></tbody></table></figure></li></ol><hr/><h4 id="94Characteristicdimensionindicatorspanoramicassessmentofsupplychaincapabilities"><strong><span>9.4 特征维度指标：供应链能力全景评估</span></strong><span> </span></h4><ol start=""><li><p><strong><span>六大核心能力指标</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>能力</span></strong></th><th><strong><span>评估指标</span></strong></th><th><strong><span>优化方向</span></strong></th></tr></thead><tbody><tr><td><span>可靠性</span></td><td><span>订单交付率、生产计划达成率</span></td><td><span>建立承诺交期规则</span></td></tr><tr><td><span>反应性</span></td><td><span>紧急订单响应周期、产能弹性调整速度</span></td><td><span>柔性生产布局（如模块化产线）</span></td></tr><tr><td><span>协同性</span></td><td><span>预测与生产节奏匹配度、跨部门决策一致性</span></td><td><span>S&amp;OP流程固化</span></td></tr><tr><td><span>效率</span></td><td><span>总成本（采购+生产+库存+物流）、资产回报率</span></td><td><span>推动集中采购/生产</span></td></tr><tr><td><span>柔性</span></td><td><span>产能利用率波动范围、产品切换成本</span></td><td><span>预留缓冲产能（如10%浮动）</span></td></tr><tr><td><span>复杂度</span></td><td><span>SKU数量、供应商集中度、BOM层级</span></td><td><span>产品标准化、供应链精简</span></td></tr></tbody></table></figure></li></ol><p><strong><span>案例应用</span></strong><span>：  </span></p><ul><li><p><strong><span>高复杂度代价</span></strong><span>：某电子企业SKU从500增至2000，物流成本上升40%，交付率下降15%。  </span></p></li><li><p><strong><span>柔性提升实践</span></strong><span>：某服装企业预留10%外包产能，旺季紧急订单满足率提升至95%。  </span></p></li></ul><hr/><h4 id="95DepartmentPerformancevsEnterprisePerformanceGameandBreakthrough"><strong><span>9.5 部门绩效 vs 企业绩效：博弈与破局</span></strong><span> </span></h4><ol start=""><li><p><strong><span>矛盾根源</span></strong><span>：  </span></p><ul><li><p><strong><span>指标割裂</span></strong><span>：采购考核降价率→选择劣质供应商→质量成本上升。  </span></p></li><li><p><strong><span>数据粉饰</span></strong><span>：生产为达成计划执行率修改工单日期，掩盖设备故障。  </span></p></li></ul></li><li><p><strong><span>解决策略</span></strong><span>：  </span></p><ul><li><p><strong><span>过程管理</span></strong><span>：考核生产计划合理性而非执行率（如排产符合率）。  </span></p></li><li><p><strong><span>交叉考核</span></strong><span>：销售部门参与库存周转目标，供应链参与毛利目标。  </span></p></li><li><p><strong><span>规则优先</span></strong><span>：通过S&amp;OP共识弱化部门博弈（如库存水位由主计划统一设定）。  </span></p></li></ul></li></ol><p><strong><span>典型案例</span></strong><span>：某企业实施“整单齐套交付率”考核后，销售为达标拒绝接小批量订单，导致长尾客户流失。  </span></p><hr/><h4 id="96Industrybenchmarkingtrapanincomparabledatagame"><strong><span>9.6 行业对标陷阱：不可比的数据游戏</span></strong><span> </span></h4><ol start=""><li><p><strong><span>对标挑战</span></strong><span>：  </span></p><ul><li><p><strong><span>口径差异</span></strong><span>：A公司“库存周转天数”含在途库存，B公司仅仓库存货。  </span></p></li><li><p><strong><span>策略差异</span></strong><span>：MTO企业交付率天然低于MTS企业，单纯数值对比无意义。  </span></p></li></ul></li><li><p><strong><span>对标破局</span></strong><span>：  </span></p><ul><li><p><strong><span>模式对标</span></strong><span>：学习丰田精益生产体系而非照搬库存周转率。  </span></p></li><li><p><strong><span>管理对标</span></strong><span>：借鉴华为集成供应链计划（ISC）变革路径。  </span></p></li></ul></li></ol><hr/><h4 id="SummaryRulesaremoreimportantthanassessmentandprocessesarebetterthanresults"><strong><span>总结：规则重于考核，过程优于结果</span></strong><span> </span></h4><ol start=""><li><p><strong><span>监控价值</span></strong><span>：通过数据暴露问题（如预测偏差率&gt;20%触发复盘），而非惩罚责任人。  </span></p></li><li><p><strong><span>治理闭环</span></strong><span>：库存健康度评估→推动SKU精简→降低复杂度→提升效率。  </span></p></li><li><p><strong><span>文化转型</span></strong><span>：从“绩效考核驱动”转向“数据驱动改进”，建立学习型组织。  </span></p></li></ol><p><strong><span>关键结论</span></strong><span>：供应链管理的最高境界是“无指标之治”——通过规则与流程设计，让优化成为自发行为。</span></p><p> </p><h3 id="Chapter10OrganizationalStructureDesignforIntegratedSupplyChainPlanningManagement"><strong><span>第10章 集成供应链计划管理之组织架构设计</span></strong><span> </span></h3><h4 id="Corelogic"><strong><span>核心逻辑</span></strong><span> </span></h4><p><span>组织架构是集成供应链管理的</span><strong><span>物理载体</span></strong><span>，通过职能设计、权责划分与协同模式实现“业务中台化”。其本质是</span><strong><span>平衡集权与分权</span></strong><span>——既要保障全局优化能力，又要激发一线执行活力，而非简单的职能堆砌或权力集中。</span></p><hr/><h4 id="101Functionaldesignthreelayerarchitectureofbusinessmiddleplatform"><strong><span>10.1 职能设计：业务中台的三层架构</span></strong><span> </span></h4><ol start=""><li><p><strong><span>计划类职能（决策中枢）</span></strong><span>：  </span></p><ul><li><p><strong><span>需求计划</span></strong><span>：独立部门负责滚动预测（如专职需求计划团队，非销售兼任）。  </span></p></li><li><p><strong><span>主计划（MP）</span></strong><span>：统筹中长期资源匹配（如产能规划、库存策略），联动前后端策略。  </span></p></li><li><p><strong><span>供应计划</span></strong><span>：分解主计划为可执行指令（如生产排程、采购订单）。  </span></p></li></ul></li><li><p><strong><span>执行类职能（落地抓手）</span></strong><span>：  </span></p><ul><li><p><strong><span>销售订单管理</span></strong><span>：归入供应链部门，避免销售操控订单数据（如提前过账虚增收入）。  </span></p></li><li><p><strong><span>采购订单跟进</span></strong><span>：与计划部门协同，快速响应供应异常（如物料延期预警）。  </span></p></li></ul></li><li><p><strong><span>支持类职能（治理底座）</span></strong><span>：  </span></p><ul><li><p><strong><span>主数据管理</span></strong><span>：统一产品编码、BOM版本（如避免“一物多码”导致计划失真）。  </span></p></li><li><p><strong><span>持续优化（COE）</span></strong><span>：独立于日常运营，专注规则制定与流程优化（如S&amp;OP机制迭代）。  </span></p></li></ul></li></ol><p><strong><span>案例对比</span></strong><span>：  </span></p><ul><li><p><strong><span>未独立需求计划</span></strong><span>：某制造企业由销售兼任预测，旺季预测虚高30%，导致库存积压。  </span></p></li><li><p><strong><span>COE价值</span></strong><span>：某快消企业设立持续优化部门，推动SKU精简40%，物流成本下降18%。  </span></p></li></ul><hr/><h4 id="102KeyFunctionDesignLogic"><strong><span>10.2 关键职能设计逻辑</span></strong><span> </span></h4><ol start=""><li><p><strong><span>需求计划全职化</span></strong><span>：  </span></p><ul><li><p><strong><span>必要性</span></strong><span>：需求是供应链的源头，专职团队可规避销售博弈（如压货冲量扭曲预测）。  </span></p></li><li><p><strong><span>能力要求</span></strong><span>：数据建模（统计预测）+ 商业洞察（促销影响量化）。  </span></p></li></ul></li><li><p><strong><span>物流与计划分离</span></strong><span>：  </span></p><ul><li><p><strong><span>冲突根源</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>维度</span></strong></th><th><strong><span>计划部门</span></strong></th><th><strong><span>物流部门</span></strong></th></tr></thead><tbody><tr><td><span>工作模式</span></td><td><span>慢思考（资源优化模型）</span></td><td><span>快执行（紧急调拨、异常处理）</span></td></tr><tr><td><span>考核导向</span></td><td><span>库存健康度、交付成本</span></td><td><span>运输时效、仓储利用率</span></td></tr></tbody></table></figure></li><li><p><strong><span>分离价值</span></strong><span>：避免“既要深度规划又要快速救火”的职能撕裂。  </span></p></li></ul></li><li><p><strong><span>订单管理归入供应链</span></strong><span>：  </span></p><ul><li><p><strong><span>三大收益</span></strong><span>：  </span></p><ul><li><p><strong><span>信息真实</span></strong><span>：避免销售篡改订单日期虚增业绩。  </span></p></li><li><p><strong><span>博弈管理</span></strong><span>：计划部门协调交付优先级（如战略客户插单需产能评估）。  </span></p></li><li><p><strong><span>端到端可控</span></strong><span>：订单履约数据反哺预测模型（如紧急订单频次反映需求波动）。  </span></p></li></ul></li></ul></li></ol><hr/><h4 id="103ContinuousOptimizationFunctionSeparationofLegislationandLawEnforcement"><strong><span>10.3 持续优化职能：立法与执法的分离</span></strong><span> </span></h4><ol start=""><li><p><strong><span>职责定位</span></strong><span>：  </span></p><ul><li><p><strong><span>规则制定</span></strong><span>：设计库存策略、交付优先级规则（如ABC分类法）。  </span></p></li><li><p><strong><span>根因分析</span></strong><span>：通过订单履约异常（如欠货率超阈值）追溯计划逻辑缺陷。  </span></p></li><li><p><strong><span>流程迭代</span></strong><span>：优化S&amp;OP会议机制（如增加财务目标对齐环节）。  </span></p></li></ul></li><li><p><strong><span>独立价值</span></strong><span>：  </span></p><ul><li><p><strong><span>避嫌机制</span></strong><span>：与执行部门利益切割，确保规则公平（如安全库存水位调整不受采购部游说）。  </span></p></li><li><p><strong><span>长期视角</span></strong><span>：推动策略性改善（如推动产品模块化设计降低供应链复杂度）。  </span></p></li></ul></li></ol><p><strong><span>案例</span></strong><span>：某电子企业COE通过分析欠货根因，推动BOM标准化，供应商交期缩短20%。  </span></p><hr/><h4 id="104Groupandterritorialstructurethreemodelsofcentralizedanddecentralizedpower"><strong><span>10.4 集团与属地架构：集权分权三模式</span></strong><span> </span></h4><figure class="table-figure"><table><thead><tr><th><strong><span>模式</span></strong></th><th><strong><span>核心特征</span></strong></th><th><strong><span>适用场景</span></strong></th><th><strong><span>风险</span></strong></th></tr></thead><tbody><tr><td><strong><span>属地自治</span></strong></td><td><span>集团仅考核结果（如库存周转率），工厂自主运营</span></td><td><span>产品区域性强、跨工厂协同需求低</span></td><td><span>全局优化缺失（如区域间库存不平衡）</span></td></tr><tr><td><strong><span>集团主控中长期</span></strong></td><td><span>集团制定产能布局、库存策略，工厂负责执行</span></td><td><span>资源共享需求高（如联合采购）</span></td><td><span>一线灵活性不足（如紧急订单响应慢）</span></td></tr><tr><td><strong><span>集团全管控</span></strong></td><td><span>计划高度集中（如生产排程由总部直接下达）</span></td><td><span>需求波动大、产品复杂度低</span></td><td><span>层级冗余、决策滞后</span></td></tr></tbody></table></figure><p><strong><span>案例</span></strong><span>：某饮料集团采用“集团主控中长期”模式，统一规划区域仓网络，跨区调拨成本降低25%。  </span></p><hr/><h4 id="105FunctionalorientationvsProductorientationsupplychain"><strong><span>10.5 职能导向 vs 产品导向供应链</span></strong><span> </span></h4><ol start=""><li><p><strong><span>对比分析</span></strong><span>：  </span></p><figure class="table-figure"><table><thead><tr><th><strong><span>维度</span></strong></th><th><strong><span>职能导向</span></strong></th><th><strong><span>产品导向</span></strong></th></tr></thead><tbody><tr><td><strong><span>组织架构</span></strong></td><td><span>按专业划分（计划、采购、生产）</span></td><td><span>按产品线划分（A产品计划、B产品采购）</span></td></tr><tr><td><strong><span>优势</span></strong></td><td><span>资源整合（如集中采购降本）</span></td><td><span>响应敏捷（如新品快速上市）</span></td></tr><tr><td><strong><span>劣势</span></strong></td><td><span>产品间协调复杂（如产能冲突）</span></td><td><span>资源重复（如各产品线独立库存）</span></td></tr><tr><td><strong><span>适用场景</span></strong></td><td><span>多品类共享资源（如通用零部件）</span></td><td><span>产品高度差异化、独立性高（如医疗器械）</span></td></tr></tbody></table></figure></li><li><p><strong><span>失败案例</span></strong><span>：快消企业Y推行产品导向4年，因资源重复与管理真空回退职能导向，沟通成本上升30%。  </span></p></li></ol><p><img alt="image-20250424181939612" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424181939612.png"/></p><hr/><h4 id="106OrganizationalStructureCaseHighlyIntegratedConsumerProductsEnterprises"><strong><span>10.6 组织架构案例：高度集成的消费品企业</span></strong><span> </span></h4><ol start=""><li><p><strong><span>架构特点</span></strong><span>：  </span></p><ul><li><p><strong><span>横向集成</span></strong><span>：需求计划、促销计划、主计划等全职能纳入供应链部门。  </span></p></li><li><p><strong><span>纵向管控</span></strong><span>：总部直接管理工厂排产，区域设需求计划岗（如大区预测专员）。  </span></p></li><li><p><strong><span>支持体系</span></strong><span>：独立主数据团队确保信息一致性（如渠道编码全国统一）。  </span></p></li></ul></li><li><p><strong><span>运行效果</span></strong><span>：  </span></p><ul><li><p><strong><span>协同效率</span></strong><span>：促销计划与产能预留联动，缺货率下降15%。  </span></p></li><li><p><strong><span>成本优化</span></strong><span>：集中排产减少换线频次，生产效率提升12%。  </span></p></li></ul></li></ol><p><img alt="image-20250424182008743" referrerpolicy="no-referrer" src=".\image\OutstandingPlanning\image-20250424182008743.png"/></p><hr/><h4 id="SummaryPlatformbasedtransformationrespondstofrontenddivergence"><strong><span>总结：平台化转型应对前端发散</span></strong><span> </span></h4><ol start=""><li><p><strong><span>外部压力</span></strong><span>：全渠道销售（电商、直播）要求供应链快速适配多变的交付需求。  </span></p></li><li><p><strong><span>内部整合</span></strong><span>：  </span></p><ul><li><p><strong><span>数据中台</span></strong><span>：整合订单、库存、产能数据，支持实时决策。  </span></p></li><li><p><strong><span>业务中台</span></strong><span>：通过计划部门统筹多渠道冲突（如优先保障高毛利渠道）。  </span></p></li></ul></li><li><p><strong><span>终极目标</span></strong><span>：构建“柔性集权”架构——总部掌握规则与资源，一线保留执行弹性。  </span></p></li></ol><p><strong><span>关键结论</span></strong><span>：供应链组织设计的最高境界是“形散神聚”——职能可分布，但决策逻辑与数据必须高度统一。</span></p><p> </p><p> </p><h3 id="Chapter13SupplyChainManagementChangePracticeandCaseSharing"><strong><span>第13章 供应链管理变革实践和案例分享</span></strong><span> </span></h3><h4 id="Corelogic"><strong><span>核心逻辑</span></strong><span> </span></h4><p><span>供应链管理变革是</span><strong><span>权力重构与决策模式升级</span></strong><span>的过程，需直面理念冲突、行为惯性、利益博弈等多重挑战。其成功关键在于</span><strong><span>高层定力</span></strong><span>与</span><strong><span>数字化能力沉淀</span></strong><span>，而非单纯流程优化。</span></p><hr/><h4 id="131Fivemajorchallengestochangeacomprehensivegamefromconcepttointerests"><strong><span>13.1 变革五大挑战：从理念到利益的全面博弈</span></strong><span> </span></h4><ol start=""><li><p><strong><span>理念冲突</span></strong><span>：  </span></p><ul><li><p><strong><span>认知落差</span></strong><span>：传统“经验决策”与供应链“数据决策”的冲突（如销售凭直觉压货 vs 计划按预测排产）。  </span></p></li><li><p><strong><span>文化惯性</span></strong><span>：家长制管理难以适配S&amp;OP的开放协同文化。  </span></p></li></ul></li><li><p><strong><span>权力重构</span></strong><span>：  </span></p><ul><li><p><strong><span>新决策中心崛起</span></strong><span>：计划部门挑战销售、生产部门传统决策权（如订单优先级调整）。  </span></p></li><li><p><strong><span>案例</span></strong><span>：某饮品企业S&amp;OP项目因区域总经理抵制，试点区域三次更换仍失败。  </span></p></li></ul></li><li><p><strong><span>绩效矛盾</span></strong><span>：  </span></p><ul><li><p><strong><span>局部利益牺牲</span></strong><span>：销售为保KPI虚增预测，计划部门需强制修正引发冲突。  </span></p></li><li><p><strong><span>考核割裂</span></strong><span>：采购降本导致质量成本上升，全局总成本反增。  </span></p></li></ul></li></ol><hr/><h4 id="132Sixmajorstrategiesforreformbreakingthesituationthroughbothsoftandhard"><strong><span>13.2 变革六大对策：软硬兼施破局</span></strong><span> </span></h4><ol start=""><li><p><strong><span>理念先行</span></strong><span>：  </span></p><ul><li><p><strong><span>培训洗脑</span></strong><span>：通过TFC橙汁游戏暴露“局部优化”代价，建立协同共识。  </span></p></li><li><p><strong><span>冲突激发</span></strong><span>：短期允许部门博弈（如销售与生产争夺产能），倒逼协同需求。  </span></p></li></ul></li><li><p><strong><span>人才策略</span></strong><span>：  </span></p><ul><li><p><strong><span>新老结合</span></strong><span>：老兵（熟悉业务潜规则） + 新人（无历史包袱），平衡突破与维稳。  </span></p></li><li><p><strong><span>案例</span></strong><span>：某生物科技企业空降数字化专家与内部生产总监搭档，推动变革落地。  </span></p></li></ul></li><li><p><strong><span>高层护航</span></strong><span>：  </span></p><ul><li><p><strong><span>CEO站台</span></strong><span>：关键会议亲自参与（如S&amp;OP决策会），抵御中层阻力。  </span></p></li><li><p><strong><span>案例</span></strong><span>：华为ISC变革初期，任正非要求“先僵化、后优化、再固化”。  </span></p></li></ul></li><li><p><strong><span>数字化固果</span></strong><span>：  </span></p><ul><li><p><strong><span>系统替代人治</span></strong><span>：通过APS固化排产规则，减少人为干预（如自动分配产能）。  </span></p></li><li><p><strong><span>案例</span></strong><span>：某企业将库存策略写入系统，禁止销售手动超卖导致缺货。  </span></p></li></ul></li></ol><hr/><h4 id="133ChangeCasesSuccessorFailureRevelation"><strong><span>13.3 变革案例：成败启示录</span></strong><span> </span></h4><ol start=""><li><p><strong><span>失败案例：饮品巨头权力内耗</span></strong><span> </span></p><ul><li><p><strong><span>关键败因</span></strong><span>：  </span></p><ul><li><p><strong><span>高层分歧</span></strong><span>：董事长表面支持实则中立，空降总裁缺乏实权。  </span></p></li><li><p><strong><span>文化冲突</span></strong><span>：家长制 vs S&amp;OP平等协商，会议沦为扯皮。  </span></p></li></ul></li><li><p><strong><span>教训</span></strong><span>：供应链变革需创始人深度参与，避免新旧团队对立。  </span></p></li></ul></li><li><p><strong><span>成功案例：生物科技企业数字化跃迁</span></strong><span> </span></p><ul><li><p><strong><span>成功要素</span></strong><span>：  </span></p><ul><li><p><strong><span>精准诊断</span></strong><span>：通过数据暴露库存错配（20% SKU占80%缺货）。  </span></p></li><li><p><strong><span>场景建模</span></strong><span>：构建产销规划模型，量化降本1亿元物流成本。  </span></p></li><li><p><strong><span>高层深度参与</span></strong><span>：董事长远程参与关键方案研讨。  </span></p></li></ul></li><li><p><strong><span>效果</span></strong><span>：S&amp;OP周期缩短72%，交付率提升20%。  </span></p></li></ul></li></ol><hr/><h3 id="Chapter14PracticeandCaseSharingofDigitalTransformationofSupplyChainManagement"><strong><span>第14章 供应链管理数字化转型实践和案例分享</span></strong><span> </span></h3><h4 id="Corelogic"><strong><span>核心逻辑</span></strong><span> </span></h4><p><span>数字化转型是供应链管理的</span><strong><span>升维革命</span></strong><span>，通过“可视化→智能化”路径，将经验决策升级为算法驱动。其本质是</span><strong><span>业务逻辑的数学化表达</span></strong><span>，而非单纯IT工具应用。</span></p><hr/><h4 id="141Twostagesoftransformationfromseeingtoforesight"><strong><span>14.1 转型两阶段：从看见到预见</span></strong><span> </span></h4><figure class="table-figure"><table><thead><tr><th><strong><span>阶段</span></strong></th><th><strong><span>目标</span></strong></th><th><strong><span>技术工具</span></strong></th><th><strong><span>价值</span></strong></th></tr></thead><tbody><tr><td><strong><span>可视化</span></strong></td><td><span>全链路透明（如库存追踪）</span></td><td><span>BI看板、IoT传感器</span></td><td><span>暴露问题（如渠道窜货）</span></td></tr><tr><td><strong><span>智能化</span></strong></td><td><span>决策自主优化（如动态调价）</span></td><td><span>运筹优化模型、AI预测</span></td><td><span>预防问题（如促销前自动预置库存）</span></td></tr></tbody></table></figure><p><strong><span>案例对比</span></strong><span>：  </span></p><ul><li><p><strong><span>可视化局限</span></strong><span>：某零售企业实时监控缺货，但补货仍依赖人工判断，效率未提升。  </span></p></li><li><p><strong><span>智能化突破</span></strong><span>：某车企通过需求预测模型，自动调整区域仓库存，缺货率下降15%。  </span></p></li></ul><hr/><h4 id="142TechnologyApplicationChemicalFusionofAlgorithmsandBusiness"><strong><span>14.2 技术应用：算法与业务的化学融合</span></strong><span> </span></h4><ol start=""><li><p><strong><span>需求预测</span></strong><span>：  </span></p><ul><li><p><strong><span>传统模型</span></strong><span>：时间序列分解（趋势+季节+随机）。  </span></p></li><li><p><strong><span>AI增强</span></strong><span>：LSTM神经网络捕捉促销非线性影响（如直播销量峰值预测）。  </span></p></li></ul></li><li><p><strong><span>供应网络优化</span></strong><span>：  </span></p><ul><li><p><strong><span>运筹模型</span></strong><span>：线性规划求解最低总成本路径（如工厂-仓库-客户三级网络）。  </span></p></li><li><p><strong><span>实战场景</span></strong><span>：某化工企业通过模型关闭冗余仓库，物流成本降25%。  </span></p></li></ul></li><li><p><strong><span>生产排程</span></strong><span>：  </span></p><ul><li><p><strong><span>遗传算法</span></strong><span>：在千万级解空间中找到可行排产方案（如换线成本最小化）。  </span></p></li><li><p><strong><span>局限</span></strong><span>：需人工调整紧急插单，完全自动化仍存瓶颈。  </span></p></li></ul></li><li><p><strong><span>仿真推演</span></strong><span>：  </span></p><ul><li><p><strong><span>数字孪生</span></strong><span>：模拟疫情封控下供应链中断场景，预置应急方案。  </span></p></li><li><p><strong><span>案例</span></strong><span>：某电子企业预演芯片短缺，提前锁定替代供应商，减少损失5000万。  </span></p></li></ul></li></ol><hr/><h4 id="143TransformationTrapTheBalancebetweenDataandHumanNature"><strong><span>14.3 转型陷阱：数据与人性的平衡</span></strong><span> </span></h4><ol start=""><li><p><strong><span>过度依赖算法</span></strong><span>：  </span></p><ul><li><p><strong><span>风险</span></strong><span>：忽视非量化因素（如客户关系），导致策略僵化。  </span></p></li><li><p><strong><span>平衡</span></strong><span>：“算法推荐+人工否决”机制（如系统建议涨价，销售总监可驳回）。  </span></p></li></ul></li><li><p><strong><span>数据治理缺失</span></strong><span>：  </span></p><ul><li><p><strong><span>典型问题</span></strong><span>：BOM错误导致排产计划失效（如物料编码不一致）。  </span></p></li><li><p><strong><span>破局</span></strong><span>：设立主数据治理委员会，IT与业务部门共担责任。  </span></p></li></ul></li></ol><hr/><h4 id="144FutureTrendsManagementDiversityImprovementandOrganizationalRestructuring"><strong><span>14.4 未来趋势：管理升维与组织重构</span></strong><span> </span></h4><ol start=""><li><p><strong><span>决策权再分配</span></strong><span>：  </span></p><ul><li><p><strong><span>前台</span></strong><span>：销售聚焦客户关系，AI提供实时报价支持。  </span></p></li><li><p><strong><span>中台</span></strong><span>：计划部门演变为“算法工厂”，输出优化策略。  </span></p></li><li><p><strong><span>后台</span></strong><span>：生产/采购按指令执行，数据反哺模型迭代。  </span></p></li></ul></li><li><p><strong><span>人才结构变革</span></strong><span>：  </span></p><ul><li><p><strong><span>新型岗位</span></strong><span>：供应链算法工程师（数学建模+业务理解）。  </span></p></li><li><p><strong><span>能力升级</span></strong><span>：传统计划人员转型为“策略调教师”（训练与验证模型）。  </span></p></li></ul></li></ol><hr/><h4 id="SummaryThedoublehelixofdigitalizationandchange"><strong><span>总结：数字化与变革的双螺旋</span></strong><span> </span></h4><ol start=""><li><p><strong><span>变革为体，数字为用</span></strong><span>：  </span></p><ul><li><p><span>没有管理变革（如独立计划部门），数字化仅是“电子化手工”。  </span></p></li><li><p><span>案例：某企业先调组织架构，再上APS系统，交付周期缩短40%。  </span></p></li></ul></li><li><p><strong><span>人性化智能</span></strong><span>：  </span></p><ul><li><p><span>保留“人工否决权”，避免算法暴政（如冷启动期过度优化损害客户体验）。  </span></p></li><li><p><span>案例：某电商允许区域经理调整算法补货参数，适应本地化需求。  </span></p></li></ul></li></ol><p><strong><span>终极目标</span></strong><span>：构建“自愈型供应链”——问题发生时系统自调整，生态波动中企业自进化。</span></p></div></div>
+</body>
+</html>

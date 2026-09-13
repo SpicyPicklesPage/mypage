@@ -1,0 +1,120 @@
+/* 样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 菜单样式 */
+ul {
+    list-style: none;
+}
+
+/* 链接通用样式 */
+a {
+    text-decoration: none;
+    color: #000;
+    padding: 4px 8px;
+    display: block;
+}
+
+/* 第一级菜单样式 */
+.top-level-menu > li {
+    position: relative;
+    float: left;
+    width: 10%; /* 可根据需要调整宽度 */
+    
+}
+
+/* 所有子菜单初始化为隐藏状态 */
+.top-level-menu li ul {
+    display: none;
+    position: absolute;
+    white-space: nowrap; /* 防止菜单文本换行 */
+}
+
+/* 二级菜单样式 */
+.second-level-menu {
+    position:relative;
+    top: 100%;
+    left: 0;
+    width: 33.3%; /* 设置足够的宽度，可根据实际内容调整 */
+    background-color: #fff8f8e7;
+}
+
+
+.second-level-menu a {
+    color:rgb(0, 22, 29);
+}
+.second-level-menu a:hover {
+    background-color: #180300; /* 悬停时的背景颜色 */
+    color: #fff; /* 悬停时的字体颜色 */
+}
+
+.third-level-menu {
+    position:absolute;
+    left: 100%;
+    top:0;
+    width: 100%; /* 设置足够的宽度，可根据实际内容调整 */
+    background-color: #eeedffae;
+}
+
+.third-level-menu a {
+    color:rgb(0, 22, 29);
+    
+}
+.third-level-menu a:hover {
+    background-color: #180300; /* 悬停时的背景颜色 */
+    color: #ffffff; /* 悬停时的字体颜色 */
+}
+/* 四级菜单样式 */
+.fourth-level-menu {
+    left: 100%;
+    position:absolute;
+    top: 0;
+    width: 100%; /* 设置足够的宽度，可根据实际内容调整 */
+    background-color: #dfffecdf;
+}
+
+.fourth-level-menu a {
+    color:rgb(0, 22, 29);
+
+}
+
+.fourth-level-menu a:hover {
+    background-color: #180300; /* 悬停时的背景颜色 */
+    color: #fff; /* 悬停时的字体颜色 */
+}
+/* 三级菜单样式 */
+
+.top-level-menu > li,
+.second-level-menu > li,
+.third-level-menu > li,
+.fourth-level-menu > li {
+    position: relative;
+}
+/* 调整链接的垂直内边距和行高 */
+/* .top-level-menu a, 
+.second-level-menu a, 
+.third-level-menu a,  */
+.fourth-level-menu a {
+    padding-top: 2px; /* 减小上内边距 */
+    padding-bottom: 2px; /* 减小下内边距 */
+    display: block;
+}
+
+
+
+/* 悬停展开直接子菜单 */
+.top-level-menu > li:hover > ul,
+.top-level-menu li ul li:hover > ul,
+.top-level-menu li ul li ul li:hover > ul {
+    display: block;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

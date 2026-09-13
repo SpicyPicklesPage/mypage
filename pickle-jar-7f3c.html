@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0e0b">
+  <meta name="description" content="SpicyPickles 的照片、网页实验与笔记。">
+  <meta name="author" content="SpicyPickles">
+  <title>SpicyPickles</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d0e0b'/%3E%3Cpath d='M18 39c8 9 24 8 29-3-10 3-17-2-19-14-8 3-12 9-10 17Z' fill='%23c8ff3d'/%3E%3Cpath d='M29 22c1-5 5-7 10-6' fill='none' stroke='%23f6f3e8' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#0d0e0b;--paper:#f2f0e8;--acid:#c8ff3d;--muted:#aaa99f;--line:rgba(242,240,232,.2)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-family:Inter,"Noto Sans SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.55}a{color:inherit;text-decoration:none}button{font:inherit}
+    .noise{position:fixed;inset:0;pointer-events:none;opacity:.035;z-index:10;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+    header{height:72px;padding:0 clamp(20px,4vw,64px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:3}.brand{font-size:1.05rem;font-weight:750;letter-spacing:.04em}.brand i{color:var(--acid);font-style:normal}.nav{display:flex;gap:24px;color:var(--muted);font-size:.9rem}.nav a:hover,.nav a:focus-visible{color:var(--paper)}
+    main{padding:0 clamp(20px,4vw,64px) 72px}.intro{min-height:42vh;display:grid;grid-template-columns:1fr auto;align-items:end;padding:clamp(64px,10vw,140px) 0 44px;border-bottom:1px solid var(--line)}.kicker{color:var(--acid);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;margin:0 0 18px}.intro h1{font-size:clamp(3.3rem,9.8vw,9rem);line-height:.82;letter-spacing:-.065em;margin:0;max-width:1000px}.intro h1 span{display:block;color:transparent;-webkit-text-stroke:1px rgba(242,240,232,.52)}.intro-note{margin:0 0 4px 36px;max-width:210px;color:var(--muted);font-size:.9rem}.intro-note b{display:block;color:var(--paper);font-weight:500;margin-bottom:9px}
+    .portals{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;padding-top:16px}.portal{position:relative;min-height:390px;border:1px solid var(--line);overflow:hidden;padding:28px;display:flex;flex-direction:column;justify-content:space-between;isolation:isolate;transition:transform .35s ease,border-color .35s ease}.portal:hover{transform:translateY(-5px);border-color:rgba(200,255,61,.6)}.portal:focus-visible{outline:2px solid var(--acid);outline-offset:3px}.portal::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(13,14,11,.05),rgba(13,14,11,.9));transition:transform .7s ease}.portal:hover::after{transform:scale(1.03)}.portal-photo{grid-column:span 6;background:url('photos/2024_04_13_DSC_7370.jpg') center/cover,var(--ink)}.portal-play{grid-column:span 3;background:radial-gradient(circle at 72% 18%,#66338b 0 2%,transparent 22%),linear-gradient(155deg,#29102f,#0d0e0b 70%)}.portal-notes{grid-column:span 3;background:linear-gradient(150deg,#263019,#0d0e0b 64%)}.portal-index{font:600 .75rem/1 monospace;color:var(--acid);letter-spacing:.12em}.portal h2{font-size:clamp(2.1rem,4vw,4.2rem);line-height:.9;letter-spacing:-.045em;margin:0 0 14px}.portal p{color:#d3d1c8;margin:0;max-width:36ch}.arrow{position:absolute;right:25px;top:24px;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font-size:1.2rem;transition:.3s}.portal:hover .arrow{background:var(--acid);color:var(--ink);transform:rotate(-35deg)}
+    .shelf{margin-top:80px;padding-top:20px;border-top:1px solid var(--line)}.shelf-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:22px}.shelf h3{font-size:1rem;margin:0}.shelf-head span{color:var(--muted);font-size:.78rem;letter-spacing:.12em}.items{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.item{background:var(--ink);padding:22px;min-height:145px;display:flex;flex-direction:column;justify-content:space-between;transition:background .25s}.item:hover{background:#171a12}.item small{color:var(--acid);font-family:monospace}.item strong{font-size:1.08rem;font-weight:550}.item span{color:var(--muted);font-size:.82rem}
+    footer{margin-top:82px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.12em}
+    @media(max-width:850px){.intro{grid-template-columns:1fr}.intro-note{margin:32px 0 0}.portal-photo,.portal-play,.portal-notes{grid-column:span 12}.portal{min-height:300px}.items{grid-template-columns:1fr}.nav{display:none}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.portal,.portal::after,.arrow{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header>
+    <a class="brand" href="#top">SpicyPickles<i>.</i></a>
+    <nav class="nav" aria-label="主要导航"><a href="#portals">入口</a><a href="#play">实验</a><a href="#notes">笔记</a></nav>
+  </header>
+  <main id="top">
+    <section class="intro" aria-labelledby="title">
+      <div><p class="kicker">An archive of things worth keeping</p><h1 id="title">Spicy<span>Pickles</span></h1></div>
+      <p class="intro-note"><b>照片、实验和思考。</b>收藏路过的光，也收藏偶尔冒出的怪点子。</p>
+    </section>
+    <section class="portals" id="portals" aria-label="内容入口">
+      <a class="portal portal-photo" href="photo-v2.html"><span class="portal-index">01 / PHOTOS</span><span class="arrow" aria-hidden="true">↗</span><div><h2>照片</h2><p>城市、自然，以及置身其外的观看。</p></div></a>
+      <a class="portal portal-play" href="fireworks.html"><span class="portal-index">02 / PLAY</span><span class="arrow" aria-hidden="true">↗</span><div><h2>好玩的网页</h2><p>一些可以点击、拖拽、破坏和点亮的浏览器实验。</p></div></a>
+      <a class="portal portal-notes" href="#notes"><span class="portal-index">03 / NOTES</span><span class="arrow" aria-hidden="true">↓</span><div><h2>笔记</h2><p>关于供应链、思考方法与读过的书。</p></div></a>
+    </section>
+    <section class="shelf" id="play"><div class="shelf-head"><h3>网页实验</h3><span>PLAYGROUND / 02</span></div><div class="items">
+      <a class="item" href="fireworks.html"><small>INTERACTIVE</small><strong>送你一朵烟花</strong><span>举起拳头，让夜空亮起来 →</span></a>
+      <a class="item" href="pixel.html"><small>PIXEL PHYSICS</small><strong>愤怒的拆迁队</strong><span>拖拽弹弓，试试像素世界的物理 →</span></a>
+      <a class="item" href="11.html"><small>EXPERIMENT</small><strong>一次最多放两个</strong><span>一个古怪的小实验 →</span></a>
+    </div></section>
+    <section class="shelf" id="notes"><div class="shelf-head"><h3>最近整理的笔记</h3><span>READING / 06</span></div><div class="items">
+      <a class="item" href="结构化思维读书笔记.html"><small>THINKING</small><strong>结构化思维</strong><span>让复杂问题变得清楚 →</span></a>
+      <a class="item" href="《金字塔原理》读书笔记.html"><small>WRITING</small><strong>金字塔原理</strong><span>结论先行，组织思想 →</span></a>
+      <a class="item" href="《需求预测和库存计划》读书笔记.html"><small>SUPPLY CHAIN</small><strong>需求预测和库存计划</strong><span>预测、库存与决策 →</span></a>
+      <a class="item" href="卓越供应链计划.html"><small>SUPPLY CHAIN</small><strong>卓越供应链计划</strong><span>从需求到执行的系统方法 →</span></a>
+      <a class="item" href="这就是OKR.html"><small>MANAGEMENT</small><strong>这就是 OKR</strong><span>目标、关键结果与协作 →</span></a>
+      <a class="item" href="小米创业思考总结.html"><small>BUSINESS</small><strong>小米创业思考</strong><span>产品、效率与商业模式 →</span></a>
+    </div></section>
+    <footer><span>© <span id="year"></span> SpicyPickles</span><span>Stay curious. Stay crunchy.</span></footer>
+  </main>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

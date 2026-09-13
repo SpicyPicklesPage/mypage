@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="'UTF-8">
+  <meta http-quiv="X-UA-Compatible" content="IE=chrome">
+  <meta name="viewport" contetn="width=device-width, inital-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      display: flex;
+      width: 700px;
+      height: 300px;
+      border-left: 1px solid pink;
+      border-bottom: 1px solid pink;
+      margin: 50px auto;
+      justify-content: space-around;
+      align-items: flex-end;
+      text-align: center;
+    }
+
+    .box>div {
+      display: flex;
+      width: 50px;
+      background-color: pink;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .box div span {
+      margin-top: -20px;
+    }
+
+    .box div h4 {
+      margin-bottom: -35px;
+      width: 70px;
+      margin-left: -10px;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="box">文字内容</div>
+  <script>
+    const box = document.querySelector('div')
+    console.log(box.innerText)
+    box.innerText = 'new'
+    console.log(box.innerText)
+    box.innerHTML = '<strong>new</strong>'
+
+    console.log(box.innerHtml)
+
+  </script>
+
+
+</body>
+
+</html>
