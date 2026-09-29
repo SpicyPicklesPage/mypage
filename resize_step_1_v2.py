@@ -10,8 +10,8 @@ from PIL import Image, ImageOps
 from tqdm import tqdm
 
 
-INPUT_FOLDER = Path(r"D:\LR\upload")
-OUTPUT_FOLDER = Path(__file__).resolve().parent / "compressed"
+INPUT_FOLDER = Path(r"D:\pages\mypage\silent")
+OUTPUT_FOLDER = Path(r"D:\pages\mypage\silent") / "compressed"
 FILENAME_PREFIX = "2024_05_1112"
 SUPPORTED_EXTENSIONS = {".jpg", ".jpeg"}
 
