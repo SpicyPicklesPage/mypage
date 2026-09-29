@@ -1,0 +1,18 @@
+Generated using built-in image_gen with transparent_background=true.
+
+Use case: precise-object-edit / typographic refinement.
+Edit the attached After Silence PNG. The user has clarified that the previous focus was WRONG: do NOT further change the ALREADY BLURRED regions. The problem is the SOLID / IN-FOCUS parts of the letters.
+
+Preserve exactly the text, spelling and two-row arrangement:
+After
+Silence
+Preserve the existing amount and placement of heavy local defocus, the pale ivory colour, the 1536x1024 layout and background transparency.
+
+CORRECT THE SOLID LETTERFORMS, especially the LEFT diagonal of the A and the letter i in Silence:
+1. Their stroke shapes must become REGULAR, disciplined classic serif geometry. Keep the A's left diagonal straight and continuous. Remove its stretched needle-like point and extravagant hooked/flaring spur at the foot; replace it with a restrained, ordinary serif ending. Make the i a clean, straight upright stem with a restrained serif base and simple oval dot. Reduce oddly pinched joins, razor points, stretched teardrop terminals, baroque droplet distortions and unusually exaggerated ink shapes throughout the surviving SOLID portions of the other letters. Keep the elegant high-contrast serif character without eccentric liquid shapes.
+2. Give EVERY surviving SOLID stroke a visibly SOFT OUTER CONTOUR, not a vector-sharp perimeter. The inner stroke remains filled, dense and solid. Only its boundary rolls gradually into transparency, like a properly shaped printed letter gently out of focus at its very edge. At 1536px width the edge softness should extend roughly 5–9 pixels, enough to remain visible when displayed 400–700px wide. This is a clean controlled feather around an intact solid core, NOT a halo or a duplicate glow layer.
+3. A's left diagonal and the i stem/dot are the main proof points: they must still be solid, recognizable, structurally straight, but their edges visibly softened. Do not make them completely fuzzy, erase them, or distort them into melted blobs. Fine straight strokes must retain a continuous straight axis. Solid curved portions must retain clean intended curves with soft perimeters.
+
+Do NOT redesign which letters dissolve. Do NOT increase the heavily blurred region sizes. Do NOT substitute new teardrop shapes for normal terminals. Do NOT add gaps, smoke, bright bloom, outer glow, grain, background clouds, decoration or text.
+
+The visible ALPHA CHANNEL must actually include these feathered SOLID-stroke boundaries. Do not keep soft edge RGB under zero alpha or cut the glyphs back to crisp vector silhouettes. Keep semi-transparent edge pixels, opaque-looking ivory cores, fully transparent empty space. Genuine RGBA transparent PNG, no opaque background or paper, no mockup, no captions. Output the refined title artwork only.

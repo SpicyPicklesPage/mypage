@@ -1,0 +1,26 @@
+Built-in image_gen; transparent PNG.
+
+Initial prompt:
+Use case: style-transfer.
+Asset type: transparent PNG typographic artwork for the main title of a photography exhibition website.
+Use the attached Chinese poster ONLY as the style reference for the large “失踪” lettering. Create the English equivalent of that typographic treatment, replacing the Chinese title with exactly these two words:
+After
+Silence
+Spelling must be exact: A-f-t-e-r, S-i-l-e-n-c-e. No other text.
+
+Study the reference's letter construction: substantial ink forms and narrow serif strokes, organically rounded terminals, missing connecting strokes, tiny detached teardrop-like stroke remnants, asymmetric local loss of focus. The disappearance is designed INTO the letter shapes. Some strokes are still crisp, dark/solid in the reference; adjacent portions have dissolved or broken away. Translate that precise visual logic to English letterforms. Do not simply set a normal font and blur patches. Do not use a uniformly blurry or glowing title. Avoid scattered glitter, noise, smoke clouds, clouds around text, neon, extruded text, shadows, flourishes, or generic distressed type.
+
+Because the website has a deep navy background, make the artwork's ink PALE SILVER / soft ivory white (#e2e9eb), reversing the reference's dark lettering while preserving its shapes and selectively dissolved translucent edges. The forms must read convincingly against a dark background.
+Use an elegant custom high-contrast serif letter construction, medium stroke weight with soft sculptural joins. “After” on the upper row slightly left; “Silence” on the lower row slightly indented, a gentle calligraphic slant. Same letter height across rows, Silence naturally wider. A compact, beautifully balanced art exhibition wordmark. Let about 20 percent of the stroke connections dissolve or go missing, carefully art-directed, while both words remain recognizable. A few disconnected pale ink islands as in the reference, not a shower of particles.
+Composition: landscape canvas approximately 3:2, the two-row lettering fills most of the canvas, small even safe transparent margins about 4 percent. No cropping of letterforms or soft edges.
+CRITICAL: real RGBA transparent background everywhere outside the title and its translucent stroke remnants. No paper, rectangle, poster, pale background, dark background, backdrop grain, checkerboard drawn into the image, captions, logo, or watermark. Output the finished isolated PNG lettering ready to place on a webpage.
+
+Refinement prompt:
+Edit image 1 (the generated After Silence transparent title). Image 2 is the user's preferred “失踪” reference.
+Keep EXACT words “After” on row one and “Silence” on row two. Preserve the two-line composition and pale silver-white color. Real transparent RGBA background is mandatory.
+
+TARGETED CORRECTION: remove ALL broad white glow, halo, fog cloud, luminous bloom and blurred background haze from image 1. All space between and around letters must be fully transparent, not cloudy. The reference is INK, not glowing light. Make the surviving strokes much more solid and confidently filled: opaque pale ivory ink with round sculptural terminals and thin serif connections. No outline-only strokes.
+
+Most important: use the reference's missing-stroke construction. Carefully erase short sections of strokes and connectors from inside the English letterforms, leaving several actual transparent gaps. Some terminals end in detached teardrop-shaped ink fragments. There should be 6–9 art-directed disappearance points across the whole title. Keep surviving letter portions sharp and organic like the “失踪” reference. Only AT those missing connections, retain a tiny soft semi-transparent remnant, no bigger than one nearby stroke width. Use a varied rhythm: a sharp disconnected dot, a partially erased stem, a smoothly tapered disappearing curve. Both words should remain identifiable but feel materially incomplete. Do not just apply selective blur to a conventional intact font.
+Remove the current large fuzzy smears entirely. No outer glow, no clouds, no paper texture, no rectangle, no background of any colour, no grain, no extra words, no Chinese text, no watermark. Keep all letters comfortably within the PNG edges with about 4% transparent padding. The final asset must read as a crafted disappearing-ink exhibition title when composited on navy.
+

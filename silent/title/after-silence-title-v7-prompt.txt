@@ -1,0 +1,13 @@
+Generated using built-in image_gen; transparent_background=true.
+
+Use case: precise-object-edit.
+Edit the supplied transparent After Silence v6 title with a restrained contrast refinement. Keep EXACT lettering, thin underlying skeleton, two-row layout and size. Do not redesign glyphs, terminals, placement, or where focus is lost.
+Exact text:
+After
+Silence
+Three linked adjustments:
+1. Surviving SOLID stroke interiors become moderately whiter and denser, about 15 percent stronger, with neutral ivory-white instead of dim grey. Preserve their slender shapes and softly feathered edges; no heavier/bolder strokes, no hard vector outlines.
+2. The ALREADY fully defocused passages become visibly more out of focus and more transparent. Increase their local softening approximately 30 percent and lower their density around 25 percent. They should recede into transparent empty space, with faint traces of their straight or curved underlying axes, NOT swell into luminous blobs.
+3. Reduce the OUTER halo around the whole title a little: lower its brightness and extent about 20 percent. Keep atmospheric transitions close to strokes. Stronger internal white skeleton + lighter lost-focus portions + restrained perimeter glow. Do not brighten the entire image or thicken all letters.
+The subtle contrast between remaining material and disappearance is crucial. Preserve v6's elegant old skeleton and soft atmosphere. This is a small refinement, not a new design.
+Deliver 1536x1024 genuine RGBA transparent PNG, same title scale and margins. Actual transparency is essential: alpha must encode faint defocused passages and feathered edges, empty space fully transparent, no opaque background, no cloudy rectangular field, no fake checkerboard. Artwork intended for dark navy background. No captions or other text.

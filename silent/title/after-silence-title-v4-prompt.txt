@@ -1,0 +1,17 @@
+Generated using built-in image_gen with transparent_background=true.
+
+Precisely REDRAW the specified strokes in this English exhibition title PNG. This must be a VISIBLY DIFFERENT structural correction, not a tiny variation. The last revision was virtually indistinguishable at website size.
+
+Keep text exactly “After” over “Silence”, same 1536x1024 layout, scale, ivory ink, transparent background and serif family character. Preserve the focused portions outside the regions named below.
+
+REPLACE these forms, do not just retouch their old blur:
+1. In the A, reconstruct the RIGHT DIAGONAL as ONE full straight sloping band from the apex down to the baseline. Give that entire diagonal a SOFT DEFOCUSED outline, but the middle remains a CONTINUOUS translucent solid ink band. Its two long edges remain parallel. It must not pinch into a teardrop, evaporate midway, or bend outward. Keep the left thin diagonal focused. The A's crossbar must continue straight horizontally into the unfocused diagonal, with a soft rectangular contour.
+2. Reconstruct the t with a full straight UPRIGHT stem and a plainly HORIZONTAL crossbar. Both are out of focus yet still clearly shaped like two elongated bars, with a dense translucent central core and soft margins. No swelling into a round blob, no melted connection. Preserve a small serif foot.
+3. Reconstruct the l in Silence as a full STRAIGHT tall defocused stem, same optical ink weight as neighboring focused stems. Make its top and bottom readable as the same continuous upright, softened like an intact printed letter behind translucent glass.
+4. On the ending “ce”, preserve full continuous bowl-shaped arcs behind the defocus, including traceable inner and outer contours. Blur the strokes instead of erasing or reducing them to detached beads. These are legitimate curves, not rectangular glyphs.
+
+Interpretation: the lettering is a real solid shape seen partly THROUGH FROSTED GLASS. It is not smoke, not melting ink, not eroded or disappearing letter segments. Shift visibly from missing/dripping fragments to INTACT BUT UNFOCUSED geometry. Keep about 45 percent of the total title visibly defocused, but preserve the full underlying silhouette even there. The reference poster's blur retains structured stroke shapes — that is the requested improvement.
+
+At output resolution, use strong local edge blur of roughly 12–25 pixels over these elongated strokes, while retaining a solid-looking central density (alpha roughly 0.5–0.85 at core, tapering gently at edges). This is actual local defocus without liquid distortions. Other chosen strokes remain sharply focused for contrast. No extra general glow or full-title blur.
+
+CRITICAL: blurred forms MUST remain visibly present in the RGBA alpha channel; do not threshold them away, and do not place haze only in RGB under alpha zero. True transparent PNG outside glyphs and their immediate soft boundaries. Pale ivory-white lettering ready to composite onto navy. No background, mockup, paper, captions, explanatory lines, boxes, drawn guides or extra text. Output only the new title artwork.

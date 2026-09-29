@@ -1,0 +1,20 @@
+Generated with built-in image_gen, transparent_background=true.
+
+Use case: style-transfer. A precise refinement of image 1, the approved transparent PNG title “After / Silence”. Image 2 is the original Chinese “失踪” poster reference.
+
+The user LIKES image 1's present overall feeling, amount of localized blur, two-row composition, letter style, pale ivory colour and contrast between sharp and unfocused portions. PRESERVE these. Make ONE specific improvement: THE BLURRED PARTS MUST RETAIN THE UNDERLYING LETTER'S STRAIGHT, STRUCTURAL CONTOUR instead of looking melted, swollen, liquefied or blob-like.
+
+Study image 2 carefully: even where the character strokes become blurry, a coherent upright or diagonal stroke skeleton remains. The blurry region resembles a real ink stroke photographed out of focus; its centreline stays straight and its edges remain approximately parallel, with a narrow soft falloff. It is NOT smoke and NOT a liquid dissolving into rounded beads. Preserve the rectilinear basis and intentional corners underneath the blur.
+
+Apply this to the existing English letterforms:
+- A: blurred right diagonal remains a continuous straight sloping stem; the crossbar stays horizontal under defocus.
+- f, t, i and l: preserve upright straight axes and the crossbar direction; any unfocused stretch must still read as an elongated stem, not a round patch.
+- e, n, c, r: retain the intended curve or joint and its original terminal direction. The blurred outline follows that existing structure; don't straighten legitimate curves into boxes.
+- Reconnect/reinforce the underlying translucent structural stroke where the prior image melted into an isolated rounded blob. Keep a quiet translucent core through the blurred zone, with controlled soft boundaries.
+- Preserve the existing balance of focused and unfocused regions, roughly 40 percent softened. Do NOT make everything sharp again. Do NOT increase the global blur. Do not add duplicate outlines or a crisp stroke superimposed through all blur.
+
+EXACT text, unchanged spelling and arrangement:
+After
+Silence
+
+Maintain landscape 1536x1024 composition, two rows, same scale/placement and safe margins, elegant high-contrast serif ink on a REAL TRANSPARENT RGBA background. Soft ivory-white strokes for a navy website. Very important: preserve the visibly graduated ALPHA of the blurred parts, not only their RGB. Soft strokes need meaningful semi-transparent alpha, so their original directional shape is VISIBLE on navy, not cut out sharply. Keep the broad empty spaces fully transparent. No added paper, poster, backdrop, large halo, smoke cloud, background grain, neon, melted droplets, new decorative dots, captions or watermark. Deliver only the refined PNG title artwork.

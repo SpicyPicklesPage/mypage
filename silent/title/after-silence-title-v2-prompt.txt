@@ -1,0 +1,14 @@
+Generated with built-in image_gen, transparent_background=true.
+
+Use case: style-transfer. Revise the transparent PNG English title in image 2, guided very closely by the large Chinese title in image 1 (“失踪”).
+Text must remain EXACTLY:
+After
+Silence
+
+Image 1 shows the desired focus logic: the LEFT structural strokes of a character can be strongly filled and readable while neighboring TOP and RIGHT portions become visibly OUT OF FOCUS, soft dark blobs, diffuse fragments, and smudged shadows. Notice the soft detached dots above the first character and the ghostly blurred right-hand portion of the lower character. This is NOT merely clean cutout gaps. There are strongly blurred but still VISIBLE ink remnants.
+
+Image 2 is currently too crisp when composited on the website. Correct that specific deficiency. Preserve its two-row arrangement, ivory-silver ink, custom high-contrast serif anatomy and detached rounded terminals, but make approximately 40–45% of the actual letter strokes dramatically unfocused in a varied, intentional pattern. In “After”, leave the A's main left leg and the f's long descending stroke focused while the A apex/crossbar, t crossbar and right side of e and r disintegrate into obvious, broad, softly blurred remnants. In “Silence”, keep the S's central structure, i dot and a few vertical stems focused while the S upper terminal, portions of l/e/n and the last c/e become soft ghostly forms. Some blurred portions should seem to recede behind frosted glass. Blur affects the visible stroke itself, not merely an added halo around an intact sharp letter. Do not leave a complete crisp outline beneath blurred regions. Keep the words recognizable overall.
+
+CRUCIAL ALPHA REQUIREMENT: the blurred strokes and ghost remnants must be PRESENT IN THE VISIBLE ALPHA CHANNEL. Give them visibly nonzero alpha, with soft graduated semi-transparency roughly 20%–70% around dissolving forms. Do NOT keep soft ghost pixels only in RGB while making their alpha zero, and do not threshold the soft edges into crisp cutouts. The prior output looked blurred in raw RGB but became crisp on a dark webpage because the hazy pixels were transparent. The result needs conspicuous soft defocus on real navy-background compositing. Preserve gradual alpha fades over a generous 15–35px distance at this resolution at selected softened strokes. Most of the empty space remains fully transparent. No giant glow cloud that fills the space between words.
+
+Real transparent RGBA PNG background; no paper, no solid backdrop, no poster border, no noise/grain backdrop, no black rectangle, no captions or extra text. Pale silver/ivory-white lettering appropriate for a dark navy webpage. Landscape approximately 1536x1024, two-line title occupying most of the frame with 4% safe margins. Produce the final artwork, not a webpage mockup.

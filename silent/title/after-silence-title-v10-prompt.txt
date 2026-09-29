@@ -1,0 +1,10 @@
+Generated using built-in image_gen; transparent_background=true.
+
+Use case: compositing / style-transfer.
+Image 1 is the CURRENT After Silence title and PRIMARY edit target. Image 2 is the user's requested reference for ONLY THE NON-HEAVILY-BLURRED PORTIONS.
+Task: Keep the strongly defocused disappearing segments of image 1 unchanged (A right diagonal, t, upper l, fading bends and terminals). For the remaining visible / mildly defocused portions, match image 2's gentle, softly substantial printed stroke quality and smooth unfussy contours.
+In the non-heavy-blur portions: adapt the slightly fuller, disciplined straight-stroke geometry, restrained serif endings and softly rounded/feathered boundaries from image 2. In particular the A left diagonal and base, i upright/dot/base, f and r solid stems should feel like image 2: softly solid, calm, regular, neither needle-sharp nor cut-paper. Remove any embossed-looking dark rim or cut-out edge in image 1. No chunky bold transformation. Mild optical softness around solid strokes but filled interiors.
+CRITICAL: KEEP the THREE CORRECT LATIN LOWERCASE e forms from image 1, with recognizable enclosed upper eye and crossbar. Do NOT copy the epsilon-like e from image 2. Apply only the same mildly softened stroke finish to these e. Keep the approved layout, letter positions, text scale and spelling: first row "After", second row "Silence".
+Keep image 1's existing neutral ivory-white level: do not adopt the overbright glow of image 2. No increase in overall brightness or halo. Existing strong defocus remains low density, indistinct, with underlying directional axes, no sharp detail.
+Only unify how the non-heavy-blur strokes are rendered; do not flatten the distinction between material and disappearance. No smoke, background clouds, grain, embossed shadow, offset duplicate, captions or other artwork.
+1536x1024 RGBA transparent PNG, identical framing. The ALPHA must include real feathered edges and low-opacity defocused traces; transparent empty space. Output title only.
