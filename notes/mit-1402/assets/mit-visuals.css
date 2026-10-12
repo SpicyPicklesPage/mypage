@@ -1,0 +1,72 @@
+:root {
+  --mit-ink: #17324d;
+  --mit-muted: #65758b;
+  --mit-grid: #dce5ec;
+  --mit-blue: #147d92;
+  --mit-red: #c44f3b;
+  --mit-gold: #d49a2a;
+  --mit-green: #3f7d5b;
+  --mit-paper: #fbfaf6;
+}
+
+svg[data-mit-graph], .mit-review-visual svg {
+  display: block;
+  width: min(100%, 760px);
+  height: auto;
+  margin: 0 auto;
+  overflow: visible;
+  font-family: "Instrument Sans", "Noto Sans SC", system-ui, sans-serif;
+}
+
+.figure, figure, .diagram-container, .svg-container {
+  border-radius: 16px;
+}
+
+svg[data-mit-graph] {
+  background: linear-gradient(145deg, #fff 0%, var(--mit-paper) 100%);
+  border: 1px solid #d9e1e7;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(31, 54, 74, .08);
+}
+
+.mit-review-visual {
+  margin: 2rem 0;
+  padding: 1.15rem 1.15rem .85rem;
+  border: 1px solid #d4dee6;
+  border-left: 5px solid var(--mit-blue);
+  border-radius: 16px;
+  background: linear-gradient(145deg, #fff 0%, #f4f8f8 100%);
+  box-shadow: 0 10px 24px rgba(31, 54, 74, .08);
+}
+
+.mit-review-visual h3 {
+  margin: 0 0 .35rem;
+  color: var(--mit-ink);
+  font-size: 1.05rem;
+}
+
+.mit-review-visual p {
+  margin: 0 0 .8rem;
+  color: var(--mit-muted);
+  font-size: .9rem;
+}
+
+.mit-visual-note {
+  margin-top: .65rem;
+  text-align: center;
+  color: var(--mit-muted);
+  font-size: .82rem;
+}
+
+@media (max-width: 640px) {
+  .mit-review-visual { padding: .85rem .7rem .7rem; }
+  svg[data-mit-graph], .mit-review-visual svg { min-height: 250px; }
+}
+
+@media print {
+  svg[data-mit-graph], .mit-review-visual svg {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+  .mit-review-visual { box-shadow: none; break-inside: avoid; }
+}

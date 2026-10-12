@@ -1,0 +1,3886 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.988 align:middle line:90%
+
+
+00:00:00.988 --> 00:00:02.470 align:middle line:90%
+[SQUEAKING]
+
+00:00:02.470 --> 00:00:03.952 align:middle line:90%
+[RUSTLING]
+
+00:00:03.952 --> 00:00:05.434 align:middle line:90%
+[CLICKING]
+
+00:00:05.434 --> 00:00:17.212 align:middle line:90%
+
+
+00:00:17.212 --> 00:00:18.670 align:middle line:84%
+RICARDO J. CABALLERO:
+OK, so let me
+
+00:00:18.670 --> 00:00:21.820 align:middle line:84%
+continue with the topic of
+the previous lecture, which
+
+00:00:21.820 --> 00:00:23.560 align:middle line:90%
+is asset pricing.
+
+00:00:23.560 --> 00:00:26.290 align:middle line:84%
+And we said the tricky
+thing with asset pricing
+
+00:00:26.290 --> 00:00:31.570 align:middle line:84%
+is that the payoff of having
+an asset comes in the future.
+
+00:00:31.570 --> 00:00:36.380 align:middle line:84%
+And that implies at
+least two things.
+
+00:00:36.380 --> 00:00:41.740 align:middle line:84%
+The first one is that we need to
+have a method to value returns
+
+00:00:41.740 --> 00:00:45.070 align:middle line:90%
+in the future as of today, OK?
+
+00:00:45.070 --> 00:00:46.700 align:middle line:90%
+So what is it equivalent to?
+
+00:00:46.700 --> 00:00:48.700 align:middle line:84%
+After all, if you want
+to buy a financial asset,
+
+00:00:48.700 --> 00:00:51.940 align:middle line:84%
+you need to pay for it
+today with dollars of today,
+
+00:00:51.940 --> 00:00:55.760 align:middle line:84%
+and you are expected to receive
+some payoff in the future.
+
+00:00:55.760 --> 00:00:57.980 align:middle line:84%
+You need to be able to
+compare these two things.
+
+00:00:57.980 --> 00:01:00.560 align:middle line:84%
+And the second is
+that-- is related,
+
+00:01:00.560 --> 00:01:03.250 align:middle line:84%
+is that because this
+payoff is in the future,
+
+00:01:03.250 --> 00:01:06.190 align:middle line:84%
+you need to have
+expectations about it.
+
+00:01:06.190 --> 00:01:11.590 align:middle line:84%
+So those are the two
+concepts we play with.
+
+00:01:11.590 --> 00:01:13.750 align:middle line:84%
+And it's a third
+related concept,
+
+00:01:13.750 --> 00:01:16.630 align:middle line:84%
+which is, because it
+comes in the future,
+
+00:01:16.630 --> 00:01:18.500 align:middle line:84%
+many things can
+happen in between.
+
+00:01:18.500 --> 00:01:20.930 align:middle line:84%
+And so there is also
+a concept of risk.
+
+00:01:20.930 --> 00:01:23.960 align:middle line:84%
+Those are the three
+elements we discussed.
+
+00:01:23.960 --> 00:01:26.357 align:middle line:90%
+And remember, we did--
+
+00:01:26.357 --> 00:01:27.940 align:middle line:84%
+I'm going to go very
+quickly over what
+
+00:01:27.940 --> 00:01:31.600 align:middle line:84%
+we did in the previous lecture
+because I could see some faces.
+
+00:01:31.600 --> 00:01:36.640 align:middle line:84%
+So let me go quickly over that
+and then continue with equity,
+
+00:01:36.640 --> 00:01:40.020 align:middle line:90%
+which was the next step.
+
+00:01:40.020 --> 00:01:43.950 align:middle line:84%
+So the first step says, OK,
+ignore the expectations part
+
+00:01:43.950 --> 00:01:45.560 align:middle line:90%
+for now and risk and so on.
+
+00:01:45.560 --> 00:01:47.290 align:middle line:90%
+Assume that you know the future.
+
+00:01:47.290 --> 00:01:52.800 align:middle line:84%
+And we ask the question, well,
+how do we value $1 next year?
+
+00:01:52.800 --> 00:01:55.020 align:middle line:84%
+In particular, we
+want the question,
+
+00:01:55.020 --> 00:01:57.360 align:middle line:84%
+is it equivalent
+to having $1 today?
+
+00:01:57.360 --> 00:01:59.490 align:middle line:84%
+And the answer
+quickly became no,
+
+00:01:59.490 --> 00:02:01.710 align:middle line:84%
+because imagine that you
+had the dollar today.
+
+00:02:01.710 --> 00:02:04.830 align:middle line:84%
+Then you can invest
+it for a year,
+
+00:02:04.830 --> 00:02:08.699 align:middle line:84%
+and you get the return of the
+one-year interest rate return.
+
+00:02:08.699 --> 00:02:13.970 align:middle line:84%
+So with a $1 today, you can do
+more than with $1 in the future.
+
+00:02:13.970 --> 00:02:17.390 align:middle line:84%
+In fact, that
+calculation gave us
+
+00:02:17.390 --> 00:02:22.880 align:middle line:84%
+the exact recipe to valuing $1
+in the future, because in order
+
+00:02:22.880 --> 00:02:25.440 align:middle line:84%
+to get $1 in the future,
+I don't need $1 today.
+
+00:02:25.440 --> 00:02:28.490 align:middle line:84%
+I need 1 over 1 plus
+the interest rate.
+
+00:02:28.490 --> 00:02:32.600 align:middle line:84%
+I invest this in
+the one-year bond,
+
+00:02:32.600 --> 00:02:36.290 align:middle line:84%
+and I get a return of
+that over that amount.
+
+00:02:36.290 --> 00:02:38.760 align:middle line:84%
+That gives me exactly
+$1 in the future, OK?
+
+00:02:38.760 --> 00:02:43.070 align:middle line:84%
+So that gives us a very natural
+way of valuing $1 next year.
+
+00:02:43.070 --> 00:02:45.510 align:middle line:84%
+It's just 1 over 1
+plus the interest rate.
+
+00:02:45.510 --> 00:02:48.680 align:middle line:84%
+And by the same logic,
+if I have $1 today,
+
+00:02:48.680 --> 00:02:50.810 align:middle line:84%
+and I want to invest
+it for two years,
+
+00:02:50.810 --> 00:02:52.940 align:middle line:84%
+well, I'm going to
+earn that interest
+
+00:02:52.940 --> 00:02:54.050 align:middle line:90%
+rate for the first year.
+
+00:02:54.050 --> 00:02:57.080 align:middle line:84%
+And then I'm going
+to earn that interest
+
+00:02:57.080 --> 00:03:00.800 align:middle line:84%
+rate on the full product,
+not on the original $1.
+
+00:03:00.800 --> 00:03:07.050 align:middle line:84%
+On the 1 plus i t dollars, I'm
+going to earn 1 plus i t plus 1.
+
+00:03:07.050 --> 00:03:11.270 align:middle line:90%
+And so I can generate a lot of--
+
+00:03:11.270 --> 00:03:15.090 align:middle line:84%
+[CHUCKLES] if the interest rate
+is 10% on average, $1 today
+
+00:03:15.090 --> 00:03:19.480 align:middle line:84%
+generates $1.21
+two years from now.
+
+00:03:19.480 --> 00:03:25.680 align:middle line:84%
+So that tells you, by the
+same logic, that 1 over $1.21
+
+00:03:25.680 --> 00:03:29.140 align:middle line:84%
+today is equivalent
+to $1 in the future.
+
+00:03:29.140 --> 00:03:33.000 align:middle line:84%
+So then we said, let's
+pick a very general asset,
+
+00:03:33.000 --> 00:03:34.620 align:middle line:90%
+an asset that has--
+
+00:03:34.620 --> 00:03:39.990 align:middle line:84%
+that pays Zt dollars
+this year, then Zt
+
+00:03:39.990 --> 00:03:44.790 align:middle line:84%
+plus $1 one year from now,
+Zt plus $2 two years from now
+
+00:03:44.790 --> 00:03:48.790 align:middle line:84%
+and so on and so forth,
+up to n years ahead.
+
+00:03:48.790 --> 00:03:51.040 align:middle line:84%
+What is the value
+of that asset today?
+
+00:03:51.040 --> 00:03:52.830 align:middle line:84%
+Well, you apply
+exactly the same logic
+
+00:03:52.830 --> 00:03:57.060 align:middle line:84%
+that we apply here for every
+single year in the future.
+
+00:03:57.060 --> 00:04:00.030 align:middle line:90%
+And you get-- that's the--
+
+00:04:00.030 --> 00:04:03.900 align:middle line:84%
+that's called the
+present discounted value
+
+00:04:03.900 --> 00:04:05.220 align:middle line:90%
+of those cash flows.
+
+00:04:05.220 --> 00:04:07.440 align:middle line:90%
+That gives you the value today.
+
+00:04:07.440 --> 00:04:10.890 align:middle line:84%
+Present, discounted-- those are
+the discount factors, 1 over--
+
+00:04:10.890 --> 00:04:13.420 align:middle line:84%
+and then that's the value
+that you get out of that.
+
+00:04:13.420 --> 00:04:17.339 align:middle line:84%
+So that asset has that
+present discounted value
+
+00:04:17.339 --> 00:04:22.360 align:middle line:90%
+of future cash flows.
+
+00:04:22.360 --> 00:04:25.050 align:middle line:84%
+And that should be
+more or less the price
+
+00:04:25.050 --> 00:04:27.930 align:middle line:84%
+that you are willing to
+pay for that asset, OK?
+
+00:04:27.930 --> 00:04:30.605 align:middle line:90%
+
+
+00:04:30.605 --> 00:04:32.090 align:middle line:84%
+And then we introduce
+expectations.
+
+00:04:32.090 --> 00:04:34.470 align:middle line:84%
+OK, but we're talking about
+cash flows in the future.
+
+00:04:34.470 --> 00:04:36.200 align:middle line:90%
+In many cases, we don't know.
+
+00:04:36.200 --> 00:04:37.680 align:middle line:90%
+Well, we don't know two things.
+
+00:04:37.680 --> 00:04:41.480 align:middle line:84%
+First, we don't know where
+the cash flows may be.
+
+00:04:41.480 --> 00:04:44.510 align:middle line:84%
+In a very safe bond, you
+do know the cash flow.
+
+00:04:44.510 --> 00:04:48.440 align:middle line:84%
+[CHUCKLES] But in
+almost any other asset,
+
+00:04:48.440 --> 00:04:51.230 align:middle line:84%
+you don't know exactly the
+cash flows you receive.
+
+00:04:51.230 --> 00:04:54.650 align:middle line:84%
+And you don't know what
+the future interest rate,
+
+00:04:54.650 --> 00:04:57.260 align:middle line:90%
+one-year interest rate will be.
+
+00:04:57.260 --> 00:05:00.950 align:middle line:84%
+So that took us to the concept
+of expected present discounted
+
+00:05:00.950 --> 00:05:03.920 align:middle line:84%
+value, in which you just
+replace all the things
+
+00:05:03.920 --> 00:05:07.640 align:middle line:84%
+we don't know today for the
+expectations of those things.
+
+00:05:07.640 --> 00:05:09.630 align:middle line:84%
+So we don't know the
+cash flows in the future.
+
+00:05:09.630 --> 00:05:12.660 align:middle line:84%
+That's the reason-- we
+have an expectation.
+
+00:05:12.660 --> 00:05:13.850 align:middle line:90%
+That's what you put there.
+
+00:05:13.850 --> 00:05:16.665 align:middle line:84%
+And we don't know the future--
+we know the current interest
+
+00:05:16.665 --> 00:05:19.040 align:middle line:84%
+rate, but we don't know the
+future one-year interest rate
+
+00:05:19.040 --> 00:05:21.360 align:middle line:84%
+or two-year interest rate,
+end-year interest rate
+
+00:05:21.360 --> 00:05:22.020 align:middle line:90%
+and so on.
+
+00:05:22.020 --> 00:05:24.920 align:middle line:84%
+So we put an
+expectation there, OK?
+
+00:05:24.920 --> 00:05:28.050 align:middle line:90%
+So that's that.
+
+00:05:28.050 --> 00:05:30.910 align:middle line:84%
+And then I gave you
+some special cases.
+
+00:05:30.910 --> 00:05:33.910 align:middle line:84%
+That's a case in which the
+interest rate is constant.
+
+00:05:33.910 --> 00:05:37.260 align:middle line:84%
+That's a case in which
+the payoff in the future,
+
+00:05:37.260 --> 00:05:42.170 align:middle line:90%
+the coupons, are constant.
+
+00:05:42.170 --> 00:05:45.080 align:middle line:84%
+And that's a case in
+which both are constant,
+
+00:05:45.080 --> 00:05:48.940 align:middle line:84%
+the interest rate and
+the payoffs in the future
+
+00:05:48.940 --> 00:05:52.590 align:middle line:84%
+and for a bond-- for a
+financial asset that lasts for n
+
+00:05:52.590 --> 00:05:56.230 align:middle line:90%
+years, that matures in n years.
+
+00:05:56.230 --> 00:05:58.620 align:middle line:84%
+That's the case in which an
+asset that does not mature,
+
+00:05:58.620 --> 00:06:01.720 align:middle line:84%
+that goes on forever
+under these conditions.
+
+00:06:01.720 --> 00:06:03.900 align:middle line:84%
+And then I said,
+well, suppose that we
+
+00:06:03.900 --> 00:06:05.560 align:middle line:90%
+look at the x dividend price.
+
+00:06:05.560 --> 00:06:09.360 align:middle line:84%
+That means after this year's
+dividend or this year's payment,
+
+00:06:09.360 --> 00:06:11.050 align:middle line:90%
+then that's the value.
+
+00:06:11.050 --> 00:06:13.950 align:middle line:84%
+And I made the point there
+that shows immediately
+
+00:06:13.950 --> 00:06:16.920 align:middle line:84%
+something that will be present
+in almost any asset price, which
+
+00:06:16.920 --> 00:06:21.635 align:middle line:84%
+is, as interest rate goes down,
+asset values tend to go up, OK?
+
+00:06:21.635 --> 00:06:23.970 align:middle line:84%
+And the reason for
+that is because assets
+
+00:06:23.970 --> 00:06:26.110 align:middle line:90%
+pay something in the future.
+
+00:06:26.110 --> 00:06:28.450 align:middle line:84%
+And if the interest
+rate falls, then you
+
+00:06:28.450 --> 00:06:29.870 align:middle line:90%
+discount less the future.
+
+00:06:29.870 --> 00:06:31.328 align:middle line:84%
+So whatever you're
+going to receive
+
+00:06:31.328 --> 00:06:34.515 align:middle line:84%
+is valued more because you
+discount less the future, OK?
+
+00:06:34.515 --> 00:06:35.940 align:middle line:90%
+So that's the effect.
+
+00:06:35.940 --> 00:06:37.930 align:middle line:84%
+In fact, in this
+particular case,
+
+00:06:37.930 --> 00:06:40.108 align:middle line:84%
+if the interest rate goes
+to 0, the value of that
+
+00:06:40.108 --> 00:06:42.400 align:middle line:84%
+goes to infinity because you
+don't discount the future,
+
+00:06:42.400 --> 00:06:45.500 align:middle line:84%
+and you're going to receive
+infinite payments in the future,
+
+00:06:45.500 --> 00:06:46.000 align:middle line:90%
+OK?
+
+00:06:46.000 --> 00:06:49.980 align:middle line:90%
+
+
+00:06:49.980 --> 00:06:52.890 align:middle line:84%
+Then we look at the
+specific financial assets.
+
+00:06:52.890 --> 00:06:56.790 align:middle line:90%
+And we first look at bonds.
+
+00:06:56.790 --> 00:07:00.842 align:middle line:84%
+And we said one important
+distinction, something--
+
+00:07:00.842 --> 00:07:03.300 align:middle line:84%
+whenever you buy a bond, one
+of the things you want to know
+
+00:07:03.300 --> 00:07:04.750 align:middle line:90%
+is the maturity of that bond.
+
+00:07:04.750 --> 00:07:09.070 align:middle line:84%
+Is it a one-year bond, a
+two-year bond, five, 10, 30?
+
+00:07:09.070 --> 00:07:12.690 align:middle line:84%
+Those are the typical US
+Treasury bonds, at least.
+
+00:07:12.690 --> 00:07:15.860 align:middle line:84%
+You want to know the
+maturity of the bond.
+
+00:07:15.860 --> 00:07:20.890 align:middle line:84%
+So then we went into
+pricing different bonds.
+
+00:07:20.890 --> 00:07:22.440 align:middle line:90%
+We say, well, a bond--
+
+00:07:22.440 --> 00:07:25.400 align:middle line:84%
+the simplest bond is a bond--
+is a one-year bond that--
+
+00:07:25.400 --> 00:07:29.270 align:middle line:84%
+suppose we have a bond that pays
+$100 at the end of the year,
+
+00:07:29.270 --> 00:07:31.580 align:middle line:90%
+and then it matures.
+
+00:07:31.580 --> 00:07:34.070 align:middle line:84%
+Well, the price of
+that bond should
+
+00:07:34.070 --> 00:07:38.330 align:middle line:84%
+be the present discounted value
+of the flows of that bond, which
+
+00:07:38.330 --> 00:07:42.140 align:middle line:84%
+is $100 divided by 1 plus
+the one-year interest
+
+00:07:42.140 --> 00:07:43.570 align:middle line:90%
+rate at time t, OK?
+
+00:07:43.570 --> 00:07:47.550 align:middle line:90%
+
+
+00:07:47.550 --> 00:07:49.913 align:middle line:84%
+And notice again here,
+by the same logic
+
+00:07:49.913 --> 00:07:52.080 align:middle line:84%
+of what I explained before,
+is that, if the interest
+
+00:07:52.080 --> 00:07:55.050 align:middle line:84%
+rate, one-year interest rate,
+goes up, the price of that bond
+
+00:07:55.050 --> 00:07:58.417 align:middle line:84%
+will decline because that bond
+pays you one year from now.
+
+00:07:58.417 --> 00:08:00.750 align:middle line:84%
+And one year from now, when
+the interest rate is higher,
+
+00:08:00.750 --> 00:08:03.480 align:middle line:84%
+it's worth a little less
+than it was when the interest
+
+00:08:03.480 --> 00:08:06.970 align:middle line:90%
+rate was a little lower, OK?
+
+00:08:06.970 --> 00:08:09.630 align:middle line:84%
+And then we look at a two-year
+bond, a bond that pays nothing
+
+00:08:09.630 --> 00:08:10.930 align:middle line:90%
+up to two years from now.
+
+00:08:10.930 --> 00:08:13.500 align:middle line:84%
+And we say, well, two years
+from now, it pays $100
+
+00:08:13.500 --> 00:08:14.660 align:middle line:90%
+and then matures.
+
+00:08:14.660 --> 00:08:19.700 align:middle line:84%
+Well, the price of that
+bond will be this, OK?
+
+00:08:19.700 --> 00:08:22.110 align:middle line:84%
+And notice that, in
+this case, the price
+
+00:08:22.110 --> 00:08:25.150 align:middle line:84%
+of a two-year bond
+at time t goes down
+
+00:08:25.150 --> 00:08:28.640 align:middle line:84%
+if either of the one-year
+rates goes up, OK?
+
+00:08:28.640 --> 00:08:30.330 align:middle line:90%
+It can be the first--
+
+00:08:30.330 --> 00:08:34.380 align:middle line:84%
+this year's one-year rate
+or maybe the expectation
+
+00:08:34.380 --> 00:08:40.610 align:middle line:84%
+that the one-year rate
+next year will go up, OK?
+
+00:08:40.610 --> 00:08:41.990 align:middle line:90%
+Good.
+
+00:08:41.990 --> 00:08:44.330 align:middle line:84%
+Then I introduce an
+important concept,
+
+00:08:44.330 --> 00:08:49.980 align:middle line:84%
+which is this concept of
+arbitrage pricing, which is--
+
+00:08:49.980 --> 00:08:55.275 align:middle line:84%
+two instruments
+should give you sort
+
+00:08:55.275 --> 00:08:57.150 align:middle line:84%
+of the same interest
+rate-- we're leaving
+
+00:08:57.150 --> 00:08:58.330 align:middle line:90%
+risk considerations aside.
+
+00:08:58.330 --> 00:09:05.530 align:middle line:84%
+It should give you the same
+return when you compare them
+
+00:09:05.530 --> 00:09:07.980 align:middle line:90%
+over the same maturity, OK?
+
+00:09:07.980 --> 00:09:11.410 align:middle line:84%
+So in this particular
+example, I said,
+
+00:09:11.410 --> 00:09:15.700 align:middle line:84%
+look, a one-year bond
+and a two-year bond
+
+00:09:15.700 --> 00:09:18.260 align:middle line:84%
+that you invest-- you
+hold for only one year
+
+00:09:18.260 --> 00:09:22.920 align:middle line:84%
+should give you more or
+less the same return, OK?
+
+00:09:22.920 --> 00:09:29.830 align:middle line:84%
+So that means that this is the
+return you get from $1 invested
+
+00:09:29.830 --> 00:09:32.930 align:middle line:90%
+in a one-year bond--
+
+00:09:32.930 --> 00:09:34.850 align:middle line:84%
+should be equal
+to the return you
+
+00:09:34.850 --> 00:09:38.030 align:middle line:84%
+get by investing
+in a two-year bond
+
+00:09:38.030 --> 00:09:40.970 align:middle line:84%
+and selling that
+bond after one year.
+
+00:09:40.970 --> 00:09:44.590 align:middle line:84%
+And that's the
+expression we had here.
+
+00:09:44.590 --> 00:09:48.900 align:middle line:84%
+If you-- this is what you
+pay for a two-year bond.
+
+00:09:48.900 --> 00:09:55.160 align:middle line:84%
+And this is what you expect
+to be paid for that bond when
+
+00:09:55.160 --> 00:09:57.000 align:middle line:90%
+you sell it one year from now.
+
+00:09:57.000 --> 00:09:59.720 align:middle line:84%
+Notice that, one year from
+now, the two-year bond
+
+00:09:59.720 --> 00:10:02.743 align:middle line:84%
+will be a one-year bond because
+one year will have expired,
+
+00:10:02.743 --> 00:10:04.660 align:middle line:84%
+and at that point, it
+will be a one-year bond.
+
+00:10:04.660 --> 00:10:07.760 align:middle line:84%
+That's the reason we have
+a subscript P1t here.
+
+00:10:07.760 --> 00:10:10.130 align:middle line:84%
+So that means that we
+can solve from here
+
+00:10:10.130 --> 00:10:13.160 align:middle line:90%
+that P2t is simply that.
+
+00:10:13.160 --> 00:10:15.800 align:middle line:84%
+But there is an
+expression like the one
+
+00:10:15.800 --> 00:10:17.900 align:middle line:84%
+we had for the one-year
+bond at time t.
+
+00:10:17.900 --> 00:10:19.620 align:middle line:90%
+There is one for t plus 1.
+
+00:10:19.620 --> 00:10:22.880 align:middle line:84%
+We put expectations because we
+don't know the actual interest
+
+00:10:22.880 --> 00:10:24.920 align:middle line:90%
+rate in the future.
+
+00:10:24.920 --> 00:10:29.310 align:middle line:84%
+And then I stuck
+this into there.
+
+00:10:29.310 --> 00:10:32.250 align:middle line:84%
+And we got exactly
+the same price
+
+00:10:32.250 --> 00:10:33.720 align:middle line:84%
+that we got with
+the net present--
+
+00:10:33.720 --> 00:10:36.290 align:middle line:84%
+expected present discounted
+value approach, OK?
+
+00:10:36.290 --> 00:10:38.280 align:middle line:90%
+And so this asset pricing--
+
+00:10:38.280 --> 00:10:40.320 align:middle line:84%
+this arbitrage way
+of pricing things
+
+00:10:40.320 --> 00:10:42.630 align:middle line:84%
+is an incredibly
+powerful tool that
+
+00:10:42.630 --> 00:10:44.980 align:middle line:84%
+is used very
+extensively in finance.
+
+00:10:44.980 --> 00:10:46.230 align:middle line:90%
+These are simple calculations.
+
+00:10:46.230 --> 00:10:50.190 align:middle line:84%
+But when an asset gets to be
+tricky, much more complicated,
+
+00:10:50.190 --> 00:10:54.320 align:middle line:90%
+this is very useful.
+
+00:10:54.320 --> 00:10:57.140 align:middle line:90%
+Then we talk about bond yields.
+
+00:10:57.140 --> 00:11:02.120 align:middle line:84%
+And bond yields are defined
+as the constant interest
+
+00:11:02.120 --> 00:11:09.220 align:middle line:84%
+rate that is consistent
+with the current price
+
+00:11:09.220 --> 00:11:11.170 align:middle line:90%
+of that particular bond.
+
+00:11:11.170 --> 00:11:14.200 align:middle line:84%
+So in the case of
+the two-year bond,
+
+00:11:14.200 --> 00:11:17.650 align:middle line:84%
+we call the two-year
+rate, that interest rate
+
+00:11:17.650 --> 00:11:22.100 align:middle line:84%
+that is constant
+over the two periods.
+
+00:11:22.100 --> 00:11:23.480 align:middle line:90%
+That's the reason I square it.
+
+00:11:23.480 --> 00:11:27.500 align:middle line:90%
+It's not i1t times 1 i1t plus 1.
+
+00:11:27.500 --> 00:11:29.130 align:middle line:90%
+I square it.
+
+00:11:29.130 --> 00:11:31.020 align:middle line:90%
+It's not constant over time.
+
+00:11:31.020 --> 00:11:33.010 align:middle line:84%
+The two-year interest
+rate may be moving a lot.
+
+00:11:33.010 --> 00:11:35.438 align:middle line:84%
+I mean, the Fed just
+hiked by 25 basis points.
+
+00:11:35.438 --> 00:11:37.480 align:middle line:84%
+I'm sure all the rates
+are moving at this moment.
+
+00:11:37.480 --> 00:11:40.840 align:middle line:84%
+So the rates can be moving
+at all points in time.
+
+00:11:40.840 --> 00:11:43.733 align:middle line:84%
+But what we define as the
+yield is, at one point in time,
+
+00:11:43.733 --> 00:11:45.150 align:middle line:84%
+you tell me the
+price of the bond,
+
+00:11:45.150 --> 00:11:47.610 align:middle line:84%
+you tell me the payoff
+of the bond, then
+
+00:11:47.610 --> 00:11:52.980 align:middle line:84%
+what is the constant interest
+rate that makes this price--
+
+00:11:52.980 --> 00:11:55.480 align:middle line:84%
+this expression equal
+to the actual price?
+
+00:11:55.480 --> 00:11:58.780 align:middle line:84%
+That's the way we define
+the two-year rate.
+
+00:11:58.780 --> 00:12:00.070 align:middle line:90%
+That's the two-year rate.
+
+00:12:00.070 --> 00:12:04.380 align:middle line:84%
+And if you have a bond that
+pays 100 n years from now,
+
+00:12:04.380 --> 00:12:08.370 align:middle line:84%
+then there would be a
+constant interest rate, i n,
+
+00:12:08.370 --> 00:12:17.265 align:middle line:84%
+that gives you $100 divided
+by 1 plus i nt to the n power.
+
+00:12:17.265 --> 00:12:20.040 align:middle line:90%
+That will give you--
+
+00:12:20.040 --> 00:12:22.710 align:middle line:84%
+when you set that equal to
+the price, the actual price
+
+00:12:22.710 --> 00:12:27.000 align:middle line:84%
+of the bond, the one you get out
+of expected present discounted
+
+00:12:27.000 --> 00:12:29.500 align:middle line:84%
+value or out of
+arbitrage, then you
+
+00:12:29.500 --> 00:12:35.170 align:middle line:84%
+have found the yield or
+the yield to maturity.
+
+00:12:35.170 --> 00:12:37.030 align:middle line:84%
+We know what the-- we
+already got the price
+
+00:12:37.030 --> 00:12:38.272 align:middle line:90%
+from the previous slide.
+
+00:12:38.272 --> 00:12:39.730 align:middle line:84%
+We know that the
+price of this bond
+
+00:12:39.730 --> 00:12:43.150 align:middle line:84%
+is going to be 100 as
+a two-year bond divided
+
+00:12:43.150 --> 00:12:46.030 align:middle line:84%
+by this product of 1 plus
+interest rate, one-year interest
+
+00:12:46.030 --> 00:12:46.670 align:middle line:90%
+rate.
+
+00:12:46.670 --> 00:12:48.770 align:middle line:90%
+So this has to be equal to that.
+
+00:12:48.770 --> 00:12:52.660 align:middle line:84%
+That's the way, actually, you
+calculate the two-year yield.
+
+00:12:52.660 --> 00:12:54.650 align:middle line:90%
+And numerators are the same.
+
+00:12:54.650 --> 00:12:56.930 align:middle line:84%
+That means the denominators
+have to be the same.
+
+00:12:56.930 --> 00:13:00.580 align:middle line:84%
+And this implies approximately
+that the two-year rate
+
+00:13:00.580 --> 00:13:05.312 align:middle line:84%
+is a sort of average of the
+expected one-year rates, OK?
+
+00:13:05.312 --> 00:13:08.200 align:middle line:84%
+So in this case,
+the two-year rate
+
+00:13:08.200 --> 00:13:10.850 align:middle line:84%
+is a sort of average
+of the one-year rate.
+
+00:13:10.850 --> 00:13:14.350 align:middle line:84%
+That means that, when the--
+when you expect the interest
+
+00:13:14.350 --> 00:13:17.560 align:middle line:84%
+rate to be-- the one-year
+rate to be rising over time,
+
+00:13:17.560 --> 00:13:21.928 align:middle line:84%
+then the two-year rate will be
+above the one-year rate today.
+
+00:13:21.928 --> 00:13:24.470 align:middle line:84%
+That's when the curve is-- we
+say the curve, the yield curve,
+
+00:13:24.470 --> 00:13:25.610 align:middle line:90%
+is steep.
+
+00:13:25.610 --> 00:13:27.342 align:middle line:90%
+Remember I showed you this in--
+
+00:13:27.342 --> 00:13:31.590 align:middle line:90%
+
+
+00:13:31.590 --> 00:13:33.080 align:middle line:90%
+there?
+
+00:13:33.080 --> 00:13:36.800 align:middle line:84%
+When the curve looks
+like that, so steep,
+
+00:13:36.800 --> 00:13:41.638 align:middle line:84%
+means that the later--
+the two-year rate,
+
+00:13:41.638 --> 00:13:43.430 align:middle line:84%
+the three-year-- well,
+here, in particular,
+
+00:13:43.430 --> 00:13:45.710 align:middle line:84%
+the three-year rate
+is-- the two-year rate
+
+00:13:45.710 --> 00:13:47.085 align:middle line:84%
+is higher than
+the one-year rate.
+
+00:13:47.085 --> 00:13:49.252 align:middle line:84%
+The three-year rate is
+higher than the two-year rate
+
+00:13:49.252 --> 00:13:50.280 align:middle line:90%
+and so on and so forth.
+
+00:13:50.280 --> 00:13:54.050 align:middle line:90%
+That happens when you expect--
+
+00:13:54.050 --> 00:13:55.550 align:middle line:84%
+the market expects
+the interest rate
+
+00:13:55.550 --> 00:13:58.040 align:middle line:84%
+to be rising over
+time, the one-year rate
+
+00:13:58.040 --> 00:14:02.990 align:middle line:84%
+to be rising because
+remember, the two-year rate
+
+00:14:02.990 --> 00:14:05.570 align:middle line:84%
+is the average of the
+current one-year rate
+
+00:14:05.570 --> 00:14:08.790 align:middle line:84%
+plus the expected one-year
+rate one year from now.
+
+00:14:08.790 --> 00:14:12.180 align:middle line:84%
+For that average to be higher
+than the one-year rate now,
+
+00:14:12.180 --> 00:14:15.930 align:middle line:84%
+it has to be the case that the
+expected one-year rate one year
+
+00:14:15.930 --> 00:14:19.860 align:middle line:84%
+from now has to be higher than
+the current one-year rate, OK?
+
+00:14:19.860 --> 00:14:22.260 align:middle line:90%
+So that's when you tend to get--
+
+00:14:22.260 --> 00:14:25.085 align:middle line:84%
+that's when you get an
+upward-sloping term structure.
+
+00:14:25.085 --> 00:14:27.210 align:middle line:84%
+And when you get a
+downward-sloping term structure,
+
+00:14:27.210 --> 00:14:28.830 align:middle line:84%
+which is the way it
+looks right now--
+
+00:14:28.830 --> 00:14:31.350 align:middle line:84%
+actually, right now, it
+looks very downward-sloping.
+
+00:14:31.350 --> 00:14:32.400 align:middle line:90%
+There you are.
+
+00:14:32.400 --> 00:14:34.560 align:middle line:84%
+It looks very
+downward-sloping-- is
+
+00:14:34.560 --> 00:14:38.400 align:middle line:84%
+people expect that we're getting
+to the peak of current policy
+
+00:14:38.400 --> 00:14:40.420 align:middle line:84%
+rate of short-term
+interest rate.
+
+00:14:40.420 --> 00:14:42.900 align:middle line:84%
+And so people expect now
+for the interest rate
+
+00:14:42.900 --> 00:14:45.100 align:middle line:90%
+to decline going forward.
+
+00:14:45.100 --> 00:14:50.250 align:middle line:84%
+And that's the reason
+the two-year rate now is
+
+00:14:50.250 --> 00:14:53.640 align:middle line:90%
+lower than the one-year rate.
+
+00:14:53.640 --> 00:14:55.990 align:middle line:84%
+And the five-year rate is
+lower than the two-year rate
+
+00:14:55.990 --> 00:14:56.590 align:middle line:90%
+and so on.
+
+00:14:56.590 --> 00:14:59.620 align:middle line:90%
+
+
+00:14:59.620 --> 00:15:03.620 align:middle line:84%
+And as you can see
+here, it's very steep.
+
+00:15:03.620 --> 00:15:07.410 align:middle line:84%
+Then we said, well, let's
+add risk because yeah, sure.
+
+00:15:07.410 --> 00:15:11.100 align:middle line:84%
+Here we assume that you were
+indifferent between investing
+
+00:15:11.100 --> 00:15:15.007 align:middle line:84%
+in a completely safe one-year
+bond and a two-year bond
+
+00:15:15.007 --> 00:15:17.340 align:middle line:84%
+in which you had to make an
+expectation about the price.
+
+00:15:17.340 --> 00:15:18.790 align:middle line:84%
+But that price
+could move around.
+
+00:15:18.790 --> 00:15:23.070 align:middle line:84%
+So there is risk on that price,
+on the price of one-year--
+
+00:15:23.070 --> 00:15:26.510 align:middle line:90%
+the one-year bond as of today.
+
+00:15:26.510 --> 00:15:31.040 align:middle line:90%
+
+
+00:15:31.040 --> 00:15:32.612 align:middle line:90%
+So we added risk.
+
+00:15:32.612 --> 00:15:34.320 align:middle line:84%
+And there are two
+types of risk in bonds.
+
+00:15:34.320 --> 00:15:38.600 align:middle line:84%
+One is default risk, that they
+had promised that they would pay
+
+00:15:38.600 --> 00:15:42.410 align:middle line:84%
+you $100, but it may happen that
+they cannot pay you the $100,
+
+00:15:42.410 --> 00:15:44.660 align:middle line:84%
+the corporation or the
+government or so on.
+
+00:15:44.660 --> 00:15:50.090 align:middle line:84%
+Argentina defaults its bonds
+regularly, for example.
+
+00:15:50.090 --> 00:15:54.740 align:middle line:84%
+Many of the regional
+banks that have gone under
+
+00:15:54.740 --> 00:15:57.090 align:middle line:84%
+will default on
+their bonds as well--
+
+00:15:57.090 --> 00:15:58.440 align:middle line:90%
+so that kind of risk.
+
+00:15:58.440 --> 00:16:01.440 align:middle line:84%
+But we'll remove that risk, and
+we'll focus, for now, on the--
+
+00:16:01.440 --> 00:16:03.260 align:middle line:84%
+I'm going to focus
+mostly on the price risk
+
+00:16:03.260 --> 00:16:06.510 align:middle line:84%
+because I'm going to be talking
+mostly about US Treasury bonds.
+
+00:16:06.510 --> 00:16:09.440 align:middle line:84%
+US Treasury bonds have no
+default risk, we think.
+
+00:16:09.440 --> 00:16:12.590 align:middle line:84%
+I mean, there could be an
+event in a few weeks from now,
+
+00:16:12.590 --> 00:16:15.630 align:middle line:84%
+but no one expects that
+to be a lasting event.
+
+00:16:15.630 --> 00:16:17.400 align:middle line:84%
+I mean, if it is,
+there is a real mess.
+
+00:16:17.400 --> 00:16:20.480 align:middle line:84%
+But in any event, but
+there is also a price risk
+
+00:16:20.480 --> 00:16:23.990 align:middle line:84%
+because you have to hold this
+and then sell it at one year.
+
+00:16:23.990 --> 00:16:27.120 align:middle line:84%
+And you don't know exactly the
+price, what the price will be.
+
+00:16:27.120 --> 00:16:29.150 align:middle line:84%
+There is a risk
+associated to that.
+
+00:16:29.150 --> 00:16:33.350 align:middle line:84%
+So that means that, really,
+you shouldn't equalize
+
+00:16:33.350 --> 00:16:36.800 align:middle line:84%
+the return on the one-year
+bond to the return you expect
+
+00:16:36.800 --> 00:16:39.840 align:middle line:90%
+to get in the two-year bond.
+
+00:16:39.840 --> 00:16:42.020 align:middle line:84%
+You should add a
+little compensation
+
+00:16:42.020 --> 00:16:44.600 align:middle line:84%
+for holding the two-year bond,
+for going the two-year bond
+
+00:16:44.600 --> 00:16:45.220 align:middle line:90%
+route.
+
+00:16:45.220 --> 00:16:48.530 align:middle line:84%
+And so rather than
+expect to make
+
+00:16:48.530 --> 00:16:54.080 align:middle line:84%
+1 plus i1t the two-year
+bond after one year,
+
+00:16:54.080 --> 00:16:56.480 align:middle line:84%
+you should expect to
+earn a little more.
+
+00:16:56.480 --> 00:17:01.640 align:middle line:84%
+And that's what this xb
+being positive reflects.
+
+00:17:01.640 --> 00:17:05.300 align:middle line:84%
+And so in that case, the
+price of the two-year bond
+
+00:17:05.300 --> 00:17:07.270 align:middle line:84%
+is a little different
+from what we had.
+
+00:17:07.270 --> 00:17:09.260 align:middle line:84%
+In fact, it's a
+little lower than what
+
+00:17:09.260 --> 00:17:11.849 align:middle line:84%
+we had because that's the
+way you compensate for risk.
+
+00:17:11.849 --> 00:17:13.609 align:middle line:84%
+I sell you an instrument
+a little cheaper
+
+00:17:13.609 --> 00:17:16.160 align:middle line:84%
+than it would have been
+in the absence of risk.
+
+00:17:16.160 --> 00:17:20.160 align:middle line:84%
+So you expect to get a little--
+a slightly higher return out
+
+00:17:20.160 --> 00:17:20.800 align:middle line:90%
+of that.
+
+00:17:20.800 --> 00:17:24.720 align:middle line:84%
+So this price is lower than
+the price without the risk
+
+00:17:24.720 --> 00:17:26.930 align:middle line:90%
+premium here, no?
+
+00:17:26.930 --> 00:17:28.680 align:middle line:84%
+That means-- but it
+still is promising you
+
+00:17:28.680 --> 00:17:32.190 align:middle line:84%
+$100 So that's exactly how
+you get more return out of it,
+
+00:17:32.190 --> 00:17:34.770 align:middle line:84%
+because you're buying
+something at a lower price, OK?
+
+00:17:34.770 --> 00:17:43.865 align:middle line:90%
+
+
+00:17:43.865 --> 00:17:46.420 align:middle line:84%
+So I can do the same
+logic now and see
+
+00:17:46.420 --> 00:17:48.500 align:middle line:90%
+what the two-year rate is.
+
+00:17:48.500 --> 00:17:50.710 align:middle line:90%
+But now that I have this--
+
+00:17:50.710 --> 00:17:52.810 align:middle line:84%
+take into account
+this risk, and you
+
+00:17:52.810 --> 00:17:55.660 align:middle line:84%
+have that the two-year rate
+now is the average not only
+
+00:17:55.660 --> 00:17:58.930 align:middle line:84%
+of the expected one-year
+rate, but also includes
+
+00:17:58.930 --> 00:18:02.146 align:middle line:90%
+a risk premium.
+
+00:18:02.146 --> 00:18:04.660 align:middle line:84%
+And that tends to be the
+case, that the further out
+
+00:18:04.660 --> 00:18:07.200 align:middle line:84%
+in the curve you are, the
+larger is the risk premium.
+
+00:18:07.200 --> 00:18:11.162 align:middle line:84%
+It's called term premium because
+term is the same as maturity,
+
+00:18:11.162 --> 00:18:11.662 align:middle line:90%
+OK?
+
+00:18:11.662 --> 00:18:16.850 align:middle line:90%
+
+
+00:18:16.850 --> 00:18:21.580 align:middle line:84%
+Actually, sometimes that
+is negative, actually.
+
+00:18:21.580 --> 00:18:24.830 align:middle line:84%
+And recently, up to very
+recently-- now it's positive.
+
+00:18:24.830 --> 00:18:28.332 align:middle line:84%
+But until very recently,
+that xb was negative.
+
+00:18:28.332 --> 00:18:30.790 align:middle line:84%
+And the reason for that-- you
+don't need to understand that
+
+00:18:30.790 --> 00:18:31.360 align:middle line:90%
+now--
+
+00:18:31.360 --> 00:18:35.470 align:middle line:84%
+is because long-term
+bonds were great hedges.
+
+00:18:35.470 --> 00:18:37.690 align:middle line:90%
+Meaning, if there is--
+
+00:18:37.690 --> 00:18:41.110 align:middle line:84%
+for any major event, for a
+financial crisis or something
+
+00:18:41.110 --> 00:18:44.260 align:middle line:84%
+like that, because
+in a financial crisis
+
+00:18:44.260 --> 00:18:49.120 align:middle line:84%
+or a major disaster,
+interest rates tend to fall.
+
+00:18:49.120 --> 00:18:51.855 align:middle line:84%
+And when interest rates fall,
+the price of bonds goes up,
+
+00:18:51.855 --> 00:18:53.706 align:middle line:90%
+[CHUCKLES] OK?
+
+00:18:53.706 --> 00:18:55.450 align:middle line:90%
+And so that was a good hedge.
+
+00:18:55.450 --> 00:18:58.510 align:middle line:84%
+If you wanted to protect
+your portfolio of equities
+
+00:18:58.510 --> 00:19:02.140 align:middle line:84%
+and so on against a major
+catastrophic-- major event
+
+00:19:02.140 --> 00:19:05.380 align:middle line:84%
+like a financial crisis
+or a war or something
+
+00:19:05.380 --> 00:19:08.950 align:middle line:84%
+like that, it was not a bad
+idea to have some long-term US
+
+00:19:08.950 --> 00:19:11.200 align:middle line:84%
+Treasury bonds in
+your portfolio,
+
+00:19:11.200 --> 00:19:14.770 align:middle line:84%
+because they would tend to go
+up precisely when everything
+
+00:19:14.770 --> 00:19:17.860 align:middle line:84%
+else was going to be losing
+money and so, as a result,
+
+00:19:17.860 --> 00:19:18.860 align:middle line:90%
+tend to be negative.
+
+00:19:18.860 --> 00:19:22.030 align:middle line:84%
+Now that's not the case, because
+now one of the biggest risks
+
+00:19:22.030 --> 00:19:23.540 align:middle line:90%
+is inflation.
+
+00:19:23.540 --> 00:19:27.290 align:middle line:84%
+And so if there is an
+inflationary spike,
+
+00:19:27.290 --> 00:19:30.450 align:middle line:84%
+then interest rates will
+go down-- up, not down.
+
+00:19:30.450 --> 00:19:32.430 align:middle line:84%
+And that means the price
+of bonds will decline.
+
+00:19:32.430 --> 00:19:34.760 align:middle line:84%
+So they will decline
+at the wrong time, OK?
+
+00:19:34.760 --> 00:19:37.040 align:middle line:84%
+So the price of bonds,
+of long-term bonds,
+
+00:19:37.040 --> 00:19:40.340 align:middle line:84%
+now will tend to decline
+when everything else is also
+
+00:19:40.340 --> 00:19:40.890 align:middle line:90%
+plummeting.
+
+00:19:40.890 --> 00:19:43.550 align:middle line:84%
+I mean, if we get a negative,
+if we get an inflation surprise,
+
+00:19:43.550 --> 00:19:46.310 align:middle line:84%
+and inflation is a lot
+higher than people expected,
+
+00:19:46.310 --> 00:19:48.740 align:middle line:84%
+asset prices are going
+to decline, all of them,
+
+00:19:48.740 --> 00:19:50.310 align:middle line:90%
+including long-term bonds.
+
+00:19:50.310 --> 00:19:56.160 align:middle line:84%
+And that's the reason
+now this xb is positive.
+
+00:19:56.160 --> 00:19:58.500 align:middle line:84%
+OK, so that's-- so I
+think that's where we were
+
+00:19:58.500 --> 00:20:01.050 align:middle line:90%
+at in the previous lecture.
+
+00:20:01.050 --> 00:20:02.680 align:middle line:90%
+Any questions about that?
+
+00:20:02.680 --> 00:20:06.780 align:middle line:84%
+Then I'm going to-- next
+step is to talk about equity.
+
+00:20:06.780 --> 00:20:07.620 align:middle line:90%
+No?
+
+00:20:07.620 --> 00:20:08.670 align:middle line:90%
+Yeah?
+
+00:20:08.670 --> 00:20:11.670 align:middle line:84%
+AUDIENCE: Why don't we add the
+risk premium to the interest
+
+00:20:11.670 --> 00:20:12.880 align:middle line:90%
+rate on your note?
+
+00:20:12.880 --> 00:20:14.893 align:middle line:90%
+
+
+00:20:14.893 --> 00:20:16.810 align:middle line:84%
+RICARDO J. CABALLERO:
+Well, because next year,
+
+00:20:16.810 --> 00:20:21.790 align:middle line:84%
+that one-- for this
+particular bond, that bond
+
+00:20:21.790 --> 00:20:25.190 align:middle line:84%
+will have no risk because
+it will be one year to go.
+
+00:20:25.190 --> 00:20:28.570 align:middle line:84%
+And at the end of that year,
+you're going to get the $100.
+
+00:20:28.570 --> 00:20:30.430 align:middle line:90%
+So there is no risk, that $100.
+
+00:20:30.430 --> 00:20:32.505 align:middle line:84%
+If it was a
+three-year bond, then
+
+00:20:32.505 --> 00:20:33.880 align:middle line:84%
+you would have--
+in two of those,
+
+00:20:33.880 --> 00:20:36.192 align:middle line:90%
+you would have risk premium.
+
+00:20:36.192 --> 00:20:37.900 align:middle line:84%
+But you wouldn't have
+it in the last one,
+
+00:20:37.900 --> 00:20:39.910 align:middle line:84%
+because in the last one,
+you don't have the-- you're
+
+00:20:39.910 --> 00:20:40.993 align:middle line:90%
+going to receive the $100.
+
+00:20:40.993 --> 00:20:41.860 align:middle line:90%
+[CHUCKLES]
+
+00:20:41.860 --> 00:20:45.990 align:middle line:90%
+If the bond could default--
+
+00:20:45.990 --> 00:20:49.680 align:middle line:84%
+because I'm only looking
+at price risk in the bond.
+
+00:20:49.680 --> 00:20:55.200 align:middle line:84%
+If the bond could default, then
+I would add an extra term there
+
+00:20:55.200 --> 00:20:56.500 align:middle line:90%
+because it's default risk.
+
+00:20:56.500 --> 00:20:59.040 align:middle line:84%
+But here I'm just
+looking at price risk.
+
+00:20:59.040 --> 00:21:01.900 align:middle line:84%
+And I'm assuming the
+unit of time is one year.
+
+00:21:01.900 --> 00:21:04.390 align:middle line:84%
+So just one year
+before it expires,
+
+00:21:04.390 --> 00:21:07.440 align:middle line:84%
+there is no more risk because
+there is no price in between,
+
+00:21:07.440 --> 00:21:12.070 align:middle line:84%
+and you're going to receive
+$100 at the end of a year.
+
+00:21:12.070 --> 00:21:15.190 align:middle line:90%
+In reality, time is continuous.
+
+00:21:15.190 --> 00:21:17.597 align:middle line:84%
+So every second, there is
+a little bit of a risk.
+
+00:21:17.597 --> 00:21:19.680 align:middle line:84%
+So you have a little bit
+of that risk all the time
+
+00:21:19.680 --> 00:21:21.450 align:middle line:90%
+except for the last second.
+
+00:21:21.450 --> 00:21:26.310 align:middle line:84%
+But I'm looking at a simple
+example, where things
+
+00:21:26.310 --> 00:21:27.928 align:middle line:90%
+happen every one year only.
+
+00:21:27.928 --> 00:21:31.420 align:middle line:90%
+
+
+00:21:31.420 --> 00:21:33.950 align:middle line:84%
+In the book, I think
+they mess up, actually.
+
+00:21:33.950 --> 00:21:37.770 align:middle line:84%
+They put the risk premium
+in the wrong place.
+
+00:21:37.770 --> 00:21:39.992 align:middle line:90%
+There was another question.
+
+00:21:39.992 --> 00:21:41.900 align:middle line:90%
+No?
+
+00:21:41.900 --> 00:21:43.940 align:middle line:90%
+OK.
+
+00:21:43.940 --> 00:21:48.850 align:middle line:84%
+So let's look at the
+stock prices now.
+
+00:21:48.850 --> 00:21:52.845 align:middle line:84%
+So stock prices have two key
+differences with respect to--
+
+00:21:52.845 --> 00:21:55.990 align:middle line:90%
+
+
+00:21:55.990 --> 00:21:59.680 align:middle line:84%
+well, several differences, but
+two that I want to highlight.
+
+00:21:59.680 --> 00:22:02.480 align:middle line:84%
+The first is that they don't
+pay coupons, fixed amount.
+
+00:22:02.480 --> 00:22:05.320 align:middle line:84%
+They don't promise you
+to pay $100 two years
+
+00:22:05.320 --> 00:22:07.260 align:middle line:90%
+from now or anything like that.
+
+00:22:07.260 --> 00:22:09.690 align:middle line:90%
+They pay dividends.
+
+00:22:09.690 --> 00:22:13.450 align:middle line:84%
+They tell you we have a
+policy of paying dividends.
+
+00:22:13.450 --> 00:22:15.870 align:middle line:84%
+And even different companies
+differentiate themselves
+
+00:22:15.870 --> 00:22:19.480 align:middle line:84%
+by how much they promise to give
+you on average in dividends.
+
+00:22:19.480 --> 00:22:22.207 align:middle line:84%
+But it's a promise that, if
+everything goes as planned,
+
+00:22:22.207 --> 00:22:23.540 align:middle line:90%
+they'll pay you those dividends.
+
+00:22:23.540 --> 00:22:28.017 align:middle line:84%
+[CHUCKLES] It's not a commitment
+to pay you a dividend.
+
+00:22:28.017 --> 00:22:29.350 align:middle line:90%
+It's very different from a bond.
+
+00:22:29.350 --> 00:22:32.460 align:middle line:84%
+A bond says, I'll pay you a
+coupon of this amount every six
+
+00:22:32.460 --> 00:22:33.760 align:middle line:90%
+months.
+
+00:22:33.760 --> 00:22:37.010 align:middle line:84%
+And if you don't pay that
+coupon, that's a default.
+
+00:22:37.010 --> 00:22:38.790 align:middle line:84%
+There's nothing
+like that in equity.
+
+00:22:38.790 --> 00:22:41.390 align:middle line:84%
+Equity, you buy shares
+of Apple, and you
+
+00:22:41.390 --> 00:22:43.040 align:middle line:84%
+look at the history
+of dividends,
+
+00:22:43.040 --> 00:22:47.990 align:middle line:84%
+what the CEO tells you the
+last time, in the last release.
+
+00:22:47.990 --> 00:22:51.448 align:middle line:84%
+And you think, OK,
+these are more or less
+
+00:22:51.448 --> 00:22:52.490 align:middle line:90%
+going to be my dividends.
+
+00:22:52.490 --> 00:22:55.040 align:middle line:90%
+But there's no commitment.
+
+00:22:55.040 --> 00:22:58.550 align:middle line:84%
+They will always tell
+you what's their plan.
+
+00:22:58.550 --> 00:22:59.690 align:middle line:90%
+But it's a plan.
+
+00:22:59.690 --> 00:23:00.660 align:middle line:90%
+It's not a commitment.
+
+00:23:00.660 --> 00:23:01.550 align:middle line:90%
+So that's the first thing.
+
+00:23:01.550 --> 00:23:03.717 align:middle line:84%
+It doesn't have fixed coupons
+or anything like that.
+
+00:23:03.717 --> 00:23:04.830 align:middle line:90%
+There's no commitment.
+
+00:23:04.830 --> 00:23:07.190 align:middle line:84%
+And in that sense, there
+is no sense of default,
+
+00:23:07.190 --> 00:23:08.640 align:middle line:90%
+because there was no commitment.
+
+00:23:08.640 --> 00:23:12.470 align:middle line:84%
+So there is no default.
+If a company has
+
+00:23:12.470 --> 00:23:15.410 align:middle line:84%
+to cut dividends to 0,
+that's not a default.
+
+00:23:15.410 --> 00:23:17.350 align:middle line:90%
+That's conditions change.
+
+00:23:17.350 --> 00:23:17.850 align:middle line:90%
+That's it.
+
+00:23:17.850 --> 00:23:19.800 align:middle line:90%
+There was no commitment to that.
+
+00:23:19.800 --> 00:23:23.730 align:middle line:84%
+The second feature is that they
+don't have a fixed terminal
+
+00:23:23.730 --> 00:23:25.190 align:middle line:90%
+date.
+
+00:23:25.190 --> 00:23:29.720 align:middle line:84%
+99.9999999% of the bonds
+do have a terminal date.
+
+00:23:29.720 --> 00:23:30.950 align:middle line:90%
+They have a maturity.
+
+00:23:30.950 --> 00:23:35.080 align:middle line:84%
+There is a few exceptions, which
+are called perpetuities, that--
+
+00:23:35.080 --> 00:23:37.520 align:middle line:84%
+I think the US has
+none, for example.
+
+00:23:37.520 --> 00:23:44.140 align:middle line:84%
+But most bonds have
+a maturity, OK?
+
+00:23:44.140 --> 00:23:45.710 align:middle line:90%
+Equity doesn't come that way.
+
+00:23:45.710 --> 00:23:47.610 align:middle line:84%
+Nobody tells you buy
+a share of Apple.
+
+00:23:47.610 --> 00:23:51.550 align:middle line:84%
+You don't buy
+shares of Apple that
+
+00:23:51.550 --> 00:23:54.340 align:middle line:84%
+will be retired 30
+years from now, OK?
+
+00:23:54.340 --> 00:23:56.640 align:middle line:84%
+There will be there as
+long as Apple exists.
+
+00:23:56.640 --> 00:23:59.878 align:middle line:90%
+
+
+00:23:59.878 --> 00:24:03.970 align:middle line:84%
+Of course, if you had shares
+of First Republic Bank,
+
+00:24:03.970 --> 00:24:07.100 align:middle line:84%
+you have nothing now
+[CHUCKLES] because that--
+
+00:24:07.100 --> 00:24:08.950 align:middle line:84%
+but that was not
+the original plan.
+
+00:24:08.950 --> 00:24:11.300 align:middle line:84%
+It First Republic Bank
+had been more successful,
+
+00:24:11.300 --> 00:24:12.325 align:middle line:90%
+you would have--
+
+00:24:12.325 --> 00:24:16.450 align:middle line:84%
+the shares would have survived
+for a very long period of time.
+
+00:24:16.450 --> 00:24:18.130 align:middle line:90%
+So there's no sense of maturity.
+
+00:24:18.130 --> 00:24:21.105 align:middle line:84%
+In principle, equity
+can last forever.
+
+00:24:21.105 --> 00:24:27.330 align:middle line:90%
+
+
+00:24:27.330 --> 00:24:33.050 align:middle line:84%
+So I'm going to use
+arbitrage to price equity.
+
+00:24:33.050 --> 00:24:38.390 align:middle line:84%
+So let me-- so it lets
+me have the following
+
+00:24:38.390 --> 00:24:41.150 align:middle line:90%
+portfolio of options here.
+
+00:24:41.150 --> 00:24:44.660 align:middle line:90%
+One is our old one-year bond.
+
+00:24:44.660 --> 00:24:48.210 align:middle line:84%
+So you can invest your dollar
+today in a one-year bond.
+
+00:24:48.210 --> 00:24:50.060 align:middle line:84%
+The alternative,
+I'm going to say,
+
+00:24:50.060 --> 00:24:51.470 align:middle line:90%
+there is some equity out there.
+
+00:24:51.470 --> 00:24:54.740 align:middle line:84%
+And I'm going to call the
+price of that equity Q
+
+00:24:54.740 --> 00:24:59.832 align:middle line:84%
+and the dividend of
+that equity D, OK?
+
+00:24:59.832 --> 00:25:03.780 align:middle line:90%
+
+
+00:25:03.780 --> 00:25:06.670 align:middle line:84%
+So this price is a
+stock by arbitrage.
+
+00:25:06.670 --> 00:25:09.480 align:middle line:90%
+So equity is risky.
+
+00:25:09.480 --> 00:25:14.070 align:middle line:84%
+I mean, it's much
+riskier than bonds
+
+00:25:14.070 --> 00:25:16.540 align:middle line:84%
+unless you are into Argentinian
+bonds or things like that.
+
+00:25:16.540 --> 00:25:18.480 align:middle line:84%
+But I mean, it's much
+riskier than bonds.
+
+00:25:18.480 --> 00:25:20.770 align:middle line:84%
+So there is always
+a risk premium.
+
+00:25:20.770 --> 00:25:22.710 align:middle line:84%
+And actually, that
+in itself is a trade,
+
+00:25:22.710 --> 00:25:25.390 align:middle line:84%
+should trade at risk
+premium of equity market.
+
+00:25:25.390 --> 00:25:27.280 align:middle line:90%
+So I'm going to put an xs here.
+
+00:25:27.280 --> 00:25:31.980 align:middle line:84%
+So what do you expect
+to get from holding--
+
+00:25:31.980 --> 00:25:33.970 align:middle line:84%
+arbitrage means the
+same holding period.
+
+00:25:33.970 --> 00:25:37.980 align:middle line:84%
+So I'm going to compare
+investing in a one-year safe
+
+00:25:37.980 --> 00:25:44.150 align:middle line:84%
+bond versus buying equity
+today, buying a stock,
+
+00:25:44.150 --> 00:25:49.240 align:middle line:84%
+holding it for a year,
+And then selling it there
+
+00:25:49.240 --> 00:25:50.530 align:middle line:90%
+because that's the same--
+
+00:25:50.530 --> 00:25:53.870 align:middle line:84%
+I cannot do arbitrage depending
+from different holding periods.
+
+00:25:53.870 --> 00:25:55.450 align:middle line:84%
+That's a one-year
+holding period.
+
+00:25:55.450 --> 00:25:58.520 align:middle line:84%
+So I'm saying this is what I'm
+going to get from the bond.
+
+00:25:58.520 --> 00:26:01.000 align:middle line:84%
+I'm going to require some
+risk compensation for that
+
+00:26:01.000 --> 00:26:03.410 align:middle line:90%
+because risk equity is risky.
+
+00:26:03.410 --> 00:26:04.570 align:middle line:90%
+So I'm going to want that.
+
+00:26:04.570 --> 00:26:06.060 align:middle line:84%
+And this is what
+I'm going to get.
+
+00:26:06.060 --> 00:26:07.630 align:middle line:84%
+That's my return
+on equity I get.
+
+00:26:07.630 --> 00:26:10.220 align:middle line:84%
+This is what I'm going to
+pay today for the stock--
+
+00:26:10.220 --> 00:26:12.250 align:middle line:90%
+say, for a share of Apple.
+
+00:26:12.250 --> 00:26:14.440 align:middle line:84%
+And when I get this,
+this is the dividend
+
+00:26:14.440 --> 00:26:17.770 align:middle line:84%
+I expect to get at
+the end of the year.
+
+00:26:17.770 --> 00:26:19.570 align:middle line:84%
+And then this is
+the price at which
+
+00:26:19.570 --> 00:26:25.240 align:middle line:84%
+I expect to sell that share
+one year from now, OK?
+
+00:26:25.240 --> 00:26:27.310 align:middle line:84%
+So that's the
+return I'm expecting
+
+00:26:27.310 --> 00:26:31.430 align:middle line:84%
+to get from holding the share
+of Apple for one period.
+
+00:26:31.430 --> 00:26:34.270 align:middle line:84%
+And that's what I need
+to compare with holding
+
+00:26:34.270 --> 00:26:36.700 align:middle line:90%
+for one year, one-year bond.
+
+00:26:36.700 --> 00:26:44.320 align:middle line:84%
+But I want also to be
+compensated for a risk, OK?
+
+00:26:44.320 --> 00:26:46.970 align:middle line:90%
+Good.
+
+00:26:46.970 --> 00:26:47.665 align:middle line:90%
+Is this clear?
+
+00:26:47.665 --> 00:26:51.270 align:middle line:90%
+
+
+00:26:51.270 --> 00:26:53.100 align:middle line:90%
+OK.
+
+00:26:53.100 --> 00:26:54.990 align:middle line:84%
+I don't know whether
+silence means yes or no.
+
+00:26:54.990 --> 00:26:57.660 align:middle line:84%
+But this is-- we did
+something like this
+
+00:26:57.660 --> 00:26:59.610 align:middle line:84%
+with the two-year bond,
+except that we didn't
+
+00:26:59.610 --> 00:27:03.300 align:middle line:84%
+have a dividend
+there, because there
+
+00:27:03.300 --> 00:27:04.930 align:middle line:90%
+was no coupon that they won.
+
+00:27:04.930 --> 00:27:07.290 align:middle line:84%
+We only had a final
+payment of 100.
+
+00:27:07.290 --> 00:27:10.680 align:middle line:84%
+But we did this already when
+we compared the one-year bond
+
+00:27:10.680 --> 00:27:13.200 align:middle line:84%
+with holding the two-year
+bond for one period.
+
+00:27:13.200 --> 00:27:15.120 align:middle line:84%
+We had exactly that,
+except that there
+
+00:27:15.120 --> 00:27:16.560 align:middle line:84%
+was-- the expected
+dividend. there
+
+00:27:16.560 --> 00:27:18.870 align:middle line:84%
+was 0 because there
+was no payment
+
+00:27:18.870 --> 00:27:21.940 align:middle line:90%
+at the intermediate date, OK?
+
+00:27:21.940 --> 00:27:22.440 align:middle line:90%
+Good.
+
+00:27:22.440 --> 00:27:24.580 align:middle line:90%
+So we know this concept already.
+
+00:27:24.580 --> 00:27:26.240 align:middle line:84%
+The only difference
+here is, again,
+
+00:27:26.240 --> 00:27:29.390 align:middle line:84%
+that there is expected
+dividend and, second,
+
+00:27:29.390 --> 00:27:32.790 align:middle line:84%
+that we have a risk premium
+here, which we added for bonds.
+
+00:27:32.790 --> 00:27:34.460 align:middle line:84%
+But for equities, I
+said, it's typically
+
+00:27:34.460 --> 00:27:37.130 align:middle line:84%
+much larger than for
+bonds, especially if you're
+
+00:27:37.130 --> 00:27:38.755 align:middle line:90%
+talking about Treasury bonds.
+
+00:27:38.755 --> 00:27:41.560 align:middle line:90%
+
+
+00:27:41.560 --> 00:27:43.480 align:middle line:84%
+So I'm going to reorganize
+this to solve out
+
+00:27:43.480 --> 00:27:45.445 align:middle line:90%
+for the price, this Qt here.
+
+00:27:45.445 --> 00:27:46.820 align:middle line:84%
+That's what I want
+to figure out,
+
+00:27:46.820 --> 00:27:49.510 align:middle line:84%
+what is the price of
+the share of Apple, OK?
+
+00:27:49.510 --> 00:27:55.930 align:middle line:84%
+Well, I can reorganize this,
+which means move to the left,
+
+00:27:55.930 --> 00:28:00.370 align:middle line:84%
+divide these two guys here
+by 1 plus i1t plus xs,
+
+00:28:00.370 --> 00:28:02.260 align:middle line:90%
+and I get this.
+
+00:28:02.260 --> 00:28:08.777 align:middle line:84%
+So the price is equal to the
+discounted expected dividend--
+
+00:28:08.777 --> 00:28:10.360 align:middle line:84%
+I have to discount
+it because I expect
+
+00:28:10.360 --> 00:28:13.780 align:middle line:84%
+to receive it one year from now,
+and I want also compensation
+
+00:28:13.780 --> 00:28:14.950 align:middle line:90%
+for risk--
+
+00:28:14.950 --> 00:28:19.360 align:middle line:84%
+plus the discounted
+value of the money
+
+00:28:19.360 --> 00:28:21.670 align:middle line:84%
+I'm going to get from selling
+the share of Apple one
+
+00:28:21.670 --> 00:28:26.470 align:middle line:84%
+year from now, which I also
+discount by the interest rate,
+
+00:28:26.470 --> 00:28:28.420 align:middle line:84%
+but also with a risk
+premium because that's
+
+00:28:28.420 --> 00:28:31.570 align:middle line:90%
+a risky investment.
+
+00:28:31.570 --> 00:28:34.480 align:middle line:90%
+So that's what we have.
+
+00:28:34.480 --> 00:28:43.940 align:middle line:84%
+Now notice that, at t plus
+1, I will have an expression
+
+00:28:43.940 --> 00:28:48.000 align:middle line:90%
+like that as well, again.
+
+00:28:48.000 --> 00:28:50.580 align:middle line:84%
+When we did the
+two-year bond, we
+
+00:28:50.580 --> 00:28:55.590 align:middle line:84%
+didn't have an expression like
+that, because after one year,
+
+00:28:55.590 --> 00:28:57.930 align:middle line:84%
+the two-year bond was going
+to be a one-year bond.
+
+00:28:57.930 --> 00:28:59.610 align:middle line:90%
+And so we didn't need to think--
+
+00:28:59.610 --> 00:29:00.640 align:middle line:90%
+put a price there.
+
+00:29:00.640 --> 00:29:02.610 align:middle line:90%
+We just put the $100, OK?
+
+00:29:02.610 --> 00:29:06.150 align:middle line:84%
+Here is different because we
+said this equity never expires.
+
+00:29:06.150 --> 00:29:09.580 align:middle line:84%
+Unless the company goes
+bankrupt, it's there.
+
+00:29:09.580 --> 00:29:13.090 align:middle line:84%
+So in the next date, I'm going
+to have an expression exactly
+
+00:29:13.090 --> 00:29:13.930 align:middle line:90%
+like that.
+
+00:29:13.930 --> 00:29:18.250 align:middle line:84%
+I'm just going to have an
+expected dividend at t plus 2
+
+00:29:18.250 --> 00:29:22.360 align:middle line:84%
+and the expected price at t
+plus 2 and so on and so forth.
+
+00:29:22.360 --> 00:29:26.830 align:middle line:84%
+That means I can replace
+this expression here
+
+00:29:26.830 --> 00:29:30.795 align:middle line:84%
+by an expression like this
+shifted all by one year.
+
+00:29:30.795 --> 00:29:33.400 align:middle line:90%
+
+
+00:29:33.400 --> 00:29:36.940 align:middle line:90%
+And I can keep doing that.
+
+00:29:36.940 --> 00:29:39.580 align:middle line:84%
+If I do that, I'm
+going to get, then, two
+
+00:29:39.580 --> 00:29:42.970 align:middle line:84%
+expected divisions here, and
+then I'm going to get a--
+
+00:29:42.970 --> 00:29:45.730 align:middle line:84%
+so I'm going to get
+something like this,
+
+00:29:45.730 --> 00:29:48.880 align:middle line:84%
+but shifted by one year
+and discounted by two terms
+
+00:29:48.880 --> 00:29:49.850 align:middle line:90%
+in the denominator.
+
+00:29:49.850 --> 00:29:54.010 align:middle line:84%
+And then I'm going to
+get an expected Qt plus 2
+
+00:29:54.010 --> 00:29:55.720 align:middle line:90%
+around here, OK?
+
+00:29:55.720 --> 00:30:00.380 align:middle line:84%
+Well, I can do a substitution
+of that, as well, again,
+
+00:30:00.380 --> 00:30:03.020 align:middle line:84%
+by everything shifted
+by two years and so on.
+
+00:30:03.020 --> 00:30:05.160 align:middle line:90%
+So I can keep going.
+
+00:30:05.160 --> 00:30:09.240 align:middle line:84%
+And I can keep going and going
+and going and going on forever.
+
+00:30:09.240 --> 00:30:11.730 align:middle line:84%
+So if you keep doing
+it, you're going
+
+00:30:11.730 --> 00:30:14.400 align:middle line:84%
+to end up with an
+expression that gives you
+
+00:30:14.400 --> 00:30:18.870 align:middle line:84%
+the price of the asset as the
+expected present discounted
+
+00:30:18.870 --> 00:30:21.410 align:middle line:84%
+value of all the future
+dividends you expect.
+
+00:30:21.410 --> 00:30:24.510 align:middle line:90%
+
+
+00:30:24.510 --> 00:30:25.050 align:middle line:90%
+You see?
+
+00:30:25.050 --> 00:30:29.420 align:middle line:84%
+I'm summing here,
+Dt plus 2, 3, 4, 5.
+
+00:30:29.420 --> 00:30:31.790 align:middle line:90%
+And it doesn't stop here.
+
+00:30:31.790 --> 00:30:39.890 align:middle line:84%
+It stop here, I'm going to
+have here a Qet plus n plus 1.
+
+00:30:39.890 --> 00:30:41.600 align:middle line:84%
+Well, I can replace
+that thing again.
+
+00:30:41.600 --> 00:30:44.060 align:middle line:84%
+And I can keep going
+and keep going forever.
+
+00:30:44.060 --> 00:30:46.880 align:middle line:84%
+So you're going to integrate the
+expected dividends, discounted
+
+00:30:46.880 --> 00:30:51.020 align:middle line:90%
+expected dividends, to infinity.
+
+00:30:51.020 --> 00:30:54.350 align:middle line:84%
+Now, each future dividend
+is discounting more and more
+
+00:30:54.350 --> 00:30:56.195 align:middle line:84%
+heavily because the
+denominator is growing
+
+00:30:56.195 --> 00:30:58.820 align:middle line:84%
+and growing and growing because
+it's further out in the future.
+
+00:30:58.820 --> 00:31:01.022 align:middle line:90%
+It's worth less and less, OK?
+
+00:31:01.022 --> 00:31:03.200 align:middle line:90%
+But still, it can go on forever.
+
+00:31:03.200 --> 00:31:06.650 align:middle line:84%
+And in fact, even if you
+substitute this stuff a million
+
+00:31:06.650 --> 00:31:08.600 align:middle line:84%
+times, there is
+going to still be
+
+00:31:08.600 --> 00:31:10.970 align:middle line:84%
+a little price at
+the very end floating
+
+00:31:10.970 --> 00:31:13.790 align:middle line:90%
+around [LAUGHS] discounted.
+
+00:31:13.790 --> 00:31:16.040 align:middle line:90%
+It will never go away.
+
+00:31:16.040 --> 00:31:17.850 align:middle line:90%
+So it never ends.
+
+00:31:17.850 --> 00:31:19.220 align:middle line:90%
+There is no maturity.
+
+00:31:19.220 --> 00:31:22.670 align:middle line:90%
+They keep going, OK?
+
+00:31:22.670 --> 00:31:25.510 align:middle line:84%
+Now we did everything
+up to now for nominal--
+
+00:31:25.510 --> 00:31:27.970 align:middle line:90%
+in nominal terms you can do it--
+
+00:31:27.970 --> 00:31:30.880 align:middle line:84%
+and that's the reason I didn't
+want to spend much time with it.
+
+00:31:30.880 --> 00:31:33.760 align:middle line:84%
+You can do everything
+in real terms as well.
+
+00:31:33.760 --> 00:31:37.240 align:middle line:84%
+And all that happens there
+is just remove the dollars,
+
+00:31:37.240 --> 00:31:41.830 align:middle line:84%
+and just be careful to
+replace the nominal interest
+
+00:31:41.830 --> 00:31:44.650 align:middle line:84%
+rate by the real interest
+rate-- but nothing deep there.
+
+00:31:44.650 --> 00:31:48.290 align:middle line:84%
+I can-- you can go to real
+pricing, nominal pricing,
+
+00:31:48.290 --> 00:31:50.610 align:middle line:90%
+and so on.
+
+00:31:50.610 --> 00:31:53.700 align:middle line:84%
+But the important
+concept is not that.
+
+00:31:53.700 --> 00:31:56.880 align:middle line:90%
+It's the fact that this--
+
+00:31:56.880 --> 00:32:01.170 align:middle line:84%
+in principle-- we call that, by
+the way, the fundamental value
+
+00:32:01.170 --> 00:32:04.620 align:middle line:90%
+of equity or of a stock.
+
+00:32:04.620 --> 00:32:06.180 align:middle line:84%
+It's the expected
+present discounted
+
+00:32:06.180 --> 00:32:07.453 align:middle line:90%
+value of all the dividends.
+
+00:32:07.453 --> 00:32:09.870 align:middle line:84%
+And you have to discount it
+by the appropriate discounting
+
+00:32:09.870 --> 00:32:12.610 align:middle line:84%
+factor, which includes
+interest rate and risk premium.
+
+00:32:12.610 --> 00:32:14.670 align:middle line:84%
+But that's what we call,
+typically, fundamentals.
+
+00:32:14.670 --> 00:32:17.777 align:middle line:84%
+And we differentiate that
+from what we call sometimes--
+
+00:32:17.777 --> 00:32:19.860 align:middle line:84%
+I'm going to show you an
+example later on bubbles,
+
+00:32:19.860 --> 00:32:24.900 align:middle line:84%
+when the price seems to
+exceed any reasonable sense
+
+00:32:24.900 --> 00:32:26.110 align:middle line:90%
+of fundamentals.
+
+00:32:26.110 --> 00:32:32.630 align:middle line:90%
+
+
+00:32:32.630 --> 00:32:34.300 align:middle line:90%
+OK, good.
+
+00:32:34.300 --> 00:32:40.700 align:middle line:84%
+OK, let me sort of start
+going back to things that we
+
+00:32:40.700 --> 00:32:41.880 align:middle line:90%
+worry about in this course.
+
+00:32:41.880 --> 00:32:43.060 align:middle line:90%
+And in fact, it's a big issue.
+
+00:32:43.060 --> 00:32:44.977 align:middle line:84%
+I don't know what is
+happening to markets now.
+
+00:32:44.977 --> 00:32:46.830 align:middle line:84%
+What the Fed did was
+very anticipated.
+
+00:32:46.830 --> 00:32:50.000 align:middle line:90%
+
+
+00:32:50.000 --> 00:32:53.690 align:middle line:84%
+But markets often find a
+way to react to things,
+
+00:32:53.690 --> 00:32:57.830 align:middle line:90%
+even if things were anticipated.
+
+00:32:57.830 --> 00:33:01.677 align:middle line:84%
+What happens-- so let me ask
+you a following question.
+
+00:33:01.677 --> 00:33:03.260 align:middle line:84%
+What is the effect--
+what do you think
+
+00:33:03.260 --> 00:33:08.870 align:middle line:84%
+is the effect of an expansionary
+monetary policy on the asset
+
+00:33:08.870 --> 00:33:13.060 align:middle line:84%
+prices we have discussed,
+so bonds and equity?
+
+00:33:13.060 --> 00:33:16.660 align:middle line:90%
+Let's start with bonds first.
+
+00:33:16.660 --> 00:33:19.142 align:middle line:84%
+What do you think is the effect
+of an expansionary monetary
+
+00:33:19.142 --> 00:33:21.100 align:middle line:84%
+policy-- that means a
+reduction in the interest
+
+00:33:21.100 --> 00:33:24.370 align:middle line:84%
+rate-- on the price of your
+one-year bond, two-year bond,
+
+00:33:24.370 --> 00:33:25.425 align:middle line:90%
+any year, you pick?
+
+00:33:25.425 --> 00:33:30.133 align:middle line:90%
+
+
+00:33:30.133 --> 00:33:31.675 align:middle line:84%
+We already talked
+about that earlier.
+
+00:33:31.675 --> 00:33:36.720 align:middle line:90%
+[CHUCKLES] Goes up.
+
+00:33:36.720 --> 00:33:41.730 align:middle line:84%
+The price of a bond is inversely
+related to the interest rate
+
+00:33:41.730 --> 00:33:45.750 align:middle line:84%
+because if I cut an
+interest rate, it means--
+
+00:33:45.750 --> 00:33:49.030 align:middle line:84%
+a bond is something that pays--
+the payoff is in the future.
+
+00:33:49.030 --> 00:33:52.070 align:middle line:84%
+That thing in the
+future is worth more
+
+00:33:52.070 --> 00:33:54.790 align:middle line:90%
+if the interest rate goes down.
+
+00:33:54.790 --> 00:33:56.300 align:middle line:90%
+There is less discounting of it.
+
+00:33:56.300 --> 00:33:58.360 align:middle line:84%
+So the price of the
+bond, any bond here,
+
+00:33:58.360 --> 00:34:00.910 align:middle line:84%
+will go up, the one-year,
+two-year, three-year, five-year.
+
+00:34:00.910 --> 00:34:04.620 align:middle line:90%
+All of them will go up--
+
+00:34:04.620 --> 00:34:07.800 align:middle line:84%
+assuming that nothing changes as
+a result of the monetary policy.
+
+00:34:07.800 --> 00:34:10.380 align:middle line:84%
+What happens is
+sometimes markets think,
+
+00:34:10.380 --> 00:34:12.000 align:middle line:90%
+oops, the Fed messed up.
+
+00:34:12.000 --> 00:34:14.400 align:middle line:84%
+And that leads to lots of
+changes in all the term
+
+00:34:14.400 --> 00:34:16.889 align:middle line:84%
+structure and things
+like that because they
+
+00:34:16.889 --> 00:34:19.080 align:middle line:84%
+expect the market to
+react in strange ways
+
+00:34:19.080 --> 00:34:21.310 align:middle line:90%
+to this mistake made by the Fed.
+
+00:34:21.310 --> 00:34:23.280 align:middle line:84%
+But here I'm saying,
+suppose that the Fed just
+
+00:34:23.280 --> 00:34:25.080 align:middle line:84%
+cuts the interest rate
+once, and everyone
+
+00:34:25.080 --> 00:34:27.639 align:middle line:84%
+believes that the Fed will
+continue to do so and so on.
+
+00:34:27.639 --> 00:34:31.210 align:middle line:84%
+Well, then you're
+going to get that--
+
+00:34:31.210 --> 00:34:33.810 align:middle line:90%
+the price of bonds will go up.
+
+00:34:33.810 --> 00:34:37.500 align:middle line:84%
+What will happen to
+the price of stocks?
+
+00:34:37.500 --> 00:34:39.150 align:middle line:90%
+Yeah, you want to answer.
+
+00:34:39.150 --> 00:34:39.952 align:middle line:90%
+[LAUGHS]
+
+00:34:39.952 --> 00:34:41.159 align:middle line:90%
+AUDIENCE: It would go up.
+
+00:34:41.159 --> 00:34:42.880 align:middle line:90%
+RICARDO J. CABALLERO: Up.
+
+00:34:42.880 --> 00:34:47.199 align:middle line:84%
+But-- well, but it's important
+to say that it will go up
+
+00:34:47.199 --> 00:34:49.030 align:middle line:90%
+probably for two reasons.
+
+00:34:49.030 --> 00:34:51.580 align:middle line:90%
+The first one is that--
+
+00:34:51.580 --> 00:34:55.739 align:middle line:90%
+
+
+00:34:55.739 --> 00:34:59.850 align:middle line:84%
+it's also the case that a lot of
+the price of an equity, actually
+
+00:34:59.850 --> 00:35:03.390 align:middle line:84%
+even more so than a bond,
+has to do with expected
+
+00:35:03.390 --> 00:35:05.140 align:middle line:90%
+payoffs in the future.
+
+00:35:05.140 --> 00:35:07.950 align:middle line:84%
+So if I lower interest rates,
+just the effect of discounting
+
+00:35:07.950 --> 00:35:10.610 align:middle line:84%
+will tend to raise
+the price of--
+
+00:35:10.610 --> 00:35:12.660 align:middle line:84%
+so even if I don't change
+the expected dividends
+
+00:35:12.660 --> 00:35:15.690 align:middle line:84%
+at all, the fact that the
+interest rate goes down,
+
+00:35:15.690 --> 00:35:18.150 align:middle line:84%
+for the same reason that
+the price of a bond went up,
+
+00:35:18.150 --> 00:35:20.610 align:middle line:84%
+the price of equity
+will tend to go up, OK?
+
+00:35:20.610 --> 00:35:23.350 align:middle line:84%
+So that's exactly--
+it's the same logic.
+
+00:35:23.350 --> 00:35:27.420 align:middle line:84%
+But there's an extra kick here
+for equity, which is what?
+
+00:35:27.420 --> 00:35:31.370 align:middle line:84%
+That bones did not
+have, but equity does.
+
+00:35:31.370 --> 00:35:34.220 align:middle line:84%
+At least it's an equity
+that is positively
+
+00:35:34.220 --> 00:35:35.663 align:middle line:90%
+related to aggregate activity.
+
+00:35:35.663 --> 00:35:37.080 align:middle line:84%
+But that's what
+I'm assuming here.
+
+00:35:37.080 --> 00:35:42.503 align:middle line:90%
+
+
+00:35:42.503 --> 00:35:47.860 align:middle line:84%
+AUDIENCE: [INAUDIBLE] bond
+is [INAUDIBLE] fixed amount
+
+00:35:47.860 --> 00:35:52.210 align:middle line:84%
+before stocks and can't
+guarantee that pays you
+
+00:35:52.210 --> 00:35:53.690 align:middle line:90%
+the same dividend.
+
+00:35:53.690 --> 00:35:56.290 align:middle line:84%
+RICARDO J. CABALLERO: Well,
+yeah, that's the logic.
+
+00:35:56.290 --> 00:35:58.537 align:middle line:84%
+Here, the expansionary
+monetary policy
+
+00:35:58.537 --> 00:35:59.620 align:middle line:90%
+is cutting interest rates.
+
+00:35:59.620 --> 00:36:02.050 align:middle line:84%
+But as a result of that,
+output is going up.
+
+00:36:02.050 --> 00:36:05.800 align:middle line:84%
+When output is going up, sales
+will go up, revenues will go up,
+
+00:36:05.800 --> 00:36:07.900 align:middle line:84%
+dividends will
+probably go up as well.
+
+00:36:07.900 --> 00:36:11.330 align:middle line:84%
+So monetary policy can
+have very large effect.
+
+00:36:11.330 --> 00:36:14.163 align:middle line:84%
+I mean, people in financial
+markets are looking at the Fed
+
+00:36:14.163 --> 00:36:15.580 align:middle line:84%
+all the time
+[CHUCKLES] because it
+
+00:36:15.580 --> 00:36:19.210 align:middle line:84%
+can have a big impact on
+the price of those assets.
+
+00:36:19.210 --> 00:36:22.400 align:middle line:84%
+And on equity, in particular,
+it can be very strong.
+
+00:36:22.400 --> 00:36:27.070 align:middle line:84%
+And in fact, that's one of the
+ways monetary policy works.
+
+00:36:27.070 --> 00:36:31.590 align:middle line:84%
+When the Fed cuts
+interest rates,
+
+00:36:31.590 --> 00:36:33.670 align:middle line:84%
+it inflates the value
+of asset prices.
+
+00:36:33.670 --> 00:36:35.260 align:middle line:90%
+And that creates more wealth.
+
+00:36:35.260 --> 00:36:37.072 align:middle line:84%
+People feel richer,
+consume more, blah,
+
+00:36:37.072 --> 00:36:38.030 align:middle line:90%
+blah, blah, blah, blah.
+
+00:36:38.030 --> 00:36:39.535 align:middle line:90%
+Firms feel also richer.
+
+00:36:39.535 --> 00:36:41.570 align:middle line:84%
+[CHUCKLES] They
+invest more and so on.
+
+00:36:41.570 --> 00:36:45.790 align:middle line:90%
+That's deliberate, in a sense.
+
+00:36:45.790 --> 00:36:47.470 align:middle line:84%
+That's one of the
+main mechanisms
+
+00:36:47.470 --> 00:36:50.870 align:middle line:84%
+through which monetary policy
+affects aggregate demand.
+
+00:36:50.870 --> 00:36:52.620 align:middle line:90%
+It just creates wealth.
+
+00:36:52.620 --> 00:36:54.690 align:middle line:84%
+And when there's too
+much demand, too much
+
+00:36:54.690 --> 00:36:57.120 align:middle line:84%
+aggregate demand,
+like is going on now--
+
+00:36:57.120 --> 00:36:59.730 align:middle line:84%
+that's the reason we
+have inflation and so on.
+
+00:36:59.730 --> 00:37:03.630 align:middle line:84%
+In 2022, the Fed went out
+and deliberately destroyed
+
+00:37:03.630 --> 00:37:07.860 align:middle line:84%
+wealth [CHUCKLES] because that's
+what [INAUDIBLE] Raise interest
+
+00:37:07.860 --> 00:37:09.900 align:middle line:84%
+rates a lot, the price
+of equity came down,
+
+00:37:09.900 --> 00:37:12.215 align:middle line:90%
+even houses began to wobble.
+
+00:37:12.215 --> 00:37:16.120 align:middle line:84%
+The price of Treasury
+bonds sort of collapsed
+
+00:37:16.120 --> 00:37:19.040 align:middle line:90%
+and so on and so forth, OK?
+
+00:37:19.040 --> 00:37:21.160 align:middle line:90%
+Good.
+
+00:37:21.160 --> 00:37:25.120 align:middle line:84%
+Another experiment that we did
+sort of early on, lecture 3, 4,
+
+00:37:25.120 --> 00:37:29.010 align:middle line:84%
+around there is what
+happens-- what do you think
+
+00:37:29.010 --> 00:37:32.250 align:middle line:84%
+happens when there is an
+increase in consumer spending?
+
+00:37:32.250 --> 00:37:33.390 align:middle line:90%
+So suppose that now--
+
+00:37:33.390 --> 00:37:36.750 align:middle line:84%
+remember, we had a C0
+floating around, an autonomous
+
+00:37:36.750 --> 00:37:38.580 align:middle line:90%
+consumption component.
+
+00:37:38.580 --> 00:37:40.745 align:middle line:84%
+And so suppose
+that that goes up.
+
+00:37:40.745 --> 00:37:43.420 align:middle line:90%
+
+
+00:37:43.420 --> 00:37:47.260 align:middle line:84%
+What do you think
+happens to asset prices?
+
+00:37:47.260 --> 00:37:49.957 align:middle line:84%
+And this is a big issue
+these days, actually.
+
+00:37:49.957 --> 00:37:52.290 align:middle line:84%
+AUDIENCE: That depends on how
+the Federal Reserve reacts
+
+00:37:52.290 --> 00:37:54.030 align:middle line:84%
+to it by raising or
+lowering interest rates.
+
+00:37:54.030 --> 00:37:54.720 align:middle line:90%
+RICARDO J. CABALLERO: Exactly.
+
+00:37:54.720 --> 00:37:55.480 align:middle line:90%
+That's right.
+
+00:37:55.480 --> 00:37:57.170 align:middle line:90%
+That's very good.
+
+00:37:57.170 --> 00:37:58.390 align:middle line:90%
+It depends a lot--
+
+00:37:58.390 --> 00:38:01.230 align:middle line:84%
+I mean, when financial markets
+receive news-- every day,
+
+00:38:01.230 --> 00:38:04.260 align:middle line:84%
+they are releases of news
+of all sorts of things.
+
+00:38:04.260 --> 00:38:08.430 align:middle line:84%
+And in financial markets,
+they-- people always
+
+00:38:08.430 --> 00:38:10.830 align:middle line:90%
+think, OK, this is the news.
+
+00:38:10.830 --> 00:38:13.890 align:middle line:84%
+The obvious thing
+for this is good news
+
+00:38:13.890 --> 00:38:15.840 align:middle line:84%
+because this will tend
+to increase output.
+
+00:38:15.840 --> 00:38:17.290 align:middle line:90%
+Output will increase dividends.
+
+00:38:17.290 --> 00:38:21.630 align:middle line:90%
+That's a good thing for stocks.
+
+00:38:21.630 --> 00:38:25.110 align:middle line:84%
+But the immediate reaction
+is, whoa, but what will
+
+00:38:25.110 --> 00:38:26.290 align:middle line:90%
+the Fed do about this?
+
+00:38:26.290 --> 00:38:30.280 align:middle line:84%
+Does the Fed like that we have
+more aggregate demand or not?
+
+00:38:30.280 --> 00:38:32.166 align:middle line:90%
+[CHUCKLES] OK?
+
+00:38:32.166 --> 00:38:36.600 align:middle line:90%
+And so that's key here.
+
+00:38:36.600 --> 00:38:41.310 align:middle line:84%
+So suppose that, in this
+case, the Fed did not like--
+
+00:38:41.310 --> 00:38:43.950 align:middle line:84%
+the Fed-- like today,
+the Fed doesn't want
+
+00:38:43.950 --> 00:38:45.660 align:middle line:90%
+more aggregate demand today.
+
+00:38:45.660 --> 00:38:48.130 align:middle line:84%
+There's no central bank around
+the world-- maybe in China,
+
+00:38:48.130 --> 00:38:49.740 align:middle line:84%
+but there's no
+other central bank
+
+00:38:49.740 --> 00:38:55.305 align:middle line:84%
+around the world that wants
+more aggregate demand, OK?
+
+00:38:55.305 --> 00:39:03.240 align:middle line:84%
+So if the release is consumer
+are very bullish now,
+
+00:39:03.240 --> 00:39:05.330 align:middle line:90%
+that's not good news.
+
+00:39:05.330 --> 00:39:07.830 align:middle line:84%
+I mean, the financial markets
+immediately are saying, uh-oh,
+
+00:39:07.830 --> 00:39:10.330 align:middle line:84%
+we have a Fed that is
+watching for inflation.
+
+00:39:10.330 --> 00:39:13.850 align:middle line:84%
+This means they're going
+to hike interest rates, OK?
+
+00:39:13.850 --> 00:39:18.120 align:middle line:84%
+So what happens to the price of
+bonds, then, in this environment
+
+00:39:18.120 --> 00:39:20.870 align:middle line:84%
+when C0 goes up, and
+the Fed doesn't like it,
+
+00:39:20.870 --> 00:39:23.390 align:middle line:84%
+and the markets know that
+the Fed doesn't like it?
+
+00:39:23.390 --> 00:39:25.670 align:middle line:84%
+The Fed may take a
+month to react to it.
+
+00:39:25.670 --> 00:39:28.070 align:middle line:84%
+But markets react
+immediately, say, whoa, this
+
+00:39:28.070 --> 00:39:31.956 align:middle line:84%
+is what the Fed will
+do one month from now.
+
+00:39:31.956 --> 00:39:35.150 align:middle line:84%
+So what do you think happens
+to the price of bonds?
+
+00:39:35.150 --> 00:39:39.490 align:middle line:84%
+If we get news that
+consumers are very bullish,
+
+00:39:39.490 --> 00:39:44.230 align:middle line:84%
+and it turns out that we also
+have inflation of 4% or so.
+
+00:39:44.230 --> 00:39:48.123 align:middle line:84%
+So we know that the Fed doesn't
+like more aggregate demand.
+
+00:39:48.123 --> 00:39:50.290 align:middle line:84%
+What do you think will
+happen to the price of bonds?
+
+00:39:50.290 --> 00:39:56.630 align:middle line:90%
+
+
+00:39:56.630 --> 00:40:05.230 align:middle line:84%
+Well, [CHUCKLES] again, The
+news happened, say, a week ago.
+
+00:40:05.230 --> 00:40:07.520 align:middle line:84%
+And the Fed moves
+one week later.
+
+00:40:07.520 --> 00:40:11.050 align:middle line:84%
+So markets are going to
+anticipate that, in this case,
+
+00:40:11.050 --> 00:40:14.080 align:middle line:84%
+the Fed will hike
+interest rates.
+
+00:40:14.080 --> 00:40:15.818 align:middle line:84%
+If the Fed-- if the
+markets anticipate
+
+00:40:15.818 --> 00:40:17.360 align:middle line:84%
+that the Fed will
+hike interest rate,
+
+00:40:17.360 --> 00:40:20.815 align:middle line:84%
+interest rates will go up
+immediately-- not the rate
+
+00:40:20.815 --> 00:40:22.690 align:middle line:84%
+that the Fed controls,
+but the one-year rate,
+
+00:40:22.690 --> 00:40:24.357 align:middle line:84%
+the two-year rate,
+the three-month rate.
+
+00:40:24.357 --> 00:40:26.770 align:middle line:84%
+All those rates are going
+to go up immediately
+
+00:40:26.770 --> 00:40:28.865 align:middle line:90%
+as a result of that, OK?
+
+00:40:28.865 --> 00:40:33.170 align:middle line:84%
+And that, we know, reduces
+the price of bonds.
+
+00:40:33.170 --> 00:40:35.380 align:middle line:84%
+Bonds and interest rates
+are-- the price of a bond
+
+00:40:35.380 --> 00:40:37.320 align:middle line:84%
+and the interest rates
+are inversely related.
+
+00:40:37.320 --> 00:40:40.000 align:middle line:84%
+So the anticipation that
+the Fed will hike rates
+
+00:40:40.000 --> 00:40:43.120 align:middle line:84%
+will lead to higher interest
+rates at all horizons.
+
+00:40:43.120 --> 00:40:46.920 align:middle line:84%
+And that will reduce
+the price of bonds, OK?
+
+00:40:46.920 --> 00:40:50.470 align:middle line:84%
+So this thing that--
+and for equity,
+
+00:40:50.470 --> 00:40:52.800 align:middle line:84%
+well, look what happened
+for equity here.
+
+00:40:52.800 --> 00:40:54.760 align:middle line:84%
+Well, for equity,
+you say, OK, well, I
+
+00:40:54.760 --> 00:40:57.820 align:middle line:84%
+get the same discounting effect
+of the bond, which is bad news,
+
+00:40:57.820 --> 00:41:00.640 align:middle line:90%
+goes down.
+
+00:41:00.640 --> 00:41:03.265 align:middle line:84%
+Ah, but the good news is
+the dividend because now
+
+00:41:03.265 --> 00:41:04.750 align:middle line:90%
+I have more consumers.
+
+00:41:04.750 --> 00:41:08.290 align:middle line:84%
+Well, that depends on how much
+the Fed dislikes this stuff
+
+00:41:08.290 --> 00:41:11.570 align:middle line:84%
+because if the Fed does
+this, that means it offsets--
+
+00:41:11.570 --> 00:41:16.040 align:middle line:84%
+it fully offsets the
+effect on aggregate demand,
+
+00:41:16.040 --> 00:41:18.650 align:middle line:84%
+increases the serial shift
+[INAUDIBLE] to the right.
+
+00:41:18.650 --> 00:41:20.575 align:middle line:84%
+That would have
+increased output to here.
+
+00:41:20.575 --> 00:41:21.950 align:middle line:84%
+The Fed doesn't
+want more output,
+
+00:41:21.950 --> 00:41:23.325 align:middle line:84%
+so it will hike
+interest rates up
+
+00:41:23.325 --> 00:41:25.460 align:middle line:84%
+to the point in which
+output doesn't go up.
+
+00:41:25.460 --> 00:41:28.740 align:middle line:84%
+That means dividends are
+not going to go up either.
+
+00:41:28.740 --> 00:41:31.560 align:middle line:84%
+So we get just the negative
+effect of the discounting,
+
+00:41:31.560 --> 00:41:34.410 align:middle line:84%
+and we don't get the benefit
+of the extra activity that
+
+00:41:34.410 --> 00:41:36.540 align:middle line:84%
+would have come from
+having consumers that are
+
+00:41:36.540 --> 00:41:39.630 align:middle line:90%
+more optimistic and so on, OK?
+
+00:41:39.630 --> 00:41:41.540 align:middle line:84%
+So this is-- actually,
+this has happened
+
+00:41:41.540 --> 00:41:45.260 align:middle line:90%
+a lot over the last few months.
+
+00:41:45.260 --> 00:41:47.570 align:middle line:84%
+This is an environment
+people call--
+
+00:41:47.570 --> 00:41:51.320 align:middle line:84%
+it's an environment where
+good news is bad news.
+
+00:41:51.320 --> 00:41:53.123 align:middle line:84%
+Good news about aggregate
+demand, consumers
+
+00:41:53.123 --> 00:41:54.540 align:middle line:84%
+are happy, blah,
+blah, blah, blah.
+
+00:41:54.540 --> 00:41:55.460 align:middle line:90%
+It's bad news.
+
+00:41:55.460 --> 00:41:58.610 align:middle line:84%
+Or labor markets are very
+tight, wages are going up,
+
+00:41:58.610 --> 00:42:02.330 align:middle line:84%
+all things that sound wonderful
+in other environments sound--
+
+00:42:02.330 --> 00:42:06.860 align:middle line:84%
+is terrible news for the
+financial markets, OK?
+
+00:42:06.860 --> 00:42:07.775 align:middle line:90%
+For most, I mean.
+
+00:42:07.775 --> 00:42:09.900 align:middle line:84%
+There is difference in
+different sectors and so on.
+
+00:42:09.900 --> 00:42:13.290 align:middle line:84%
+But for the aggregate, for
+the average, it's bad news.
+
+00:42:13.290 --> 00:42:16.592 align:middle line:84%
+So this is an environment where
+good news is bad news, good news
+
+00:42:16.592 --> 00:42:17.550 align:middle line:90%
+about aggregate demand.
+
+00:42:17.550 --> 00:42:19.008 align:middle line:84%
+You have to be
+specific about what.
+
+00:42:19.008 --> 00:42:23.020 align:middle line:84%
+Good news about aggregate demand
+is bad news for asset markets.
+
+00:42:23.020 --> 00:42:24.730 align:middle line:90%
+It's not always like that.
+
+00:42:24.730 --> 00:42:28.805 align:middle line:84%
+If you're in a recession, the
+Fed doesn't want to fight that.
+
+00:42:28.805 --> 00:42:30.430 align:middle line:84%
+It wants to have more
+aggregate demand.
+
+00:42:30.430 --> 00:42:32.388 align:middle line:84%
+So if you get good news
+about aggregate demand,
+
+00:42:32.388 --> 00:42:34.170 align:middle line:84%
+that's very good
+news for asset prices
+
+00:42:34.170 --> 00:42:36.420 align:middle line:84%
+because the Fed will
+not offset that,
+
+00:42:36.420 --> 00:42:38.940 align:middle line:84%
+and you get the positive
+effect of the extra dividends
+
+00:42:38.940 --> 00:42:40.700 align:middle line:90%
+and things of that kind, OK?
+
+00:42:40.700 --> 00:42:45.640 align:middle line:90%
+
+
+00:42:45.640 --> 00:42:49.100 align:middle line:84%
+Another component that
+moves asset prices a lot--
+
+00:42:49.100 --> 00:42:53.155 align:middle line:84%
+so monetary policy moves
+asset prices a lot, OK?
+
+00:42:53.155 --> 00:42:55.160 align:middle line:84%
+But monetary policy
+doesn't happen
+
+00:42:55.160 --> 00:42:58.615 align:middle line:84%
+in some separate,
+isolated space.
+
+00:42:58.615 --> 00:43:00.520 align:middle line:84%
+It reacts to news
+about the economy,
+
+00:43:00.520 --> 00:43:04.570 align:middle line:84%
+about consumers, about
+firms, about regional banks,
+
+00:43:04.570 --> 00:43:07.770 align:middle line:90%
+all sorts of things, OK?
+
+00:43:07.770 --> 00:43:10.650 align:middle line:84%
+Another big driver
+of asset prices
+
+00:43:10.650 --> 00:43:15.710 align:middle line:84%
+is this guy here, of
+equity in particular,
+
+00:43:15.710 --> 00:43:18.470 align:middle line:90%
+is this risk premium.
+
+00:43:18.470 --> 00:43:21.850 align:middle line:84%
+So that risk premium
+can move a lot.
+
+00:43:21.850 --> 00:43:25.840 align:middle line:84%
+And it's an important
+driver of asset prices.
+
+00:43:25.840 --> 00:43:28.650 align:middle line:84%
+This index, this is
+the-- it's called VIX.
+
+00:43:28.650 --> 00:43:31.090 align:middle line:84%
+VIX is-- I'm not going
+to explain what it is.
+
+00:43:31.090 --> 00:43:34.810 align:middle line:84%
+But people call it, so you
+get the picture, an index
+
+00:43:34.810 --> 00:43:36.970 align:middle line:90%
+of fear in equity markets.
+
+00:43:36.970 --> 00:43:40.220 align:middle line:84%
+It's done-- well, I'm not
+going to tell you what it is.
+
+00:43:40.220 --> 00:43:44.000 align:middle line:84%
+It's based on option
+prices and so on.
+
+00:43:44.000 --> 00:43:48.740 align:middle line:84%
+So this is when people
+realized that COVID [CHUCKLES]
+
+00:43:48.740 --> 00:43:50.010 align:middle line:90%
+was coming.
+
+00:43:50.010 --> 00:43:54.160 align:middle line:84%
+And so what you see is that
+this thing exploded up--
+
+00:43:54.160 --> 00:44:00.070 align:middle line:84%
+big risk-off, thus a massive
+spike in the little xs.
+
+00:44:00.070 --> 00:44:03.750 align:middle line:84%
+Well, not surprisingly, look
+what happened to equity--
+
+00:44:03.750 --> 00:44:05.850 align:middle line:90%
+collapsed by 35% or so.
+
+00:44:05.850 --> 00:44:08.130 align:middle line:84%
+Part of that was expected
+deviance, blah, blah, blah,
+
+00:44:08.130 --> 00:44:09.120 align:middle line:90%
+blah, blah, blah.
+
+00:44:09.120 --> 00:44:11.610 align:middle line:84%
+But a lot of it
+was the risk-off.
+
+00:44:11.610 --> 00:44:16.170 align:middle line:84%
+And it's called risk-off when
+markets are very fearful.
+
+00:44:16.170 --> 00:44:20.101 align:middle line:84%
+They don't want to take
+risks, risk-off, OK?
+
+00:44:20.101 --> 00:44:22.680 align:middle line:84%
+The recovery, actually,
+also had a lot
+
+00:44:22.680 --> 00:44:26.450 align:middle line:84%
+to do with the recovery
+on the risk environment.
+
+00:44:26.450 --> 00:44:29.180 align:middle line:84%
+People sort of got
+used to the thing.
+
+00:44:29.180 --> 00:44:31.250 align:middle line:84%
+But that recovery
+also was a result
+
+00:44:31.250 --> 00:44:33.240 align:middle line:84%
+of very aggressive
+monetary policy.
+
+00:44:33.240 --> 00:44:37.190 align:middle line:84%
+The Fed tried to offset this
+by cutting interest rates very
+
+00:44:37.190 --> 00:44:40.530 align:middle line:84%
+aggressively, and that also
+gave a boost to asset prices.
+
+00:44:40.530 --> 00:44:43.460 align:middle line:84%
+In fact, they did so much
+that we ended up with a big--
+
+00:44:43.460 --> 00:44:46.080 align:middle line:84%
+lots of overvaluation
+in asset prices.
+
+00:44:46.080 --> 00:44:47.990 align:middle line:84%
+And then, as a result,
+when they hiked rates,
+
+00:44:47.990 --> 00:44:54.320 align:middle line:84%
+we had a big decline in
+asset prices as a result.
+
+00:44:54.320 --> 00:44:55.220 align:middle line:90%
+What is this?
+
+00:44:55.220 --> 00:45:00.290 align:middle line:84%
+Look, this is--
+over the weekend--
+
+00:45:00.290 --> 00:45:04.340 align:middle line:84%
+over the weekend--
+we talked about this
+
+00:45:04.340 --> 00:45:07.040 align:middle line:90%
+in the previous lecture.
+
+00:45:07.040 --> 00:45:11.900 align:middle line:84%
+Essentially, the First
+Republic Bank went under,
+
+00:45:11.900 --> 00:45:15.500 align:middle line:90%
+and JPMorgan absorbed it.
+
+00:45:15.500 --> 00:45:18.920 align:middle line:90%
+So people thought that--
+
+00:45:18.920 --> 00:45:21.800 align:middle line:84%
+and Monday was good
+because people thought
+
+00:45:21.800 --> 00:45:26.060 align:middle line:90%
+that this mini crisis was over.
+
+00:45:26.060 --> 00:45:33.440 align:middle line:84%
+Well, yesterday, it turns out
+that two other regional banks,
+
+00:45:33.440 --> 00:45:35.720 align:middle line:84%
+the shares began to
+collapse in the same way
+
+00:45:35.720 --> 00:45:39.200 align:middle line:84%
+as the First Republic
+Bank shares collapsed
+
+00:45:39.200 --> 00:45:40.590 align:middle line:90%
+the week before.
+
+00:45:40.590 --> 00:45:43.290 align:middle line:90%
+So panic immediately set in.
+
+00:45:43.290 --> 00:45:46.880 align:middle line:84%
+So the VIX, the fear index,
+[WHISTLES] this is intraday.
+
+00:45:46.880 --> 00:45:52.280 align:middle line:84%
+So markets open here, And
+the shares of these two banks
+
+00:45:52.280 --> 00:45:54.490 align:middle line:90%
+began to decline very rapidly.
+
+00:45:54.490 --> 00:45:58.310 align:middle line:90%
+And so VIX went up a lot.
+
+00:45:58.310 --> 00:45:59.990 align:middle line:90%
+And what-- this is--
+
+00:45:59.990 --> 00:46:04.160 align:middle line:84%
+this is the main-- this
+is the SPX, the main--
+
+00:46:04.160 --> 00:46:05.120 align:middle line:90%
+S&P 500.
+
+00:46:05.120 --> 00:46:09.230 align:middle line:84%
+It's the main price index,
+equity price index, in the US--
+
+00:46:09.230 --> 00:46:11.510 align:middle line:90%
+immediately declined.
+
+00:46:11.510 --> 00:46:14.300 align:middle line:90%
+So that's the xs moving.
+
+00:46:14.300 --> 00:46:17.840 align:middle line:90%
+Here, xs move up, the little x.
+
+00:46:17.840 --> 00:46:20.450 align:middle line:84%
+And then it began to come
+down, and the markets
+
+00:46:20.450 --> 00:46:21.650 align:middle line:90%
+began to recover.
+
+00:46:21.650 --> 00:46:26.420 align:middle line:84%
+So this risk on and off
+is a very big driver
+
+00:46:26.420 --> 00:46:27.580 align:middle line:90%
+of equity prices.
+
+00:46:27.580 --> 00:46:31.960 align:middle line:90%
+
+
+00:46:31.960 --> 00:46:35.055 align:middle line:84%
+This is one of the banks,
+actually, that was in trouble.
+
+00:46:35.055 --> 00:46:37.560 align:middle line:90%
+
+
+00:46:37.560 --> 00:46:45.550 align:middle line:84%
+You see that-- by the end of
+the day-- this is PacWest.
+
+00:46:45.550 --> 00:46:49.060 align:middle line:84%
+PacWest had declined by
+28% by the end of the day.
+
+00:46:49.060 --> 00:46:51.070 align:middle line:84%
+But you see things
+look very weird here.
+
+00:46:51.070 --> 00:46:54.090 align:middle line:84%
+They don't look
+like normal prices.
+
+00:46:54.090 --> 00:46:55.720 align:middle line:84%
+Here they look
+like normal prices.
+
+00:46:55.720 --> 00:46:57.330 align:middle line:90%
+They're moving all the time.
+
+00:46:57.330 --> 00:46:58.870 align:middle line:90%
+Here, they don't.
+
+00:46:58.870 --> 00:47:00.420 align:middle line:84%
+What happens is
+that these prices
+
+00:47:00.420 --> 00:47:02.670 align:middle line:84%
+decline so rapidly
+that they trigger what
+
+00:47:02.670 --> 00:47:04.360 align:middle line:90%
+is called circuit breakers.
+
+00:47:04.360 --> 00:47:09.670 align:middle line:84%
+So you cannot trade those shares
+when they decline too rapidly.
+
+00:47:09.670 --> 00:47:12.420 align:middle line:84%
+And that's done deliberately
+so this little x
+
+00:47:12.420 --> 00:47:15.700 align:middle line:84%
+doesn't get completely out of
+control, people to calm down.
+
+00:47:15.700 --> 00:47:21.030 align:middle line:84%
+And so it triggered
+it several times.
+
+00:47:21.030 --> 00:47:23.640 align:middle line:84%
+The whole idea is
+that people calm down,
+
+00:47:23.640 --> 00:47:26.040 align:middle line:90%
+[CHUCKLES] that they don't--
+
+00:47:26.040 --> 00:47:27.570 align:middle line:90%
+is there a question?
+
+00:47:27.570 --> 00:47:29.237 align:middle line:84%
+AUDIENCE: Yeah, just
+on the last slide--
+
+00:47:29.237 --> 00:47:31.195 align:middle line:84%
+RICARDO J. CABALLERO:
+The previous or this one?
+
+00:47:31.195 --> 00:47:32.640 align:middle line:84%
+AUDIENCE: Yeah,
+the previous one.
+
+00:47:32.640 --> 00:47:36.000 align:middle line:84%
+Is-- [INAUDIBLE] are either of
+them dependent on the other?
+
+00:47:36.000 --> 00:47:38.452 align:middle line:84%
+Or are they more just showing
+the same sort of trend?
+
+00:47:38.452 --> 00:47:39.660 align:middle line:90%
+RICARDO J. CABALLERO: No, no.
+
+00:47:39.660 --> 00:47:43.170 align:middle line:90%
+OK, that's a good question.
+
+00:47:43.170 --> 00:47:45.310 align:middle line:90%
+This is the risk component only.
+
+00:47:45.310 --> 00:47:49.320 align:middle line:84%
+So this is more independent--
+what I'm saying,
+
+00:47:49.320 --> 00:47:52.260 align:middle line:84%
+when this guy goes up,
+if nothing else happens,
+
+00:47:52.260 --> 00:47:54.510 align:middle line:84%
+this will decline because
+you are discounting things
+
+00:47:54.510 --> 00:47:55.470 align:middle line:90%
+more heavily.
+
+00:47:55.470 --> 00:47:58.200 align:middle line:84%
+But it is true that there
+were some common elements.
+
+00:47:58.200 --> 00:47:59.790 align:middle line:84%
+There are also common
+elements, which
+
+00:47:59.790 --> 00:48:03.300 align:middle line:84%
+is people got very worried about
+having another regional bank
+
+00:48:03.300 --> 00:48:04.720 align:middle line:90%
+collapsing and so on.
+
+00:48:04.720 --> 00:48:08.430 align:middle line:84%
+And so that also created
+fear about the economy,
+
+00:48:08.430 --> 00:48:10.960 align:middle line:84%
+which is an independent
+reason for this to decline.
+
+00:48:10.960 --> 00:48:12.840 align:middle line:84%
+And normally, in
+recessions as well,
+
+00:48:12.840 --> 00:48:16.630 align:middle line:90%
+this risk appetite is lower.
+
+00:48:16.630 --> 00:48:18.910 align:middle line:84%
+So you're right that
+it's a common component.
+
+00:48:18.910 --> 00:48:23.310 align:middle line:84%
+But the point I was highlighting
+is that this VIX sort of
+
+00:48:23.310 --> 00:48:24.190 align:middle line:90%
+is a big driver.
+
+00:48:24.190 --> 00:48:28.310 align:middle line:84%
+It has a big impact
+on asset prices.
+
+00:48:28.310 --> 00:48:29.960 align:middle line:90%
+But it's not the cause.
+
+00:48:29.960 --> 00:48:32.670 align:middle line:84%
+It was an event
+that caused both.
+
+00:48:32.670 --> 00:48:35.090 align:middle line:84%
+But the fact that this event
+came with this big spike
+
+00:48:35.090 --> 00:48:39.530 align:middle line:84%
+in the VIX meant that the
+impact on the equity index
+
+00:48:39.530 --> 00:48:42.842 align:middle line:84%
+was larger than if it had been
+only news about the economy,
+
+00:48:42.842 --> 00:48:45.050 align:middle line:84%
+meaning that there was a
+recession ahead or something
+
+00:48:45.050 --> 00:48:46.370 align:middle line:90%
+like that.
+
+00:48:46.370 --> 00:48:52.610 align:middle line:84%
+And let me just finish with
+the opposite phenomenon.
+
+00:48:52.610 --> 00:48:54.440 align:middle line:84%
+I was [INAUDIBLE]
+episodes of fear.
+
+00:48:54.440 --> 00:48:56.600 align:middle line:84%
+But sometimes markets
+get very carried
+
+00:48:56.600 --> 00:48:58.340 align:middle line:90%
+away the opposite direction.
+
+00:48:58.340 --> 00:49:01.607 align:middle line:84%
+And here I'm showing
+you examples.
+
+00:49:01.607 --> 00:49:03.440 align:middle line:84%
+I put together this
+picture many years back,
+
+00:49:03.440 --> 00:49:06.140 align:middle line:84%
+and now Deutsche Bank
+keeps updating it,
+
+00:49:06.140 --> 00:49:10.123 align:middle line:84%
+which is it shows you some--
+it seems that the world needs
+
+00:49:10.123 --> 00:49:10.915 align:middle line:90%
+a bubble somewhere.
+
+00:49:10.915 --> 00:49:11.690 align:middle line:90%
+[CHUCKLES]
+
+00:49:11.690 --> 00:49:16.310 align:middle line:84%
+And here, it shows you several
+sort of big asset valuations.
+
+00:49:16.310 --> 00:49:18.530 align:middle line:90%
+Look, 500%.
+
+00:49:18.530 --> 00:49:19.500 align:middle line:90%
+Here is the Nikkei.
+
+00:49:19.500 --> 00:49:22.000 align:middle line:84%
+I mean, it was enormous
+appreciation of the Nikkei.
+
+00:49:22.000 --> 00:49:23.330 align:middle line:90%
+Here was bitcoin.
+
+00:49:23.330 --> 00:49:24.540 align:middle line:90%
+Then it collapsed.
+
+00:49:24.540 --> 00:49:26.100 align:middle line:90%
+They always end up bad.
+
+00:49:26.100 --> 00:49:28.520 align:middle line:84%
+Whenever you see this
+big sort of spiking up,
+
+00:49:28.520 --> 00:49:32.340 align:middle line:84%
+they almost always
+end up quite poorly.
+
+00:49:32.340 --> 00:49:36.200 align:middle line:84%
+Now, this is-- it's much
+more likely that it happens
+
+00:49:36.200 --> 00:49:37.320 align:middle line:90%
+in equity than in bonds.
+
+00:49:37.320 --> 00:49:39.570 align:middle line:84%
+In bonds, it cannot happen
+because there is a terminal
+
+00:49:39.570 --> 00:49:41.400 align:middle line:90%
+date, a terminal value.
+
+00:49:41.400 --> 00:49:43.920 align:middle line:84%
+So what happens with
+these kind of things,
+
+00:49:43.920 --> 00:49:47.162 align:middle line:84%
+people dream that their
+value will go to infinity.
+
+00:49:47.162 --> 00:49:49.370 align:middle line:84%
+And it could because the
+thing will last to infinity,
+
+00:49:49.370 --> 00:49:50.912 align:middle line:84%
+and the price could
+go to infinity.
+
+00:49:50.912 --> 00:49:53.370 align:middle line:84%
+For a bond, that cannot happen,
+because there is a terminal
+
+00:49:53.370 --> 00:49:55.495 align:middle line:84%
+date, and at that date,
+they going to pay you $100.
+
+00:49:55.495 --> 00:49:56.410 align:middle line:90%
+So it can't happen.
+
+00:49:56.410 --> 00:50:01.060 align:middle line:84%
+But for equity, people's
+imagination can run very wild.
+
+00:50:01.060 --> 00:50:04.380 align:middle line:84%
+In fact, there is a famous
+bubble, the South Sea Bubble.
+
+00:50:04.380 --> 00:50:06.850 align:middle line:90%
+It's a company in the UK.
+
+00:50:06.850 --> 00:50:09.300 align:middle line:84%
+It's famous for many
+reasons, but one of them
+
+00:50:09.300 --> 00:50:14.280 align:middle line:84%
+is that Isaac Newton got
+involved in this one.
+
+00:50:14.280 --> 00:50:15.700 align:middle line:90%
+He got carried away.
+
+00:50:15.700 --> 00:50:16.440 align:middle line:90%
+He sold.
+
+00:50:16.440 --> 00:50:17.880 align:middle line:90%
+He made a profit.
+
+00:50:17.880 --> 00:50:19.810 align:middle line:90%
+He sold the shares at 7,000.
+
+00:50:19.810 --> 00:50:22.740 align:middle line:84%
+He profited 3,500 pounds, which
+must have been an enormous
+
+00:50:22.740 --> 00:50:24.390 align:middle line:90%
+amount of money at the time.
+
+00:50:24.390 --> 00:50:26.690 align:middle line:90%
+Prices kept going up--
+
+00:50:26.690 --> 00:50:31.070 align:middle line:84%
+couldn't resist, went back in,
+ended up losing 20,000 pounds,
+
+00:50:31.070 --> 00:50:32.580 align:middle line:84%
+which must have
+been a lot of money.
+
+00:50:32.580 --> 00:50:34.940 align:middle line:84%
+So he famously said, "I
+can calculate the motions
+
+00:50:34.940 --> 00:50:37.690 align:middle line:84%
+of the heavenly bodies, but
+not the madness of people."
+
+00:50:37.690 --> 00:50:39.290 align:middle line:84%
+This is all about
+expectations, OK?
+
+00:50:39.290 --> 00:50:41.860 align:middle line:90%
+[CHUCKLES] Let me stop here.
+
+00:50:41.860 --> 00:50:54.000 align:middle line:90%

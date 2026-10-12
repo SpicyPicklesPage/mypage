@@ -1,0 +1,15 @@
+(() => {
+const NS="http://www.w3.org/2000/svg",C={ink:"#17324d",muted:"#66758a",blue:"#147d92",red:"#c44f3b",gold:"#d49a2a",green:"#3f7d5b"};
+const add=(s,t,a={},x="")=>{const n=document.createElementNS(NS,t);Object.entries(a).forEach(([k,v])=>n.setAttribute(k,v));n.textContent=x;s.appendChild(n);return n};
+const line=(s,x1,y1,x2,y2,c=C.ink,w=2,d="")=>add(s,"line",{x1,y1,x2,y2,stroke:c,"stroke-width":w,"stroke-dasharray":d});
+const txt=(s,x,y,t,z=15,c=C.ink,a="middle",w=600)=>add(s,"text",{x,y,fill:c,"font-size":z,"text-anchor":a,"font-weight":w},t);
+const path=(s,d,c,w=3,dash="")=>add(s,"path",{d,fill:"none",stroke:c,"stroke-width":w,"stroke-linecap":"round","stroke-dasharray":dash});
+const arrow=(s,x1,y1,x2,y2,c=C.ink)=>{line(s,x1,y1,x2,y2,c,2.2);const a=Math.atan2(y2-y1,x2-x1),q=9;add(s,"path",{d:`M${x2},${y2} L${x2-q*Math.cos(a-.5)},${y2-q*Math.sin(a-.5)} L${x2-q*Math.cos(a+.5)},${y2-q*Math.sin(a+.5)}Z`,fill:c})};
+const box=(s,x,y,w,h,t,u,c=C.blue)=>{add(s,"rect",{x,y,width:w,height:h,rx:13,fill:"#fff",stroke:c,"stroke-width":2});txt(s,x+w/2,y+28,t,16,c,"middle",700);if(u)txt(s,x+w/2,y+52,u,13,C.muted)};
+function spiral(s){txt(s,340,34,"工资—价格—预期的反馈链",22,C.ink,"middle",700);box(s,35,105,140,70,"失业率 u↓","劳动市场收紧",C.green);box(s,205,105,140,70,"名义工资 W↑","议价压力",C.gold);box(s,375,105,140,70,"价格 P↑","企业转嫁成本",C.red);box(s,510,280,140,70,"预期 πᵉ↑","进入下一轮",C.blue);arrow(s,175,140,205,140,C.green);arrow(s,345,140,375,140,C.gold);arrow(s,490,175,550,280,C.red);path(s,"M510 315 C330 405 120 350 105 175",C.blue,2.5);arrow(s,111,205,105,175,C.blue);txt(s,340,402,"低失业率先推高工资；预期若调整，冲击会产生惯性",14,C.muted)}
+function axes(s){line(s,90,380,620,380);line(s,90,380,90,65);txt(s,620,409,"失业率 u",15,C.ink,"end",700);txt(s,55,55,"通胀 π",15,C.ink,"start",700)}
+function original(s){axes(s);path(s,"M145 105 C250 175 390 275 570 345",C.blue,4);txt(s,525,300,"PC",17,C.blue,"start",700);txt(s,340,35,"预期锚定时的菲利普斯曲线",22,C.ink,"middle",700);add(s,"circle",{cx:235,cy:166,r:6,fill:C.red});add(s,"circle",{cx:480,cy:308,r:6,fill:C.green});txt(s,235,145,"低 u、高 π",14,C.red);txt(s,480,338,"高 u、低 π",14,C.green)}
+function shift(s){axes(s);path(s,"M150 175 C270 225 410 300 565 350",C.muted,3,"7 6");path(s,"M145 95 C270 150 410 225 570 280",C.red,4);arrow(s,440,290,440,235,C.red);txt(s,545,270,"PC₁",16,C.red,"start",700);txt(s,545,342,"PC₀",16,C.muted,"start",700);txt(s,340,35,"πᵉ↑、m↑ 或 z↑：曲线整体上移",22,C.ink,"middle",700);txt(s,340,430,"同一个失业率，对应更高通胀",14,C.muted)}
+function natural(s){axes(s);path(s,"M145 95 C265 160 405 260 570 345",C.blue,4);line(s,315,80,315,380,C.gold,2,"7 6");line(s,90,220,315,220,C.muted,1.5,"6 6");add(s,"circle",{cx:315,cy:220,r:6,fill:C.gold});txt(s,315,407,"uₙ",17,C.gold);txt(s,78,225,"πᵉ",16,C.muted,"end",700);txt(s,210,315,"u < uₙ：π > πᵉ",14,C.red);txt(s,465,315,"u > uₙ：π < πᵉ",14,C.green);txt(s,340,35,"自然失业率：实际通胀等于预期通胀",22,C.ink,"middle",700)}
+const F={"spiral":spiral,"original-pc":original,"pc-shift":shift,"natural-rate":natural};document.querySelectorAll("svg[data-macro9]").forEach(s=>(F[s.dataset.macro9]||(()=>{}))(s));
+})();

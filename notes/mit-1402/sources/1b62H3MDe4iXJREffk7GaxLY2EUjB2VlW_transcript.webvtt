@@ -1,0 +1,3648 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.450 align:middle line:90%
+[SQUEAKING]
+
+00:00:02.450 --> 00:00:03.920 align:middle line:90%
+[RUSTLING]
+
+00:00:03.920 --> 00:00:06.370 align:middle line:90%
+[CLICKING]
+
+00:00:06.370 --> 00:00:15.898 align:middle line:90%
+
+
+00:00:15.898 --> 00:00:17.440 align:middle line:84%
+RICARDO CABALIERO:
+So now we're going
+
+00:00:17.440 --> 00:00:20.650 align:middle line:84%
+to go back to the first part
+of the course in the sense
+
+00:00:20.650 --> 00:00:27.520 align:middle line:84%
+that we're going to go
+back to the short term.
+
+00:00:27.520 --> 00:00:31.840 align:middle line:84%
+So we're going to essentially do
+the IS-LM model again, but now
+
+00:00:31.840 --> 00:00:33.790 align:middle line:84%
+in the context of
+an open economy.
+
+00:00:33.790 --> 00:00:36.220 align:middle line:84%
+But before I get
+into that first model
+
+00:00:36.220 --> 00:00:37.720 align:middle line:84%
+of this part of
+the course, I want
+
+00:00:37.720 --> 00:00:43.960 align:middle line:84%
+to finish the previous lecture
+in which I was introducing
+
+00:00:43.960 --> 00:00:47.560 align:middle line:84%
+the concept of openness
+and the key relative prices
+
+00:00:47.560 --> 00:00:49.010 align:middle line:90%
+in open economy.
+
+00:00:49.010 --> 00:00:52.060 align:middle line:84%
+And we stopped after
+discussing this and says,
+
+00:00:52.060 --> 00:00:55.450 align:middle line:84%
+well, one of the things that
+opening an economy means
+
+00:00:55.450 --> 00:00:59.988 align:middle line:84%
+is that now you can buy
+goods, both at home or abroad.
+
+00:00:59.988 --> 00:01:01.780 align:middle line:84%
+So you need to be able
+to compare these two
+
+00:01:01.780 --> 00:01:05.140 align:middle line:84%
+different kinds of goods and
+controlling for quality and all
+
+00:01:05.140 --> 00:01:06.980 align:middle line:90%
+these differences and all that.
+
+00:01:06.980 --> 00:01:08.950 align:middle line:84%
+At the end of the day,
+you want some sense
+
+00:01:08.950 --> 00:01:11.110 align:middle line:84%
+of relative prices,
+which good is more
+
+00:01:11.110 --> 00:01:12.650 align:middle line:90%
+expensive than the other one.
+
+00:01:12.650 --> 00:01:16.000 align:middle line:84%
+And we said for that, we
+use what is called the "real
+
+00:01:16.000 --> 00:01:17.600 align:middle line:90%
+exchange,"
+
+00:01:17.600 --> 00:01:20.210 align:middle line:84%
+And we define the real
+exchange rate as well,
+
+00:01:20.210 --> 00:01:22.430 align:middle line:84%
+essentially it's
+the relative prices
+
+00:01:22.430 --> 00:01:27.380 align:middle line:90%
+of goods at home versus abroad.
+
+00:01:27.380 --> 00:01:29.580 align:middle line:84%
+But we have to put them
+in a common currency.
+
+00:01:29.580 --> 00:01:31.372 align:middle line:84%
+That's the reason we
+couldn't just directly
+
+00:01:31.372 --> 00:01:34.140 align:middle line:84%
+compare the prices at home
+versus the prices abroad.
+
+00:01:34.140 --> 00:01:36.110 align:middle line:84%
+We have to convert
+the prices at home
+
+00:01:36.110 --> 00:01:39.420 align:middle line:84%
+to the unit of account
+of the other country.
+
+00:01:39.420 --> 00:01:41.332 align:middle line:84%
+And then we could
+compare these two things.
+
+00:01:41.332 --> 00:01:43.290 align:middle line:84%
+And that's what we call
+the real exchange rate.
+
+00:01:43.290 --> 00:01:45.320 align:middle line:84%
+When that thing
+goes up, we call--
+
+00:01:45.320 --> 00:01:49.310 align:middle line:84%
+that's a real appreciation
+of the local currency,
+
+00:01:49.310 --> 00:01:51.650 align:middle line:90%
+of the local economy.
+
+00:01:51.650 --> 00:01:53.540 align:middle line:90%
+And that means that the goods--
+
+00:01:53.540 --> 00:01:55.430 align:middle line:84%
+domestic goods--
+become more expensive
+
+00:01:55.430 --> 00:01:58.140 align:middle line:90%
+relative to international goods.
+
+00:01:58.140 --> 00:02:01.700 align:middle line:84%
+When that epsilon goes
+down, then we call,
+
+00:02:01.700 --> 00:02:04.110 align:middle line:84%
+we say the real exchange
+rate has depreciated.
+
+00:02:04.110 --> 00:02:07.280 align:middle line:84%
+And that means that the domestic
+goods become cheaper relative
+
+00:02:07.280 --> 00:02:08.370 align:middle line:90%
+to foreign goods.
+
+00:02:08.370 --> 00:02:12.890 align:middle line:84%
+So as a key concept in what it
+means when you open an economy,
+
+00:02:12.890 --> 00:02:16.250 align:middle line:84%
+you need to have this price
+is very important to decide
+
+00:02:16.250 --> 00:02:19.480 align:middle line:84%
+whether you're going to, again,
+whether you and foreigners are
+
+00:02:19.480 --> 00:02:22.870 align:middle line:84%
+going to buy goods
+abroad or domestically.
+
+00:02:22.870 --> 00:02:25.090 align:middle line:84%
+The second concept of
+openness that we're
+
+00:02:25.090 --> 00:02:28.960 align:middle line:84%
+going to explore in this course
+is openness in capital account,
+
+00:02:28.960 --> 00:02:30.190 align:middle line:90%
+in financial market.
+
+00:02:30.190 --> 00:02:32.830 align:middle line:84%
+And openness in financial market
+means something very similar,
+
+00:02:32.830 --> 00:02:36.850 align:middle line:84%
+which is now you when
+you have a to invest--
+
+00:02:36.850 --> 00:02:39.400 align:middle line:84%
+financially invest, not
+physical investment,
+
+00:02:39.400 --> 00:02:41.560 align:middle line:84%
+not real investment--
+well, you can
+
+00:02:41.560 --> 00:02:43.990 align:middle line:84%
+decide whether to invest
+in domestic assets
+
+00:02:43.990 --> 00:02:45.350 align:middle line:90%
+or foreign assets.
+
+00:02:45.350 --> 00:02:46.708 align:middle line:90%
+We're going in this--
+
+00:02:46.708 --> 00:02:48.500 align:middle line:84%
+later on, we're going
+to talk about equity.
+
+00:02:48.500 --> 00:02:50.240 align:middle line:90%
+But for now, bonds.
+
+00:02:50.240 --> 00:02:53.870 align:middle line:84%
+So suppose you have a domestic
+bond and a foreign bond.
+
+00:02:53.870 --> 00:02:56.470 align:middle line:84%
+Well, you can decide whether
+to invest in the domestic bond
+
+00:02:56.470 --> 00:02:58.150 align:middle line:90%
+or in the foreign bond.
+
+00:02:58.150 --> 00:03:01.810 align:middle line:84%
+Now to make that
+comparison, it's
+
+00:03:01.810 --> 00:03:06.130 align:middle line:84%
+not enough to have the current
+exchange rate because it doesn't
+
+00:03:06.130 --> 00:03:08.920 align:middle line:84%
+mean much if I tell you
+that the British bond is
+
+00:03:08.920 --> 00:03:13.740 align:middle line:84%
+more expensive than
+a domestic $1 bond.
+
+00:03:13.740 --> 00:03:16.470 align:middle line:84%
+What you really need in order
+to decide where to invest
+
+00:03:16.470 --> 00:03:20.190 align:middle line:84%
+is some sense of what is
+expected relative return
+
+00:03:20.190 --> 00:03:21.160 align:middle line:90%
+of these two things.
+
+00:03:21.160 --> 00:03:24.030 align:middle line:84%
+Do I expect to make more
+money in the dollar bond
+
+00:03:24.030 --> 00:03:29.070 align:middle line:90%
+or in the pound bond?
+
+00:03:29.070 --> 00:03:32.360 align:middle line:84%
+And that's the comparison
+I need to be able to make.
+
+00:03:32.360 --> 00:03:35.320 align:middle line:84%
+There are also
+risk considerations
+
+00:03:35.320 --> 00:03:38.470 align:middle line:84%
+and so on that we're not going
+to discuss in this course.
+
+00:03:38.470 --> 00:03:43.530 align:middle line:84%
+But the very basic comparison
+is not the value of things
+
+00:03:43.530 --> 00:03:45.030 align:middle line:84%
+when you're talking
+about financial,
+
+00:03:45.030 --> 00:03:46.405 align:middle line:84%
+but what is the
+return you expect
+
+00:03:46.405 --> 00:03:47.800 align:middle line:90%
+to get in one or the other.
+
+00:03:47.800 --> 00:03:51.010 align:middle line:90%
+So this is what you need to do.
+
+00:03:51.010 --> 00:03:55.930 align:middle line:84%
+Suppose you have a dollar to
+invest and you have two options.
+
+00:03:55.930 --> 00:03:57.610 align:middle line:90%
+One is you buy $1 bond.
+
+00:03:57.610 --> 00:03:59.970 align:middle line:84%
+The dollar bond gives you
+an interest rate of it.
+
+00:03:59.970 --> 00:04:04.890 align:middle line:84%
+So you know that, say, 5%
+nowadays, more or less,
+
+00:04:04.890 --> 00:04:08.040 align:middle line:84%
+that if you have a dollar today
+and you invest it in a dollar
+
+00:04:08.040 --> 00:04:14.040 align:middle line:84%
+bond, you're going to get next
+period, you're going to get a--
+
+00:04:14.040 --> 00:04:15.102 align:middle line:90%
+how much is it, $100?
+
+00:04:15.102 --> 00:04:16.560 align:middle line:84%
+So suppose you have
+$1, then you're
+
+00:04:16.560 --> 00:04:22.260 align:middle line:84%
+going to get a $0.05 on that
+dollar at the end of the year.
+
+00:04:22.260 --> 00:04:28.030 align:middle line:84%
+And so that's what you get if
+you invest in the dollar bond.
+
+00:04:28.030 --> 00:04:30.210 align:middle line:84%
+Now, you're giving now
+an option because we
+
+00:04:30.210 --> 00:04:32.520 align:middle line:84%
+are open to financial
+markets, to also
+
+00:04:32.520 --> 00:04:36.630 align:middle line:84%
+invest in a British bond,
+in a pound bond that is
+
+00:04:36.630 --> 00:04:38.620 align:middle line:90%
+as safe as the US bonds, say.
+
+00:04:38.620 --> 00:04:42.190 align:middle line:84%
+And so we're going to
+call that the UK bond.
+
+00:04:42.190 --> 00:04:44.970 align:middle line:84%
+And I know, for example,
+that the UK bond is
+
+00:04:44.970 --> 00:04:47.850 align:middle line:90%
+offering a 10% interest rate.
+
+00:04:47.850 --> 00:04:52.900 align:middle line:84%
+So suppose that I
+think i star is 10%.
+
+00:04:52.900 --> 00:04:54.400 align:middle line:84%
+Then I asked you
+the question, well,
+
+00:04:54.400 --> 00:04:56.410 align:middle line:84%
+that does mean that
+obviously, since you
+
+00:04:56.410 --> 00:05:00.900 align:middle line:84%
+want to compare returns that you
+should be investing in the pound
+
+00:05:00.900 --> 00:05:03.320 align:middle line:84%
+bond, in the UK bond
+rather than the US bond.
+
+00:05:03.320 --> 00:05:07.003 align:middle line:84%
+So suppose this is
+5%, and that's 10%.
+
+00:05:07.003 --> 00:05:09.420 align:middle line:84%
+And I'll tell you, where do
+you want to invest your money?
+
+00:05:09.420 --> 00:05:14.820 align:middle line:84%
+Do you want to invest it in
+the US bond or in the UK bond?
+
+00:05:14.820 --> 00:05:18.070 align:middle line:90%
+What is your answer?
+
+00:05:18.070 --> 00:05:20.320 align:middle line:84%
+I told you, you know,
+they pay you 10%,
+
+00:05:20.320 --> 00:05:21.465 align:middle line:90%
+the other one pays you 5%.
+
+00:05:21.465 --> 00:05:28.050 align:middle line:90%
+
+
+00:05:28.050 --> 00:05:29.760 align:middle line:90%
+AUDIENCE: [INAUDIBLE] as well?
+
+00:05:29.760 --> 00:05:30.900 align:middle line:90%
+RICARDO CABALIERO: Exactly.
+
+00:05:30.900 --> 00:05:32.981 align:middle line:90%
+Why do I need to know that?
+
+00:05:32.981 --> 00:05:34.642 align:middle line:90%
+AUDIENCE: [INAUDIBLE]
+
+00:05:34.642 --> 00:05:35.850 align:middle line:90%
+RICARDO CABALIERO: Excellent.
+
+00:05:35.850 --> 00:05:38.910 align:middle line:84%
+So this is not enough
+information for me,
+
+00:05:38.910 --> 00:05:42.480 align:middle line:84%
+because it may happen that
+what I get in terms of return,
+
+00:05:42.480 --> 00:05:46.910 align:middle line:84%
+I lose on the currency
+exposure, for example.
+
+00:05:46.910 --> 00:05:49.210 align:middle line:84%
+So let's see how
+that can happen.
+
+00:05:49.210 --> 00:05:50.540 align:middle line:90%
+So how would I do this?
+
+00:05:50.540 --> 00:05:53.600 align:middle line:84%
+I have $1 of wealth
+that I want to invest.
+
+00:05:53.600 --> 00:05:56.420 align:middle line:84%
+And suppose I want to
+go the UK bond route.
+
+00:05:56.420 --> 00:05:58.180 align:middle line:84%
+So the first thing
+I have to do is
+
+00:05:58.180 --> 00:06:00.370 align:middle line:84%
+I have to convert the
+dollar into pounds today
+
+00:06:00.370 --> 00:06:04.610 align:middle line:84%
+to buy my dollar, which is my UK
+bond, which will be in pounds.
+
+00:06:04.610 --> 00:06:07.780 align:middle line:84%
+So the first thing I
+have to use is suppose
+
+00:06:07.780 --> 00:06:12.280 align:middle line:84%
+that I get a 0.8
+pounds per dollar,
+
+00:06:12.280 --> 00:06:21.100 align:middle line:84%
+then I can invest 0.8 pounds
+in, UK bonds with my dollar.
+
+00:06:21.100 --> 00:06:29.080 align:middle line:84%
+That will give me 0.8 times
+1.1, plus i star tomorrow,
+
+00:06:29.080 --> 00:06:31.510 align:middle line:90%
+but what are the units of this?
+
+00:06:31.510 --> 00:06:32.650 align:middle line:90%
+What do I get there?
+
+00:06:32.650 --> 00:06:35.680 align:middle line:84%
+Next year, what do
+I get next year?
+
+00:06:35.680 --> 00:06:45.250 align:middle line:84%
+I invested 0.8 pounds and I got
+0.8 times 1.1, say, pounds back.
+
+00:06:45.250 --> 00:06:46.180 align:middle line:90%
+I just told you.
+
+00:06:46.180 --> 00:06:49.540 align:middle line:84%
+So what I get next
+year is pounds.
+
+00:06:49.540 --> 00:06:51.760 align:middle line:84%
+I cannot compare a
+return in dollars,
+
+00:06:51.760 --> 00:06:55.640 align:middle line:84%
+which this was $1.05
+with a return on pounds.
+
+00:06:55.640 --> 00:06:59.080 align:middle line:84%
+I need to be able to convert
+those pounds in the future
+
+00:06:59.080 --> 00:07:01.030 align:middle line:90%
+to dollars in the future.
+
+00:07:01.030 --> 00:07:02.770 align:middle line:84%
+And the best I can
+do here, we're not
+
+00:07:02.770 --> 00:07:06.070 align:middle line:84%
+going to open four world
+markets or anything, is well,
+
+00:07:06.070 --> 00:07:08.960 align:middle line:84%
+I can-- that means I have to
+divide by the exchange rate
+
+00:07:08.960 --> 00:07:11.600 align:middle line:84%
+next year to convert
+from pounds to dollars.
+
+00:07:11.600 --> 00:07:15.040 align:middle line:84%
+I don't the exchange rate of
+next year, so the best I can do
+
+00:07:15.040 --> 00:07:17.110 align:middle line:90%
+is use expected exchange rate.
+
+00:07:17.110 --> 00:07:22.300 align:middle line:84%
+So I divide this by the
+expected exchange rate next year
+
+00:07:22.300 --> 00:07:23.980 align:middle line:90%
+and then I get--
+
+00:07:23.980 --> 00:07:28.910 align:middle line:84%
+thus, my return in dollars of
+having gone the UK bond route.
+
+00:07:28.910 --> 00:07:31.480 align:middle line:84%
+And so what I need
+to compare in order
+
+00:07:31.480 --> 00:07:34.970 align:middle line:84%
+to decide where do I
+want to put my money
+
+00:07:34.970 --> 00:07:38.920 align:middle line:84%
+is that return here
+versus that one there.
+
+00:07:38.920 --> 00:07:40.690 align:middle line:84%
+That's in the same
+units of account
+
+00:07:40.690 --> 00:07:45.710 align:middle line:84%
+is I invest the same today,
+$1, and I get dollars tomorrow.
+
+00:07:45.710 --> 00:07:47.240 align:middle line:90%
+So now I can compare.
+
+00:07:47.240 --> 00:07:51.320 align:middle line:84%
+And as you correctly
+pointed out,
+
+00:07:51.320 --> 00:07:55.100 align:middle line:84%
+this thing here
+therefore requires
+
+00:07:55.100 --> 00:07:57.770 align:middle line:84%
+that you think about
+what the exchange
+
+00:07:57.770 --> 00:07:59.370 align:middle line:90%
+rate is likely to be tomorrow.
+
+00:07:59.370 --> 00:08:01.640 align:middle line:84%
+So, for example,
+in my example here,
+
+00:08:01.640 --> 00:08:05.340 align:middle line:84%
+when I said suppose
+i is 5% and i
+
+00:08:05.340 --> 00:08:08.190 align:middle line:84%
+star, the interest rate
+in the UK bond, is 10%.
+
+00:08:08.190 --> 00:08:11.540 align:middle line:84%
+Is it obvious that I should
+invest in the UK bond?
+
+00:08:11.540 --> 00:08:13.310 align:middle line:84%
+And the answer is
+no, not so fast.
+
+00:08:13.310 --> 00:08:15.920 align:middle line:84%
+Because I know I'm going
+to make 5% more in terms
+
+00:08:15.920 --> 00:08:17.330 align:middle line:90%
+of return of the bond.
+
+00:08:17.330 --> 00:08:19.220 align:middle line:84%
+But then when I convert
+it back to dollars,
+
+00:08:19.220 --> 00:08:23.630 align:middle line:84%
+I may lose all that gain because
+the pound has depreciated
+
+00:08:23.630 --> 00:08:25.160 align:middle line:90%
+vis-a-vis the dollar.
+
+00:08:25.160 --> 00:08:27.860 align:middle line:84%
+In particular, is the
+pound, I expect the pound
+
+00:08:27.860 --> 00:08:29.630 align:middle line:84%
+to depreciate
+relative to the dollar
+
+00:08:29.630 --> 00:08:33.020 align:middle line:84%
+or if I expect the dollar to
+appreciate relative to the pound
+
+00:08:33.020 --> 00:08:35.950 align:middle line:90%
+by 5%, then I'm indifferent.
+
+00:08:35.950 --> 00:08:36.450 align:middle line:90%
+Yeah.
+
+00:08:36.450 --> 00:08:38.100 align:middle line:90%
+In one case, I'll get--
+
+00:08:38.100 --> 00:08:40.679 align:middle line:84%
+because if I go
+the US bond route,
+
+00:08:40.679 --> 00:08:44.950 align:middle line:84%
+I get 5% next year from
+this year to the next.
+
+00:08:44.950 --> 00:08:48.480 align:middle line:84%
+If I go to the UK
+bond route, I get 10%
+
+00:08:48.480 --> 00:08:51.330 align:middle line:84%
+in return on the bond
+minus 5% in the capital
+
+00:08:51.330 --> 00:08:54.760 align:middle line:84%
+loss due to the
+appreciation of the dollar.
+
+00:08:54.760 --> 00:08:57.120 align:middle line:90%
+So net I get 5% as well.
+
+00:08:57.120 --> 00:08:58.555 align:middle line:90%
+That's what appears here.
+
+00:08:58.555 --> 00:08:59.680 align:middle line:90%
+That's what I've done here.
+
+00:08:59.680 --> 00:09:03.510 align:middle line:84%
+So what I did here is says if
+the markets are very integrated
+
+00:09:03.510 --> 00:09:06.180 align:middle line:84%
+and the function fairly
+well, those two returns
+
+00:09:06.180 --> 00:09:09.102 align:middle line:84%
+should be more or less
+similar in equilibrium,
+
+00:09:09.102 --> 00:09:10.560 align:middle line:84%
+because prices are
+going to adjust,
+
+00:09:10.560 --> 00:09:12.700 align:middle line:84%
+exchanges are going
+to adjust and so on.
+
+00:09:12.700 --> 00:09:16.647 align:middle line:84%
+So there's two ways of investing
+are more or less the same.
+
+00:09:16.647 --> 00:09:18.480 align:middle line:84%
+And I'm going to take
+the extreme assumption
+
+00:09:18.480 --> 00:09:22.650 align:middle line:84%
+that they are exactly the
+same here so that this holds.
+
+00:09:22.650 --> 00:09:25.780 align:middle line:84%
+That in equilibrium, we have
+to find that equilibrium,
+
+00:09:25.780 --> 00:09:27.730 align:middle line:84%
+these two things are
+going to be equal.
+
+00:09:27.730 --> 00:09:30.150 align:middle line:84%
+That's called-- and it's
+a very important concept
+
+00:09:30.150 --> 00:09:31.720 align:middle line:90%
+in international finance--
+
+00:09:31.720 --> 00:09:34.150 align:middle line:84%
+the "uncovered interest
+parity condition."
+
+00:09:34.150 --> 00:09:37.540 align:middle line:84%
+Don't ask me why it's uncovered,
+but it's the interest parity
+
+00:09:37.540 --> 00:09:39.110 align:middle line:90%
+condition.
+
+00:09:39.110 --> 00:09:41.410 align:middle line:84%
+And again, that
+one in particular
+
+00:09:41.410 --> 00:09:45.160 align:middle line:84%
+is called the uncovered
+interest parity condition.
+
+00:09:45.160 --> 00:09:47.620 align:middle line:84%
+If you do a little bit of--
+and this just tells you
+
+00:09:47.620 --> 00:09:52.030 align:middle line:84%
+that in equilibrium you have to
+be indifferent between investing
+
+00:09:52.030 --> 00:09:53.920 align:middle line:90%
+in one bond or the other.
+
+00:09:53.920 --> 00:09:56.920 align:middle line:84%
+If you do a little
+algebra here of the kind
+
+00:09:56.920 --> 00:09:59.320 align:middle line:84%
+that we have done in
+the past, like 1 plus i
+
+00:09:59.320 --> 00:10:09.520 align:middle line:84%
+is i is approximately equal to
+1 over 1 minus i or this one,
+
+00:10:09.520 --> 00:10:14.650 align:middle line:84%
+1 plus i star is approximately
+equal to 1 over 1 minus i star,
+
+00:10:14.650 --> 00:10:15.250 align:middle line:90%
+and so on.
+
+00:10:15.250 --> 00:10:17.830 align:middle line:84%
+That's a kind of approximation,
+Taylor expansion,
+
+00:10:17.830 --> 00:10:20.900 align:middle line:90%
+when these terms are small.
+
+00:10:20.900 --> 00:10:25.870 align:middle line:84%
+Then you can write this
+as this expression here.
+
+00:10:25.870 --> 00:10:28.890 align:middle line:84%
+And this says exactly
+what I just said in words.
+
+00:10:28.890 --> 00:10:33.820 align:middle line:84%
+It says, look, if the
+interest rate in the US bond
+
+00:10:33.820 --> 00:10:42.270 align:middle line:84%
+is lower than the UK bond's
+interest rate, that's
+
+00:10:42.270 --> 00:10:44.880 align:middle line:84%
+OK in the sense that
+we can be indifferent
+
+00:10:44.880 --> 00:10:48.060 align:middle line:84%
+when we do those things as
+long as you're expecting
+
+00:10:48.060 --> 00:10:50.680 align:middle line:90%
+an appreciation of the dollar.
+
+00:10:50.680 --> 00:10:53.830 align:middle line:84%
+That is equivalent to the
+difference in these two interest
+
+00:10:53.830 --> 00:10:54.790 align:middle line:90%
+rates.
+
+00:10:54.790 --> 00:10:58.650 align:middle line:84%
+So that's what's called the
+interest parity condition.
+
+00:10:58.650 --> 00:11:00.450 align:middle line:84%
+The two, in
+equilibrium, the two are
+
+00:11:00.450 --> 00:11:02.820 align:middle line:84%
+going to be the
+same once you adjust
+
+00:11:02.820 --> 00:11:06.550 align:middle line:84%
+for the expected appreciation
+or depreciation of the currency.
+
+00:11:06.550 --> 00:11:11.350 align:middle line:84%
+So in my example before,
+we had this interest rate
+
+00:11:11.350 --> 00:11:13.970 align:middle line:90%
+of 5%, that was 10%.
+
+00:11:13.970 --> 00:11:16.630 align:middle line:84%
+Then the only way that that's
+going to be in equilibrium
+
+00:11:16.630 --> 00:11:22.440 align:middle line:84%
+is that if we also expect the
+dollar to appreciate by 5%.
+
+00:11:22.440 --> 00:11:26.470 align:middle line:84%
+OK, so dollar appreciation,
+remember, is this guy going up.
+
+00:11:26.470 --> 00:11:30.640 align:middle line:84%
+So if this is 5%, then
+it's fine to have 5% here,
+
+00:11:30.640 --> 00:11:34.270 align:middle line:84%
+10% there, because they
+both gave me the same return
+
+00:11:34.270 --> 00:11:36.050 align:middle line:90%
+in expectation, at least.
+
+00:11:36.050 --> 00:11:39.070 align:middle line:84%
+If I do it in dollars, I
+say I'm going to get 5%
+
+00:11:39.070 --> 00:11:43.780 align:middle line:84%
+either way investing in American
+dollars, or through the UK pound
+
+00:11:43.780 --> 00:11:47.440 align:middle line:84%
+because in the UK bond and
+the bond, I'm going to get 10%
+
+00:11:47.440 --> 00:11:50.570 align:middle line:84%
+and then lose 5%
+because of the currency.
+
+00:11:50.570 --> 00:11:52.990 align:middle line:84%
+Or I can do the
+comparison in pounds
+
+00:11:52.990 --> 00:11:57.140 align:middle line:84%
+and then I say, well, I'm going
+to get 10% in pounds directly.
+
+00:11:57.140 --> 00:11:59.860 align:middle line:84%
+And if I go the US way,
+I'm going to get 5%,
+
+00:11:59.860 --> 00:12:02.680 align:middle line:84%
+but I'm going to get also 5%
+in the currency appreciation.
+
+00:12:02.680 --> 00:12:05.260 align:middle line:90%
+And that gives me 10%.
+
+00:12:05.260 --> 00:12:06.250 align:middle line:90%
+Key concept.
+
+00:12:06.250 --> 00:12:08.770 align:middle line:84%
+Anyways, so these
+are the two senses
+
+00:12:08.770 --> 00:12:12.430 align:middle line:84%
+of opening that we can have,
+opening in goods market,
+
+00:12:12.430 --> 00:12:14.500 align:middle line:90%
+opening in financial markets.
+
+00:12:14.500 --> 00:12:18.040 align:middle line:84%
+And the key relative
+prices and things
+
+00:12:18.040 --> 00:12:22.240 align:middle line:84%
+that are going to
+equilibrate both markets.
+
+00:12:22.240 --> 00:12:24.670 align:middle line:84%
+And one is the real exchange
+rate in the goods market,
+
+00:12:24.670 --> 00:12:29.130 align:middle line:84%
+and this one is the uncovered
+interest parity condition.
+
+00:12:29.130 --> 00:12:33.590 align:middle line:84%
+I want to shut down this part
+of openness for a lecture or so,
+
+00:12:33.590 --> 00:12:38.190 align:middle line:84%
+and I'm going to focus now on
+the goods market opening only.
+
+00:12:38.190 --> 00:12:39.980 align:middle line:84%
+And then I'm going
+to come back to this.
+
+00:12:39.980 --> 00:12:44.450 align:middle line:84%
+But I just wanted to show you
+the two senses of opening.
+
+00:12:44.450 --> 00:12:49.070 align:middle line:84%
+So now let's forget a little
+bit about financial opening
+
+00:12:49.070 --> 00:12:53.600 align:middle line:84%
+and let's just focus
+on opening the goods
+
+00:12:53.600 --> 00:12:55.800 align:middle line:90%
+markets to international trade.
+
+00:12:55.800 --> 00:12:58.040 align:middle line:84%
+So that means we're
+going to have now imports
+
+00:12:58.040 --> 00:12:59.670 align:middle line:90%
+and exports floating around.
+
+00:12:59.670 --> 00:13:04.355 align:middle line:84%
+So this is, we'll go back
+again to our IS-LM model to--
+
+00:13:04.355 --> 00:13:06.230 align:middle line:84%
+actually, we're going
+to go back to our goods
+
+00:13:06.230 --> 00:13:08.360 align:middle line:84%
+market only model, the
+very first model we
+
+00:13:08.360 --> 00:13:09.450 align:middle line:90%
+saw in this course.
+
+00:13:09.450 --> 00:13:11.930 align:middle line:84%
+But we're going to bring
+back a couple of terms
+
+00:13:11.930 --> 00:13:15.420 align:middle line:90%
+that we shut down there.
+
+00:13:15.420 --> 00:13:17.702 align:middle line:84%
+Now something that will
+be-- that we didn't
+
+00:13:17.702 --> 00:13:19.160 align:middle line:84%
+need to worry about,
+but what we're
+
+00:13:19.160 --> 00:13:21.980 align:middle line:84%
+going to have to worry
+about here a lot,
+
+00:13:21.980 --> 00:13:24.080 align:middle line:84%
+is that there is a
+distinction between the demand
+
+00:13:24.080 --> 00:13:29.940 align:middle line:84%
+for domestic goods and the
+domestic demand for goods.
+
+00:13:29.940 --> 00:13:31.200 align:middle line:90%
+This can be tricky.
+
+00:13:31.200 --> 00:13:34.020 align:middle line:84%
+But there is a
+difference between demand
+
+00:13:34.020 --> 00:13:38.340 align:middle line:84%
+for domestic goods versus the
+domestic demand for goods.
+
+00:13:38.340 --> 00:13:43.210 align:middle line:84%
+This is what residents say, US
+residents, households firms,
+
+00:13:43.210 --> 00:13:46.780 align:middle line:84%
+government demand
+in terms of goods.
+
+00:13:46.780 --> 00:13:50.800 align:middle line:84%
+This is how those same agents,
+plus the rest of the world,
+
+00:13:50.800 --> 00:13:53.590 align:middle line:84%
+demand of
+domestically-produced goods.
+
+00:13:53.590 --> 00:13:54.880 align:middle line:90%
+That's the distinction.
+
+00:13:54.880 --> 00:13:57.070 align:middle line:84%
+When the economy was
+closed, they were the same,
+
+00:13:57.070 --> 00:13:59.280 align:middle line:90%
+but now they're not.
+
+00:13:59.280 --> 00:14:05.100 align:middle line:84%
+So the domestic demand
+remains the same as before.
+
+00:14:05.100 --> 00:14:07.800 align:middle line:84%
+Domestic demand is whatever
+the households demand--
+
+00:14:07.800 --> 00:14:08.970 align:middle line:90%
+consumption--
+
+00:14:08.970 --> 00:14:14.110 align:middle line:84%
+plus firms investment, plus
+government expenditure.
+
+00:14:14.110 --> 00:14:17.630 align:middle line:84%
+That's the same we
+had in closed economy.
+
+00:14:17.630 --> 00:14:18.490 align:middle line:90%
+This hasn't changed.
+
+00:14:18.490 --> 00:14:19.960 align:middle line:90%
+The domestic demand is the same.
+
+00:14:19.960 --> 00:14:22.560 align:middle line:84%
+It's a function of the
+same behavioral functions
+
+00:14:22.560 --> 00:14:23.917 align:middle line:90%
+that we had there.
+
+00:14:23.917 --> 00:14:26.250 align:middle line:84%
+And the only behavioral
+function that was-- the only two
+
+00:14:26.250 --> 00:14:29.130 align:middle line:84%
+that we had was the consumption
+function and the investment
+
+00:14:29.130 --> 00:14:29.958 align:middle line:90%
+function, remember?
+
+00:14:29.958 --> 00:14:31.000 align:middle line:90%
+So that remains the same.
+
+00:14:31.000 --> 00:14:32.160 align:middle line:90%
+Nothing has changed.
+
+00:14:32.160 --> 00:14:36.000 align:middle line:84%
+What does change is that
+this is no longer what
+
+00:14:36.000 --> 00:14:39.090 align:middle line:84%
+determines the demand for
+domestically-produced goods.
+
+00:14:39.090 --> 00:14:41.370 align:middle line:84%
+And remember, that's very
+key in the short run,
+
+00:14:41.370 --> 00:14:45.250 align:middle line:84%
+because this is a Keynesian
+model with very sticky prices.
+
+00:14:45.250 --> 00:14:47.310 align:middle line:84%
+Demand determines
+output activity.
+
+00:14:47.310 --> 00:14:51.060 align:middle line:84%
+So if we're going to determine
+domestic production from demand,
+
+00:14:51.060 --> 00:14:53.670 align:middle line:84%
+we better be very
+careful about what
+
+00:14:53.670 --> 00:14:56.330 align:middle line:84%
+is the demand for
+domestically-produced goods.
+
+00:14:56.330 --> 00:14:59.030 align:middle line:84%
+This is demand for both
+domestically-produced goods
+
+00:14:59.030 --> 00:15:00.470 align:middle line:90%
+and foreign-produced goods.
+
+00:15:00.470 --> 00:15:03.320 align:middle line:84%
+Some of those demands will
+be satisfied by imports.
+
+00:15:03.320 --> 00:15:05.120 align:middle line:84%
+That's not demand for
+domestic production,
+
+00:15:05.120 --> 00:15:08.450 align:middle line:84%
+and therefore we will not be
+determining equilibrium output
+
+00:15:08.450 --> 00:15:09.670 align:middle line:90%
+domestically.
+
+00:15:09.670 --> 00:15:12.500 align:middle line:84%
+So this is going to be
+a new concept, which
+
+00:15:12.500 --> 00:15:14.970 align:middle line:90%
+is demand for domestic goods.
+
+00:15:14.970 --> 00:15:18.350 align:middle line:84%
+And demand for domestic
+goods is the same as demand--
+
+00:15:18.350 --> 00:15:21.170 align:middle line:84%
+as domestic demand
+for goods that--
+
+00:15:21.170 --> 00:15:23.000 align:middle line:84%
+the thing we have in
+a closed economy--
+
+00:15:23.000 --> 00:15:26.370 align:middle line:84%
+minus that part of demand
+that is satisfied by imports.
+
+00:15:26.370 --> 00:15:29.030 align:middle line:84%
+So minus imports and
+divided by the exchange rate
+
+00:15:29.030 --> 00:15:30.890 align:middle line:84%
+because imports may
+be priced in euros,
+
+00:15:30.890 --> 00:15:33.060 align:middle line:84%
+say, and I have to
+convert them into dollars.
+
+00:15:33.060 --> 00:15:33.410 align:middle line:90%
+That's the reason.
+
+00:15:33.410 --> 00:15:34.470 align:middle line:90%
+It's very, very changing.
+
+00:15:34.470 --> 00:15:36.140 align:middle line:84%
+But don't worry
+about this for now.
+
+00:15:36.140 --> 00:15:41.420 align:middle line:84%
+So I have to subtract
+from that imports.
+
+00:15:41.420 --> 00:15:46.610 align:middle line:84%
+Because that's demand by
+residents, US residents.
+
+00:15:46.610 --> 00:15:50.840 align:middle line:84%
+That doesn't go to demand for
+domestically-produced goods.
+
+00:15:50.840 --> 00:15:53.220 align:middle line:90%
+Is demand for BMW, whatever.
+
+00:15:53.220 --> 00:15:57.320 align:middle line:84%
+So that's not going to affect
+the demand for Ford cars
+
+00:15:57.320 --> 00:16:01.190 align:middle line:84%
+and therefore, will not affect
+the production of Ford cars
+
+00:16:01.190 --> 00:16:03.530 align:middle line:84%
+because it's not
+demand for that.
+
+00:16:03.530 --> 00:16:07.942 align:middle line:84%
+But against that, we
+also have a component
+
+00:16:07.942 --> 00:16:09.650 align:middle line:84%
+of demand for
+domestically-produced goods
+
+00:16:09.650 --> 00:16:11.750 align:middle line:84%
+that we didn't have
+before, which is what
+
+00:16:11.750 --> 00:16:15.950 align:middle line:90%
+foreigners demand from the US.
+
+00:16:15.950 --> 00:16:19.130 align:middle line:84%
+Part of the demand that US
+would-- probably not Ford a lot,
+
+00:16:19.130 --> 00:16:20.450 align:middle line:90%
+at least.
+
+00:16:20.450 --> 00:16:25.790 align:middle line:84%
+Part of the demand that
+US goods perceived--
+
+00:16:25.790 --> 00:16:29.510 align:middle line:84%
+US production perceived--
+is not due to residents,
+
+00:16:29.510 --> 00:16:34.050 align:middle line:84%
+it's due to foreigners that
+are importing US goods.
+
+00:16:34.050 --> 00:16:38.750 align:middle line:84%
+Apple sells a lot of phones
+to the rest of the world.
+
+00:16:38.750 --> 00:16:40.730 align:middle line:84%
+That's determined
+by foreign demand
+
+00:16:40.730 --> 00:16:42.300 align:middle line:90%
+for domestically-produced goods.
+
+00:16:42.300 --> 00:16:44.125 align:middle line:90%
+That's what I call X, exports.
+
+00:16:44.125 --> 00:16:47.180 align:middle line:90%
+
+
+00:16:47.180 --> 00:16:49.680 align:middle line:84%
+So this is our new
+key concept here,
+
+00:16:49.680 --> 00:16:53.690 align:middle line:84%
+Z. We're just the same
+as we used to have.
+
+00:16:53.690 --> 00:16:57.210 align:middle line:84%
+But now we need to
+understand two more terms--
+
+00:16:57.210 --> 00:17:01.660 align:middle line:84%
+the export, and that's going to
+be a function, and the imports,
+
+00:17:01.660 --> 00:17:03.610 align:middle line:90%
+which also will be a function.
+
+00:17:03.610 --> 00:17:05.730 align:middle line:90%
+So let me introduce that.
+
+00:17:05.730 --> 00:17:09.310 align:middle line:84%
+So exports, we're going to
+assume to simplify things,
+
+00:17:09.310 --> 00:17:12.460 align:middle line:84%
+but it's a sensible
+behavioral assumption.
+
+00:17:12.460 --> 00:17:14.700 align:middle line:84%
+We're going to assume
+that exports are
+
+00:17:14.700 --> 00:17:16.859 align:middle line:90%
+increasing in foreign output.
+
+00:17:16.859 --> 00:17:19.910 align:middle line:90%
+That's what Y star means.
+
+00:17:19.910 --> 00:17:21.480 align:middle line:90%
+And it makes sense.
+
+00:17:21.480 --> 00:17:22.680 align:middle line:90%
+It's the rest of the world.
+
+00:17:22.680 --> 00:17:26.460 align:middle line:84%
+I mean, emerging market, the
+commodity-producing economies
+
+00:17:26.460 --> 00:17:30.960 align:middle line:84%
+today are very excited
+about the recovery in China.
+
+00:17:30.960 --> 00:17:35.020 align:middle line:84%
+China is reopening so it's
+a big boom domestically.
+
+00:17:35.020 --> 00:17:37.320 align:middle line:84%
+That's great news for the
+emerging markets, commodity
+
+00:17:37.320 --> 00:17:40.860 align:middle line:84%
+producers, because that will
+increase the demand from China
+
+00:17:40.860 --> 00:17:42.930 align:middle line:84%
+for goods produced
+around the world,
+
+00:17:42.930 --> 00:17:45.570 align:middle line:84%
+in particular in
+commodity-producing economies.
+
+00:17:45.570 --> 00:17:48.120 align:middle line:84%
+So that's what
+this is capturing.
+
+00:17:48.120 --> 00:17:51.450 align:middle line:84%
+It's an important trading
+partners' output goes up,
+
+00:17:51.450 --> 00:17:53.370 align:middle line:84%
+income goes up,
+then they're going
+
+00:17:53.370 --> 00:17:55.650 align:middle line:84%
+to consume everything,
+their domestic goods,
+
+00:17:55.650 --> 00:17:58.110 align:middle line:84%
+but they also going to
+consume the goods they import,
+
+00:17:58.110 --> 00:17:59.820 align:middle line:90%
+which are our exports.
+
+00:17:59.820 --> 00:18:04.130 align:middle line:84%
+So that's the reason
+this is increasing.
+
+00:18:04.130 --> 00:18:08.860 align:middle line:84%
+Exports are decreasing on
+the real exchange rate.
+
+00:18:08.860 --> 00:18:10.400 align:middle line:90%
+That's a sensible assumption.
+
+00:18:10.400 --> 00:18:12.700 align:middle line:84%
+Why do you think it's
+a sensible assumption?
+
+00:18:12.700 --> 00:18:15.420 align:middle line:84%
+So why do you think
+that exports--
+
+00:18:15.420 --> 00:18:21.480 align:middle line:84%
+US exports-- are decreasing
+on the real exchange rate?
+
+00:18:21.480 --> 00:18:22.540 align:middle line:90%
+[INAUDIBLE]?
+
+00:18:22.540 --> 00:18:25.970 align:middle line:90%
+
+
+00:18:25.970 --> 00:18:29.465 align:middle line:84%
+AUDIENCE: Major [INAUDIBLE]
+for foreign customers to buy?
+
+00:18:29.465 --> 00:18:30.590 align:middle line:90%
+RICARDO CABALIERO: Exactly.
+
+00:18:30.590 --> 00:18:33.080 align:middle line:84%
+Because then US goods
+become more expensive
+
+00:18:33.080 --> 00:18:34.553 align:middle line:90%
+relative to foreign goods.
+
+00:18:34.553 --> 00:18:36.720 align:middle line:84%
+That's where the real
+exchange rate appreciation is.
+
+00:18:36.720 --> 00:18:41.030 align:middle line:84%
+And therefore there is less
+demand for domestically, for US
+
+00:18:41.030 --> 00:18:41.550 align:middle line:90%
+goods.
+
+00:18:41.550 --> 00:18:44.610 align:middle line:90%
+That's the reason we have that.
+
+00:18:44.610 --> 00:18:46.410 align:middle line:90%
+What about imports?
+
+00:18:46.410 --> 00:18:50.040 align:middle line:84%
+Well, imports are
+the dual of that,
+
+00:18:50.040 --> 00:18:52.170 align:middle line:90%
+meaning of the export function.
+
+00:18:52.170 --> 00:18:56.760 align:middle line:84%
+Is actually, our imports
+is what the other countries
+
+00:18:56.760 --> 00:18:58.470 align:middle line:90%
+sees as their export.
+
+00:18:58.470 --> 00:19:03.900 align:middle line:84%
+So our imports will tend to go
+up when domestic output goes up,
+
+00:19:03.900 --> 00:19:06.630 align:middle line:84%
+because if domestic
+income goes up,
+
+00:19:06.630 --> 00:19:11.400 align:middle line:84%
+domestic consumers will both
+consume more goods at home,
+
+00:19:11.400 --> 00:19:14.580 align:middle line:84%
+but they will also
+consume more goods abroad.
+
+00:19:14.580 --> 00:19:16.710 align:middle line:84%
+They're going to scale
+up their consumption
+
+00:19:16.710 --> 00:19:19.720 align:middle line:84%
+and they're going to
+consume from both places.
+
+00:19:19.720 --> 00:19:26.030 align:middle line:84%
+So imports is an increasing
+function of domestic output.
+
+00:19:26.030 --> 00:19:28.670 align:middle line:84%
+What about the real
+exchange rate here?
+
+00:19:28.670 --> 00:19:35.410 align:middle line:84%
+Well, imports are an increasing
+function of the real exchange
+
+00:19:35.410 --> 00:19:35.910 align:middle line:90%
+rate.
+
+00:19:35.910 --> 00:19:36.535 align:middle line:90%
+Why is that?
+
+00:19:36.535 --> 00:19:41.953 align:middle line:90%
+
+
+00:19:41.953 --> 00:19:43.370 align:middle line:84%
+It's the same
+argument of exports,
+
+00:19:43.370 --> 00:19:44.578 align:middle line:90%
+but seen from the other side.
+
+00:19:44.578 --> 00:19:50.440 align:middle line:90%
+
+
+00:19:50.440 --> 00:19:54.380 align:middle line:84%
+Remember when-- why do we use
+this epsilon for to decide where
+
+00:19:54.380 --> 00:19:56.120 align:middle line:90%
+do we want to buy our goods?
+
+00:19:56.120 --> 00:20:01.480 align:middle line:84%
+If epsilon goes up, it means
+our goods become more expensive.
+
+00:20:01.480 --> 00:20:04.750 align:middle line:84%
+If our goods become more
+expensive for any given
+
+00:20:04.750 --> 00:20:07.660 align:middle line:84%
+level of domestic
+consumption, where do you
+
+00:20:07.660 --> 00:20:09.890 align:middle line:90%
+think you'll buy your goods?
+
+00:20:09.890 --> 00:20:13.280 align:middle line:84%
+You'll buy more abroad,
+because they're cheaper.
+
+00:20:13.280 --> 00:20:16.250 align:middle line:84%
+So then that's an increasing
+function of epsilon.
+
+00:20:16.250 --> 00:20:18.270 align:middle line:90%
+Good.
+
+00:20:18.270 --> 00:20:19.280 align:middle line:90%
+Any question about that?
+
+00:20:19.280 --> 00:20:21.322 align:middle line:84%
+Because these are the only
+sort of new behavioral
+
+00:20:21.322 --> 00:20:25.650 align:middle line:84%
+equations that we're going
+to have for this model.
+
+00:20:25.650 --> 00:20:26.150 align:middle line:90%
+No?
+
+00:20:26.150 --> 00:20:28.460 align:middle line:84%
+And what I'm going
+to do next is I'm
+
+00:20:28.460 --> 00:20:32.390 align:middle line:84%
+going to start from the same
+model we had in, I don't know,
+
+00:20:32.390 --> 00:20:35.060 align:middle line:90%
+lecture 2 or 3.
+
+00:20:35.060 --> 00:20:40.405 align:middle line:84%
+And I'm going to add these
+terms and see how things change.
+
+00:20:40.405 --> 00:20:43.130 align:middle line:90%
+
+
+00:20:43.130 --> 00:20:43.790 align:middle line:90%
+Good?
+
+00:20:43.790 --> 00:20:44.840 align:middle line:90%
+Good.
+
+00:20:44.840 --> 00:20:47.090 align:middle line:90%
+So let's do that.
+
+00:20:47.090 --> 00:20:53.870 align:middle line:84%
+So remember, I think the
+first curve that we--
+
+00:20:53.870 --> 00:20:58.460 align:middle line:84%
+the very first diagram we had
+in this class was this one.
+
+00:20:58.460 --> 00:21:04.370 align:middle line:84%
+This was just a demand for
+domestic demand, sorry,
+
+00:21:04.370 --> 00:21:08.570 align:middle line:84%
+which was just C plus I plus G.
+It's an increasing function here
+
+00:21:08.570 --> 00:21:11.420 align:middle line:84%
+because consumption
+and investment are
+
+00:21:11.420 --> 00:21:13.400 align:middle line:90%
+increasing function of output.
+
+00:21:13.400 --> 00:21:17.840 align:middle line:84%
+And then in closed economy, what
+we did is we had a 45-degree
+
+00:21:17.840 --> 00:21:20.000 align:middle line:84%
+line here and we
+said in equilibrium,
+
+00:21:20.000 --> 00:21:21.330 align:middle line:90%
+output equal to demand.
+
+00:21:21.330 --> 00:21:25.430 align:middle line:84%
+And therefore, the intersection
+of this curve with the 45-degree
+
+00:21:25.430 --> 00:21:27.630 align:middle line:84%
+line gave us our
+equilibrium output.
+
+00:21:27.630 --> 00:21:28.880 align:middle line:90%
+That's what we had.
+
+00:21:28.880 --> 00:21:30.860 align:middle line:84%
+We need to change
+things a little bit.
+
+00:21:30.860 --> 00:21:34.800 align:middle line:84%
+We're going to put the 45-degree
+line in the next slide.
+
+00:21:34.800 --> 00:21:37.220 align:middle line:90%
+But we first need to--
+
+00:21:37.220 --> 00:21:40.620 align:middle line:84%
+this is not the relevant demand
+for domestically-produced goods.
+
+00:21:40.620 --> 00:21:43.940 align:middle line:84%
+So we need to go from
+here to the demand that
+
+00:21:43.940 --> 00:21:46.310 align:middle line:84%
+is relevant for
+domestic producers.
+
+00:21:46.310 --> 00:21:51.080 align:middle line:84%
+So the first thing we need to do
+is we need to subtract imports.
+
+00:21:51.080 --> 00:21:55.220 align:middle line:84%
+Because part of that demand
+will go for foreign goods.
+
+00:21:55.220 --> 00:21:59.120 align:middle line:84%
+And so that's what
+I'm doing here.
+
+00:21:59.120 --> 00:22:02.360 align:middle line:84%
+To this domestic
+demand, I'm subtracting,
+
+00:22:02.360 --> 00:22:06.770 align:middle line:84%
+the part that is going
+to foreign goods,
+
+00:22:06.770 --> 00:22:08.600 align:middle line:84%
+not domestic goods,
+because this is not
+
+00:22:08.600 --> 00:22:10.730 align:middle line:84%
+demand for
+domestically-produced goods.
+
+00:22:10.730 --> 00:22:13.070 align:middle line:84%
+So obviously, this
+is a shift down,
+
+00:22:13.070 --> 00:22:14.520 align:middle line:90%
+but there is also a rotation.
+
+00:22:14.520 --> 00:22:16.350 align:middle line:90%
+Why is that?
+
+00:22:16.350 --> 00:22:17.160 align:middle line:90%
+You see?
+
+00:22:17.160 --> 00:22:20.190 align:middle line:84%
+Obviously, we're subtracting
+imports from domestic demand,
+
+00:22:20.190 --> 00:22:23.080 align:middle line:90%
+so that moves us down here.
+
+00:22:23.080 --> 00:22:26.310 align:middle line:84%
+But it also is not
+a parallel shift.
+
+00:22:26.310 --> 00:22:27.665 align:middle line:90%
+This curve becomes flatter.
+
+00:22:27.665 --> 00:22:30.350 align:middle line:90%
+
+
+00:22:30.350 --> 00:22:31.520 align:middle line:90%
+Why is that?
+
+00:22:31.520 --> 00:22:34.850 align:middle line:84%
+In other words, the decline
+is larger for the difference.
+
+00:22:34.850 --> 00:22:37.430 align:middle line:84%
+The gap is larger for
+high levels of income
+
+00:22:37.430 --> 00:22:39.740 align:middle line:84%
+than for low levels
+of income, or output.
+
+00:22:39.740 --> 00:22:40.910 align:middle line:90%
+Why is that?
+
+00:22:40.910 --> 00:22:43.685 align:middle line:84%
+AUDIENCE: [INAUDIBLE]
+dependent on output?
+
+00:22:43.685 --> 00:22:44.810 align:middle line:90%
+RICARDO CABALIERO: Exactly.
+
+00:22:44.810 --> 00:22:48.560 align:middle line:84%
+It's because there is a positive
+marginal propensity to import.
+
+00:22:48.560 --> 00:22:52.440 align:middle line:84%
+And so you'll import more
+if the output is higher.
+
+00:22:52.440 --> 00:22:55.230 align:middle line:84%
+And that's the reason
+we have this curve.
+
+00:22:55.230 --> 00:22:58.190 align:middle line:84%
+Notice that this
+also means, well,
+
+00:22:58.190 --> 00:23:01.498 align:middle line:84%
+let me get to the end of
+that and of these diagrams
+
+00:23:01.498 --> 00:23:02.790 align:middle line:90%
+and then I'll get back to this.
+
+00:23:02.790 --> 00:23:04.520 align:middle line:90%
+So one step more.
+
+00:23:04.520 --> 00:23:08.840 align:middle line:84%
+Still, this is not what I need
+to integrate with my 45-degree
+
+00:23:08.840 --> 00:23:11.960 align:middle line:84%
+line because this is not the
+demand that domestic producers
+
+00:23:11.960 --> 00:23:12.530 align:middle line:90%
+will face.
+
+00:23:12.530 --> 00:23:17.120 align:middle line:84%
+We still have to add the demand
+that comes from foreigners,
+
+00:23:17.120 --> 00:23:19.130 align:middle line:90%
+and that's exports.
+
+00:23:19.130 --> 00:23:23.930 align:middle line:84%
+So to this AA function,
+I have to add exports.
+
+00:23:23.930 --> 00:23:26.390 align:middle line:84%
+And exports is a parallel
+shift because it didn't
+
+00:23:26.390 --> 00:23:27.870 align:middle line:90%
+depend on domestic output.
+
+00:23:27.870 --> 00:23:29.380 align:middle line:90%
+It depends on foreign output.
+
+00:23:29.380 --> 00:23:32.010 align:middle line:84%
+So foreign output is going to
+be a parameter in this curve,
+
+00:23:32.010 --> 00:23:33.210 align:middle line:90%
+but it's not--
+
+00:23:33.210 --> 00:23:35.720 align:middle line:84%
+it doesn't change the
+slope of that curve.
+
+00:23:35.720 --> 00:23:39.830 align:middle line:84%
+So here we went
+from the DD curve
+
+00:23:39.830 --> 00:23:42.260 align:middle line:84%
+to the new curve, which is
+the relevant for equilibrium
+
+00:23:42.260 --> 00:23:46.360 align:middle line:84%
+domestic equilibrium output,
+which is this ZZ curve.
+
+00:23:46.360 --> 00:23:46.860 align:middle line:90%
+OK?
+
+00:23:46.860 --> 00:23:49.460 align:middle line:90%
+
+
+00:23:49.460 --> 00:23:53.710 align:middle line:84%
+Now notice two things, or
+one thing about this ZZ curve
+
+00:23:53.710 --> 00:23:55.590 align:middle line:90%
+relative to DD.
+
+00:23:55.590 --> 00:23:58.843 align:middle line:84%
+What is the most
+obvious difference
+
+00:23:58.843 --> 00:23:59.885 align:middle line:90%
+between these two curves?
+
+00:23:59.885 --> 00:24:04.310 align:middle line:90%
+
+
+00:24:04.310 --> 00:24:09.090 align:middle line:84%
+No, this is the one we use in
+lecture 2 or 3, I don't know.
+
+00:24:09.090 --> 00:24:11.120 align:middle line:84%
+And then what we did
+yesterday and all that.
+
+00:24:11.120 --> 00:24:13.320 align:middle line:84%
+And this is the one we're
+going to use now, the ZZ.
+
+00:24:13.320 --> 00:24:16.400 align:middle line:90%
+
+
+00:24:16.400 --> 00:24:17.630 align:middle line:90%
+It's flatter.
+
+00:24:17.630 --> 00:24:18.745 align:middle line:90%
+Yeah, why is that?
+
+00:24:18.745 --> 00:24:21.320 align:middle line:90%
+
+
+00:24:21.320 --> 00:24:22.730 align:middle line:90%
+Flatter is low.
+
+00:24:22.730 --> 00:24:26.180 align:middle line:84%
+Slope will mean
+lower multiplier.
+
+00:24:26.180 --> 00:24:29.170 align:middle line:84%
+Why is the multiplier lower
+then, in open economy?
+
+00:24:29.170 --> 00:24:31.670 align:middle line:84%
+AUDIENCE: Because part of the
+demand falls on foreign goods.
+
+00:24:31.670 --> 00:24:32.795 align:middle line:90%
+RICARDO CABALIERO: Exactly.
+
+00:24:32.795 --> 00:24:36.050 align:middle line:84%
+Because part of the-- remember
+the way we got to the multiplier
+
+00:24:36.050 --> 00:24:38.360 align:middle line:84%
+is that income went
+up, consumption
+
+00:24:38.360 --> 00:24:42.358 align:middle line:84%
+went up, that increased income
+again and so on and so forth.
+
+00:24:42.358 --> 00:24:44.150 align:middle line:84%
+But if part of that
+increase in consumption
+
+00:24:44.150 --> 00:24:45.860 align:middle line:84%
+is going to foreign
+goods, that's
+
+00:24:45.860 --> 00:24:48.560 align:middle line:84%
+not reflected in demand for
+domestically-produced goods,
+
+00:24:48.560 --> 00:24:51.030 align:middle line:84%
+and therefore there is
+less of a multiplier.
+
+00:24:51.030 --> 00:24:54.200 align:middle line:84%
+And that's one characteristic
+of an open economy,
+
+00:24:54.200 --> 00:24:57.980 align:middle line:84%
+is that the multipliers
+are smaller.
+
+00:24:57.980 --> 00:24:59.690 align:middle line:90%
+The other distinction is that--
+
+00:24:59.690 --> 00:25:03.090 align:middle line:84%
+you don't see it here, but
+we have more parameters.
+
+00:25:03.090 --> 00:25:06.200 align:middle line:84%
+In particular, a very
+important parameter
+
+00:25:06.200 --> 00:25:08.750 align:middle line:90%
+here is Y star, Y star.
+
+00:25:08.750 --> 00:25:12.320 align:middle line:84%
+We didn't worry about what
+was the income in Germany When
+
+00:25:12.320 --> 00:25:15.000 align:middle line:84%
+we look at the IS-LM,
+the closed economy model.
+
+00:25:15.000 --> 00:25:18.440 align:middle line:84%
+Now we worry about what the
+income of our main trading
+
+00:25:18.440 --> 00:25:20.710 align:middle line:90%
+partners is.
+
+00:25:20.710 --> 00:25:22.540 align:middle line:84%
+There is an extra
+parameter there.
+
+00:25:22.540 --> 00:25:24.730 align:middle line:90%
+OK, good.
+
+00:25:24.730 --> 00:25:26.860 align:middle line:84%
+Now we still haven't
+found equilibrium output,
+
+00:25:26.860 --> 00:25:29.860 align:middle line:84%
+but there is a point that
+is already interesting here,
+
+00:25:29.860 --> 00:25:33.400 align:middle line:90%
+which is this one.
+
+00:25:33.400 --> 00:25:35.030 align:middle line:90%
+What do I know of this point?
+
+00:25:35.030 --> 00:25:38.220 align:middle line:84%
+Well, in this point,
+domestic demand for goods
+
+00:25:38.220 --> 00:25:41.130 align:middle line:84%
+is the same as the demand for
+domestically-produced goods,
+
+00:25:41.130 --> 00:25:42.720 align:middle line:90%
+for domestic goods.
+
+00:25:42.720 --> 00:25:46.980 align:middle line:84%
+And that also means that
+the trade balance is zero,
+
+00:25:46.980 --> 00:25:51.820 align:middle line:84%
+meaning at that point, exports
+is exactly equal to imports.
+
+00:25:51.820 --> 00:25:54.240 align:middle line:90%
+So net exports are equal to 0.
+
+00:25:54.240 --> 00:25:57.270 align:middle line:84%
+OK, so that's what I'm
+plotting here, actually.
+
+00:25:57.270 --> 00:25:59.290 align:middle line:90%
+This is the net export function.
+
+00:25:59.290 --> 00:26:04.690 align:middle line:84%
+The net export
+function is simply
+
+00:26:04.690 --> 00:26:09.070 align:middle line:84%
+that minus that divided
+by the exchange rate.
+
+00:26:09.070 --> 00:26:10.480 align:middle line:84%
+So that's what
+I'm plotting here.
+
+00:26:10.480 --> 00:26:13.630 align:middle line:84%
+Is a decreasing
+function of output.
+
+00:26:13.630 --> 00:26:14.135 align:middle line:90%
+Why is that?
+
+00:26:14.135 --> 00:26:16.850 align:middle line:90%
+
+
+00:26:16.850 --> 00:26:20.740 align:middle line:84%
+Why is this decreasing
+in domestic output?
+
+00:26:20.740 --> 00:26:23.290 align:middle line:84%
+Remember, this is
+export minus import
+
+00:26:23.290 --> 00:26:25.510 align:middle line:90%
+divided by the exchange rate.
+
+00:26:25.510 --> 00:26:29.900 align:middle line:84%
+But we're not moving the
+exchange rate for now.
+
+00:26:29.900 --> 00:26:31.310 align:middle line:90%
+Why is this decreasing?
+
+00:26:31.310 --> 00:26:34.520 align:middle line:84%
+That means here,
+exports exceed imports,
+
+00:26:34.520 --> 00:26:37.290 align:middle line:90%
+here, imports exceed exports.
+
+00:26:37.290 --> 00:26:38.820 align:middle line:84%
+So here you have
+a trade deficit.
+
+00:26:38.820 --> 00:26:40.130 align:middle line:90%
+Here you have a trade surplus.
+
+00:26:40.130 --> 00:26:41.630 align:middle line:90%
+Why is that?
+
+00:26:41.630 --> 00:26:43.520 align:middle line:90%
+Why is that the shape?
+
+00:26:43.520 --> 00:26:44.730 align:middle line:90%
+Why is it downward sloping?
+
+00:26:44.730 --> 00:26:53.200 align:middle line:90%
+
+
+00:26:53.200 --> 00:26:55.855 align:middle line:84%
+AUDIENCE: Because import grows
+when outgrossed by exports.
+
+00:26:55.855 --> 00:26:56.980 align:middle line:90%
+RICARDO CABALIERO: Exactly.
+
+00:26:56.980 --> 00:26:59.210 align:middle line:84%
+Exports is not a function
+of domestic output.
+
+00:26:59.210 --> 00:27:01.420 align:middle line:84%
+It's a function
+of foreign output,
+
+00:27:01.420 --> 00:27:06.010 align:middle line:84%
+while imports is an increasing
+function of domestic output,
+
+00:27:06.010 --> 00:27:09.200 align:middle line:84%
+and net export is
+exports minus imports.
+
+00:27:09.200 --> 00:27:11.090 align:middle line:84%
+OK, so that's why
+this is decreasing.
+
+00:27:11.090 --> 00:27:13.270 align:middle line:84%
+And this point here
+happens to be when the two
+
+00:27:13.270 --> 00:27:16.030 align:middle line:90%
+things are exactly balanced.
+
+00:27:16.030 --> 00:27:20.330 align:middle line:84%
+Thus, trade balance happens
+to be the point where
+
+00:27:20.330 --> 00:27:21.988 align:middle line:90%
+DD is equal to ZZ.
+
+00:27:21.988 --> 00:27:24.530 align:middle line:84%
+That's just-- there's no reason
+why equilibrium output should
+
+00:27:24.530 --> 00:27:25.820 align:middle line:90%
+be at that level, I'm saying.
+
+00:27:25.820 --> 00:27:27.620 align:middle line:84%
+That's the point
+where that happens.
+
+00:27:27.620 --> 00:27:30.530 align:middle line:84%
+OK, now we're going to find
+the equilibrium output.
+
+00:27:30.530 --> 00:27:32.840 align:middle line:84%
+And to find
+equilibrium output, I'm
+
+00:27:32.840 --> 00:27:35.340 align:middle line:84%
+going to erase all
+these extra curves here.
+
+00:27:35.340 --> 00:27:37.880 align:middle line:84%
+And I'm just going
+to keep the ZZ here,
+
+00:27:37.880 --> 00:27:41.130 align:middle line:84%
+because that's the demand for
+domestically-produced goods.
+
+00:27:41.130 --> 00:27:44.340 align:middle line:84%
+And I'm doing short run
+here, so I know that domestic
+
+00:27:44.340 --> 00:27:47.010 align:middle line:90%
+production-- that is the Y--
+
+00:27:47.010 --> 00:27:49.780 align:middle line:84%
+is going to be equal to the
+demand for domestic goods.
+
+00:27:49.780 --> 00:27:52.150 align:middle line:90%
+It's a demand-determined model.
+
+00:27:52.150 --> 00:27:54.310 align:middle line:84%
+That's what the short
+run is all about.
+
+00:27:54.310 --> 00:27:57.390 align:middle line:84%
+So erase all these
+curves, and I'm
+
+00:27:57.390 --> 00:28:00.270 align:middle line:84%
+going to just keep
+the ZZ curve there.
+
+00:28:00.270 --> 00:28:02.470 align:middle line:90%
+There you are.
+
+00:28:02.470 --> 00:28:08.580 align:middle line:84%
+So now I have my 45-degree
+line because in the short run,
+
+00:28:08.580 --> 00:28:12.420 align:middle line:84%
+equilibrium output is
+equal to aggregate demand.
+
+00:28:12.420 --> 00:28:13.630 align:middle line:90%
+Aggregate demand for what?
+
+00:28:13.630 --> 00:28:15.100 align:middle line:90%
+For domestically produced goods.
+
+00:28:15.100 --> 00:28:17.940 align:middle line:84%
+That's the reason
+I'm using ZZ, not DD.
+
+00:28:17.940 --> 00:28:19.810 align:middle line:90%
+OK, but there you are.
+
+00:28:19.810 --> 00:28:21.940 align:middle line:84%
+Then you do exactly the
+same as we did before.
+
+00:28:21.940 --> 00:28:24.010 align:middle line:90%
+That's our equilibrium output.
+
+00:28:24.010 --> 00:28:26.272 align:middle line:84%
+And here you can do all
+sorts of experiments
+
+00:28:26.272 --> 00:28:28.230 align:middle line:84%
+and you're going to get
+the same type of things
+
+00:28:28.230 --> 00:28:29.910 align:middle line:84%
+that we did there,
+the multiplier, it's
+
+00:28:29.910 --> 00:28:31.410 align:middle line:84%
+a small multiplier,
+but you're going
+
+00:28:31.410 --> 00:28:34.980 align:middle line:84%
+to still get a multiplier
+and all these kind of things.
+
+00:28:34.980 --> 00:28:38.700 align:middle line:90%
+Now, this is just--
+
+00:28:38.700 --> 00:28:42.630 align:middle line:84%
+in this example, it happens
+that this equilibrium output,
+
+00:28:42.630 --> 00:28:45.360 align:middle line:84%
+this country has
+a trade deficit.
+
+00:28:45.360 --> 00:28:46.510 align:middle line:90%
+I just made up that.
+
+00:28:46.510 --> 00:28:50.230 align:middle line:90%
+
+
+00:28:50.230 --> 00:28:52.460 align:middle line:84%
+So this is the
+equilibrium condition
+
+00:28:52.460 --> 00:28:58.150 align:middle line:84%
+is output equal to Z, output
+equal to domestic demand
+
+00:28:58.150 --> 00:29:01.550 align:middle line:90%
+plus exports minus imports.
+
+00:29:01.550 --> 00:29:07.040 align:middle line:84%
+And then the net export is just,
+I'm plotting this term here.
+
+00:29:07.040 --> 00:29:08.610 align:middle line:90%
+That's what we have here.
+
+00:29:08.610 --> 00:29:15.630 align:middle line:84%
+But equilibrium is just Y equal
+to Z. Is not this equal to 0.
+
+00:29:15.630 --> 00:29:18.030 align:middle line:90%
+You can think about equilibrium.
+
+00:29:18.030 --> 00:29:21.520 align:middle line:84%
+But this is what it is, given
+that that's equilibrium out.
+
+00:29:21.520 --> 00:29:25.830 align:middle line:90%
+
+
+00:29:25.830 --> 00:29:26.525 align:middle line:90%
+This is clear?
+
+00:29:26.525 --> 00:29:27.900 align:middle line:84%
+I mean, this is
+the start diagram
+
+00:29:27.900 --> 00:29:29.170 align:middle line:90%
+of this part of the course.
+
+00:29:29.170 --> 00:29:30.795 align:middle line:84%
+So you need to
+understand this diagram.
+
+00:29:30.795 --> 00:29:33.540 align:middle line:90%
+
+
+00:29:33.540 --> 00:29:35.950 align:middle line:90%
+Go over it.
+
+00:29:35.950 --> 00:29:37.310 align:middle line:90%
+Play with it.
+
+00:29:37.310 --> 00:29:39.370 align:middle line:84%
+Think, what is a parameter
+in there, and so on.
+
+00:29:39.370 --> 00:29:40.870 align:middle line:84%
+I'm going to do a
+little bit of that
+
+00:29:40.870 --> 00:29:44.310 align:middle line:84%
+now, but make sure that
+you understand this.
+
+00:29:44.310 --> 00:29:48.810 align:middle line:90%
+
+
+00:29:48.810 --> 00:29:50.720 align:middle line:90%
+So there's a few things here.
+
+00:29:50.720 --> 00:29:53.380 align:middle line:84%
+So let's do things that
+we did in closed economy.
+
+00:29:53.380 --> 00:29:57.570 align:middle line:84%
+So suppose that you
+have a fiscal expansion.
+
+00:29:57.570 --> 00:30:00.810 align:middle line:84%
+So what did we do when we had
+a fiscal expansion in lecture 2
+
+00:30:00.810 --> 00:30:01.330 align:middle line:90%
+or 3?
+
+00:30:01.330 --> 00:30:03.630 align:middle line:84%
+Well, that moves
+the ZZ curve up.
+
+00:30:03.630 --> 00:30:07.600 align:middle line:84%
+Output will go up, and then
+there will be a multiplier.
+
+00:30:07.600 --> 00:30:10.890 align:middle line:84%
+So output will go up by more
+than the initial increase
+
+00:30:10.890 --> 00:30:12.800 align:middle line:90%
+in government expenditure.
+
+00:30:12.800 --> 00:30:13.970 align:middle line:90%
+No?
+
+00:30:13.970 --> 00:30:15.530 align:middle line:90%
+That's what we had before.
+
+00:30:15.530 --> 00:30:19.800 align:middle line:84%
+It will go up by more,
+but not as much as it
+
+00:30:19.800 --> 00:30:21.190 align:middle line:90%
+did in the closed economy.
+
+00:30:21.190 --> 00:30:24.420 align:middle line:84%
+So the increasing
+output will be more
+
+00:30:24.420 --> 00:30:26.490 align:middle line:84%
+than the increase in
+government expenditure,
+
+00:30:26.490 --> 00:30:29.670 align:middle line:84%
+but it will be not as much
+as it would have been had
+
+00:30:29.670 --> 00:30:32.410 align:middle line:90%
+we had a closed economy.
+
+00:30:32.410 --> 00:30:33.075 align:middle line:90%
+Why is that?
+
+00:30:33.075 --> 00:30:40.860 align:middle line:90%
+
+
+00:30:40.860 --> 00:30:44.360 align:middle line:90%
+Why is the last part true?
+
+00:30:44.360 --> 00:30:47.040 align:middle line:84%
+Why not as much as it would
+have been in the closed economy?
+
+00:30:47.040 --> 00:30:51.150 align:middle line:90%
+
+
+00:30:51.150 --> 00:30:52.830 align:middle line:90%
+Well, you can read it here.
+
+00:30:52.830 --> 00:30:55.560 align:middle line:84%
+It's because part of
+that extra energy,
+
+00:30:55.560 --> 00:30:57.820 align:middle line:84%
+the demand for consumption,
+will go to foreign goods.
+
+00:30:57.820 --> 00:31:01.800 align:middle line:84%
+So it will not come back to
+demand more domestic production.
+
+00:31:01.800 --> 00:31:05.142 align:middle line:84%
+And that's reflected
+in the trade deficit.
+
+00:31:05.142 --> 00:31:07.350 align:middle line:84%
+In this particular example,
+we start with a situation
+
+00:31:07.350 --> 00:31:10.810 align:middle line:90%
+where the trade was balanced.
+
+00:31:10.810 --> 00:31:13.170 align:middle line:84%
+We had no-- net export
+was equal to zero
+
+00:31:13.170 --> 00:31:15.920 align:middle line:84%
+and we ended up with
+a trade deficit.
+
+00:31:15.920 --> 00:31:18.500 align:middle line:84%
+That trade deficit is
+exactly the same reason
+
+00:31:18.500 --> 00:31:20.090 align:middle line:84%
+why we got a smaller
+multiplier is
+
+00:31:20.090 --> 00:31:22.250 align:middle line:84%
+because part of the
+extra demand that
+
+00:31:22.250 --> 00:31:23.720 align:middle line:84%
+came from the
+extra income that's
+
+00:31:23.720 --> 00:31:26.750 align:middle line:84%
+created by the
+additional expenditure,
+
+00:31:26.750 --> 00:31:29.960 align:middle line:84%
+by the aggregate demand effect
+of additional expenditure
+
+00:31:29.960 --> 00:31:32.110 align:middle line:84%
+went to the demand
+for foreign goods.
+
+00:31:32.110 --> 00:31:40.740 align:middle line:90%
+
+
+00:31:40.740 --> 00:31:41.990 align:middle line:90%
+Good.
+
+00:31:41.990 --> 00:31:45.480 align:middle line:84%
+So do the same things we did in
+closed economy and just practice
+
+00:31:45.480 --> 00:31:45.980 align:middle line:90%
+here.
+
+00:31:45.980 --> 00:31:50.600 align:middle line:84%
+Increase taxes, do things like
+that, increase [INAUDIBLE]
+
+00:31:50.600 --> 00:31:54.140 align:middle line:84%
+and see what happens both
+with the equilibrium output.
+
+00:31:54.140 --> 00:31:56.090 align:middle line:84%
+Qualitatively it will
+be exactly the same
+
+00:31:56.090 --> 00:31:58.670 align:middle line:84%
+as you had in closed economy,
+except that the effects are
+
+00:31:58.670 --> 00:32:00.267 align:middle line:84%
+going to be smaller,
+but you're going
+
+00:32:00.267 --> 00:32:02.600 align:middle line:84%
+to get something new, which
+is what happens to the trade
+
+00:32:02.600 --> 00:32:04.195 align:middle line:90%
+deficit as a result?
+
+00:32:04.195 --> 00:32:09.150 align:middle line:90%
+
+
+00:32:09.150 --> 00:32:11.820 align:middle line:84%
+This is a shock we couldn't
+do in the closed economy
+
+00:32:11.820 --> 00:32:15.060 align:middle line:84%
+case, which is what happens
+if foreign demand comes up?
+
+00:32:15.060 --> 00:32:17.490 align:middle line:84%
+That's what I'm
+saying, even when
+
+00:32:17.490 --> 00:32:19.230 align:middle line:84%
+it's jubilant in
+emerging market world
+
+00:32:19.230 --> 00:32:24.040 align:middle line:84%
+because China's
+output is going up.
+
+00:32:24.040 --> 00:32:26.380 align:middle line:84%
+So what are all these
+economists thinking and say,
+
+00:32:26.380 --> 00:32:29.090 align:middle line:84%
+well, China's
+output is going up.
+
+00:32:29.090 --> 00:32:32.940 align:middle line:84%
+That means they're going to
+import a lot more from us.
+
+00:32:32.940 --> 00:32:35.700 align:middle line:84%
+That is, they think
+our exports are
+
+00:32:35.700 --> 00:32:40.880 align:middle line:84%
+going to go up because Chinese
+consumption is going up.
+
+00:32:40.880 --> 00:32:48.760 align:middle line:84%
+Well, exports going up means
+that our ZZ curve moves up.
+
+00:32:48.760 --> 00:32:50.850 align:middle line:90%
+OK, so then what do you get?
+
+00:32:50.850 --> 00:32:57.550 align:middle line:84%
+Well, you get now an
+increase in exports
+
+00:32:57.550 --> 00:32:59.440 align:middle line:84%
+for any given level
+of income means
+
+00:32:59.440 --> 00:33:02.600 align:middle line:84%
+that eventually you're going to
+get higher output immediately.
+
+00:33:02.600 --> 00:33:05.660 align:middle line:84%
+But higher output also has a
+multiplier, although smaller.
+
+00:33:05.660 --> 00:33:07.330 align:middle line:84%
+But at the end of
+the day, you're
+
+00:33:07.330 --> 00:33:09.290 align:middle line:84%
+going to get higher
+equilibrium output.
+
+00:33:09.290 --> 00:33:10.142 align:middle line:90%
+So it's great news.
+
+00:33:10.142 --> 00:33:11.600 align:middle line:84%
+That's the reason
+they're so happy.
+
+00:33:11.600 --> 00:33:13.975 align:middle line:84%
+It's great news that China is
+expanding because that also
+
+00:33:13.975 --> 00:33:18.180 align:middle line:84%
+leads to an expansion in
+the rest of the world.
+
+00:33:18.180 --> 00:33:20.880 align:middle line:90%
+
+
+00:33:20.880 --> 00:33:23.460 align:middle line:90%
+That's what you get.
+
+00:33:23.460 --> 00:33:28.140 align:middle line:84%
+So in that sense, you
+know, that if China decides
+
+00:33:28.140 --> 00:33:30.270 align:middle line:84%
+to do an expansionary
+fiscal policy,
+
+00:33:30.270 --> 00:33:35.310 align:middle line:84%
+it also expands US
+output or more important,
+
+00:33:35.310 --> 00:33:37.380 align:middle line:90%
+for Chilean output.
+
+00:33:37.380 --> 00:33:38.470 align:middle line:90%
+It does that.
+
+00:33:38.470 --> 00:33:40.650 align:middle line:90%
+So it's the same--
+
+00:33:40.650 --> 00:33:42.240 align:middle line:84%
+Chile could have
+done it by having
+
+00:33:42.240 --> 00:33:45.960 align:middle line:84%
+their own fiscal policy that
+would also have expanded output.
+
+00:33:45.960 --> 00:33:48.450 align:middle line:84%
+But it's wonderful
+that China decides
+
+00:33:48.450 --> 00:33:51.000 align:middle line:84%
+to do it because that
+expands output as well,
+
+00:33:51.000 --> 00:33:52.740 align:middle line:90%
+with one advantage--
+
+00:33:52.740 --> 00:33:54.090 align:middle line:90%
+two advantages.
+
+00:33:54.090 --> 00:33:58.270 align:middle line:84%
+What is-- but there's one that
+you can see here, which is what?
+
+00:33:58.270 --> 00:34:00.600 align:middle line:84%
+Why is it that they prefer
+that China does therefore
+
+00:34:00.600 --> 00:34:02.590 align:middle line:90%
+rather than me?
+
+00:34:02.590 --> 00:34:04.215 align:middle line:90%
+What looks better here?
+
+00:34:04.215 --> 00:34:08.420 align:middle line:90%
+
+
+00:34:08.420 --> 00:34:10.170 align:middle line:84%
+Assume that they're
+of comparable size
+
+00:34:10.170 --> 00:34:14.520 align:middle line:84%
+and so on in terms of the
+impact in the top diagram.
+
+00:34:14.520 --> 00:34:17.070 align:middle line:84%
+Suppose you generate the
+same increase in output
+
+00:34:17.070 --> 00:34:21.338 align:middle line:84%
+as a result of one policy, which
+is by domestic expansion in G,
+
+00:34:21.338 --> 00:34:23.130 align:middle line:84%
+which is what we did
+in the previous slide,
+
+00:34:23.130 --> 00:34:25.980 align:middle line:84%
+or because China
+goes into a boom
+
+00:34:25.980 --> 00:34:29.000 align:middle line:90%
+and it starts importing a lot?
+
+00:34:29.000 --> 00:34:31.909 align:middle line:84%
+That is, we can
+export a lot to them.
+
+00:34:31.909 --> 00:34:33.989 align:middle line:84%
+So suppose we get the
+same increase in output.
+
+00:34:33.989 --> 00:34:36.469 align:middle line:90%
+What looks a little better?
+
+00:34:36.469 --> 00:34:40.190 align:middle line:84%
+Not a little better, it
+can look a lot better.
+
+00:34:40.190 --> 00:34:43.969 align:middle line:84%
+There are two things, but one
+is in this diagram, which is,
+
+00:34:43.969 --> 00:34:46.159 align:middle line:84%
+remember, if I did
+government expenditure,
+
+00:34:46.159 --> 00:34:48.170 align:middle line:84%
+the net export function
+wouldn't have moved
+
+00:34:48.170 --> 00:34:50.440 align:middle line:84%
+and I ended up
+with higher output.
+
+00:34:50.440 --> 00:34:54.770 align:middle line:84%
+I would have ended up with
+a bigger trade deficit.
+
+00:34:54.770 --> 00:34:55.610 align:middle line:90%
+OK?
+
+00:34:55.610 --> 00:34:58.530 align:middle line:84%
+In this case, it's
+export-driven,
+
+00:34:58.530 --> 00:34:59.510 align:middle line:90%
+so it's the opposite.
+
+00:34:59.510 --> 00:35:03.920 align:middle line:84%
+Because now the net export
+function is shifting up.
+
+00:35:03.920 --> 00:35:07.310 align:middle line:84%
+You know, if I move Y star
+up, I'm moving exports up.
+
+00:35:07.310 --> 00:35:08.810 align:middle line:84%
+That means the net
+export function
+
+00:35:08.810 --> 00:35:11.180 align:middle line:90%
+is moving up, shifting up.
+
+00:35:11.180 --> 00:35:13.100 align:middle line:84%
+And then I'm losing
+some of that because
+
+00:35:13.100 --> 00:35:18.750 align:middle line:84%
+in increasing domestic
+output goes into imports.
+
+00:35:18.750 --> 00:35:20.990 align:middle line:84%
+But at the end of the
+day, in this case,
+
+00:35:20.990 --> 00:35:26.610 align:middle line:84%
+I end up with a trade surplus
+rather than a trade deficit.
+
+00:35:26.610 --> 00:35:30.870 align:middle line:84%
+So lots of-- that's the reason
+when you open the world,
+
+00:35:30.870 --> 00:35:32.380 align:middle line:84%
+there's a lot of
+free riding here.
+
+00:35:32.380 --> 00:35:35.467 align:middle line:84%
+You want the other one to do the
+policies for you because then
+
+00:35:35.467 --> 00:35:36.300 align:middle line:90%
+you're a lot better.
+
+00:35:36.300 --> 00:35:38.230 align:middle line:84%
+And you can get the
+same increasing output.
+
+00:35:38.230 --> 00:35:40.680 align:middle line:84%
+But here you end up with a
+trade surplus rather than
+
+00:35:40.680 --> 00:35:42.303 align:middle line:90%
+a trade deficit.
+
+00:35:42.303 --> 00:35:44.720 align:middle line:84%
+And there is a second thing
+that I'm not showing you here.
+
+00:35:44.720 --> 00:35:47.110 align:middle line:84%
+There is a big difference
+between doing it domestically
+
+00:35:47.110 --> 00:35:49.780 align:middle line:84%
+by increasing government
+expenditure versus the other one
+
+00:35:49.780 --> 00:35:54.100 align:middle line:84%
+doing it for you and then
+pulling you through export.
+
+00:35:54.100 --> 00:35:57.850 align:middle line:84%
+What else will look better in
+the US in this case, relative
+
+00:35:57.850 --> 00:36:00.790 align:middle line:90%
+to the previous slide?
+
+00:36:00.790 --> 00:36:02.680 align:middle line:90%
+AUDIENCE: Do interest affect it?
+
+00:36:02.680 --> 00:36:03.980 align:middle line:84%
+RICARDO CABALIERO: But
+that's too sophisticated.
+
+00:36:03.980 --> 00:36:05.938 align:middle line:84%
+We're still keeping the
+interest rate constant.
+
+00:36:05.938 --> 00:36:09.910 align:middle line:90%
+
+
+00:36:09.910 --> 00:36:10.750 align:middle line:90%
+Aha?
+
+00:36:10.750 --> 00:36:12.100 align:middle line:90%
+That's even more sophisticated.
+
+00:36:12.100 --> 00:36:14.630 align:middle line:84%
+This is short run,
+completely sticky prices.
+
+00:36:14.630 --> 00:36:15.470 align:middle line:90%
+Forget all that.
+
+00:36:15.470 --> 00:36:23.700 align:middle line:90%
+
+
+00:36:23.700 --> 00:36:24.690 align:middle line:90%
+Fiscal deficit.
+
+00:36:24.690 --> 00:36:28.490 align:middle line:84%
+In the other one, I
+need to increase G
+
+00:36:28.490 --> 00:36:30.740 align:middle line:90%
+so I had a fiscal deficit.
+
+00:36:30.740 --> 00:36:32.160 align:middle line:90%
+Here, I don't need to do that.
+
+00:36:32.160 --> 00:36:35.150 align:middle line:84%
+And in fact, in reality,
+taxes are typically
+
+00:36:35.150 --> 00:36:37.170 align:middle line:84%
+indexed to output--
+domestic output.
+
+00:36:37.170 --> 00:36:40.980 align:middle line:84%
+So that probably will improve
+the deficit in the US.
+
+00:36:40.980 --> 00:36:45.400 align:middle line:90%
+So anyways.
+
+00:36:45.400 --> 00:36:48.730 align:middle line:84%
+The last point I
+want to talk about
+
+00:36:48.730 --> 00:36:50.260 align:middle line:84%
+is another variable
+that we didn't
+
+00:36:50.260 --> 00:36:53.020 align:middle line:84%
+have in the closed
+economy, which
+
+00:36:53.020 --> 00:36:55.780 align:middle line:84%
+is the role for the exchange
+rate, what the exchange rate can
+
+00:36:55.780 --> 00:36:56.590 align:middle line:90%
+do.
+
+00:36:56.590 --> 00:36:59.740 align:middle line:84%
+And so for this, we need
+to look at, you know,
+
+00:36:59.740 --> 00:37:01.720 align:middle line:84%
+the only term that depends
+on the exchange rate
+
+00:37:01.720 --> 00:37:03.760 align:middle line:90%
+is this net export term.
+
+00:37:03.760 --> 00:37:05.640 align:middle line:90%
+It's the exports minus imports.
+
+00:37:05.640 --> 00:37:07.650 align:middle line:84%
+So what you know
+from net exports,
+
+00:37:07.650 --> 00:37:10.380 align:middle line:84%
+it's very clear what
+happens to net exports
+
+00:37:10.380 --> 00:37:12.240 align:middle line:90%
+when we increase Y star.
+
+00:37:12.240 --> 00:37:13.870 align:middle line:90%
+We did an experiment before.
+
+00:37:13.870 --> 00:37:15.780 align:middle line:90%
+That's what increased exports.
+
+00:37:15.780 --> 00:37:19.750 align:middle line:84%
+So net exports will increase
+if you increase Y star.
+
+00:37:19.750 --> 00:37:21.810 align:middle line:84%
+We also know that
+net exports will
+
+00:37:21.810 --> 00:37:26.640 align:middle line:84%
+decrease if domestic output goes
+up because imports increase.
+
+00:37:26.640 --> 00:37:28.860 align:middle line:84%
+But from this expression,
+it's a little ambiguous
+
+00:37:28.860 --> 00:37:31.860 align:middle line:84%
+what happens to net
+exports when there
+
+00:37:31.860 --> 00:37:35.500 align:middle line:84%
+is a-- when the real
+exchange rate appreciates.
+
+00:37:35.500 --> 00:37:39.800 align:middle line:84%
+And it's a little ambiguous
+for the following reason.
+
+00:37:39.800 --> 00:37:45.740 align:middle line:84%
+The volume expression is clearly
+increasing in the real exchange
+
+00:37:45.740 --> 00:37:46.240 align:middle line:90%
+rate.
+
+00:37:46.240 --> 00:37:48.520 align:middle line:84%
+If US goods become
+more expensive,
+
+00:37:48.520 --> 00:37:49.840 align:middle line:90%
+you want to import more.
+
+00:37:49.840 --> 00:37:51.510 align:middle line:90%
+That's what we discussed before.
+
+00:37:51.510 --> 00:37:54.930 align:middle line:84%
+But the value may not be such
+because if you are importing
+
+00:37:54.930 --> 00:37:57.900 align:middle line:84%
+those goods in euros and
+now the euro is cheaper
+
+00:37:57.900 --> 00:38:02.940 align:middle line:84%
+for you, than you are paying
+less for each unit you import.
+
+00:38:02.940 --> 00:38:04.980 align:middle line:84%
+Now, we're going
+to assume from now
+
+00:38:04.980 --> 00:38:07.080 align:middle line:84%
+on that this second
+effect is not
+
+00:38:07.080 --> 00:38:08.680 align:middle line:90%
+as strong as the volume effect.
+
+00:38:08.680 --> 00:38:10.530 align:middle line:84%
+And that's a very
+realistic assumption
+
+00:38:10.530 --> 00:38:13.380 align:middle line:84%
+except for the very,
+very, very short run.
+
+00:38:13.380 --> 00:38:15.280 align:middle line:84%
+So that's going to
+be our assumption.
+
+00:38:15.280 --> 00:38:18.930 align:middle line:84%
+Our assumption will be
+that net exports decrease
+
+00:38:18.930 --> 00:38:21.750 align:middle line:90%
+when the currency appreciates.
+
+00:38:21.750 --> 00:38:25.050 align:middle line:84%
+If your goods become more
+expensive, then on net,
+
+00:38:25.050 --> 00:38:28.465 align:middle line:84%
+you're going to have
+less net exports.
+
+00:38:28.465 --> 00:38:29.340 align:middle line:90%
+That's an assumption.
+
+00:38:29.340 --> 00:38:32.430 align:middle line:84%
+It simply says that this
+guy in the numerator
+
+00:38:32.430 --> 00:38:35.820 align:middle line:84%
+responds more strongly than the
+denominator to a depreciation--
+
+00:38:35.820 --> 00:38:37.770 align:middle line:84%
+to an appreciation
+of the exchange rate.
+
+00:38:37.770 --> 00:38:41.823 align:middle line:84%
+So the quantities effect
+is much more important
+
+00:38:41.823 --> 00:38:42.740 align:middle line:90%
+than the price effect.
+
+00:38:42.740 --> 00:38:46.908 align:middle line:90%
+
+
+00:38:46.908 --> 00:38:49.200 align:middle line:84%
+Again, I'm not going to have
+three questions about this
+
+00:38:49.200 --> 00:38:49.750 align:middle line:90%
+or anything.
+
+00:38:49.750 --> 00:38:51.580 align:middle line:84%
+I'm going to assume
+that from now on.
+
+00:38:51.580 --> 00:38:53.040 align:middle line:90%
+That's your assumption.
+
+00:38:53.040 --> 00:38:58.480 align:middle line:84%
+If I make a mistake and I try to
+trick you in the quiz for that,
+
+00:38:58.480 --> 00:39:01.570 align:middle line:90%
+you can charge me the points.
+
+00:39:01.570 --> 00:39:02.950 align:middle line:90%
+I don't intend to do that.
+
+00:39:02.950 --> 00:39:06.190 align:middle line:84%
+Just as I did in a spot
+when one of the TAs sort of
+
+00:39:06.190 --> 00:39:07.930 align:middle line:90%
+wrote something there.
+
+00:39:07.930 --> 00:39:12.520 align:middle line:84%
+And because this is a
+very realistic assumption.
+
+00:39:12.520 --> 00:39:13.120 align:middle line:90%
+Good.
+
+00:39:13.120 --> 00:39:15.280 align:middle line:84%
+So now let's see
+what happens, then,
+
+00:39:15.280 --> 00:39:17.630 align:middle line:90%
+when the exchange rate moves.
+
+00:39:17.630 --> 00:39:19.940 align:middle line:90%
+And let me use it.
+
+00:39:19.940 --> 00:39:22.340 align:middle line:84%
+Suppose that you are in a
+situation where you want
+
+00:39:22.340 --> 00:39:25.160 align:middle line:90%
+to reduce the trade deficit.
+
+00:39:25.160 --> 00:39:27.110 align:middle line:90%
+What would you do to--
+
+00:39:27.110 --> 00:39:30.120 align:middle line:84%
+so the experiment I have
+here has two components.
+
+00:39:30.120 --> 00:39:32.690 align:middle line:84%
+But let's talk
+about the first one.
+
+00:39:32.690 --> 00:39:36.980 align:middle line:84%
+Suppose that your country
+has a big trade deficit
+
+00:39:36.980 --> 00:39:41.120 align:middle line:84%
+and you want to reduce
+that, and the only tool
+
+00:39:41.120 --> 00:39:45.030 align:middle line:90%
+you have is the exchange rate.
+
+00:39:45.030 --> 00:39:45.955 align:middle line:90%
+What would you do?
+
+00:39:45.955 --> 00:39:50.060 align:middle line:90%
+
+
+00:39:50.060 --> 00:39:52.850 align:middle line:84%
+Because suppose you have a trade
+deficit, you don't like that.
+
+00:39:52.850 --> 00:39:56.420 align:middle line:84%
+And you can move the
+exchange rate around.
+
+00:39:56.420 --> 00:40:00.040 align:middle line:90%
+What would you do?
+
+00:40:00.040 --> 00:40:01.120 align:middle line:90%
+Yes, you depreciate.
+
+00:40:01.120 --> 00:40:03.730 align:middle line:84%
+You make the domestic
+goods cheaper relative
+
+00:40:03.730 --> 00:40:04.820 align:middle line:90%
+to the rest of the world.
+
+00:40:04.820 --> 00:40:09.250 align:middle line:84%
+So depreciate your
+currency, which
+
+00:40:09.250 --> 00:40:12.070 align:middle line:84%
+is the prices are
+completely sticky, fixed.
+
+00:40:12.070 --> 00:40:16.180 align:middle line:84%
+Then nominal depreciation
+means also real depreciation.
+
+00:40:16.180 --> 00:40:18.650 align:middle line:84%
+And that will
+increase net exports.
+
+00:40:18.650 --> 00:40:22.000 align:middle line:84%
+So what that will do
+if you depreciate,
+
+00:40:22.000 --> 00:40:24.460 align:middle line:84%
+the exchange rate is also a
+parameter in this net export
+
+00:40:24.460 --> 00:40:25.280 align:middle line:90%
+function.
+
+00:40:25.280 --> 00:40:28.900 align:middle line:84%
+And given my assumption, when
+you depreciate the exchange
+
+00:40:28.900 --> 00:40:33.640 align:middle line:84%
+rate, that then moves the
+net export function up.
+
+00:40:33.640 --> 00:40:37.450 align:middle line:84%
+Now, the problem is that
+if you do that, that's also
+
+00:40:37.450 --> 00:40:41.015 align:middle line:84%
+going to be
+expansionary because now
+
+00:40:41.015 --> 00:40:42.890 align:middle line:84%
+you have certain
+equilibrium level of output.
+
+00:40:42.890 --> 00:40:44.500 align:middle line:84%
+And now there's going
+to be expenditure
+
+00:40:44.500 --> 00:40:46.583 align:middle line:84%
+switching all around the
+world towards your goods.
+
+00:40:46.583 --> 00:40:49.620 align:middle line:84%
+So you're going to
+end up producing more.
+
+00:40:49.620 --> 00:40:54.330 align:middle line:84%
+And so suppose that you didn't
+want that extra production.
+
+00:40:54.330 --> 00:40:56.550 align:middle line:84%
+You just wanted to fix
+your trade balance.
+
+00:40:56.550 --> 00:40:58.180 align:middle line:90%
+Then you have to set that.
+
+00:40:58.180 --> 00:40:59.970 align:middle line:90%
+And that's what I've done here.
+
+00:40:59.970 --> 00:41:01.473 align:middle line:84%
+So typically--
+that's very typical.
+
+00:41:01.473 --> 00:41:04.140 align:middle line:84%
+So suppose you're in a situation
+where you have very large trade
+
+00:41:04.140 --> 00:41:07.260 align:middle line:84%
+deficit, but you're OK with
+the equilibrium level of output
+
+00:41:07.260 --> 00:41:07.960 align:middle line:90%
+you have.
+
+00:41:07.960 --> 00:41:10.590 align:middle line:84%
+Then a typical package is
+you depreciate your currency,
+
+00:41:10.590 --> 00:41:12.900 align:middle line:84%
+but you also reduce
+government expenditure.
+
+00:41:12.900 --> 00:41:16.680 align:middle line:84%
+Because the depreciation of
+the currency is expansionary.
+
+00:41:16.680 --> 00:41:17.430 align:middle line:90%
+It's expansionary.
+
+00:41:17.430 --> 00:41:19.263 align:middle line:84%
+It improves the trade
+deficit, but it's also
+
+00:41:19.263 --> 00:41:20.820 align:middle line:84%
+expansionary
+because you relocate
+
+00:41:20.820 --> 00:41:23.610 align:middle line:84%
+expenditure, both of
+residents and foreigners,
+
+00:41:23.610 --> 00:41:24.580 align:middle line:90%
+towards your good.
+
+00:41:24.580 --> 00:41:27.360 align:middle line:84%
+That increases demand for
+your good, increases output.
+
+00:41:27.360 --> 00:41:34.950 align:middle line:84%
+But I mean, if I
+don't like that, I
+
+00:41:34.950 --> 00:41:37.120 align:middle line:90%
+have many ways of setting that.
+
+00:41:37.120 --> 00:41:40.800 align:middle line:84%
+One of them is by reducing
+government expenditure.
+
+00:41:40.800 --> 00:41:42.050 align:middle line:90%
+So that's what I've done here.
+
+00:41:42.050 --> 00:41:45.810 align:middle line:90%
+
+
+00:41:45.810 --> 00:41:47.710 align:middle line:90%
+Again, this is a great package.
+
+00:41:47.710 --> 00:41:49.160 align:middle line:90%
+You see, this is doing--
+
+00:41:49.160 --> 00:41:55.090 align:middle line:84%
+remember I told you here
+that people tend to prefer.
+
+00:41:55.090 --> 00:41:59.800 align:middle line:84%
+Remember I said, this is one
+way of increasing output.
+
+00:41:59.800 --> 00:42:02.250 align:middle line:90%
+If you want to increase output.
+
+00:42:02.250 --> 00:42:09.095 align:middle line:84%
+And another way is to
+do it by exports rising.
+
+00:42:09.095 --> 00:42:11.220 align:middle line:84%
+If I don't want to increase
+out, but this is better
+
+00:42:11.220 --> 00:42:16.800 align:middle line:84%
+because this increases the trade
+balance, well, suppose I do--
+
+00:42:16.800 --> 00:42:19.350 align:middle line:84%
+which is what is [INAUDIBLE]
+is I do the converse.
+
+00:42:19.350 --> 00:42:21.210 align:middle line:84%
+Suppose I don't want
+to change output,
+
+00:42:21.210 --> 00:42:24.750 align:middle line:84%
+but I want to increase
+the net export.
+
+00:42:24.750 --> 00:42:27.480 align:middle line:84%
+Well, these two charts,
+this and the previous one,
+
+00:42:27.480 --> 00:42:29.670 align:middle line:90%
+tell me exactly how to do it.
+
+00:42:29.670 --> 00:42:31.740 align:middle line:84%
+I use this for the
+expansion of output
+
+00:42:31.740 --> 00:42:34.400 align:middle line:90%
+and to improve the net exports.
+
+00:42:34.400 --> 00:42:37.770 align:middle line:84%
+And I use the other one to
+offset the effect on output,
+
+00:42:37.770 --> 00:42:41.110 align:middle line:90%
+but with the opposite sign.
+
+00:42:41.110 --> 00:42:45.320 align:middle line:84%
+I use this, but
+with declining G.
+
+00:42:45.320 --> 00:42:47.530 align:middle line:90%
+That's exactly what I did here.
+
+00:42:47.530 --> 00:42:49.690 align:middle line:84%
+So that's very
+tempting for a country
+
+00:42:49.690 --> 00:42:55.390 align:middle line:84%
+to do, to depreciate the
+currency and at the same time,
+
+00:42:55.390 --> 00:42:57.700 align:middle line:84%
+if you think that you need
+to cool off the economy,
+
+00:42:57.700 --> 00:42:59.590 align:middle line:84%
+then you can use some
+other instrument,
+
+00:42:59.590 --> 00:43:02.100 align:middle line:90%
+domestic instrument to.
+
+00:43:02.100 --> 00:43:06.120 align:middle line:84%
+For a long time, China was
+accused of doing just this.
+
+00:43:06.120 --> 00:43:09.390 align:middle line:84%
+It was called the mercantilist
+policies of China.
+
+00:43:09.390 --> 00:43:15.210 align:middle line:84%
+And especially sort of in late
+'90s and 2000s and so on, China
+
+00:43:15.210 --> 00:43:20.850 align:middle line:84%
+had massive amounts of exports
+and the US had a huge trade
+
+00:43:20.850 --> 00:43:21.840 align:middle line:90%
+deficit.
+
+00:43:21.840 --> 00:43:26.200 align:middle line:84%
+It was called the time
+of the global imbalances
+
+00:43:26.200 --> 00:43:34.510 align:middle line:84%
+because big deficits in the
+US, big surpluses in China.
+
+00:43:34.510 --> 00:43:37.060 align:middle line:84%
+And the rest of the
+world kept accusing
+
+00:43:37.060 --> 00:43:41.020 align:middle line:84%
+China of really
+maintaining their currency
+
+00:43:41.020 --> 00:43:47.970 align:middle line:84%
+at artificially low levels
+with the purpose of doing that.
+
+00:43:47.970 --> 00:43:52.300 align:middle line:84%
+And anyways, I'm not going
+to take sides on that.
+
+00:43:52.300 --> 00:43:57.100 align:middle line:84%
+I think that--
+but the reason why
+
+00:43:57.100 --> 00:44:00.430 align:middle line:84%
+the currency, the Chinese
+renminbi was so depreciated
+
+00:44:00.430 --> 00:44:01.730 align:middle line:90%
+was different from that.
+
+00:44:01.730 --> 00:44:04.210 align:middle line:90%
+But that's a different story.
+
+00:44:04.210 --> 00:44:06.110 align:middle line:90%
+But the result was this.
+
+00:44:06.110 --> 00:44:10.660 align:middle line:84%
+It was that they had very
+large trade surpluses.
+
+00:44:10.660 --> 00:44:14.860 align:middle line:84%
+And so the result was this,
+that they had very large trade
+
+00:44:14.860 --> 00:44:15.460 align:middle line:90%
+surpluses.
+
+00:44:15.460 --> 00:44:20.560 align:middle line:84%
+And they grew a lot
+because they had this.
+
+00:44:20.560 --> 00:44:22.310 align:middle line:90%
+But it was very export-driven.
+
+00:44:22.310 --> 00:44:24.850 align:middle line:84%
+It was the rest of
+the world pulling.
+
+00:44:24.850 --> 00:44:27.630 align:middle line:84%
+In fact the domestic economy in
+China, they were saving a lot.
+
+00:44:27.630 --> 00:44:29.500 align:middle line:84%
+So domestic consumption
+was very low,
+
+00:44:29.500 --> 00:44:31.660 align:middle line:84%
+but they had massive
+amount of exports,
+
+00:44:31.660 --> 00:44:36.530 align:middle line:84%
+and that's what was
+pulling their output up.
+
+00:44:36.530 --> 00:44:40.370 align:middle line:84%
+So open economy,
+you get new tools.
+
+00:44:40.370 --> 00:44:43.250 align:middle line:84%
+OK, so that's all that
+I want to say for today.
+
+00:44:43.250 --> 00:44:45.740 align:middle line:90%
+So summary.
+
+00:44:45.740 --> 00:44:48.830 align:middle line:84%
+A very important demand
+for domestic goods
+
+00:44:48.830 --> 00:44:53.810 align:middle line:84%
+is no longer equal to
+domestic demand for goods
+
+00:44:53.810 --> 00:44:58.540 align:middle line:84%
+because part of the latter
+will go to foreign goods.
+
+00:44:58.540 --> 00:45:03.610 align:middle line:84%
+And also, part of the former
+will come from foreign demand.
+
+00:45:03.610 --> 00:45:07.370 align:middle line:84%
+So that's what is
+new of this part.
+
+00:45:07.370 --> 00:45:08.575 align:middle line:90%
+You have an extra component.
+
+00:45:08.575 --> 00:45:11.200 align:middle line:84%
+And then the other thing that is
+new of this part of the course
+
+00:45:11.200 --> 00:45:13.523 align:middle line:84%
+is that, well, these extra
+components, the exports
+
+00:45:13.523 --> 00:45:15.190 align:middle line:84%
+and the imports, are
+functions of things
+
+00:45:15.190 --> 00:45:16.900 align:middle line:90%
+that we didn't have before.
+
+00:45:16.900 --> 00:45:20.390 align:middle line:84%
+For an output, the exchange
+rate, in particular.
+
+00:45:20.390 --> 00:45:23.790 align:middle line:90%
+
+
+00:45:23.790 --> 00:45:29.700 align:middle line:84%
+So equilibrium output, again,
+is determined by a output--
+
+00:45:29.700 --> 00:45:34.400 align:middle line:84%
+domestic output-- equal
+to that, not to that.
+
+00:45:34.400 --> 00:45:37.100 align:middle line:90%
+
+
+00:45:37.100 --> 00:45:38.540 align:middle line:84%
+The difference
+between the two is
+
+00:45:38.540 --> 00:45:41.540 align:middle line:90%
+reflected in the trade balance.
+
+00:45:41.540 --> 00:45:44.330 align:middle line:84%
+So the trade-- another way of
+thinking about the trade balance
+
+00:45:44.330 --> 00:45:50.330 align:middle line:84%
+is simply the difference between
+the demand for a domestic goods
+
+00:45:50.330 --> 00:45:52.170 align:middle line:84%
+and the domestic
+demand for goods.
+
+00:45:52.170 --> 00:45:53.840 align:middle line:84%
+So the trade balance
+is nothing else
+
+00:45:53.840 --> 00:45:57.260 align:middle line:90%
+than that DD minus the ZZ curve.
+
+00:45:57.260 --> 00:45:59.450 align:middle line:90%
+That's the trade balance, OK?
+
+00:45:59.450 --> 00:46:00.330 align:middle line:90%
+Sorry.
+
+00:46:00.330 --> 00:46:04.070 align:middle line:90%
+The ZZ minus the DD curve.
+
+00:46:04.070 --> 00:46:06.380 align:middle line:90%
+That's net exports.
+
+00:46:06.380 --> 00:46:07.520 align:middle line:90%
+OK?
+
+00:46:07.520 --> 00:46:08.150 align:middle line:90%
+Sorry.
+
+00:46:08.150 --> 00:46:10.910 align:middle line:90%
+Let me write that down here.
+
+00:46:10.910 --> 00:46:16.550 align:middle line:84%
+So remember that we started
+from the demand, which
+
+00:46:16.550 --> 00:46:24.530 align:middle line:84%
+was C plus I plus G. That's
+the domestic demand for goods.
+
+00:46:24.530 --> 00:46:34.910 align:middle line:84%
+We went to Z is equal to
+demand plus net exports.
+
+00:46:34.910 --> 00:46:43.820 align:middle line:84%
+So what I'm saying is
+that net exports is
+
+00:46:43.820 --> 00:46:50.700 align:middle line:84%
+just equal to Z minus Z. So
+that's the reason you can--
+
+00:46:50.700 --> 00:46:55.980 align:middle line:84%
+very early on when I want to
+show you this thing here--
+
+00:46:55.980 --> 00:47:03.700 align:middle line:84%
+the distance between ZZ and
+DD is this net export here.
+
+00:47:03.700 --> 00:47:05.770 align:middle line:84%
+That's the reason
+when the two of them
+
+00:47:05.770 --> 00:47:10.330 align:middle line:84%
+are the same, that also means
+that the export is equal to 0.
+
+00:47:10.330 --> 00:47:14.260 align:middle line:84%
+Very important also, message
+from this part of the course
+
+00:47:14.260 --> 00:47:16.990 align:middle line:84%
+is that a depreciation
+improves the trade balance
+
+00:47:16.990 --> 00:47:19.490 align:middle line:84%
+and increases the demand
+for domestic goods.
+
+00:47:19.490 --> 00:47:22.480 align:middle line:84%
+Again, that's why it's called
+expenditure switching mechanism.
+
+00:47:22.480 --> 00:47:26.440 align:middle line:84%
+The expenditures-- both
+of domestic residents
+
+00:47:26.440 --> 00:47:28.840 align:middle line:84%
+and foreigners switches
+towards domestic goods.
+
+00:47:28.840 --> 00:47:32.060 align:middle line:90%
+
+
+00:47:32.060 --> 00:47:35.050 align:middle line:90%
+And that's also very important.
+
+00:47:35.050 --> 00:47:36.850 align:middle line:84%
+For a given exchange
+rate, changes
+
+00:47:36.850 --> 00:47:41.110 align:middle line:84%
+in aggregate demand in one
+large country induced by policy
+
+00:47:41.110 --> 00:47:42.170 align:middle line:90%
+or the private sector--
+
+00:47:42.170 --> 00:47:44.890 align:middle line:90%
+in this case, China reopening--
+
+00:47:44.890 --> 00:47:48.240 align:middle line:84%
+affects other countries through
+Y star, through exports.
+
+00:47:48.240 --> 00:47:51.070 align:middle line:90%
+
+
+00:47:51.070 --> 00:47:53.087 align:middle line:90%
+So I'm going to stop here.
+
+00:47:53.087 --> 00:47:54.670 align:middle line:84%
+And in the next
+lecture, what we'll do
+
+00:47:54.670 --> 00:47:59.050 align:middle line:84%
+is we'll integrate this
+with the financial opening.
+
+00:47:59.050 --> 00:48:00.815 align:middle line:84%
+And that will get
+us to what I think
+
+00:48:00.815 --> 00:48:03.190 align:middle line:84%
+is one of the most important
+models in this course, which
+
+00:48:03.190 --> 00:48:05.880 align:middle line:84%
+is called the
+Mundell-Fleming model.
+
+00:48:05.880 --> 00:48:17.000 align:middle line:90%

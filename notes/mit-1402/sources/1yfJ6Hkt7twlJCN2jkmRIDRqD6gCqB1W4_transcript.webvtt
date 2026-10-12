@@ -1,0 +1,4010 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.976 align:middle line:90%
+[SQUEAKING]
+
+00:00:01.976 --> 00:00:03.952 align:middle line:90%
+[RUSTLING]
+
+00:00:03.952 --> 00:00:06.422 align:middle line:90%
+[CLICKING]
+
+00:00:06.422 --> 00:00:17.790 align:middle line:90%
+
+
+00:00:17.790 --> 00:00:19.680 align:middle line:84%
+RICARDO CABALLERO:
+So after doing IS-LM
+
+00:00:19.680 --> 00:00:21.990 align:middle line:84%
+in the first part of
+the course and where
+
+00:00:21.990 --> 00:00:25.170 align:middle line:84%
+we took prices completely
+sticky and output was fully
+
+00:00:25.170 --> 00:00:27.840 align:middle line:84%
+determined by
+aggregate demand, we
+
+00:00:27.840 --> 00:00:31.600 align:middle line:84%
+said, well, that dominates
+in the very, very short run.
+
+00:00:31.600 --> 00:00:35.893 align:middle line:84%
+But over time, at some point the
+supply side starts showing up.
+
+00:00:35.893 --> 00:00:36.810 align:middle line:90%
+There are constraints.
+
+00:00:36.810 --> 00:00:39.610 align:middle line:84%
+The labor market gets
+very tight, and so on.
+
+00:00:39.610 --> 00:00:45.130 align:middle line:84%
+And so we added a block that
+started from wage determination.
+
+00:00:45.130 --> 00:00:48.600 align:middle line:84%
+And then we look at the
+impact of wages on prices.
+
+00:00:48.600 --> 00:00:51.600 align:middle line:84%
+And then we related
+inflation rate.
+
+00:00:51.600 --> 00:00:53.430 align:middle line:84%
+You start to relate
+the inflation rate
+
+00:00:53.430 --> 00:00:55.570 align:middle line:90%
+to economic activity.
+
+00:00:55.570 --> 00:01:00.260 align:middle line:84%
+So output above or below
+the potential output,
+
+00:01:00.260 --> 00:01:03.550 align:middle line:84%
+or the natural level of output
+and things of that kind.
+
+00:01:03.550 --> 00:01:09.880 align:middle line:84%
+So remember, the starting point
+was a wage demand equation,
+
+00:01:09.880 --> 00:01:12.780 align:middle line:84%
+so what workers
+demand for a wage.
+
+00:01:12.780 --> 00:01:15.210 align:middle line:84%
+This period depends on
+what is the price level
+
+00:01:15.210 --> 00:01:17.123 align:middle line:90%
+they expect for the period.
+
+00:01:17.123 --> 00:01:18.790 align:middle line:84%
+Because they set the
+wage today and they
+
+00:01:18.790 --> 00:01:20.770 align:middle line:84%
+have to live through
+the year or two,
+
+00:01:20.770 --> 00:01:25.250 align:middle line:84%
+whatever is the contracting
+period, with that nominal wage.
+
+00:01:25.250 --> 00:01:28.420 align:middle line:84%
+So naturally, if they
+expect higher price level
+
+00:01:28.420 --> 00:01:31.240 align:middle line:84%
+in the future, they're going
+to demand a higher nominal wage
+
+00:01:31.240 --> 00:01:32.120 align:middle line:90%
+today.
+
+00:01:32.120 --> 00:01:34.630 align:middle line:84%
+And then we said that's
+a function that is also
+
+00:01:34.630 --> 00:01:36.820 align:middle line:84%
+going to be decreasing in
+the level of unemployment
+
+00:01:36.820 --> 00:01:42.310 align:middle line:84%
+because obviously that weakens
+bargaining power for workers
+
+00:01:42.310 --> 00:01:47.200 align:middle line:84%
+or makes actually
+becoming unemployed or not
+
+00:01:47.200 --> 00:01:51.430 align:middle line:84%
+having a job more costly because
+it's very difficult to exit out
+
+00:01:51.430 --> 00:01:52.630 align:middle line:90%
+of unemployment.
+
+00:01:52.630 --> 00:01:55.660 align:middle line:84%
+And then we made normalization,
+this function, also
+
+00:01:55.660 --> 00:01:57.970 align:middle line:84%
+an increasing function
+on this variable z,
+
+00:01:57.970 --> 00:02:00.850 align:middle line:84%
+which captures a bunch of
+labor market institutions,
+
+00:02:00.850 --> 00:02:03.740 align:middle line:84%
+including wage labor
+bargaining power.
+
+00:02:03.740 --> 00:02:06.100 align:middle line:84%
+So more bargaining power
+means that for any given
+
+00:02:06.100 --> 00:02:08.229 align:middle line:84%
+level of unemployment,
+workers would
+
+00:02:08.229 --> 00:02:10.150 align:middle line:90%
+tend to demand a higher wage.
+
+00:02:10.150 --> 00:02:14.290 align:middle line:84%
+So that's what the z
+variable was all about.
+
+00:02:14.290 --> 00:02:17.620 align:middle line:84%
+Then we wanted to go
+from wages to prices,
+
+00:02:17.620 --> 00:02:20.440 align:middle line:84%
+because the ultimate goal
+was to bring inflation
+
+00:02:20.440 --> 00:02:21.560 align:middle line:90%
+into the picture.
+
+00:02:21.560 --> 00:02:23.800 align:middle line:84%
+And for that, we
+had to produce--
+
+00:02:23.800 --> 00:02:30.260 align:middle line:84%
+we introduce a production
+function because in particular,
+
+00:02:30.260 --> 00:02:33.010 align:middle line:84%
+we made output a
+function of employment.
+
+00:02:33.010 --> 00:02:36.370 align:middle line:84%
+And that, very naturally,
+will connect wage pressure
+
+00:02:36.370 --> 00:02:40.090 align:middle line:84%
+to price pressure because you
+need labor to produce output.
+
+00:02:40.090 --> 00:02:43.000 align:middle line:84%
+So that the labor market is
+very tight, that means also
+
+00:02:43.000 --> 00:02:45.760 align:middle line:84%
+there's going to be more
+expensive to produce output.
+
+00:02:45.760 --> 00:02:48.170 align:middle line:84%
+And we simplify this
+production function a lot.
+
+00:02:48.170 --> 00:02:51.470 align:middle line:84%
+We made it output
+equal to employment.
+
+00:02:51.470 --> 00:02:55.750 align:middle line:84%
+And that meant also
+that one unit of labor,
+
+00:02:55.750 --> 00:02:58.150 align:middle line:84%
+in order to produce one
+extra unit of output,
+
+00:02:58.150 --> 00:03:00.520 align:middle line:84%
+you need one extra
+unit of labor,
+
+00:03:00.520 --> 00:03:05.960 align:middle line:84%
+which means you need to pay
+a wage, one unit of the wage.
+
+00:03:05.960 --> 00:03:09.010 align:middle line:84%
+And so then we said, suppose
+that the price setting
+
+00:03:09.010 --> 00:03:11.020 align:middle line:84%
+from the side of
+the firms simply
+
+00:03:11.020 --> 00:03:14.293 align:middle line:84%
+takes this cost, which is the
+wage, and adds a markup to it
+
+00:03:14.293 --> 00:03:15.710 align:middle line:84%
+to pay for a bunch
+of other things
+
+00:03:15.710 --> 00:03:19.100 align:middle line:84%
+that we haven't
+introduced in this model.
+
+00:03:19.100 --> 00:03:22.550 align:middle line:84%
+So the price charged by firms
+is equal to the wage times 1
+
+00:03:22.550 --> 00:03:26.850 align:middle line:84%
+plus some positive numbers, 8.2
+or something like that, so 1.2.
+
+00:03:26.850 --> 00:03:29.970 align:middle line:84%
+And we can rewrite this
+price setting equation
+
+00:03:29.970 --> 00:03:34.530 align:middle line:84%
+as a wage, a real wage the
+firms are willing to offer.
+
+00:03:34.530 --> 00:03:36.420 align:middle line:90%
+And it's just equal to that.
+
+00:03:36.420 --> 00:03:38.850 align:middle line:84%
+So when the markup
+goes up, that means
+
+00:03:38.850 --> 00:03:41.160 align:middle line:84%
+the real wage firms
+are willing to offer
+
+00:03:41.160 --> 00:03:42.830 align:middle line:90%
+is lower than otherwise.
+
+00:03:42.830 --> 00:03:45.590 align:middle line:90%
+
+
+00:03:45.590 --> 00:03:48.020 align:middle line:84%
+So that took us to the
+concept of the natural rate
+
+00:03:48.020 --> 00:03:48.800 align:middle line:90%
+of unemployment.
+
+00:03:48.800 --> 00:03:52.670 align:middle line:84%
+And what I said,
+no, there's nothing
+
+00:03:52.670 --> 00:03:55.110 align:middle line:84%
+natural about the natural
+rate of unemployment.
+
+00:03:55.110 --> 00:03:57.500 align:middle line:84%
+It's simply a
+definition that says
+
+00:03:57.500 --> 00:04:01.790 align:middle line:84%
+that's unemployment that results
+when the price, expected price,
+
+00:04:01.790 --> 00:04:03.180 align:middle line:90%
+is equal to the actual price.
+
+00:04:03.180 --> 00:04:06.890 align:middle line:90%
+That's all that is.
+
+00:04:06.890 --> 00:04:09.290 align:middle line:84%
+And when we have that
+condition, then we
+
+00:04:09.290 --> 00:04:13.880 align:middle line:84%
+can think of the real wage
+demanded by workers because I
+
+00:04:13.880 --> 00:04:16.670 align:middle line:84%
+can replace the expected
+price for actual price
+
+00:04:16.670 --> 00:04:18.329 align:middle line:90%
+and divide both sides by price.
+
+00:04:18.329 --> 00:04:22.010 align:middle line:84%
+So the actual wage
+demanded by workers
+
+00:04:22.010 --> 00:04:25.550 align:middle line:84%
+is equal to a function of the
+natural rate of unemployment.
+
+00:04:25.550 --> 00:04:27.890 align:middle line:84%
+And I stick the
+end there precisely
+
+00:04:27.890 --> 00:04:31.590 align:middle line:84%
+because I replace expected
+price or P, for no other reason.
+
+00:04:31.590 --> 00:04:35.180 align:middle line:84%
+But now we have two equations
+for the real wage, the real wage
+
+00:04:35.180 --> 00:04:39.170 align:middle line:84%
+that firms are willing to pay
+and the real wage and workers
+
+00:04:39.170 --> 00:04:40.230 align:middle line:90%
+need to demand.
+
+00:04:40.230 --> 00:04:42.210 align:middle line:90%
+And we can make them both equal.
+
+00:04:42.210 --> 00:04:45.150 align:middle line:84%
+And that determines the
+natural rate of unemployment.
+
+00:04:45.150 --> 00:04:48.560 align:middle line:84%
+OK, so remember this from the
+point of view of the firm.
+
+00:04:48.560 --> 00:04:50.800 align:middle line:84%
+This is equal to 1
+over 1 plus the markup.
+
+00:04:50.800 --> 00:04:54.040 align:middle line:84%
+The only endogenous variable
+in the markup is a constant z.
+
+00:04:54.040 --> 00:04:56.880 align:middle line:84%
+This is also a
+parameter is exogenous.
+
+00:04:56.880 --> 00:04:59.960 align:middle line:84%
+And so from here, we can
+solve the natural rate
+
+00:04:59.960 --> 00:05:02.660 align:middle line:84%
+of unemployment,
+1 over 1 plus m.
+
+00:05:02.660 --> 00:05:04.920 align:middle line:84%
+And we can solve the natural
+rate of unemployment.
+
+00:05:04.920 --> 00:05:07.513 align:middle line:84%
+And if you do the
+algebra right, you're
+
+00:05:07.513 --> 00:05:08.930 align:middle line:84%
+going to get to a
+point like that.
+
+00:05:08.930 --> 00:05:11.840 align:middle line:84%
+That pins down the natural
+rate of unemployment.
+
+00:05:11.840 --> 00:05:14.420 align:middle line:84%
+Again, there is nothing
+natural about the natural rate
+
+00:05:14.420 --> 00:05:15.240 align:middle line:90%
+of unemployment.
+
+00:05:15.240 --> 00:05:19.910 align:middle line:84%
+It depends on a bunch of
+parameters, which, for example,
+
+00:05:19.910 --> 00:05:21.780 align:middle line:84%
+it clearly depends
+on the markup.
+
+00:05:21.780 --> 00:05:25.310 align:middle line:84%
+It depends on things that we
+took as constant here as given
+
+00:05:25.310 --> 00:05:27.830 align:middle line:84%
+here, all the things
+that were in z.
+
+00:05:27.830 --> 00:05:29.930 align:middle line:90%
+Those are part of that.
+
+00:05:29.930 --> 00:05:32.210 align:middle line:84%
+And so then we look
+at things that change.
+
+00:05:32.210 --> 00:05:34.140 align:middle line:84%
+And that's just
+done with equations.
+
+00:05:34.140 --> 00:05:36.080 align:middle line:84%
+We look at things that
+change the natural rate
+
+00:05:36.080 --> 00:05:37.200 align:middle line:90%
+of unemployment.
+
+00:05:37.200 --> 00:05:38.700 align:middle line:90%
+That's one example.
+
+00:05:38.700 --> 00:05:40.932 align:middle line:84%
+If bargaining power
+by workers goes up,
+
+00:05:40.932 --> 00:05:43.640 align:middle line:84%
+they're going to demand a higher
+wage at the initial natural rate
+
+00:05:43.640 --> 00:05:44.730 align:middle line:90%
+of unemployment.
+
+00:05:44.730 --> 00:05:46.820 align:middle line:84%
+Well, that obviously,
+that higher wage
+
+00:05:46.820 --> 00:05:49.350 align:middle line:84%
+is inconsistent with what
+firms are willing to pay.
+
+00:05:49.350 --> 00:05:51.770 align:middle line:84%
+The only way equilibrium
+can be restored
+
+00:05:51.770 --> 00:05:54.110 align:middle line:84%
+in this model, that's the
+medium run equilibrium,
+
+00:05:54.110 --> 00:05:56.120 align:middle line:84%
+is for the natural
+rate of unemployment
+
+00:05:56.120 --> 00:05:57.540 align:middle line:90%
+to rise to UN prime.
+
+00:05:57.540 --> 00:06:00.420 align:middle line:90%
+
+
+00:06:00.420 --> 00:06:01.190 align:middle line:90%
+There you have it.
+
+00:06:01.190 --> 00:06:02.325 align:middle line:90%
+Nothing natural.
+
+00:06:02.325 --> 00:06:04.200 align:middle line:84%
+Natural rate of unemployment
+is not constant.
+
+00:06:04.200 --> 00:06:05.850 align:middle line:84%
+It depends on
+institutional parameters,
+
+00:06:05.850 --> 00:06:08.490 align:middle line:90%
+such as bargaining power.
+
+00:06:08.490 --> 00:06:11.430 align:middle line:84%
+Another example is mark
+ups. It depends on mark ups,
+
+00:06:11.430 --> 00:06:13.830 align:middle line:84%
+as well, the degree of
+competition, if you will,
+
+00:06:13.830 --> 00:06:15.100 align:middle line:90%
+in the goods market.
+
+00:06:15.100 --> 00:06:18.840 align:middle line:84%
+If we are in some equilibrium
+like this one and now
+
+00:06:18.840 --> 00:06:21.930 align:middle line:84%
+suddenly firms, for
+whatever reason,
+
+00:06:21.930 --> 00:06:26.730 align:middle line:84%
+choose or need to charge
+a higher markup, that
+
+00:06:26.730 --> 00:06:29.850 align:middle line:84%
+means that at this
+level of unemployment,
+
+00:06:29.850 --> 00:06:32.730 align:middle line:84%
+the wage that workers would
+demand is higher than the wage
+
+00:06:32.730 --> 00:06:35.185 align:middle line:84%
+that firms are willing
+to pay, the real wage.
+
+00:06:35.185 --> 00:06:37.560 align:middle line:84%
+And the only thing that can
+clear the market in this case
+
+00:06:37.560 --> 00:06:41.220 align:middle line:84%
+here, in the medium run, is for
+the natural rate of unemployment
+
+00:06:41.220 --> 00:06:42.360 align:middle line:90%
+to rise.
+
+00:06:42.360 --> 00:06:44.730 align:middle line:84%
+So here, we go two
+experiments where
+
+00:06:44.730 --> 00:06:48.210 align:middle line:84%
+we move some parameter-- in one,
+the bargaining power of workers
+
+00:06:48.210 --> 00:06:51.210 align:middle line:84%
+and the other one the
+markup of the firms.
+
+00:06:51.210 --> 00:06:54.880 align:middle line:84%
+And both increase the
+natural rate of unemployment.
+
+00:06:54.880 --> 00:06:57.390 align:middle line:90%
+Good.
+
+00:06:57.390 --> 00:07:01.020 align:middle line:84%
+The next step was
+to look at things
+
+00:07:01.020 --> 00:07:03.260 align:middle line:84%
+that happen outside the
+natural rate of unemployment,
+
+00:07:03.260 --> 00:07:07.290 align:middle line:84%
+in particular, what
+happens to prices there.
+
+00:07:07.290 --> 00:07:09.870 align:middle line:90%
+So what we did is we took the--
+
+00:07:09.870 --> 00:07:14.798 align:middle line:84%
+we went back to the model
+with the expected price here.
+
+00:07:14.798 --> 00:07:16.590 align:middle line:84%
+That means that
+unemployment that comes out
+
+00:07:16.590 --> 00:07:18.540 align:middle line:84%
+from this equilibrium
+is not going
+
+00:07:18.540 --> 00:07:21.010 align:middle line:84%
+to be necessarily the
+natural rate of unemployment.
+
+00:07:21.010 --> 00:07:25.320 align:middle line:84%
+That will be the case only if
+P happens to be equal to P.
+
+00:07:25.320 --> 00:07:28.500 align:middle line:84%
+Then we simplify this function,
+F, here for something linear,
+
+00:07:28.500 --> 00:07:29.520 align:middle line:90%
+like this.
+
+00:07:29.520 --> 00:07:31.540 align:middle line:84%
+Very simple, but
+again, decreasing
+
+00:07:31.540 --> 00:07:37.150 align:middle line:84%
+in unemployment, increasing in
+this institutional parameter, z.
+
+00:07:37.150 --> 00:07:40.750 align:middle line:84%
+We replace this wage
+here from this expression
+
+00:07:40.750 --> 00:07:42.380 align:middle line:90%
+here and rearrange.
+
+00:07:42.380 --> 00:07:45.550 align:middle line:90%
+So we got this here.
+
+00:07:45.550 --> 00:07:48.370 align:middle line:84%
+And the next step was
+just to go from here
+
+00:07:48.370 --> 00:07:49.820 align:middle line:90%
+to the rate of inflation.
+
+00:07:49.820 --> 00:07:53.200 align:middle line:84%
+And we did it through several
+steps and approximations.
+
+00:07:53.200 --> 00:07:57.350 align:middle line:84%
+And we ended up with what is
+known as the Phillips curve.
+
+00:07:57.350 --> 00:08:00.730 align:middle line:84%
+So this says that inflation
+is increasing and expected
+
+00:08:00.730 --> 00:08:04.510 align:middle line:84%
+inflation on this
+institutional parameters.
+
+00:08:04.510 --> 00:08:10.090 align:middle line:84%
+As the markups go up, that will
+tend to increase inflation.
+
+00:08:10.090 --> 00:08:14.030 align:middle line:84%
+If bargaining power by workers
+go up, then that is the same.
+
+00:08:14.030 --> 00:08:16.330 align:middle line:84%
+But most importantly,
+it's negatively
+
+00:08:16.330 --> 00:08:17.720 align:middle line:90%
+related to unemployment.
+
+00:08:17.720 --> 00:08:20.920 align:middle line:84%
+And that's the reason
+that today, nowadays, you
+
+00:08:20.920 --> 00:08:24.070 align:middle line:84%
+know, there's lots of discussion
+about the tightness in the labor
+
+00:08:24.070 --> 00:08:26.995 align:middle line:84%
+market and whether
+that's really necessary.
+
+00:08:26.995 --> 00:08:29.620 align:middle line:84%
+Do we need to cause a recession,
+a situation where unemployment
+
+00:08:29.620 --> 00:08:32.530 align:middle line:84%
+goes up a lot, in order to
+really finally bring down
+
+00:08:32.530 --> 00:08:33.429 align:middle line:90%
+inflation?
+
+00:08:33.429 --> 00:08:36.065 align:middle line:90%
+Yeah, there was a question.
+
+00:08:36.065 --> 00:08:36.940 align:middle line:90%
+AUDIENCE: [INAUDIBLE]
+
+00:08:36.940 --> 00:08:38.260 align:middle line:90%
+RICARDO CABALLERO: Yeah.
+
+00:08:38.260 --> 00:08:40.630 align:middle line:84%
+Remember that I made
+up this function.
+
+00:08:40.630 --> 00:08:43.929 align:middle line:84%
+We said this function is
+decreasing unemployment.
+
+00:08:43.929 --> 00:08:48.690 align:middle line:84%
+I just replace that
+function for that.
+
+00:08:48.690 --> 00:08:55.750 align:middle line:84%
+So it's the sensitivity
+of wage demand by workers
+
+00:08:55.750 --> 00:08:58.270 align:middle line:90%
+to their employment rate.
+
+00:08:58.270 --> 00:09:00.910 align:middle line:84%
+Alpha is very high, it
+means that wage demand
+
+00:09:00.910 --> 00:09:04.363 align:middle line:84%
+is very sensitive, very
+responsive to unemployment.
+
+00:09:04.363 --> 00:09:06.863 align:middle line:84%
+AUDIENCE: What would be the
+situation for an expected price?
+
+00:09:06.863 --> 00:09:09.196 align:middle line:84%
+Like, could you connect that
+back to like, I don't know,
+
+00:09:09.196 --> 00:09:11.290 align:middle line:84%
+some sort of a
+commodity or something?
+
+00:09:11.290 --> 00:09:13.730 align:middle line:84%
+RICARDO CABALLERO: So what
+is the intuition for this?
+
+00:09:13.730 --> 00:09:16.770 align:middle line:84%
+AUDIENCE: Yeah, just like
+a price feels tactile.
+
+00:09:16.770 --> 00:09:18.810 align:middle line:90%
+But an expected price, I don't--
+
+00:09:18.810 --> 00:09:22.560 align:middle line:84%
+RICARDO CABALLERO: Well, I mean,
+imagine that workers and firms
+
+00:09:22.560 --> 00:09:25.510 align:middle line:84%
+bargain for a wage that
+will live through the year.
+
+00:09:25.510 --> 00:09:29.410 align:middle line:84%
+You're bargaining for the
+wage, nominal wage today.
+
+00:09:29.410 --> 00:09:30.580 align:middle line:90%
+You don't set a real wage.
+
+00:09:30.580 --> 00:09:34.020 align:middle line:84%
+You set the nominal
+wage, say $100, whatever.
+
+00:09:34.020 --> 00:09:36.510 align:middle line:84%
+Well, the wage demand
+will depend a lot
+
+00:09:36.510 --> 00:09:39.670 align:middle line:84%
+on what they expect inflation
+to be during this period.
+
+00:09:39.670 --> 00:09:42.360 align:middle line:84%
+If I expect inflation
+to be 10%, you're
+
+00:09:42.360 --> 00:09:44.345 align:middle line:84%
+very likely to demand
+a higher nominal wage
+
+00:09:44.345 --> 00:09:46.720 align:middle line:84%
+because you have to live, on
+average, with higher prices.
+
+00:09:46.720 --> 00:09:49.000 align:middle line:84%
+So that's the role of
+that, is the price.
+
+00:09:49.000 --> 00:09:50.670 align:middle line:90%
+I mean, I would prefer--
+
+00:09:50.670 --> 00:09:52.980 align:middle line:84%
+and there are countries
+where that's done--
+
+00:09:52.980 --> 00:09:55.058 align:middle line:84%
+to set my wage in
+real terms so I
+
+00:09:55.058 --> 00:09:56.350 align:middle line:90%
+don't need to worry about that.
+
+00:09:56.350 --> 00:09:59.430 align:middle line:84%
+But in practice, in economies
+with low inflation like the US,
+
+00:09:59.430 --> 00:10:00.250 align:middle line:90%
+you don't do that.
+
+00:10:00.250 --> 00:10:03.480 align:middle line:84%
+You get a nominal wage and
+you have to live for the year
+
+00:10:03.480 --> 00:10:06.490 align:middle line:84%
+or until the next negotiation
+for your wage contract
+
+00:10:06.490 --> 00:10:09.548 align:middle line:90%
+with that level of wages.
+
+00:10:09.548 --> 00:10:11.840 align:middle line:84%
+AUDIENCE: [INAUDIBLE] be
+dependent on time, [INAUDIBLE]
+
+00:10:11.840 --> 00:10:15.770 align:middle line:84%
+with the interest rate or
+with the inflation rate,
+
+00:10:15.770 --> 00:10:19.700 align:middle line:84%
+whereas I guess the regular
+price is defined by the wage is
+
+00:10:19.700 --> 00:10:20.810 align:middle line:90%
+dependent on the market?
+
+00:10:20.810 --> 00:10:22.685 align:middle line:84%
+RICARDO CABALLERO: No,
+they're both the same.
+
+00:10:22.685 --> 00:10:28.690 align:middle line:84%
+But the only thing is that this
+price here is not the current.
+
+00:10:28.690 --> 00:10:31.690 align:middle line:84%
+It's what you really expect the
+price to be during the year.
+
+00:10:31.690 --> 00:10:34.210 align:middle line:84%
+If this is here just because
+at the moment in which you
+
+00:10:34.210 --> 00:10:36.580 align:middle line:84%
+set the wage, you
+don't know the price
+
+00:10:36.580 --> 00:10:38.560 align:middle line:84%
+that you're going
+to face as a worker.
+
+00:10:38.560 --> 00:10:40.270 align:middle line:90%
+But it's the price.
+
+00:10:40.270 --> 00:10:43.450 align:middle line:84%
+So you don't know the price that
+you're going to actually face.
+
+00:10:43.450 --> 00:10:46.390 align:middle line:84%
+So the best you can
+do is calculate, well,
+
+00:10:46.390 --> 00:10:48.320 align:middle line:84%
+I think inflation
+is going to be 10%.
+
+00:10:48.320 --> 00:10:50.770 align:middle line:84%
+So give me what I
+would have had in mind
+
+00:10:50.770 --> 00:10:53.298 align:middle line:84%
+with inflation
+equal to 0 plus 5%,
+
+00:10:53.298 --> 00:10:54.590 align:middle line:90%
+so on average, I'm about right.
+
+00:10:54.590 --> 00:10:56.830 align:middle line:90%
+That's the logic.
+
+00:10:56.830 --> 00:10:59.878 align:middle line:84%
+But this expected price
+is meant to be your best
+
+00:10:59.878 --> 00:11:02.170 align:middle line:84%
+proxy you have at the moment
+in which you're bargaining
+
+00:11:02.170 --> 00:11:04.480 align:middle line:84%
+for your wage for what
+the actual price will
+
+00:11:04.480 --> 00:11:07.890 align:middle line:84%
+be during the life of
+that particular wage.
+
+00:11:07.890 --> 00:11:16.650 align:middle line:90%
+
+
+00:11:16.650 --> 00:11:21.410 align:middle line:84%
+So we end up with that
+Phillips curve here.
+
+00:11:21.410 --> 00:11:23.730 align:middle line:84%
+Importantly, this is
+a decreasing function
+
+00:11:23.730 --> 00:11:26.050 align:middle line:90%
+of unemployment.
+
+00:11:26.050 --> 00:11:29.922 align:middle line:84%
+And then we made different
+assumptions about expectations.
+
+00:11:29.922 --> 00:11:31.380 align:middle line:84%
+If expected inflation,
+for example,
+
+00:11:31.380 --> 00:11:34.860 align:middle line:84%
+is a constant, that's when we
+say expected inflation is very
+
+00:11:34.860 --> 00:11:38.220 align:middle line:84%
+well anchored, then you
+get a Phillips curve
+
+00:11:38.220 --> 00:11:41.790 align:middle line:84%
+that looks like this, in which
+inflation has a constant here
+
+00:11:41.790 --> 00:11:43.990 align:middle line:84%
+and a decreasing on the
+rate of unemployment.
+
+00:11:43.990 --> 00:11:48.450 align:middle line:84%
+And during the '60s, that
+relationship sort of held fairly
+
+00:11:48.450 --> 00:11:49.240 align:middle line:90%
+well.
+
+00:11:49.240 --> 00:11:51.040 align:middle line:84%
+It was a downward
+sloping relationship.
+
+00:11:51.040 --> 00:11:54.510 align:middle line:84%
+It got to be steeper and
+steeper as we moved into higher
+
+00:11:54.510 --> 00:11:55.780 align:middle line:90%
+and higher inflation levels.
+
+00:11:55.780 --> 00:11:58.470 align:middle line:84%
+And then I said, but in the
+'70s, the whole thing broke
+
+00:11:58.470 --> 00:11:58.980 align:middle line:90%
+loose.
+
+00:11:58.980 --> 00:12:02.620 align:middle line:84%
+There's nothing like a
+downward sloping curve here.
+
+00:12:02.620 --> 00:12:04.210 align:middle line:90%
+That happened for two reasons.
+
+00:12:04.210 --> 00:12:05.680 align:middle line:84%
+There were some
+cost push shocks.
+
+00:12:05.680 --> 00:12:07.480 align:middle line:84%
+You can think of lots
+of shocks to them.
+
+00:12:07.480 --> 00:12:11.970 align:middle line:84%
+But more interestingly, expected
+inflation became an anchor.
+
+00:12:11.970 --> 00:12:15.690 align:middle line:84%
+And then we changed the
+expected inflation model
+
+00:12:15.690 --> 00:12:17.260 align:middle line:84%
+for rather than
+being a constant,
+
+00:12:17.260 --> 00:12:19.610 align:middle line:84%
+being some weighted
+average like this.
+
+00:12:19.610 --> 00:12:25.000 align:middle line:84%
+And we said, look, during the
+'70s essentially that theta was
+
+00:12:25.000 --> 00:12:26.030 align:middle line:90%
+equal to 1.
+
+00:12:26.030 --> 00:12:29.620 align:middle line:84%
+So expected inflation
+was really--
+
+00:12:29.620 --> 00:12:31.180 align:middle line:84%
+whatever was
+inflation last year,
+
+00:12:31.180 --> 00:12:32.920 align:middle line:84%
+people expected that
+level of inflation
+
+00:12:32.920 --> 00:12:35.470 align:middle line:84%
+to stay in the next year,
+rather than going back
+
+00:12:35.470 --> 00:12:38.260 align:middle line:84%
+to that whatever was the
+constant or inflation target
+
+00:12:38.260 --> 00:12:41.200 align:middle line:90%
+or historical constant pi.
+
+00:12:41.200 --> 00:12:43.948 align:middle line:84%
+And that meant that
+during that period,
+
+00:12:43.948 --> 00:12:45.490 align:middle line:84%
+really the Phillips
+curve looked more
+
+00:12:45.490 --> 00:12:49.180 align:middle line:84%
+like a relationship of the
+change in the inflation rate
+
+00:12:49.180 --> 00:12:51.170 align:middle line:84%
+as a decreasing function
+of unemployment.
+
+00:12:51.170 --> 00:12:54.040 align:middle line:84%
+So that means that when you
+increase unemployment here,
+
+00:12:54.040 --> 00:12:56.920 align:middle line:84%
+you reduce the rate at which
+unemployment, inflation is
+
+00:12:56.920 --> 00:12:57.650 align:middle line:90%
+rising.
+
+00:12:57.650 --> 00:13:01.690 align:middle line:84%
+That's the goal of the
+situation in a case
+
+00:13:01.690 --> 00:13:06.050 align:middle line:84%
+in which expected
+inflation is an anchor.
+
+00:13:06.050 --> 00:13:09.185 align:middle line:84%
+And the last step we had
+there is we replace--
+
+00:13:09.185 --> 00:13:10.810 align:middle line:84%
+we noticed, we said,
+well, what happens
+
+00:13:10.810 --> 00:13:13.630 align:middle line:84%
+if we stick in here the
+natural rate of unemployment?
+
+00:13:13.630 --> 00:13:16.090 align:middle line:84%
+Then that will give us--
+that will happen only
+
+00:13:16.090 --> 00:13:18.200 align:middle line:84%
+when expected price is
+equal to actual prices.
+
+00:13:18.200 --> 00:13:19.840 align:middle line:84%
+So that means that
+when inflation
+
+00:13:19.840 --> 00:13:22.360 align:middle line:84%
+is equal to expected
+inflation, from here we
+
+00:13:22.360 --> 00:13:24.220 align:middle line:84%
+can solve the natural
+rate of unemployment
+
+00:13:24.220 --> 00:13:27.080 align:middle line:84%
+as a function of these
+structural parameters.
+
+00:13:27.080 --> 00:13:30.460 align:middle line:84%
+And once we have that, we could
+go back to our Phillips curve
+
+00:13:30.460 --> 00:13:32.960 align:middle line:90%
+and rewrite it in this way.
+
+00:13:32.960 --> 00:13:36.190 align:middle line:84%
+So you can think of the
+Phillips curve in this way.
+
+00:13:36.190 --> 00:13:39.670 align:middle line:84%
+And this is the way we
+typically write it down,
+
+00:13:39.670 --> 00:13:44.470 align:middle line:84%
+in which it says inflation is
+decreasing in the unemployment
+
+00:13:44.470 --> 00:13:44.970 align:middle line:90%
+gap.
+
+00:13:44.970 --> 00:13:48.850 align:middle line:90%
+
+
+00:13:48.850 --> 00:13:51.032 align:middle line:84%
+So if the unemployment
+is above the natural rate
+
+00:13:51.032 --> 00:13:52.990 align:middle line:84%
+of unemployment, that
+means inflation will tend
+
+00:13:52.990 --> 00:13:54.960 align:middle line:90%
+to be below expected inflation.
+
+00:13:54.960 --> 00:13:57.010 align:middle line:84%
+If expected inflation
+happens to be
+
+00:13:57.010 --> 00:14:00.300 align:middle line:84%
+equal to log inflation,
+that means if unemployment
+
+00:14:00.300 --> 00:14:02.050 align:middle line:84%
+is above the natural
+rate of unemployment,
+
+00:14:02.050 --> 00:14:03.390 align:middle line:90%
+then inflation will be falling.
+
+00:14:03.390 --> 00:14:07.017 align:middle line:90%
+
+
+00:14:07.017 --> 00:14:07.600 align:middle line:90%
+Any questions?
+
+00:14:07.600 --> 00:14:08.100 align:middle line:90%
+Good.
+
+00:14:08.100 --> 00:14:13.800 align:middle line:84%
+You need to know this, how
+to derive these things.
+
+00:14:13.800 --> 00:14:14.690 align:middle line:90%
+I mean, not so much--
+
+00:14:14.690 --> 00:14:16.190 align:middle line:84%
+Yeah, you should
+know how to derive.
+
+00:14:16.190 --> 00:14:18.680 align:middle line:84%
+But you need to understand
+this relationship
+
+00:14:18.680 --> 00:14:24.410 align:middle line:84%
+between the unemployment
+gap and inflation
+
+00:14:24.410 --> 00:14:25.910 align:middle line:90%
+relative to expected inflation.
+
+00:14:25.910 --> 00:14:27.390 align:middle line:90%
+Yep.
+
+00:14:27.390 --> 00:14:32.277 align:middle line:84%
+AUDIENCE: Could you talk about
+uncut versus de-uncut inflation.
+
+00:14:32.277 --> 00:14:33.860 align:middle line:84%
+RICARDO CABALLERO:
+Expected inflation.
+
+00:14:33.860 --> 00:14:38.470 align:middle line:84%
+It's just a statement
+about a what
+
+00:14:38.470 --> 00:14:43.320 align:middle line:84%
+is the model we have
+for expected inflation.
+
+00:14:43.320 --> 00:14:49.250 align:middle line:84%
+So suppose we have the following
+model for expected inflation--
+
+00:14:49.250 --> 00:14:51.800 align:middle line:84%
+1 minus theta--
+theta is some number
+
+00:14:51.800 --> 00:14:57.140 align:middle line:84%
+between 0 and 1-- times
+a constant inflation
+
+00:14:57.140 --> 00:15:00.050 align:middle line:84%
+plus something that is a
+function of theta times
+
+00:15:00.050 --> 00:15:03.380 align:middle line:90%
+whatever is previous inflation.
+
+00:15:03.380 --> 00:15:06.140 align:middle line:84%
+Central banks try to set a
+target for the inflation rate.
+
+00:15:06.140 --> 00:15:08.150 align:middle line:90%
+In the US it's around 2%.
+
+00:15:08.150 --> 00:15:10.790 align:middle line:84%
+And ideally, people
+will tend to believe--
+
+00:15:10.790 --> 00:15:16.410 align:middle line:84%
+they may see an inflation
+that is above, say, 2%.
+
+00:15:16.410 --> 00:15:20.510 align:middle line:84%
+But as long as people
+expect that to be undone
+
+00:15:20.510 --> 00:15:24.110 align:middle line:84%
+in the next period,
+then inflation
+
+00:15:24.110 --> 00:15:25.940 align:middle line:84%
+will say they are
+very well anchored.
+
+00:15:25.940 --> 00:15:27.860 align:middle line:84%
+So that's a case in
+which very well anchored
+
+00:15:27.860 --> 00:15:29.700 align:middle line:90%
+means theta equal to 0 here.
+
+00:15:29.700 --> 00:15:34.100 align:middle line:84%
+And you always stick in there,
+in the case of the US, at 2%.
+
+00:15:34.100 --> 00:15:37.590 align:middle line:84%
+And that's the way the
+economy is behaving right now.
+
+00:15:37.590 --> 00:15:39.120 align:middle line:90%
+Inflation today is 5%.
+
+00:15:39.120 --> 00:15:41.480 align:middle line:84%
+But if you ask people, what
+do you expect inflation
+
+00:15:41.480 --> 00:15:43.670 align:middle line:90%
+to be two years from now?
+
+00:15:43.670 --> 00:15:47.150 align:middle line:84%
+People tell you, look
+around 2%, 2.5% or so.
+
+00:15:47.150 --> 00:15:50.930 align:middle line:84%
+An anchor expectation is when
+you don't have that anchor,
+
+00:15:50.930 --> 00:15:53.488 align:middle line:84%
+that 2% that the Fed
+told you is whatever
+
+00:15:53.488 --> 00:15:56.030 align:middle line:84%
+it was the previous inflation,
+that's what people extrapolate
+
+00:15:56.030 --> 00:15:57.760 align:middle line:84%
+will be inflation
+for next period.
+
+00:15:57.760 --> 00:16:00.563 align:middle line:84%
+And that's a lot harder when you
+get into an inflationary episode
+
+00:16:00.563 --> 00:16:01.230 align:middle line:90%
+in that context.
+
+00:16:01.230 --> 00:16:03.370 align:middle line:84%
+It's very difficult
+because you have 5%.
+
+00:16:03.370 --> 00:16:05.560 align:middle line:84%
+People are still expecting
+5% for next year.
+
+00:16:05.560 --> 00:16:06.810 align:middle line:90%
+So you need to--
+
+00:16:06.810 --> 00:16:08.960 align:middle line:84%
+it's much harder to
+bring inflation down.
+
+00:16:08.960 --> 00:16:11.460 align:middle line:84%
+You need to create much more
+unemployment to bring inflation
+
+00:16:11.460 --> 00:16:14.070 align:middle line:90%
+back to the 2% target.
+
+00:16:14.070 --> 00:16:15.780 align:middle line:90%
+That's what it means to anchor.
+
+00:16:15.780 --> 00:16:18.630 align:middle line:84%
+So anchor means theta
+very close to 0.
+
+00:16:18.630 --> 00:16:20.760 align:middle line:84%
+And anchor theta
+very close to 1.
+
+00:16:20.760 --> 00:16:23.260 align:middle line:90%
+That's a formal definition.
+
+00:16:23.260 --> 00:16:31.450 align:middle line:90%
+
+
+00:16:31.450 --> 00:16:37.395 align:middle line:84%
+We then move to what
+I think is probably
+
+00:16:37.395 --> 00:16:39.770 align:middle line:84%
+the most important model you'll
+see in this course, which
+
+00:16:39.770 --> 00:16:44.410 align:middle line:84%
+is the IS-LM-PC, which is just
+the IS-LM plus the Phillips
+
+00:16:44.410 --> 00:16:44.910 align:middle line:90%
+curve.
+
+00:16:44.910 --> 00:16:47.360 align:middle line:84%
+And that allows us to talk
+about the short run, which
+
+00:16:47.360 --> 00:16:50.270 align:middle line:84%
+is what we did in the
+IS-LM and then all the way
+
+00:16:50.270 --> 00:16:52.520 align:middle line:90%
+to the medium run.
+
+00:16:52.520 --> 00:16:54.020 align:middle line:84%
+A medium run
+understood, that's when
+
+00:16:54.020 --> 00:16:57.200 align:middle line:84%
+you go back to the natural rate
+of unemployment, natural level
+
+00:16:57.200 --> 00:17:00.730 align:middle line:90%
+of output, and so on.
+
+00:17:00.730 --> 00:17:02.510 align:middle line:90%
+We got a banking crisis there.
+
+00:17:02.510 --> 00:17:11.619 align:middle line:84%
+But that's-- This
+you may find useful.
+
+00:17:11.619 --> 00:17:14.040 align:middle line:84%
+Here I was trying to
+explain the banking crisis.
+
+00:17:14.040 --> 00:17:17.920 align:middle line:84%
+And I said, we have a
+model for that already.
+
+00:17:17.920 --> 00:17:20.670 align:middle line:84%
+Remember, we had this x spreads
+in the investment function
+
+00:17:20.670 --> 00:17:24.060 align:middle line:84%
+and said, well, you can think
+of a negative financial shock,
+
+00:17:24.060 --> 00:17:26.369 align:middle line:84%
+something like a
+credit spread shock,
+
+00:17:26.369 --> 00:17:29.820 align:middle line:84%
+as an increase in x, and that
+will shift IS to the left.
+
+00:17:29.820 --> 00:17:33.390 align:middle line:90%
+OK, just saying.
+
+00:17:33.390 --> 00:17:33.890 align:middle line:90%
+Good.
+
+00:17:33.890 --> 00:17:37.590 align:middle line:90%
+
+
+00:17:37.590 --> 00:17:41.430 align:middle line:84%
+IS-LM-PC model was just going
+back to the IS-LM model.
+
+00:17:41.430 --> 00:17:44.730 align:middle line:84%
+We're going to simplify
+things by just assuming
+
+00:17:44.730 --> 00:17:46.650 align:middle line:84%
+that the central bank
+sets the real interest
+
+00:17:46.650 --> 00:17:50.870 align:middle line:84%
+rate and the real
+interest rate is that.
+
+00:17:50.870 --> 00:17:54.810 align:middle line:84%
+And to that, we added
+a Phillips curve.
+
+00:17:54.810 --> 00:17:56.790 align:middle line:84%
+But we didn't like
+that Phillips curve
+
+00:17:56.790 --> 00:17:59.430 align:middle line:84%
+because we have everything
+is a function of output
+
+00:17:59.430 --> 00:18:00.850 align:middle line:90%
+here and interest rate.
+
+00:18:00.850 --> 00:18:04.780 align:middle line:84%
+And now we have inflation
+and the unemployment rate
+
+00:18:04.780 --> 00:18:07.390 align:middle line:84%
+and so on-- yet another
+variable to carry around.
+
+00:18:07.390 --> 00:18:13.320 align:middle line:84%
+So we went from the output
+gap to unemployment gap
+
+00:18:13.320 --> 00:18:14.550 align:middle line:90%
+to an output gap.
+
+00:18:14.550 --> 00:18:17.460 align:middle line:84%
+And we did that just by
+noticing that the output is
+
+00:18:17.460 --> 00:18:23.610 align:middle line:84%
+equal to the labor force times
+1 minus the unemployment rate.
+
+00:18:23.610 --> 00:18:26.070 align:middle line:84%
+Similarly, you can
+define potential output
+
+00:18:26.070 --> 00:18:29.340 align:middle line:84%
+or the natural output
+level as employment
+
+00:18:29.340 --> 00:18:31.690 align:middle line:84%
+times 1 minus the natural
+rate of unemployment.
+
+00:18:31.690 --> 00:18:36.720 align:middle line:84%
+Subtract these 2 and
+you get that the output
+
+00:18:36.720 --> 00:18:41.510 align:middle line:84%
+gap is equal to minus L
+times the unemployment gap.
+
+00:18:41.510 --> 00:18:44.698 align:middle line:84%
+And so we replace this for
+that expression divided by L
+
+00:18:44.698 --> 00:18:46.240 align:middle line:84%
+and we end up with
+the Phillips curve
+
+00:18:46.240 --> 00:18:48.910 align:middle line:84%
+written in the form
+of an increasing
+
+00:18:48.910 --> 00:18:50.360 align:middle line:90%
+function of the output gap.
+
+00:18:50.360 --> 00:18:52.540 align:middle line:84%
+So when the output
+gap is positive,
+
+00:18:52.540 --> 00:18:55.370 align:middle line:84%
+then inflation will
+exceed expected inflation.
+
+00:18:55.370 --> 00:18:58.120 align:middle line:84%
+If expected inflation
+is an anchor, that is,
+
+00:18:58.120 --> 00:19:00.850 align:middle line:84%
+expected inflation is equal
+to log inflation, then
+
+00:19:00.850 --> 00:19:02.410 align:middle line:84%
+that means that
+a positive output
+
+00:19:02.410 --> 00:19:05.870 align:middle line:84%
+gap leads to an increase in
+inflation, in inflation rate.
+
+00:19:05.870 --> 00:19:09.130 align:middle line:90%
+
+
+00:19:09.130 --> 00:19:11.500 align:middle line:90%
+We look at an example here.
+
+00:19:11.500 --> 00:19:12.573 align:middle line:90%
+This is the type of--
+
+00:19:12.573 --> 00:19:14.740 align:middle line:84%
+now we're going to have the
+real interest rate here.
+
+00:19:14.740 --> 00:19:17.452 align:middle line:84%
+Just makes it simpler to think
+about central monetary policy
+
+00:19:17.452 --> 00:19:18.910 align:middle line:84%
+in terms of the
+real interest rate.
+
+00:19:18.910 --> 00:19:21.130 align:middle line:84%
+Otherwise, too many
+things move at once.
+
+00:19:21.130 --> 00:19:23.450 align:middle line:84%
+So this is what we
+have done for quiz 1.
+
+00:19:23.450 --> 00:19:26.260 align:middle line:84%
+Here you have some particular
+equilibrium, IS-LM.
+
+00:19:26.260 --> 00:19:31.300 align:middle line:84%
+With this real interest rate,
+we got some equilibrium output
+
+00:19:31.300 --> 00:19:33.790 align:middle line:90%
+equal to y.
+
+00:19:33.790 --> 00:19:36.310 align:middle line:84%
+The contribution of
+this block of the course
+
+00:19:36.310 --> 00:19:38.710 align:middle line:84%
+is that now we
+need to also check
+
+00:19:38.710 --> 00:19:42.430 align:middle line:84%
+whether this is y is consistent
+with potential output
+
+00:19:42.430 --> 00:19:44.640 align:middle line:84%
+or not, or with natural
+level of output.
+
+00:19:44.640 --> 00:19:50.290 align:middle line:84%
+And that for that we need to see
+whether this level of output is,
+
+00:19:50.290 --> 00:19:53.480 align:middle line:84%
+again, is above or below
+the natural rate of output.
+
+00:19:53.480 --> 00:19:56.120 align:middle line:84%
+And for that, we need to
+look at the Phillips curve.
+
+00:19:56.120 --> 00:19:59.020 align:middle line:84%
+And in this particular
+case, that's
+
+00:19:59.020 --> 00:20:02.170 align:middle line:84%
+not the case because output
+is above the natural rate
+
+00:20:02.170 --> 00:20:03.040 align:middle line:90%
+of output.
+
+00:20:03.040 --> 00:20:05.710 align:middle line:84%
+You put now, given
+that observation,
+
+00:20:05.710 --> 00:20:09.280 align:middle line:84%
+you draw here the
+Phillips curve.
+
+00:20:09.280 --> 00:20:11.860 align:middle line:84%
+You know that because output
+is above the natural rate
+
+00:20:11.860 --> 00:20:14.950 align:middle line:84%
+of output, the natural level
+of output, that means inflation
+
+00:20:14.950 --> 00:20:16.760 align:middle line:90%
+is above expected inflation.
+
+00:20:16.760 --> 00:20:18.640 align:middle line:84%
+If expected inflation
+happens to be
+
+00:20:18.640 --> 00:20:20.500 align:middle line:84%
+an anchor equal to
+pi minus one, that
+
+00:20:20.500 --> 00:20:24.010 align:middle line:84%
+means that at this
+output gap, that there
+
+00:20:24.010 --> 00:20:26.050 align:middle line:90%
+is an inflation that is rising.
+
+00:20:26.050 --> 00:20:31.490 align:middle line:84%
+Now, inflation rising means the
+central bank will have to react.
+
+00:20:31.490 --> 00:20:33.940 align:middle line:84%
+And so you have to
+do something up here.
+
+00:20:33.940 --> 00:20:36.430 align:middle line:90%
+You need to bring output down.
+
+00:20:36.430 --> 00:20:40.610 align:middle line:84%
+And how can you
+bring output down?
+
+00:20:40.610 --> 00:20:44.130 align:middle line:84%
+So this economy is engaging
+in an inflationary spiral,
+
+00:20:44.130 --> 00:20:46.500 align:middle line:84%
+actually, given this
+model of expectation.
+
+00:20:46.500 --> 00:20:47.615 align:middle line:90%
+How do you stop that?
+
+00:20:47.615 --> 00:20:55.378 align:middle line:90%
+
+
+00:20:55.378 --> 00:20:56.670 align:middle line:90%
+AUDIENCE: Raise interest rates.
+
+00:20:56.670 --> 00:20:57.750 align:middle line:84%
+RICARDO CABALLERO:
+If you are the Fed,
+
+00:20:57.750 --> 00:20:59.850 align:middle line:84%
+and you when-- you raise
+interest rates, no?
+
+00:20:59.850 --> 00:21:01.600 align:middle line:84%
+Because you need
+to bring them back.
+
+00:21:01.600 --> 00:21:03.530 align:middle line:84%
+So the equilibrium
+level of output,
+
+00:21:03.530 --> 00:21:09.720 align:middle line:84%
+you increase the real rate up to
+a point in which the equilibrium
+
+00:21:09.720 --> 00:21:13.830 align:middle line:84%
+level of output is equal to
+the natural rate of output.
+
+00:21:13.830 --> 00:21:15.910 align:middle line:84%
+And you may have to
+do more than that.
+
+00:21:15.910 --> 00:21:17.910 align:middle line:84%
+If inflation was an anchor
+and you find yourself
+
+00:21:17.910 --> 00:21:21.030 align:middle line:84%
+with 5% inflation, you may
+have to temporarily actually,
+
+00:21:21.030 --> 00:21:23.260 align:middle line:84%
+to bring inflation
+back down to 2%,
+
+00:21:23.260 --> 00:21:25.800 align:middle line:84%
+you may have to overshoot,
+raise interest rates a lot,
+
+00:21:25.800 --> 00:21:28.270 align:middle line:84%
+generate a negative
+output gap for a while.
+
+00:21:28.270 --> 00:21:32.070 align:middle line:84%
+And then once you reach the
+level of inflation you like,
+
+00:21:32.070 --> 00:21:36.440 align:middle line:84%
+the 2%, then you can go back
+to the natural level of output.
+
+00:21:36.440 --> 00:21:39.630 align:middle line:84%
+OK, so that's the reason
+central banks worry
+
+00:21:39.630 --> 00:21:41.310 align:middle line:84%
+a lot about unanchored
+expectations
+
+00:21:41.310 --> 00:21:43.852 align:middle line:84%
+because then they know that they
+find themselves on inflation
+
+00:21:43.852 --> 00:21:45.420 align:middle line:84%
+above their target,
+it's not going
+
+00:21:45.420 --> 00:21:47.950 align:middle line:84%
+to be enough to bring
+the output gap to 0.
+
+00:21:47.950 --> 00:21:50.190 align:middle line:84%
+They're going to have to
+overshoot in the way down
+
+00:21:50.190 --> 00:21:52.650 align:middle line:84%
+in order to reanchor
+expectations-- well,
+
+00:21:52.650 --> 00:21:57.030 align:middle line:84%
+in order to bring inflation
+back down to the target of 2%.
+
+00:21:57.030 --> 00:22:00.330 align:middle line:84%
+But in any event, even if
+inflation expectation's well
+
+00:22:00.330 --> 00:22:02.577 align:middle line:84%
+anchored, you still have
+to bring output down
+
+00:22:02.577 --> 00:22:04.410 align:middle line:84%
+because at the very
+least, you need to close
+
+00:22:04.410 --> 00:22:06.120 align:middle line:90%
+this positive output gap.
+
+00:22:06.120 --> 00:22:09.570 align:middle line:84%
+And that, if you are the Fed
+in the US or any central bank,
+
+00:22:09.570 --> 00:22:11.620 align:middle line:84%
+you do it by increasing
+the real interest rate.
+
+00:22:11.620 --> 00:22:13.558 align:middle line:84%
+Now, in practice,
+central banks really
+
+00:22:13.558 --> 00:22:15.100 align:middle line:84%
+don't control the
+real interest rate,
+
+00:22:15.100 --> 00:22:16.517 align:middle line:84%
+control the nominal
+interest rate.
+
+00:22:16.517 --> 00:22:18.750 align:middle line:84%
+So there is a little fight
+there between inflation
+
+00:22:18.750 --> 00:22:20.980 align:middle line:84%
+and what they do to the
+nominal interest rate.
+
+00:22:20.980 --> 00:22:23.440 align:middle line:84%
+But let's ignore that
+complication for now.
+
+00:22:23.440 --> 00:22:32.940 align:middle line:84%
+Now, suppose that the Fed is in
+vacation and so somebody someone
+
+00:22:32.940 --> 00:22:37.110 align:middle line:84%
+else decides in the
+government decides that, no,
+
+00:22:37.110 --> 00:22:39.670 align:middle line:84%
+we cannot have this very
+high level of inflation.
+
+00:22:39.670 --> 00:22:40.760 align:middle line:90%
+So what else could you do?
+
+00:22:40.760 --> 00:22:43.730 align:middle line:90%
+
+
+00:22:43.730 --> 00:22:44.850 align:middle line:90%
+And you're not the Fed.
+
+00:22:44.850 --> 00:22:47.940 align:middle line:90%
+The Fed is in a vacation.
+
+00:22:47.940 --> 00:22:51.540 align:middle line:90%
+Who else can make policy?
+
+00:22:51.540 --> 00:22:54.040 align:middle line:84%
+The government, the central
+government, the Treasury, and so
+
+00:22:54.040 --> 00:22:54.580 align:middle line:90%
+on.
+
+00:22:54.580 --> 00:22:56.950 align:middle line:84%
+What is the
+instrument they have?
+
+00:22:56.950 --> 00:22:59.097 align:middle line:90%
+What do they need to do?
+
+00:22:59.097 --> 00:23:00.930 align:middle line:84%
+The problem they have
+is output is too high.
+
+00:23:00.930 --> 00:23:03.210 align:middle line:84%
+And that's what is leading
+to lots of inflation.
+
+00:23:03.210 --> 00:23:06.435 align:middle line:84%
+So what do you think
+they should do?
+
+00:23:06.435 --> 00:23:09.503 align:middle line:90%
+
+
+00:23:09.503 --> 00:23:10.920 align:middle line:84%
+AUDIENCE: Cut
+government spending.
+
+00:23:10.920 --> 00:23:12.000 align:middle line:84%
+RICARDO CABALLERO: Cut
+government spending,
+
+00:23:12.000 --> 00:23:13.910 align:middle line:84%
+raise taxes, something
+of that kind.
+
+00:23:13.910 --> 00:23:15.900 align:middle line:84%
+But you need a
+fiscal contraction
+
+00:23:15.900 --> 00:23:18.460 align:middle line:84%
+because that will
+bring the IS down.
+
+00:23:18.460 --> 00:23:22.260 align:middle line:84%
+And so the equilibrium
+output will be lower.
+
+00:23:22.260 --> 00:23:24.330 align:middle line:84%
+So that's an
+alternative you have.
+
+00:23:24.330 --> 00:23:25.205 align:middle line:90%
+You should know this.
+
+00:23:25.205 --> 00:23:32.480 align:middle line:90%
+
+
+00:23:32.480 --> 00:23:36.920 align:middle line:84%
+And here I just did what we
+just discussed, just in steps.
+
+00:23:36.920 --> 00:23:38.600 align:middle line:90%
+These things happen slowly.
+
+00:23:38.600 --> 00:23:41.400 align:middle line:84%
+The Fed doesn't hike interest
+rates in one shot and so on.
+
+00:23:41.400 --> 00:23:44.910 align:middle line:84%
+It takes a while before you
+get to the final equilibrium.
+
+00:23:44.910 --> 00:23:54.384 align:middle line:90%
+
+
+00:23:54.384 --> 00:23:56.740 align:middle line:84%
+I showed you the
+deflationary spiral.
+
+00:23:56.740 --> 00:24:02.000 align:middle line:84%
+I said, sometimes things can
+get very complicated because you
+
+00:24:02.000 --> 00:24:03.390 align:middle line:90%
+may hit the 0 lower bound.
+
+00:24:03.390 --> 00:24:06.410 align:middle line:84%
+The Fed can bring the
+nominal interest rate to 0.
+
+00:24:06.410 --> 00:24:08.715 align:middle line:84%
+But if inflation is
+already low, that
+
+00:24:08.715 --> 00:24:10.340 align:middle line:84%
+may not give you the
+real interest rate
+
+00:24:10.340 --> 00:24:12.530 align:middle line:84%
+you need in order to get output
+equal to the natural rate
+
+00:24:12.530 --> 00:24:13.160 align:middle line:90%
+of output.
+
+00:24:13.160 --> 00:24:15.620 align:middle line:84%
+Here was one
+example in which you
+
+00:24:15.620 --> 00:24:18.050 align:middle line:84%
+need a negative real
+interest rate to get output
+
+00:24:18.050 --> 00:24:20.150 align:middle line:84%
+to be equal to the
+natural rate of output.
+
+00:24:20.150 --> 00:24:25.730 align:middle line:84%
+But that may not happen because
+you hit the 0 lower bound.
+
+00:24:25.730 --> 00:24:28.520 align:middle line:84%
+And so at that point, the
+problem you have is that--
+
+00:24:28.520 --> 00:24:31.940 align:middle line:84%
+and that was a tragedy
+of Japan for so long--
+
+00:24:31.940 --> 00:24:38.060 align:middle line:84%
+is that not only you cannot
+bring the interest rate,
+
+00:24:38.060 --> 00:24:39.560 align:middle line:84%
+the nominal interest
+rate below 0,
+
+00:24:39.560 --> 00:24:41.780 align:middle line:84%
+but you start getting
+into deflationary.
+
+00:24:41.780 --> 00:24:43.970 align:middle line:84%
+Inflation below expectation,
+and the expectation
+
+00:24:43.970 --> 00:24:45.920 align:middle line:84%
+goes to number very
+close to 0 because
+
+00:24:45.920 --> 00:24:48.220 align:middle line:84%
+of an anchor deflationary
+expectations.
+
+00:24:48.220 --> 00:24:51.155 align:middle line:84%
+Then you start getting
+negative expected inflation.
+
+00:24:51.155 --> 00:24:53.030 align:middle line:84%
+And when you get negative
+expected inflation,
+
+00:24:53.030 --> 00:24:55.620 align:middle line:84%
+even if you are at the 0 lower
+bound in the nominal interest
+
+00:24:55.620 --> 00:24:57.610 align:middle line:84%
+rate, that means a positive
+real interest rate.
+
+00:24:57.610 --> 00:24:59.400 align:middle line:84%
+So effectively, you are
+increasing interest rate
+
+00:24:59.400 --> 00:25:00.130 align:middle line:90%
+at the same time.
+
+00:25:00.130 --> 00:25:02.820 align:middle line:84%
+And that can be a very
+complicated thing to get out of.
+
+00:25:02.820 --> 00:25:06.180 align:middle line:84%
+Again, that's what happened
+to Japan for a long time.
+
+00:25:06.180 --> 00:25:08.610 align:middle line:84%
+What would you do
+as a government
+
+00:25:08.610 --> 00:25:10.475 align:middle line:84%
+if you fall into a
+situation like that?
+
+00:25:10.475 --> 00:25:13.870 align:middle line:90%
+
+
+00:25:13.870 --> 00:25:16.917 align:middle line:90%
+And Japan did a lot of that.
+
+00:25:16.917 --> 00:25:18.250 align:middle line:90%
+Well, you can do lots of things.
+
+00:25:18.250 --> 00:25:21.150 align:middle line:84%
+But in particular,
+the kind of things
+
+00:25:21.150 --> 00:25:23.070 align:middle line:90%
+you know, what would you do?
+
+00:25:23.070 --> 00:25:26.430 align:middle line:84%
+If you are in a situation like
+this in which the 0 lower bound
+
+00:25:26.430 --> 00:25:29.280 align:middle line:84%
+is binding and inflation
+is actually falling?
+
+00:25:29.280 --> 00:25:32.460 align:middle line:84%
+Here I had a benign case in
+which inflation expectation
+
+00:25:32.460 --> 00:25:33.700 align:middle line:90%
+was well anchored.
+
+00:25:33.700 --> 00:25:35.140 align:middle line:84%
+That's not what
+happened to Japan.
+
+00:25:35.140 --> 00:25:37.810 align:middle line:84%
+After they experience a long
+period of deflationary forces,
+
+00:25:37.810 --> 00:25:41.470 align:middle line:84%
+then people began to expect
+more deflation, more deflation,
+
+00:25:41.470 --> 00:25:42.160 align:middle line:90%
+and so on.
+
+00:25:42.160 --> 00:25:44.405 align:middle line:90%
+So what else can you do?
+
+00:25:44.405 --> 00:25:52.630 align:middle line:90%
+
+
+00:25:52.630 --> 00:25:54.600 align:middle line:90%
+Let me give you a hint.
+
+00:25:54.600 --> 00:25:56.730 align:middle line:84%
+Japan is one of the
+countries at the highest
+
+00:25:56.730 --> 00:25:59.330 align:middle line:90%
+levels of public debt.
+
+00:25:59.330 --> 00:26:03.420 align:middle line:84%
+How do you accumulate
+public debt?
+
+00:26:03.420 --> 00:26:05.590 align:middle line:90%
+Yeah, you need to borrow a lot.
+
+00:26:05.590 --> 00:26:07.080 align:middle line:90%
+You have big fiscal deficit.
+
+00:26:07.080 --> 00:26:08.780 align:middle line:84%
+So that's the way
+you can fight this.
+
+00:26:08.780 --> 00:26:11.070 align:middle line:84%
+You can shift IS to
+the right by having
+
+00:26:11.070 --> 00:26:12.680 align:middle line:90%
+an expansionary fiscal policy.
+
+00:26:12.680 --> 00:26:14.130 align:middle line:84%
+That's the only
+tool really have.
+
+00:26:14.130 --> 00:26:16.230 align:middle line:84%
+You lose the power
+of monetary policy
+
+00:26:16.230 --> 00:26:17.550 align:middle line:90%
+against the 0 lower bound.
+
+00:26:17.550 --> 00:26:19.150 align:middle line:84%
+But you still have
+fiscal policy.
+
+00:26:19.150 --> 00:26:20.650 align:middle line:84%
+And they did a lot
+of fiscal policy.
+
+00:26:20.650 --> 00:26:27.880 align:middle line:90%
+
+
+00:26:27.880 --> 00:26:30.740 align:middle line:90%
+No, not interesting.
+
+00:26:30.740 --> 00:26:34.510 align:middle line:90%
+This is interesting.
+
+00:26:34.510 --> 00:26:36.670 align:middle line:84%
+This is a different
+kind of shock.
+
+00:26:36.670 --> 00:26:38.920 align:middle line:84%
+Suppose you are at your
+medium-run equilibrium
+
+00:26:38.920 --> 00:26:41.110 align:middle line:84%
+and then all of
+a sudden mark ups
+
+00:26:41.110 --> 00:26:44.440 align:middle line:84%
+go up, perhaps, for example,
+because the price of oil
+
+00:26:44.440 --> 00:26:46.210 align:middle line:84%
+went up a lot and
+something like that.
+
+00:26:46.210 --> 00:26:50.920 align:middle line:84%
+So then that's a different kind
+of shock from the previous one,
+
+00:26:50.920 --> 00:26:53.065 align:middle line:84%
+from any fiscal shock
+or anything like that.
+
+00:26:53.065 --> 00:26:54.190 align:middle line:90%
+That's an aggregate demand.
+
+00:26:54.190 --> 00:26:55.648 align:middle line:84%
+This is an aggregate
+supply problem
+
+00:26:55.648 --> 00:26:58.630 align:middle line:84%
+because the first thing I
+know of a permanent at least
+
+00:26:58.630 --> 00:27:01.810 align:middle line:84%
+change in m is that the
+natural rate of unemployment
+
+00:27:01.810 --> 00:27:03.840 align:middle line:90%
+has to rise.
+
+00:27:03.840 --> 00:27:06.000 align:middle line:84%
+If the natural rate of
+unemployment has to rise,
+
+00:27:06.000 --> 00:27:10.580 align:middle line:84%
+that means my Phillips
+curve will shift now.
+
+00:27:10.580 --> 00:27:12.942 align:middle line:84%
+In that particular case,
+I know the Phillips curve
+
+00:27:12.942 --> 00:27:13.900 align:middle line:90%
+will shift to the left.
+
+00:27:13.900 --> 00:27:15.120 align:middle line:90%
+How do I know that?
+
+00:27:15.120 --> 00:27:18.590 align:middle line:84%
+Well, because I know that the
+natural rate of unemployment
+
+00:27:18.590 --> 00:27:21.800 align:middle line:84%
+went up, which means that the
+natural rate, natural level
+
+00:27:21.800 --> 00:27:23.600 align:middle line:90%
+of output has to come down.
+
+00:27:23.600 --> 00:27:25.610 align:middle line:84%
+And the natural level
+of output coming down
+
+00:27:25.610 --> 00:27:29.060 align:middle line:84%
+means simply that the level
+at which expected inflation
+
+00:27:29.060 --> 00:27:33.050 align:middle line:84%
+and inflation are equal happens
+at a lower level of output.
+
+00:27:33.050 --> 00:27:34.780 align:middle line:84%
+So the Phillips curve
+moves to the left.
+
+00:27:34.780 --> 00:27:36.860 align:middle line:84%
+So suppose you were
+in this equilibrium.
+
+00:27:36.860 --> 00:27:39.300 align:middle line:84%
+Here I'm doing for the case
+of an anchor expectations.
+
+00:27:39.300 --> 00:27:44.030 align:middle line:84%
+But the same logic goes for the
+case of anchor expectations.
+
+00:27:44.030 --> 00:27:46.910 align:middle line:84%
+So suppose you were at
+some equilibrium like this.
+
+00:27:46.910 --> 00:27:48.390 align:middle line:84%
+What's your medium
+run equilibrium?
+
+00:27:48.390 --> 00:27:50.630 align:middle line:84%
+But now the price of
+energy goes up a lot
+
+00:27:50.630 --> 00:27:53.290 align:middle line:84%
+and you expect that
+to last for a while.
+
+00:27:53.290 --> 00:27:55.530 align:middle line:84%
+That means the Phillips
+curve moves up.
+
+00:27:55.530 --> 00:27:58.490 align:middle line:84%
+So that means that if output,
+with output at this level,
+
+00:27:58.490 --> 00:28:01.970 align:middle line:84%
+now you have a problem because
+you start getting inflation out
+
+00:28:01.970 --> 00:28:04.970 align:middle line:84%
+of this, because
+this level of output
+
+00:28:04.970 --> 00:28:08.390 align:middle line:84%
+is too high relative to the
+new level of the natural--
+
+00:28:08.390 --> 00:28:10.960 align:middle line:90%
+the new natural level of output.
+
+00:28:10.960 --> 00:28:12.720 align:middle line:84%
+So you have a
+positive output gap.
+
+00:28:12.720 --> 00:28:14.520 align:middle line:84%
+Positive output
+gap means inflation
+
+00:28:14.520 --> 00:28:16.080 align:middle line:90%
+above expected inflation.
+
+00:28:16.080 --> 00:28:17.640 align:middle line:84%
+If you have an
+anchor expectations,
+
+00:28:17.640 --> 00:28:22.410 align:middle line:84%
+means inflation
+starts rising up.
+
+00:28:22.410 --> 00:28:25.470 align:middle line:84%
+So that means the Fed now
+needs to react to that
+
+00:28:25.470 --> 00:28:28.110 align:middle line:84%
+and needs to tighten
+interest rate in order
+
+00:28:28.110 --> 00:28:32.370 align:middle line:84%
+to go to the new level of,
+natural level of output.
+
+00:28:32.370 --> 00:28:34.320 align:middle line:90%
+And that's the response to that.
+
+00:28:34.320 --> 00:28:36.060 align:middle line:90%
+But if the Fed does not react--
+
+00:28:36.060 --> 00:28:37.890 align:middle line:84%
+and a little bit of
+this is what happened.
+
+00:28:37.890 --> 00:28:40.252 align:middle line:84%
+We had some supply
+shocks and so on that
+
+00:28:40.252 --> 00:28:42.960 align:middle line:84%
+were considered to be temporary,
+well, they weren't as temporary.
+
+00:28:42.960 --> 00:28:44.680 align:middle line:90%
+So there was no reaction.
+
+00:28:44.680 --> 00:28:47.310 align:middle line:84%
+But it turns out that
+they lasted a lot longer
+
+00:28:47.310 --> 00:28:48.910 align:middle line:90%
+than the Fed expected.
+
+00:28:48.910 --> 00:28:53.760 align:middle line:90%
+And so now they had to catch up.
+
+00:28:53.760 --> 00:28:57.450 align:middle line:84%
+That was part of the reason
+we got into a high inflation
+
+00:28:57.450 --> 00:28:58.920 align:middle line:90%
+episode.
+
+00:28:58.920 --> 00:29:02.360 align:middle line:84%
+That was the main
+reason in Europe.
+
+00:29:02.360 --> 00:29:05.930 align:middle line:84%
+The US is a mixture of aggregate
+demand, lots of fiscal policy
+
+00:29:05.930 --> 00:29:07.760 align:middle line:90%
+and so on.
+
+00:29:07.760 --> 00:29:12.150 align:middle line:84%
+And supply side in Europe was
+very much a story of this kind.
+
+00:29:12.150 --> 00:29:20.120 align:middle line:90%
+
+
+00:29:20.120 --> 00:29:22.880 align:middle line:84%
+Well, a financial
+panic, you need
+
+00:29:22.880 --> 00:29:26.090 align:middle line:84%
+to offset it with a decline
+in real interest rates.
+
+00:29:26.090 --> 00:29:28.340 align:middle line:84%
+And a little bit of
+that has been happening.
+
+00:29:28.340 --> 00:29:30.530 align:middle line:84%
+It's not the Fed that
+has cut the rates,
+
+00:29:30.530 --> 00:29:32.990 align:middle line:84%
+but the markets have
+anticipated the Fed will not
+
+00:29:32.990 --> 00:29:37.210 align:middle line:84%
+raise interest rates as much
+as they expected before we
+
+00:29:37.210 --> 00:29:39.340 align:middle line:90%
+got into this banking mess.
+
+00:29:39.340 --> 00:29:42.730 align:middle line:84%
+So we had already studied the
+short run, the medium run.
+
+00:29:42.730 --> 00:29:45.100 align:middle line:84%
+And now we want to
+look at the long run.
+
+00:29:45.100 --> 00:29:47.930 align:middle line:84%
+And that's what economic
+growth is about--
+
+00:29:47.930 --> 00:29:50.570 align:middle line:84%
+economic growth theory
+and facts and so on.
+
+00:29:50.570 --> 00:29:54.770 align:middle line:90%
+
+
+00:29:54.770 --> 00:29:56.450 align:middle line:90%
+Let me go to--
+
+00:29:56.450 --> 00:29:59.450 align:middle line:84%
+So one of the
+things I highlighted
+
+00:29:59.450 --> 00:30:03.440 align:middle line:84%
+is that we tend to
+see, among countries
+
+00:30:03.440 --> 00:30:10.060 align:middle line:84%
+that are fairly similar along
+the education and variables
+
+00:30:10.060 --> 00:30:11.050 align:middle line:90%
+like that--
+
+00:30:11.050 --> 00:30:14.350 align:middle line:84%
+systems, economic systems
+and political systems and so
+
+00:30:14.350 --> 00:30:16.240 align:middle line:84%
+on-- you tend to
+find relationships
+
+00:30:16.240 --> 00:30:20.722 align:middle line:84%
+like this, that is countries
+with a lower per capita income
+
+00:30:20.722 --> 00:30:22.180 align:middle line:84%
+at the beginning
+of the sample tend
+
+00:30:22.180 --> 00:30:23.630 align:middle line:90%
+to grow faster in the sample.
+
+00:30:23.630 --> 00:30:25.150 align:middle line:84%
+And that captures
+very much the idea
+
+00:30:25.150 --> 00:30:27.430 align:middle line:84%
+that there is a
+convergence, there
+
+00:30:27.430 --> 00:30:31.210 align:middle line:84%
+is a force towards convergence
+of income per capita,
+
+00:30:31.210 --> 00:30:33.802 align:middle line:90%
+if you will.
+
+00:30:33.802 --> 00:30:35.760 align:middle line:84%
+That's another illustration
+of that phenomenon.
+
+00:30:35.760 --> 00:30:38.340 align:middle line:90%
+Lots of dispersion here.
+
+00:30:38.340 --> 00:30:42.470 align:middle line:84%
+70 years later, a
+lot less dispersion.
+
+00:30:42.470 --> 00:30:45.770 align:middle line:84%
+But we also said that some
+countries do not match that.
+
+00:30:45.770 --> 00:30:52.400 align:middle line:84%
+And but we focus most of what we
+did in growth on understanding
+
+00:30:52.400 --> 00:30:54.830 align:middle line:84%
+this process, the
+process of convergence
+
+00:30:54.830 --> 00:30:57.420 align:middle line:84%
+and how it happened without
+technological progress
+
+00:30:57.420 --> 00:30:58.200 align:middle line:90%
+and so on.
+
+00:30:58.200 --> 00:31:00.890 align:middle line:84%
+And then we spent a
+little bit of a lecture,
+
+00:31:00.890 --> 00:31:05.510 align:middle line:84%
+say at most 10 points worth
+in a quiz, or seven points,
+
+00:31:05.510 --> 00:31:08.447 align:middle line:84%
+talking about anomalies
+and things like that--
+
+00:31:08.447 --> 00:31:09.780 align:middle line:90%
+5 points or something like that.
+
+00:31:09.780 --> 00:31:13.060 align:middle line:90%
+
+
+00:31:13.060 --> 00:31:17.210 align:middle line:84%
+So the key object here,
+one of the key objects--
+
+00:31:17.210 --> 00:31:19.220 align:middle line:90%
+there are a couple--
+
+00:31:19.220 --> 00:31:21.215 align:middle line:84%
+but one of them
+was, well, now we
+
+00:31:21.215 --> 00:31:23.590 align:middle line:84%
+need to be a little bit more
+serious about the production
+
+00:31:23.590 --> 00:31:24.340 align:middle line:90%
+function, we said.
+
+00:31:24.340 --> 00:31:27.550 align:middle line:84%
+Because for the short run,
+it's OK to take capital
+
+00:31:27.550 --> 00:31:29.073 align:middle line:84%
+as given and just
+worry about most
+
+00:31:29.073 --> 00:31:30.490 align:middle line:84%
+of the fluctuations
+in output will
+
+00:31:30.490 --> 00:31:32.900 align:middle line:84%
+come from fluctuations
+in employment.
+
+00:31:32.900 --> 00:31:35.620 align:middle line:84%
+That's not so over
+long periods of time.
+
+00:31:35.620 --> 00:31:37.960 align:middle line:84%
+Capital accumulation
+plays a huge role.
+
+00:31:37.960 --> 00:31:41.080 align:middle line:84%
+And so we need to be
+explicit about the fact
+
+00:31:41.080 --> 00:31:43.690 align:middle line:84%
+that capital matters
+a lot for production.
+
+00:31:43.690 --> 00:31:48.350 align:middle line:84%
+And so we postulated
+a production function
+
+00:31:48.350 --> 00:31:53.938 align:middle line:84%
+like this, output as increasing
+function of capital and labor.
+
+00:31:53.938 --> 00:31:55.730 align:middle line:84%
+And now we said for
+this part of the course
+
+00:31:55.730 --> 00:31:57.563 align:middle line:84%
+we're not going to worry
+about unemployment.
+
+00:31:57.563 --> 00:31:59.720 align:middle line:84%
+And so on, employment,
+labor force population,
+
+00:31:59.720 --> 00:32:01.880 align:middle line:84%
+they're are all the
+same for us here,
+
+00:32:01.880 --> 00:32:03.390 align:middle line:90%
+for this part of the course.
+
+00:32:03.390 --> 00:32:05.300 align:middle line:84%
+And then they said this
+production function
+
+00:32:05.300 --> 00:32:08.590 align:middle line:90%
+has some important properties.
+
+00:32:08.590 --> 00:32:11.690 align:middle line:84%
+One, it has constant
+returns to scale.
+
+00:32:11.690 --> 00:32:12.980 align:middle line:90%
+Things change quite a bit.
+
+00:32:12.980 --> 00:32:14.813 align:middle line:84%
+If you don't have
+constant returns to scale.
+
+00:32:14.813 --> 00:32:17.260 align:middle line:84%
+So we have constant returns
+to scale, which means--
+
+00:32:17.260 --> 00:32:18.430 align:middle line:90%
+you should know this--
+
+00:32:18.430 --> 00:32:22.360 align:middle line:84%
+that if you scale all output,
+all inputs, all the factors
+
+00:32:22.360 --> 00:32:24.640 align:middle line:84%
+of production by
+the same factor,
+
+00:32:24.640 --> 00:32:27.980 align:middle line:84%
+output also rises
+by the same factor.
+
+00:32:27.980 --> 00:32:33.860 align:middle line:84%
+OK, so our production function
+we use a lot was Cobb-Douglas,
+
+00:32:33.860 --> 00:32:37.860 align:middle line:84%
+output equals square root of
+k, times square root of n.
+
+00:32:37.860 --> 00:32:39.960 align:middle line:84%
+Well, the sum of
+those exponents is 1.
+
+00:32:39.960 --> 00:32:44.780 align:middle line:84%
+So that's a production function
+with constant returns to scale.
+
+00:32:44.780 --> 00:32:48.440 align:middle line:84%
+Anything that has the exponents
+add up to 1, then that's
+
+00:32:48.440 --> 00:32:50.990 align:middle line:84%
+a constant returns
+to scale technology.
+
+00:32:50.990 --> 00:32:56.540 align:middle line:84%
+But importantly, it also has
+decreasing returns with each
+
+00:32:56.540 --> 00:32:58.350 align:middle line:90%
+of its factors of production.
+
+00:32:58.350 --> 00:33:03.620 align:middle line:84%
+That means rather than moving
+both factors of production up,
+
+00:33:03.620 --> 00:33:04.950 align:middle line:90%
+you move only one.
+
+00:33:04.950 --> 00:33:07.400 align:middle line:84%
+Well, you're going to
+increase output, but just
+
+00:33:07.400 --> 00:33:08.985 align:middle line:84%
+keep increasing
+that factor alone,
+
+00:33:08.985 --> 00:33:11.360 align:middle line:84%
+you're going to increase output
+by less and less and less
+
+00:33:11.360 --> 00:33:12.860 align:middle line:84%
+and less because
+essentially, it has
+
+00:33:12.860 --> 00:33:16.130 align:middle line:84%
+fewer and fewer of the
+other factor of production
+
+00:33:16.130 --> 00:33:17.040 align:middle line:90%
+to work with.
+
+00:33:17.040 --> 00:33:20.520 align:middle line:84%
+And so that's decreasing
+returns to capital or labor.
+
+00:33:20.520 --> 00:33:22.820 align:middle line:84%
+I mean, if you fix the
+other factor of production,
+
+00:33:22.820 --> 00:33:23.510 align:middle line:90%
+you move up.
+
+00:33:23.510 --> 00:33:26.240 align:middle line:84%
+It's going to increase
+at a decreasing rate.
+
+00:33:26.240 --> 00:33:29.060 align:middle line:84%
+So one normalization
+that we started with
+
+00:33:29.060 --> 00:33:32.420 align:middle line:84%
+was, well, a scaling
+factor could be
+
+00:33:32.420 --> 00:33:35.510 align:middle line:90%
+population, 1 over population.
+
+00:33:35.510 --> 00:33:36.840 align:middle line:90%
+That's a scaling factor.
+
+00:33:36.840 --> 00:33:40.610 align:middle line:84%
+And if I do that, I multiply
+everything by 1 over n.
+
+00:33:40.610 --> 00:33:46.070 align:middle line:84%
+We go into output per person
+is an increasing function of--
+
+00:33:46.070 --> 00:33:48.710 align:middle line:84%
+an increasing function,
+but at a decreasing rate--
+
+00:33:48.710 --> 00:33:52.090 align:middle line:90%
+of capital per person.
+
+00:33:52.090 --> 00:33:54.580 align:middle line:90%
+We plot that function here.
+
+00:33:54.580 --> 00:33:57.680 align:middle line:84%
+And this is increasing,
+but it's concave.
+
+00:33:57.680 --> 00:34:02.740 align:middle line:84%
+That shows the decreasing
+returns of capital.
+
+00:34:02.740 --> 00:34:04.335 align:middle line:90%
+And we got that function there.
+
+00:34:04.335 --> 00:34:10.940 align:middle line:90%
+
+
+00:34:10.940 --> 00:34:15.909 align:middle line:84%
+So when you move in this, you
+can increase output per person,
+
+00:34:15.909 --> 00:34:19.580 align:middle line:84%
+per person by simply
+increasing capital per person.
+
+00:34:19.580 --> 00:34:22.900 align:middle line:84%
+And the more you increase
+capital per person,
+
+00:34:22.900 --> 00:34:25.969 align:middle line:84%
+output will increase more and
+more but at a decreasing rate.
+
+00:34:25.969 --> 00:34:29.050 align:middle line:84%
+You can see that moving the
+distance between A and B
+
+00:34:29.050 --> 00:34:31.449 align:middle line:84%
+is the same as the distance
+between C and D. However,
+
+00:34:31.449 --> 00:34:34.330 align:middle line:84%
+the increase in output,
+when you go from A to B,
+
+00:34:34.330 --> 00:34:37.870 align:middle line:84%
+is enormous when compared
+with the increase in output
+
+00:34:37.870 --> 00:34:39.580 align:middle line:84%
+that you get from the
+increase in capital
+
+00:34:39.580 --> 00:34:44.860 align:middle line:84%
+over per person from C
+to D, decreasing returns.
+
+00:34:44.860 --> 00:34:49.030 align:middle line:84%
+There is another way of
+increasing output per person,
+
+00:34:49.030 --> 00:34:51.980 align:middle line:84%
+which is with
+technological progress,
+
+00:34:51.980 --> 00:34:54.820 align:middle line:84%
+with the function, F, is
+shifting up over time.
+
+00:34:54.820 --> 00:34:57.880 align:middle line:84%
+And we split the two
+main lectures in growth
+
+00:34:57.880 --> 00:35:02.450 align:middle line:84%
+into part one, which shut
+down the second channel.
+
+00:35:02.450 --> 00:35:05.080 align:middle line:84%
+And then the second
+important lecture
+
+00:35:05.080 --> 00:35:09.140 align:middle line:90%
+here, we focus on this channel.
+
+00:35:09.140 --> 00:35:10.650 align:middle line:90%
+So that's what we.
+
+00:35:10.650 --> 00:35:15.070 align:middle line:90%
+
+
+00:35:15.070 --> 00:35:18.340 align:middle line:84%
+So let's go to when I shut
+down this channel for now
+
+00:35:18.340 --> 00:35:22.240 align:middle line:84%
+and focus on the case without
+technological progress first.
+
+00:35:22.240 --> 00:35:24.410 align:middle line:90%
+So we put things together.
+
+00:35:24.410 --> 00:35:26.660 align:middle line:84%
+We said this comes from
+the previous lecture.
+
+00:35:26.660 --> 00:35:33.160 align:middle line:84%
+We can write output per person
+as an increasing function
+
+00:35:33.160 --> 00:35:36.930 align:middle line:90%
+of capital per person.
+
+00:35:36.930 --> 00:35:39.400 align:middle line:90%
+Second key equation is--
+
+00:35:39.400 --> 00:35:41.650 align:middle line:84%
+well, this is a property
+and it has to be,
+
+00:35:41.650 --> 00:35:43.840 align:middle line:84%
+if you are in a closed
+economy, no government
+
+00:35:43.840 --> 00:35:45.760 align:middle line:90%
+expenditure or anything.
+
+00:35:45.760 --> 00:35:46.720 align:middle line:90%
+We could add that.
+
+00:35:46.720 --> 00:35:49.050 align:middle line:84%
+But it's not important
+for the message.
+
+00:35:49.050 --> 00:35:50.600 align:middle line:90%
+Then investment has to be equal.
+
+00:35:50.600 --> 00:35:52.600 align:middle line:84%
+So investment is going
+to be very important here
+
+00:35:52.600 --> 00:35:56.060 align:middle line:84%
+because what will make
+the capital stock grow.
+
+00:35:56.060 --> 00:35:58.310 align:middle line:84%
+But there has to be
+funding for that.
+
+00:35:58.310 --> 00:35:59.960 align:middle line:84%
+And the funding
+come from savings.
+
+00:35:59.960 --> 00:36:03.070 align:middle line:84%
+And we simplify things by
+assuming that the saving
+
+00:36:03.070 --> 00:36:05.470 align:middle line:84%
+function is just proportional
+to the level of output,
+
+00:36:05.470 --> 00:36:07.750 align:middle line:84%
+which is reasonable when
+you think about long run.
+
+00:36:07.750 --> 00:36:09.400 align:middle line:90%
+All these things scale up.
+
+00:36:09.400 --> 00:36:11.270 align:middle line:84%
+When you're thinking
+about very short term,
+
+00:36:11.270 --> 00:36:14.980 align:middle line:84%
+no, we have some constants
+and so on floating around.
+
+00:36:14.980 --> 00:36:18.100 align:middle line:84%
+But over the long run,
+things do scale up.
+
+00:36:18.100 --> 00:36:21.117 align:middle line:84%
+And so we can write
+investment in equilibrium.
+
+00:36:21.117 --> 00:36:22.700 align:middle line:84%
+Investment has to
+be equal to savings.
+
+00:36:22.700 --> 00:36:24.800 align:middle line:84%
+Saving is proportional
+to output.
+
+00:36:24.800 --> 00:36:27.670 align:middle line:84%
+So we get that investment
+in this economy
+
+00:36:27.670 --> 00:36:30.280 align:middle line:90%
+is increasing in output.
+
+00:36:30.280 --> 00:36:33.020 align:middle line:84%
+This is a constant
+somewhere between 0 and 1.
+
+00:36:33.020 --> 00:36:37.210 align:middle line:84%
+And the last key equation here
+is the capital accumulation
+
+00:36:37.210 --> 00:36:37.760 align:middle line:90%
+equation.
+
+00:36:37.760 --> 00:36:41.500 align:middle line:84%
+The capital accumulation
+equation says that capital,
+
+00:36:41.500 --> 00:36:46.570 align:middle line:84%
+T plus 1, is equal to capital
+today, minus the depreciation--
+
+00:36:46.570 --> 00:36:50.050 align:middle line:84%
+some fraction of the machines
+break down in every period--
+
+00:36:50.050 --> 00:36:53.410 align:middle line:84%
+but plus the new
+investment, plus It.
+
+00:36:53.410 --> 00:36:57.150 align:middle line:84%
+And we rewrote things and
+replaced the saving function
+
+00:36:57.150 --> 00:36:57.650 align:middle line:90%
+and so on.
+
+00:36:57.650 --> 00:37:01.030 align:middle line:84%
+And we end up in an
+expression like this
+
+00:37:01.030 --> 00:37:05.050 align:middle line:84%
+that says capital per person
+here grows with investment,
+
+00:37:05.050 --> 00:37:07.510 align:middle line:84%
+which is funded by savings,
+which is an increasing
+
+00:37:07.510 --> 00:37:09.700 align:middle line:84%
+function of output, which
+in turn is an increasing
+
+00:37:09.700 --> 00:37:12.400 align:middle line:84%
+function of capital
+per person, minus
+
+00:37:12.400 --> 00:37:14.110 align:middle line:90%
+whatever is the depreciation.
+
+00:37:14.110 --> 00:37:18.460 align:middle line:84%
+And what we did in the start
+diagram in the other model
+
+00:37:18.460 --> 00:37:22.040 align:middle line:84%
+is, we plot this function
+and that function.
+
+00:37:22.040 --> 00:37:25.360 align:middle line:84%
+We know that the steady state is
+when these two things are equal.
+
+00:37:25.360 --> 00:37:30.800 align:middle line:84%
+That pins down the k star over,
+k over n star of this economy.
+
+00:37:30.800 --> 00:37:33.580 align:middle line:84%
+But we also know
+that to the left
+
+00:37:33.580 --> 00:37:38.760 align:middle line:84%
+of that point in capital space,
+this term is greater than that.
+
+00:37:38.760 --> 00:37:41.960 align:middle line:84%
+And therefore, the
+capital stock is rising.
+
+00:37:41.960 --> 00:37:45.950 align:middle line:84%
+To the right we get that this
+term is greater than that.
+
+00:37:45.950 --> 00:37:48.420 align:middle line:84%
+And therefore the
+capital stock is falling.
+
+00:37:48.420 --> 00:37:50.730 align:middle line:84%
+And that's what we
+have in this diagram.
+
+00:37:50.730 --> 00:37:52.860 align:middle line:84%
+So that's the steady
+state of the economy,
+
+00:37:52.860 --> 00:37:56.960 align:middle line:84%
+when the depreciation per
+worker, which is the required--
+
+00:37:56.960 --> 00:37:58.640 align:middle line:84%
+The minimum investment
+you need to keep
+
+00:37:58.640 --> 00:38:00.440 align:middle line:84%
+the capital stock
+constant is whatever
+
+00:38:00.440 --> 00:38:03.080 align:middle line:90%
+is depreciation per worker.
+
+00:38:03.080 --> 00:38:06.137 align:middle line:84%
+Anything else you do, it will
+grow the stock of capital.
+
+00:38:06.137 --> 00:38:07.970 align:middle line:84%
+Anything less you do,
+you're not maintaining
+
+00:38:07.970 --> 00:38:09.178 align:middle line:90%
+enough of your capital stock.
+
+00:38:09.178 --> 00:38:09.920 align:middle line:90%
+It's declining.
+
+00:38:09.920 --> 00:38:11.690 align:middle line:84%
+And that's exactly
+what happens here.
+
+00:38:11.690 --> 00:38:13.260 align:middle line:90%
+That's the steady state.
+
+00:38:13.260 --> 00:38:17.930 align:middle line:84%
+If your capital below
+that, then a capital stock
+
+00:38:17.930 --> 00:38:20.570 align:middle line:84%
+will be rising because you have
+lots of savings and therefore
+
+00:38:20.570 --> 00:38:22.778 align:middle line:84%
+lots of investment relative
+to what you need in order
+
+00:38:22.778 --> 00:38:26.060 align:middle line:84%
+to maintain the stock, the
+small stock of capital you have,
+
+00:38:26.060 --> 00:38:29.660 align:middle line:90%
+until you reach steady state.
+
+00:38:29.660 --> 00:38:36.290 align:middle line:84%
+And this model alone
+can explain really
+
+00:38:36.290 --> 00:38:40.790 align:middle line:84%
+the pattern we have that
+the poorest economies tended
+
+00:38:40.790 --> 00:38:42.990 align:middle line:84%
+to grow faster than
+the richer economies.
+
+00:38:42.990 --> 00:38:45.110 align:middle line:84%
+If you think of poorer
+economies as economies
+
+00:38:45.110 --> 00:38:49.940 align:middle line:84%
+that are otherwise similar, but
+that have a low stock of capital
+
+00:38:49.940 --> 00:38:51.920 align:middle line:84%
+to start with, well,
+those economies
+
+00:38:51.920 --> 00:38:53.960 align:middle line:84%
+are going to be to the
+left of the steady state,
+
+00:38:53.960 --> 00:38:55.418 align:middle line:84%
+and therefore
+they're going to tend
+
+00:38:55.418 --> 00:38:57.800 align:middle line:84%
+to grow at whatever is the
+steady state rate of growth,
+
+00:38:57.800 --> 00:38:59.700 align:middle line:90%
+plus this catching up growth.
+
+00:38:59.700 --> 00:39:03.760 align:middle line:84%
+And so this is a very
+powerful little model.
+
+00:39:03.760 --> 00:39:08.060 align:middle line:84%
+It can explain a lot of those
+convergence, the convergence
+
+00:39:08.060 --> 00:39:09.550 align:middle line:90%
+that we saw in the data.
+
+00:39:09.550 --> 00:39:12.780 align:middle line:90%
+
+
+00:39:12.780 --> 00:39:15.270 align:middle line:90%
+Do you understand this?
+
+00:39:15.270 --> 00:39:16.390 align:middle line:90%
+This is important.
+
+00:39:16.390 --> 00:39:21.580 align:middle line:90%
+
+
+00:39:21.580 --> 00:39:22.830 align:middle line:90%
+Then we did some experiments.
+
+00:39:22.830 --> 00:39:24.340 align:middle line:84%
+What happens if you
+increase the savings rate?
+
+00:39:24.340 --> 00:39:26.570 align:middle line:84%
+At the time when Solow
+was writing this model,
+
+00:39:26.570 --> 00:39:29.180 align:middle line:84%
+many people say that what
+was behind growth was saving.
+
+00:39:29.180 --> 00:39:32.740 align:middle line:84%
+Well, in this model we
+show that, indeed, it
+
+00:39:32.740 --> 00:39:34.320 align:middle line:90%
+is a saving rate rises.
+
+00:39:34.320 --> 00:39:36.855 align:middle line:84%
+Then at any given
+level of capital--
+
+00:39:36.855 --> 00:39:38.480 align:middle line:84%
+suppose that was the
+oldest save state.
+
+00:39:38.480 --> 00:39:40.600 align:middle line:84%
+If now the saving
+rate rises, that
+
+00:39:40.600 --> 00:39:45.490 align:middle line:84%
+will increase
+investment above what
+
+00:39:45.490 --> 00:39:48.190 align:middle line:84%
+you need to maintain that
+level of the stock of capital.
+
+00:39:48.190 --> 00:39:50.860 align:middle line:84%
+So the stock of capital
+is going to start growing.
+
+00:39:50.860 --> 00:39:53.170 align:middle line:84%
+When that happens,
+output per capita
+
+00:39:53.170 --> 00:39:55.600 align:middle line:84%
+will grow faster than
+in a steady state
+
+00:39:55.600 --> 00:39:57.880 align:middle line:84%
+because you're going to be
+going from here to there.
+
+00:39:57.880 --> 00:40:00.912 align:middle line:84%
+But eventually you'll converge
+to the same old rate of growth.
+
+00:40:00.912 --> 00:40:02.620 align:middle line:84%
+So the point here is
+that the saving rate
+
+00:40:02.620 --> 00:40:06.040 align:middle line:84%
+can not change, per se, does
+not change the rate of growth
+
+00:40:06.040 --> 00:40:06.730 align:middle line:90%
+in the long run.
+
+00:40:06.730 --> 00:40:08.690 align:middle line:84%
+But it gives you
+transitional growth.
+
+00:40:08.690 --> 00:40:12.760 align:middle line:84%
+And a lot of the Asian miracle
+of the very fast rates of growth
+
+00:40:12.760 --> 00:40:16.480 align:middle line:84%
+from the '60s and '70s and
+'80s has to do with this kind
+
+00:40:16.480 --> 00:40:19.720 align:middle line:84%
+of thing-- very sudden increase
+in saving rates plus other
+
+00:40:19.720 --> 00:40:21.320 align:middle line:90%
+institutional changes and so on.
+
+00:40:21.320 --> 00:40:23.690 align:middle line:84%
+But high increase
+in the savings rate
+
+00:40:23.690 --> 00:40:27.410 align:middle line:90%
+also led to very fast growth.
+
+00:40:27.410 --> 00:40:29.730 align:middle line:84%
+Again, this little model
+can explain a lot, as well.
+
+00:40:29.730 --> 00:40:32.940 align:middle line:84%
+It can explain when you
+see those growth miracles,
+
+00:40:32.940 --> 00:40:34.590 align:middle line:90%
+often it's associated to--
+
+00:40:34.590 --> 00:40:38.480 align:middle line:84%
+for some reason, it varies a
+lot across different scenarios--
+
+00:40:38.480 --> 00:40:42.460 align:middle line:84%
+the saving rate
+went up quite a bit.
+
+00:40:42.460 --> 00:40:45.430 align:middle line:84%
+But point is, that gives
+you very fast growth
+
+00:40:45.430 --> 00:40:47.355 align:middle line:84%
+in the short term, but
+eventually peters out.
+
+00:40:47.355 --> 00:40:51.220 align:middle line:90%
+
+
+00:40:51.220 --> 00:40:55.900 align:middle line:84%
+The next thing-- All that we did
+for a fixed population and said,
+
+00:40:55.900 --> 00:40:58.905 align:middle line:84%
+well, suppose now the
+population is growing.
+
+00:40:58.905 --> 00:41:01.510 align:middle line:90%
+
+
+00:41:01.510 --> 00:41:03.160 align:middle line:84%
+I said the diagram
+we had before would
+
+00:41:03.160 --> 00:41:05.743 align:middle line:84%
+be very unpleasant because all
+these curves would be shifting.
+
+00:41:05.743 --> 00:41:08.440 align:middle line:84%
+So what we need to do is
+divide not by a constant.
+
+00:41:08.440 --> 00:41:10.870 align:middle line:84%
+We need to divide by
+whatever is the population
+
+00:41:10.870 --> 00:41:12.200 align:middle line:90%
+at that point in time.
+
+00:41:12.200 --> 00:41:14.230 align:middle line:84%
+And that will give
+us the same diagram
+
+00:41:14.230 --> 00:41:16.050 align:middle line:90%
+we had with one little twist.
+
+00:41:16.050 --> 00:41:18.070 align:middle line:84%
+So I went through
+a little algebra
+
+00:41:18.070 --> 00:41:22.600 align:middle line:84%
+here to arrive to a capital
+accumulation equation, capital
+
+00:41:22.600 --> 00:41:26.140 align:middle line:84%
+per person equation, an
+equation for the change
+
+00:41:26.140 --> 00:41:29.690 align:middle line:84%
+in the capital per person, which
+is very similar to what we had.
+
+00:41:29.690 --> 00:41:33.550 align:middle line:84%
+The only difference is that the
+required capital, investment
+
+00:41:33.550 --> 00:41:36.700 align:middle line:84%
+required to maintain the
+stock of capital per person,
+
+00:41:36.700 --> 00:41:40.560 align:middle line:90%
+has an extra term here, gN.
+
+00:41:40.560 --> 00:41:45.220 align:middle line:84%
+And I said that gN-- so
+let's think about this term.
+
+00:41:45.220 --> 00:41:52.010 align:middle line:84%
+So delta, think of this
+as the required investment
+
+00:41:52.010 --> 00:41:55.330 align:middle line:84%
+in order to maintain the
+stock of capital where it was.
+
+00:41:55.330 --> 00:41:59.070 align:middle line:84%
+If this delta comes
+from the fact that,
+
+00:41:59.070 --> 00:42:00.510 align:middle line:84%
+well, you have a
+stock of capital.
+
+00:42:00.510 --> 00:42:01.685 align:middle line:90%
+You lose a fraction of that.
+
+00:42:01.685 --> 00:42:03.810 align:middle line:84%
+Well, you need an investment
+equal to that fraction
+
+00:42:03.810 --> 00:42:05.340 align:middle line:84%
+that you lost in
+order to maintain
+
+00:42:05.340 --> 00:42:07.260 align:middle line:90%
+the stock of capital the same.
+
+00:42:07.260 --> 00:42:10.560 align:middle line:90%
+That's clear.
+
+00:42:10.560 --> 00:42:14.520 align:middle line:84%
+But that's not enough to
+maintain the capital per person
+
+00:42:14.520 --> 00:42:19.290 align:middle line:84%
+constant if per person is
+rising, population is rising.
+
+00:42:19.290 --> 00:42:23.550 align:middle line:84%
+Because even if you maintain
+the stock of capital constant,
+
+00:42:23.550 --> 00:42:27.950 align:middle line:84%
+the denominator is rising at
+the rate of population growth.
+
+00:42:27.950 --> 00:42:31.520 align:middle line:84%
+So in order to maintain the
+capital per person constant,
+
+00:42:31.520 --> 00:42:35.010 align:middle line:84%
+you need to deal with the growth
+of the denominator, as well.
+
+00:42:35.010 --> 00:42:37.010 align:middle line:84%
+And that means you need
+a little-- you need also
+
+00:42:37.010 --> 00:42:39.770 align:middle line:84%
+investment to match the
+increase in population
+
+00:42:39.770 --> 00:42:43.820 align:middle line:84%
+so they can keep the
+capital per person constant.
+
+00:42:43.820 --> 00:42:46.230 align:middle line:90%
+So that's a modification.
+
+00:42:46.230 --> 00:42:48.203 align:middle line:84%
+So in terms of our
+diagram, all that
+
+00:42:48.203 --> 00:42:50.370 align:middle line:84%
+happened here, have
+technological progress, as well.
+
+00:42:50.370 --> 00:42:51.690 align:middle line:90%
+Set it to 0 for now.
+
+00:42:51.690 --> 00:42:53.930 align:middle line:84%
+All that happened relative
+to the previous diagram
+
+00:42:53.930 --> 00:42:58.230 align:middle line:84%
+is that now I rotated this
+curve up, upward a little bit.
+
+00:42:58.230 --> 00:43:04.210 align:middle line:84%
+But then you conduct analysis
+exactly the same way.
+
+00:43:04.210 --> 00:43:05.850 align:middle line:84%
+The only thing that
+is different now
+
+00:43:05.850 --> 00:43:08.270 align:middle line:84%
+is that in the
+previous model, we
+
+00:43:08.270 --> 00:43:10.770 align:middle line:84%
+had that the rate of growth,
+the steady state rate of growth
+
+00:43:10.770 --> 00:43:13.130 align:middle line:90%
+was equal to 0.
+
+00:43:13.130 --> 00:43:15.710 align:middle line:84%
+And the steady state rate of
+growth of output per person
+
+00:43:15.710 --> 00:43:16.985 align:middle line:90%
+was also equal to 0.
+
+00:43:16.985 --> 00:43:18.110 align:middle line:90%
+Population was not growing.
+
+00:43:18.110 --> 00:43:19.180 align:middle line:90%
+Output was not growing.
+
+00:43:19.180 --> 00:43:22.100 align:middle line:90%
+The ratio wasn't growing either.
+
+00:43:22.100 --> 00:43:25.610 align:middle line:84%
+Here it's still the case
+that in a steady state,
+
+00:43:25.610 --> 00:43:29.160 align:middle line:84%
+output per person
+is not growing.
+
+00:43:29.160 --> 00:43:32.740 align:middle line:84%
+But that also means
+since population
+
+00:43:32.740 --> 00:43:35.320 align:middle line:84%
+is growing at the
+rate of gN or N,
+
+00:43:35.320 --> 00:43:37.690 align:middle line:84%
+I don't know how
+we call it here,
+
+00:43:37.690 --> 00:43:42.190 align:middle line:84%
+that means output must be
+also growing at the rate gN.
+
+00:43:42.190 --> 00:43:46.180 align:middle line:84%
+That's what will keep output
+per person not growing.
+
+00:43:46.180 --> 00:43:52.780 align:middle line:84%
+So for the output itself, a
+very important factor in growth
+
+00:43:52.780 --> 00:43:54.170 align:middle line:90%
+is population growth.
+
+00:43:54.170 --> 00:43:57.520 align:middle line:84%
+And if you look at rates of
+growth in general in the world,
+
+00:43:57.520 --> 00:44:00.010 align:middle line:84%
+certainly in the
+developed world,
+
+00:44:00.010 --> 00:44:03.040 align:middle line:84%
+they are falling for
+a variety of reasons.
+
+00:44:03.040 --> 00:44:07.290 align:middle line:84%
+And one of them is because
+population growth is falling.
+
+00:44:07.290 --> 00:44:10.680 align:middle line:84%
+But per person, that
+doesn't make a difference.
+
+00:44:10.680 --> 00:44:13.710 align:middle line:84%
+But for the level of the
+rate of growth, it does.
+
+00:44:13.710 --> 00:44:16.770 align:middle line:84%
+And then we added
+technological progress,
+
+00:44:16.770 --> 00:44:21.460 align:middle line:84%
+which we modeled as
+effective as enhancing labor.
+
+00:44:21.460 --> 00:44:26.920 align:middle line:84%
+So having a better technology
+means is you had more workers.
+
+00:44:26.920 --> 00:44:28.530 align:middle line:84%
+So for any given
+level of workers,
+
+00:44:28.530 --> 00:44:30.360 align:middle line:84%
+having a better
+technology, we modeled it
+
+00:44:30.360 --> 00:44:32.820 align:middle line:90%
+as having more workers.
+
+00:44:32.820 --> 00:44:35.380 align:middle line:84%
+And you can model
+it exactly that way.
+
+00:44:35.380 --> 00:44:37.890 align:middle line:84%
+You can use exactly the
+same diagram we had before.
+
+00:44:37.890 --> 00:44:40.273 align:middle line:84%
+But now we divide
+our scaling factor
+
+00:44:40.273 --> 00:44:41.940 align:middle line:84%
+rather than being 1
+over the population,
+
+00:44:41.940 --> 00:44:44.250 align:middle line:84%
+it's going to be 1 over
+effective population,
+
+00:44:44.250 --> 00:44:46.440 align:middle line:90%
+effective workers, 1 over AN.
+
+00:44:46.440 --> 00:44:48.700 align:middle line:84%
+And you conduct exactly
+the same analysis.
+
+00:44:48.700 --> 00:44:52.230 align:middle line:84%
+You do exactly the same
+approximations I did before.
+
+00:44:52.230 --> 00:45:00.365 align:middle line:84%
+But the difference now is
+that here rather than have gN,
+
+00:45:00.365 --> 00:45:02.640 align:middle line:90%
+you have AN.
+
+00:45:02.640 --> 00:45:03.900 align:middle line:90%
+Why is that?
+
+00:45:03.900 --> 00:45:06.810 align:middle line:84%
+Well, because if
+I want to maintain
+
+00:45:06.810 --> 00:45:10.560 align:middle line:84%
+the capital per effective
+worker constant,
+
+00:45:10.560 --> 00:45:13.440 align:middle line:84%
+then I need to first make
+up for the depreciation
+
+00:45:13.440 --> 00:45:14.590 align:middle line:90%
+of the stock of capital.
+
+00:45:14.590 --> 00:45:17.900 align:middle line:84%
+Thus, I have to
+stabilize the numerator.
+
+00:45:17.900 --> 00:45:20.508 align:middle line:84%
+But then I have to take into
+account that the denominator is
+
+00:45:20.508 --> 00:45:22.800 align:middle line:84%
+growing for two reasons--
+because population is growing
+
+00:45:22.800 --> 00:45:24.460 align:middle line:84%
+and because
+technology is growing.
+
+00:45:24.460 --> 00:45:26.310 align:middle line:84%
+And in order to maintain
+the ratio constant,
+
+00:45:26.310 --> 00:45:29.370 align:middle line:84%
+I'm going to have to add
+investment so to maintain
+
+00:45:29.370 --> 00:45:30.503 align:middle line:90%
+that ratio constant.
+
+00:45:30.503 --> 00:45:31.420 align:middle line:90%
+And that's the reason.
+
+00:45:31.420 --> 00:45:37.230 align:middle line:84%
+Now we have this line
+here, rotates even further.
+
+00:45:37.230 --> 00:45:39.030 align:middle line:84%
+And we get delta
+plus gA plus gN.
+
+00:45:39.030 --> 00:45:42.967 align:middle line:90%
+
+
+00:45:42.967 --> 00:45:44.550 align:middle line:84%
+And you should play
+with these things.
+
+00:45:44.550 --> 00:45:46.550 align:middle line:84%
+What happened in
+this diagram if I
+
+00:45:46.550 --> 00:45:48.990 align:middle line:90%
+increase gA or stuff like that.
+
+00:45:48.990 --> 00:45:52.360 align:middle line:90%
+
+
+00:45:52.360 --> 00:45:55.090 align:middle line:84%
+And notice that here, now
+still you have a steady state.
+
+00:45:55.090 --> 00:45:56.590 align:middle line:84%
+But it's a steady
+state in the space
+
+00:45:56.590 --> 00:45:59.650 align:middle line:84%
+of output per effective
+worker and capital
+
+00:45:59.650 --> 00:46:01.060 align:middle line:90%
+per effective worker.
+
+00:46:01.060 --> 00:46:04.930 align:middle line:84%
+That means, for example,
+that these quantities are not
+
+00:46:04.930 --> 00:46:06.610 align:middle line:90%
+growing in the steady state.
+
+00:46:06.610 --> 00:46:10.510 align:middle line:84%
+But output will be growing at
+which rate in the steady state?
+
+00:46:10.510 --> 00:46:13.770 align:middle line:84%
+In any state, state here, what
+is the rate of growth of output?
+
+00:46:13.770 --> 00:46:24.920 align:middle line:90%
+
+
+00:46:24.920 --> 00:46:29.430 align:middle line:84%
+If output over AN is
+constant in the steady state,
+
+00:46:29.430 --> 00:46:31.110 align:middle line:90%
+how can that happen?
+
+00:46:31.110 --> 00:46:32.920 align:middle line:84%
+Output has to be
+growing at which rate?
+
+00:46:32.920 --> 00:46:35.320 align:middle line:84%
+At the same rate
+as the denominator.
+
+00:46:35.320 --> 00:46:37.470 align:middle line:90%
+So it's gA plus gN.
+
+00:46:37.470 --> 00:46:41.890 align:middle line:90%
+
+
+00:46:41.890 --> 00:46:43.100 align:middle line:90%
+That's a trickier question.
+
+00:46:43.100 --> 00:46:47.290 align:middle line:84%
+What happens to output per
+person in this steady state?
+
+00:46:47.290 --> 00:46:50.085 align:middle line:84%
+What rate is it growing
+at, output per person?
+
+00:46:50.085 --> 00:46:53.310 align:middle line:90%
+
+
+00:46:53.310 --> 00:46:55.486 align:middle line:84%
+Sorry, somebody said
+the right thing.
+
+00:46:55.486 --> 00:46:57.790 align:middle line:90%
+gA, exactly.
+
+00:46:57.790 --> 00:46:59.710 align:middle line:84%
+I want to keep this
+ratio constant.
+
+00:46:59.710 --> 00:47:02.190 align:middle line:84%
+I'm asking the question of
+which space does this need
+
+00:47:02.190 --> 00:47:04.500 align:middle line:84%
+to rise in order to maintain
+this constant, while
+
+00:47:04.500 --> 00:47:06.550 align:middle line:84%
+at the same rate
+as A is growing.
+
+00:47:06.550 --> 00:47:07.050 align:middle line:90%
+Good.
+
+00:47:07.050 --> 00:47:09.910 align:middle line:90%
+
+
+00:47:09.910 --> 00:47:12.130 align:middle line:84%
+Here we also did, we
+ask the question, well,
+
+00:47:12.130 --> 00:47:14.110 align:middle line:84%
+could it be that here,
+if we change the saving
+
+00:47:14.110 --> 00:47:16.115 align:middle line:84%
+rate, we get some extra
+kick in the long run?
+
+00:47:16.115 --> 00:47:18.490 align:middle line:84%
+And the answer is no for the
+same logic as we had before.
+
+00:47:18.490 --> 00:47:20.410 align:middle line:84%
+You're going to get
+transitional growth.
+
+00:47:20.410 --> 00:47:23.237 align:middle line:84%
+But eventually you're going
+to convert to a steady state.
+
+00:47:23.237 --> 00:47:24.820 align:middle line:84%
+And the rate of
+growth in the long run
+
+00:47:24.820 --> 00:47:26.960 align:middle line:84%
+is not going to be a
+function of the saving rate.
+
+00:47:26.960 --> 00:47:29.050 align:middle line:84%
+It's going to be
+equal to gA plus gN.
+
+00:47:29.050 --> 00:47:42.330 align:middle line:90%
+
+
+00:47:42.330 --> 00:47:43.490 align:middle line:90%
+I do here.
+
+00:47:43.490 --> 00:47:45.560 align:middle line:84%
+Measuring technological
+progress, blah, blah.
+
+00:47:45.560 --> 00:47:47.210 align:middle line:90%
+I told you the story of China.
+
+00:47:47.210 --> 00:47:47.710 align:middle line:90%
+Good.
+
+00:47:47.710 --> 00:47:52.620 align:middle line:90%
+
+
+00:47:52.620 --> 00:47:54.120 align:middle line:90%
+We run out of time.
+
+00:47:54.120 --> 00:47:59.720 align:middle line:84%
+So let me just say the last
+thing that I want to say.
+
+00:47:59.720 --> 00:48:02.070 align:middle line:84%
+So the last thing
+we discussed, you
+
+00:48:02.070 --> 00:48:04.890 align:middle line:84%
+say, well, what happen if
+you add education to this
+
+00:48:04.890 --> 00:48:06.262 align:middle line:90%
+and try to--
+
+00:48:06.262 --> 00:48:09.630 align:middle line:90%
+[INAUDIBLE]
+
+00:48:09.630 --> 00:48:11.220 align:middle line:84%
+I expanded the
+model a little bit.
+
+00:48:11.220 --> 00:48:14.320 align:middle line:84%
+I had education and said, does
+it change conclusions a lot?
+
+00:48:14.320 --> 00:48:15.940 align:middle line:90%
+I said, no, not really.
+
+00:48:15.940 --> 00:48:18.630 align:middle line:84%
+I mean, it doesn't change
+the conclusion with respect
+
+00:48:18.630 --> 00:48:19.950 align:middle line:90%
+to the long run.
+
+00:48:19.950 --> 00:48:22.570 align:middle line:84%
+It affects the level
+of output per capita
+
+00:48:22.570 --> 00:48:23.910 align:middle line:90%
+if you have more education.
+
+00:48:23.910 --> 00:48:26.950 align:middle line:84%
+But you won't achieve effective
+rate of growth in the long run.
+
+00:48:26.950 --> 00:48:33.030 align:middle line:84%
+And the last point I made is
+that, look, in this model,
+
+00:48:33.030 --> 00:48:36.947 align:middle line:84%
+if you expand it and you try
+to assume that technology is
+
+00:48:36.947 --> 00:48:39.030 align:middle line:84%
+the same and the rate of
+technological progress is
+
+00:48:39.030 --> 00:48:41.970 align:middle line:84%
+the same across the world,
+you stick those parameters
+
+00:48:41.970 --> 00:48:43.650 align:middle line:84%
+in the model--
+population growth,
+
+00:48:43.650 --> 00:48:45.720 align:middle line:84%
+the education levels
+and all that--
+
+00:48:45.720 --> 00:48:48.400 align:middle line:84%
+then you don't explain
+the amount of inequality
+
+00:48:48.400 --> 00:48:49.390 align:middle line:90%
+we see in the world.
+
+00:48:49.390 --> 00:48:51.190 align:middle line:84%
+The world will
+look a lot flatter
+
+00:48:51.190 --> 00:48:57.390 align:middle line:84%
+if it was just a differences in
+population growth, deprivation,
+
+00:48:57.390 --> 00:48:59.400 align:middle line:84%
+education levels,
+and things like that,
+
+00:48:59.400 --> 00:49:01.090 align:middle line:90%
+but with the same technology.
+
+00:49:01.090 --> 00:49:03.810 align:middle line:90%
+So if you want to account for--
+
+00:49:03.810 --> 00:49:06.300 align:middle line:84%
+so this model, the
+model essentially
+
+00:49:06.300 --> 00:49:10.000 align:middle line:84%
+doesn't produce enough
+inequality in the world.
+
+00:49:10.000 --> 00:49:11.490 align:middle line:84%
+You need to add
+something else that
+
+00:49:11.490 --> 00:49:14.460 align:middle line:84%
+explains that we have some
+countries in Africa that are not
+
+00:49:14.460 --> 00:49:16.960 align:middle line:84%
+growing or growing at a
+very low level of rate.
+
+00:49:16.960 --> 00:49:20.070 align:middle line:84%
+And we said that something else
+technology, for whatever reason,
+
+00:49:20.070 --> 00:49:24.150 align:middle line:84%
+it happens that there is
+a pocket of countries that
+
+00:49:24.150 --> 00:49:27.090 align:middle line:84%
+seem to have a lower,
+sort of permanently lower
+
+00:49:27.090 --> 00:49:31.030 align:middle line:84%
+level of technology at
+both level and growth rate.
+
+00:49:31.030 --> 00:49:34.170 align:middle line:84%
+And that's what explains sort
+of a subset of countries that
+
+00:49:34.170 --> 00:49:35.700 align:middle line:84%
+are sort of stacked,
+that are not
+
+00:49:35.700 --> 00:49:37.625 align:middle line:84%
+consistent with this
+convergence type thing.
+
+00:49:37.625 --> 00:49:40.000 align:middle line:84%
+So that's the reason it's
+called conditional convergence.
+
+00:49:40.000 --> 00:49:42.570 align:middle line:84%
+Those countries themselves
+are converging to something.
+
+00:49:42.570 --> 00:49:44.670 align:middle line:84%
+But they're converging
+to something much lower
+
+00:49:44.670 --> 00:49:46.650 align:middle line:84%
+and with much lower
+rate of growth
+
+00:49:46.650 --> 00:49:48.430 align:middle line:84%
+than most of the
+rest of the world.
+
+00:49:48.430 --> 00:49:53.610 align:middle line:84%
+But the final lesson is for the
+average country, on average,
+
+00:49:53.610 --> 00:49:56.310 align:middle line:84%
+it's clear that poorer
+countries grow faster
+
+00:49:56.310 --> 00:49:57.610 align:middle line:90%
+than richer countries.
+
+00:49:57.610 --> 00:49:59.375 align:middle line:90%
+That's a dominant force.
+
+00:49:59.375 --> 00:50:00.750 align:middle line:84%
+But you need a
+little more if you
+
+00:50:00.750 --> 00:50:03.420 align:middle line:84%
+want to explain certain
+pockets of the world.
+
+00:50:03.420 --> 00:50:04.970 align:middle line:90%
+OK.
+
+00:50:04.970 --> 00:50:23.000 align:middle line:90%

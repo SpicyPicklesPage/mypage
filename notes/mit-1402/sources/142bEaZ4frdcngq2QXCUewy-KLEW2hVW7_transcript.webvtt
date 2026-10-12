@@ -1,0 +1,3802 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.980 align:middle line:90%
+[SQUEAKING]
+
+00:00:01.980 --> 00:00:03.960 align:middle line:90%
+[RUSTLING]
+
+00:00:03.960 --> 00:00:07.920 align:middle line:90%
+[CLICKING]
+
+00:00:07.920 --> 00:00:16.088 align:middle line:90%
+
+
+00:00:16.088 --> 00:00:17.630 align:middle line:84%
+RICARDO CABALLERO:
+Today, we're going
+
+00:00:17.630 --> 00:00:22.080 align:middle line:84%
+to talk about a very
+important topic in economics,
+
+00:00:22.080 --> 00:00:23.390 align:middle line:90%
+which is expectations.
+
+00:00:23.390 --> 00:00:25.490 align:middle line:84%
+We have barely
+mentioned expectations
+
+00:00:25.490 --> 00:00:27.200 align:middle line:84%
+when we talk about
+the Phillips curve,
+
+00:00:27.200 --> 00:00:32.870 align:middle line:84%
+we talked about expectations
+when we discussed the UIP and so
+
+00:00:32.870 --> 00:00:35.840 align:middle line:84%
+on, but expectation is a much
+bigger issue in economics.
+
+00:00:35.840 --> 00:00:37.940 align:middle line:84%
+In fact, most
+decisions by firms,
+
+00:00:37.940 --> 00:00:41.810 align:middle line:84%
+by consumers,
+governments involve
+
+00:00:41.810 --> 00:00:43.370 align:middle line:90%
+considerations of the future.
+
+00:00:43.370 --> 00:00:46.880 align:middle line:84%
+And it plays an even bigger role
+in finance in which essentially,
+
+00:00:46.880 --> 00:00:48.440 align:middle line:90%
+everything is about the future.
+
+00:00:48.440 --> 00:00:52.400 align:middle line:84%
+The price of an asset today
+is meaningless in itself.
+
+00:00:52.400 --> 00:00:54.650 align:middle line:84%
+You have to compare it with
+what you expect to get out
+
+00:00:54.650 --> 00:00:55.860 align:middle line:90%
+of that asset in the future.
+
+00:00:55.860 --> 00:00:57.900 align:middle line:84%
+So it's all about
+expectations and so on.
+
+00:00:57.900 --> 00:01:00.050 align:middle line:84%
+So that's what we're
+going to do today
+
+00:01:00.050 --> 00:01:04.120 align:middle line:84%
+we're going to talk
+about expectations, how
+
+00:01:04.120 --> 00:01:08.650 align:middle line:84%
+to value things that you expect
+to receive in the future,
+
+00:01:08.650 --> 00:01:11.350 align:middle line:84%
+and how to compare those
+things with things that you
+
+00:01:11.350 --> 00:01:14.570 align:middle line:90%
+have in the present.
+
+00:01:14.570 --> 00:01:17.420 align:middle line:84%
+But before doing that, actually,
+let's talk a little bit
+
+00:01:17.420 --> 00:01:18.360 align:middle line:90%
+about the news.
+
+00:01:18.360 --> 00:01:21.950 align:middle line:84%
+Who knows who first
+Republic Bank is?
+
+00:01:21.950 --> 00:01:24.230 align:middle line:84%
+Remember that a few
+weeks ago, I told you
+
+00:01:24.230 --> 00:01:26.970 align:middle line:90%
+that the Silicon Valley Bank--
+
+00:01:26.970 --> 00:01:28.400 align:middle line:90%
+I mean, you read it.
+
+00:01:28.400 --> 00:01:33.120 align:middle line:90%
+I just mentioned it, that the--
+
+00:01:33.120 --> 00:01:37.730 align:middle line:84%
+or discuss it that we had the
+second-largest bank by asset
+
+00:01:37.730 --> 00:01:40.070 align:middle line:90%
+in US history--
+
+00:01:40.070 --> 00:01:44.660 align:middle line:84%
+it was-- Silicon Valley Bank
+was the second-largest asset--
+
+00:01:44.660 --> 00:01:47.840 align:middle line:84%
+bank in terms of assets
+to collapse in the US.
+
+00:01:47.840 --> 00:01:50.360 align:middle line:84%
+The first one was
+many years ago,
+
+00:01:50.360 --> 00:01:54.350 align:middle line:84%
+and then we had this bank that
+had more than $200 billion
+
+00:01:54.350 --> 00:01:57.410 align:middle line:84%
+in assets that essentially
+collapsed in a few days.
+
+00:01:57.410 --> 00:01:58.850 align:middle line:90%
+It was a run on deposits.
+
+00:01:58.850 --> 00:02:02.270 align:middle line:84%
+They had problems
+before, but what really
+
+00:02:02.270 --> 00:02:04.430 align:middle line:84%
+did it, as is always
+the case with banks,
+
+00:02:04.430 --> 00:02:08.090 align:middle line:84%
+is they have a run on
+deposits-- funding.
+
+00:02:08.090 --> 00:02:09.690 align:middle line:90%
+Well, it's no longer.
+
+00:02:09.690 --> 00:02:13.160 align:middle line:84%
+The second-largest collapse
+in US bank history,
+
+00:02:13.160 --> 00:02:17.780 align:middle line:84%
+now we have on the weekend
+the new second-largest bank
+
+00:02:17.780 --> 00:02:20.930 align:middle line:84%
+to collapse, which is First
+Republic Bank that was
+
+00:02:20.930 --> 00:02:25.790 align:middle line:84%
+essentially liquidated and
+sold to JPMorgan over--
+
+00:02:25.790 --> 00:02:28.760 align:middle line:84%
+today morning, very, very
+early in the morning.
+
+00:02:28.760 --> 00:02:31.640 align:middle line:84%
+So you have an account
+in First Republic Bank,
+
+00:02:31.640 --> 00:02:34.490 align:middle line:84%
+you soon are likely to have
+an account in JPMorgan.
+
+00:02:34.490 --> 00:02:37.760 align:middle line:84%
+But again, what
+made it collapse was
+
+00:02:37.760 --> 00:02:40.820 align:middle line:84%
+something very similar to
+what made Silicon Valley Bank
+
+00:02:40.820 --> 00:02:44.790 align:middle line:84%
+collapse, which is that they had
+invested on a series of things
+
+00:02:44.790 --> 00:02:50.400 align:middle line:84%
+that were very vulnerable to the
+fast pace of hikes in interest
+
+00:02:50.400 --> 00:02:51.660 align:middle line:90%
+rates in the US.
+
+00:02:51.660 --> 00:02:53.910 align:middle line:84%
+And when they had those
+losses, depositors
+
+00:02:53.910 --> 00:02:56.610 align:middle line:84%
+became worried about
+it, and eventually they
+
+00:02:56.610 --> 00:03:00.420 align:middle line:84%
+decided not to wait, just
+run and see what happened.
+
+00:03:00.420 --> 00:03:03.030 align:middle line:84%
+First Republic Bank
+lost about $100 billion
+
+00:03:03.030 --> 00:03:05.580 align:middle line:90%
+in deposits just last week.
+
+00:03:05.580 --> 00:03:07.170 align:middle line:90%
+The last few days of last week.
+
+00:03:07.170 --> 00:03:15.080 align:middle line:84%
+So it was obvious that it
+was not going to survive,
+
+00:03:15.080 --> 00:03:18.490 align:middle line:84%
+and that's the reason something
+was arranged over the weekend
+
+00:03:18.490 --> 00:03:21.650 align:middle line:84%
+to avoid the panics associated
+to collapse of the bank
+
+00:03:21.650 --> 00:03:22.720 align:middle line:90%
+and so on.
+
+00:03:22.720 --> 00:03:25.690 align:middle line:84%
+But anyways, by the way, this
+is all about expectations,
+
+00:03:25.690 --> 00:03:30.608 align:middle line:84%
+is if people had expected the
+deposits to remain in the bank,
+
+00:03:30.608 --> 00:03:32.650 align:middle line:84%
+then probably this bank
+would not have collapsed.
+
+00:03:32.650 --> 00:03:35.380 align:middle line:84%
+It's all about people
+anticipating what other people
+
+00:03:35.380 --> 00:03:38.660 align:middle line:90%
+will do and so on and so forth.
+
+00:03:38.660 --> 00:03:43.170 align:middle line:84%
+OK, but now let me get into
+the specifics of this lecture.
+
+00:03:43.170 --> 00:03:47.270 align:middle line:84%
+So there, you have-- this is the
+most important index of equity--
+
+00:03:47.270 --> 00:03:49.700 align:middle line:90%
+equity index in the US, S&P 500.
+
+00:03:49.700 --> 00:03:53.390 align:middle line:84%
+It's a very inclusive index
+that captures all the large--
+
+00:03:53.390 --> 00:03:56.150 align:middle line:84%
+most of the large
+companies in the US--
+
+00:03:56.150 --> 00:03:57.770 align:middle line:90%
+all of the large, I think--
+
+00:03:57.770 --> 00:03:59.840 align:middle line:90%
+companies in the US.
+
+00:03:59.840 --> 00:04:02.660 align:middle line:84%
+And that's an index, an
+average-- weighted average
+
+00:04:02.660 --> 00:04:07.790 align:middle line:84%
+by this capitalization value
+of each of these shares,
+
+00:04:07.790 --> 00:04:10.670 align:middle line:84%
+the weighted average of the
+major-- main shares in the US,
+
+00:04:10.670 --> 00:04:12.230 align:middle line:90%
+equity shares in the US.
+
+00:04:12.230 --> 00:04:15.470 align:middle line:84%
+And one thing you see is
+that it moves a lot around.
+
+00:04:15.470 --> 00:04:19.250 align:middle line:84%
+Here, for example,
+when we became aware
+
+00:04:19.250 --> 00:04:21.649 align:middle line:84%
+that COVID was going
+to be a serious issue,
+
+00:04:21.649 --> 00:04:24.920 align:middle line:84%
+the US equity market
+collapsed by 35% or so.
+
+00:04:24.920 --> 00:04:27.860 align:middle line:84%
+That's a very large collapse
+in a very short period of time.
+
+00:04:27.860 --> 00:04:32.630 align:middle line:84%
+And then, as a result of
+lots of policy support,
+
+00:04:32.630 --> 00:04:34.880 align:middle line:90%
+actually we had a massive rally.
+
+00:04:34.880 --> 00:04:37.670 align:middle line:84%
+So up to the end of
+2021, the equity market
+
+00:04:37.670 --> 00:04:41.250 align:middle line:84%
+had rallied by
+114%, so big rally.
+
+00:04:41.250 --> 00:04:44.010 align:middle line:84%
+Then we got
+inflation and the Fed
+
+00:04:44.010 --> 00:04:47.910 align:middle line:84%
+began to worry about inflation,
+so they began to hike interest
+
+00:04:47.910 --> 00:04:49.890 align:middle line:84%
+rates, and when they
+hike interest rates,
+
+00:04:49.890 --> 00:04:52.680 align:middle line:84%
+that eventually led to
+a very large decline
+
+00:04:52.680 --> 00:04:56.280 align:middle line:84%
+in asset prices of the
+order of 30% or so--
+
+00:04:56.280 --> 00:05:00.300 align:middle line:84%
+25% or so, actually, from
+the peak to the bottom.
+
+00:05:00.300 --> 00:05:03.550 align:middle line:84%
+And then since the bottom,
+which was more or less October
+
+00:05:03.550 --> 00:05:07.500 align:middle line:84%
+of last year, we have seen a
+recovery of about 16% or so
+
+00:05:07.500 --> 00:05:08.910 align:middle line:90%
+of the equity market.
+
+00:05:08.910 --> 00:05:11.970 align:middle line:84%
+And if you look at the NASDAQ,
+which is another one index that
+
+00:05:11.970 --> 00:05:15.820 align:middle line:84%
+is very loaded towards
+technology companies,
+
+00:05:15.820 --> 00:05:19.300 align:middle line:84%
+and you can see swings
+are even larger than that.
+
+00:05:19.300 --> 00:05:22.650 align:middle line:84%
+Now why do these
+prices move so much?
+
+00:05:22.650 --> 00:05:27.140 align:middle line:84%
+Well, a lot of it has
+to do with expectations.
+
+00:05:27.140 --> 00:05:30.120 align:middle line:84%
+Are things going to get
+worse in the future?
+
+00:05:30.120 --> 00:05:33.200 align:middle line:90%
+Will the Fed cause a recession?
+
+00:05:33.200 --> 00:05:35.570 align:middle line:84%
+How much higher will
+be the interest rates?
+
+00:05:35.570 --> 00:05:38.750 align:middle line:84%
+And things like that
+matter a great deal.
+
+00:05:38.750 --> 00:05:41.720 align:middle line:84%
+Another thing that
+matters a great deal
+
+00:05:41.720 --> 00:05:45.543 align:middle line:84%
+is how much people want to take
+risk at any moment in time.
+
+00:05:45.543 --> 00:05:47.210 align:middle line:84%
+If you're very scared
+about environment,
+
+00:05:47.210 --> 00:05:49.520 align:middle line:84%
+you're unlikely to want
+to have something that--
+
+00:05:49.520 --> 00:05:52.640 align:middle line:84%
+to invest on something
+that can move so much.
+
+00:05:52.640 --> 00:05:56.120 align:middle line:84%
+And so risk is well-known,
+so it's called risk-off, when
+
+00:05:56.120 --> 00:05:58.640 align:middle line:84%
+people don't want to take
+risk, these asset prices
+
+00:05:58.640 --> 00:06:00.200 align:middle line:90%
+tend to collapse.
+
+00:06:00.200 --> 00:06:03.710 align:middle line:84%
+Of Risky assets-- equity
+is a very risky asset.
+
+00:06:03.710 --> 00:06:06.320 align:middle line:84%
+But that's not the only thing
+that moves these assets around.
+
+00:06:06.320 --> 00:06:08.990 align:middle line:84%
+It's not just the risk that the
+companies underlying companies
+
+00:06:08.990 --> 00:06:11.270 align:middle line:84%
+may go bankrupt or
+anything like that.
+
+00:06:11.270 --> 00:06:14.870 align:middle line:84%
+Here, you have, for
+example, the movement of a--
+
+00:06:14.870 --> 00:06:16.640 align:middle line:84%
+it's an ETF, but
+it doesn't matter.
+
+00:06:16.640 --> 00:06:18.710 align:middle line:90%
+It's a portfolio of bonds--
+
+00:06:18.710 --> 00:06:20.840 align:middle line:84%
+of US Treasury bonds
+of very long duration,
+
+00:06:20.840 --> 00:06:24.170 align:middle line:84%
+maturities beyond
+20 years and so.
+
+00:06:24.170 --> 00:06:27.890 align:middle line:84%
+So this is incredibly safe bonds
+because it's US treasuries.
+
+00:06:27.890 --> 00:06:30.920 align:middle line:84%
+So there's no risk of default
+or anything like that.
+
+00:06:30.920 --> 00:06:33.780 align:middle line:84%
+Still, the price swings
+can be pretty large.
+
+00:06:33.780 --> 00:06:37.760 align:middle line:84%
+I mean, over this period, you
+have seen an increase in value
+
+00:06:37.760 --> 00:06:44.240 align:middle line:84%
+of 45%, then a decline
+in value of about 20%,
+
+00:06:44.240 --> 00:06:45.740 align:middle line:90%
+another increase in 15%.
+
+00:06:45.740 --> 00:06:51.410 align:middle line:84%
+Here, there was a huge decline,
+40% since essentially--
+
+00:06:51.410 --> 00:06:52.820 align:middle line:90%
+what do you think happened here?
+
+00:06:52.820 --> 00:06:55.825 align:middle line:84%
+Why is this big
+decline in bonds?
+
+00:06:55.825 --> 00:06:57.200 align:middle line:84%
+You're going to
+be able to answer
+
+00:06:57.200 --> 00:06:59.990 align:middle line:84%
+that very precisely later
+on, but I can tell you
+
+00:06:59.990 --> 00:07:03.170 align:middle line:84%
+in advance, that was essentially
+the result of monetary policy
+
+00:07:03.170 --> 00:07:04.200 align:middle line:90%
+tightening.
+
+00:07:04.200 --> 00:07:09.030 align:middle line:84%
+Increasing interest rates
+caused the bonds to decline.
+
+00:07:09.030 --> 00:07:11.300 align:middle line:84%
+So even these instruments
+are very safe in the sense
+
+00:07:11.300 --> 00:07:13.190 align:middle line:84%
+that if you hold
+them to maturity,
+
+00:07:13.190 --> 00:07:15.650 align:middle line:84%
+you'll get your money back
+and all the promised coupons
+
+00:07:15.650 --> 00:07:19.070 align:middle line:84%
+along the path, well still,
+the price can move a lot.
+
+00:07:19.070 --> 00:07:21.800 align:middle line:84%
+And it's obvious that
+that movement in price
+
+00:07:21.800 --> 00:07:23.570 align:middle line:84%
+is something that
+you need to explain
+
+00:07:23.570 --> 00:07:27.560 align:middle line:84%
+in terms of expectations, what
+people expect things to happen.
+
+00:07:27.560 --> 00:07:30.020 align:middle line:84%
+In this case, it's not whether
+people expect to get paid
+
+00:07:30.020 --> 00:07:33.140 align:middle line:84%
+or not because you will get
+paid, but it's expected--
+
+00:07:33.140 --> 00:07:35.000 align:middle line:84%
+but in this
+particular case, it's
+
+00:07:35.000 --> 00:07:37.293 align:middle line:84%
+about expectations about
+future interest rate.
+
+00:07:37.293 --> 00:07:39.210 align:middle line:84%
+You think the interest
+rate will be very high,
+
+00:07:39.210 --> 00:07:41.700 align:middle line:84%
+then the price of bonds will
+tend to be very low and so on,
+
+00:07:41.700 --> 00:07:43.190 align:middle line:90%
+but it's all about the future.
+
+00:07:43.190 --> 00:07:45.740 align:middle line:90%
+
+
+00:07:45.740 --> 00:07:50.420 align:middle line:84%
+So a key concept that we're
+going to discuss today,
+
+00:07:50.420 --> 00:07:55.010 align:middle line:84%
+and then you're going to use
+it to price specific assets,
+
+00:07:55.010 --> 00:07:58.340 align:middle line:84%
+is a concept of expected
+present discounted value,
+
+00:07:58.340 --> 00:07:59.930 align:middle line:90%
+and this is a loaded concept.
+
+00:07:59.930 --> 00:08:02.060 align:middle line:84%
+There's lots of
+terms in there and we
+
+00:08:02.060 --> 00:08:06.560 align:middle line:84%
+need to understand what
+each of these terms means.
+
+00:08:06.560 --> 00:08:09.350 align:middle line:84%
+So the key issue that
+we're going to discuss
+
+00:08:09.350 --> 00:08:10.805 align:middle line:90%
+is how do we decide--
+
+00:08:10.805 --> 00:08:12.680 align:middle line:84%
+for example, if you see
+the price of an asset
+
+00:08:12.680 --> 00:08:15.560 align:middle line:84%
+out there that is
+100, how do you
+
+00:08:15.560 --> 00:08:19.640 align:middle line:84%
+decide whether that price is
+fair or not, it looks cheap
+
+00:08:19.640 --> 00:08:21.740 align:middle line:90%
+or not?
+
+00:08:21.740 --> 00:08:25.190 align:middle line:84%
+And that question means
+you have to decide
+
+00:08:25.190 --> 00:08:27.440 align:middle line:84%
+whether that price that
+you're paying today
+
+00:08:27.440 --> 00:08:29.930 align:middle line:84%
+is consistent with
+the future cash flows
+
+00:08:29.930 --> 00:08:31.815 align:middle line:84%
+that you're going to
+get from these assets.
+
+00:08:31.815 --> 00:08:33.440 align:middle line:84%
+And that's the reason
+you buy an asset,
+
+00:08:33.440 --> 00:08:37.520 align:middle line:84%
+is because you'll get something
+in return in the future.
+
+00:08:37.520 --> 00:08:38.780 align:middle line:90%
+But how do we compare that?
+
+00:08:38.780 --> 00:08:40.608 align:middle line:84%
+How do we compare
+the price today
+
+00:08:40.608 --> 00:08:42.650 align:middle line:84%
+with those things that
+will happen in the future?
+
+00:08:42.650 --> 00:08:46.700 align:middle line:90%
+
+
+00:08:46.700 --> 00:08:48.820 align:middle line:84%
+So answering that
+question, which
+
+00:08:48.820 --> 00:08:50.590 align:middle line:84%
+is what we're going
+to do in this lecture,
+
+00:08:50.590 --> 00:08:53.710 align:middle line:90%
+involves the following concepts.
+
+00:08:53.710 --> 00:08:55.570 align:middle line:90%
+First, expectations.
+
+00:08:55.570 --> 00:08:57.380 align:middle line:90%
+Big thing.
+
+00:08:57.380 --> 00:08:58.280 align:middle line:90%
+That's it.
+
+00:08:58.280 --> 00:09:00.680 align:middle line:84%
+This is expected present
+discounted value.
+
+00:09:00.680 --> 00:09:02.690 align:middle line:90%
+The E part is for expectations.
+
+00:09:02.690 --> 00:09:05.340 align:middle line:90%
+That comes there.
+
+00:09:05.340 --> 00:09:07.850 align:middle line:84%
+The expectations are very
+crucial because these are things
+
+00:09:07.850 --> 00:09:09.140 align:middle line:90%
+that happen in the future.
+
+00:09:09.140 --> 00:09:10.280 align:middle line:90%
+You need to expect--
+
+00:09:10.280 --> 00:09:14.630 align:middle line:84%
+even if it's a bond that
+promises you to pay $0.50 per
+
+00:09:14.630 --> 00:09:18.990 align:middle line:84%
+dollar every six months, you
+still may have an expectation
+
+00:09:18.990 --> 00:09:21.600 align:middle line:84%
+that if it is a bond issue
+by First Republic Bank,
+
+00:09:21.600 --> 00:09:22.620 align:middle line:90%
+it may not pay.
+
+00:09:22.620 --> 00:09:27.750 align:middle line:84%
+So you need to have an
+expectation about that.
+
+00:09:27.750 --> 00:09:30.240 align:middle line:84%
+So a crucial term
+is expectation.
+
+00:09:30.240 --> 00:09:33.720 align:middle line:84%
+Then you need some
+method to compare
+
+00:09:33.720 --> 00:09:36.630 align:middle line:84%
+payments received in the future
+with payments made today.
+
+00:09:36.630 --> 00:09:38.760 align:middle line:84%
+I mean, if you buy an
+asset you pay today,
+
+00:09:38.760 --> 00:09:41.010 align:middle line:84%
+but you're going to
+receive things returns
+
+00:09:41.010 --> 00:09:42.460 align:middle line:90%
+for that asset in the future.
+
+00:09:42.460 --> 00:09:44.970 align:middle line:90%
+So how do you compare that?
+
+00:09:44.970 --> 00:09:49.500 align:middle line:84%
+Suppose I pay one today and I
+receive one one year from now.
+
+00:09:49.500 --> 00:09:52.610 align:middle line:84%
+Does that seem
+like a good asset?
+
+00:09:52.610 --> 00:09:53.450 align:middle line:90%
+Probably not.
+
+00:09:53.450 --> 00:09:57.790 align:middle line:90%
+I mean, probably not.
+
+00:09:57.790 --> 00:10:01.030 align:middle line:84%
+And that's what the word
+"discounted" really means.
+
+00:10:01.030 --> 00:10:04.330 align:middle line:84%
+When you say expected
+present discounted value,
+
+00:10:04.330 --> 00:10:08.170 align:middle line:84%
+it says, somehow that things
+I receive in the future
+
+00:10:08.170 --> 00:10:10.782 align:middle line:84%
+are valued less than
+things I have today.
+
+00:10:10.782 --> 00:10:12.490 align:middle line:84%
+So if you're going to
+tell me that you're
+
+00:10:12.490 --> 00:10:16.060 align:middle line:84%
+going to pay me $1 in the future
+and I have to pay you $1 today,
+
+00:10:16.060 --> 00:10:18.670 align:middle line:84%
+most likely I won't
+take that deal.
+
+00:10:18.670 --> 00:10:21.930 align:middle line:84%
+So in other words, I'm
+discounting the future.
+
+00:10:21.930 --> 00:10:23.370 align:middle line:90%
+How do we discount the future?
+
+00:10:23.370 --> 00:10:27.110 align:middle line:84%
+Well, something that we
+now have to figure out.
+
+00:10:27.110 --> 00:10:31.868 align:middle line:84%
+So let me first shut down this
+part, the expectations, and then
+
+00:10:31.868 --> 00:10:32.660 align:middle line:90%
+we'll introduce it.
+
+00:10:32.660 --> 00:10:35.200 align:middle line:84%
+So assume for now
+that the future.
+
+00:10:35.200 --> 00:10:38.395 align:middle line:84%
+And I'm going to derive all
+the equations with assuming
+
+00:10:38.395 --> 00:10:39.650 align:middle line:90%
+that you know the future.
+
+00:10:39.650 --> 00:10:41.920 align:middle line:84%
+So there's no issue of
+trying to figure out what
+
+00:10:41.920 --> 00:10:43.480 align:middle line:90%
+the future is, you know it.
+
+00:10:43.480 --> 00:10:46.720 align:middle line:84%
+But still, you have
+to decide whether--
+
+00:10:46.720 --> 00:10:48.835 align:middle line:84%
+what is the right
+value for an asset.
+
+00:10:48.835 --> 00:10:52.020 align:middle line:90%
+
+
+00:10:52.020 --> 00:10:57.130 align:middle line:84%
+OK, so let's start with the
+case where you know the future.
+
+00:10:57.130 --> 00:10:58.370 align:middle line:90%
+Sorry.
+
+00:10:58.370 --> 00:11:02.500 align:middle line:90%
+And let's do the comparison--
+
+00:11:02.500 --> 00:11:04.780 align:middle line:84%
+let's try to understand
+how do we move flows--
+
+00:11:04.780 --> 00:11:07.480 align:middle line:84%
+how do we value flows at
+different points in time?
+
+00:11:07.480 --> 00:11:09.550 align:middle line:84%
+And the easiest
+thing is think first
+
+00:11:09.550 --> 00:11:11.740 align:middle line:84%
+about comparing an
+asset that gives you
+
+00:11:11.740 --> 00:11:15.980 align:middle line:84%
+$1 in the future, how much
+do you think is worth today?
+
+00:11:15.980 --> 00:11:18.850 align:middle line:84%
+Well, the easiest way
+to get to that value
+
+00:11:18.850 --> 00:11:21.040 align:middle line:90%
+is to think on the alternatives.
+
+00:11:21.040 --> 00:11:26.180 align:middle line:84%
+Suppose I have a dollar
+today, what can I do with it?
+
+00:11:26.180 --> 00:11:28.570 align:middle line:90%
+Well-- in terms of investment?
+
+00:11:28.570 --> 00:11:32.260 align:middle line:84%
+Well, suppose that you have
+available 1-year bonds,
+
+00:11:32.260 --> 00:11:35.140 align:middle line:84%
+Treasury bonds, and that
+the interest rate is it.
+
+00:11:35.140 --> 00:11:37.850 align:middle line:84%
+That's the interest
+rate on a 1-year bond.
+
+00:11:37.850 --> 00:11:42.170 align:middle line:84%
+So if you want-- if
+you have a dollar,
+
+00:11:42.170 --> 00:11:44.590 align:middle line:84%
+you have the option to
+invest it in that asset,
+
+00:11:44.590 --> 00:11:51.530 align:middle line:84%
+in that bond, which will give
+you 1 plus i dollars next year.
+
+00:11:51.530 --> 00:11:58.370 align:middle line:84%
+Well, that means that I can
+get $1 next year by investing
+
+00:11:58.370 --> 00:12:02.260 align:middle line:90%
+1 over 1 plus i dollars today.
+
+00:12:02.260 --> 00:12:05.200 align:middle line:90%
+Because if I invest 1 plus 1--
+
+00:12:05.200 --> 00:12:08.830 align:middle line:84%
+rather than $1, I invest
+1 over 1 plus i today,
+
+00:12:08.830 --> 00:12:11.500 align:middle line:84%
+then I multiply
+this by 1 plus i,
+
+00:12:11.500 --> 00:12:14.120 align:middle line:84%
+and I get my dollar
+in the future.
+
+00:12:14.120 --> 00:12:16.210 align:middle line:84%
+So that tells me
+that-- say the interest
+
+00:12:16.210 --> 00:12:22.430 align:middle line:84%
+rate is 10%, then with $1 today,
+I can get $1.1 in the future.
+
+00:12:22.430 --> 00:12:27.100 align:middle line:84%
+That means that investing
+$0.90 today, more or less,
+
+00:12:27.100 --> 00:12:29.320 align:middle line:84%
+I can get a bucket
+in the future.
+
+00:12:29.320 --> 00:12:33.760 align:middle line:84%
+That tells me that $1 in the
+future is equivalent to $0.90
+
+00:12:33.760 --> 00:12:36.790 align:middle line:90%
+today with that assumption.
+
+00:12:36.790 --> 00:12:39.700 align:middle line:84%
+So that's the reason when I
+told you the deal of, look,
+
+00:12:39.700 --> 00:12:42.220 align:middle line:84%
+I have an asset
+that costs you $1,
+
+00:12:42.220 --> 00:12:44.110 align:middle line:84%
+but it gives you
+$1 in the future,
+
+00:12:44.110 --> 00:12:47.480 align:middle line:84%
+and that's not a good deal if
+the interest rate is positive.
+
+00:12:47.480 --> 00:12:51.530 align:middle line:84%
+If the interest rate is 10%,
+then a fair comparison is $0.90
+
+00:12:51.530 --> 00:12:54.590 align:middle line:90%
+with $1, not $1 with $1.
+
+00:12:54.590 --> 00:12:57.290 align:middle line:84%
+So that's a discounting
+of the future.
+
+00:12:57.290 --> 00:12:59.810 align:middle line:84%
+The most obvious way of
+discounting the future
+
+00:12:59.810 --> 00:13:04.150 align:middle line:84%
+is to discount it by
+the interest rate.
+
+00:13:04.150 --> 00:13:05.830 align:middle line:90%
+Which interest rate to pick?
+
+00:13:05.830 --> 00:13:06.820 align:middle line:90%
+That's more subtle.
+
+00:13:06.820 --> 00:13:09.190 align:middle line:84%
+That depends on risk, it
+depends on many other things,
+
+00:13:09.190 --> 00:13:12.320 align:middle line:84%
+which we're going to
+discuss to some extent here.
+
+00:13:12.320 --> 00:13:14.837 align:middle line:84%
+But for now, let's
+make it very simple.
+
+00:13:14.837 --> 00:13:17.170 align:middle line:84%
+And in a world which you
+really know the future, really,
+
+00:13:17.170 --> 00:13:19.330 align:middle line:84%
+the right interest to use
+is the safe interest--
+
+00:13:19.330 --> 00:13:23.680 align:middle line:84%
+the interest rate of Treasury
+bonds and things like that.
+
+00:13:23.680 --> 00:13:25.540 align:middle line:90%
+So that's that.
+
+00:13:25.540 --> 00:13:27.640 align:middle line:84%
+What about the dollar
+that you receive--
+
+00:13:27.640 --> 00:13:29.500 align:middle line:84%
+what about if you are
+thinking about what
+
+00:13:29.500 --> 00:13:31.660 align:middle line:84%
+is the value of $1
+two years from now?
+
+00:13:31.660 --> 00:13:34.210 align:middle line:90%
+
+
+00:13:34.210 --> 00:13:36.460 align:middle line:84%
+Well, if I get a $1,
+can do the same logic.
+
+00:13:36.460 --> 00:13:39.160 align:middle line:90%
+If I can use the same logic.
+
+00:13:39.160 --> 00:13:43.390 align:middle line:84%
+If I get a $1 today, I
+can convert that into 1
+
+00:13:43.390 --> 00:13:48.490 align:middle line:90%
+plus it times 1 plus it plus $1.
+
+00:13:48.490 --> 00:13:52.360 align:middle line:84%
+So say 10% and 10%,
+I get 1.1 next year,
+
+00:13:52.360 --> 00:13:56.740 align:middle line:84%
+and then I get 1.1 times 1.1,
+1.21 or something like that.
+
+00:13:56.740 --> 00:14:01.380 align:middle line:90%
+That's my final result.
+
+00:14:01.380 --> 00:14:04.770 align:middle line:84%
+Well, then, how much is
+it worth to have $1--
+
+00:14:04.770 --> 00:14:09.110 align:middle line:84%
+$1 asset that gives you
+$1 two years from now?
+
+00:14:09.110 --> 00:14:11.800 align:middle line:84%
+Well, it's going
+to be $1 divided
+
+00:14:11.800 --> 00:14:15.060 align:middle line:84%
+by the product of
+this interest rate.
+
+00:14:15.060 --> 00:14:15.930 align:middle line:90%
+Why is that?
+
+00:14:15.930 --> 00:14:20.166 align:middle line:84%
+Well, because with this
+amount of dollars today--
+
+00:14:20.166 --> 00:14:22.950 align:middle line:84%
+at this point, $0.80,
+something like that,
+
+00:14:22.950 --> 00:14:25.980 align:middle line:84%
+I can generate $1
+two years from now.
+
+00:14:25.980 --> 00:14:35.820 align:middle line:84%
+That means $1 two years from
+now is worth about $0.80 today.
+
+00:14:35.820 --> 00:14:38.790 align:middle line:84%
+We're going to use a
+lot this type of logic.
+
+00:14:38.790 --> 00:14:42.180 align:middle line:84%
+And I know that it may not be
+that intuitive the first time
+
+00:14:42.180 --> 00:14:44.280 align:middle line:90%
+you see it, but ask questions.
+
+00:14:44.280 --> 00:14:47.860 align:middle line:90%
+
+
+00:14:47.860 --> 00:14:49.030 align:middle line:90%
+You want me to repeat it?
+
+00:14:49.030 --> 00:14:54.460 align:middle line:90%
+
+
+00:14:54.460 --> 00:14:55.390 align:middle line:90%
+OK.
+
+00:14:55.390 --> 00:14:57.410 align:middle line:90%
+The final goal is the following.
+
+00:14:57.410 --> 00:14:59.890 align:middle line:84%
+We're going to-- what comes
+next, we're going to see,
+
+00:14:59.890 --> 00:15:02.630 align:middle line:84%
+which happens again with
+many decisions in life,
+
+00:15:02.630 --> 00:15:05.050 align:middle line:84%
+but particularly for
+financial assets,
+
+00:15:05.050 --> 00:15:08.700 align:middle line:84%
+we're going to try to
+value something that--
+
+00:15:08.700 --> 00:15:12.190 align:middle line:84%
+it was payoff happens at
+different times in the future.
+
+00:15:12.190 --> 00:15:14.500 align:middle line:84%
+And the question
+is, how do I value
+
+00:15:14.500 --> 00:15:18.730 align:middle line:84%
+an asset that pays me
+$5 one year from now,
+
+00:15:18.730 --> 00:15:24.940 align:middle line:84%
+$25 three years from now,
+minus $10 10 years from now,
+
+00:15:24.940 --> 00:15:27.280 align:middle line:90%
+plus $50 $100 from now?
+
+00:15:27.280 --> 00:15:28.735 align:middle line:90%
+What is the value of that?
+
+00:15:28.735 --> 00:15:31.100 align:middle line:90%
+Of having an asset like that?
+
+00:15:31.100 --> 00:15:35.410 align:middle line:84%
+And so I need some method
+to bring it to today's value
+
+00:15:35.410 --> 00:15:38.320 align:middle line:84%
+because today, I have a
+meaning of what $1 is,
+
+00:15:38.320 --> 00:15:42.670 align:middle line:84%
+and therefore, I can compare
+it with whatever price.
+
+00:15:42.670 --> 00:15:44.900 align:middle line:84%
+People are asking
+me for that asset.
+
+00:15:44.900 --> 00:15:48.430 align:middle line:84%
+So what this is doing
+is it's doing that.
+
+00:15:48.430 --> 00:15:51.760 align:middle line:84%
+It's telling you how to
+convert $1 at different parts
+
+00:15:51.760 --> 00:15:54.550 align:middle line:90%
+in the future into $1 today.
+
+00:15:54.550 --> 00:15:59.650 align:middle line:84%
+And by that logic, the recipe
+is, well, use the interest rate
+
+00:15:59.650 --> 00:16:01.880 align:middle line:84%
+because you could always
+go the other way around.
+
+00:16:01.880 --> 00:16:04.270 align:middle line:84%
+You could always-- you can
+ask a question, with $1
+
+00:16:04.270 --> 00:16:08.010 align:middle line:84%
+today, how many dollars can I
+get two years from now, say,
+
+00:16:08.010 --> 00:16:08.820 align:middle line:90%
+that?
+
+00:16:08.820 --> 00:16:11.010 align:middle line:90%
+Well, say x?
+
+00:16:11.010 --> 00:16:15.180 align:middle line:84%
+Well, then I need 1 over
+x, then $1 there is worth 1
+
+00:16:15.180 --> 00:16:16.950 align:middle line:90%
+over x dollars today.
+
+00:16:16.950 --> 00:16:18.030 align:middle line:90%
+That's the logic.
+
+00:16:18.030 --> 00:16:21.120 align:middle line:90%
+Because 1 over x times x is 1.
+
+00:16:21.120 --> 00:16:25.527 align:middle line:90%
+So let's do first problem here.
+
+00:16:25.527 --> 00:16:30.300 align:middle line:90%
+
+
+00:16:30.300 --> 00:16:32.215 align:middle line:90%
+With $1 today-- oops.
+
+00:16:32.215 --> 00:16:35.550 align:middle line:90%
+
+
+00:16:35.550 --> 00:16:46.740 align:middle line:84%
+I can generally say
+$1.1 at t equal 2.
+
+00:16:46.740 --> 00:16:51.030 align:middle line:84%
+Then the question I want to
+know is, how much is $1 worth--
+
+00:16:51.030 --> 00:16:56.800 align:middle line:84%
+how much is $1 received at
+time t equal 2 worth today?
+
+00:16:56.800 --> 00:16:58.660 align:middle line:84%
+That's the question
+I'm trying to answer.
+
+00:16:58.660 --> 00:17:00.730 align:middle line:84%
+Because an asset
+will be something
+
+00:17:00.730 --> 00:17:02.120 align:middle line:90%
+that will pay you in the future.
+
+00:17:02.120 --> 00:17:06.430 align:middle line:84%
+So I want to know, how much is
+$1 received in the future worth
+
+00:17:06.430 --> 00:17:08.200 align:middle line:90%
+today?
+
+00:17:08.200 --> 00:17:12.460 align:middle line:84%
+And then the answer
+is, well, then it's--
+
+00:17:12.460 --> 00:17:14.470 align:middle line:84%
+I know the answer
+from this logic
+
+00:17:14.470 --> 00:17:21.440 align:middle line:84%
+because I know that with 1,
+if I have 1 over $1.1 today,
+
+00:17:21.440 --> 00:17:27.079 align:middle line:90%
+I can convert it into 1.
+
+00:17:27.079 --> 00:17:28.369 align:middle line:90%
+How do I know that?
+
+00:17:28.369 --> 00:17:44.130 align:middle line:84%
+Because 1 over 1.1
+times 1.1 is equal to 1.
+
+00:17:44.130 --> 00:17:47.840 align:middle line:84%
+If I invest this
+dollars today, I'm
+
+00:17:47.840 --> 00:17:49.940 align:middle line:84%
+going to get this
+return on that.
+
+00:17:49.940 --> 00:17:52.280 align:middle line:84%
+And the product of this
+thing gives me my dollar.
+
+00:17:52.280 --> 00:17:54.830 align:middle line:90%
+
+
+00:17:54.830 --> 00:17:58.040 align:middle line:84%
+So if I tell you, do you prefer
+to have $1 two days from-- two
+
+00:17:58.040 --> 00:18:02.090 align:middle line:84%
+years from now or today, you
+say, I prefer it-- obviously
+
+00:18:02.090 --> 00:18:07.630 align:middle line:84%
+I prefer it today because I can
+get $1.1 two years from now.
+
+00:18:07.630 --> 00:18:09.940 align:middle line:84%
+But then the more relevant
+question is, no, no,
+
+00:18:09.940 --> 00:18:13.660 align:middle line:84%
+but then do you prefer to
+have $0.90 today versus $1
+
+00:18:13.660 --> 00:18:14.890 align:middle line:90%
+in the future?
+
+00:18:14.890 --> 00:18:17.500 align:middle line:84%
+Then I need to do my
+multiplication because then I
+
+00:18:17.500 --> 00:18:21.220 align:middle line:84%
+have to multiply the $0.90 by
+the 1.1 and see whether I get
+
+00:18:21.220 --> 00:18:23.950 align:middle line:84%
+something comparable
+to $1 or not.
+
+00:18:23.950 --> 00:18:27.970 align:middle line:84%
+But that's the
+logic behind that.
+
+00:18:27.970 --> 00:18:32.980 align:middle line:84%
+So the interest rate is what
+we discount the future by.
+
+00:18:32.980 --> 00:18:35.530 align:middle line:84%
+And it's natural because if the
+interest rate is very high--
+
+00:18:35.530 --> 00:18:38.300 align:middle line:84%
+if the interest
+rate is 0, say, then
+
+00:18:38.300 --> 00:18:40.840 align:middle line:84%
+$1 received two years from
+now and $1 received today
+
+00:18:40.840 --> 00:18:43.927 align:middle line:84%
+is the same because I
+can-- if I invest $1 today
+
+00:18:43.927 --> 00:18:45.760 align:middle line:84%
+and the interest rate
+is 0, I'm going to get
+
+00:18:45.760 --> 00:18:47.780 align:middle line:90%
+my $1 two years from now.
+
+00:18:47.780 --> 00:18:50.843 align:middle line:84%
+If the interest rate is 50%,
+it makes a big difference
+
+00:18:50.843 --> 00:18:52.760 align:middle line:84%
+receiving the dollar
+today versus receiving it
+
+00:18:52.760 --> 00:18:54.110 align:middle line:90%
+two years from now.
+
+00:18:54.110 --> 00:18:56.540 align:middle line:84%
+If you're in Argentina
+and the interest rate--
+
+00:18:56.540 --> 00:18:59.060 align:middle line:84%
+I don't know what
+it is, it's 700%.
+
+00:18:59.060 --> 00:19:02.720 align:middle line:84%
+It makes a huge difference
+whether you receive it one year
+
+00:19:02.720 --> 00:19:05.710 align:middle line:90%
+from now than today.
+
+00:19:05.710 --> 00:19:09.920 align:middle line:84%
+And so that's the role
+of the interest rate.
+
+00:19:09.920 --> 00:19:13.160 align:middle line:84%
+The higher the
+interest rate, the less
+
+00:19:13.160 --> 00:19:15.620 align:middle line:84%
+is $1 received in
+the future worth
+
+00:19:15.620 --> 00:19:18.110 align:middle line:84%
+relative to $1 received
+today because you
+
+00:19:18.110 --> 00:19:21.080 align:middle line:84%
+can get a much higher return
+from the dollar you have today
+
+00:19:21.080 --> 00:19:22.460 align:middle line:90%
+if the interest rate is high.
+
+00:19:22.460 --> 00:19:26.143 align:middle line:84%
+The interest rate is low,
+you don't get that much.
+
+00:19:26.143 --> 00:19:26.810 align:middle line:90%
+Much difference.
+
+00:19:26.810 --> 00:19:28.160 align:middle line:90%
+OK, good.
+
+00:19:28.160 --> 00:19:29.750 align:middle line:90%
+So this is a big principle.
+
+00:19:29.750 --> 00:19:32.330 align:middle line:84%
+And, I mean,
+everything that I'll
+
+00:19:32.330 --> 00:19:34.070 align:middle line:90%
+say next builds on this logic.
+
+00:19:34.070 --> 00:19:38.590 align:middle line:90%
+
+
+00:19:38.590 --> 00:19:41.110 align:middle line:84%
+So let me give you
+a general formula.
+
+00:19:41.110 --> 00:19:45.060 align:middle line:84%
+So let's ask, what is the
+value of an asset that
+
+00:19:45.060 --> 00:19:51.990 align:middle line:84%
+gives payouts of zt
+dollars this year,
+
+00:19:51.990 --> 00:19:55.830 align:middle line:84%
+zt plus 1 one year from
+now, zt plus 2 two years
+
+00:19:55.830 --> 00:20:01.890 align:middle line:84%
+from now, and so on and so
+forth for n periods more?
+
+00:20:01.890 --> 00:20:05.790 align:middle line:84%
+Well, I just need to do
+several of these operations.
+
+00:20:05.790 --> 00:20:09.390 align:middle line:84%
+I know that $1 received
+this year is worth $1.
+
+00:20:09.390 --> 00:20:10.800 align:middle line:90%
+That's zt.
+
+00:20:10.800 --> 00:20:16.500 align:middle line:84%
+$1 received one year from
+now is not the same as $1
+
+00:20:16.500 --> 00:20:17.160 align:middle line:90%
+received today.
+
+00:20:17.160 --> 00:20:21.910 align:middle line:84%
+It's the same as 1 over 1
+plus it dollar received today.
+
+00:20:21.910 --> 00:20:24.600 align:middle line:84%
+So that cash flow I'm going
+to receive from this asset
+
+00:20:24.600 --> 00:20:26.250 align:middle line:90%
+is worth this amount.
+
+00:20:26.250 --> 00:20:29.280 align:middle line:84%
+For something that I
+received two years from now,
+
+00:20:29.280 --> 00:20:32.640 align:middle line:84%
+then it's not--
+certainly it's much less
+
+00:20:32.640 --> 00:20:34.050 align:middle line:90%
+than receiving $1 today.
+
+00:20:34.050 --> 00:20:38.910 align:middle line:84%
+It's going to be 1 over 1
+plus it 1 plus it plus 1.
+
+00:20:38.910 --> 00:20:41.370 align:middle line:84%
+And that I have to multiply
+by the number of dollars
+
+00:20:41.370 --> 00:20:43.830 align:middle line:84%
+I will receive two
+years from now.
+
+00:20:43.830 --> 00:20:46.550 align:middle line:90%
+And I keep going.
+
+00:20:46.550 --> 00:20:50.230 align:middle line:90%
+So that's the present value.
+
+00:20:50.230 --> 00:20:52.450 align:middle line:84%
+Present discounted
+value-- present
+
+00:20:52.450 --> 00:20:54.490 align:middle line:84%
+because I'm bringing
+all these future cash
+
+00:20:54.490 --> 00:20:56.450 align:middle line:90%
+flows to the present.
+
+00:20:56.450 --> 00:20:58.330 align:middle line:84%
+That's what each of
+these terms is doing.
+
+00:20:58.330 --> 00:21:01.450 align:middle line:84%
+The 1 over that is
+bringing it to the present.
+
+00:21:01.450 --> 00:21:04.760 align:middle line:84%
+Discounted because the interest
+rate is discounting things,
+
+00:21:04.760 --> 00:21:06.190 align:middle line:90%
+making them smaller.
+
+00:21:06.190 --> 00:21:08.890 align:middle line:84%
+And value because I'm
+trying to reduce them
+
+00:21:08.890 --> 00:21:12.570 align:middle line:90%
+to the current value.
+
+00:21:12.570 --> 00:21:14.550 align:middle line:84%
+That's a general formula,
+so it's a formula
+
+00:21:14.550 --> 00:21:15.690 align:middle line:90%
+you need to understand.
+
+00:21:15.690 --> 00:21:19.140 align:middle line:84%
+It's just-- so that was
+an asset that gives you
+
+00:21:19.140 --> 00:21:23.800 align:middle line:84%
+z dollars today, zt plus
+1 one year from now,
+
+00:21:23.800 --> 00:21:25.050 align:middle line:90%
+so you use this formula.
+
+00:21:25.050 --> 00:21:28.830 align:middle line:84%
+Zt plus 2 two years from
+now, so you use this formula,
+
+00:21:28.830 --> 00:21:29.850 align:middle line:90%
+and then you keep going.
+
+00:21:29.850 --> 00:21:33.190 align:middle line:90%
+
+
+00:21:33.190 --> 00:21:35.950 align:middle line:84%
+What if we don't
+know the future?
+
+00:21:35.950 --> 00:21:38.990 align:middle line:84%
+I had to remove
+the expected part.
+
+00:21:38.990 --> 00:21:42.020 align:middle line:84%
+Well, if we don't know
+the future, then the best
+
+00:21:42.020 --> 00:21:42.862 align:middle line:90%
+we can do--
+
+00:21:42.862 --> 00:21:44.570 align:middle line:84%
+in fact, we do fancier
+things, but that's
+
+00:21:44.570 --> 00:21:47.970 align:middle line:84%
+what we want-- all that
+we'll do in this course.
+
+00:21:47.970 --> 00:21:50.030 align:middle line:84%
+All that you can
+do is just replace
+
+00:21:50.030 --> 00:21:54.980 align:middle line:84%
+the known quantities we have
+here for the expectations.
+
+00:21:54.980 --> 00:21:56.090 align:middle line:90%
+So that's the closest.
+
+00:21:56.090 --> 00:21:59.870 align:middle line:84%
+So I know zt, that's
+the cash flow I get now,
+
+00:21:59.870 --> 00:22:04.040 align:middle line:84%
+but I don't know zt plus 1, so
+I can replace it by expectation.
+
+00:22:04.040 --> 00:22:08.000 align:middle line:84%
+I do know the interest rate on
+a 1-year bond from today to one
+
+00:22:08.000 --> 00:22:10.610 align:middle line:84%
+year, so that's the reason I
+don't need an expectation here.
+
+00:22:10.610 --> 00:22:14.430 align:middle line:84%
+But I don't know what the 1-year
+rate will be one year from now,
+
+00:22:14.430 --> 00:22:17.204 align:middle line:84%
+so that's the reason I
+need an expectation there.
+
+00:22:17.204 --> 00:22:18.485 align:middle line:90%
+And so on.
+
+00:22:18.485 --> 00:22:21.110 align:middle line:84%
+And I don't know what the cash
+flow will be two years from now.
+
+00:22:21.110 --> 00:22:23.402 align:middle line:84%
+I have an expectation about
+what the cash flow will be,
+
+00:22:23.402 --> 00:22:26.750 align:middle line:84%
+but I don't know it, so I
+have an expectation there.
+
+00:22:26.750 --> 00:22:30.920 align:middle line:84%
+So all that I've
+done here is say, OK,
+
+00:22:30.920 --> 00:22:33.493 align:middle line:84%
+acknowledge that this guy
+knew a little bit too much.
+
+00:22:33.493 --> 00:22:35.660 align:middle line:84%
+He knew exactly what the
+cash flows were going to be
+
+00:22:35.660 --> 00:22:38.660 align:middle line:84%
+in the future, and he knew what
+the 1-year rates were going
+
+00:22:38.660 --> 00:22:40.480 align:middle line:90%
+to be in the future.
+
+00:22:40.480 --> 00:22:42.010 align:middle line:90%
+This guy here knows less.
+
+00:22:42.010 --> 00:22:45.070 align:middle line:84%
+He knows the cash flow today, he
+knows the interest rate today,
+
+00:22:45.070 --> 00:22:48.100 align:middle line:84%
+but he doesn't know the cash
+flows-- really has a hunch,
+
+00:22:48.100 --> 00:22:51.137 align:middle line:84%
+but he doesn't know the cash
+flows one year, two years,
+
+00:22:51.137 --> 00:22:52.720 align:middle line:84%
+three years, and so
+on for the future,
+
+00:22:52.720 --> 00:22:56.530 align:middle line:84%
+and it doesn't know the 1-year
+interest rate in the future.
+
+00:22:56.530 --> 00:22:58.930 align:middle line:84%
+So all these expectations,
+here is important
+
+00:22:58.930 --> 00:22:59.790 align:middle line:90%
+the concept of time.
+
+00:22:59.790 --> 00:23:02.010 align:middle line:84%
+These are expectations
+as of time t.
+
+00:23:02.010 --> 00:23:03.750 align:middle line:84%
+At time t, you have
+some information
+
+00:23:03.750 --> 00:23:06.790 align:middle line:84%
+and you make forecasts
+about the future.
+
+00:23:06.790 --> 00:23:07.980 align:middle line:90%
+Use whatever you want.
+
+00:23:07.980 --> 00:23:09.190 align:middle line:90%
+Machine learning, whatever.
+
+00:23:09.190 --> 00:23:11.190 align:middle line:84%
+But you have
+information at time t,
+
+00:23:11.190 --> 00:23:14.640 align:middle line:84%
+and then you have a forecast
+for the future at t plus 1.
+
+00:23:14.640 --> 00:23:17.050 align:middle line:84%
+You have more information,
+so you make another forecast,
+
+00:23:17.050 --> 00:23:18.100 align:middle line:90%
+and so on and so forth.
+
+00:23:18.100 --> 00:23:21.270 align:middle line:84%
+But in this-- we're
+valuing an asset at time t,
+
+00:23:21.270 --> 00:23:25.440 align:middle line:84%
+then all these expectations
+are taken as of time t.
+
+00:23:25.440 --> 00:23:29.803 align:middle line:84%
+That means given the information
+you have available at time t.
+
+00:23:29.803 --> 00:23:31.220 align:middle line:84%
+That's the reason
+these guys don't
+
+00:23:31.220 --> 00:23:32.690 align:middle line:84%
+have expectations
+in front of them
+
+00:23:32.690 --> 00:23:36.630 align:middle line:90%
+because you know this at time t.
+
+00:23:36.630 --> 00:23:38.730 align:middle line:84%
+How do we take in the
+value at t minus 1,
+
+00:23:38.730 --> 00:23:41.610 align:middle line:84%
+we would have not known that
+and we had to-- an expectation
+
+00:23:41.610 --> 00:23:46.740 align:middle line:84%
+because there would have been
+expectation of t minus 1.
+
+00:23:46.740 --> 00:23:48.850 align:middle line:84%
+OK, so that's your
+big formula there.
+
+00:23:48.850 --> 00:23:55.530 align:middle line:84%
+So there are some examples
+that are well-known,
+
+00:23:55.530 --> 00:23:58.080 align:middle line:90%
+and so let me show you.
+
+00:23:58.080 --> 00:24:00.330 align:middle line:90%
+They have nicer expressions.
+
+00:24:00.330 --> 00:24:05.890 align:middle line:84%
+So that's an example of
+valuation of the same asset,
+
+00:24:05.890 --> 00:24:08.990 align:middle line:84%
+but when the interest
+rate is constant.
+
+00:24:08.990 --> 00:24:11.360 align:middle line:84%
+Then obviously I don't
+need all these products
+
+00:24:11.360 --> 00:24:12.450 align:middle line:90%
+in the denominator.
+
+00:24:12.450 --> 00:24:16.070 align:middle line:84%
+I have a constant
+interest rate, then
+
+00:24:16.070 --> 00:24:18.540 align:middle line:84%
+I just get powers of
+that interest rate.
+
+00:24:18.540 --> 00:24:21.000 align:middle line:84%
+That's one in which you
+have constant payments.
+
+00:24:21.000 --> 00:24:23.740 align:middle line:84%
+So the interest rate
+may be different,
+
+00:24:23.740 --> 00:24:27.390 align:middle line:84%
+but the payments are
+the same over time.
+
+00:24:27.390 --> 00:24:29.180 align:middle line:90%
+So that's that.
+
+00:24:29.180 --> 00:24:31.570 align:middle line:90%
+So those are two easy formulas.
+
+00:24:31.570 --> 00:24:35.110 align:middle line:84%
+That's one in which you have
+both constants, the interest
+
+00:24:35.110 --> 00:24:39.220 align:middle line:84%
+rate and the payment, then
+you get a nice expression
+
+00:24:39.220 --> 00:24:42.070 align:middle line:90%
+that's just that.
+
+00:24:42.070 --> 00:24:49.580 align:middle line:84%
+You recognize that-- if you have
+a constant interest rate here,
+
+00:24:49.580 --> 00:24:53.640 align:middle line:84%
+you see that the
+value is declining--
+
+00:24:53.640 --> 00:24:55.670 align:middle line:90%
+is a geometric series.
+
+00:24:55.670 --> 00:24:59.420 align:middle line:84%
+The value of two years from
+now is a square of 1 over 1
+
+00:24:59.420 --> 00:25:00.560 align:middle line:90%
+plus some--
+
+00:25:00.560 --> 00:25:04.100 align:middle line:84%
+is a square of a
+number less than 1.
+
+00:25:04.100 --> 00:25:06.680 align:middle line:84%
+1 over 1 plus i is some
+number less than 1.
+
+00:25:06.680 --> 00:25:09.150 align:middle line:84%
+This is the square of that,
+then the cube, and so on.
+
+00:25:09.150 --> 00:25:11.660 align:middle line:84%
+So it's a geometric series
+that is declining in the rate 1
+
+00:25:11.660 --> 00:25:12.250 align:middle line:90%
+plus i--
+
+00:25:12.250 --> 00:25:13.760 align:middle line:90%
+1 over 1 plus i.
+
+00:25:13.760 --> 00:25:15.800 align:middle line:84%
+Or declining at
+the rate 1 plus i.
+
+00:25:15.800 --> 00:25:19.520 align:middle line:90%
+So that's your geometric series.
+
+00:25:19.520 --> 00:25:22.860 align:middle line:90%
+That's the value of that.
+
+00:25:22.860 --> 00:25:25.950 align:middle line:84%
+Constant rate and
+payment forever.
+
+00:25:25.950 --> 00:25:30.958 align:middle line:84%
+Suppose you have an
+asset that lives forever.
+
+00:25:30.958 --> 00:25:32.250 align:middle line:90%
+There are some bonds like that.
+
+00:25:32.250 --> 00:25:33.720 align:middle line:90%
+It's called perpetuities.
+
+00:25:33.720 --> 00:25:36.580 align:middle line:90%
+
+
+00:25:36.580 --> 00:25:38.530 align:middle line:90%
+The US has an issue--
+
+00:25:38.530 --> 00:25:40.730 align:middle line:90%
+the UK has and so on.
+
+00:25:40.730 --> 00:25:42.850 align:middle line:84%
+So that's an asset, for
+example, that pays you
+
+00:25:42.850 --> 00:25:45.790 align:middle line:90%
+a fixed amount forever.
+
+00:25:45.790 --> 00:25:47.650 align:middle line:84%
+And it's the interest
+rate is constant,
+
+00:25:47.650 --> 00:25:50.560 align:middle line:84%
+that's a trickier thing, then
+the value of that asset you
+
+00:25:50.560 --> 00:25:55.260 align:middle line:84%
+can see, that this is going to
+0, so the value of that asset
+
+00:25:55.260 --> 00:25:56.880 align:middle line:90%
+is that.
+
+00:25:56.880 --> 00:25:58.650 align:middle line:84%
+And actually, a
+formula that you may
+
+00:25:58.650 --> 00:26:03.870 align:middle line:84%
+see that is very often used as a
+first approximation is this one.
+
+00:26:03.870 --> 00:26:09.300 align:middle line:84%
+This is the same asset, but it's
+called x dividend or x coupon.
+
+00:26:09.300 --> 00:26:13.920 align:middle line:84%
+It's after the coupon of
+this year has been paid.
+
+00:26:13.920 --> 00:26:16.530 align:middle line:84%
+So it's an asset that
+starts paying at t plus 1,
+
+00:26:16.530 --> 00:26:19.060 align:middle line:90%
+is zt plus 1, plus 2, and so on.
+
+00:26:19.060 --> 00:26:22.770 align:middle line:84%
+Well, that is the same as
+this minus the first coupon,
+
+00:26:22.770 --> 00:26:24.510 align:middle line:90%
+so it's equal to that.
+
+00:26:24.510 --> 00:26:29.210 align:middle line:90%
+
+
+00:26:29.210 --> 00:26:30.585 align:middle line:84%
+That's an interesting
+thing, huh?
+
+00:26:30.585 --> 00:26:32.040 align:middle line:84%
+Look, what happened
+to this asset
+
+00:26:32.040 --> 00:26:33.332 align:middle line:90%
+as the interest rate goes to 0?
+
+00:26:33.332 --> 00:26:35.920 align:middle line:90%
+
+
+00:26:35.920 --> 00:26:39.670 align:middle line:84%
+So this is an asset that
+lasts for a very long time.
+
+00:26:39.670 --> 00:26:43.540 align:middle line:84%
+And look, we got to
+a valuation formula.
+
+00:26:43.540 --> 00:26:45.370 align:middle line:84%
+What is happening
+as the interest
+
+00:26:45.370 --> 00:26:47.745 align:middle line:90%
+rate goes to 0 to the line?
+
+00:26:47.745 --> 00:26:49.370 align:middle line:84%
+AUDIENCE: The value
+becomes very large.
+
+00:26:49.370 --> 00:26:49.780 align:middle line:90%
+RICARDO CABALLERO: Very large.
+
+00:26:49.780 --> 00:26:51.130 align:middle line:90%
+It goes to infinity.
+
+00:26:51.130 --> 00:26:55.060 align:middle line:84%
+And a lot of what has happened
+in global financial markets
+
+00:26:55.060 --> 00:26:58.540 align:middle line:84%
+in the last few years
+has to do with that.
+
+00:26:58.540 --> 00:27:01.190 align:middle line:84%
+Interest rates were
+very, very, very low.
+
+00:27:01.190 --> 00:27:03.730 align:middle line:84%
+And so most assets
+that had long-duration
+
+00:27:03.730 --> 00:27:04.715 align:middle line:90%
+had very high values.
+
+00:27:04.715 --> 00:27:07.273 align:middle line:90%
+
+
+00:27:07.273 --> 00:27:08.690 align:middle line:84%
+And it has a lot
+to do with that--
+
+00:27:08.690 --> 00:27:11.070 align:middle line:84%
+monetary policy
+has a lot to do--
+
+00:27:11.070 --> 00:27:13.550 align:middle line:84%
+whether it was a right
+monetary policy or not,
+
+00:27:13.550 --> 00:27:15.110 align:middle line:84%
+that's something
+to be discussed.
+
+00:27:15.110 --> 00:27:17.360 align:middle line:84%
+I think, on average, it was
+the right monetary policy,
+
+00:27:17.360 --> 00:27:19.110 align:middle line:84%
+but one of the things
+it did, it increased
+
+00:27:19.110 --> 00:27:20.810 align:middle line:90%
+the value of many assets.
+
+00:27:20.810 --> 00:27:22.640 align:middle line:84%
+In fact, that's one
+of the mechanisms
+
+00:27:22.640 --> 00:27:24.828 align:middle line:84%
+through which monetary
+policy works in practice.
+
+00:27:24.828 --> 00:27:26.370 align:middle line:84%
+It's not something
+we have discussed,
+
+00:27:26.370 --> 00:27:28.850 align:middle line:84%
+but you can begin to see
+here because if the value
+
+00:27:28.850 --> 00:27:31.160 align:middle line:84%
+of all assets go up a
+lot, people feel wealthier
+
+00:27:31.160 --> 00:27:33.398 align:middle line:84%
+and that will tend to
+consume more, and so on.
+
+00:27:33.398 --> 00:27:35.690 align:middle line:84%
+Well, this is one of the
+channels monetary policy does.
+
+00:27:35.690 --> 00:27:37.790 align:middle line:84%
+By the way this
+effect happens also
+
+00:27:37.790 --> 00:27:39.540 align:middle line:84%
+to the assets that
+are finite end.
+
+00:27:39.540 --> 00:27:41.030 align:middle line:90%
+It's just that this goes--
+
+00:27:41.030 --> 00:27:44.750 align:middle line:84%
+it's maximized when this
+asset lasts forever.
+
+00:27:44.750 --> 00:27:47.760 align:middle line:84%
+This asset literally
+goes to infinity
+
+00:27:47.760 --> 00:27:51.880 align:middle line:90%
+if the interest rate goes to 0.
+
+00:27:51.880 --> 00:27:54.700 align:middle line:84%
+Well, if an acid
+lasts for 10 periods,
+
+00:27:54.700 --> 00:27:58.980 align:middle line:84%
+it doesn't go to infinity,
+it goes to n times z.
+
+00:27:58.980 --> 00:27:59.480 align:middle line:90%
+For some.
+
+00:27:59.480 --> 00:28:02.775 align:middle line:84%
+If the interest rate
+is 0, just some things.
+
+00:28:02.775 --> 00:28:04.610 align:middle line:90%
+You see that?
+
+00:28:04.610 --> 00:28:08.540 align:middle line:84%
+If an asset lasts for n
+periods, and it gives me
+
+00:28:08.540 --> 00:28:11.790 align:middle line:84%
+a payment of z in
+every single period,
+
+00:28:11.790 --> 00:28:13.470 align:middle line:84%
+then when the interest
+is 0, that asset
+
+00:28:13.470 --> 00:28:18.320 align:middle line:84%
+is worth n times z because
+I will receive z coupons.
+
+00:28:18.320 --> 00:28:21.610 align:middle line:84%
+And don't discount the future
+because the interest rate is 0.
+
+00:28:21.610 --> 00:28:23.890 align:middle line:84%
+What happens is, when
+the asset lasts forever,
+
+00:28:23.890 --> 00:28:26.830 align:middle line:84%
+then n times z is a
+very large number.
+
+00:28:26.830 --> 00:28:31.920 align:middle line:84%
+And that's what this
+expression captures here.
+
+00:28:31.920 --> 00:28:34.210 align:middle line:90%
+OK.
+
+00:28:34.210 --> 00:28:36.070 align:middle line:90%
+So let's talk about bonds now.
+
+00:28:36.070 --> 00:28:39.510 align:middle line:84%
+We're going to
+start pricing bonds.
+
+00:28:39.510 --> 00:28:44.150 align:middle line:84%
+So bonds differ along
+many dimensions,
+
+00:28:44.150 --> 00:28:46.790 align:middle line:84%
+but one of them that's
+very important for bones
+
+00:28:46.790 --> 00:28:49.640 align:middle line:84%
+is maturity the n
+that I had there
+
+00:28:49.640 --> 00:28:53.120 align:middle line:90%
+in the previous expression.
+
+00:28:53.120 --> 00:28:57.250 align:middle line:84%
+So maturity means, essentially,
+how long the bond lasts.
+
+00:28:57.250 --> 00:28:59.510 align:middle line:84%
+When does it pay you
+back the principal?
+
+00:28:59.510 --> 00:29:02.150 align:middle line:84%
+The bonds typically pay
+coupons, and then there
+
+00:29:02.150 --> 00:29:04.910 align:middle line:84%
+is a final payment, which we
+call face value of the bond
+
+00:29:04.910 --> 00:29:06.000 align:middle line:90%
+or something like that.
+
+00:29:06.000 --> 00:29:09.590 align:middle line:84%
+And when that final
+payment takes place,
+
+00:29:09.590 --> 00:29:12.530 align:middle line:90%
+that's a maturity of a bond.
+
+00:29:12.530 --> 00:29:16.000 align:middle line:84%
+So a bond that promises to make
+a $1,000 final payment in six
+
+00:29:16.000 --> 00:29:18.365 align:middle line:84%
+months has a maturity
+of six months.
+
+00:29:18.365 --> 00:29:21.080 align:middle line:90%
+
+
+00:29:21.080 --> 00:29:25.460 align:middle line:84%
+A bond that promises to pay $100
+for 20 years and then $1,000--
+
+00:29:25.460 --> 00:29:28.930 align:middle line:84%
+a final payment in 20 years
+has a maturity of 20 years.
+
+00:29:28.930 --> 00:29:30.430 align:middle line:84%
+Maturity is different
+from duration.
+
+00:29:30.430 --> 00:29:32.597 align:middle line:84%
+I don't think I'm going to
+talk about duration here,
+
+00:29:32.597 --> 00:29:34.790 align:middle line:84%
+but that's maturity,
+just when it's
+
+00:29:34.790 --> 00:29:39.560 align:middle line:90%
+the final payment of a loan--
+
+00:29:39.560 --> 00:29:42.460 align:middle line:90%
+of a bond?
+
+00:29:42.460 --> 00:29:44.020 align:middle line:90%
+Bonds of different maturities.
+
+00:29:44.020 --> 00:29:46.930 align:middle line:84%
+Each have a price and an
+associated interest rate.
+
+00:29:46.930 --> 00:29:48.550 align:middle line:84%
+We're going to look
+at those things.
+
+00:29:48.550 --> 00:29:52.750 align:middle line:84%
+And the associated interest rate
+is called the yield to maturity,
+
+00:29:52.750 --> 00:29:55.515 align:middle line:90%
+or simply the yield of a bond.
+
+00:29:55.515 --> 00:29:58.140 align:middle line:84%
+This is terminology, but we are
+going to calculate these things
+
+00:29:58.140 --> 00:30:00.190 align:middle line:90%
+later on.
+
+00:30:00.190 --> 00:30:03.610 align:middle line:84%
+The relationship between
+maturity and yield
+
+00:30:03.610 --> 00:30:05.440 align:middle line:90%
+is called the yield curve.
+
+00:30:05.440 --> 00:30:06.820 align:middle line:90%
+Very important concept.
+
+00:30:06.820 --> 00:30:08.870 align:middle line:84%
+Big fuss about the
+yield curve these days.
+
+00:30:08.870 --> 00:30:11.840 align:middle line:84%
+I'll talk a little
+bit more about that.
+
+00:30:11.840 --> 00:30:15.080 align:middle line:84%
+Or sometimes it's called the
+term structure of interest rate.
+
+00:30:15.080 --> 00:30:19.560 align:middle line:84%
+Term, in the language of
+bonds, is really maturity.
+
+00:30:19.560 --> 00:30:22.760 align:middle line:84%
+So term structure of interest
+rate really tells you what is
+
+00:30:22.760 --> 00:30:26.660 align:middle line:84%
+the yield in a 1-year bond,
+2-year bond, 3-year bond, 4-,
+
+00:30:26.660 --> 00:30:27.470 align:middle line:90%
+5-, 6-, 7-.
+
+00:30:27.470 --> 00:30:31.340 align:middle line:84%
+You plot them, and
+that gives you a curve.
+
+00:30:31.340 --> 00:30:35.678 align:middle line:90%
+So for example, look at those--
+
+00:30:35.678 --> 00:30:37.220 align:middle line:84%
+these are two
+different yield curves.
+
+00:30:37.220 --> 00:30:43.670 align:middle line:84%
+This is November 2000
+and this is June 2001.
+
+00:30:43.670 --> 00:30:48.750 align:middle line:84%
+So this tells you what the
+yield is on a 3-month bond.
+
+00:30:48.750 --> 00:30:51.020 align:middle line:84%
+So a bond that matures
+in three months.
+
+00:30:51.020 --> 00:30:55.780 align:middle line:84%
+On a 6-month bond, so on and
+so forth, up to 30-year bonds.
+
+00:30:55.780 --> 00:30:57.530 align:middle line:84%
+What is the big
+difference between these--
+
+00:30:57.530 --> 00:30:59.360 align:middle line:84%
+what do you think
+happened here in between?
+
+00:30:59.360 --> 00:31:01.550 align:middle line:84%
+Notice that these two
+curves are more or less
+
+00:31:01.550 --> 00:31:04.190 align:middle line:84%
+the same long-term
+interest rate,
+
+00:31:04.190 --> 00:31:06.290 align:middle line:84%
+but they have very different--
+these curves-- this
+
+00:31:06.290 --> 00:31:09.420 align:middle line:84%
+is a very steep curve and this
+is a very flat or even inverted
+
+00:31:09.420 --> 00:31:09.920 align:middle line:90%
+curve.
+
+00:31:09.920 --> 00:31:12.810 align:middle line:90%
+
+
+00:31:12.810 --> 00:31:17.420 align:middle line:84%
+What do you think may have
+happened there between November
+
+00:31:17.420 --> 00:31:19.848 align:middle line:90%
+2000 and June 2001?
+
+00:31:19.848 --> 00:31:21.640 align:middle line:84%
+AUDIENCE: People changed
+their expectations
+
+00:31:21.640 --> 00:31:22.330 align:middle line:90%
+about interest rates.
+
+00:31:22.330 --> 00:31:23.330 align:middle line:90%
+RICARDO CABALLERO: Yeah.
+
+00:31:23.330 --> 00:31:24.190 align:middle line:90%
+That's true.
+
+00:31:24.190 --> 00:31:26.230 align:middle line:90%
+That's for sure true about that.
+
+00:31:26.230 --> 00:31:28.120 align:middle line:90%
+But look also that--
+
+00:31:28.120 --> 00:31:30.280 align:middle line:84%
+but that these
+three months, there
+
+00:31:30.280 --> 00:31:32.240 align:middle line:84%
+is very little uncertainty
+about three months.
+
+00:31:32.240 --> 00:31:34.190 align:middle line:90%
+It was a lot lower than that.
+
+00:31:34.190 --> 00:31:36.243 align:middle line:84%
+So yes, people change
+their expectations,
+
+00:31:36.243 --> 00:31:38.410 align:middle line:84%
+but why do you think they
+change their expectations?
+
+00:31:38.410 --> 00:31:42.440 align:middle line:90%
+
+
+00:31:42.440 --> 00:31:45.440 align:middle line:84%
+AUDIENCE: [INAUDIBLE]
+rising [INAUDIBLE]
+
+00:31:45.440 --> 00:31:47.690 align:middle line:84%
+RICARDO CABALLERO: Rising
+inflation from here to here.
+
+00:31:47.690 --> 00:31:50.553 align:middle line:84%
+These are nominal
+interest rates.
+
+00:31:50.553 --> 00:31:52.970 align:middle line:84%
+Up to now, we've been talking
+about nominal interest rate.
+
+00:31:52.970 --> 00:31:56.510 align:middle line:90%
+
+
+00:31:56.510 --> 00:32:00.290 align:middle line:84%
+What happens here is there
+was a mini-recession,
+
+00:32:00.290 --> 00:32:03.240 align:middle line:90%
+so the Fed cut interest rates.
+
+00:32:03.240 --> 00:32:05.370 align:middle line:84%
+When you are in
+recessions, the curve
+
+00:32:05.370 --> 00:32:10.240 align:middle line:84%
+tends to look like this because
+the central bank is cutting
+
+00:32:10.240 --> 00:32:12.550 align:middle line:84%
+interest rates in
+the short-run to deal
+
+00:32:12.550 --> 00:32:13.990 align:middle line:90%
+with the current recession.
+
+00:32:13.990 --> 00:32:15.880 align:middle line:84%
+What happened 30 years
+from now has nothing
+
+00:32:15.880 --> 00:32:17.380 align:middle line:84%
+to do with the
+business cycle today,
+
+00:32:17.380 --> 00:32:19.540 align:middle line:84%
+so that interest rate
+doesn't need to move a lot.
+
+00:32:19.540 --> 00:32:22.270 align:middle line:84%
+But the Fed is bringing
+interest rates down a lot
+
+00:32:22.270 --> 00:32:23.740 align:middle line:90%
+in the front end.
+
+00:32:23.740 --> 00:32:26.890 align:middle line:84%
+So that's a typical shape
+of a curve in a recession.
+
+00:32:26.890 --> 00:32:29.770 align:middle line:84%
+That's a typical
+shape of a curve
+
+00:32:29.770 --> 00:32:31.780 align:middle line:84%
+in the opposite situation
+where the inflation is
+
+00:32:31.780 --> 00:32:32.650 align:middle line:90%
+too high and so on.
+
+00:32:32.650 --> 00:32:33.550 align:middle line:90%
+Because what happens?
+
+00:32:33.550 --> 00:32:35.290 align:middle line:84%
+The Fed is trying
+to-- the Fed really
+
+00:32:35.290 --> 00:32:37.630 align:middle line:84%
+controls the very
+front end of the curve.
+
+00:32:37.630 --> 00:32:39.880 align:middle line:84%
+That's what the Fed really
+controls-- the central bank
+
+00:32:39.880 --> 00:32:41.950 align:middle line:84%
+in general, but the Fed, they
+control the very front end
+
+00:32:41.950 --> 00:32:43.690 align:middle line:84%
+of the curve because they're
+setting the very short-term
+
+00:32:43.690 --> 00:32:44.750 align:middle line:90%
+interest rate.
+
+00:32:44.750 --> 00:32:46.300 align:middle line:84%
+So this is a situation
+where they're
+
+00:32:46.300 --> 00:32:49.360 align:middle line:84%
+tighten-- the monetary policy
+is very tight because they
+
+00:32:49.360 --> 00:32:52.635 align:middle line:84%
+have a situation of
+overheating in the economy.
+
+00:32:52.635 --> 00:32:54.260 align:middle line:84%
+And in fact, they
+got too carried away.
+
+00:32:54.260 --> 00:32:56.885 align:middle line:84%
+That's the reason that we
+ended up in a recession here.
+
+00:32:56.885 --> 00:32:57.385 align:middle line:90%
+OK.
+
+00:32:57.385 --> 00:33:00.022 align:middle line:90%
+
+
+00:33:00.022 --> 00:33:01.355 align:middle line:90%
+How do you think it looks today?
+
+00:33:01.355 --> 00:33:06.330 align:middle line:90%
+
+
+00:33:06.330 --> 00:33:09.730 align:middle line:84%
+Do you think it looks more
+like this or more like that?
+
+00:33:09.730 --> 00:33:11.305 align:middle line:90%
+Is inflation low or high today?
+
+00:33:11.305 --> 00:33:14.190 align:middle line:90%
+
+
+00:33:14.190 --> 00:33:14.880 align:middle line:90%
+High.
+
+00:33:14.880 --> 00:33:15.930 align:middle line:90%
+I mean, that's a problem.
+
+00:33:15.930 --> 00:33:17.670 align:middle line:84%
+The Fed is trying to
+hike interest rates.
+
+00:33:17.670 --> 00:33:21.180 align:middle line:84%
+Now recently, because of the
+mess in the banking sector,
+
+00:33:21.180 --> 00:33:22.800 align:middle line:84%
+then expectations
+of interest rates
+
+00:33:22.800 --> 00:33:26.100 align:middle line:84%
+have begun to decline a
+little, but the situation
+
+00:33:26.100 --> 00:33:27.120 align:middle line:90%
+was very inverted.
+
+00:33:27.120 --> 00:33:28.710 align:middle line:90%
+Here you are.
+
+00:33:28.710 --> 00:33:30.790 align:middle line:90%
+The green line is today.
+
+00:33:30.790 --> 00:33:32.130 align:middle line:90%
+OK, so it's very inverted.
+
+00:33:32.130 --> 00:33:35.600 align:middle line:90%
+
+
+00:33:35.600 --> 00:33:38.130 align:middle line:90%
+A year ago, it looked like that.
+
+00:33:38.130 --> 00:33:40.490 align:middle line:84%
+So you see, the longer
+hasn't changed much,
+
+00:33:40.490 --> 00:33:42.440 align:middle line:84%
+but a year ago,
+there was no sense
+
+00:33:42.440 --> 00:33:46.468 align:middle line:84%
+that inflation was getting
+so much out of line.
+
+00:33:46.468 --> 00:33:48.010 align:middle line:84%
+It happened a little
+later than that.
+
+00:33:48.010 --> 00:33:52.127 align:middle line:84%
+There was some concern that
+interest rates would rise,
+
+00:33:52.127 --> 00:33:54.460 align:middle line:84%
+but now it's very clear that
+the economy is overheating.
+
+00:33:54.460 --> 00:33:59.540 align:middle line:84%
+And this-- I should have plot
+you something for a month ago,
+
+00:33:59.540 --> 00:34:01.030 align:middle line:90%
+it would have been even steeper.
+
+00:34:01.030 --> 00:34:03.340 align:middle line:90%
+OK.
+
+00:34:03.340 --> 00:34:03.880 align:middle line:90%
+Anyways.
+
+00:34:03.880 --> 00:34:06.710 align:middle line:84%
+But that's because the Fed is
+trying to slow down the economy.
+
+00:34:06.710 --> 00:34:07.840 align:middle line:90%
+It's hiking interest rates.
+
+00:34:07.840 --> 00:34:10.510 align:middle line:84%
+That's the reason the curve
+is very, very inverted today.
+
+00:34:10.510 --> 00:34:13.300 align:middle line:90%
+
+
+00:34:13.300 --> 00:34:14.800 align:middle line:90%
+So let me calculate these rates.
+
+00:34:14.800 --> 00:34:15.760 align:middle line:90%
+How do we go about it?
+
+00:34:15.760 --> 00:34:17.260 align:middle line:84%
+So the first thing
+we're going to do
+
+00:34:17.260 --> 00:34:19.510 align:middle line:84%
+is we're going to use the
+expected present discounted
+
+00:34:19.510 --> 00:34:24.070 align:middle line:84%
+value formula to calculate
+the price of a bond.
+
+00:34:24.070 --> 00:34:27.460 align:middle line:84%
+And then we want to start
+doing it for different bonds,
+
+00:34:27.460 --> 00:34:30.750 align:middle line:84%
+and we're going to
+construct the yield curve.
+
+00:34:30.750 --> 00:34:36.620 align:middle line:84%
+So suppose you have a bond that
+pays $100, nothing in between,
+
+00:34:36.620 --> 00:34:38.400 align:middle line:90%
+$100 one year from now.
+
+00:34:38.400 --> 00:34:41.770 align:middle line:84%
+So this is a bond with
+maturity, 1-year maturity.
+
+00:34:41.770 --> 00:34:45.790 align:middle line:84%
+I'm going to call that
+bond with 1-year maturity--
+
+00:34:45.790 --> 00:34:50.020 align:middle line:84%
+the price of a bond with a
+1-year maturity at time t P1t.
+
+00:34:50.020 --> 00:34:51.400 align:middle line:90%
+Well, that's easy to calculate.
+
+00:34:51.400 --> 00:34:53.590 align:middle line:84%
+It's expected present
+discounted value for you.
+
+00:34:53.590 --> 00:34:55.449 align:middle line:84%
+You have the interest
+rate, whatever it--
+
+00:34:55.449 --> 00:34:58.660 align:middle line:84%
+say 1-year interest rate, then I
+know that the price of the bond
+
+00:34:58.660 --> 00:35:01.370 align:middle line:84%
+is 100 divided by 1
+plus the interest rate,
+
+00:35:01.370 --> 00:35:04.820 align:middle line:90%
+the 1-year interest rate today.
+
+00:35:04.820 --> 00:35:05.540 align:middle line:90%
+That's the price.
+
+00:35:05.540 --> 00:35:06.840 align:middle line:84%
+That's the expected
+discounted value.
+
+00:35:06.840 --> 00:35:08.340 align:middle line:84%
+So I tell you--
+what I'm showing you
+
+00:35:08.340 --> 00:35:12.260 align:middle line:84%
+is the relationship between
+interest rates and prices.
+
+00:35:12.260 --> 00:35:13.340 align:middle line:90%
+Our price of a bond.
+
+00:35:13.340 --> 00:35:18.290 align:middle line:84%
+The price of that bond is just
+100 divided by 1 plus the--
+
+00:35:18.290 --> 00:35:20.510 align:middle line:84%
+1 plus-- the 1-year
+interest rate today.
+
+00:35:20.510 --> 00:35:23.610 align:middle line:90%
+
+
+00:35:23.610 --> 00:35:27.120 align:middle line:84%
+So important observation is
+that the price of a 1-year bond
+
+00:35:27.120 --> 00:35:31.170 align:middle line:84%
+varies inversely with the
+current 1-year nominal interest
+
+00:35:31.170 --> 00:35:31.720 align:middle line:90%
+rate.
+
+00:35:31.720 --> 00:35:34.570 align:middle line:90%
+This is all nominal.
+
+00:35:34.570 --> 00:35:36.490 align:middle line:84%
+Why is that inverse
+relationship?
+
+00:35:36.490 --> 00:35:39.490 align:middle line:84%
+Why is it the price of a 1-year
+bond is inversely related
+
+00:35:39.490 --> 00:35:40.900 align:middle line:90%
+to the 1-year interest rate?
+
+00:35:40.900 --> 00:35:44.750 align:middle line:90%
+
+
+00:35:44.750 --> 00:35:47.050 align:middle line:84%
+In other words,
+I'm asking, what do
+
+00:35:47.050 --> 00:35:49.450 align:middle line:84%
+you think happens to the
+price as the nominal interest
+
+00:35:49.450 --> 00:35:50.620 align:middle line:90%
+rate rises?
+
+00:35:50.620 --> 00:35:55.010 align:middle line:84%
+And why do you think that's
+what happens to the price?
+
+00:35:55.010 --> 00:35:56.998 align:middle line:84%
+Well, the first question
+doesn't have a--
+
+00:35:56.998 --> 00:35:58.790 align:middle line:84%
+I mean, it's very easy,
+you know the answer
+
+00:35:58.790 --> 00:35:59.707 align:middle line:90%
+to the first question.
+
+00:35:59.707 --> 00:36:01.110 align:middle line:90%
+What happens if i goes up?
+
+00:36:01.110 --> 00:36:04.100 align:middle line:84%
+Well, it's obvious that this
+price comes down, but why?
+
+00:36:04.100 --> 00:36:08.500 align:middle line:90%
+
+
+00:36:08.500 --> 00:36:11.950 align:middle line:84%
+And use the concepts
+we have developed here.
+
+00:36:11.950 --> 00:36:15.760 align:middle line:84%
+Remember, we spent like
+20 minutes in one slide.
+
+00:36:15.760 --> 00:36:17.530 align:middle line:90%
+Use that slide for that answer.
+
+00:36:17.530 --> 00:36:22.800 align:middle line:90%
+
+
+00:36:22.800 --> 00:36:26.220 align:middle line:84%
+Hint-- this $100 you
+are not receiving today,
+
+00:36:26.220 --> 00:36:28.710 align:middle line:84%
+you are receiving
+a year from now.
+
+00:36:28.710 --> 00:36:31.530 align:middle line:84%
+What happens with $1
+received a year from now?
+
+00:36:31.530 --> 00:36:35.250 align:middle line:84%
+What is the value of a dollar
+received one year from now
+
+00:36:35.250 --> 00:36:36.375 align:middle line:90%
+when the interest is high?
+
+00:36:36.375 --> 00:36:39.150 align:middle line:90%
+
+
+00:36:39.150 --> 00:36:42.660 align:middle line:84%
+It's low because you'd much
+rather have the dollar today,
+
+00:36:42.660 --> 00:36:46.180 align:middle line:84%
+invest it, and get this
+big return on the dollar.
+
+00:36:46.180 --> 00:36:49.770 align:middle line:84%
+That means, naturally, a bond
+that is paying you $100 tomorrow
+
+00:36:49.770 --> 00:36:52.985 align:middle line:84%
+is going to be worth less when
+the interest rate is very high.
+
+00:36:52.985 --> 00:36:54.360 align:middle line:84%
+It's going to be
+worth less today
+
+00:36:54.360 --> 00:36:55.350 align:middle line:90%
+when the interest is very high.
+
+00:36:55.350 --> 00:36:58.080 align:middle line:84%
+You'd rather have the money
+today, invest it in the interest
+
+00:36:58.080 --> 00:37:00.270 align:middle line:90%
+rate and get the interest rate.
+
+00:37:00.270 --> 00:37:06.780 align:middle line:84%
+And I need to invest 1 over 1
+plus i1t dollars to get $100.
+
+00:37:06.780 --> 00:37:10.380 align:middle line:90%
+That's another way of saying it.
+
+00:37:10.380 --> 00:37:15.110 align:middle line:84%
+What about the bond that
+pays $100 in two years?
+
+00:37:15.110 --> 00:37:17.910 align:middle line:84%
+Well, I need to
+discount that by this,
+
+00:37:17.910 --> 00:37:20.640 align:middle line:84%
+which is-- it's a product
+of the two interest rate.
+
+00:37:20.640 --> 00:37:24.170 align:middle line:84%
+And since I don't know what the
+1-year rate will be one year
+
+00:37:24.170 --> 00:37:26.413 align:middle line:84%
+from now, I have to use
+expectation here rather than
+
+00:37:26.413 --> 00:37:27.080 align:middle line:90%
+the actual rate.
+
+00:37:27.080 --> 00:37:28.340 align:middle line:90%
+But look at the notation.
+
+00:37:28.340 --> 00:37:34.910 align:middle line:84%
+I'm calling P2t-- $P2t,
+the price of a 2-year bond,
+
+00:37:34.910 --> 00:37:39.090 align:middle line:84%
+a bond with maturity of
+two years, as of time t.
+
+00:37:39.090 --> 00:37:42.100 align:middle line:84%
+And this is a bond
+that has no coupons.
+
+00:37:42.100 --> 00:37:47.850 align:middle line:84%
+Yes, pays you $100 at
+the end of the two years.
+
+00:37:47.850 --> 00:37:53.640 align:middle line:84%
+Now note that this price is
+inversely related to both
+
+00:37:53.640 --> 00:37:58.890 align:middle line:84%
+the 1-year rate today and the
+expectation of the 1-year rate
+
+00:37:58.890 --> 00:38:01.520 align:middle line:90%
+one year from now.
+
+00:38:01.520 --> 00:38:05.650 align:middle line:84%
+If either one of these goes up,
+the bond is worthless today.
+
+00:38:05.650 --> 00:38:11.780 align:middle line:84%
+You discount more $1
+received two years from now.
+
+00:38:11.780 --> 00:38:13.100 align:middle line:90%
+I don't care which one--
+
+00:38:13.100 --> 00:38:16.550 align:middle line:84%
+either of them that
+goes up is bad news
+
+00:38:16.550 --> 00:38:18.020 align:middle line:90%
+for the price of a bond.
+
+00:38:18.020 --> 00:38:24.440 align:middle line:90%
+
+
+00:38:24.440 --> 00:38:25.050 align:middle line:90%
+It's clear?
+
+00:38:25.050 --> 00:38:28.340 align:middle line:90%
+
+
+00:38:28.340 --> 00:38:30.440 align:middle line:90%
+So there is an alternative.
+
+00:38:30.440 --> 00:38:33.640 align:middle line:84%
+So this is the way you
+price bonds using just
+
+00:38:33.640 --> 00:38:37.580 align:middle line:84%
+expected discounted
+value approach.
+
+00:38:37.580 --> 00:38:39.790 align:middle line:84%
+Now it turns out that in
+practice, a lot of the asset
+
+00:38:39.790 --> 00:38:42.130 align:middle line:84%
+pricing is done by
+arbitrage, meaning
+
+00:38:42.130 --> 00:38:46.480 align:middle line:84%
+you compare different assets,
+and that have similar risks,
+
+00:38:46.480 --> 00:38:48.820 align:middle line:84%
+they should give you more
+or less the same return.
+
+00:38:48.820 --> 00:38:52.870 align:middle line:84%
+That's what you-- so let
+me do this arbitrage thing.
+
+00:38:52.870 --> 00:38:55.950 align:middle line:84%
+Suppose you're considering
+investing $1 for one year.
+
+00:38:55.950 --> 00:38:56.950 align:middle line:90%
+So that's your decision.
+
+00:38:56.950 --> 00:38:57.992 align:middle line:90%
+I'm going to invest one--
+
+00:38:57.992 --> 00:39:02.060 align:middle line:84%
+I have a dollar, which I
+want to invest for one year.
+
+00:39:02.060 --> 00:39:05.090 align:middle line:84%
+But I have two
+options to do that.
+
+00:39:05.090 --> 00:39:08.840 align:middle line:84%
+I can invest $1
+in a 1-year bond.
+
+00:39:08.840 --> 00:39:11.710 align:middle line:84%
+I know exactly what I'm
+going to get in that bond.
+
+00:39:11.710 --> 00:39:17.440 align:middle line:84%
+Or I can invest in a 2-year
+bond and sell it at the end
+
+00:39:17.440 --> 00:39:18.640 align:middle line:90%
+of the first year.
+
+00:39:18.640 --> 00:39:23.465 align:middle line:84%
+Those are two ways of
+investing for one year.
+
+00:39:23.465 --> 00:39:25.840 align:middle line:84%
+Arbitrage has to be compared
+over the same period of time
+
+00:39:25.840 --> 00:39:26.260 align:middle line:90%
+and everything.
+
+00:39:26.260 --> 00:39:27.843 align:middle line:84%
+It's not the return
+of a bond that you
+
+00:39:27.843 --> 00:39:30.760 align:middle line:84%
+hold for 10 years versus one
+that you hold for one year.
+
+00:39:30.760 --> 00:39:32.780 align:middle line:84%
+It has to be something
+a similar investment.
+
+00:39:32.780 --> 00:39:34.870 align:middle line:84%
+Suppose I need to
+invest for one year.
+
+00:39:34.870 --> 00:39:38.640 align:middle line:90%
+
+
+00:39:38.640 --> 00:39:39.140 align:middle line:90%
+OK.
+
+00:39:39.140 --> 00:39:41.750 align:middle line:84%
+Then if I have these
+two bonds, the option
+
+00:39:41.750 --> 00:39:44.822 align:middle line:84%
+is not buy one or
+the other and then
+
+00:39:44.822 --> 00:39:46.280 align:middle line:84%
+hold to maturity
+because that would
+
+00:39:46.280 --> 00:39:48.655 align:middle line:84%
+be comparing an investment of
+one year with an investment
+
+00:39:48.655 --> 00:39:49.550 align:middle line:90%
+of two years.
+
+00:39:49.550 --> 00:39:52.310 align:middle line:84%
+I need to compare the
+strategies of getting
+
+00:39:52.310 --> 00:39:54.240 align:middle line:90%
+my return in one year.
+
+00:39:54.240 --> 00:39:57.320 align:middle line:84%
+In the 1-year bond that's
+trivial because I get my return
+
+00:39:57.320 --> 00:39:59.120 align:middle line:84%
+at the end at the
+maturity of the bond.
+
+00:39:59.120 --> 00:40:02.210 align:middle line:84%
+In the 2-year bond, it means I
+need to sell it in between after
+
+00:40:02.210 --> 00:40:03.290 align:middle line:90%
+one year.
+
+00:40:03.290 --> 00:40:05.870 align:middle line:84%
+So those are the two
+strategies I want to compare.
+
+00:40:05.870 --> 00:40:08.630 align:middle line:90%
+And since I'm not--
+
+00:40:08.630 --> 00:40:11.598 align:middle line:84%
+considering risk here
+as a central element,
+
+00:40:11.598 --> 00:40:13.640 align:middle line:84%
+those two strategies are
+going to have to give me
+
+00:40:13.640 --> 00:40:16.120 align:middle line:90%
+the same expected return.
+
+00:40:16.120 --> 00:40:17.050 align:middle line:90%
+That's arbitrage.
+
+00:40:17.050 --> 00:40:19.430 align:middle line:90%
+That's what we call arbitrage.
+
+00:40:19.430 --> 00:40:25.910 align:middle line:84%
+The two strategies have to give
+me the same expected return.
+
+00:40:25.910 --> 00:40:30.350 align:middle line:84%
+So what do we get
+from this strategies?
+
+00:40:30.350 --> 00:40:32.400 align:middle line:84%
+Well, if I go through
+the 1-year bond,
+
+00:40:32.400 --> 00:40:36.080 align:middle line:84%
+I know I'm going to get my
+dollar times 1 plus i1t.
+
+00:40:36.080 --> 00:40:39.950 align:middle line:84%
+That's what I get for one year--
+out of investing $1 in a 1-year
+
+00:40:39.950 --> 00:40:40.580 align:middle line:90%
+bond.
+
+00:40:40.580 --> 00:40:43.220 align:middle line:84%
+If I go through the
+2-year bond strategy,
+
+00:40:43.220 --> 00:40:45.080 align:middle line:84%
+buy it and sell it at
+the end of the year,
+
+00:40:45.080 --> 00:40:46.520 align:middle line:90%
+then I'm going to get--
+
+00:40:46.520 --> 00:40:52.670 align:middle line:84%
+I invest $1 today,
+I'm going to pay P2t--
+
+00:40:52.670 --> 00:40:55.700 align:middle line:84%
+that's what I pay today
+for a 2-year bond,
+
+00:40:55.700 --> 00:40:57.530 align:middle line:84%
+that's what I pay here
+for a 2-year bond.
+
+00:40:57.530 --> 00:41:02.660 align:middle line:84%
+And I expect to get the price of
+a 1-year bond one year from now.
+
+00:41:02.660 --> 00:41:06.530 align:middle line:84%
+I mean, the 2-year bond will be
+a 1-year bond after a year has
+
+00:41:06.530 --> 00:41:08.120 align:middle line:90%
+passed.
+
+00:41:08.120 --> 00:41:10.910 align:middle line:84%
+It's a 2-year bond today,
+but after one year,
+
+00:41:10.910 --> 00:41:13.470 align:middle line:84%
+it's going to have only
+one year to mature.
+
+00:41:13.470 --> 00:41:17.810 align:middle line:84%
+So that's the reason the price
+I need to forecast is the price
+
+00:41:17.810 --> 00:41:20.210 align:middle line:84%
+of a 1-year bond
+one year from now.
+
+00:41:20.210 --> 00:41:22.430 align:middle line:90%
+That's what this is here.
+
+00:41:22.430 --> 00:41:24.020 align:middle line:84%
+And that's my return
+on this strategy
+
+00:41:24.020 --> 00:41:27.900 align:middle line:84%
+because I'm going to pay
+this today, these dollars,
+
+00:41:27.900 --> 00:41:31.020 align:middle line:84%
+and I expect to get
+that one year from now.
+
+00:41:31.020 --> 00:41:35.835 align:middle line:84%
+OK so arbitrage means I
+need to set these to equal.
+
+00:41:35.835 --> 00:41:42.280 align:middle line:90%
+
+
+00:41:42.280 --> 00:41:47.643 align:middle line:84%
+So that means I have to get the
+same return with two strategies.
+
+00:41:47.643 --> 00:41:49.060 align:middle line:84%
+That means I'm
+investing the same.
+
+00:41:49.060 --> 00:41:52.980 align:middle line:84%
+So you only need to
+compare the returns.
+
+00:41:52.980 --> 00:41:57.310 align:middle line:90%
+This needs to be equal to that.
+
+00:41:57.310 --> 00:42:00.100 align:middle line:90%
+That's what I have here.
+
+00:42:00.100 --> 00:42:04.530 align:middle line:84%
+Which tells you that you are
+solving from here that the price
+
+00:42:04.530 --> 00:42:08.610 align:middle line:84%
+of a 2-year bond at time t is
+equal to the expected price
+
+00:42:08.610 --> 00:42:13.960 align:middle line:84%
+of a 1-year bond at t plus 1
+discounted by 1 plus the 1-year
+
+00:42:13.960 --> 00:42:16.770 align:middle line:90%
+interest rate.
+
+00:42:16.770 --> 00:42:18.870 align:middle line:90%
+This was like my cash flow--
+
+00:42:18.870 --> 00:42:20.830 align:middle line:84%
+my cash flow now is
+not the cash flow--
+
+00:42:20.830 --> 00:42:23.340 align:middle line:84%
+it's just the price I'm going
+to get a price for that asset.
+
+00:42:23.340 --> 00:42:26.880 align:middle line:84%
+That's like the z's
+I had in my formula.
+
+00:42:26.880 --> 00:42:30.660 align:middle line:84%
+And for a 1-year strategy, I
+only needed to worry about the z
+
+00:42:30.660 --> 00:42:31.690 align:middle line:90%
+plus 1.
+
+00:42:31.690 --> 00:42:34.780 align:middle line:90%
+There was no dividend at day 0.
+
+00:42:34.780 --> 00:42:37.110 align:middle line:90%
+And that's exactly that formula.
+
+00:42:37.110 --> 00:42:43.730 align:middle line:84%
+But notice that at t
+plus 1, that will hold.
+
+00:42:43.730 --> 00:42:44.968 align:middle line:90%
+So at t plus 1--
+
+00:42:44.968 --> 00:42:46.760 align:middle line:84%
+I'm at t plus 1, I
+don't need expectations.
+
+00:42:46.760 --> 00:42:51.470 align:middle line:84%
+I know that P1t plus 1 will be
+equal to 100 divided by 1 plus
+
+00:42:51.470 --> 00:42:54.340 align:middle line:84%
+i1, the 1-year
+rate, at t plus 1.
+
+00:42:54.340 --> 00:42:57.830 align:middle line:84%
+Therefore, the
+expected is something
+
+00:42:57.830 --> 00:42:59.090 align:middle line:90%
+like this, approximately.
+
+00:42:59.090 --> 00:43:02.490 align:middle line:84%
+The expected price is
+something like that.
+
+00:43:02.490 --> 00:43:05.890 align:middle line:84%
+I expect-- I mean, this
+will be-- without the e,
+
+00:43:05.890 --> 00:43:09.400 align:middle line:84%
+will be the price of this
+1-year bond at t plus 1.
+
+00:43:09.400 --> 00:43:12.020 align:middle line:84%
+I don't know exactly what the
+interest rate will be next year,
+
+00:43:12.020 --> 00:43:15.310 align:middle line:84%
+so I have-- the best I can do
+is have an expectation-- that's
+
+00:43:15.310 --> 00:43:18.400 align:middle line:90%
+my expectation, approximately.
+
+00:43:18.400 --> 00:43:23.120 align:middle line:84%
+But now I can stick
+this expression in here.
+
+00:43:23.120 --> 00:43:27.770 align:middle line:84%
+I have this I'm going out
+and I can stick that in there
+
+00:43:27.770 --> 00:43:29.940 align:middle line:90%
+and I get this expression.
+
+00:43:29.940 --> 00:43:32.810 align:middle line:84%
+So that's the price
+for the 2-year bond.
+
+00:43:32.810 --> 00:43:33.920 align:middle line:90%
+Do you recognize this?
+
+00:43:33.920 --> 00:43:37.805 align:middle line:90%
+
+
+00:43:37.805 --> 00:43:38.555 align:middle line:90%
+You saw it before.
+
+00:43:38.555 --> 00:43:46.970 align:middle line:90%
+
+
+00:43:46.970 --> 00:43:48.740 align:middle line:84%
+That's the same
+expression that we
+
+00:43:48.740 --> 00:43:51.260 align:middle line:84%
+got when we used the expected
+present discounted value
+
+00:43:51.260 --> 00:43:53.430 align:middle line:90%
+formula.
+
+00:43:53.430 --> 00:43:55.980 align:middle line:84%
+We said we're going to
+go-- say $100 years--
+
+00:43:55.980 --> 00:43:58.290 align:middle line:84%
+100 years-- two
+years from now, I
+
+00:43:58.290 --> 00:44:00.450 align:middle line:84%
+know that discount factor
+for that is 1 over 1
+
+00:44:00.450 --> 00:44:05.460 align:middle line:84%
+plus i1t times 1 plus
+i1t plus 1 expected.
+
+00:44:05.460 --> 00:44:08.040 align:middle line:90%
+Well, that's what I got.
+
+00:44:08.040 --> 00:44:09.460 align:middle line:90%
+Get some arbitrage.
+
+00:44:09.460 --> 00:44:10.760 align:middle line:90%
+OK.
+
+00:44:10.760 --> 00:44:11.990 align:middle line:90%
+From an arbitrage logic.
+
+00:44:11.990 --> 00:44:15.830 align:middle line:90%
+This is used a lot in finance.
+
+00:44:15.830 --> 00:44:17.600 align:middle line:84%
+I'm going to say
+something complicated,
+
+00:44:17.600 --> 00:44:23.290 align:middle line:90%
+but just ignore it if it's--
+
+00:44:23.290 --> 00:44:26.310 align:middle line:90%
+
+
+00:44:26.310 --> 00:44:29.470 align:middle line:84%
+it's not relevant for
+the quiz or anything.
+
+00:44:29.470 --> 00:44:33.440 align:middle line:84%
+But there is a big debate
+in the US today about--
+
+00:44:33.440 --> 00:44:42.000 align:middle line:84%
+not big debate, a big concern
+about the US Treasury debt
+
+00:44:42.000 --> 00:44:43.950 align:middle line:84%
+because there is a
+debt ceiling, meaning
+
+00:44:43.950 --> 00:44:46.620 align:middle line:84%
+there is a maximum amount
+that the government can--
+
+00:44:46.620 --> 00:44:52.090 align:middle line:84%
+of debt they can
+issue, and that ceiling
+
+00:44:52.090 --> 00:44:54.640 align:middle line:84%
+has been moved over
+time, but every time we
+
+00:44:54.640 --> 00:44:57.700 align:middle line:84%
+get close to a deadline, when
+this needs to be agreed again,
+
+00:44:57.700 --> 00:45:00.974 align:middle line:84%
+there is a concern and there's
+negotiations and so on, and--
+
+00:45:00.974 --> 00:45:03.700 align:middle line:90%
+
+
+00:45:03.700 --> 00:45:06.310 align:middle line:84%
+well, I mean, everyone
+at this moment at least
+
+00:45:06.310 --> 00:45:10.390 align:middle line:84%
+thinks that, as in every
+instance in the past,
+
+00:45:10.390 --> 00:45:13.000 align:middle line:84%
+they're going to reach some
+sort of agreement the day
+
+00:45:13.000 --> 00:45:15.920 align:middle line:90%
+before of the deadline or not.
+
+00:45:15.920 --> 00:45:18.550 align:middle line:84%
+But if they don't,
+and there is a mess,
+
+00:45:18.550 --> 00:45:20.320 align:middle line:90%
+this is huge for finance.
+
+00:45:20.320 --> 00:45:23.410 align:middle line:84%
+It's huge for finance because
+US Treasury bonds, especially
+
+00:45:23.410 --> 00:45:26.590 align:middle line:84%
+short-term bonds, are used
+for pricing everything
+
+00:45:26.590 --> 00:45:28.430 align:middle line:90%
+through arbitrage and so on.
+
+00:45:28.430 --> 00:45:30.070 align:middle line:90%
+So you get a mess there.
+
+00:45:30.070 --> 00:45:32.650 align:middle line:84%
+That's a mess in every
+single financial market.
+
+00:45:32.650 --> 00:45:36.640 align:middle line:84%
+You wouldn't know how to price
+many financial assets, actually.
+
+00:45:36.640 --> 00:45:38.020 align:middle line:90%
+So it would be a disaster.
+
+00:45:38.020 --> 00:45:42.340 align:middle line:84%
+But the reason I
+mention this here
+
+00:45:42.340 --> 00:45:44.770 align:middle line:84%
+is because, again,
+lots of prices
+
+00:45:44.770 --> 00:45:47.140 align:middle line:84%
+are priced in
+reference-- in finance
+
+00:45:47.140 --> 00:45:49.610 align:middle line:84%
+are priced in reference,
+especially derivatives, options,
+
+00:45:49.610 --> 00:45:52.880 align:middle line:84%
+and stuff like that, you price
+them relative to something
+
+00:45:52.880 --> 00:45:54.660 align:middle line:90%
+using this type of logic.
+
+00:45:54.660 --> 00:45:56.390 align:middle line:84%
+So if the thing
+you use as a base,
+
+00:45:56.390 --> 00:45:58.640 align:middle line:84%
+as a reference becomes
+highly unstable
+
+00:45:58.640 --> 00:46:01.790 align:middle line:84%
+and uncertain and risky,
+then obviously everything
+
+00:46:01.790 --> 00:46:04.420 align:middle line:84%
+becomes very
+complicated, very risky,
+
+00:46:04.420 --> 00:46:09.790 align:middle line:84%
+and financial markets do not
+like risk, that's for sure.
+
+00:46:09.790 --> 00:46:12.970 align:middle line:84%
+Anyways, ignore that, that's
+irrelevant for your quiz,
+
+00:46:12.970 --> 00:46:15.220 align:middle line:84%
+but that's the reason
+this-- the whole discussion
+
+00:46:15.220 --> 00:46:17.800 align:middle line:84%
+can over the summer can
+get to be very, very
+
+00:46:17.800 --> 00:46:20.850 align:middle line:90%
+tricky for finance.
+
+00:46:20.850 --> 00:46:23.340 align:middle line:84%
+So the yield to maturity--
+remember I mentioned this
+
+00:46:23.340 --> 00:46:27.750 align:middle line:84%
+concept before-- of an
+n-year bond is also--
+
+00:46:27.750 --> 00:46:31.780 align:middle line:84%
+whenever you hear the
+3-year rate, it's that.
+
+00:46:31.780 --> 00:46:34.390 align:middle line:90%
+It's the yield to maturity.
+
+00:46:34.390 --> 00:46:35.700 align:middle line:90%
+A which is different from--
+
+00:46:35.700 --> 00:46:37.350 align:middle line:90%
+OK, let me tell you--
+
+00:46:37.350 --> 00:46:40.050 align:middle line:84%
+show you a formula that's
+easy to explain, then.
+
+00:46:40.050 --> 00:46:42.330 align:middle line:84%
+And it's defined--
+it's important--
+
+00:46:42.330 --> 00:46:46.350 align:middle line:84%
+as the constant annual interest
+rate that makes the bond price
+
+00:46:46.350 --> 00:46:50.010 align:middle line:84%
+today equal to the present
+discounted value or expected
+
+00:46:50.010 --> 00:46:51.250 align:middle line:90%
+discounted value.
+
+00:46:51.250 --> 00:46:53.910 align:middle line:84%
+So notice the
+highlight there, it's
+
+00:46:53.910 --> 00:46:56.730 align:middle line:84%
+defined as the constant
+annual interest
+
+00:46:56.730 --> 00:47:00.240 align:middle line:84%
+rate that makes the bond price
+today equal to the present
+
+00:47:00.240 --> 00:47:04.370 align:middle line:84%
+discounted value of future
+payments of the bond.
+
+00:47:04.370 --> 00:47:10.510 align:middle line:84%
+So, for example, in our
+2-year bond, that's the price.
+
+00:47:10.510 --> 00:47:12.450 align:middle line:90%
+This is the price of the asset.
+
+00:47:12.450 --> 00:47:14.400 align:middle line:90%
+That we know the price.
+
+00:47:14.400 --> 00:47:18.010 align:middle line:84%
+We already got the price from
+the previous slides of the bond,
+
+00:47:18.010 --> 00:47:20.520 align:middle line:84%
+which was based on the
+short-term interest rate,
+
+00:47:20.520 --> 00:47:23.790 align:middle line:84%
+1-year interest rate, and our
+forecast of the short-term--
+
+00:47:23.790 --> 00:47:26.790 align:middle line:84%
+the 1-year interest
+rate one year from now.
+
+00:47:26.790 --> 00:47:29.080 align:middle line:84%
+I know that price,
+take that as a number.
+
+00:47:29.080 --> 00:47:32.250 align:middle line:84%
+So then the yield
+the yield to maturity
+
+00:47:32.250 --> 00:47:35.790 align:middle line:84%
+is calculated as that
+constant interest rate--
+
+00:47:35.790 --> 00:47:37.432 align:middle line:84%
+constant-- how do I
+see this constant?
+
+00:47:37.432 --> 00:47:39.390 align:middle line:84%
+Because, well, I'm using
+the same interest rate
+
+00:47:39.390 --> 00:47:41.490 align:middle line:84%
+for the first period
+and the second period,
+
+00:47:41.490 --> 00:47:42.990 align:middle line:90%
+and now I'm calling it i2t.
+
+00:47:42.990 --> 00:47:45.510 align:middle line:84%
+It's a 2-year interest
+rate, but it's constant.
+
+00:47:45.510 --> 00:47:48.730 align:middle line:84%
+Constant doesn't mean that
+it doesn't move over time.
+
+00:47:48.730 --> 00:47:50.560 align:middle line:84%
+It means I'm discounting
+all the cash flows
+
+00:47:50.560 --> 00:47:51.880 align:middle line:90%
+as a constant interest rate.
+
+00:47:51.880 --> 00:47:57.770 align:middle line:84%
+It means I'm using
+this equation.
+
+00:47:57.770 --> 00:47:58.310 align:middle line:90%
+OK.
+
+00:47:58.310 --> 00:48:02.930 align:middle line:84%
+So the yield to maturity is find
+an interest rate that allows
+
+00:48:02.930 --> 00:48:04.640 align:middle line:90%
+me to use this constant thing--
+
+00:48:04.640 --> 00:48:07.820 align:middle line:84%
+constant-- assume--
+use this formula
+
+00:48:07.820 --> 00:48:10.820 align:middle line:84%
+and get back the
+same price as I got
+
+00:48:10.820 --> 00:48:15.560 align:middle line:84%
+by using the expected discounted
+value or the arbitrage
+
+00:48:15.560 --> 00:48:16.970 align:middle line:90%
+or something like that.
+
+00:48:16.970 --> 00:48:19.280 align:middle line:90%
+So that's the definition.
+
+00:48:19.280 --> 00:48:20.940 align:middle line:90%
+You this price.
+
+00:48:20.940 --> 00:48:23.360 align:middle line:84%
+Now you look for that
+interest rate that
+
+00:48:23.360 --> 00:48:24.890 align:middle line:90%
+allows you to match that price.
+
+00:48:24.890 --> 00:48:27.510 align:middle line:90%
+
+
+00:48:27.510 --> 00:48:28.740 align:middle line:90%
+And that's called the yield.
+
+00:48:28.740 --> 00:48:33.780 align:middle line:84%
+That's the thing-- remember,
+I plotted some curves.
+
+00:48:33.780 --> 00:48:36.090 align:middle line:84%
+Well, those interest
+rates and those curves
+
+00:48:36.090 --> 00:48:39.340 align:middle line:90%
+were computed this way.
+
+00:48:39.340 --> 00:48:42.850 align:middle line:84%
+Now notice that we know
+what this price is.
+
+00:48:42.850 --> 00:48:45.400 align:middle line:84%
+This price is, by the
+expected discounted value
+
+00:48:45.400 --> 00:48:49.760 align:middle line:84%
+or the arbitrage approach, is
+equal to 100 divided by this.
+
+00:48:49.760 --> 00:48:51.670 align:middle line:84%
+So I know that these
+two things are--
+
+00:48:51.670 --> 00:48:56.820 align:middle line:84%
+this is equal to that, which
+means that this denominator is
+
+00:48:56.820 --> 00:48:58.660 align:middle line:90%
+equal to that.
+
+00:48:58.660 --> 00:49:01.420 align:middle line:84%
+And that implies, for
+a small interest rate,
+
+00:49:01.420 --> 00:49:04.900 align:middle line:84%
+that these two-year interest
+rate is approximately equal
+
+00:49:04.900 --> 00:49:07.510 align:middle line:84%
+to the average of the
+expected interest rate--
+
+00:49:07.510 --> 00:49:08.320 align:middle line:90%
+1-year rates.
+
+00:49:08.320 --> 00:49:11.310 align:middle line:90%
+
+
+00:49:11.310 --> 00:49:14.130 align:middle line:84%
+So this is called actually
+the expectation or hypothesis,
+
+00:49:14.130 --> 00:49:14.890 align:middle line:90%
+by the way.
+
+00:49:14.890 --> 00:49:18.420 align:middle line:84%
+Is that the 2-year rate
+is approximately equal
+
+00:49:18.420 --> 00:49:23.160 align:middle line:84%
+to the average of the 1-year
+rate this year plus the expected
+
+00:49:23.160 --> 00:49:25.500 align:middle line:90%
+1-year rate one year from now.
+
+00:49:25.500 --> 00:49:30.130 align:middle line:90%
+
+
+00:49:30.130 --> 00:49:31.910 align:middle line:90%
+So that's an important concept.
+
+00:49:31.910 --> 00:49:36.030 align:middle line:84%
+I'm going to start from here
+again in the next lecture.
+
+00:49:36.030 --> 00:49:49.000 align:middle line:90%

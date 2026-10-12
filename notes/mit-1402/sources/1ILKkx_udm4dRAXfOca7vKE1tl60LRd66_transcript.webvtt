@@ -1,0 +1,3520 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.964 align:middle line:90%
+[SQUEAKING]
+
+00:00:01.964 --> 00:00:03.928 align:middle line:90%
+[RUSTLING]
+
+00:00:03.928 --> 00:00:04.910 align:middle line:90%
+[CLICKING]
+
+00:00:04.910 --> 00:00:16.219 align:middle line:90%
+
+
+00:00:16.219 --> 00:00:19.040 align:middle line:84%
+RICARDO CABALLERO: Expectations
+play a huge role in economics.
+
+00:00:19.040 --> 00:00:22.813 align:middle line:84%
+So what I want to today,
+not only in asset pricing--
+
+00:00:22.813 --> 00:00:24.230 align:middle line:84%
+I mean, asset
+pricing-- obviously,
+
+00:00:24.230 --> 00:00:26.390 align:middle line:84%
+it's all about the
+future, really,
+
+00:00:26.390 --> 00:00:28.610 align:middle line:84%
+but also in the
+kind of issues we
+
+00:00:28.610 --> 00:00:32.880 align:middle line:84%
+have discussed
+throughout the course.
+
+00:00:32.880 --> 00:00:35.390 align:middle line:84%
+And so that's what I
+want to do, essentially,
+
+00:00:35.390 --> 00:00:39.290 align:middle line:84%
+is I want to give you
+a shortcut to think
+
+00:00:39.290 --> 00:00:43.430 align:middle line:84%
+about the role of expectations
+in the kind of models
+
+00:00:43.430 --> 00:00:44.670 align:middle line:90%
+we have already discussed.
+
+00:00:44.670 --> 00:00:46.462 align:middle line:84%
+And so I'm going to do
+all that in the most
+
+00:00:46.462 --> 00:00:49.110 align:middle line:84%
+basic model we have discussed,
+which is the IS-LM model.
+
+00:00:49.110 --> 00:00:54.050 align:middle line:84%
+And I hope you'll get the
+gist of what expectations
+
+00:00:54.050 --> 00:00:56.940 align:middle line:90%
+can do in economics.
+
+00:00:56.940 --> 00:01:01.160 align:middle line:84%
+So this is going to be a very
+compressed version, adapted
+
+00:01:01.160 --> 00:01:03.330 align:middle line:90%
+version, of chapters 15 and 16.
+
+00:01:03.330 --> 00:01:06.950 align:middle line:84%
+But in terms of material
+mapping into the book,
+
+00:01:06.950 --> 00:01:09.180 align:middle line:90%
+those are the relevant chapters.
+
+00:01:09.180 --> 00:01:12.350 align:middle line:84%
+And the main idea here
+is that the IS-LM model
+
+00:01:12.350 --> 00:01:14.510 align:middle line:84%
+as we have described
+it up to now
+
+00:01:14.510 --> 00:01:17.405 align:middle line:90%
+really overweights the present.
+
+00:01:17.405 --> 00:01:20.240 align:middle line:90%
+
+
+00:01:20.240 --> 00:01:24.350 align:middle line:84%
+And in practice, expectations
+about future conditions
+
+00:01:24.350 --> 00:01:27.570 align:middle line:84%
+play a big role in the decision
+of all economic actors.
+
+00:01:27.570 --> 00:01:30.360 align:middle line:84%
+We'll look at investors,
+asset pricing and so on.
+
+00:01:30.360 --> 00:01:32.040 align:middle line:90%
+But it's also true of consumers.
+
+00:01:32.040 --> 00:01:33.840 align:middle line:90%
+It's also true of firms.
+
+00:01:33.840 --> 00:01:36.922 align:middle line:84%
+I mean, if you think about
+firms, in investment decision,
+
+00:01:36.922 --> 00:01:38.630 align:middle line:84%
+we made the function
+of the interest rate
+
+00:01:38.630 --> 00:01:39.980 align:middle line:90%
+on our current output.
+
+00:01:39.980 --> 00:01:42.132 align:middle line:84%
+But it's quite clear
+that the reason firms
+
+00:01:42.132 --> 00:01:44.090 align:middle line:84%
+invest is not because of
+the current condition.
+
+00:01:44.090 --> 00:01:46.680 align:middle line:84%
+It's because they anticipate
+making profits in the future.
+
+00:01:46.680 --> 00:01:49.080 align:middle line:84%
+So it's all about
+real expectations.
+
+00:01:49.080 --> 00:01:52.220 align:middle line:84%
+And even governments and
+foreigners, when they invest,
+
+00:01:52.220 --> 00:01:55.380 align:middle line:84%
+do foreign direct investment,
+they go and invest in a country,
+
+00:01:55.380 --> 00:01:58.160 align:middle line:84%
+it's a lot about expectations
+of what the country will
+
+00:01:58.160 --> 00:02:00.202 align:middle line:90%
+do in the future.
+
+00:02:00.202 --> 00:02:01.910 align:middle line:84%
+I mean, political
+elections, for example,
+
+00:02:01.910 --> 00:02:06.320 align:middle line:84%
+have huge impact on asset
+prices and so on precisely
+
+00:02:06.320 --> 00:02:09.979 align:middle line:84%
+because they change what people
+think, for good or for bad,
+
+00:02:09.979 --> 00:02:12.020 align:middle line:90%
+about future conditions.
+
+00:02:12.020 --> 00:02:15.540 align:middle line:84%
+So expectations is
+just huge in economics.
+
+00:02:15.540 --> 00:02:18.090 align:middle line:84%
+So we want to do
+things in two steps.
+
+00:02:18.090 --> 00:02:21.510 align:middle line:84%
+The first, I'm going to
+revisit the consumption
+
+00:02:21.510 --> 00:02:23.950 align:middle line:84%
+function and the
+investment function,
+
+00:02:23.950 --> 00:02:25.950 align:middle line:84%
+now taking into
+account expectations
+
+00:02:25.950 --> 00:02:30.030 align:middle line:84%
+and motivate how you should
+really think about consumption
+
+00:02:30.030 --> 00:02:32.730 align:middle line:84%
+and investment in a
+more realistic model
+
+00:02:32.730 --> 00:02:35.500 align:middle line:90%
+than we have been discussing.
+
+00:02:35.500 --> 00:02:39.720 align:middle line:84%
+And then I want to embed
+not the fully fleshed
+
+00:02:39.720 --> 00:02:41.490 align:middle line:84%
+out consumption and
+investment decisions,
+
+00:02:41.490 --> 00:02:48.540 align:middle line:84%
+but the flavor of the role of
+the future into the IS-LM model.
+
+00:02:48.540 --> 00:02:52.860 align:middle line:84%
+And by then, you
+would have seen--
+
+00:02:52.860 --> 00:02:56.370 align:middle line:84%
+you will have seen all that I
+wanted to communicate, at least,
+
+00:02:56.370 --> 00:02:59.660 align:middle line:90%
+in this set of lectures.
+
+00:02:59.660 --> 00:03:03.620 align:middle line:84%
+So let's think about,
+first, consumption.
+
+00:03:03.620 --> 00:03:08.700 align:middle line:84%
+And up to now, we assume that
+consumption depended only
+
+00:03:08.700 --> 00:03:14.280 align:middle line:84%
+on disposable income, on
+current disposable income.
+
+00:03:14.280 --> 00:03:17.050 align:middle line:84%
+But that's not really
+the way it works.
+
+00:03:17.050 --> 00:03:20.400 align:middle line:84%
+And one of the first in
+formulating, more or less,
+
+00:03:20.400 --> 00:03:23.610 align:middle line:84%
+formally how consumption
+decisions are really made
+
+00:03:23.610 --> 00:03:25.440 align:middle line:90%
+is Milton Friedman.
+
+00:03:25.440 --> 00:03:28.890 align:middle line:84%
+And he called it the permanent
+income theory of consumption,
+
+00:03:28.890 --> 00:03:32.010 align:middle line:84%
+meaning what really matters to
+you in a consumption decision is
+
+00:03:32.010 --> 00:03:34.440 align:middle line:84%
+not so much your
+current income, but it's
+
+00:03:34.440 --> 00:03:37.180 align:middle line:84%
+what you expect to get on
+average during your lifetime.
+
+00:03:37.180 --> 00:03:39.270 align:middle line:84%
+And you don't want to
+be moving consumption
+
+00:03:39.270 --> 00:03:41.940 align:middle line:90%
+up and down like crazy.
+
+00:03:41.940 --> 00:03:44.610 align:middle line:84%
+Once you realize, more or less,
+what you'll get on average,
+
+00:03:44.610 --> 00:03:46.110 align:middle line:84%
+then you should--
+consumption should
+
+00:03:46.110 --> 00:03:49.230 align:middle line:90%
+be related to that concept.
+
+00:03:49.230 --> 00:03:54.600 align:middle line:84%
+And in a sense, it's also
+by thinking in these terms,
+
+00:03:54.600 --> 00:03:57.060 align:middle line:84%
+you're also drawing a big
+distinction between things
+
+00:03:57.060 --> 00:03:59.310 align:middle line:84%
+that are temporary and
+that shouldn't matter
+
+00:03:59.310 --> 00:04:01.380 align:middle line:84%
+a lot for your
+consumption decisions
+
+00:04:01.380 --> 00:04:02.910 align:middle line:84%
+versus things that
+are permanent,
+
+00:04:02.910 --> 00:04:06.600 align:middle line:84%
+that clearly have a potential
+to have a much larger impact
+
+00:04:06.600 --> 00:04:07.693 align:middle line:90%
+on your consumption.
+
+00:04:07.693 --> 00:04:09.360 align:middle line:84%
+Of course, you can
+have temporary things
+
+00:04:09.360 --> 00:04:10.270 align:middle line:90%
+that are very large.
+
+00:04:10.270 --> 00:04:13.080 align:middle line:84%
+I mean, you win the lottery,
+that's a huge temporary shock.
+
+00:04:13.080 --> 00:04:15.220 align:middle line:84%
+But probably you're not going
+to spend the whole lottery right
+
+00:04:15.220 --> 00:04:15.720 align:middle line:90%
+away.
+
+00:04:15.720 --> 00:04:19.646 align:middle line:84%
+You're going to smooth it over
+your lifetime, in any event.
+
+00:04:19.646 --> 00:04:24.760 align:middle line:84%
+And that actually relates to,
+more or less at the same time,
+
+00:04:24.760 --> 00:04:30.070 align:middle line:84%
+Milton Friedman was at Chicago,
+Franco Modigliani at MIT.
+
+00:04:30.070 --> 00:04:32.800 align:middle line:84%
+We will develop a life-cycle
+theory of consumption, which
+
+00:04:32.800 --> 00:04:36.340 align:middle line:84%
+says, look, even at the
+level of an individual,
+
+00:04:36.340 --> 00:04:38.633 align:middle line:84%
+the day-to-day
+income is not really
+
+00:04:38.633 --> 00:04:40.300 align:middle line:84%
+what pins down the
+level of consumption,
+
+00:04:40.300 --> 00:04:41.692 align:middle line:84%
+because people
+know early in life
+
+00:04:41.692 --> 00:04:44.150 align:middle line:84%
+that they have a lower income
+than they will have later on.
+
+00:04:44.150 --> 00:04:47.750 align:middle line:84%
+So they will tend to spend and
+borrow more when they're young.
+
+00:04:47.750 --> 00:04:49.630 align:middle line:84%
+Then, in the
+middle, when they're
+
+00:04:49.630 --> 00:04:51.490 align:middle line:84%
+in the middle of
+their life cycle,
+
+00:04:51.490 --> 00:04:53.985 align:middle line:84%
+before retirement, they panic,
+and you tend to save more.
+
+00:04:53.985 --> 00:04:55.360 align:middle line:84%
+So you don't
+consume all you have
+
+00:04:55.360 --> 00:04:57.880 align:middle line:84%
+because you know there are
+many years ahead of you where
+
+00:04:57.880 --> 00:05:00.110 align:middle line:84%
+income will be lower than
+your consumption needs.
+
+00:05:00.110 --> 00:05:03.400 align:middle line:84%
+So there is also a sense
+of intertemporal smoothing
+
+00:05:03.400 --> 00:05:04.640 align:middle line:90%
+of your consumption.
+
+00:05:04.640 --> 00:05:06.970 align:middle line:84%
+You don't follow income
+second by second.
+
+00:05:06.970 --> 00:05:11.020 align:middle line:84%
+You sort of try to stabilize
+consumption over time,
+
+00:05:11.020 --> 00:05:11.930 align:middle line:90%
+more or less.
+
+00:05:11.930 --> 00:05:13.960 align:middle line:84%
+And that means that
+you have to think more
+
+00:05:13.960 --> 00:05:16.450 align:middle line:84%
+about your permanent income,
+what you'll get on average,
+
+00:05:16.450 --> 00:05:19.280 align:middle line:84%
+rather than what you
+get in the short run.
+
+00:05:19.280 --> 00:05:23.540 align:middle line:84%
+So when you start thinking about
+consumption in those terms, what
+
+00:05:23.540 --> 00:05:25.370 align:middle line:84%
+really think, well,
+what really matters,
+
+00:05:25.370 --> 00:05:28.310 align:middle line:84%
+then, is total wealth
+more than income.
+
+00:05:28.310 --> 00:05:30.620 align:middle line:84%
+How wealthy you are will
+pin down more or less
+
+00:05:30.620 --> 00:05:35.130 align:middle line:84%
+the consumption you have more
+than your current income.
+
+00:05:35.130 --> 00:05:37.840 align:middle line:84%
+And there are two
+senses of wealth.
+
+00:05:37.840 --> 00:05:41.960 align:middle line:84%
+One is financial wealth,
+all the assets you may have,
+
+00:05:41.960 --> 00:05:44.320 align:middle line:84%
+you may expect to
+inherit or whatever,
+
+00:05:44.320 --> 00:05:46.270 align:middle line:90%
+minus the debts you have.
+
+00:05:46.270 --> 00:05:49.150 align:middle line:84%
+So very much as we discussed
+in the previous lecture
+
+00:05:49.150 --> 00:05:52.120 align:middle line:84%
+in the context of asset
+pricing, the expected present
+
+00:05:52.120 --> 00:05:54.010 align:middle line:84%
+discounted value
+of the cash flows
+
+00:05:54.010 --> 00:05:58.770 align:middle line:84%
+of all the assets you have,
+that's your financial wealth.
+
+00:05:58.770 --> 00:05:59.910 align:middle line:90%
+And that's important.
+
+00:05:59.910 --> 00:06:03.250 align:middle line:84%
+You have more financial wealth,
+even if you have no income
+
+00:06:03.250 --> 00:06:05.800 align:middle line:84%
+today, you will probably
+borrow against that wealth
+
+00:06:05.800 --> 00:06:07.310 align:middle line:90%
+to the extent that you can.
+
+00:06:07.310 --> 00:06:11.800 align:middle line:84%
+And probably the banks will
+be more willing to lend to you
+
+00:06:11.800 --> 00:06:14.050 align:middle line:84%
+if they know that you
+have a lot of wealth.
+
+00:06:14.050 --> 00:06:16.375 align:middle line:84%
+And so you're going to
+fund the consumption, which
+
+00:06:16.375 --> 00:06:18.250 align:middle line:84%
+is above your current
+income just because you
+
+00:06:18.250 --> 00:06:19.375 align:middle line:90%
+have more financial wealth.
+
+00:06:19.375 --> 00:06:24.990 align:middle line:90%
+
+
+00:06:24.990 --> 00:06:29.790 align:middle line:84%
+In fact, the very rich
+seldom sell assets.
+
+00:06:29.790 --> 00:06:32.920 align:middle line:84%
+They borrow against those
+assets to fund consumption.
+
+00:06:32.920 --> 00:06:35.520 align:middle line:90%
+That's the way it works.
+
+00:06:35.520 --> 00:06:38.230 align:middle line:84%
+There are tax advantages
+of doing that and so on.
+
+00:06:38.230 --> 00:06:40.320 align:middle line:90%
+But that's the way it works.
+
+00:06:40.320 --> 00:06:44.010 align:middle line:84%
+And the very rich often
+have no income, [CHUCKLES]
+
+00:06:44.010 --> 00:06:45.420 align:middle line:90%
+at least labor income.
+
+00:06:45.420 --> 00:06:48.310 align:middle line:84%
+All the income comes
+from returns on assets.
+
+00:06:48.310 --> 00:06:51.510 align:middle line:84%
+And again, they mostly
+borrow against that.
+
+00:06:51.510 --> 00:06:54.172 align:middle line:84%
+But in any event,
+the point there
+
+00:06:54.172 --> 00:06:56.130 align:middle line:84%
+is that what really brings
+out your consumption
+
+00:06:56.130 --> 00:06:59.898 align:middle line:84%
+is your wealth, not the
+current flow of income.
+
+00:06:59.898 --> 00:07:01.440 align:middle line:84%
+And the other very
+important concept,
+
+00:07:01.440 --> 00:07:06.390 align:middle line:84%
+which is a bigger thing for most
+individuals, is human wealth.
+
+00:07:06.390 --> 00:07:09.150 align:middle line:84%
+I mean, this is huge
+for all of you here.
+
+00:07:09.150 --> 00:07:11.130 align:middle line:84%
+It's obvious that
+your current income
+
+00:07:11.130 --> 00:07:14.230 align:middle line:84%
+is a lot lower than what your
+income will be in the future.
+
+00:07:14.230 --> 00:07:17.030 align:middle line:90%
+You have a lot of human capital.
+
+00:07:17.030 --> 00:07:20.280 align:middle line:84%
+And so that's also a concept
+of expected present discounted
+
+00:07:20.280 --> 00:07:25.168 align:middle line:84%
+value is you expect to earn a
+lot of income in the future.
+
+00:07:25.168 --> 00:07:27.210 align:middle line:84%
+And therefore, it makes
+sense that, at this stage
+
+00:07:27.210 --> 00:07:29.250 align:middle line:90%
+of your life, you borrow.
+
+00:07:29.250 --> 00:07:32.550 align:middle line:84%
+Now, banks are a little bit
+more reluctant of lending you
+
+00:07:32.550 --> 00:07:34.920 align:middle line:84%
+against your human
+capital than lending you
+
+00:07:34.920 --> 00:07:36.550 align:middle line:90%
+against your financial assets.
+
+00:07:36.550 --> 00:07:38.400 align:middle line:84%
+It's easier to borrow
+against a house
+
+00:07:38.400 --> 00:07:40.030 align:middle line:90%
+than against your future income.
+
+00:07:40.030 --> 00:07:42.630 align:middle line:84%
+But even there, probably
+you're going to have sort of--
+
+00:07:42.630 --> 00:07:46.200 align:middle line:84%
+not going to be saving a lot
+at this time of your life
+
+00:07:46.200 --> 00:07:49.200 align:middle line:84%
+because your income is a
+lot higher in the future.
+
+00:07:49.200 --> 00:07:51.360 align:middle line:90%
+That we call human wealth.
+
+00:07:51.360 --> 00:07:55.080 align:middle line:84%
+And total wealth is just
+a sum of financial wealth
+
+00:07:55.080 --> 00:07:56.470 align:middle line:90%
+plus human wealth.
+
+00:07:56.470 --> 00:07:59.070 align:middle line:84%
+So at its most basic level--
+and those are-- sorry,
+
+00:07:59.070 --> 00:08:01.890 align:middle line:84%
+just to relate to things we did
+in the previous two lectures,
+
+00:08:01.890 --> 00:08:04.930 align:middle line:84%
+those are two expected
+present discounted value.
+
+00:08:04.930 --> 00:08:07.450 align:middle line:84%
+You don't know exactly how much
+income you're going to get.
+
+00:08:07.450 --> 00:08:08.825 align:middle line:84%
+You get a sense
+of, more or less,
+
+00:08:08.825 --> 00:08:10.830 align:middle line:84%
+what somebody like you
+does in the future,
+
+00:08:10.830 --> 00:08:12.550 align:middle line:84%
+more or less on
+average and so on.
+
+00:08:12.550 --> 00:08:14.010 align:middle line:90%
+So you have a sense--
+
+00:08:14.010 --> 00:08:17.770 align:middle line:84%
+you have an expected cash flow,
+labor income flow in the future.
+
+00:08:17.770 --> 00:08:19.947 align:middle line:84%
+You don't know what the
+interest rates are exactly.
+
+00:08:19.947 --> 00:08:21.780 align:middle line:84%
+So you're going to
+guess, more or less, what
+
+00:08:21.780 --> 00:08:23.250 align:middle line:90%
+the future interest rate is.
+
+00:08:23.250 --> 00:08:26.040 align:middle line:84%
+And that gives you a
+sense of human wealth.
+
+00:08:26.040 --> 00:08:28.710 align:middle line:84%
+And I know that many of
+these things you are not
+
+00:08:28.710 --> 00:08:31.390 align:middle line:84%
+calculating every night,
+what your human wealth is,
+
+00:08:31.390 --> 00:08:35.892 align:middle line:84%
+and then calculating-- consumes
+5% of that or 3.5% of that.
+
+00:08:35.892 --> 00:08:38.350 align:middle line:84%
+But you know, there are a lot
+of-- this is very behavioral.
+
+00:08:38.350 --> 00:08:39.940 align:middle line:90%
+It's really ingrained in you.
+
+00:08:39.940 --> 00:08:44.543 align:middle line:84%
+And you're probably
+more likely to spend
+
+00:08:44.543 --> 00:08:46.710 align:middle line:84%
+more if you think that
+you're going to be doing well
+
+00:08:46.710 --> 00:08:48.550 align:middle line:90%
+in the future than not.
+
+00:08:48.550 --> 00:08:50.580 align:middle line:84%
+Maybe you're too busy
+now to spend a lot.
+
+00:08:50.580 --> 00:08:52.290 align:middle line:84%
+But at some point,
+[CHUCKLES] when
+
+00:08:52.290 --> 00:08:57.420 align:middle line:84%
+you're given the opportunity,
+that will make a difference.
+
+00:08:57.420 --> 00:08:59.890 align:middle line:84%
+Traders, very
+successful traders--
+
+00:08:59.890 --> 00:09:01.090 align:middle line:90%
+they get a very low income.
+
+00:09:01.090 --> 00:09:05.510 align:middle line:84%
+So essentially, they live out
+of the income that they get,
+
+00:09:05.510 --> 00:09:07.610 align:middle line:84%
+they couldn't afford what
+they normally afford.
+
+00:09:07.610 --> 00:09:09.380 align:middle line:84%
+But they spent a lot
+more than that income
+
+00:09:09.380 --> 00:09:12.120 align:middle line:84%
+because they expect to get a
+big bonus and things like that.
+
+00:09:12.120 --> 00:09:15.810 align:middle line:84%
+That's the income that
+comes in the future.
+
+00:09:15.810 --> 00:09:17.880 align:middle line:84%
+So in principle,
+your consumption
+
+00:09:17.880 --> 00:09:19.860 align:middle line:84%
+should be something
+that is not proportional
+
+00:09:19.860 --> 00:09:22.860 align:middle line:84%
+to your disposable income,
+but really proportional
+
+00:09:22.860 --> 00:09:24.270 align:middle line:90%
+to your wealth.
+
+00:09:24.270 --> 00:09:28.890 align:middle line:84%
+And there are estimates of what
+that proportionality factor is.
+
+00:09:28.890 --> 00:09:31.020 align:middle line:84%
+And that's what I said,
+it depends on the type
+
+00:09:31.020 --> 00:09:32.310 align:middle line:90%
+of assets we're talking about.
+
+00:09:32.310 --> 00:09:36.370 align:middle line:84%
+But it's about 0.03,
+that kind of thing, OK?
+
+00:09:36.370 --> 00:09:40.660 align:middle line:90%
+Now, in reality, that's just--
+
+00:09:40.660 --> 00:09:43.370 align:middle line:84%
+it's true this is a better
+economic concept than just
+
+00:09:43.370 --> 00:09:45.170 align:middle line:90%
+putting income in there.
+
+00:09:45.170 --> 00:09:48.120 align:middle line:84%
+But in reality, both
+things really matter.
+
+00:09:48.120 --> 00:09:50.270 align:middle line:84%
+So a more realistic
+consumption function
+
+00:09:50.270 --> 00:09:52.760 align:middle line:84%
+is something that
+depends on both things--
+
+00:09:52.760 --> 00:09:57.390 align:middle line:84%
+for a variety of reasons, that
+many people have no savings.
+
+00:09:57.390 --> 00:09:59.820 align:middle line:84%
+And really, we call
+them hand-to-mouth.
+
+00:09:59.820 --> 00:10:02.660 align:middle line:84%
+They live by the income they
+receive in every single period.
+
+00:10:02.660 --> 00:10:05.750 align:middle line:84%
+Those people are not thinking
+about smoothing consumption
+
+00:10:05.750 --> 00:10:06.860 align:middle line:90%
+over time.
+
+00:10:06.860 --> 00:10:10.820 align:middle line:84%
+They're consuming whatever
+income they receive.
+
+00:10:10.820 --> 00:10:13.370 align:middle line:84%
+As I said before,
+most banks are not
+
+00:10:13.370 --> 00:10:17.780 align:middle line:84%
+likely to lend you a lot against
+your expected present discounted
+
+00:10:17.780 --> 00:10:19.730 align:middle line:90%
+value of labor income.
+
+00:10:19.730 --> 00:10:22.010 align:middle line:84%
+So you may be constrained
+in the short run.
+
+00:10:22.010 --> 00:10:24.770 align:middle line:84%
+Your income-- you think
+about how wealthy you'll be,
+
+00:10:24.770 --> 00:10:26.928 align:middle line:84%
+but you also think
+about your flows,
+
+00:10:26.928 --> 00:10:28.220 align:middle line:90%
+the cash flow you're receiving.
+
+00:10:28.220 --> 00:10:30.380 align:middle line:84%
+That's also part of
+your considerations.
+
+00:10:30.380 --> 00:10:33.590 align:middle line:84%
+So in reality, it's a
+mixture of those two things.
+
+00:10:33.590 --> 00:10:36.350 align:middle line:84%
+When you look at the micro
+level at different individuals,
+
+00:10:36.350 --> 00:10:37.890 align:middle line:90%
+the composition changes.
+
+00:10:37.890 --> 00:10:41.000 align:middle line:84%
+The richer you are, the
+more this term matters,
+
+00:10:41.000 --> 00:10:42.320 align:middle line:90%
+the less this one matters.
+
+00:10:42.320 --> 00:10:46.860 align:middle line:84%
+The poorer you are, this
+term overwhelms that term.
+
+00:10:46.860 --> 00:10:49.150 align:middle line:84%
+That's, more or
+less, how it works.
+
+00:10:49.150 --> 00:10:52.610 align:middle line:84%
+But on average, it
+looks like that.
+
+00:10:52.610 --> 00:10:56.710 align:middle line:84%
+So we weren't wrong
+when we did IS-LM,
+
+00:10:56.710 --> 00:10:58.990 align:middle line:84%
+having the consumption
+function as increasing
+
+00:10:58.990 --> 00:11:01.780 align:middle line:90%
+in disposable income.
+
+00:11:01.780 --> 00:11:04.960 align:middle line:84%
+But I always told you there is a
+lot of interesting stuff hidden
+
+00:11:04.960 --> 00:11:07.060 align:middle line:90%
+in that little C0, in the--
+
+00:11:07.060 --> 00:11:09.110 align:middle line:84%
+in that autonomous
+component of consumption.
+
+00:11:09.110 --> 00:11:11.200 align:middle line:84%
+Well, that-- lots of
+interesting things
+
+00:11:11.200 --> 00:11:13.602 align:middle line:90%
+has a lot to do with wealth, OK?
+
+00:11:13.602 --> 00:11:17.458 align:middle line:90%
+
+
+00:11:17.458 --> 00:11:20.940 align:middle line:84%
+And again, this term
+here is something
+
+00:11:20.940 --> 00:11:23.560 align:middle line:84%
+that captures a lot of
+things that are permanent.
+
+00:11:23.560 --> 00:11:26.700 align:middle line:84%
+Well, this one captures a lot of
+cyclical components and things
+
+00:11:26.700 --> 00:11:27.420 align:middle line:90%
+of that kind.
+
+00:11:27.420 --> 00:11:30.190 align:middle line:90%
+
+
+00:11:30.190 --> 00:11:34.000 align:middle line:84%
+So interpreted this
+way, the reason--
+
+00:11:34.000 --> 00:11:38.640 align:middle line:84%
+people during booms, even
+though human wealth may not
+
+00:11:38.640 --> 00:11:41.550 align:middle line:84%
+change much over
+time, financial wealth
+
+00:11:41.550 --> 00:11:44.570 align:middle line:90%
+typically changes in a boom.
+
+00:11:44.570 --> 00:11:47.810 align:middle line:84%
+But it's also the case,
+in a boom, wages are high.
+
+00:11:47.810 --> 00:11:50.550 align:middle line:84%
+A lot of people
+tend to spend more.
+
+00:11:50.550 --> 00:11:53.250 align:middle line:84%
+Even so, this captures a
+lot the temporary component.
+
+00:11:53.250 --> 00:11:55.370 align:middle line:84%
+When you're in a
+boom, it's likely
+
+00:11:55.370 --> 00:11:57.590 align:middle line:84%
+that you're going to
+consume more for any given
+
+00:11:57.590 --> 00:12:00.376 align:middle line:90%
+level of wealth, OK?
+
+00:12:00.376 --> 00:12:03.850 align:middle line:84%
+It's temporary, but
+that's what it is.
+
+00:12:03.850 --> 00:12:06.000 align:middle line:90%
+What about investment?
+
+00:12:06.000 --> 00:12:07.300 align:middle line:90%
+That's a decision by the firm.
+
+00:12:07.300 --> 00:12:08.440 align:middle line:90%
+How much physical capital?
+
+00:12:08.440 --> 00:12:11.220 align:middle line:84%
+I'm talking about physical
+investment, real investment, not
+
+00:12:11.220 --> 00:12:13.340 align:middle line:90%
+financial investment.
+
+00:12:13.340 --> 00:12:17.210 align:middle line:84%
+The decision also depend on
+current, but particularly
+
+00:12:17.210 --> 00:12:19.100 align:middle line:90%
+on expected profits.
+
+00:12:19.100 --> 00:12:21.380 align:middle line:84%
+And when you think
+about expected profits,
+
+00:12:21.380 --> 00:12:23.690 align:middle line:84%
+you need to think about
+interest rate as well.
+
+00:12:23.690 --> 00:12:25.220 align:middle line:84%
+We put the interest
+rate, as I said,
+
+00:12:25.220 --> 00:12:26.660 align:middle line:84%
+OK, it's more
+expensive to borrow
+
+00:12:26.660 --> 00:12:27.900 align:middle line:90%
+if the interest rate is high.
+
+00:12:27.900 --> 00:12:30.560 align:middle line:84%
+True, but actually it
+matters a lot more than just
+
+00:12:30.560 --> 00:12:35.630 align:middle line:84%
+that because it matters also
+through the expected present
+
+00:12:35.630 --> 00:12:37.422 align:middle line:84%
+discounted value of
+your future cash flows.
+
+00:12:37.422 --> 00:12:38.922 align:middle line:84%
+If the interest
+rates are very high,
+
+00:12:38.922 --> 00:12:40.700 align:middle line:84%
+and they're expected
+to remain very high,
+
+00:12:40.700 --> 00:12:42.800 align:middle line:84%
+that means a project
+that gives you
+
+00:12:42.800 --> 00:12:45.470 align:middle line:84%
+lots of return in the future,
+lots of cash flow in the future,
+
+00:12:45.470 --> 00:12:48.257 align:middle line:84%
+may not be worth a lot
+simply because interest rates
+
+00:12:48.257 --> 00:12:48.840 align:middle line:90%
+are very high.
+
+00:12:48.840 --> 00:12:52.140 align:middle line:84%
+So the discounting of the
+future cash flows is very high.
+
+00:12:52.140 --> 00:12:54.560 align:middle line:84%
+And in that
+environment, investments
+
+00:12:54.560 --> 00:12:56.390 align:middle line:84%
+that give you a
+return, a quick return,
+
+00:12:56.390 --> 00:12:58.790 align:middle line:84%
+are worth more than
+things that have
+
+00:12:58.790 --> 00:13:01.370 align:middle line:90%
+a pay-off in the very long run.
+
+00:13:01.370 --> 00:13:07.042 align:middle line:84%
+So the decision, for
+example, of buying a machine
+
+00:13:07.042 --> 00:13:08.750 align:middle line:84%
+needs to look at the
+price of the machine
+
+00:13:08.750 --> 00:13:11.330 align:middle line:84%
+right now and then at the
+expected present discounted
+
+00:13:11.330 --> 00:13:14.290 align:middle line:90%
+value of the cash flows, OK?
+
+00:13:14.290 --> 00:13:19.570 align:middle line:84%
+So let's think a bit more
+carefully about that decision.
+
+00:13:19.570 --> 00:13:21.870 align:middle line:84%
+So suppose you buy a
+machine for a price.
+
+00:13:21.870 --> 00:13:24.250 align:middle line:90%
+Let's normalize that price to 1.
+
+00:13:24.250 --> 00:13:26.520 align:middle line:84%
+The first thing you
+need to know is, well,
+
+00:13:26.520 --> 00:13:28.560 align:middle line:84%
+how long will this
+machine last because I
+
+00:13:28.560 --> 00:13:31.440 align:middle line:84%
+need to know for how many
+years I'm going to get a cash
+
+00:13:31.440 --> 00:13:33.950 align:middle line:90%
+flow out of these things.
+
+00:13:33.950 --> 00:13:38.640 align:middle line:84%
+And a reasonable assumption
+is, for most machines,
+
+00:13:38.640 --> 00:13:42.330 align:middle line:84%
+is some sort of geometric
+depreciation-- so meaning,
+
+00:13:42.330 --> 00:13:43.650 align:middle line:90%
+it's not deterministic.
+
+00:13:43.650 --> 00:13:45.180 align:middle line:90%
+It's more or less--
+
+00:13:45.180 --> 00:13:48.090 align:middle line:84%
+machines break
+down occasionally,
+
+00:13:48.090 --> 00:13:50.680 align:middle line:84%
+but there is certain probability
+that they break down.
+
+00:13:50.680 --> 00:13:54.630 align:middle line:84%
+We typically call that
+notation in economics--
+
+00:13:54.630 --> 00:13:56.770 align:middle line:90%
+we refer to that as delta.
+
+00:13:56.770 --> 00:13:59.170 align:middle line:84%
+That's the depreciation
+probability.
+
+00:13:59.170 --> 00:14:01.500 align:middle line:84%
+So if you think in
+terms of expected value,
+
+00:14:01.500 --> 00:14:06.588 align:middle line:84%
+if you buy a machine today, and
+you ask, how much of a machine
+
+00:14:06.588 --> 00:14:08.130 align:middle line:84%
+I'll have next year,
+well, it's going
+
+00:14:08.130 --> 00:14:10.440 align:middle line:84%
+to be a weighted average
+of 0 and 1 probably.
+
+00:14:10.440 --> 00:14:14.090 align:middle line:84%
+But on average, it's
+going to be 1 minus delta.
+
+00:14:14.090 --> 00:14:16.940 align:middle line:84%
+So as a machine
+depreciates, the probability
+
+00:14:16.940 --> 00:14:19.520 align:middle line:84%
+of the machine breaking
+down over a year is 5%,
+
+00:14:19.520 --> 00:14:22.898 align:middle line:90%
+then 1 minus delta is 0.95, say.
+
+00:14:22.898 --> 00:14:24.940 align:middle line:84%
+What is the probability
+that the machine is still
+
+00:14:24.940 --> 00:14:26.570 align:middle line:90%
+producing two years from now?
+
+00:14:26.570 --> 00:14:29.810 align:middle line:84%
+Well, 1 minus delta squared
+and so on and so forth.
+
+00:14:29.810 --> 00:14:31.420 align:middle line:84%
+So that's the first
+thing you know.
+
+00:14:31.420 --> 00:14:33.640 align:middle line:84%
+I have this machine, and
+it's likely to give me
+
+00:14:33.640 --> 00:14:37.300 align:middle line:84%
+cash flows over this
+many years and so on.
+
+00:14:37.300 --> 00:14:40.120 align:middle line:84%
+And then I have to know
+how much expected profits
+
+00:14:40.120 --> 00:14:43.540 align:middle line:84%
+I expect to get in
+each of those years.
+
+00:14:43.540 --> 00:14:46.660 align:middle line:84%
+And then I need also to know
+what are the interest rates that
+
+00:14:46.660 --> 00:14:50.600 align:middle line:84%
+are likely to prevail during
+the lifetime of the machine
+
+00:14:50.600 --> 00:14:51.390 align:middle line:90%
+and so on.
+
+00:14:51.390 --> 00:14:53.410 align:middle line:84%
+So at the end of the
+day, when I calculate,
+
+00:14:53.410 --> 00:14:55.360 align:middle line:84%
+I do my little
+project, and I need
+
+00:14:55.360 --> 00:14:58.330 align:middle line:84%
+to decide whether 1, which was
+the price of the machine or not,
+
+00:14:58.330 --> 00:15:00.400 align:middle line:84%
+is too expensive or
+too cheap, I need
+
+00:15:00.400 --> 00:15:04.270 align:middle line:84%
+to compare it with the expected
+present discounted value
+
+00:15:04.270 --> 00:15:06.470 align:middle line:90%
+that I have for that machine.
+
+00:15:06.470 --> 00:15:08.320 align:middle line:90%
+So here is an example.
+
+00:15:08.320 --> 00:15:10.690 align:middle line:84%
+This is a machine that gives--
+the first expected cash
+
+00:15:10.690 --> 00:15:11.810 align:middle line:90%
+flow comes next year.
+
+00:15:11.810 --> 00:15:14.350 align:middle line:84%
+I set it up today,
+and I generate profits
+
+00:15:14.350 --> 00:15:17.270 align:middle line:84%
+by the end of the year or at
+the beginning of the next year.
+
+00:15:17.270 --> 00:15:20.290 align:middle line:84%
+That's expected profits for the
+first year of the machine, which
+
+00:15:20.290 --> 00:15:23.410 align:middle line:84%
+comes at the end of the first
+year, discounted by an interest
+
+00:15:23.410 --> 00:15:25.030 align:middle line:90%
+rate that I know today.
+
+00:15:25.030 --> 00:15:28.560 align:middle line:84%
+I know the interest
+rate for one year.
+
+00:15:28.560 --> 00:15:31.707 align:middle line:84%
+What about the cash flow that I
+expect for two years from now?
+
+00:15:31.707 --> 00:15:32.790 align:middle line:90%
+Well, that's going to be--
+
+00:15:32.790 --> 00:15:34.420 align:middle line:90%
+that's expected cash flow.
+
+00:15:34.420 --> 00:15:36.660 align:middle line:84%
+If the machine is
+working properly,
+
+00:15:36.660 --> 00:15:38.850 align:middle line:84%
+that's the probability
+that the machine
+
+00:15:38.850 --> 00:15:40.820 align:middle line:90%
+lasts to the second year.
+
+00:15:40.820 --> 00:15:43.780 align:middle line:90%
+
+
+00:15:43.780 --> 00:15:46.410 align:middle line:84%
+Or you can also assume that
+the machine sort of breaks down
+
+00:15:46.410 --> 00:15:47.890 align:middle line:90%
+in little pieces every year.
+
+00:15:47.890 --> 00:15:54.195 align:middle line:84%
+You get 0.95 of the
+machine in second year,
+
+00:15:54.195 --> 00:16:02.888 align:middle line:84%
+1 minus 1.05 squared two years
+from now and so on and so forth.
+
+00:16:02.888 --> 00:16:04.812 align:middle line:84%
+But I also now, when
+I think about the cash
+
+00:16:04.812 --> 00:16:07.270 align:middle line:84%
+flow in the second year, and
+I don't know the interest rate
+
+00:16:07.270 --> 00:16:11.980 align:middle line:84%
+for the second year, so I need
+to have an expected interest
+
+00:16:11.980 --> 00:16:12.750 align:middle line:90%
+rate here--
+
+00:16:12.750 --> 00:16:16.470 align:middle line:90%
+
+
+00:16:16.470 --> 00:16:18.330 align:middle line:90%
+and so on, so forth, OK?
+
+00:16:18.330 --> 00:16:21.910 align:middle line:84%
+If the machine lasts for many,
+many years, that's what I get.
+
+00:16:21.910 --> 00:16:25.550 align:middle line:90%
+A question, by the way--
+
+00:16:25.550 --> 00:16:29.270 align:middle line:84%
+I'm saying, yeah, I need to have
+expectations here and so on.
+
+00:16:29.270 --> 00:16:33.492 align:middle line:84%
+But the truth is that the guy
+that invests in the machine
+
+00:16:33.492 --> 00:16:35.450 align:middle line:84%
+doesn't need to have that
+expectation because I
+
+00:16:35.450 --> 00:16:39.440 align:middle line:84%
+could replace this for
+something that is known today.
+
+00:16:39.440 --> 00:16:40.530 align:middle line:90%
+What would that be?
+
+00:16:40.530 --> 00:16:49.160 align:middle line:90%
+
+
+00:16:49.160 --> 00:16:52.730 align:middle line:84%
+I'm saying, when I calculate
+the expected cash flow, when
+
+00:16:52.730 --> 00:16:54.913 align:middle line:84%
+I'm discounting the
+two-years-out cash flow,
+
+00:16:54.913 --> 00:16:56.330 align:middle line:84%
+I'm going to have
+an interest rate
+
+00:16:56.330 --> 00:17:00.500 align:middle line:84%
+that I know, the one from time
+0 to the end of the first year.
+
+00:17:00.500 --> 00:17:02.060 align:middle line:84%
+But I don't know
+the interest rate
+
+00:17:02.060 --> 00:17:10.940 align:middle line:84%
+that prevails from the end of
+year one to the end of year two.
+
+00:17:10.940 --> 00:17:12.060 align:middle line:90%
+That's what I wrote here.
+
+00:17:12.060 --> 00:17:14.130 align:middle line:84%
+But I said, hm, but
+there is something
+
+00:17:14.130 --> 00:17:17.619 align:middle line:84%
+in the market that I could
+look at and that I really know.
+
+00:17:17.619 --> 00:17:18.400 align:middle line:90%
+What is that?
+
+00:17:18.400 --> 00:17:20.175 align:middle line:90%
+AUDIENCE: Is it the [INAUDIBLE]
+
+00:17:20.175 --> 00:17:21.300 align:middle line:90%
+RICARDO CABALLERO: Exactly.
+
+00:17:21.300 --> 00:17:25.089 align:middle line:90%
+I could use 1 plus r2.
+
+00:17:25.089 --> 00:17:26.260 align:middle line:90%
+These are one-year rates.
+
+00:17:26.260 --> 00:17:29.470 align:middle line:90%
+R2t squared.
+
+00:17:29.470 --> 00:17:32.830 align:middle line:84%
+So when you have
+the term structure,
+
+00:17:32.830 --> 00:17:36.237 align:middle line:84%
+when you see all the interest
+rates, a firm deciding
+
+00:17:36.237 --> 00:17:38.570 align:middle line:84%
+whether to invest or not has
+the interest rate it needs.
+
+00:17:38.570 --> 00:17:41.500 align:middle line:84%
+It doesn't need to have
+expectations, form expectations
+
+00:17:41.500 --> 00:17:42.540 align:middle line:90%
+about the interest rate.
+
+00:17:42.540 --> 00:17:44.230 align:middle line:90%
+The market is doing it for them.
+
+00:17:44.230 --> 00:17:46.270 align:middle line:84%
+Now, the guy may
+choose to be a trader
+
+00:17:46.270 --> 00:17:48.340 align:middle line:84%
+and decide that it doesn't
+like the interest rate
+
+00:17:48.340 --> 00:17:50.912 align:middle line:90%
+that the market is pricing in.
+
+00:17:50.912 --> 00:17:52.120 align:middle line:90%
+But that's a different trade.
+
+00:17:52.120 --> 00:17:55.485 align:middle line:84%
+It's not the investment
+decision of the firm.
+
+00:17:55.485 --> 00:17:57.860 align:middle line:84%
+The firm will have to make a
+forecast about expected cash
+
+00:17:57.860 --> 00:18:04.000 align:middle line:84%
+flows and so on, but that's it,
+from the machine and so on, OK?
+
+00:18:04.000 --> 00:18:06.515 align:middle line:84%
+So obviously, the
+larger this is,
+
+00:18:06.515 --> 00:18:08.890 align:middle line:84%
+the more you're going to
+invest, the more machines you're
+
+00:18:08.890 --> 00:18:10.665 align:middle line:90%
+going to buy and so on, OK?
+
+00:18:10.665 --> 00:18:14.230 align:middle line:90%
+
+
+00:18:14.230 --> 00:18:18.580 align:middle line:84%
+So in principle, a better
+investment function--
+
+00:18:18.580 --> 00:18:21.910 align:middle line:84%
+remember, we wrote an investment
+function as investment,
+
+00:18:21.910 --> 00:18:25.000 align:middle line:84%
+a function of output,
+current output,
+
+00:18:25.000 --> 00:18:27.280 align:middle line:84%
+which we said is a proxy
+for sales, and then
+
+00:18:27.280 --> 00:18:28.570 align:middle line:90%
+the interest rate.
+
+00:18:28.570 --> 00:18:31.957 align:middle line:84%
+Well, a better concept
+is that one, which does
+
+00:18:31.957 --> 00:18:33.165 align:middle line:90%
+depend on aggregate activity.
+
+00:18:33.165 --> 00:18:36.430 align:middle line:84%
+It depends on many things,
+but not only today's,
+
+00:18:36.430 --> 00:18:39.840 align:middle line:84%
+also the ones that you
+expect for the future, OK?
+
+00:18:39.840 --> 00:18:43.150 align:middle line:84%
+And it depends on the interest
+rate, not only today's interest
+
+00:18:43.150 --> 00:18:46.210 align:middle line:84%
+rate, though, also in the
+interest rate of the future.
+
+00:18:46.210 --> 00:18:51.707 align:middle line:84%
+If I look at this expression,
+even if the interest rate today
+
+00:18:51.707 --> 00:18:54.040 align:middle line:84%
+doesn't change, but I expect
+the interest rate to change
+
+00:18:54.040 --> 00:18:56.110 align:middle line:84%
+in the future, to
+go up, that will
+
+00:18:56.110 --> 00:18:58.450 align:middle line:90%
+lower the value of my project.
+
+00:18:58.450 --> 00:19:02.440 align:middle line:84%
+We had no space for that when
+we posted the initial investment
+
+00:19:02.440 --> 00:19:03.230 align:middle line:90%
+function.
+
+00:19:03.230 --> 00:19:07.720 align:middle line:90%
+But here we have that.
+
+00:19:07.720 --> 00:19:10.150 align:middle line:84%
+And sorry, and this is an
+increasing function of that.
+
+00:19:10.150 --> 00:19:13.880 align:middle line:84%
+The higher is V, the higher is
+the expected present discounted
+
+00:19:13.880 --> 00:19:17.955 align:middle line:84%
+value of buying a
+machine given the price,
+
+00:19:17.955 --> 00:19:20.160 align:middle line:90%
+the larger is the investment.
+
+00:19:20.160 --> 00:19:21.800 align:middle line:90%
+Now, this is in principle.
+
+00:19:21.800 --> 00:19:27.030 align:middle line:84%
+In practice, current cash
+flows also matter a lot, OK?
+
+00:19:27.030 --> 00:19:29.520 align:middle line:84%
+So in the same sense as in
+the case of the consumption
+
+00:19:29.520 --> 00:19:32.860 align:middle line:84%
+function, we said, in principle,
+it's only wealth that matters.
+
+00:19:32.860 --> 00:19:35.055 align:middle line:84%
+But in practice, there's
+lots of consumers
+
+00:19:35.055 --> 00:19:36.430 align:middle line:84%
+that are financially
+constrained,
+
+00:19:36.430 --> 00:19:38.050 align:middle line:90%
+they're hand-to-mouth and so on.
+
+00:19:38.050 --> 00:19:40.480 align:middle line:90%
+So current income also matters.
+
+00:19:40.480 --> 00:19:45.890 align:middle line:84%
+But for firms, the
+same is true because--
+
+00:19:45.890 --> 00:19:48.620 align:middle line:84%
+and the main reason
+for that, really,
+
+00:19:48.620 --> 00:19:50.780 align:middle line:84%
+is financial
+frictions, in the case
+
+00:19:50.780 --> 00:19:54.600 align:middle line:84%
+of the firm because a firm may
+arrive with a great project
+
+00:19:54.600 --> 00:19:57.360 align:middle line:84%
+to a bank, but the
+bank may decide
+
+00:19:57.360 --> 00:19:59.280 align:middle line:84%
+that it doesn't trust
+as much or is not
+
+00:19:59.280 --> 00:20:01.690 align:middle line:84%
+as optimistic as the
+firm is and so on.
+
+00:20:01.690 --> 00:20:04.373 align:middle line:90%
+So it may not borrow--
+
+00:20:04.373 --> 00:20:05.790 align:middle line:84%
+the firm may not
+be able to borrow
+
+00:20:05.790 --> 00:20:07.920 align:middle line:84%
+as much as it would
+want given how
+
+00:20:07.920 --> 00:20:11.260 align:middle line:84%
+optimistic that particular
+firm is on its own project.
+
+00:20:11.260 --> 00:20:12.960 align:middle line:84%
+The bank may say,
+you know, I'm going
+
+00:20:12.960 --> 00:20:17.360 align:middle line:84%
+to be more conservative here
+since I'm lending you the money.
+
+00:20:17.360 --> 00:20:19.700 align:middle line:84%
+And one way that
+firms use, actually,
+
+00:20:19.700 --> 00:20:22.040 align:middle line:84%
+to get around
+financial constraints
+
+00:20:22.040 --> 00:20:24.980 align:middle line:90%
+is simply by returning--
+
+00:20:24.980 --> 00:20:28.760 align:middle line:84%
+retaining their earnings,
+meaning they generate a cash
+
+00:20:28.760 --> 00:20:30.200 align:middle line:90%
+flow, and they save.
+
+00:20:30.200 --> 00:20:34.340 align:middle line:90%
+Firms save a lot, by the way.
+
+00:20:34.340 --> 00:20:37.490 align:middle line:84%
+Companies like Apple and so
+on save an enormous amount
+
+00:20:37.490 --> 00:20:41.720 align:middle line:84%
+in huge deposits, US treasuries,
+and so on and so forth.
+
+00:20:41.720 --> 00:20:44.690 align:middle line:84%
+In the case of Apple, it's not
+to relax financial constraints,
+
+00:20:44.690 --> 00:20:47.420 align:middle line:84%
+although it has
+something to do with.
+
+00:20:47.420 --> 00:20:52.190 align:middle line:84%
+Being opportunistic, having
+the opportunity to buy things
+
+00:20:52.190 --> 00:20:53.570 align:middle line:90%
+that are in distress.
+
+00:20:53.570 --> 00:20:56.210 align:middle line:84%
+But many firms,
+especially smaller firms,
+
+00:20:56.210 --> 00:20:58.190 align:middle line:84%
+have deposits and
+cash flow and so
+
+00:20:58.190 --> 00:21:01.850 align:middle line:84%
+on mostly because, if they
+get a good opportunity,
+
+00:21:01.850 --> 00:21:04.010 align:middle line:84%
+they may face
+financial constraints.
+
+00:21:04.010 --> 00:21:07.135 align:middle line:84%
+So if current activity
+is high, sales are high,
+
+00:21:07.135 --> 00:21:09.260 align:middle line:84%
+firms are going to be less
+likely to be financially
+
+00:21:09.260 --> 00:21:09.870 align:middle line:90%
+constrained.
+
+00:21:09.870 --> 00:21:13.675 align:middle line:84%
+And that's the reason
+current profits also end.
+
+00:21:13.675 --> 00:21:16.050 align:middle line:84%
+Now, current profit is going
+to be an increasing function
+
+00:21:16.050 --> 00:21:18.933 align:middle line:90%
+of output over capital that--
+
+00:21:18.933 --> 00:21:22.400 align:middle line:90%
+
+
+00:21:22.400 --> 00:21:24.800 align:middle line:84%
+for any given level of
+capital, if output goes up,
+
+00:21:24.800 --> 00:21:26.520 align:middle line:84%
+that's going to
+generate more profit.
+
+00:21:26.520 --> 00:21:30.380 align:middle line:84%
+And so we can write
+our investment function
+
+00:21:30.380 --> 00:21:34.740 align:middle line:84%
+a little bit like we had
+in the earlier lectures.
+
+00:21:34.740 --> 00:21:39.400 align:middle line:84%
+But now we put Vt here, Yt,
+and the interest rate and--
+
+00:21:39.400 --> 00:21:43.370 align:middle line:84%
+interest and then future output
+and future interest rates
+
+00:21:43.370 --> 00:21:45.260 align:middle line:84%
+enter all through
+this term here.
+
+00:21:45.260 --> 00:21:48.950 align:middle line:84%
+And again, investment here is
+increasing with respect to Vt,
+
+00:21:48.950 --> 00:21:51.800 align:middle line:84%
+and it's increasing
+with respect to Yt.
+
+00:21:51.800 --> 00:21:53.730 align:middle line:84%
+So that's a far more
+realistic model.
+
+00:21:53.730 --> 00:21:58.670 align:middle line:84%
+So you go back to IS-LM and
+put this type of consumption
+
+00:21:58.670 --> 00:22:01.130 align:middle line:84%
+function and
+investment functions,
+
+00:22:01.130 --> 00:22:06.140 align:middle line:84%
+and they're going to
+make a lot of sense.
+
+00:22:06.140 --> 00:22:09.350 align:middle line:84%
+Again, the concept of something
+persistent-- persistent things
+
+00:22:09.350 --> 00:22:11.310 align:middle line:84%
+should matter a lot more
+than temporary things.
+
+00:22:11.310 --> 00:22:11.810 align:middle line:90%
+OK?
+
+00:22:11.810 --> 00:22:16.037 align:middle line:84%
+So naturally, if you expect
+profits to remain high
+
+00:22:16.037 --> 00:22:17.870 align:middle line:84%
+for a very long period
+of time, that machine
+
+00:22:17.870 --> 00:22:20.870 align:middle line:84%
+is going to be worth a
+lot more than if you only
+
+00:22:20.870 --> 00:22:23.920 align:middle line:84%
+expect the machine to be very
+profitable for only one year.
+
+00:22:23.920 --> 00:22:29.210 align:middle line:84%
+And so anything that is
+likely to be persistent
+
+00:22:29.210 --> 00:22:32.035 align:middle line:84%
+is also likely to have
+a much larger impact.
+
+00:22:32.035 --> 00:22:34.708 align:middle line:90%
+
+
+00:22:34.708 --> 00:22:36.500 align:middle line:84%
+There are important
+exceptions, but I'm not
+
+00:22:36.500 --> 00:22:39.810 align:middle line:90%
+going to get into that now.
+
+00:22:39.810 --> 00:22:41.580 align:middle line:84%
+And the same is true
+for interest rates.
+
+00:22:41.580 --> 00:22:43.770 align:middle line:84%
+If I expect-- since interest
+rates are high today,
+
+00:22:43.770 --> 00:22:46.950 align:middle line:84%
+but we expect them to go
+down in the near future,
+
+00:22:46.950 --> 00:22:50.520 align:middle line:84%
+then that's not going to
+affect a lot the discounting
+
+00:22:50.520 --> 00:22:52.620 align:middle line:90%
+of future profits.
+
+00:22:52.620 --> 00:22:55.320 align:middle line:84%
+But if interest
+rates go up today,
+
+00:22:55.320 --> 00:22:57.870 align:middle line:84%
+and I expect them to remain
+high for a long time,
+
+00:22:57.870 --> 00:23:00.870 align:middle line:84%
+that's going to affect a
+lot more the present value
+
+00:23:00.870 --> 00:23:01.560 align:middle line:90%
+of profits.
+
+00:23:01.560 --> 00:23:04.240 align:middle line:84%
+And therefore, it's going to
+depress investment a lot more.
+
+00:23:04.240 --> 00:23:11.400 align:middle line:84%
+In fact, central banks,
+much more than playing
+
+00:23:11.400 --> 00:23:13.960 align:middle line:84%
+with the current interest rate,
+they play with your minds.
+
+00:23:13.960 --> 00:23:15.080 align:middle line:90%
+That's what they do.
+
+00:23:15.080 --> 00:23:16.860 align:middle line:84%
+They are always
+telling you stories
+
+00:23:16.860 --> 00:23:19.050 align:middle line:84%
+for why interest rates
+will remain high, for why--
+
+00:23:19.050 --> 00:23:22.380 align:middle line:84%
+[CHUCKLES] they don't
+want-- they want--
+
+00:23:22.380 --> 00:23:24.060 align:middle line:84%
+they only control
+an interest rate
+
+00:23:24.060 --> 00:23:26.560 align:middle line:84%
+that is an overnight
+interest rate, really.
+
+00:23:26.560 --> 00:23:30.660 align:middle line:84%
+But they-- and with that, nobody
+cares about the overnight rate
+
+00:23:30.660 --> 00:23:33.030 align:middle line:84%
+except for some
+traders out there.
+
+00:23:33.030 --> 00:23:35.940 align:middle line:84%
+But since they want to influence
+aggregate demand-- that is,
+
+00:23:35.940 --> 00:23:38.105 align:middle line:84%
+they want to influence
+consumption and investment--
+
+00:23:38.105 --> 00:23:40.230 align:middle line:84%
+they need to convince you
+that this stuff will last
+
+00:23:40.230 --> 00:23:43.770 align:middle line:84%
+for some time, because
+otherwise it would be irrelevant
+
+00:23:43.770 --> 00:23:46.530 align:middle line:84%
+because if you want to
+reduce aggregate demand,
+
+00:23:46.530 --> 00:23:50.680 align:middle line:84%
+you want to convince
+firms and households
+
+00:23:50.680 --> 00:23:54.090 align:middle line:84%
+and so on that the interest rate
+will remain high for a while.
+
+00:23:54.090 --> 00:23:57.660 align:middle line:84%
+Otherwise, you're going to get
+very little effect out of that.
+
+00:23:57.660 --> 00:23:59.880 align:middle line:84%
+One of the problems
+they're having now,
+
+00:23:59.880 --> 00:24:02.670 align:middle line:84%
+actually, when the Fed is
+trying to cool the economy,
+
+00:24:02.670 --> 00:24:04.970 align:middle line:84%
+is that they keep hiking
+rates, but the loan rates
+
+00:24:04.970 --> 00:24:07.230 align:middle line:90%
+have begun to decline already.
+
+00:24:07.230 --> 00:24:08.630 align:middle line:90%
+And that's a problem for them.
+
+00:24:08.630 --> 00:24:11.160 align:middle line:84%
+[CHUCKLES] They would
+like you not to believe,
+
+00:24:11.160 --> 00:24:13.060 align:middle line:84%
+bankers not to believe
+that will happen.
+
+00:24:13.060 --> 00:24:15.680 align:middle line:90%
+And that's a big issue.
+
+00:24:15.680 --> 00:24:18.260 align:middle line:90%
+
+
+00:24:18.260 --> 00:24:22.490 align:middle line:84%
+So let's think about this
+IS-LM with expectations.
+
+00:24:22.490 --> 00:24:25.780 align:middle line:84%
+So what we said is, what
+really we're after--
+
+00:24:25.780 --> 00:24:28.120 align:middle line:84%
+in the IS-LM model,
+remember, the IS-LM model
+
+00:24:28.120 --> 00:24:30.800 align:middle line:84%
+is a model in which aggregate
+demand determines output.
+
+00:24:30.800 --> 00:24:32.680 align:middle line:84%
+And that's what happens
+in the short run.
+
+00:24:32.680 --> 00:24:35.140 align:middle line:84%
+And the biggest components
+of aggregate demand,
+
+00:24:35.140 --> 00:24:38.470 align:middle line:84%
+aside from the government,
+which is something that moves,
+
+00:24:38.470 --> 00:24:39.910 align:middle line:90%
+more or less--
+
+00:24:39.910 --> 00:24:42.353 align:middle line:84%
+OK, with different
+behavioral functions.
+
+00:24:42.353 --> 00:24:44.020 align:middle line:84%
+We're not talking a
+lot about that here.
+
+00:24:44.020 --> 00:24:46.700 align:middle line:84%
+But the big drivers are
+consumption and investment.
+
+00:24:46.700 --> 00:24:48.700 align:middle line:84%
+Those are at least the
+private sector drivers
+
+00:24:48.700 --> 00:24:51.490 align:middle line:84%
+of aggregate demand,
+consumption and investment.
+
+00:24:51.490 --> 00:24:56.380 align:middle line:84%
+And what we have said
+now is that human wealth
+
+00:24:56.380 --> 00:24:58.570 align:middle line:84%
+is affected not only
+by current income,
+
+00:24:58.570 --> 00:25:03.370 align:middle line:84%
+but future after labor income,
+future real interest rate.
+
+00:25:03.370 --> 00:25:04.790 align:middle line:90%
+That affects human wealth.
+
+00:25:04.790 --> 00:25:06.760 align:middle line:90%
+That affects consumption.
+
+00:25:06.760 --> 00:25:11.320 align:middle line:84%
+Future real dividends plus
+future real interest rate
+
+00:25:11.320 --> 00:25:13.340 align:middle line:90%
+affect the value of stocks.
+
+00:25:13.340 --> 00:25:16.190 align:middle line:84%
+That's very important
+in financial wealth.
+
+00:25:16.190 --> 00:25:18.900 align:middle line:84%
+Future nominal interest rate
+affect the price of bonds.
+
+00:25:18.900 --> 00:25:24.940 align:middle line:84%
+So all these rates enter here,
+the price of nominal bonds.
+
+00:25:24.940 --> 00:25:28.330 align:middle line:84%
+For firms, future
+after tax profits
+
+00:25:28.330 --> 00:25:30.140 align:middle line:90%
+affect expected present value.
+
+00:25:30.140 --> 00:25:34.360 align:middle line:84%
+Future real interest rate affect
+also the suspected present
+
+00:25:34.360 --> 00:25:35.110 align:middle line:90%
+value.
+
+00:25:35.110 --> 00:25:39.190 align:middle line:84%
+So there is a lot that says
+future in this column here
+
+00:25:39.190 --> 00:25:43.960 align:middle line:84%
+that enters into the consumption
+and investment decisions
+
+00:25:43.960 --> 00:25:44.990 align:middle line:90%
+that we care about.
+
+00:25:44.990 --> 00:25:47.545 align:middle line:84%
+That's what I showed you
+in the previous slides.
+
+00:25:47.545 --> 00:25:50.160 align:middle line:90%
+
+
+00:25:50.160 --> 00:25:52.990 align:middle line:84%
+So remember the
+basic IS-LM model.
+
+00:25:52.990 --> 00:25:54.060 align:middle line:90%
+We wrote it this way.
+
+00:25:54.060 --> 00:25:56.220 align:middle line:84%
+Output was determined
+by aggregate demand.
+
+00:25:56.220 --> 00:26:00.450 align:middle line:84%
+And closed economy-- forget
+all that, fully sticky prices.
+
+00:26:00.450 --> 00:26:04.240 align:middle line:84%
+And we wrote consumption
+as these functions.
+
+00:26:04.240 --> 00:26:06.930 align:middle line:84%
+So aggregate demand
+was increasing
+
+00:26:06.930 --> 00:26:09.420 align:middle line:84%
+in output and
+government expenditure,
+
+00:26:09.420 --> 00:26:13.690 align:middle line:84%
+decreasing in taxes, and
+decreasing on the interest rate.
+
+00:26:13.690 --> 00:26:16.720 align:middle line:84%
+So a shortcut-- so
+what I want to do now
+
+00:26:16.720 --> 00:26:19.870 align:middle line:84%
+is give you a
+shortcut to integrate
+
+00:26:19.870 --> 00:26:23.860 align:middle line:84%
+these views of expectations
+or the concept of expectations
+
+00:26:23.860 --> 00:26:27.670 align:middle line:84%
+into this very basic
+IS-LM model, OK?
+
+00:26:27.670 --> 00:26:31.120 align:middle line:84%
+So think of now of
+aggregate demand
+
+00:26:31.120 --> 00:26:34.150 align:middle line:84%
+rather than just being a
+function of current variables,
+
+00:26:34.150 --> 00:26:38.700 align:middle line:84%
+be also a function of the same
+variables, but in the future.
+
+00:26:38.700 --> 00:26:39.270 align:middle line:90%
+OK?
+
+00:26:39.270 --> 00:26:43.080 align:middle line:84%
+So aggregate demand is
+a function, as before,
+
+00:26:43.080 --> 00:26:47.160 align:middle line:84%
+of current output, current
+taxes, current interest rate,
+
+00:26:47.160 --> 00:26:50.250 align:middle line:84%
+current expenditure,
+but also function--
+
+00:26:50.250 --> 00:26:51.900 align:middle line:90%
+and with the same signs--
+
+00:26:51.900 --> 00:26:53.380 align:middle line:90%
+of future output.
+
+00:26:53.380 --> 00:26:58.800 align:middle line:84%
+So it's increasing in
+expected future output.
+
+00:26:58.800 --> 00:27:01.530 align:middle line:84%
+It's decreasing in
+expected future taxes.
+
+00:27:01.530 --> 00:27:04.020 align:middle line:84%
+It's decreasing in expected
+future interest rate.
+
+00:27:04.020 --> 00:27:07.090 align:middle line:84%
+It's increasing in expected
+future government expenditure,
+
+00:27:07.090 --> 00:27:09.600 align:middle line:84%
+although I'm not going
+to play with this here
+
+00:27:09.600 --> 00:27:12.240 align:middle line:84%
+because of something
+very specific
+
+00:27:12.240 --> 00:27:15.256 align:middle line:90%
+that I'll discuss later on.
+
+00:27:15.256 --> 00:27:18.065 align:middle line:90%
+So that's the shortcut, OK?
+
+00:27:18.065 --> 00:27:20.380 align:middle line:84%
+The LM is going to be
+the same as before.
+
+00:27:20.380 --> 00:27:22.480 align:middle line:84%
+So what I want you
+to think about now
+
+00:27:22.480 --> 00:27:27.160 align:middle line:84%
+is a model that is like the one
+you had before with the same LM
+
+00:27:27.160 --> 00:27:29.850 align:middle line:84%
+but now the IS is a
+little bit richer.
+
+00:27:29.850 --> 00:27:33.160 align:middle line:84%
+It has more parameters-- these
+are parameters-- because I'm
+
+00:27:33.160 --> 00:27:36.310 align:middle line:84%
+going to determine
+today's output,
+
+00:27:36.310 --> 00:27:38.510 align:middle line:84%
+but it's going to be a
+function of more parameters.
+
+00:27:38.510 --> 00:27:41.050 align:middle line:84%
+And all these parameters are
+essentially the same variables
+
+00:27:41.050 --> 00:27:44.290 align:middle line:84%
+that we worry about today,
+but are the variables we
+
+00:27:44.290 --> 00:27:46.720 align:middle line:90%
+expect of those--
+
+00:27:46.720 --> 00:27:49.630 align:middle line:84%
+are the values of respect for
+those variables in the future
+
+00:27:49.630 --> 00:27:51.080 align:middle line:90%
+and, again, with the same sign.
+
+00:27:51.080 --> 00:27:56.290 align:middle line:84%
+So if output-- so if
+taxes go up today,
+
+00:27:56.290 --> 00:27:59.240 align:middle line:84%
+aggregate demand will decline,
+and output will decline.
+
+00:27:59.240 --> 00:28:02.890 align:middle line:84%
+But if I expect future
+taxes to go up as well,
+
+00:28:02.890 --> 00:28:05.360 align:middle line:84%
+then that's going to depress
+aggregate demand even more.
+
+00:28:05.360 --> 00:28:08.360 align:middle line:84%
+That's the type of logic
+I want you to develop.
+
+00:28:08.360 --> 00:28:11.830 align:middle line:84%
+So that's the way
+our model will look.
+
+00:28:11.830 --> 00:28:17.480 align:middle line:84%
+So this is the IS in the
+same space I had before--
+
+00:28:17.480 --> 00:28:20.850 align:middle line:84%
+interest rate and
+output, current output.
+
+00:28:20.850 --> 00:28:23.930 align:middle line:84%
+I'm trying to determine
+current output.
+
+00:28:23.930 --> 00:28:25.610 align:middle line:84%
+But now I have
+lots of parameters
+
+00:28:25.610 --> 00:28:28.170 align:middle line:90%
+that I didn't have before.
+
+00:28:28.170 --> 00:28:33.810 align:middle line:84%
+I have a-- things that
+shift to the left.
+
+00:28:33.810 --> 00:28:38.960 align:middle line:84%
+If taxes go up today, this
+IS will shift to the left.
+
+00:28:38.960 --> 00:28:42.140 align:middle line:84%
+Do you think it will shift
+to the left more or less
+
+00:28:42.140 --> 00:28:44.400 align:middle line:90%
+than it did in lecture 3 or 4?
+
+00:28:44.400 --> 00:28:49.710 align:middle line:90%
+
+
+00:28:49.710 --> 00:28:54.610 align:middle line:84%
+So suppose we
+increase taxes by 10%.
+
+00:28:54.610 --> 00:28:57.660 align:middle line:84%
+Will that reduce
+output more or less
+
+00:28:57.660 --> 00:29:01.360 align:middle line:84%
+than when we had the
+static IS-LM model?
+
+00:29:01.360 --> 00:29:01.860 align:middle line:90%
+Yeah?
+
+00:29:01.860 --> 00:29:03.408 align:middle line:84%
+AUDIENCE: Depends
+on the expectation.
+
+00:29:03.408 --> 00:29:05.200 align:middle line:84%
+RICARDO CABALLERO: OK,
+but I haven't moved.
+
+00:29:05.200 --> 00:29:06.360 align:middle line:84%
+These are parameters
+from my curve.
+
+00:29:06.360 --> 00:29:08.170 align:middle line:84%
+So I don't get the
+right to move them.
+
+00:29:08.170 --> 00:29:09.520 align:middle line:90%
+AUDIENCE: [INAUDIBLE] less.
+
+00:29:09.520 --> 00:29:10.720 align:middle line:90%
+RICARDO CABALLERO: Less, no?
+
+00:29:10.720 --> 00:29:12.630 align:middle line:84%
+Less because now we
+said it's not only
+
+00:29:12.630 --> 00:29:13.630 align:middle line:90%
+the present that matter.
+
+00:29:13.630 --> 00:29:15.940 align:middle line:84%
+It's a combination of the
+present and the future.
+
+00:29:15.940 --> 00:29:21.040 align:middle line:84%
+So if-- that means that anything
+that is just the present
+
+00:29:21.040 --> 00:29:22.810 align:middle line:84%
+will matter less
+than in the past.
+
+00:29:22.810 --> 00:29:26.610 align:middle line:90%
+Otherwise, you see that?
+
+00:29:26.610 --> 00:29:28.170 align:middle line:84%
+Suppose we had a
+two-period model,
+
+00:29:28.170 --> 00:29:32.600 align:middle line:84%
+and I give equal weight to
+the present and the future.
+
+00:29:32.600 --> 00:29:36.643 align:middle line:84%
+Then I'm going to cut the
+effect of the present in half.
+
+00:29:36.643 --> 00:29:39.060 align:middle line:84%
+That's-- I'm exaggerating
+there, but that's, more or less,
+
+00:29:39.060 --> 00:29:39.620 align:middle line:90%
+the logic.
+
+00:29:39.620 --> 00:29:43.810 align:middle line:90%
+
+
+00:29:43.810 --> 00:29:48.860 align:middle line:84%
+So you correctly said,
+well, it depends on
+
+00:29:48.860 --> 00:29:52.100 align:middle line:84%
+whether I expect the future
+taxes to change or not.
+
+00:29:52.100 --> 00:29:52.790 align:middle line:90%
+Fine.
+
+00:29:52.790 --> 00:29:54.290 align:middle line:84%
+That tells you there
+is a difference
+
+00:29:54.290 --> 00:29:57.560 align:middle line:84%
+between changing
+temporarily the taxes
+
+00:29:57.560 --> 00:30:02.030 align:middle line:84%
+and increasing
+taxes permanently.
+
+00:30:02.030 --> 00:30:04.790 align:middle line:84%
+Permanently here means
+for the two periods.
+
+00:30:04.790 --> 00:30:07.030 align:middle line:84%
+So what happens
+with this curve--
+
+00:30:07.030 --> 00:30:10.220 align:middle line:84%
+so we decided that
+increasing taxes reduces
+
+00:30:10.220 --> 00:30:13.830 align:middle line:84%
+this IS to the left by a
+smaller amount than in the past.
+
+00:30:13.830 --> 00:30:16.465 align:middle line:84%
+What happens if you expect
+taxes to increase in the future?
+
+00:30:16.465 --> 00:30:20.940 align:middle line:90%
+
+
+00:30:20.940 --> 00:30:23.890 align:middle line:90%
+Which wealth goes down?
+
+00:30:23.890 --> 00:30:25.580 align:middle line:90%
+Human wealth, in particular.
+
+00:30:25.580 --> 00:30:27.330 align:middle line:84%
+Your human wealth will
+go down because you
+
+00:30:27.330 --> 00:30:30.190 align:middle line:84%
+expect your disposable income
+to be taxed more in the future.
+
+00:30:30.190 --> 00:30:33.690 align:middle line:84%
+So that will also
+shift IS to the left.
+
+00:30:33.690 --> 00:30:35.460 align:middle line:84%
+And that's the
+reason that if you
+
+00:30:35.460 --> 00:30:38.550 align:middle line:84%
+have a permanent-- expected
+permanent increase in taxes
+
+00:30:38.550 --> 00:30:43.140 align:middle line:84%
+today and next year,
+then that gets us back
+
+00:30:43.140 --> 00:30:45.030 align:middle line:84%
+to the type of shift
+in the IS that we had
+
+00:30:45.030 --> 00:30:46.650 align:middle line:90%
+when we had the static model.
+
+00:30:46.650 --> 00:30:47.770 align:middle line:90%
+It's the sum of the two.
+
+00:30:47.770 --> 00:30:48.480 align:middle line:90%
+It's a permanent.
+
+00:30:48.480 --> 00:30:51.780 align:middle line:84%
+So permanent changes
+will behave very
+
+00:30:51.780 --> 00:30:57.340 align:middle line:84%
+similarly to the way
+the static model worked
+
+00:30:57.340 --> 00:31:01.220 align:middle line:90%
+if they're permanent, OK?
+
+00:31:01.220 --> 00:31:03.900 align:middle line:84%
+In a sense, that model
+was a very good summary
+
+00:31:03.900 --> 00:31:05.370 align:middle line:90%
+permanent changes--
+
+00:31:05.370 --> 00:31:07.890 align:middle line:84%
+permanent changes in taxes,
+permanent changes in interest
+
+00:31:07.890 --> 00:31:08.830 align:middle line:90%
+rates and so on.
+
+00:31:08.830 --> 00:31:11.460 align:middle line:90%
+
+
+00:31:11.460 --> 00:31:13.995 align:middle line:84%
+Changing government
+expenditure, same idea--
+
+00:31:13.995 --> 00:31:16.995 align:middle line:84%
+it will also move aggregate
+demand to the right.
+
+00:31:16.995 --> 00:31:19.630 align:middle line:90%
+
+
+00:31:19.630 --> 00:31:26.310 align:middle line:84%
+But will it do it
+by more or less?
+
+00:31:26.310 --> 00:31:27.960 align:middle line:84%
+Well, think how
+government expenditure
+
+00:31:27.960 --> 00:31:33.000 align:middle line:84%
+worked in the basic model,
+in the static model.
+
+00:31:33.000 --> 00:31:35.340 align:middle line:84%
+It increased aggregate
+demand, and that then
+
+00:31:35.340 --> 00:31:36.870 align:middle line:90%
+led to a multiplier.
+
+00:31:36.870 --> 00:31:39.490 align:middle line:84%
+And we got a lot more
+income and so on.
+
+00:31:39.490 --> 00:31:41.440 align:middle line:84%
+Now, if we expect this
+government expenditure
+
+00:31:41.440 --> 00:31:43.960 align:middle line:84%
+it to be temporary,
+that multiplier also
+
+00:31:43.960 --> 00:31:46.840 align:middle line:84%
+will be a lot smaller because,
+yes, it will increase income,
+
+00:31:46.840 --> 00:31:49.388 align:middle line:84%
+but people are not going to
+spend all their income today.
+
+00:31:49.388 --> 00:31:51.430 align:middle line:84%
+That depends on whether
+they expect future income
+
+00:31:51.430 --> 00:31:53.670 align:middle line:90%
+to also go up as well or not.
+
+00:31:53.670 --> 00:31:57.000 align:middle line:90%
+And that's a reason that it's--
+
+00:31:57.000 --> 00:31:59.730 align:middle line:84%
+again, if you expect this
+government expenditure to go up
+
+00:31:59.730 --> 00:32:03.210 align:middle line:84%
+permanently, and nothing
+else changes, [CHUCKLES] then
+
+00:32:03.210 --> 00:32:06.160 align:middle line:84%
+you can expect income to go
+up in the future as well.
+
+00:32:06.160 --> 00:32:09.060 align:middle line:84%
+And then you get more
+or less the same effect.
+
+00:32:09.060 --> 00:32:11.435 align:middle line:84%
+Now, that's a tricky
+experiment because if you--
+
+00:32:11.435 --> 00:32:12.810 align:middle line:84%
+and it's very
+relevant for today.
+
+00:32:12.810 --> 00:32:15.540 align:middle line:84%
+If this government expenditure
+goes up permanently,
+
+00:32:15.540 --> 00:32:19.240 align:middle line:84%
+it's unlikely that the central
+bank will remain unmoved.
+
+00:32:19.240 --> 00:32:21.120 align:middle line:84%
+And so you also have to
+start thinking, well,
+
+00:32:21.120 --> 00:32:23.510 align:middle line:90%
+what will the central bank do?
+
+00:32:23.510 --> 00:32:27.201 align:middle line:84%
+And that takes me to
+this variable here--
+
+00:32:27.201 --> 00:32:28.215 align:middle line:90%
+this variable here.
+
+00:32:28.215 --> 00:32:32.758 align:middle line:90%
+
+
+00:32:32.758 --> 00:32:34.300 align:middle line:84%
+Well, before I
+discuss this variable,
+
+00:32:34.300 --> 00:32:38.050 align:middle line:84%
+actually, let me point out
+that it's not accidental
+
+00:32:38.050 --> 00:32:41.930 align:middle line:84%
+that I made this curve a lot
+steeper than it used to look.
+
+00:32:41.930 --> 00:32:44.650 align:middle line:84%
+I mean, this looks like
+a pretty steep IS curve,
+
+00:32:44.650 --> 00:32:49.300 align:middle line:84%
+which is a way of saying that
+a given change in interest rate
+
+00:32:49.300 --> 00:32:53.670 align:middle line:84%
+now has a very small effect
+on current output, OK?
+
+00:32:53.670 --> 00:32:57.900 align:middle line:84%
+Much smaller than we
+had in the static model.
+
+00:32:57.900 --> 00:33:02.130 align:middle line:84%
+And the reason is, again, this
+is permanent versus transitory.
+
+00:33:02.130 --> 00:33:04.950 align:middle line:84%
+If you spec the interest rate
+to decline only for today,
+
+00:33:04.950 --> 00:33:07.530 align:middle line:84%
+and that's it, that's not going
+to have a very large effect
+
+00:33:07.530 --> 00:33:08.410 align:middle line:90%
+on consumption.
+
+00:33:08.410 --> 00:33:12.450 align:middle line:84%
+It's not going to have a very
+large effect on investment.
+
+00:33:12.450 --> 00:33:15.810 align:middle line:84%
+For the interest rate decline
+to have a very lasting effect,
+
+00:33:15.810 --> 00:33:18.850 align:middle line:84%
+a very large impact on
+consumption and investment,
+
+00:33:18.850 --> 00:33:21.330 align:middle line:84%
+it has to affect the
+expected present discounted
+
+00:33:21.330 --> 00:33:23.100 align:middle line:90%
+values in a meaningful way.
+
+00:33:23.100 --> 00:33:25.200 align:middle line:84%
+And for that, you
+want those changes
+
+00:33:25.200 --> 00:33:28.440 align:middle line:84%
+to be more or less
+permanent, persistent,
+
+00:33:28.440 --> 00:33:31.170 align:middle line:84%
+that private agents think that
+this change in the interest rate
+
+00:33:31.170 --> 00:33:34.110 align:middle line:90%
+will be significant.
+
+00:33:34.110 --> 00:33:37.090 align:middle line:84%
+So if the-- so it's good
+to separate the two things.
+
+00:33:37.090 --> 00:33:41.020 align:middle line:84%
+So if the Fed cuts
+the interest rate
+
+00:33:41.020 --> 00:33:45.700 align:middle line:84%
+but doesn't persuade anyone
+that this rate will remain low
+
+00:33:45.700 --> 00:33:48.340 align:middle line:84%
+in the future, then it is
+going to get very small effect
+
+00:33:48.340 --> 00:33:49.530 align:middle line:90%
+on output.
+
+00:33:49.530 --> 00:33:52.200 align:middle line:84%
+However, if we convince
+people that there
+
+00:33:52.200 --> 00:33:56.490 align:middle line:84%
+will be future changes, that
+the rates will remain lower
+
+00:33:56.490 --> 00:33:59.880 align:middle line:84%
+for a long time, that
+means that this IS now
+
+00:33:59.880 --> 00:34:01.830 align:middle line:90%
+will shift to the right, OK?
+
+00:34:01.830 --> 00:34:02.900 align:middle line:90%
+That's what we have here.
+
+00:34:02.900 --> 00:34:05.640 align:middle line:90%
+
+
+00:34:05.640 --> 00:34:08.820 align:middle line:84%
+So you have distinguish which is
+a movement-- when the Fed cuts
+
+00:34:08.820 --> 00:34:11.500 align:middle line:84%
+the interest rate, you get a
+small movement along the curve.
+
+00:34:11.500 --> 00:34:13.710 align:middle line:84%
+But if the Fed
+persuades you that this
+
+00:34:13.710 --> 00:34:15.929 align:middle line:84%
+is a long-lasting
+cut in interest rate,
+
+00:34:15.929 --> 00:34:17.460 align:middle line:90%
+then the IS shifts to the right.
+
+00:34:17.460 --> 00:34:20.260 align:middle line:84%
+And you recover the
+power of monetary policy.
+
+00:34:20.260 --> 00:34:23.850 align:middle line:84%
+Monetary policy depends
+a lot on its ability
+
+00:34:23.850 --> 00:34:27.480 align:middle line:84%
+to convince people that things
+will remain in the direction
+
+00:34:27.480 --> 00:34:29.070 align:middle line:90%
+that they want.
+
+00:34:29.070 --> 00:34:32.010 align:middle line:84%
+If they fail-- there
+was a famous episode
+
+00:34:32.010 --> 00:34:35.170 align:middle line:84%
+in US monetary policy during
+the times of Alan Greenspan.
+
+00:34:35.170 --> 00:34:38.280 align:middle line:84%
+Alan Greenspan is known as one
+of the biggest central bankers
+
+00:34:38.280 --> 00:34:41.650 align:middle line:84%
+that the US has, at
+least in recent memory.
+
+00:34:41.650 --> 00:34:43.690 align:middle line:84%
+And he went through
+a period which
+
+00:34:43.690 --> 00:34:46.750 align:middle line:84%
+was called-- was known as
+the Greenspan conundrum.
+
+00:34:46.750 --> 00:34:49.179 align:middle line:84%
+That is, the economy
+was overheating.
+
+00:34:49.179 --> 00:34:51.760 align:middle line:90%
+He kept hiking interest rates.
+
+00:34:51.760 --> 00:34:54.989 align:middle line:84%
+But the loan rates
+kept coming down.
+
+00:34:54.989 --> 00:34:56.489 align:middle line:84%
+So he couldn't cool
+off the economy.
+
+00:34:56.489 --> 00:34:58.270 align:middle line:84%
+[CHUCKLES] There was
+no way around that
+
+00:34:58.270 --> 00:35:02.230 align:middle line:84%
+because they couldn't
+persuade the markets that this
+
+00:35:02.230 --> 00:35:03.740 align:middle line:90%
+would be a long-lasting effect.
+
+00:35:03.740 --> 00:35:05.150 align:middle line:90%
+The reason was a different one.
+
+00:35:05.150 --> 00:35:06.720 align:middle line:84%
+It was not that he couldn't
+persuade the market.
+
+00:35:06.720 --> 00:35:08.137 align:middle line:84%
+It happens that,
+at the same time,
+
+00:35:08.137 --> 00:35:11.200 align:middle line:84%
+you had China sending massive
+capital flows to the US.
+
+00:35:11.200 --> 00:35:14.200 align:middle line:84%
+And so-- but the point is
+that the Fed had couldn't
+
+00:35:14.200 --> 00:35:15.940 align:middle line:84%
+move the interest
+rates in the long run,
+
+00:35:15.940 --> 00:35:19.640 align:middle line:84%
+and so it was very ineffective
+in terms of its monetary policy.
+
+00:35:19.640 --> 00:35:25.670 align:middle line:84%
+So again, expectations
+mattered quite a bit.
+
+00:35:25.670 --> 00:35:27.092 align:middle line:90%
+So let's think about our--
+
+00:35:27.092 --> 00:35:28.800 align:middle line:84%
+well, this is what I
+was just discussing.
+
+00:35:28.800 --> 00:35:31.430 align:middle line:90%
+So monetary policy--
+
+00:35:31.430 --> 00:35:33.540 align:middle line:90%
+I should have-- this--
+
+00:35:33.540 --> 00:35:38.180 align:middle line:84%
+so you're not going to do a
+lot unless you persuade people
+
+00:35:38.180 --> 00:35:42.540 align:middle line:84%
+that interest rate will remain
+low for quite some time.
+
+00:35:42.540 --> 00:35:45.770 align:middle line:84%
+And notice that
+there is here this--
+
+00:35:45.770 --> 00:35:50.437 align:middle line:84%
+everything comes into line
+because if the Fed convinced
+
+00:35:50.437 --> 00:35:52.520 align:middle line:84%
+that the interest rate
+will be lower in the future
+
+00:35:52.520 --> 00:35:56.440 align:middle line:84%
+as well, then you get the
+IS to shift to the right.
+
+00:35:56.440 --> 00:35:58.780 align:middle line:84%
+But if interest rates
+will be low in the future,
+
+00:35:58.780 --> 00:36:00.760 align:middle line:84%
+that means output will
+be high in the future
+
+00:36:00.760 --> 00:36:05.320 align:middle line:84%
+as well, which further
+shifts IS to the right.
+
+00:36:05.320 --> 00:36:07.780 align:middle line:84%
+If you convince
+the markets that--
+
+00:36:07.780 --> 00:36:10.580 align:middle line:84%
+and the markets and
+consumers, households,
+
+00:36:10.580 --> 00:36:13.360 align:middle line:84%
+and so on-- that you're cutting
+interest rates and that,
+
+00:36:13.360 --> 00:36:16.210 align:middle line:84%
+with that, you'll be
+successful in creating a--
+
+00:36:16.210 --> 00:36:18.550 align:middle line:84%
+getting out of a recession,
+for example, in the future,
+
+00:36:18.550 --> 00:36:22.240 align:middle line:84%
+that also increases
+human wealth, expected
+
+00:36:22.240 --> 00:36:25.420 align:middle line:84%
+present constant value of
+cash flows, of profits,
+
+00:36:25.420 --> 00:36:27.460 align:middle line:84%
+and so on and so
+forth because you
+
+00:36:27.460 --> 00:36:29.500 align:middle line:84%
+are giving sort of better
+economic conditions
+
+00:36:29.500 --> 00:36:30.400 align:middle line:90%
+in the future.
+
+00:36:30.400 --> 00:36:34.900 align:middle line:84%
+So again, for central
+banks, it's a lot like--
+
+00:36:34.900 --> 00:36:40.040 align:middle line:84%
+it's mostly about
+expectations management.
+
+00:36:40.040 --> 00:36:43.865 align:middle line:84%
+That's the business of
+a central bank, really.
+
+00:36:43.865 --> 00:36:45.740 align:middle line:84%
+I don't know how many
+of you are soccer fans,
+
+00:36:45.740 --> 00:36:51.180 align:middle line:84%
+but there was a famous
+story of Mervyn King.
+
+00:36:51.180 --> 00:36:53.660 align:middle line:84%
+Mervyn King was also one of
+the biggest central bankers
+
+00:36:53.660 --> 00:36:56.880 align:middle line:84%
+that the UK has
+had, fairly recent.
+
+00:36:56.880 --> 00:36:59.100 align:middle line:90%
+And he described-- he's British.
+
+00:36:59.100 --> 00:37:01.230 align:middle line:90%
+It's "Lord" nowadays.
+
+00:37:01.230 --> 00:37:05.990 align:middle line:84%
+And he described
+good monetary policy
+
+00:37:05.990 --> 00:37:11.780 align:middle line:84%
+very much like Maradona's goal
+scored against the UK, England,
+
+00:37:11.780 --> 00:37:13.980 align:middle line:90%
+in some World Cup.
+
+00:37:13.980 --> 00:37:16.820 align:middle line:90%
+I don't remember which one.
+
+00:37:16.820 --> 00:37:19.490 align:middle line:84%
+And it's essentially
+Maradona picked the ball
+
+00:37:19.490 --> 00:37:21.200 align:middle line:90%
+in his side of the field.
+
+00:37:21.200 --> 00:37:25.160 align:middle line:84%
+And he essentially drew in
+a straight line to the goal
+
+00:37:25.160 --> 00:37:26.270 align:middle line:90%
+and scored.
+
+00:37:26.270 --> 00:37:29.690 align:middle line:84%
+But he persuaded everyone around
+to move away from his path,
+
+00:37:29.690 --> 00:37:31.620 align:middle line:84%
+and that was a
+successful strategy.
+
+00:37:31.620 --> 00:37:33.835 align:middle line:84%
+And central banks do a lot
+of that-- lots of talking.
+
+00:37:33.835 --> 00:37:36.230 align:middle line:84%
+[MUTTERS] And, you know,
+at the end of the day,
+
+00:37:36.230 --> 00:37:38.540 align:middle line:84%
+the true actions of
+moving the interest rate
+
+00:37:38.540 --> 00:37:42.050 align:middle line:84%
+are the least important part
+of, really, a monetary policy
+
+00:37:42.050 --> 00:37:44.720 align:middle line:90%
+strategy.
+
+00:37:44.720 --> 00:37:49.470 align:middle line:84%
+Fiscal policy can be quite
+tricky here, actually.
+
+00:37:49.470 --> 00:37:55.130 align:middle line:84%
+So we know that the fiscal
+contraction, a reduction
+
+00:37:55.130 --> 00:37:57.620 align:middle line:90%
+in government expenditure--
+
+00:37:57.620 --> 00:38:02.030 align:middle line:84%
+if you just think about the
+basic IS-LM model, what happens?
+
+00:38:02.030 --> 00:38:03.480 align:middle line:90%
+Well, it's a fiscal contraction.
+
+00:38:03.480 --> 00:38:06.110 align:middle line:84%
+You reduce government
+expenditure, that
+
+00:38:06.110 --> 00:38:10.570 align:middle line:90%
+will certainly reduce output.
+
+00:38:10.570 --> 00:38:13.660 align:middle line:84%
+All the IS-LM, you reduce
+government expenditure,
+
+00:38:13.660 --> 00:38:15.760 align:middle line:90%
+you shift IS to the left.
+
+00:38:15.760 --> 00:38:19.710 align:middle line:90%
+And that reduces output.
+
+00:38:19.710 --> 00:38:21.330 align:middle line:84%
+When you have
+expectations, things
+
+00:38:21.330 --> 00:38:24.160 align:middle line:84%
+are a little trickier
+because it depends
+
+00:38:24.160 --> 00:38:26.530 align:middle line:84%
+a lot of what you
+expect the central bank
+
+00:38:26.530 --> 00:38:28.040 align:middle line:90%
+to do in the future.
+
+00:38:28.040 --> 00:38:33.790 align:middle line:84%
+And it expects a lot on
+what the private sector--
+
+00:38:33.790 --> 00:38:36.790 align:middle line:84%
+how the private sector
+responds to that.
+
+00:38:36.790 --> 00:38:43.720 align:middle line:84%
+So, for example, if you have
+a fiscal contraction that
+
+00:38:43.720 --> 00:38:46.090 align:middle line:84%
+leads to an anticipation
+of a big cut in interest
+
+00:38:46.090 --> 00:38:50.080 align:middle line:84%
+rates in the future,
+that may be expansionary.
+
+00:38:50.080 --> 00:38:53.390 align:middle line:84%
+It can offset quite a bit of
+the fiscal contraction side.
+
+00:38:53.390 --> 00:38:55.060 align:middle line:84%
+And in fact, most
+of the time when
+
+00:38:55.060 --> 00:38:59.140 align:middle line:84%
+you have episodes of
+fiscal consolidation
+
+00:38:59.140 --> 00:39:01.900 align:middle line:84%
+in environments that are
+not of very high distress,
+
+00:39:01.900 --> 00:39:06.010 align:middle line:84%
+financial crisis, and so
+on, it typically sort of--
+
+00:39:06.010 --> 00:39:07.960 align:middle line:84%
+how successful that
+is depends a lot
+
+00:39:07.960 --> 00:39:10.210 align:middle line:84%
+on whether people
+expect to be a sort
+
+00:39:10.210 --> 00:39:13.780 align:middle line:84%
+of implicit deal between the
+central bank and the Treasury.
+
+00:39:13.780 --> 00:39:16.930 align:middle line:84%
+If people expect that that
+fiscal contraction will
+
+00:39:16.930 --> 00:39:19.270 align:middle line:84%
+come with much looser
+monetary policy conditions,
+
+00:39:19.270 --> 00:39:23.800 align:middle line:84%
+then the fiscal contraction
+is not as contractionary
+
+00:39:23.800 --> 00:39:25.550 align:middle line:90%
+as could be otherwise.
+
+00:39:25.550 --> 00:39:30.050 align:middle line:84%
+And if, for some reason, the
+fiscal deficit, the perception
+
+00:39:30.050 --> 00:39:32.450 align:middle line:84%
+of fiscal deficit, was really
+dragging the economy down
+
+00:39:32.450 --> 00:39:34.610 align:middle line:84%
+because people didn't
+know when there could
+
+00:39:34.610 --> 00:39:37.550 align:middle line:84%
+be a financial crisis in
+the near future and so on,
+
+00:39:37.550 --> 00:39:39.920 align:middle line:84%
+then you can get a
+situation in which
+
+00:39:39.920 --> 00:39:42.380 align:middle line:84%
+the contraction, fiscal
+contraction today,
+
+00:39:42.380 --> 00:39:44.840 align:middle line:84%
+improves the
+perception of stability
+
+00:39:44.840 --> 00:39:46.850 align:middle line:84%
+of the country in
+the future, which
+
+00:39:46.850 --> 00:39:49.220 align:middle line:84%
+in turn may increase
+expected future income
+
+00:39:49.220 --> 00:39:50.970 align:middle line:90%
+and be expansionary.
+
+00:39:50.970 --> 00:39:56.090 align:middle line:84%
+So most of the fiscal
+contractions are contractionary.
+
+00:39:56.090 --> 00:39:57.980 align:middle line:84%
+But there are some
+famous episodes
+
+00:39:57.980 --> 00:40:03.730 align:middle line:84%
+of what are called expansionary
+fiscal contractions.
+
+00:40:03.730 --> 00:40:06.470 align:middle line:84%
+One of the most classic
+cases, best-known cases,
+
+00:40:06.470 --> 00:40:10.570 align:middle line:90%
+is Ireland in the late '80s.
+
+00:40:10.570 --> 00:40:13.900 align:middle line:84%
+Ireland had massive
+fiscal deficit.
+
+00:40:13.900 --> 00:40:17.020 align:middle line:84%
+And all they talked
+about was fiscal deficits
+
+00:40:17.020 --> 00:40:21.040 align:middle line:84%
+because they had very large
+fiscal deficits relative to GDP.
+
+00:40:21.040 --> 00:40:25.810 align:middle line:84%
+And the economy was really
+sort of stagnating and going
+
+00:40:25.810 --> 00:40:27.650 align:middle line:90%
+through cycles and so on.
+
+00:40:27.650 --> 00:40:30.580 align:middle line:84%
+And it was all around this
+fiscal deficit and so on.
+
+00:40:30.580 --> 00:40:38.860 align:middle line:84%
+So towards the late '80s, they
+began a delivery plan of fiscal
+
+00:40:38.860 --> 00:40:39.710 align:middle line:90%
+consolidation.
+
+00:40:39.710 --> 00:40:41.377 align:middle line:84%
+Fiscal consolidation
+means, essentially,
+
+00:40:41.377 --> 00:40:42.460 align:middle line:90%
+reducing the deficit.
+
+00:40:42.460 --> 00:40:44.740 align:middle line:84%
+And they were very
+successful, as you can see.
+
+00:40:44.740 --> 00:40:47.860 align:middle line:84%
+But contrary to
+expectations, at least,
+
+00:40:47.860 --> 00:40:50.290 align:middle line:84%
+output growth did not
+decline, actually.
+
+00:40:50.290 --> 00:40:52.300 align:middle line:90%
+They finally sort of--
+
+00:40:52.300 --> 00:40:54.650 align:middle line:84%
+they had a very good
+period like that.
+
+00:40:54.650 --> 00:40:58.180 align:middle line:84%
+So that's all-- it was
+all about expectations.
+
+00:40:58.180 --> 00:41:01.240 align:middle line:84%
+Notice that unemployment,
+though, did go up.
+
+00:41:01.240 --> 00:41:04.760 align:middle line:84%
+So despite the fact that
+you got more unemployment
+
+00:41:04.760 --> 00:41:09.480 align:middle line:84%
+and so on, output began
+to grow because firms
+
+00:41:09.480 --> 00:41:12.410 align:middle line:84%
+began to invest more, consumers
+became more optimistic.
+
+00:41:12.410 --> 00:41:14.790 align:middle line:84%
+In fact, you see the
+house household savings
+
+00:41:14.790 --> 00:41:16.890 align:middle line:90%
+rate declined dramatically.
+
+00:41:16.890 --> 00:41:22.160 align:middle line:84%
+It is all-- consumption
+and investment did that--
+
+00:41:22.160 --> 00:41:23.360 align:middle line:90%
+consumption, investment.
+
+00:41:23.360 --> 00:41:27.080 align:middle line:84%
+People consume more, invest
+more because sort of everything
+
+00:41:27.080 --> 00:41:27.990 align:middle line:90%
+looks a lot better.
+
+00:41:27.990 --> 00:41:30.110 align:middle line:84%
+They have been struggling
+with this for very long.
+
+00:41:30.110 --> 00:41:35.260 align:middle line:84%
+And they finally-- they had
+gotten that behind them.
+
+00:41:35.260 --> 00:41:38.140 align:middle line:84%
+Now, this example is
+abused by almost anyone
+
+00:41:38.140 --> 00:41:40.580 align:middle line:84%
+that wants to cut taxes
+and things like that.
+
+00:41:40.580 --> 00:41:52.220 align:middle line:84%
+But-- sorry, by almost
+anyone that wants
+
+00:41:52.220 --> 00:41:55.640 align:middle line:90%
+to cut fiscal expenditure.
+
+00:41:55.640 --> 00:41:57.470 align:middle line:90%
+But there are experiences.
+
+00:41:57.470 --> 00:42:00.150 align:middle line:84%
+There is a whole
+spectrum of experiences.
+
+00:42:00.150 --> 00:42:04.610 align:middle line:84%
+But in situations that are
+as extreme as this one,
+
+00:42:04.610 --> 00:42:09.310 align:middle line:84%
+it clearly proved to
+be very effective.
+
+00:42:09.310 --> 00:42:10.250 align:middle line:90%
+So that's that.
+
+00:42:10.250 --> 00:42:11.930 align:middle line:90%
+So let me take a stock.
+
+00:42:11.930 --> 00:42:17.050 align:middle line:84%
+So the role of this lecture
+was to say something
+
+00:42:17.050 --> 00:42:19.987 align:middle line:84%
+that I sort of should
+have said earlier on,
+
+00:42:19.987 --> 00:42:21.570 align:middle line:84%
+but I would have
+been a bit confusing.
+
+00:42:21.570 --> 00:42:23.810 align:middle line:84%
+So I decided not to
+talk too much about it.
+
+00:42:23.810 --> 00:42:24.810 align:middle line:90%
+But it's very important.
+
+00:42:24.810 --> 00:42:28.460 align:middle line:84%
+Expectations plays play a
+central role in economics.
+
+00:42:28.460 --> 00:42:32.505 align:middle line:84%
+In particular, expectations
+influence aggregate demand.
+
+00:42:32.505 --> 00:42:34.880 align:middle line:84%
+And for us, this course was
+a lot about aggregate demand.
+
+00:42:34.880 --> 00:42:37.535 align:middle line:84%
+Except for the
+part on growth, it
+
+00:42:37.535 --> 00:42:38.910 align:middle line:84%
+was a lot about
+aggregate demand.
+
+00:42:38.910 --> 00:42:41.090 align:middle line:84%
+Now, we did talk
+about expectations.
+
+00:42:41.090 --> 00:42:42.830 align:middle line:84%
+But we did talk
+about expectations
+
+00:42:42.830 --> 00:42:45.000 align:middle line:84%
+mostly in the context
+of aggregate supply.
+
+00:42:45.000 --> 00:42:47.090 align:middle line:84%
+Remember, when we talk
+about the Phillips curve,
+
+00:42:47.090 --> 00:42:49.550 align:middle line:84%
+we did have expectations
+because wage setting
+
+00:42:49.550 --> 00:42:52.640 align:middle line:84%
+was a function of expected
+prices and so on and so forth.
+
+00:42:52.640 --> 00:42:55.460 align:middle line:84%
+So we did talk about the role of
+expectations in aggregate supply
+
+00:42:55.460 --> 00:42:57.290 align:middle line:90%
+very quickly.
+
+00:42:57.290 --> 00:43:00.800 align:middle line:84%
+But I think a much
+bigger role is played--
+
+00:43:00.800 --> 00:43:03.440 align:middle line:84%
+of expectation is really
+on aggregate demand,
+
+00:43:03.440 --> 00:43:04.915 align:middle line:90%
+and certainly on asset prices.
+
+00:43:04.915 --> 00:43:06.290 align:middle line:84%
+But aggregate
+demand asset prices
+
+00:43:06.290 --> 00:43:08.210 align:middle line:84%
+are connected
+because asset price
+
+00:43:08.210 --> 00:43:13.130 align:middle line:84%
+is about wealth and the value
+of future cash flows, which
+
+00:43:13.130 --> 00:43:16.760 align:middle line:84%
+are, more or less, the same
+drivers as for investment
+
+00:43:16.760 --> 00:43:19.500 align:middle line:90%
+and consumption.
+
+00:43:19.500 --> 00:43:22.430 align:middle line:84%
+And finally, I want to
+say that, many times when
+
+00:43:22.430 --> 00:43:27.440 align:middle line:84%
+you find episodes of fiscal,
+even sometimes monetary policy
+
+00:43:27.440 --> 00:43:32.360 align:middle line:84%
+that are counterintuitive, it's
+entirely due to the expectations
+
+00:43:32.360 --> 00:43:32.860 align:middle line:90%
+part.
+
+00:43:32.860 --> 00:43:35.010 align:middle line:84%
+So this is case of
+fiscal consideration
+
+00:43:35.010 --> 00:43:38.450 align:middle line:84%
+is not that the cutting
+in fiscal expenditure
+
+00:43:38.450 --> 00:43:39.438 align:middle line:90%
+was expansionary.
+
+00:43:39.438 --> 00:43:39.980 align:middle line:90%
+That was not.
+
+00:43:39.980 --> 00:43:40.980 align:middle line:90%
+That was contractionary.
+
+00:43:40.980 --> 00:43:43.250 align:middle line:84%
+But it was
+overwhelmed or offset,
+
+00:43:43.250 --> 00:43:48.200 align:middle line:84%
+more than offset by the
+improvement in the outlook
+
+00:43:48.200 --> 00:43:50.880 align:middle line:90%
+that you had.
+
+00:43:50.880 --> 00:43:52.780 align:middle line:84%
+And that also happens
+with monetary policy.
+
+00:43:52.780 --> 00:43:55.370 align:middle line:84%
+Countries that have
+high inflation problems
+
+00:43:55.370 --> 00:44:01.460 align:middle line:90%
+and so on sometimes get--
+
+00:44:01.460 --> 00:44:04.630 align:middle line:84%
+and they have to go through
+dramatic tightenings and so on.
+
+00:44:04.630 --> 00:44:07.087 align:middle line:84%
+Yes, most of them get very
+short-lived recession.
+
+00:44:07.087 --> 00:44:09.170 align:middle line:84%
+But sometimes they are
+very short-lived recessions
+
+00:44:09.170 --> 00:44:14.360 align:middle line:84%
+because eventually the
+reduction of the instability
+
+00:44:14.360 --> 00:44:18.860 align:middle line:84%
+caused by high and unstable
+inflation sort of ends
+
+00:44:18.860 --> 00:44:21.440 align:middle line:84%
+up dominating any
+direct contractionary
+
+00:44:21.440 --> 00:44:24.850 align:middle line:90%
+effect of monetary policy.
+
+00:44:24.850 --> 00:44:36.000 align:middle line:90%

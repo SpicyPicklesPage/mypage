@@ -1,0 +1,3959 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.480 align:middle line:90%
+[SQUEAKING]
+
+00:00:02.480 --> 00:00:04.960 align:middle line:90%
+[RUSTLING]
+
+00:00:04.960 --> 00:00:07.936 align:middle line:90%
+[CLICKING]
+
+00:00:07.936 --> 00:00:17.390 align:middle line:90%
+
+
+00:00:17.390 --> 00:00:20.970 align:middle line:84%
+RICARDO CABALLERO: Let's start
+with the Mundell-Fleming model.
+
+00:00:20.970 --> 00:00:26.660 align:middle line:84%
+Now, this is a model that I
+think is extremely useful.
+
+00:00:26.660 --> 00:00:30.140 align:middle line:84%
+And in the short term it
+will be important for you
+
+00:00:30.140 --> 00:00:33.500 align:middle line:84%
+because probably 70% of
+the quiz will be related
+
+00:00:33.500 --> 00:00:35.910 align:middle line:90%
+to things, to this model.
+
+00:00:35.910 --> 00:00:38.970 align:middle line:84%
+Meaning, we're going to use
+this model for different things.
+
+00:00:38.970 --> 00:00:43.070 align:middle line:84%
+But if you understand
+it well, you probably
+
+00:00:43.070 --> 00:00:46.520 align:middle line:84%
+have 70% of the last
+quiz under control.
+
+00:00:46.520 --> 00:00:48.750 align:middle line:84%
+So I'm going to go
+very slowly over it.
+
+00:00:48.750 --> 00:00:51.860 align:middle line:84%
+And please stop me if there is
+any step you don't understand.
+
+00:00:51.860 --> 00:00:55.310 align:middle line:84%
+I put steps into
+myself so I don't rush.
+
+00:00:55.310 --> 00:01:00.480 align:middle line:84%
+Because again, I think it's
+important to understand things.
+
+00:01:00.480 --> 00:01:05.180 align:middle line:84%
+So here you have the exchange
+rate, two exchange rates.
+
+00:01:05.180 --> 00:01:14.420 align:middle line:84%
+The white one is the euro
+dollar exchange rate.
+
+00:01:14.420 --> 00:01:17.663 align:middle line:84%
+I'm quoting it the opposite of
+the way it's normally quoted.
+
+00:01:17.663 --> 00:01:19.580 align:middle line:84%
+There are some conventions
+in effects markets.
+
+00:01:19.580 --> 00:01:23.660 align:middle line:84%
+But this is, as we have defined
+in this course, if it goes up,
+
+00:01:23.660 --> 00:01:26.130 align:middle line:84%
+it means an appreciation
+of a local currency.
+
+00:01:26.130 --> 00:01:28.280 align:middle line:90%
+That is the dollar.
+
+00:01:28.280 --> 00:01:31.910 align:middle line:84%
+That is, you get more of the
+foreign currency per unit
+
+00:01:31.910 --> 00:01:35.000 align:middle line:84%
+of the domestic currency
+when it goes up, and down
+
+00:01:35.000 --> 00:01:36.710 align:middle line:90%
+is a depreciation.
+
+00:01:36.710 --> 00:01:38.900 align:middle line:90%
+And you see there that--
+
+00:01:38.900 --> 00:01:43.610 align:middle line:84%
+this is the dollar became a
+gain value relative to the euro
+
+00:01:43.610 --> 00:01:45.030 align:middle line:90%
+through all this period.
+
+00:01:45.030 --> 00:01:47.870 align:middle line:84%
+And then it has lost
+quite a bit of value
+
+00:01:47.870 --> 00:01:53.700 align:middle line:84%
+since sort of late 2022, with
+respect to the Japanese yen.
+
+00:01:53.700 --> 00:01:55.460 align:middle line:90%
+That's the blue line.
+
+00:01:55.460 --> 00:01:57.590 align:middle line:84%
+The whole cycle is
+even more dramatic.
+
+00:01:57.590 --> 00:01:59.720 align:middle line:90%
+Big appreciation of the dollar.
+
+00:01:59.720 --> 00:02:02.830 align:middle line:90%
+Depreciation of the yen.
+
+00:02:02.830 --> 00:02:09.370 align:middle line:84%
+And a reversal since
+late 2022 and so.
+
+00:02:09.370 --> 00:02:13.840 align:middle line:84%
+So what is behind
+this big fluctuations?
+
+00:02:13.840 --> 00:02:14.410 align:middle line:90%
+Many things.
+
+00:02:14.410 --> 00:02:17.510 align:middle line:84%
+Effects are volatile, like
+almost any asset price.
+
+00:02:17.510 --> 00:02:22.390 align:middle line:84%
+But one of the main drivers
+of these fluctuations
+
+00:02:22.390 --> 00:02:24.640 align:middle line:84%
+is perceptions
+about interest rate
+
+00:02:24.640 --> 00:02:26.630 align:middle line:84%
+policy in the different
+parts of the world.
+
+00:02:26.630 --> 00:02:33.340 align:middle line:84%
+So the reason we have seen
+a lot of this decline here--
+
+00:02:33.340 --> 00:02:36.010 align:middle line:84%
+the reason for the
+rise here of the dollar
+
+00:02:36.010 --> 00:02:39.070 align:middle line:84%
+is mostly because
+investors in general
+
+00:02:39.070 --> 00:02:42.603 align:middle line:84%
+perceive that the US was more
+advanced in its business cycle.
+
+00:02:42.603 --> 00:02:44.020 align:middle line:84%
+It began to tighten
+interest rates
+
+00:02:44.020 --> 00:02:45.830 align:middle line:90%
+before the rest of the world.
+
+00:02:45.830 --> 00:02:49.240 align:middle line:84%
+And since interest rates
+were rising in the US,
+
+00:02:49.240 --> 00:02:52.960 align:middle line:84%
+that led to an appreciation
+of the dollar by a mechanism
+
+00:02:52.960 --> 00:02:55.790 align:middle line:84%
+that I describe at the end
+of the previous lecture.,
+
+00:02:55.790 --> 00:02:57.700 align:middle line:90%
+but I'm going to repeat today.
+
+00:02:57.700 --> 00:02:59.950 align:middle line:84%
+Remember when I talk about
+the uncover interest parity
+
+00:02:59.950 --> 00:03:00.890 align:middle line:90%
+condition.
+
+00:03:00.890 --> 00:03:03.130 align:middle line:84%
+Well, it's related to what
+I'm talking about here.
+
+00:03:03.130 --> 00:03:05.810 align:middle line:84%
+And when I, again,
+go again over that.
+
+00:03:05.810 --> 00:03:09.110 align:middle line:84%
+And a big reason for the
+decline more recently
+
+00:03:09.110 --> 00:03:13.250 align:middle line:84%
+is simply that there is a sense
+that monetary policy is peaking
+
+00:03:13.250 --> 00:03:16.340 align:middle line:84%
+in the US in terms of tightness
+while the rest of the world
+
+00:03:16.340 --> 00:03:18.050 align:middle line:90%
+is catching up.
+
+00:03:18.050 --> 00:03:21.410 align:middle line:84%
+And in the case of Europe,
+more than catching up
+
+00:03:21.410 --> 00:03:24.860 align:middle line:84%
+because they have further supply
+shocks coming from energy shocks
+
+00:03:24.860 --> 00:03:25.820 align:middle line:90%
+and so on.
+
+00:03:25.820 --> 00:03:30.500 align:middle line:84%
+So if you look, for example, at
+the expected policy rate path,
+
+00:03:30.500 --> 00:03:34.530 align:middle line:84%
+in the case of the US,
+nowadays it looks like this.
+
+00:03:34.530 --> 00:03:38.420 align:middle line:84%
+So the steel markets expect
+some hikes in the US,
+
+00:03:38.420 --> 00:03:40.610 align:middle line:84%
+but a limited amount
+of hikes and then
+
+00:03:40.610 --> 00:03:44.000 align:middle line:84%
+they expect quickly the
+Fed to start undoing that.
+
+00:03:44.000 --> 00:03:45.900 align:middle line:84%
+That's what this
+path is telling you.
+
+00:03:45.900 --> 00:03:48.140 align:middle line:84%
+This is expected
+policy rate path.
+
+00:03:48.140 --> 00:03:50.270 align:middle line:84%
+What the market thinks
+now, the policy rate
+
+00:03:50.270 --> 00:03:53.000 align:middle line:84%
+will be in the next meeting,
+two meetings from now,
+
+00:03:53.000 --> 00:03:57.290 align:middle line:84%
+three meetings from now, four
+meetings, meetings of the FOMC
+
+00:03:57.290 --> 00:03:58.080 align:middle line:90%
+from now.
+
+00:03:58.080 --> 00:04:00.428 align:middle line:84%
+OK, well, if you look at
+the same picture in Europe,
+
+00:04:00.428 --> 00:04:01.220 align:middle line:90%
+it looks like that.
+
+00:04:01.220 --> 00:04:04.790 align:middle line:84%
+It's clear that there
+still is more ahead.
+
+00:04:04.790 --> 00:04:06.950 align:middle line:90%
+And you see that.
+
+00:04:06.950 --> 00:04:09.620 align:middle line:84%
+That's what the market
+perceives at this point.
+
+00:04:09.620 --> 00:04:12.117 align:middle line:84%
+Whether that ends up being
+true or not doesn't matter.
+
+00:04:12.117 --> 00:04:13.700 align:middle line:84%
+At any point in time
+the exchange rate
+
+00:04:13.700 --> 00:04:15.540 align:middle line:84%
+is determined by what
+the markets think.
+
+00:04:15.540 --> 00:04:19.890 align:middle line:84%
+So what actually happens is less
+important for an asset price.
+
+00:04:19.890 --> 00:04:23.030 align:middle line:84%
+An asset price is a lot
+about pricing today things
+
+00:04:23.030 --> 00:04:25.370 align:middle line:84%
+that you expect to
+happen in the future.
+
+00:04:25.370 --> 00:04:27.417 align:middle line:84%
+But what you expect
+is what matters,
+
+00:04:27.417 --> 00:04:28.500 align:middle line:90%
+not what actually happens.
+
+00:04:28.500 --> 00:04:33.380 align:middle line:84%
+And at this moment, the
+market expect the Euro area
+
+00:04:33.380 --> 00:04:36.950 align:middle line:84%
+to go through a more
+prolonged period of hiking,
+
+00:04:36.950 --> 00:04:38.360 align:middle line:90%
+interest rate, hiking.
+
+00:04:38.360 --> 00:04:40.520 align:middle line:84%
+Japan hasn't had hikes
+in interest rates
+
+00:04:40.520 --> 00:04:42.240 align:middle line:90%
+for three decades.
+
+00:04:42.240 --> 00:04:46.490 align:middle line:84%
+But even now, you
+begin to see some--
+
+00:04:46.490 --> 00:04:48.090 align:middle line:90%
+the scale here is very small.
+
+00:04:48.090 --> 00:04:49.620 align:middle line:90%
+These are a few basis points.
+
+00:04:49.620 --> 00:04:51.680 align:middle line:84%
+But even the point
+I'm trying to make
+
+00:04:51.680 --> 00:04:55.670 align:middle line:84%
+is that certainly people
+expect interest rates in the US
+
+00:04:55.670 --> 00:04:58.820 align:middle line:84%
+to go down relative to
+interest rates in Japan.
+
+00:04:58.820 --> 00:05:01.010 align:middle line:84%
+Not to say that the
+interest rate in the US
+
+00:05:01.010 --> 00:05:02.930 align:middle line:84%
+will be lower than the
+interest rate in Japan,
+
+00:05:02.930 --> 00:05:05.100 align:middle line:84%
+but the direction of the
+change is in that way.
+
+00:05:05.100 --> 00:05:09.660 align:middle line:84%
+So relative to where we're at
+now, the direction of the change
+
+00:05:09.660 --> 00:05:14.430 align:middle line:84%
+is towards the US
+loosening monetary policy
+
+00:05:14.430 --> 00:05:17.150 align:middle line:84%
+before the rest
+of the world does
+
+00:05:17.150 --> 00:05:21.440 align:middle line:84%
+And that's what is leading
+to these big swings.
+
+00:05:21.440 --> 00:05:24.410 align:middle line:84%
+I said before, this is a
+period in which the US have
+
+00:05:24.410 --> 00:05:27.440 align:middle line:84%
+to start tightening before
+the rest and the currency
+
+00:05:27.440 --> 00:05:30.230 align:middle line:84%
+appreciated a lot, especially
+with respect to the yen.
+
+00:05:30.230 --> 00:05:32.990 align:middle line:84%
+Because again, the yen has been
+against the zero lower bound
+
+00:05:32.990 --> 00:05:34.350 align:middle line:90%
+for a very long time.
+
+00:05:34.350 --> 00:05:37.410 align:middle line:84%
+So nobody expected the yen
+to move, to follow the US.
+
+00:05:37.410 --> 00:05:40.580 align:middle line:84%
+And with respect to
+Europe, well, Europe
+
+00:05:40.580 --> 00:05:42.930 align:middle line:84%
+was having inflationary
+problems and so on, as well.
+
+00:05:42.930 --> 00:05:45.900 align:middle line:84%
+So people expected it to
+follow the US at some point.
+
+00:05:45.900 --> 00:05:47.940 align:middle line:84%
+For Japan, there was
+nothing like that.
+
+00:05:47.940 --> 00:05:50.090 align:middle line:84%
+And that's what led to
+a massive depreciation
+
+00:05:50.090 --> 00:05:54.650 align:middle line:84%
+of the yen, appreciation of the
+US dollar vis a vis the yen.
+
+00:05:54.650 --> 00:05:58.220 align:middle line:84%
+So what the Mundell-Fleming
+model is about
+
+00:05:58.220 --> 00:06:00.397 align:middle line:84%
+is about first
+connecting these things,
+
+00:06:00.397 --> 00:06:02.480 align:middle line:84%
+trying to understand what
+moves the exchange rate,
+
+00:06:02.480 --> 00:06:04.970 align:middle line:84%
+how the different monetary
+policies in different places
+
+00:06:04.970 --> 00:06:07.670 align:middle line:84%
+or different policies in
+different places of the world
+
+00:06:07.670 --> 00:06:09.180 align:middle line:90%
+affect the exchange rate.
+
+00:06:09.180 --> 00:06:12.230 align:middle line:84%
+And then it's about
+understanding how those exchange
+
+00:06:12.230 --> 00:06:17.240 align:middle line:84%
+rate movements affect real
+activity in the short run that's
+
+00:06:17.240 --> 00:06:19.290 align:middle line:84%
+what the Mundell-Fleming
+model is.
+
+00:06:19.290 --> 00:06:23.730 align:middle line:84%
+So it is really, we're going to
+go back to our old IS-LM model,
+
+00:06:23.730 --> 00:06:24.700 align:middle line:90%
+very short run.
+
+00:06:24.700 --> 00:06:27.070 align:middle line:84%
+We're going to even fix
+nominal prices and so on.
+
+00:06:27.070 --> 00:06:28.890 align:middle line:90%
+So back to that environment.
+
+00:06:28.890 --> 00:06:30.760 align:middle line:84%
+But we're going to do
+it in an open economy.
+
+00:06:30.760 --> 00:06:33.010 align:middle line:84%
+So we're going to have a new
+variable floating around,
+
+00:06:33.010 --> 00:06:34.150 align:middle line:90%
+which is the exchange rate.
+
+00:06:34.150 --> 00:06:36.660 align:middle line:84%
+And we need to understand
+how the exchange rate moves
+
+00:06:36.660 --> 00:06:39.900 align:middle line:84%
+when different things happen
+in different countries
+
+00:06:39.900 --> 00:06:43.290 align:middle line:84%
+and what is the impact of
+that on aggregate demand,
+
+00:06:43.290 --> 00:06:44.860 align:middle line:90%
+and hence, on output--
+
+00:06:44.860 --> 00:06:47.940 align:middle line:84%
+we're talking about a very
+short run in the different parts
+
+00:06:47.940 --> 00:06:48.700 align:middle line:90%
+of the world.
+
+00:06:48.700 --> 00:06:49.930 align:middle line:90%
+So that's the plan.
+
+00:06:49.930 --> 00:06:52.020 align:middle line:90%
+That's what we intend to do.
+
+00:06:52.020 --> 00:06:54.610 align:middle line:84%
+So let's start with the
+Mundell-Fleming model.
+
+00:06:54.610 --> 00:07:00.210 align:middle line:84%
+Remember, we wrote down the
+equilibrium in the goods market
+
+00:07:00.210 --> 00:07:01.660 align:middle line:90%
+in the previous lecture.
+
+00:07:01.660 --> 00:07:06.190 align:middle line:84%
+And I'm just reproducing what I
+wrote in the previous lecture.
+
+00:07:06.190 --> 00:07:08.100 align:middle line:84%
+So it looks exactly
+like the closed economy.
+
+00:07:08.100 --> 00:07:10.350 align:middle line:84%
+Output is being determined
+by aggregate demand.
+
+00:07:10.350 --> 00:07:13.300 align:middle line:84%
+But it's aggregate demand for
+domestically produced goods.
+
+00:07:13.300 --> 00:07:18.180 align:middle line:84%
+Domestically produced goods is
+not the same as domestic demand
+
+00:07:18.180 --> 00:07:20.910 align:middle line:84%
+for goods, which is
+this, because now there
+
+00:07:20.910 --> 00:07:22.090 align:middle line:90%
+is a net export term.
+
+00:07:22.090 --> 00:07:27.030 align:middle line:84%
+So part of the things
+that residents demand,
+
+00:07:27.030 --> 00:07:29.010 align:middle line:84%
+they demand from the
+rest of the world,
+
+00:07:29.010 --> 00:07:30.610 align:middle line:90%
+not from domestic producers.
+
+00:07:30.610 --> 00:07:32.748 align:middle line:84%
+And at the same time, part
+of the demand perceived
+
+00:07:32.748 --> 00:07:35.040 align:middle line:84%
+by domestic producers comes
+from the rest of the world,
+
+00:07:35.040 --> 00:07:37.582 align:middle line:84%
+from exports, not from
+domestic producers.
+
+00:07:37.582 --> 00:07:39.540 align:middle line:84%
+So that's the reason we
+got an extra term here,
+
+00:07:39.540 --> 00:07:41.590 align:middle line:90%
+which is this net exports.
+
+00:07:41.590 --> 00:07:44.620 align:middle line:84%
+And we said this net exports
+is a function of three things.
+
+00:07:44.620 --> 00:07:46.250 align:middle line:90%
+It's a function of output.
+
+00:07:46.250 --> 00:07:49.790 align:middle line:90%
+
+
+00:07:49.790 --> 00:07:51.750 align:middle line:84%
+So it's a decreasing
+function of output.
+
+00:07:51.750 --> 00:07:54.530 align:middle line:84%
+Why is that-- of
+domestic output?
+
+00:07:54.530 --> 00:07:57.450 align:middle line:90%
+
+
+00:07:57.450 --> 00:07:58.560 align:middle line:90%
+Domestic output.
+
+00:07:58.560 --> 00:07:59.910 align:middle line:90%
+Domestic income.
+
+00:07:59.910 --> 00:08:02.420 align:middle line:84%
+Why is it a decreasing
+function of domestic income?
+
+00:08:02.420 --> 00:08:08.440 align:middle line:90%
+
+
+00:08:08.440 --> 00:08:11.385 align:middle line:84%
+Why do net exports decline
+when domestic income rises?
+
+00:08:11.385 --> 00:08:14.880 align:middle line:90%
+
+
+00:08:14.880 --> 00:08:17.540 align:middle line:84%
+AUDIENCE: People might be
+more inclined to buy imports.
+
+00:08:17.540 --> 00:08:18.640 align:middle line:84%
+RICARDO CABALLERO:
+They import more.
+
+00:08:18.640 --> 00:08:19.848 align:middle line:90%
+They consume everything more.
+
+00:08:19.848 --> 00:08:21.520 align:middle line:90%
+But part of that is import.
+
+00:08:21.520 --> 00:08:24.360 align:middle line:84%
+And so part of that
+energy of the extra demand
+
+00:08:24.360 --> 00:08:25.720 align:middle line:90%
+goes to foreign goods.
+
+00:08:25.720 --> 00:08:28.030 align:middle line:84%
+And that's what
+deteriorates net exports.
+
+00:08:28.030 --> 00:08:31.095 align:middle line:84%
+And that's the reason,
+had we just stopped there,
+
+00:08:31.095 --> 00:08:34.150 align:middle line:84%
+made the net export function
+just a function of output,
+
+00:08:34.150 --> 00:08:36.960 align:middle line:84%
+we would have not needed
+all these extra parameters
+
+00:08:36.960 --> 00:08:39.720 align:middle line:84%
+that I'm about to build because
+all that would have meant
+
+00:08:39.720 --> 00:08:42.162 align:middle line:84%
+is that just we have
+a smaller multiplier.
+
+00:08:42.162 --> 00:08:43.620 align:middle line:84%
+It would have been
+exactly the same
+
+00:08:43.620 --> 00:08:46.860 align:middle line:84%
+as we did in the closed economy,
+but with a smaller multiplier,
+
+00:08:46.860 --> 00:08:49.890 align:middle line:84%
+because every time an output
+goes up, now part of that demand
+
+00:08:49.890 --> 00:08:54.090 align:middle line:84%
+goes to foreign goods
+rather than domestic goods.
+
+00:08:54.090 --> 00:08:56.770 align:middle line:90%
+But it's not so--
+
+00:08:56.770 --> 00:08:59.620 align:middle line:84%
+first, because we have
+an extra another income
+
+00:08:59.620 --> 00:09:03.430 align:middle line:84%
+that matters here, which is the
+income of the rest of the world.
+
+00:09:03.430 --> 00:09:06.260 align:middle line:84%
+But more importantly, because
+we also have an exchange.
+
+00:09:06.260 --> 00:09:07.770 align:middle line:90%
+But let's start from this side.
+
+00:09:07.770 --> 00:09:11.150 align:middle line:84%
+So net exports is increasing the
+income of the rest of the world.
+
+00:09:11.150 --> 00:09:11.670 align:middle line:90%
+Why is that?
+
+00:09:11.670 --> 00:09:15.270 align:middle line:90%
+
+
+00:09:15.270 --> 00:09:17.670 align:middle line:84%
+That is, demand for
+domestically produced goods
+
+00:09:17.670 --> 00:09:22.090 align:middle line:84%
+rises when foreign
+income goes up.
+
+00:09:22.090 --> 00:09:23.800 align:middle line:84%
+For an output, for
+income goes up.
+
+00:09:23.800 --> 00:09:24.375 align:middle line:90%
+Why is that?
+
+00:09:24.375 --> 00:09:29.370 align:middle line:90%
+
+
+00:09:29.370 --> 00:09:33.640 align:middle line:84%
+The symmetric
+argument with inputs.
+
+00:09:33.640 --> 00:09:37.360 align:middle line:84%
+Well, our exports are the
+imports of the other country.
+
+00:09:37.360 --> 00:09:40.290 align:middle line:84%
+So if the income in the
+other country goes up,
+
+00:09:40.290 --> 00:09:45.430 align:middle line:84%
+then their imports will go up,
+which is our exports that go up.
+
+00:09:45.430 --> 00:09:49.810 align:middle line:84%
+That's the reason
+net exports goes up.
+
+00:09:49.810 --> 00:09:53.980 align:middle line:84%
+And the last term,
+remember, says
+
+00:09:53.980 --> 00:09:59.930 align:middle line:84%
+that net exports is declining
+on the real exchange rate.
+
+00:09:59.930 --> 00:10:00.640 align:middle line:90%
+Why is that?
+
+00:10:00.640 --> 00:10:05.080 align:middle line:90%
+
+
+00:10:05.080 --> 00:10:07.608 align:middle line:84%
+What happened when the
+real exchange rate goes up?
+
+00:10:07.608 --> 00:10:09.400 align:middle line:84%
+AUDIENCE: It makes our
+goods more expensive
+
+00:10:09.400 --> 00:10:10.520 align:middle line:90%
+relative to foreign goods.
+
+00:10:10.520 --> 00:10:10.930 align:middle line:90%
+RICARDO CABALLERO: Exactly.
+
+00:10:10.930 --> 00:10:13.540 align:middle line:84%
+Our goods become more expensive
+relative to foreign goods,
+
+00:10:13.540 --> 00:10:15.350 align:middle line:84%
+and that affects us
+from two dimensions.
+
+00:10:15.350 --> 00:10:18.490 align:middle line:84%
+First, our exports will tend to
+decline because our goods are
+
+00:10:18.490 --> 00:10:19.600 align:middle line:90%
+more expensive.
+
+00:10:19.600 --> 00:10:21.760 align:middle line:84%
+And also, our imports
+are going to tend
+
+00:10:21.760 --> 00:10:23.900 align:middle line:84%
+to increase because
+foreign goods are cheaper.
+
+00:10:23.900 --> 00:10:28.690 align:middle line:84%
+And so that's the reason this
+is decreasing with respect
+
+00:10:28.690 --> 00:10:30.250 align:middle line:90%
+to the exchange rate.
+
+00:10:30.250 --> 00:10:32.290 align:middle line:84%
+The big thing of the
+Mundell-Fleming model
+
+00:10:32.290 --> 00:10:35.050 align:middle line:84%
+really comes from the fact
+that this guy is there.
+
+00:10:35.050 --> 00:10:36.723 align:middle line:84%
+Had we not had the
+exchange rate there,
+
+00:10:36.723 --> 00:10:38.890 align:middle line:84%
+again, we could have used
+exactly the same apparatus
+
+00:10:38.890 --> 00:10:40.805 align:middle line:90%
+as we used earlier on.
+
+00:10:40.805 --> 00:10:43.180 align:middle line:84%
+But we're going to have an
+exchange rate floating around.
+
+00:10:43.180 --> 00:10:48.140 align:middle line:84%
+And that will require us to
+build more, a little more.
+
+00:10:48.140 --> 00:10:50.590 align:middle line:84%
+We need an extra
+equation, because we have
+
+00:10:50.590 --> 00:10:52.090 align:middle line:90%
+an extra endogenous variable.
+
+00:10:52.090 --> 00:10:54.490 align:middle line:84%
+Now, what I'm going
+to assume here,
+
+00:10:54.490 --> 00:10:56.950 align:middle line:84%
+as we did in the first
+part of the course,
+
+00:10:56.950 --> 00:10:59.740 align:middle line:84%
+is that both the domestic
+and foreign prices
+
+00:10:59.740 --> 00:11:00.680 align:middle line:90%
+are completely fixed.
+
+00:11:00.680 --> 00:11:02.740 align:middle line:84%
+So I'm going to ignore
+Phillips curve, inflation,
+
+00:11:02.740 --> 00:11:06.370 align:middle line:84%
+expected inflation, and all
+that, and assume all that is 0.
+
+00:11:06.370 --> 00:11:09.190 align:middle line:84%
+Expected inflation,
+inflation, zero.
+
+00:11:09.190 --> 00:11:12.370 align:middle line:84%
+When I do that,
+the same equation,
+
+00:11:12.370 --> 00:11:15.910 align:middle line:84%
+the equilibrium in the goods
+markets changes a little bit.
+
+00:11:15.910 --> 00:11:17.210 align:middle line:90%
+I mean, it's the same equation.
+
+00:11:17.210 --> 00:11:18.752 align:middle line:84%
+But now I don't need
+to differentiate
+
+00:11:18.752 --> 00:11:21.250 align:middle line:84%
+between real interest rate
+and nominal interest rate
+
+00:11:21.250 --> 00:11:22.550 align:middle line:90%
+because inflation is zero.
+
+00:11:22.550 --> 00:11:25.160 align:middle line:84%
+So nominal interest rate is
+equal to the real interest rate.
+
+00:11:25.160 --> 00:11:27.730 align:middle line:84%
+So I'm going to stick in here
+the nominal interest rate.
+
+00:11:27.730 --> 00:11:31.270 align:middle line:84%
+Second, I really don't
+need to differentiate
+
+00:11:31.270 --> 00:11:34.150 align:middle line:84%
+between real exchange rate
+and nominal exchange rate
+
+00:11:34.150 --> 00:11:36.940 align:middle line:84%
+because the relative prices,
+the prices themselves are not
+
+00:11:36.940 --> 00:11:37.730 align:middle line:90%
+changing.
+
+00:11:37.730 --> 00:11:40.360 align:middle line:84%
+And so all that will move
+the real exchange rate
+
+00:11:40.360 --> 00:11:41.810 align:middle line:90%
+is the nominal exchange rate.
+
+00:11:41.810 --> 00:11:44.410 align:middle line:84%
+So that's the reason
+I'm going to write
+
+00:11:44.410 --> 00:11:48.460 align:middle line:84%
+here the nominal exchange
+rate is because it's
+
+00:11:48.460 --> 00:11:50.950 align:middle line:84%
+the only thing that will move
+this variable around given
+
+00:11:50.950 --> 00:11:53.060 align:middle line:90%
+that prices are fixed.
+
+00:11:53.060 --> 00:11:57.510 align:middle line:84%
+So our equilibrium
+in the goods market.
+
+00:11:57.510 --> 00:11:59.930 align:middle line:84%
+And this is the thing you
+need to compare with lecture
+
+00:11:59.930 --> 00:12:01.410 align:middle line:90%
+three or something like that.
+
+00:12:01.410 --> 00:12:05.420 align:middle line:84%
+And as I said, this part here
+only lowers the multiplier, so
+
+00:12:05.420 --> 00:12:06.630 align:middle line:90%
+not a big change.
+
+00:12:06.630 --> 00:12:08.270 align:middle line:84%
+This one here is
+an extra parameter
+
+00:12:08.270 --> 00:12:10.700 align:middle line:84%
+that shifts aggregate
+demand up and down.
+
+00:12:10.700 --> 00:12:13.710 align:middle line:84%
+So you can treat it almost
+like we treated [INAUDIBLE]..
+
+00:12:13.710 --> 00:12:16.130 align:middle line:84%
+Remember, as the consumer
+confidence goes up,
+
+00:12:16.130 --> 00:12:17.760 align:middle line:90%
+then aggregate demand goes up.
+
+00:12:17.760 --> 00:12:21.120 align:middle line:84%
+Well, here we have the rest
+of the world's output goes up.
+
+00:12:21.120 --> 00:12:23.210 align:middle line:84%
+It does exactly the
+same, the same analysis.
+
+00:12:23.210 --> 00:12:26.185 align:middle line:84%
+The problem we have, though, is
+that we have an extra variable
+
+00:12:26.185 --> 00:12:27.560 align:middle line:84%
+here, which is
+the exchange rate.
+
+00:12:27.560 --> 00:12:29.330 align:middle line:84%
+And that's an
+endogenous variable.
+
+00:12:29.330 --> 00:12:33.140 align:middle line:84%
+So we're going to have to come
+up with some other equation
+
+00:12:33.140 --> 00:12:35.960 align:middle line:90%
+to solve for that equation here.
+
+00:12:35.960 --> 00:12:39.110 align:middle line:84%
+In lecture 3 or
+4, what we did is,
+
+00:12:39.110 --> 00:12:42.590 align:middle line:84%
+OK, we said we have two
+endogenous variable, output
+
+00:12:42.590 --> 00:12:44.270 align:middle line:90%
+and the interest rate--
+
+00:12:44.270 --> 00:12:45.560 align:middle line:90%
+output and the interest rate.
+
+00:12:45.560 --> 00:12:46.850 align:middle line:90%
+We need one more equation.
+
+00:12:46.850 --> 00:12:49.100 align:middle line:84%
+Well, the other equation was
+just monetary policy that
+
+00:12:49.100 --> 00:12:51.050 align:middle line:90%
+set the nominal interest rate.
+
+00:12:51.050 --> 00:12:53.370 align:middle line:84%
+Here, that's not
+going to be enough
+
+00:12:53.370 --> 00:12:56.250 align:middle line:84%
+because we also have an
+exchange rate floating around.
+
+00:12:56.250 --> 00:13:01.200 align:middle line:84%
+So we need to bring
+another equation here
+
+00:13:01.200 --> 00:13:04.980 align:middle line:84%
+to deal with this new
+endogenous variable.
+
+00:13:04.980 --> 00:13:07.350 align:middle line:90%
+What is that extra equation?
+
+00:13:07.350 --> 00:13:09.893 align:middle line:84%
+Well, it's the uncovered
+interest parity condition.
+
+00:13:09.893 --> 00:13:11.310 align:middle line:84%
+Remember, it's the
+last expression
+
+00:13:11.310 --> 00:13:16.873 align:middle line:84%
+we had in the previous
+lecture that takes this form.
+
+00:13:16.873 --> 00:13:20.990 align:middle line:90%
+
+
+00:13:20.990 --> 00:13:24.060 align:middle line:84%
+Before I simplify lots of
+things, I wrote this down.
+
+00:13:24.060 --> 00:13:31.520 align:middle line:84%
+And it says that the exchange
+rate is equal to that.
+
+00:13:31.520 --> 00:13:33.360 align:middle line:90%
+Now, what is this?
+
+00:13:33.360 --> 00:13:36.410 align:middle line:84%
+Where does this
+equation come from?
+
+00:13:36.410 --> 00:13:39.310 align:middle line:90%
+What is it trying to do?
+
+00:13:39.310 --> 00:13:42.610 align:middle line:84%
+Remember, we talked about
+this in the context of say,
+
+00:13:42.610 --> 00:13:44.723 align:middle line:84%
+well, you know, when
+you open goods markets,
+
+00:13:44.723 --> 00:13:46.390 align:middle line:84%
+then you need a
+relative price to decide
+
+00:13:46.390 --> 00:13:47.560 align:middle line:90%
+what you're going to buy.
+
+00:13:47.560 --> 00:13:53.010 align:middle line:84%
+That's what the
+real exchange did.
+
+00:13:53.010 --> 00:13:55.870 align:middle line:84%
+And then we open
+the capital account.
+
+00:13:55.870 --> 00:13:58.180 align:middle line:84%
+And then people need to
+decide where are they
+
+00:13:58.180 --> 00:13:59.810 align:middle line:90%
+going to invest their money.
+
+00:13:59.810 --> 00:14:03.455 align:middle line:84%
+And that equation
+was related to that.
+
+00:14:03.455 --> 00:14:04.830 align:middle line:84%
+AUDIENCE: Expected
+rate of return
+
+00:14:04.830 --> 00:14:06.240 align:middle line:90%
+has to be the same for domestic.
+
+00:14:06.240 --> 00:14:06.780 align:middle line:90%
+RICARDO CABALLERO: Exactly.
+
+00:14:06.780 --> 00:14:08.613 align:middle line:84%
+It's what equalizes
+expected rate of return.
+
+00:14:08.613 --> 00:14:11.280 align:middle line:84%
+In equilibrium,
+that has to happen.
+
+00:14:11.280 --> 00:14:13.840 align:middle line:84%
+Again, in reality, there
+is risk adjustment.
+
+00:14:13.840 --> 00:14:16.690 align:middle line:84%
+There is lots of other factors
+that we're removing from here.
+
+00:14:16.690 --> 00:14:19.860 align:middle line:84%
+But absent those other
+factors, the returns
+
+00:14:19.860 --> 00:14:21.240 align:middle line:84%
+have to be similar
+in both places
+
+00:14:21.240 --> 00:14:22.698 align:middle line:84%
+because if one
+asset is giving more
+
+00:14:22.698 --> 00:14:24.420 align:middle line:84%
+return than the other
+expected return,
+
+00:14:24.420 --> 00:14:26.528 align:middle line:84%
+then people are
+going to invest all
+
+00:14:26.528 --> 00:14:27.820 align:middle line:90%
+their portfolios in that asset.
+
+00:14:27.820 --> 00:14:30.270 align:middle line:84%
+And what happens
+is those flows that
+
+00:14:30.270 --> 00:14:34.020 align:middle line:84%
+try to go to those assets that
+give the highest return end up
+
+00:14:34.020 --> 00:14:36.790 align:middle line:84%
+equalizing expected
+return in equilibrium.
+
+00:14:36.790 --> 00:14:40.660 align:middle line:84%
+And that's the equation that
+does that, exactly that.
+
+00:14:40.660 --> 00:14:41.890 align:middle line:90%
+How do I know that?
+
+00:14:41.890 --> 00:14:45.230 align:middle line:84%
+Well, remember,
+I can divide this
+
+00:14:45.230 --> 00:14:47.850 align:middle line:84%
+by the exchange
+rate on both sides.
+
+00:14:47.850 --> 00:14:52.430 align:middle line:84%
+And then what you get is 1
+equal to a numerator that
+
+00:14:52.430 --> 00:14:56.690 align:middle line:84%
+has the nominal exchange
+rate times the expected
+
+00:14:56.690 --> 00:14:59.600 align:middle line:90%
+appreciation of the currency.
+
+00:14:59.600 --> 00:15:02.960 align:middle line:84%
+And in the denominator, you
+have the foreign interest rate.
+
+00:15:02.960 --> 00:15:05.180 align:middle line:84%
+And so when you
+compare the two, you
+
+00:15:05.180 --> 00:15:09.560 align:middle line:84%
+have to compare one base
+interest rate, the domestic
+
+00:15:09.560 --> 00:15:11.718 align:middle line:84%
+or the foreign, plus the
+expected appreciation
+
+00:15:11.718 --> 00:15:13.260 align:middle line:84%
+of the appreciation
+of that currency.
+
+00:15:13.260 --> 00:15:15.170 align:middle line:84%
+And that's what this
+term is doing here,
+
+00:15:15.170 --> 00:15:16.790 align:middle line:90%
+this divided by that.
+
+00:15:16.790 --> 00:15:19.280 align:middle line:90%
+
+
+00:15:19.280 --> 00:15:19.780 align:middle line:90%
+Good.
+
+00:15:19.780 --> 00:15:21.360 align:middle line:90%
+So what do we get out of this?
+
+00:15:21.360 --> 00:15:23.790 align:middle line:84%
+One thing we're going
+to do for quite a while,
+
+00:15:23.790 --> 00:15:26.460 align:middle line:84%
+because it will simplify
+things a lot, but sometimes
+
+00:15:26.460 --> 00:15:32.910 align:middle line:84%
+also lead to confusion in the
+way we understand why currencies
+
+00:15:32.910 --> 00:15:34.420 align:middle line:90%
+depreciate or appreciate.
+
+00:15:34.420 --> 00:15:38.530 align:middle line:84%
+But we'll pause and I'll
+remind you of this repeatedly.
+
+00:15:38.530 --> 00:15:42.750 align:middle line:84%
+We're going to assume for now
+that the expected exchange
+
+00:15:42.750 --> 00:15:45.590 align:middle line:90%
+rate for t plus 1 is fixed.
+
+00:15:45.590 --> 00:15:49.350 align:middle line:84%
+And until I tell
+you otherwise, we're
+
+00:15:49.350 --> 00:15:53.190 align:middle line:90%
+going to make this assumption.
+
+00:15:53.190 --> 00:15:56.430 align:middle line:84%
+Now, that's a huge
+simplification, completely
+
+00:15:56.430 --> 00:15:58.300 align:middle line:90%
+unrealistic, and so on.
+
+00:15:58.300 --> 00:16:01.313 align:middle line:84%
+But it will help me
+explain the mechanism.
+
+00:16:01.313 --> 00:16:03.480 align:middle line:84%
+I mean, one of the things
+that moves exchanges a lot
+
+00:16:03.480 --> 00:16:05.147 align:middle line:84%
+is that people have
+lots of expectations
+
+00:16:05.147 --> 00:16:06.490 align:middle line:90%
+about future exchange rates.
+
+00:16:06.490 --> 00:16:08.260 align:middle line:90%
+We'll get to that later.
+
+00:16:08.260 --> 00:16:10.830 align:middle line:84%
+But for now, so you
+understand the mechanism,
+
+00:16:10.830 --> 00:16:13.380 align:middle line:84%
+how the Mundell-Fleming
+model works,
+
+00:16:13.380 --> 00:16:16.460 align:middle line:84%
+I'm going to assume that we all
+know what the expected exchange
+
+00:16:16.460 --> 00:16:18.630 align:middle line:84%
+rate-- we all have a common
+expected exchange rate
+
+00:16:18.630 --> 00:16:19.340 align:middle line:90%
+and it's fixed.
+
+00:16:19.340 --> 00:16:22.480 align:middle line:90%
+
+
+00:16:22.480 --> 00:16:24.310 align:middle line:90%
+We may move it as a parameter.
+
+00:16:24.310 --> 00:16:27.040 align:middle line:84%
+But I'm trying to say, I'm
+not going to endogenize that.
+
+00:16:27.040 --> 00:16:28.630 align:middle line:90%
+I'm going to take it as fixed.
+
+00:16:28.630 --> 00:16:31.150 align:middle line:84%
+And I may move it
+around to show you
+
+00:16:31.150 --> 00:16:32.800 align:middle line:90%
+what happens when that changes.
+
+00:16:32.800 --> 00:16:35.020 align:middle line:84%
+But I'm not going
+to endogenize it.
+
+00:16:35.020 --> 00:16:40.480 align:middle line:84%
+Otherwise, I need more
+equations, one more.
+
+00:16:40.480 --> 00:16:44.400 align:middle line:84%
+I want to stop this
+sequence of equations
+
+00:16:44.400 --> 00:16:47.500 align:middle line:90%
+that I would have to build.
+
+00:16:47.500 --> 00:16:50.000 align:middle line:84%
+Later we'll understand more
+that, what I just said.
+
+00:16:50.000 --> 00:16:52.220 align:middle line:84%
+But for now, just
+take this as fixed.
+
+00:16:52.220 --> 00:16:54.620 align:middle line:84%
+So if I take this as fixed,
+now I have an equation.
+
+00:16:54.620 --> 00:16:56.770 align:middle line:84%
+Remember, I was
+looking for an equation
+
+00:16:56.770 --> 00:17:00.080 align:middle line:90%
+here for my exchange rate.
+
+00:17:00.080 --> 00:17:02.750 align:middle line:84%
+Once I do that, then
+I have what I want.
+
+00:17:02.750 --> 00:17:05.230 align:middle line:84%
+I have an equation for
+my exchange rate today.
+
+00:17:05.230 --> 00:17:08.480 align:middle line:84%
+It's just a function of
+domestic interest rate,
+
+00:17:08.480 --> 00:17:13.130 align:middle line:84%
+international interest rate,
+and the expected exchange rate.
+
+00:17:13.130 --> 00:17:15.230 align:middle line:84%
+So I know the
+following, for example.
+
+00:17:15.230 --> 00:17:18.740 align:middle line:84%
+I know that an increase in
+the domestic interest rate,
+
+00:17:18.740 --> 00:17:22.252 align:middle line:84%
+other things equal,
+appreciates exchange rate.
+
+00:17:22.252 --> 00:17:23.460 align:middle line:90%
+I can see it in the equation.
+
+00:17:23.460 --> 00:17:25.339 align:middle line:84%
+If I move the domestic
+interest rate up,
+
+00:17:25.339 --> 00:17:26.792 align:middle line:90%
+the exchange rate goes up.
+
+00:17:26.792 --> 00:17:27.750 align:middle line:90%
+That's an appreciation.
+
+00:17:27.750 --> 00:17:31.090 align:middle line:84%
+The dollar becomes
+more expensive.
+
+00:17:31.090 --> 00:17:32.380 align:middle line:90%
+Even simpler.
+
+00:17:32.380 --> 00:17:34.180 align:middle line:84%
+Suppose we start
+with a situation
+
+00:17:34.180 --> 00:17:37.090 align:middle line:84%
+in which the domestic and the
+international interest rate
+
+00:17:37.090 --> 00:17:38.790 align:middle line:90%
+were the same.
+
+00:17:38.790 --> 00:17:41.200 align:middle line:84%
+And now I increase the
+international interest rate.
+
+00:17:41.200 --> 00:17:44.930 align:middle line:84%
+And I'm saying the exchange
+rate will appreciate.
+
+00:17:44.930 --> 00:17:50.080 align:middle line:84%
+Well, first of all, let me start
+with something even simpler.
+
+00:17:50.080 --> 00:17:53.420 align:middle line:84%
+Suppose that this
+interest rate is
+
+00:17:53.420 --> 00:17:54.920 align:middle line:84%
+equal to international
+interest rate
+
+00:17:54.920 --> 00:17:58.300 align:middle line:84%
+before analyzing the change
+I'm about to analyze.
+
+00:17:58.300 --> 00:18:01.700 align:middle line:84%
+Then from this equation, what
+do I know about exchange rate?
+
+00:18:01.700 --> 00:18:03.563 align:middle line:90%
+What is it equal to?
+
+00:18:03.563 --> 00:18:06.230 align:middle line:84%
+If the domestic interest rate is
+equal to international interest
+
+00:18:06.230 --> 00:18:09.535 align:middle line:84%
+rate, what is the exchange
+rate today equal to?
+
+00:18:09.535 --> 00:18:12.910 align:middle line:90%
+
+
+00:18:12.910 --> 00:18:14.420 align:middle line:84%
+The expected exchange
+of next year.
+
+00:18:14.420 --> 00:18:15.910 align:middle line:84%
+If I have the same
+interest rates,
+
+00:18:15.910 --> 00:18:19.000 align:middle line:84%
+I cannot expect a capital gain
+or loss on the currency position
+
+00:18:19.000 --> 00:18:22.670 align:middle line:84%
+because I have already an equal
+interest rate in the two bonds.
+
+00:18:22.670 --> 00:18:25.240 align:middle line:84%
+So then I'm starting
+from a situation
+
+00:18:25.240 --> 00:18:26.920 align:middle line:84%
+where the current
+exchange rate is
+
+00:18:26.920 --> 00:18:29.420 align:middle line:84%
+equal to the expected exchange
+rate and these two are equal.
+
+00:18:29.420 --> 00:18:31.810 align:middle line:84%
+And now I'm going to
+increase the interest rate,
+
+00:18:31.810 --> 00:18:33.410 align:middle line:90%
+the domestic interest rate.
+
+00:18:33.410 --> 00:18:36.160 align:middle line:84%
+And it's very easy for
+you to read from here
+
+00:18:36.160 --> 00:18:37.930 align:middle line:84%
+that the exchange
+rate will go up.
+
+00:18:37.930 --> 00:18:40.150 align:middle line:90%
+The currency will appreciate.
+
+00:18:40.150 --> 00:18:42.170 align:middle line:90%
+Why?
+
+00:18:42.170 --> 00:18:46.610 align:middle line:84%
+This is not an easy thing
+to answer unless you have
+
+00:18:46.610 --> 00:18:48.211 align:middle line:90%
+read the book or something.
+
+00:18:48.211 --> 00:18:50.830 align:middle line:90%
+
+
+00:18:50.830 --> 00:18:52.330 align:middle line:84%
+AUDIENCE: The
+interest rate goes up,
+
+00:18:52.330 --> 00:18:55.450 align:middle line:84%
+then money supply should go
+down, which would generally
+
+00:18:55.450 --> 00:18:56.870 align:middle line:90%
+increase the value of money.
+
+00:18:56.870 --> 00:18:57.870 align:middle line:90%
+RICARDO CABALLERO: Nope.
+
+00:18:57.870 --> 00:18:59.400 align:middle line:90%
+No money here.
+
+00:18:59.400 --> 00:19:01.590 align:middle line:84%
+That money is only related
+to the mechanism we
+
+00:19:01.590 --> 00:19:03.730 align:middle line:90%
+use to increase interest rate.
+
+00:19:03.730 --> 00:19:08.050 align:middle line:84%
+But I'm saying just use
+that equation and the logic
+
+00:19:08.050 --> 00:19:10.640 align:middle line:84%
+behind that equation, the
+uncovered interest parity.
+
+00:19:10.640 --> 00:19:13.900 align:middle line:84%
+Why is it that if we went
+to financial situation
+
+00:19:13.900 --> 00:19:15.687 align:middle line:84%
+which interest
+were the same, now
+
+00:19:15.687 --> 00:19:17.270 align:middle line:84%
+I increase the
+domestic interest rate.
+
+00:19:17.270 --> 00:19:22.015 align:middle line:84%
+I'm saying the exchange
+rate has to appreciate.
+
+00:19:22.015 --> 00:19:23.307 align:middle line:90%
+AUDIENCE: [INAUDIBLE]
+
+00:19:23.307 --> 00:19:25.640 align:middle line:84%
+RICARDO CABALLERO: No, no,
+but that's a description of--
+
+00:19:25.640 --> 00:19:27.850 align:middle line:90%
+yeah, we know that.
+
+00:19:27.850 --> 00:19:29.640 align:middle line:84%
+The question is,
+what is the logic?
+
+00:19:29.640 --> 00:19:32.860 align:middle line:90%
+
+
+00:19:32.860 --> 00:19:35.380 align:middle line:84%
+Yeah, we know the
+result. What I'm
+
+00:19:35.380 --> 00:19:40.780 align:middle line:84%
+asking is for an economic
+explanation for that result.
+
+00:19:40.780 --> 00:19:44.190 align:middle line:84%
+AUDIENCE: More people will
+want to invest in the currency,
+
+00:19:44.190 --> 00:19:46.398 align:middle line:84%
+using currency, so the
+demand go up and [INAUDIBLE]..
+
+00:19:46.398 --> 00:19:48.982 align:middle line:84%
+RICARDO CABALLERO: Well, if you
+go to Wall Street, [INAUDIBLE]
+
+00:19:48.982 --> 00:19:50.640 align:middle line:84%
+they will explain
+it in those terms.
+
+00:19:50.640 --> 00:19:51.990 align:middle line:90%
+It's not the right explanation.
+
+00:19:51.990 --> 00:19:53.770 align:middle line:84%
+But they will explain
+it on those terms.
+
+00:19:53.770 --> 00:19:55.890 align:middle line:84%
+And there is some
+logic behind that
+
+00:19:55.890 --> 00:19:59.130 align:middle line:84%
+because this equation assumes
+that the arbitrage happens
+
+00:19:59.130 --> 00:19:59.950 align:middle line:90%
+instantaneously.
+
+00:19:59.950 --> 00:20:01.110 align:middle line:90%
+Immediately things move.
+
+00:20:01.110 --> 00:20:03.840 align:middle line:84%
+But before that
+happens, some people
+
+00:20:03.840 --> 00:20:07.180 align:middle line:84%
+will start buying more of
+the one that has more return.
+
+00:20:07.180 --> 00:20:10.650 align:middle line:84%
+But this equation
+already solves all that.
+
+00:20:10.650 --> 00:20:14.080 align:middle line:84%
+And that's when this
+assumption matters.
+
+00:20:14.080 --> 00:20:15.990 align:middle line:90%
+And it's a little annoying.
+
+00:20:15.990 --> 00:20:17.790 align:middle line:84%
+It bothers me for a
+variety of reasons.
+
+00:20:17.790 --> 00:20:20.820 align:middle line:84%
+But we're going to use it
+to understand the mechanism.
+
+00:20:20.820 --> 00:20:24.600 align:middle line:84%
+You see, if I keep the changes
+fixed, we start with a situation
+
+00:20:24.600 --> 00:20:27.720 align:middle line:84%
+where the exchange rate was
+equal to expected exchange rate.
+
+00:20:27.720 --> 00:20:32.070 align:middle line:84%
+If I keep it fixed and I
+appreciate the currency today,
+
+00:20:32.070 --> 00:20:36.562 align:middle line:84%
+then what do I expect to
+happen to the dollar--
+
+00:20:36.562 --> 00:20:37.770 align:middle line:90%
+let's talk about the dollar--
+
+00:20:37.770 --> 00:20:39.810 align:middle line:84%
+from this period
+to the next one.
+
+00:20:39.810 --> 00:20:41.413 align:middle line:84%
+Remember, we start
+from a situation
+
+00:20:41.413 --> 00:20:43.830 align:middle line:84%
+where the exchange rate was
+equal to the expected exchange
+
+00:20:43.830 --> 00:20:44.080 align:middle line:90%
+rate.
+
+00:20:44.080 --> 00:20:46.050 align:middle line:84%
+Now I increase the
+interest rate and I said
+
+00:20:46.050 --> 00:20:48.740 align:middle line:90%
+the exchange rate appreciates.
+
+00:20:48.740 --> 00:20:51.620 align:middle line:84%
+Then what do you expect the
+exchange rate to do over
+
+00:20:51.620 --> 00:20:53.420 align:middle line:90%
+the next period?
+
+00:20:53.420 --> 00:20:55.340 align:middle line:84%
+If I have a move
+expected exchanger, now
+
+00:20:55.340 --> 00:20:57.980 align:middle line:84%
+the exchanger moves above
+the expected exchange rate,
+
+00:20:57.980 --> 00:21:00.000 align:middle line:84%
+what do you expect the
+exchange rate to do?
+
+00:21:00.000 --> 00:21:03.480 align:middle line:90%
+
+
+00:21:03.480 --> 00:21:04.000 align:middle line:90%
+Exactly.
+
+00:21:04.000 --> 00:21:05.730 align:middle line:90%
+It has to depreciate.
+
+00:21:05.730 --> 00:21:09.210 align:middle line:84%
+So the reason the
+depreciation happens here
+
+00:21:09.210 --> 00:21:12.990 align:middle line:84%
+is because you need to
+expect depreciate the dollar
+
+00:21:12.990 --> 00:21:14.780 align:middle line:84%
+from this period
+to the next one.
+
+00:21:14.780 --> 00:21:20.180 align:middle line:84%
+Why do I need to expect the
+exchange rate to depreciate?
+
+00:21:20.180 --> 00:21:22.220 align:middle line:84%
+So not appreciating
+the currency,
+
+00:21:22.220 --> 00:21:24.600 align:middle line:84%
+in equilibrium, I need
+to expect to depreciate.
+
+00:21:24.600 --> 00:21:28.130 align:middle line:84%
+That is, I need to expect to
+lose money on the currency
+
+00:21:28.130 --> 00:21:30.090 align:middle line:90%
+part of the trade.
+
+00:21:30.090 --> 00:21:31.070 align:middle line:90%
+Why is that?
+
+00:21:31.070 --> 00:21:32.310 align:middle line:90%
+Confusion is good.
+
+00:21:32.310 --> 00:21:34.560 align:middle line:90%
+You learn from that.
+
+00:21:34.560 --> 00:21:36.530 align:middle line:84%
+And this can be very
+confusing, I know.
+
+00:21:36.530 --> 00:21:40.260 align:middle line:90%
+
+
+00:21:40.260 --> 00:21:42.095 align:middle line:84%
+What is this equation
+trying to do?
+
+00:21:42.095 --> 00:21:46.140 align:middle line:90%
+
+
+00:21:46.140 --> 00:21:48.850 align:middle line:84%
+We are trying to make the
+specter returns the same.
+
+00:21:48.850 --> 00:21:50.400 align:middle line:90%
+That's the whole idea of this.
+
+00:21:50.400 --> 00:21:54.720 align:middle line:84%
+So if I am now telling you that
+one bond is paying a higher
+
+00:21:54.720 --> 00:21:56.610 align:middle line:84%
+interest rate than
+the other one,
+
+00:21:56.610 --> 00:21:59.580 align:middle line:90%
+I need to offset that somehow.
+
+00:21:59.580 --> 00:22:04.140 align:middle line:84%
+How do I offset it by expecting
+a depreciation of the currency
+
+00:22:04.140 --> 00:22:08.370 align:middle line:84%
+of the bond, that
+is, the bond that
+
+00:22:08.370 --> 00:22:12.040 align:middle line:84%
+is denominated in the currency
+that is expected to depreciate?
+
+00:22:12.040 --> 00:22:16.020 align:middle line:84%
+So what I need to do is
+compensate for the interest rate
+
+00:22:16.020 --> 00:22:18.000 align:middle line:84%
+differential with an
+expected depreciation
+
+00:22:18.000 --> 00:22:22.060 align:middle line:84%
+of the currency that is
+paying a higher interest rate.
+
+00:22:22.060 --> 00:22:25.273 align:middle line:84%
+So that's what, in this model,
+when I fix the expected exchange
+
+00:22:25.273 --> 00:22:27.940 align:middle line:84%
+rate, the only way I can do that
+is by appreciating the currency
+
+00:22:27.940 --> 00:22:32.240 align:middle line:84%
+today so I can expect it to
+depreciate in the future.
+
+00:22:32.240 --> 00:22:34.880 align:middle line:90%
+That's the logic.
+
+00:22:34.880 --> 00:22:38.100 align:middle line:84%
+Now, what is the connection
+with Wall Street?
+
+00:22:38.100 --> 00:22:40.850 align:middle line:84%
+They will tell you,
+well, before this
+
+00:22:40.850 --> 00:22:42.680 align:middle line:90%
+may happen not instantaneously.
+
+00:22:42.680 --> 00:22:44.640 align:middle line:90%
+It happens somewhat slowly.
+
+00:22:44.640 --> 00:22:49.050 align:middle line:84%
+So traders immediately will
+go to the US dollar bond
+
+00:22:49.050 --> 00:22:51.960 align:middle line:84%
+because they see that
+they have a higher return.
+
+00:22:51.960 --> 00:22:56.350 align:middle line:84%
+And it will be the case until
+the currency really appreciates.
+
+00:22:56.350 --> 00:22:58.240 align:middle line:84%
+Once the currency
+appreciates enough,
+
+00:22:58.240 --> 00:23:00.290 align:middle line:90%
+then that advantage disappear.
+
+00:23:00.290 --> 00:23:01.790 align:middle line:84%
+That's what this
+condition is doing.
+
+00:23:01.790 --> 00:23:03.530 align:middle line:84%
+It's making the spectral
+return the same.
+
+00:23:03.530 --> 00:23:05.500 align:middle line:84%
+But in the process
+of the exchange
+
+00:23:05.500 --> 00:23:07.000 align:middle line:84%
+going from the
+initial exchange rate
+
+00:23:07.000 --> 00:23:10.000 align:middle line:84%
+to the new equilibrium
+exchange rate,
+
+00:23:10.000 --> 00:23:11.600 align:middle line:84%
+there may be an
+opportunity there.
+
+00:23:11.600 --> 00:23:14.140 align:middle line:84%
+And that's when you
+start seeing these flows.
+
+00:23:14.140 --> 00:23:15.790 align:middle line:90%
+That happens very, very fast.
+
+00:23:15.790 --> 00:23:18.110 align:middle line:84%
+But that's when you can
+see some of those flows.
+
+00:23:18.110 --> 00:23:24.050 align:middle line:90%
+
+
+00:23:24.050 --> 00:23:26.580 align:middle line:84%
+I mean, in this market, that
+happens very, very quickly.
+
+00:23:26.580 --> 00:23:28.933 align:middle line:84%
+So what is typically wrong
+is that then an analyst comes
+
+00:23:28.933 --> 00:23:30.350 align:middle line:84%
+and tells you,
+explains the story,
+
+00:23:30.350 --> 00:23:32.370 align:middle line:84%
+why the exchange rate is going
+to continue to appreciate.
+
+00:23:32.370 --> 00:23:33.860 align:middle line:90%
+Well, that's just way too late.
+
+00:23:33.860 --> 00:23:35.400 align:middle line:84%
+You're already in
+this environment.
+
+00:23:35.400 --> 00:23:36.192 align:middle line:90%
+You lost the trade.
+
+00:23:36.192 --> 00:23:42.580 align:middle line:90%
+
+
+00:23:42.580 --> 00:23:47.400 align:middle line:84%
+What about an increase in the
+foreign interest rate, I star?
+
+00:23:47.400 --> 00:23:48.990 align:middle line:84%
+So an increase in
+the foreign interest
+
+00:23:48.990 --> 00:23:51.360 align:middle line:84%
+rate, let's start from the
+same situation we had before.
+
+00:23:51.360 --> 00:23:53.670 align:middle line:84%
+We start from interest rate
+equal to international interest
+
+00:23:53.670 --> 00:23:54.182 align:middle line:90%
+rate.
+
+00:23:54.182 --> 00:23:56.640 align:middle line:84%
+Therefore, the exchange rate
+is equal to the exchange rate.
+
+00:23:56.640 --> 00:24:02.270 align:middle line:84%
+And now the foreign
+interest rate goes up.
+
+00:24:02.270 --> 00:24:03.990 align:middle line:90%
+What is going on now in the US.
+
+00:24:03.990 --> 00:24:05.870 align:middle line:84%
+The US is sort of
+stabilizing here.
+
+00:24:05.870 --> 00:24:10.180 align:middle line:84%
+And Europe is beginning to
+hike a little more than the US.
+
+00:24:10.180 --> 00:24:14.230 align:middle line:84%
+So we know from the
+equation that means
+
+00:24:14.230 --> 00:24:16.790 align:middle line:90%
+the exchange rate will fall.
+
+00:24:16.790 --> 00:24:18.080 align:middle line:90%
+That is will drop here.
+
+00:24:18.080 --> 00:24:21.050 align:middle line:84%
+So that means the exchange
+rate is depreciated
+
+00:24:21.050 --> 00:24:23.510 align:middle line:90%
+and the dollar is depreciating.
+
+00:24:23.510 --> 00:24:25.230 align:middle line:90%
+Why is the dollar depreciating?
+
+00:24:25.230 --> 00:24:31.070 align:middle line:90%
+
+
+00:24:31.070 --> 00:24:32.960 align:middle line:84%
+AUDIENCE: Needs
+the same mechanism
+
+00:24:32.960 --> 00:24:35.960 align:middle line:84%
+that you described previously,
+except replacing Et with 1
+
+00:24:35.960 --> 00:24:37.080 align:middle line:90%
+over star key.
+
+00:24:37.080 --> 00:24:39.690 align:middle line:84%
+RICARDO CABALLERO:
+Yeah, that's correct.
+
+00:24:39.690 --> 00:24:42.060 align:middle line:84%
+I mean, the issue here
+in terms of the economics
+
+00:24:42.060 --> 00:24:45.010 align:middle line:84%
+is that, remember, if we
+start from the same interest
+
+00:24:45.010 --> 00:24:46.788 align:middle line:84%
+rate and now all
+the [INAUDIBLE] I'm
+
+00:24:46.788 --> 00:24:49.330 align:middle line:84%
+giving you doesn't need to start
+with the same interest rate.
+
+00:24:49.330 --> 00:24:52.148 align:middle line:84%
+It's just simpler to start
+from the same interest.
+
+00:24:52.148 --> 00:24:54.190 align:middle line:84%
+But suppose we start with
+the same interest rate.
+
+00:24:54.190 --> 00:24:55.770 align:middle line:90%
+And now we increase this one.
+
+00:24:55.770 --> 00:24:58.650 align:middle line:84%
+Then that means the foreign
+bond is paying a higher interest
+
+00:24:58.650 --> 00:25:00.570 align:middle line:90%
+rate than the domestic bond.
+
+00:25:00.570 --> 00:25:02.560 align:middle line:84%
+I need to equalize
+the spectral returns.
+
+00:25:02.560 --> 00:25:06.240 align:middle line:84%
+The only way I can do that is by
+having an expected appreciation
+
+00:25:06.240 --> 00:25:08.280 align:middle line:90%
+of the dollar.
+
+00:25:08.280 --> 00:25:10.135 align:middle line:84%
+Since the expected
+exchange, we fix it here.
+
+00:25:10.135 --> 00:25:11.760 align:middle line:84%
+The only way I can
+give you an expected
+
+00:25:11.760 --> 00:25:14.630 align:middle line:84%
+appreciation of the dollar is by
+depreciating the dollar today.
+
+00:25:14.630 --> 00:25:18.120 align:middle line:90%
+
+
+00:25:18.120 --> 00:25:19.390 align:middle line:90%
+So this is the same mechanism.
+
+00:25:19.390 --> 00:25:21.660 align:middle line:90%
+The same logic is symmetric.
+
+00:25:21.660 --> 00:25:24.180 align:middle line:90%
+That's the mechanism.
+
+00:25:24.180 --> 00:25:27.720 align:middle line:84%
+Now, is this true that in the
+very short run, when I star
+
+00:25:27.720 --> 00:25:30.938 align:middle line:84%
+goes up and I doesn't
+move, then lots of people
+
+00:25:30.938 --> 00:25:31.980 align:middle line:90%
+go and buy foreign bonds.
+
+00:25:31.980 --> 00:25:34.545 align:middle line:84%
+And that produces sort
+of demand for euros
+
+00:25:34.545 --> 00:25:35.670 align:middle line:90%
+and blah, blah, blah, blah.
+
+00:25:35.670 --> 00:25:37.740 align:middle line:90%
+But that's very quick.
+
+00:25:37.740 --> 00:25:39.120 align:middle line:90%
+Machines do it for you now.
+
+00:25:39.120 --> 00:25:43.370 align:middle line:90%
+So it happens very quickly.
+
+00:25:43.370 --> 00:25:45.050 align:middle line:84%
+So this equation
+shows you what happens
+
+00:25:45.050 --> 00:25:47.480 align:middle line:84%
+after all that mess
+has already cleared,
+
+00:25:47.480 --> 00:25:49.230 align:middle line:90%
+which happens in milliseconds.
+
+00:25:49.230 --> 00:25:53.890 align:middle line:90%
+
+
+00:25:53.890 --> 00:25:59.020 align:middle line:84%
+OK, what if I change
+expected exchange rate?
+
+00:25:59.020 --> 00:26:00.720 align:middle line:90%
+So again, I'm fixing it.
+
+00:26:00.720 --> 00:26:02.188 align:middle line:90%
+But I can move it around.
+
+00:26:02.188 --> 00:26:03.480 align:middle line:90%
+I'm treating it as a parameter.
+
+00:26:03.480 --> 00:26:07.330 align:middle line:84%
+When I say I fix it, I just
+don't want to endogenize it.
+
+00:26:07.330 --> 00:26:09.930 align:middle line:84%
+I don't want to make it
+another endogenous variable.
+
+00:26:09.930 --> 00:26:11.962 align:middle line:84%
+So what happens here
+is the exchange rate,
+
+00:26:11.962 --> 00:26:13.920 align:middle line:84%
+we start with the same
+situation we had before.
+
+00:26:13.920 --> 00:26:15.750 align:middle line:84%
+Now the expected
+exchange rate goes up.
+
+00:26:15.750 --> 00:26:17.730 align:middle line:84%
+Well, from the equation
+it's very clear.
+
+00:26:17.730 --> 00:26:21.070 align:middle line:84%
+The current exchange
+rate immediately rises--
+
+00:26:21.070 --> 00:26:23.110 align:middle line:90%
+one for one, in fact.
+
+00:26:23.110 --> 00:26:25.760 align:middle line:84%
+If I have these two
+interest rate at the same.
+
+00:26:25.760 --> 00:26:27.730 align:middle line:84%
+And now I move the
+expected exchange rate up,
+
+00:26:27.730 --> 00:26:31.740 align:middle line:84%
+then the current exchange
+rate immediately jumps.
+
+00:26:31.740 --> 00:26:35.760 align:middle line:84%
+So if we expect the dollar
+to appreciate in the future,
+
+00:26:35.760 --> 00:26:37.650 align:middle line:90%
+then it depreciates today.
+
+00:26:37.650 --> 00:26:40.910 align:middle line:90%
+Why is that?
+
+00:26:40.910 --> 00:26:44.540 align:middle line:84%
+Expectations are very powerful
+in financial assets in general.
+
+00:26:44.540 --> 00:26:46.340 align:middle line:90%
+This is the first time you come.
+
+00:26:46.340 --> 00:26:50.400 align:middle line:84%
+And we'll talk a lot more
+about that in the next week.
+
+00:26:50.400 --> 00:26:53.060 align:middle line:90%
+But you can see it here.
+
+00:26:53.060 --> 00:26:56.715 align:middle line:84%
+So if I move the
+exchange rate today up,
+
+00:26:56.715 --> 00:26:57.840 align:middle line:90%
+the expected exchange rate.
+
+00:26:57.840 --> 00:26:59.370 align:middle line:84%
+It means expect the
+exchange to be--
+
+00:26:59.370 --> 00:27:05.940 align:middle line:84%
+we know today the
+dollar is $0.90--
+
+00:27:05.940 --> 00:27:07.810 align:middle line:90%
+0.9 euros per dollar.
+
+00:27:07.810 --> 00:27:12.143 align:middle line:84%
+Well, suppose I expect 1 euro
+per dollar in the next period.
+
+00:27:12.143 --> 00:27:13.810 align:middle line:84%
+What will happen to
+exchange rate today?
+
+00:27:13.810 --> 00:27:16.390 align:middle line:90%
+Well, it jumps today to 1.
+
+00:27:16.390 --> 00:27:17.130 align:middle line:90%
+Why is that?
+
+00:27:17.130 --> 00:27:24.605 align:middle line:90%
+
+
+00:27:24.605 --> 00:27:26.980 align:middle line:84%
+AUDIENCE: The dollar will be
+more expensive to buy later.
+
+00:27:26.980 --> 00:27:28.560 align:middle line:90%
+So people are--
+
+00:27:28.560 --> 00:27:29.480 align:middle line:90%
+RICARDO CABALLERO: OK.
+
+00:27:29.480 --> 00:27:31.190 align:middle line:84%
+That's your friend,
+the trader there.
+
+00:27:31.190 --> 00:27:36.120 align:middle line:90%
+
+
+00:27:36.120 --> 00:27:39.790 align:middle line:90%
+Yes, that's true.
+
+00:27:39.790 --> 00:27:42.730 align:middle line:90%
+
+
+00:27:42.730 --> 00:27:43.430 align:middle line:90%
+That's true.
+
+00:27:43.430 --> 00:27:47.980 align:middle line:90%
+What does that mean, though?
+
+00:27:47.980 --> 00:27:48.567 align:middle line:90%
+It is true.
+
+00:27:48.567 --> 00:27:49.400 align:middle line:90%
+It's more expensive.
+
+00:27:49.400 --> 00:27:52.340 align:middle line:84%
+But why did you want to
+buy it to start with?
+
+00:27:52.340 --> 00:27:54.590 align:middle line:84%
+I mean, who cares that
+something is more expensive.
+
+00:27:54.590 --> 00:27:55.940 align:middle line:90%
+You are not planning to buy it.
+
+00:27:55.940 --> 00:28:00.070 align:middle line:90%
+
+
+00:28:00.070 --> 00:28:02.560 align:middle line:84%
+AUDIENCE: Because the current
+price or something also
+
+00:28:02.560 --> 00:28:05.120 align:middle line:84%
+has to take into account
+the future price.
+
+00:28:05.120 --> 00:28:07.750 align:middle line:84%
+RICARDO CABALLERO: That's
+what the equation says, yes.
+
+00:28:07.750 --> 00:28:09.700 align:middle line:84%
+AUDIENCE: Because
+it's part of it.
+
+00:28:09.700 --> 00:28:12.130 align:middle line:84%
+Because its value, at
+the present moment,
+
+00:28:12.130 --> 00:28:16.450 align:middle line:84%
+takes into account some of
+its value in the future.
+
+00:28:16.450 --> 00:28:19.100 align:middle line:84%
+RICARDO CABALLERO: This is an
+arbitrage type relationship.
+
+00:28:19.100 --> 00:28:22.360 align:middle line:84%
+And what I suggest is whenever
+you come across an arbitrage
+
+00:28:22.360 --> 00:28:26.920 align:middle line:84%
+type argument, you ask the
+question, well, suppose not.
+
+00:28:26.920 --> 00:28:28.960 align:middle line:90%
+Suppose this didn't happen.
+
+00:28:28.960 --> 00:28:30.440 align:middle line:90%
+What would then happen?
+
+00:28:30.440 --> 00:28:33.645 align:middle line:90%
+What would look odd?
+
+00:28:33.645 --> 00:28:36.270 align:middle line:84%
+Almost any arbitrary, that's a
+good way of thinking about this.
+
+00:28:36.270 --> 00:28:38.460 align:middle line:84%
+The equation tells me
+that the exchange rate
+
+00:28:38.460 --> 00:28:40.660 align:middle line:90%
+has to jump right away.
+
+00:28:40.660 --> 00:28:41.780 align:middle line:90%
+But suppose not.
+
+00:28:41.780 --> 00:28:44.450 align:middle line:90%
+What goes wrong?
+
+00:28:44.450 --> 00:28:47.420 align:middle line:84%
+Well, I think that's
+the way, the easiest
+
+00:28:47.420 --> 00:28:49.430 align:middle line:84%
+way to think about any
+of these asset pricing
+
+00:28:49.430 --> 00:28:52.040 align:middle line:90%
+in general, by the way.
+
+00:28:52.040 --> 00:28:53.123 align:middle line:90%
+Well, suppose not.
+
+00:28:53.123 --> 00:28:55.040 align:middle line:84%
+Suppose that the expected
+change that goes up.
+
+00:28:55.040 --> 00:28:56.600 align:middle line:84%
+The interest rates
+haven't changed.
+
+00:28:56.600 --> 00:28:58.770 align:middle line:84%
+And the exchange rate
+today doesn't move.
+
+00:28:58.770 --> 00:29:00.940 align:middle line:90%
+What happens then?
+
+00:29:00.940 --> 00:29:03.970 align:middle line:84%
+Remember, we're in a situation
+with both interest rates
+
+00:29:03.970 --> 00:29:05.140 align:middle line:90%
+are the same.
+
+00:29:05.140 --> 00:29:10.250 align:middle line:84%
+Now, the expected changes
+went up by 10%, say.
+
+00:29:10.250 --> 00:29:16.090 align:middle line:84%
+And the current exchange
+rate hasn't moved.
+
+00:29:16.090 --> 00:29:19.510 align:middle line:84%
+I'm sure between the two of
+you, you can design this trade.
+
+00:29:19.510 --> 00:29:20.355 align:middle line:90%
+What do you do?
+
+00:29:20.355 --> 00:29:25.530 align:middle line:90%
+
+
+00:29:25.530 --> 00:29:27.280 align:middle line:84%
+AUDIENCE: Everyone
+would buy foreign bonds
+
+00:29:27.280 --> 00:29:28.930 align:middle line:90%
+in the next period.
+
+00:29:28.930 --> 00:29:30.825 align:middle line:84%
+And no one would in
+the first period.
+
+00:29:30.825 --> 00:29:33.467 align:middle line:90%
+
+
+00:29:33.467 --> 00:29:34.550 align:middle line:90%
+RICARDO CABALLERO: No, no.
+
+00:29:34.550 --> 00:29:35.633 align:middle line:90%
+But what did you do today?
+
+00:29:35.633 --> 00:29:38.790 align:middle line:90%
+
+
+00:29:38.790 --> 00:29:40.740 align:middle line:90%
+Suppose you're a trader.
+
+00:29:40.740 --> 00:29:43.680 align:middle line:84%
+And now you see, whoops,
+the exchange, the dollar
+
+00:29:43.680 --> 00:29:44.717 align:middle line:90%
+will appreciate 10%.
+
+00:29:44.717 --> 00:29:46.050 align:middle line:90%
+The interest rates are the same.
+
+00:29:46.050 --> 00:29:47.680 align:middle line:84%
+And the exchange is
+not moving today.
+
+00:29:47.680 --> 00:29:48.305 align:middle line:90%
+What do you do?
+
+00:29:48.305 --> 00:29:58.790 align:middle line:90%
+
+
+00:29:58.790 --> 00:29:59.905 align:middle line:90%
+Which bond do you buy?
+
+00:29:59.905 --> 00:30:03.897 align:middle line:90%
+
+
+00:30:03.897 --> 00:30:05.480 align:middle line:84%
+AUDIENCE: Buy a lot
+of American bonds.
+
+00:30:05.480 --> 00:30:06.350 align:middle line:84%
+RICARDO CABALLERO: Of
+course, because you
+
+00:30:06.350 --> 00:30:09.390 align:middle line:84%
+have a 10% expected capital
+gain from buying that bond
+
+00:30:09.390 --> 00:30:10.490 align:middle line:90%
+if that doesn't happen.
+
+00:30:10.490 --> 00:30:12.660 align:middle line:84%
+The two bonds are paying
+the same interest rate.
+
+00:30:12.660 --> 00:30:14.390 align:middle line:84%
+And now I tell you,
+well, yeah, but one
+
+00:30:14.390 --> 00:30:17.730 align:middle line:84%
+is going to appreciate by
+10% relative to the other.
+
+00:30:17.730 --> 00:30:21.290 align:middle line:84%
+So clearly, you go short
+massively the foreign bond.
+
+00:30:21.290 --> 00:30:23.190 align:middle line:84%
+And you go very
+long the US bond.
+
+00:30:23.190 --> 00:30:25.310 align:middle line:90%
+That's what you do.
+
+00:30:25.310 --> 00:30:26.490 align:middle line:90%
+We all want to do the same.
+
+00:30:26.490 --> 00:30:28.460 align:middle line:90%
+So it happens very quickly.
+
+00:30:28.460 --> 00:30:31.460 align:middle line:84%
+And the changes
+appreciated today up
+
+00:30:31.460 --> 00:30:35.390 align:middle line:84%
+to a point in which that
+incentive is no longer there.
+
+00:30:35.390 --> 00:30:38.190 align:middle line:84%
+And in this particular case, if
+the interest rate are the same,
+
+00:30:38.190 --> 00:30:40.760 align:middle line:84%
+that will happen only if the
+exchange rate jumps exactly
+
+00:30:40.760 --> 00:30:44.960 align:middle line:84%
+by the same amount as
+expected appreciation of the--
+
+00:30:44.960 --> 00:30:48.665 align:middle line:84%
+expected value of the
+dollar change in the future.
+
+00:30:48.665 --> 00:30:51.740 align:middle line:90%
+
+
+00:30:51.740 --> 00:30:52.460 align:middle line:90%
+Think about this.
+
+00:30:52.460 --> 00:30:53.418 align:middle line:90%
+Play with these things.
+
+00:30:53.418 --> 00:30:54.740 align:middle line:90%
+I know it can be confusing.
+
+00:30:54.740 --> 00:30:58.850 align:middle line:84%
+And I always start with
+let me move something.
+
+00:30:58.850 --> 00:31:00.858 align:middle line:84%
+The equation tells
+me this is what has
+
+00:31:00.858 --> 00:31:02.150 align:middle line:90%
+to happen to the exchange rate.
+
+00:31:02.150 --> 00:31:04.790 align:middle line:84%
+Well, suppose that didn't
+happen to the exchange rate.
+
+00:31:04.790 --> 00:31:08.130 align:middle line:84%
+And then you say, then I
+clearly invest in this bond.
+
+00:31:08.130 --> 00:31:09.340 align:middle line:90%
+This dominates the other one.
+
+00:31:09.340 --> 00:31:12.620 align:middle line:84%
+Well, that condition tells
+you no, no, in equilibrium
+
+00:31:12.620 --> 00:31:14.010 align:middle line:90%
+you have to be indifferent.
+
+00:31:14.010 --> 00:31:16.760 align:middle line:84%
+So the only thing you can
+move is exchange rate.
+
+00:31:16.760 --> 00:31:19.100 align:middle line:84%
+And the exchange has to move
+until you are indifferent
+
+00:31:19.100 --> 00:31:22.760 align:middle line:84%
+again after you have done
+some change, some argument
+
+00:31:22.760 --> 00:31:23.880 align:middle line:90%
+on the right hand side.
+
+00:31:23.880 --> 00:31:27.810 align:middle line:84%
+That's the way you
+need to think about it.
+
+00:31:27.810 --> 00:31:35.570 align:middle line:84%
+So here I'm just plotting
+this relationship
+
+00:31:35.570 --> 00:31:38.330 align:middle line:84%
+in the space of exchange
+rate in the x-axis
+
+00:31:38.330 --> 00:31:42.240 align:middle line:84%
+and the domestic
+interest rate here.
+
+00:31:42.240 --> 00:31:44.820 align:middle line:84%
+So that's an upward
+sloping relationship.
+
+00:31:44.820 --> 00:31:47.580 align:middle line:84%
+You can see here that as I
+move the interest rate up
+
+00:31:47.580 --> 00:31:48.580 align:middle line:90%
+or the other way around.
+
+00:31:48.580 --> 00:31:50.970 align:middle line:84%
+But anyways, if I move
+the interest rate up,
+
+00:31:50.970 --> 00:31:52.420 align:middle line:90%
+the exchange is going up.
+
+00:31:52.420 --> 00:31:54.600 align:middle line:84%
+So that's a positive
+relationship.
+
+00:31:54.600 --> 00:31:56.020 align:middle line:84%
+I can do it the
+other way around.
+
+00:31:56.020 --> 00:31:58.645 align:middle line:84%
+As I move the exchange rate up,
+then the domestic interest rate
+
+00:31:58.645 --> 00:31:59.220 align:middle line:90%
+has to go up.
+
+00:31:59.220 --> 00:32:02.730 align:middle line:84%
+I'm taking as parameters,
+the foreign interest rate
+
+00:32:02.730 --> 00:32:05.780 align:middle line:90%
+and the expected exchange rate.
+
+00:32:05.780 --> 00:32:07.740 align:middle line:84%
+If I take as parameter
+this and that,
+
+00:32:07.740 --> 00:32:09.270 align:middle line:84%
+then I have a
+positive relationship
+
+00:32:09.270 --> 00:32:12.690 align:middle line:84%
+between the exchange rate and
+the domestic interest rate.
+
+00:32:12.690 --> 00:32:14.880 align:middle line:90%
+So that's going to be--
+
+00:32:14.880 --> 00:32:19.050 align:middle line:84%
+I'm plotting the UIP and
+covering parity condition.
+
+00:32:19.050 --> 00:32:21.560 align:middle line:84%
+Notice this point
+here is interesting.
+
+00:32:21.560 --> 00:32:25.860 align:middle line:84%
+This point tells you that when
+the domestic interest rate, I,
+
+00:32:25.860 --> 00:32:28.380 align:middle line:84%
+is equal to the
+International interest rate,
+
+00:32:28.380 --> 00:32:32.790 align:middle line:84%
+then the exchange rate has to be
+equal to the expected exchange
+
+00:32:32.790 --> 00:32:35.205 align:middle line:84%
+rate, which is the
+question I asked before.
+
+00:32:35.205 --> 00:32:36.580 align:middle line:84%
+Remember, I asked
+you a question,
+
+00:32:36.580 --> 00:32:38.413 align:middle line:84%
+let's suppose that we
+start with an interest
+
+00:32:38.413 --> 00:32:41.265 align:middle line:84%
+rate that is equal to the
+International interest rate.
+
+00:32:41.265 --> 00:32:44.660 align:middle line:90%
+
+
+00:32:44.660 --> 00:32:45.870 align:middle line:90%
+What is the exchange rate?
+
+00:32:45.870 --> 00:32:47.728 align:middle line:84%
+And you said the
+answer was, well,
+
+00:32:47.728 --> 00:32:49.770 align:middle line:84%
+it has to be equal to the
+expected exchange rate.
+
+00:32:49.770 --> 00:32:50.980 align:middle line:90%
+That's that point here.
+
+00:32:50.980 --> 00:32:53.500 align:middle line:90%
+
+
+00:32:53.500 --> 00:32:57.150 align:middle line:84%
+If the interest rate, domestic
+interest rate, is above that,
+
+00:32:57.150 --> 00:33:01.050 align:middle line:84%
+the international interest
+rate, then the exchange rate
+
+00:33:01.050 --> 00:33:04.020 align:middle line:84%
+today has to be above the
+expected exchange rate
+
+00:33:04.020 --> 00:33:06.485 align:middle line:84%
+because that will give you
+a expected depreciation
+
+00:33:06.485 --> 00:33:08.610 align:middle line:84%
+of the currency, which will
+compensate for the fact
+
+00:33:08.610 --> 00:33:11.880 align:middle line:84%
+that the domestic bond is
+paying a higher interest
+
+00:33:11.880 --> 00:33:15.290 align:middle line:90%
+rate than international bond.
+
+00:33:15.290 --> 00:33:19.340 align:middle line:84%
+Conversely, if the domestic bond
+is paying a lower interest rate,
+
+00:33:19.340 --> 00:33:21.710 align:middle line:84%
+then the exchange rate
+today is very depreciated
+
+00:33:21.710 --> 00:33:24.260 align:middle line:84%
+because you have to expect
+it to appreciate in order
+
+00:33:24.260 --> 00:33:29.550 align:middle line:84%
+to compensate for the
+interest rate differential.
+
+00:33:29.550 --> 00:33:30.220 align:middle line:90%
+Probably not.
+
+00:33:30.220 --> 00:33:34.480 align:middle line:84%
+But this requires
+practice, I tell you.
+
+00:33:34.480 --> 00:33:40.690 align:middle line:90%
+
+
+00:33:40.690 --> 00:33:46.150 align:middle line:84%
+OK, so now we have an equation
+for the exchange rate at least.
+
+00:33:46.150 --> 00:33:52.340 align:middle line:84%
+So I can go back to my IS
+equation in the open economy.
+
+00:33:52.340 --> 00:33:54.290 align:middle line:84%
+And I have an equation
+for the exchange rate.
+
+00:33:54.290 --> 00:33:55.900 align:middle line:90%
+So I replace it.
+
+00:33:55.900 --> 00:33:59.840 align:middle line:84%
+This is nice because I
+have two new parameters,
+
+00:33:59.840 --> 00:34:02.372 align:middle line:84%
+expected exchange rate and
+international interest rate.
+
+00:34:02.372 --> 00:34:04.580 align:middle line:84%
+But now this is also a
+function of the interest rate.
+
+00:34:04.580 --> 00:34:07.610 align:middle line:84%
+So at this moment, I have one
+equation and two unknowns,
+
+00:34:07.610 --> 00:34:09.909 align:middle line:84%
+really, after I solve out
+for the exchange rate.
+
+00:34:09.909 --> 00:34:11.750 align:middle line:84%
+I have one equation
+and two unknowns.
+
+00:34:11.750 --> 00:34:15.790 align:middle line:84%
+The two unknowns are output
+and the domestic interest rate.
+
+00:34:15.790 --> 00:34:17.380 align:middle line:90%
+All the rest are parameters.
+
+00:34:17.380 --> 00:34:21.560 align:middle line:84%
+So that's the same situation
+we're at in lecture 3 or so.
+
+00:34:21.560 --> 00:34:24.699 align:middle line:84%
+So then we need
+an extra equation.
+
+00:34:24.699 --> 00:34:28.560 align:middle line:84%
+The extra equation was
+monetary policy, the LM.
+
+00:34:28.560 --> 00:34:31.040 align:middle line:84%
+We're going to do
+exactly the same here.
+
+00:34:31.040 --> 00:34:32.070 align:middle line:90%
+LM is the same.
+
+00:34:32.070 --> 00:34:35.330 align:middle line:84%
+It's the domestic central
+bank sets the interest rate.
+
+00:34:35.330 --> 00:34:37.540 align:middle line:90%
+So now I'm set.
+
+00:34:37.540 --> 00:34:41.030 align:middle line:84%
+Now we have the IS-LM
+model in the open economy.
+
+00:34:41.030 --> 00:34:43.210 align:middle line:84%
+This is the
+Mundell-Fleming model.
+
+00:34:43.210 --> 00:34:44.935 align:middle line:84%
+That's what the
+Mundell-Fleming model is.
+
+00:34:44.935 --> 00:34:48.300 align:middle line:90%
+
+
+00:34:48.300 --> 00:34:59.080 align:middle line:84%
+A more complicated IS with a
+UIP, a driven exchange rate.
+
+00:34:59.080 --> 00:35:03.210 align:middle line:84%
+And then the LM is the same
+as in the closed economy.
+
+00:35:03.210 --> 00:35:07.290 align:middle line:84%
+So this is the
+Mundell-Fleming model.
+
+00:35:07.290 --> 00:35:11.730 align:middle line:90%
+
+
+00:35:11.730 --> 00:35:15.180 align:middle line:84%
+So one thing we know already, we
+knew from the previous lecture,
+
+00:35:15.180 --> 00:35:18.420 align:middle line:84%
+that we have a small
+multiplier in the open economy
+
+00:35:18.420 --> 00:35:21.010 align:middle line:84%
+because we have the inputs that
+are also responding to output.
+
+00:35:21.010 --> 00:35:22.480 align:middle line:90%
+We have a new parameter.
+
+00:35:22.480 --> 00:35:25.710 align:middle line:84%
+But now we also know that
+an increase in the interest
+
+00:35:25.710 --> 00:35:28.170 align:middle line:84%
+rate-- so monetary policy
+in the open economy--
+
+00:35:28.170 --> 00:35:30.030 align:middle line:90%
+has two effects now.
+
+00:35:30.030 --> 00:35:31.550 align:middle line:84%
+It used to have
+only this effect.
+
+00:35:31.550 --> 00:35:33.300 align:middle line:84%
+Remember, it affected
+domestic investment.
+
+00:35:33.300 --> 00:35:35.100 align:middle line:84%
+So an increase in
+the interest rate
+
+00:35:35.100 --> 00:35:39.900 align:middle line:84%
+would lead to a reduction
+in aggregate demand
+
+00:35:39.900 --> 00:35:42.150 align:middle line:90%
+because investment would fall.
+
+00:35:42.150 --> 00:35:44.430 align:middle line:84%
+Remember that was the
+role of the interest rate.
+
+00:35:44.430 --> 00:35:47.590 align:middle line:84%
+That's the way monetary policy
+works in the closed economy,
+
+00:35:47.590 --> 00:35:50.240 align:middle line:90%
+was through this channel here.
+
+00:35:50.240 --> 00:35:54.690 align:middle line:84%
+Now we have a second
+channel, which is this one.
+
+00:35:54.690 --> 00:35:56.760 align:middle line:84%
+So when the interest
+rate goes up,
+
+00:35:56.760 --> 00:35:58.660 align:middle line:84%
+it's contractionary
+for two reasons.
+
+00:35:58.660 --> 00:36:01.740 align:middle line:84%
+One, for the reason we had
+before, which is that investment
+
+00:36:01.740 --> 00:36:02.500 align:middle line:90%
+falls.
+
+00:36:02.500 --> 00:36:06.810 align:middle line:84%
+But there is a second
+reason it's contractionary.
+
+00:36:06.810 --> 00:36:07.935 align:middle line:90%
+What is that second reason?
+
+00:36:07.935 --> 00:36:18.800 align:middle line:90%
+
+
+00:36:18.800 --> 00:36:20.220 align:middle line:90%
+I mean, there's only here.
+
+00:36:20.220 --> 00:36:21.710 align:middle line:90%
+It's only second-- yeah.
+
+00:36:21.710 --> 00:36:23.360 align:middle line:84%
+AUDIENCE: Raise
+the exchange rate.
+
+00:36:23.360 --> 00:36:24.870 align:middle line:84%
+RICARDO CABALLERO: Because
+appreciates the exchange rate.
+
+00:36:24.870 --> 00:36:26.620 align:middle line:84%
+And when you appreciate
+the exchange rate,
+
+00:36:26.620 --> 00:36:27.830 align:middle line:90%
+net exports decline.
+
+00:36:27.830 --> 00:36:31.100 align:middle line:84%
+So more domestic consumption
+is diverted to foreign goods.
+
+00:36:31.100 --> 00:36:36.540 align:middle line:84%
+And less foreign demand is
+allocated to our exports.
+
+00:36:36.540 --> 00:36:38.618 align:middle line:90%
+So that's the second channel.
+
+00:36:38.618 --> 00:36:40.910 align:middle line:84%
+So in an open economy-- and
+the smaller is the economy,
+
+00:36:40.910 --> 00:36:43.188 align:middle line:84%
+the more important is this
+term, the more powerful
+
+00:36:43.188 --> 00:36:43.855 align:middle line:90%
+is that channel.
+
+00:36:43.855 --> 00:36:52.342 align:middle line:90%
+
+
+00:36:52.342 --> 00:36:56.590 align:middle line:84%
+The US cares very little
+about this effect.
+
+00:36:56.590 --> 00:36:58.755 align:middle line:84%
+Most other economies care
+a lot about this effect.
+
+00:36:58.755 --> 00:37:01.610 align:middle line:90%
+
+
+00:37:01.610 --> 00:37:03.620 align:middle line:84%
+Because the US is a
+relatively closed economy,
+
+00:37:03.620 --> 00:37:04.790 align:middle line:90%
+believe it or not.
+
+00:37:04.790 --> 00:37:11.130 align:middle line:84%
+So this is the start diagram
+of the Mundell-Fleming model.
+
+00:37:11.130 --> 00:37:15.610 align:middle line:84%
+So this thing here is
+our old IS-LM model.
+
+00:37:15.610 --> 00:37:17.890 align:middle line:84%
+It's just that this IS
+is a little thicker now.
+
+00:37:17.890 --> 00:37:19.620 align:middle line:84%
+It has net exports
+in there and so on,
+
+00:37:19.620 --> 00:37:21.370 align:middle line:90%
+but it looks exactly the same.
+
+00:37:21.370 --> 00:37:27.210 align:middle line:84%
+That is, plot equilibrium in
+financial and goods market,
+
+00:37:27.210 --> 00:37:30.060 align:middle line:84%
+the combinations of output
+and domestic interest
+
+00:37:30.060 --> 00:37:34.360 align:middle line:84%
+rate that are consistent with
+equilibrium in both markets.
+
+00:37:34.360 --> 00:37:36.030 align:middle line:90%
+That's the case here.
+
+00:37:36.030 --> 00:37:39.923 align:middle line:84%
+This is IS, which is all the
+combinations of domestic output
+
+00:37:39.923 --> 00:37:42.590 align:middle line:84%
+and domestic interest rates that
+are consistent with equilibrium
+
+00:37:42.590 --> 00:37:43.708 align:middle line:90%
+in goods market.
+
+00:37:43.708 --> 00:37:46.250 align:middle line:84%
+This is the interest rate that
+is consistent with equilibrium
+
+00:37:46.250 --> 00:37:47.220 align:middle line:90%
+in financial markets.
+
+00:37:47.220 --> 00:37:49.970 align:middle line:84%
+That's what the
+Fed does in the US.
+
+00:37:49.970 --> 00:37:54.290 align:middle line:84%
+That point is where both
+markets are in equilibrium.
+
+00:37:54.290 --> 00:37:55.850 align:middle line:84%
+But we can take
+this interest rate.
+
+00:37:55.850 --> 00:37:56.975 align:middle line:90%
+So that's what will happen.
+
+00:37:56.975 --> 00:37:58.560 align:middle line:84%
+The interest rate
+will be, in the US,
+
+00:37:58.560 --> 00:38:00.810 align:middle line:84%
+the interest rate is set
+by the Fed, not by the ECB.
+
+00:38:00.810 --> 00:38:02.750 align:middle line:84%
+The Fed will set
+the interest rate.
+
+00:38:02.750 --> 00:38:06.350 align:middle line:84%
+That will give us some
+equilibrium output.
+
+00:38:06.350 --> 00:38:08.760 align:middle line:84%
+And then we can go
+to the UIP condition,
+
+00:38:08.760 --> 00:38:10.880 align:middle line:84%
+you see, I'm plotting
+here, and figure out
+
+00:38:10.880 --> 00:38:13.110 align:middle line:90%
+what the exchange rate is.
+
+00:38:13.110 --> 00:38:15.360 align:middle line:84%
+Because for this
+interest rate here,
+
+00:38:15.360 --> 00:38:17.640 align:middle line:84%
+there's going to be
+some point in the UIP.
+
+00:38:17.640 --> 00:38:21.820 align:middle line:84%
+And that tells me exactly
+what the exchange rate is.
+
+00:38:21.820 --> 00:38:26.230 align:middle line:84%
+So with this set of diagrams, I
+can determine the interest rate
+
+00:38:26.230 --> 00:38:27.345 align:middle line:90%
+output and exchange rate.
+
+00:38:27.345 --> 00:38:31.140 align:middle line:90%
+
+
+00:38:31.140 --> 00:38:33.630 align:middle line:84%
+So I can study the effects
+of different policies,
+
+00:38:33.630 --> 00:38:37.410 align:middle line:84%
+for example, on output, the
+interest rate, of course--
+
+00:38:37.410 --> 00:38:38.890 align:middle line:90%
+that's the policy itself--
+
+00:38:38.890 --> 00:38:39.970 align:middle line:90%
+and the exchange rate.
+
+00:38:39.970 --> 00:38:41.977 align:middle line:84%
+So this is the new
+thing I can explain.
+
+00:38:41.977 --> 00:38:43.810 align:middle line:84%
+I can do a little bit
+of asset pricing here.
+
+00:38:43.810 --> 00:38:48.350 align:middle line:84%
+I can explain the behavior of
+the exchange rate, as well.
+
+00:38:48.350 --> 00:38:51.950 align:middle line:90%
+
+
+00:38:51.950 --> 00:38:53.060 align:middle line:90%
+So this diagram--
+
+00:38:53.060 --> 00:38:55.700 align:middle line:84%
+I mean, you need to really
+control very, very well.
+
+00:38:55.700 --> 00:38:59.870 align:middle line:84%
+So I'm going to play
+with it quite a bit.
+
+00:38:59.870 --> 00:39:01.088 align:middle line:90%
+Monetary policy.
+
+00:39:01.088 --> 00:39:02.130 align:middle line:90%
+Let's do monetary policy.
+
+00:39:02.130 --> 00:39:03.950 align:middle line:84%
+We talk about monetary
+policy already.
+
+00:39:03.950 --> 00:39:06.650 align:middle line:84%
+So suppose that for
+whatever reason,
+
+00:39:06.650 --> 00:39:11.750 align:middle line:84%
+the domestic economy,
+domestic central bank,
+
+00:39:11.750 --> 00:39:13.470 align:middle line:90%
+decides to hike interest rate.
+
+00:39:13.470 --> 00:39:15.200 align:middle line:84%
+Suppose the economy
+was overheating,
+
+00:39:15.200 --> 00:39:17.330 align:middle line:84%
+output was too high
+relative to natural rate
+
+00:39:17.330 --> 00:39:19.490 align:middle line:84%
+of output, the typical
+reasons why you
+
+00:39:19.490 --> 00:39:20.990 align:middle line:90%
+need to raise interest rates.
+
+00:39:20.990 --> 00:39:24.080 align:middle line:84%
+And so suppose that the
+domestic interest rate goes up.
+
+00:39:24.080 --> 00:39:28.330 align:middle line:84%
+Well, as it used to be, that's
+going to be contractionary.
+
+00:39:28.330 --> 00:39:31.400 align:middle line:84%
+What happens to
+the exchange rate?
+
+00:39:31.400 --> 00:39:36.230 align:middle line:84%
+Well, I know the
+interest went up.
+
+00:39:36.230 --> 00:39:38.390 align:middle line:90%
+I look into my UIP.
+
+00:39:38.390 --> 00:39:40.800 align:middle line:84%
+For the high interest rate
+and a current exchange rate
+
+00:39:40.800 --> 00:39:43.430 align:middle line:90%
+that is above--
+
+00:39:43.430 --> 00:39:44.970 align:middle line:84%
+that has to go up
+relative to all.
+
+00:39:44.970 --> 00:39:47.990 align:middle line:84%
+When I increase interest
+rate from here to there,
+
+00:39:47.990 --> 00:39:50.600 align:middle line:84%
+then my exchange rate
+has to appreciate.
+
+00:39:50.600 --> 00:39:52.500 align:middle line:90%
+Why is that?
+
+00:39:52.500 --> 00:39:55.980 align:middle line:84%
+So an expansionary
+domestic monetary policy
+
+00:39:55.980 --> 00:40:00.480 align:middle line:84%
+will lead to a contraction in
+output, which is what we get out
+
+00:40:00.480 --> 00:40:03.970 align:middle line:90%
+of a monetary policy.
+
+00:40:03.970 --> 00:40:07.420 align:middle line:84%
+But it will also lead to an
+appreciation of the currency.
+
+00:40:07.420 --> 00:40:08.135 align:middle line:90%
+Why is that?
+
+00:40:08.135 --> 00:40:13.190 align:middle line:90%
+
+
+00:40:13.190 --> 00:40:15.650 align:middle line:84%
+That's what we just
+discussed, UIP.
+
+00:40:15.650 --> 00:40:19.310 align:middle line:84%
+If I move the domestic
+interest rate and the rest
+
+00:40:19.310 --> 00:40:21.360 align:middle line:84%
+and the rest of the
+world does not follow me,
+
+00:40:21.360 --> 00:40:23.943 align:middle line:84%
+so we move interest
+rates, they don't, then
+
+00:40:23.943 --> 00:40:26.360 align:middle line:84%
+now I need to compensate for
+this increase in the interest
+
+00:40:26.360 --> 00:40:27.260 align:middle line:90%
+rate differential.
+
+00:40:27.260 --> 00:40:31.430 align:middle line:84%
+And the compensation will come
+through an expected capital loss
+
+00:40:31.430 --> 00:40:32.660 align:middle line:90%
+through the currency.
+
+00:40:32.660 --> 00:40:34.310 align:middle line:84%
+So if I appreciate
+more the currency,
+
+00:40:34.310 --> 00:40:36.560 align:middle line:84%
+since I haven't moved the
+expected exchange rate,
+
+00:40:36.560 --> 00:40:38.990 align:middle line:84%
+I expect a larger loss
+from the point of,
+
+00:40:38.990 --> 00:40:43.430 align:middle line:84%
+from the countries
+from the currency side.
+
+00:40:43.430 --> 00:40:45.180 align:middle line:90%
+That's what has happened here.
+
+00:40:45.180 --> 00:40:47.270 align:middle line:84%
+So that's what is
+behind depreciation.
+
+00:40:47.270 --> 00:40:49.130 align:middle line:84%
+And, of course, the
+depreciation is already
+
+00:40:49.130 --> 00:40:56.570 align:middle line:84%
+built in here, which is what
+makes monetary policy more
+
+00:40:56.570 --> 00:41:00.190 align:middle line:84%
+powerful than the closed economy
+because you get the next export
+
+00:41:00.190 --> 00:41:00.690 align:middle line:90%
+channel.
+
+00:41:00.690 --> 00:41:01.765 align:middle line:90%
+But that's built in here.
+
+00:41:01.765 --> 00:41:06.300 align:middle line:90%
+
+
+00:41:06.300 --> 00:41:08.910 align:middle line:84%
+OK, here all that I
+did is exactly the same
+
+00:41:08.910 --> 00:41:10.930 align:middle line:84%
+as we were doing in
+the last 30 minutes.
+
+00:41:10.930 --> 00:41:13.140 align:middle line:90%
+I just use this UIP.
+
+00:41:13.140 --> 00:41:17.330 align:middle line:84%
+For whatever domestic reason,
+I need to raise interest rate.
+
+00:41:17.330 --> 00:41:19.970 align:middle line:84%
+And have contractionary
+monetary policy.
+
+00:41:19.970 --> 00:41:21.470 align:middle line:84%
+Well, one of the
+effects that you're
+
+00:41:21.470 --> 00:41:24.230 align:middle line:84%
+going to get in an open
+economy is that your currency
+
+00:41:24.230 --> 00:41:25.880 align:middle line:90%
+will tend to appreciate.
+
+00:41:25.880 --> 00:41:26.605 align:middle line:90%
+OK, good.
+
+00:41:26.605 --> 00:41:31.500 align:middle line:90%
+
+
+00:41:31.500 --> 00:41:35.140 align:middle line:90%
+What about fiscal policy?
+
+00:41:35.140 --> 00:41:39.710 align:middle line:84%
+Well, if the Fed doesn't follow,
+the central bank doesn't follow,
+
+00:41:39.710 --> 00:41:42.460 align:middle line:84%
+and you have an
+expansionary fiscal policy,
+
+00:41:42.460 --> 00:41:47.560 align:middle line:90%
+then that will increase output.
+
+00:41:47.560 --> 00:41:49.270 align:middle line:84%
+It has no effect on
+the interest rate.
+
+00:41:49.270 --> 00:41:51.770 align:middle line:84%
+Therefore, it has absolutely
+no effect on the exchange rate.
+
+00:41:51.770 --> 00:41:54.020 align:middle line:84%
+So an expansionary
+fiscal policy,
+
+00:41:54.020 --> 00:41:55.580 align:middle line:84%
+which is accommodated
+by the Fed--
+
+00:41:55.580 --> 00:41:58.720 align:middle line:84%
+that means the interest rate
+is kept at the same level--
+
+00:41:58.720 --> 00:42:01.140 align:middle line:84%
+then does not lead to an
+appreciation of the currency.
+
+00:42:01.140 --> 00:42:02.100 align:middle line:84%
+It doesn't move
+the exchange rate.
+
+00:42:02.100 --> 00:42:03.767 align:middle line:84%
+It no implication for
+the exchange rate.
+
+00:42:03.767 --> 00:42:08.750 align:middle line:90%
+
+
+00:42:08.750 --> 00:42:10.670 align:middle line:84%
+Now, what about this
+change in output?
+
+00:42:10.670 --> 00:42:13.980 align:middle line:84%
+Is it larger or smaller than the
+one we did in lecture 3 or 4?
+
+00:42:13.980 --> 00:42:17.192 align:middle line:90%
+
+
+00:42:17.192 --> 00:42:18.650 align:middle line:84%
+AUDIENCE: It's
+going to be smaller.
+
+00:42:18.650 --> 00:42:19.140 align:middle line:90%
+RICARDO CABALLERO: Smaller.
+
+00:42:19.140 --> 00:42:19.850 align:middle line:90%
+Why?
+
+00:42:19.850 --> 00:42:22.550 align:middle line:84%
+AUDIENCE: Because it's part
+of the increase in [INAUDIBLE]
+
+00:42:22.550 --> 00:42:23.593 align:middle line:90%
+falls on [INAUDIBLE].
+
+00:42:23.593 --> 00:42:25.260 align:middle line:84%
+RICARDO CABALLERO:
+Exactly because yeah,
+
+00:42:25.260 --> 00:42:26.100 align:middle line:90%
+it goes to imports.
+
+00:42:26.100 --> 00:42:26.990 align:middle line:90%
+Perfect.
+
+00:42:26.990 --> 00:42:27.600 align:middle line:90%
+OK, good.
+
+00:42:27.600 --> 00:42:29.808 align:middle line:84%
+So this is smaller than it
+was in the closed economy.
+
+00:42:29.808 --> 00:42:35.220 align:middle line:84%
+And it has no impact
+on the exchange rate.
+
+00:42:35.220 --> 00:42:39.800 align:middle line:84%
+That is, the UIP has nothing to
+do with government expenditure.
+
+00:42:39.800 --> 00:42:41.460 align:middle line:84%
+It's all about
+financial markets.
+
+00:42:41.460 --> 00:42:44.080 align:middle line:84%
+It's about expected
+returns, things like that.
+
+00:42:44.080 --> 00:42:50.160 align:middle line:84%
+So unless the fiscal policy
+somehow affects interest rate,
+
+00:42:50.160 --> 00:42:51.640 align:middle line:90%
+then there is no effect.
+
+00:42:51.640 --> 00:42:56.910 align:middle line:84%
+What may happen is that, for
+example, is that treasury
+
+00:42:56.910 --> 00:42:58.410 align:middle line:90%
+becomes very expansionary.
+
+00:42:58.410 --> 00:43:01.170 align:middle line:84%
+And this output becomes
+too large for what
+
+00:43:01.170 --> 00:43:05.980 align:middle line:84%
+is consistent with a zero
+output gap or no inflation.
+
+00:43:05.980 --> 00:43:09.090 align:middle line:84%
+And then the Fed may react
+and raise interest rate.
+
+00:43:09.090 --> 00:43:11.830 align:middle line:84%
+And that will lead to inflation
+of the exchange rate and so on.
+
+00:43:11.830 --> 00:43:15.540 align:middle line:84%
+And that's the reason why, in
+practice, when countries have
+
+00:43:15.540 --> 00:43:17.910 align:middle line:84%
+sort of expansionary
+fiscal packages,
+
+00:43:17.910 --> 00:43:19.710 align:middle line:84%
+the currency tends
+to appreciate,
+
+00:43:19.710 --> 00:43:23.190 align:middle line:84%
+is because investors
+expect the Fed to react
+
+00:43:23.190 --> 00:43:25.710 align:middle line:84%
+to that or the central
+bank to react to that
+
+00:43:25.710 --> 00:43:26.950 align:middle line:90%
+and raise interest rates.
+
+00:43:26.950 --> 00:43:29.460 align:middle line:84%
+But if the Fed says, no, no,
+we need that fiscal expansion,
+
+00:43:29.460 --> 00:43:30.960 align:middle line:84%
+I'm not going to move
+the interest rate,
+
+00:43:30.960 --> 00:43:32.377 align:middle line:84%
+then the exchange
+rate won't move.
+
+00:43:32.377 --> 00:43:39.570 align:middle line:90%
+
+
+00:43:39.570 --> 00:43:42.480 align:middle line:84%
+So let's use a little
+more of this model
+
+00:43:42.480 --> 00:43:47.010 align:middle line:84%
+and look at other shocks
+within this model.
+
+00:43:47.010 --> 00:43:51.840 align:middle line:84%
+So let's start with--
+suppose that we increase
+
+00:43:51.840 --> 00:43:53.790 align:middle line:90%
+the expected exchange rate.
+
+00:43:53.790 --> 00:44:00.140 align:middle line:90%
+What moves in this diagram?
+
+00:44:00.140 --> 00:44:04.550 align:middle line:90%
+
+
+00:44:04.550 --> 00:44:06.660 align:middle line:90%
+Let's go-- does LM move?
+
+00:44:06.660 --> 00:44:16.320 align:middle line:90%
+
+
+00:44:16.320 --> 00:44:19.370 align:middle line:84%
+No, the LM is controlled
+by domestic central bank.
+
+00:44:19.370 --> 00:44:20.640 align:middle line:90%
+Doesn't move.
+
+00:44:20.640 --> 00:44:22.120 align:middle line:90%
+Does the IS move?
+
+00:44:22.120 --> 00:44:25.700 align:middle line:90%
+
+
+00:44:25.700 --> 00:44:27.740 align:middle line:84%
+When I asked you
+whether it moves,
+
+00:44:27.740 --> 00:44:29.130 align:middle line:90%
+you should always fix something.
+
+00:44:29.130 --> 00:44:31.140 align:middle line:84%
+So you say, OK, let me
+fix the interest rate,
+
+00:44:31.140 --> 00:44:34.720 align:middle line:90%
+say, pick a point like this one.
+
+00:44:34.720 --> 00:44:36.340 align:middle line:84%
+And now I have to
+ask the question,
+
+00:44:36.340 --> 00:44:38.290 align:middle line:84%
+what happens to
+output now that I have
+
+00:44:38.290 --> 00:44:39.580 align:middle line:90%
+moved the expected exchange?
+
+00:44:39.580 --> 00:44:42.670 align:middle line:84%
+If I get the same output back,
+means that IS doesn't move.
+
+00:44:42.670 --> 00:44:45.460 align:middle line:84%
+If I get a different output,
+equilibrium output, then I
+
+00:44:45.460 --> 00:44:48.840 align:middle line:90%
+know that the IS did move.
+
+00:44:48.840 --> 00:44:50.015 align:middle line:90%
+So what is the answer?
+
+00:44:50.015 --> 00:44:54.270 align:middle line:90%
+
+
+00:44:54.270 --> 00:44:55.830 align:middle line:84%
+If the interest
+rate doesn't move,
+
+00:44:55.830 --> 00:44:57.620 align:middle line:84%
+the foreign interest
+doesn't move,
+
+00:44:57.620 --> 00:44:59.380 align:middle line:84%
+and expected change
+rate goes up,
+
+00:44:59.380 --> 00:45:02.520 align:middle line:84%
+what happens to the
+current exchange rate?
+
+00:45:02.520 --> 00:45:04.360 align:middle line:90%
+Appreciate.
+
+00:45:04.360 --> 00:45:07.090 align:middle line:84%
+What happens when
+there is an opposition?
+
+00:45:07.090 --> 00:45:09.280 align:middle line:90%
+Net exports decline.
+
+00:45:09.280 --> 00:45:12.470 align:middle line:84%
+That means that moves
+the IS to the left.
+
+00:45:12.470 --> 00:45:16.280 align:middle line:84%
+So this movement will
+move the IS to the left.
+
+00:45:16.280 --> 00:45:18.730 align:middle line:90%
+That's the first effect.
+
+00:45:18.730 --> 00:45:20.630 align:middle line:90%
+What about the UIP condition?
+
+00:45:20.630 --> 00:45:21.560 align:middle line:90%
+Will it move or not?
+
+00:45:21.560 --> 00:45:23.500 align:middle line:84%
+We have taken that
+as a parameter.
+
+00:45:23.500 --> 00:45:26.090 align:middle line:90%
+Will it move?
+
+00:45:26.090 --> 00:45:29.190 align:middle line:84%
+I mean, remember, I give
+you a clue because I said,
+
+00:45:29.190 --> 00:45:32.540 align:middle line:84%
+we are taking these
+two as parameters here.
+
+00:45:32.540 --> 00:45:37.790 align:middle line:84%
+So if I move a parameter, most
+likely I will move the curve.
+
+00:45:37.790 --> 00:45:39.710 align:middle line:84%
+But in which direction
+will it move?
+
+00:45:39.710 --> 00:45:46.820 align:middle line:90%
+
+
+00:45:46.820 --> 00:45:47.710 align:middle line:90%
+To the right.
+
+00:45:47.710 --> 00:45:51.390 align:middle line:84%
+Yes, because for the
+same interest rate,
+
+00:45:51.390 --> 00:45:53.833 align:middle line:84%
+now I need the exchange
+rate to move one for one,
+
+00:45:53.833 --> 00:45:55.500 align:middle line:84%
+the current exchange
+to move one for one
+
+00:45:55.500 --> 00:45:57.930 align:middle line:90%
+with the expected exchange rate.
+
+00:45:57.930 --> 00:46:01.350 align:middle line:84%
+So this was the
+exchange rate before.
+
+00:46:01.350 --> 00:46:03.520 align:middle line:84%
+And now the expected
+exchange moved to the right.
+
+00:46:03.520 --> 00:46:05.790 align:middle line:84%
+Well, in order not to
+generate the expected capital
+
+00:46:05.790 --> 00:46:08.430 align:middle line:84%
+gain or loss, I have to
+move the current exchange
+
+00:46:08.430 --> 00:46:10.230 align:middle line:90%
+rate by the same amount.
+
+00:46:10.230 --> 00:46:14.430 align:middle line:84%
+And so that means this curve
+will shift to the right.
+
+00:46:14.430 --> 00:46:18.560 align:middle line:84%
+What if I move
+foreign output down?
+
+00:46:18.560 --> 00:46:20.940 align:middle line:90%
+What happens?
+
+00:46:20.940 --> 00:46:22.380 align:middle line:90%
+Which curve moves?
+
+00:46:22.380 --> 00:46:24.900 align:middle line:84%
+Well, this is not
+a parameter here.
+
+00:46:24.900 --> 00:46:27.250 align:middle line:90%
+So this is not moving.
+
+00:46:27.250 --> 00:46:28.970 align:middle line:90%
+This is not a parameter here.
+
+00:46:28.970 --> 00:46:30.940 align:middle line:90%
+So this one is not moving.
+
+00:46:30.940 --> 00:46:32.270 align:middle line:90%
+Only one can move.
+
+00:46:32.270 --> 00:46:33.390 align:middle line:90%
+The IS, where?
+
+00:46:33.390 --> 00:46:34.890 align:middle line:84%
+AUDIENCE: It would
+move to the left.
+
+00:46:34.890 --> 00:46:36.682 align:middle line:84%
+RICARDO CABALLERO: It
+will move to the left
+
+00:46:36.682 --> 00:46:38.183 align:middle line:84%
+because net exports
+will decline.
+
+00:46:38.183 --> 00:46:40.100 align:middle line:84%
+Now, for any given level
+of the interest rate,
+
+00:46:40.100 --> 00:46:41.860 align:middle line:90%
+now we have less net exports.
+
+00:46:41.860 --> 00:46:44.720 align:middle line:84%
+And therefore the IS move to
+the left, so output falls.
+
+00:46:44.720 --> 00:46:46.900 align:middle line:90%
+But there is no movement here.
+
+00:46:46.900 --> 00:46:51.150 align:middle line:84%
+Unless the Fed reacts to that,
+the central bank reacts to that,
+
+00:46:51.150 --> 00:46:51.870 align:middle line:90%
+it won't happen.
+
+00:46:51.870 --> 00:47:00.030 align:middle line:90%
+
+
+00:47:00.030 --> 00:47:02.038 align:middle line:84%
+I mean, and it may
+well be the case
+
+00:47:02.038 --> 00:47:03.330 align:middle line:90%
+that you want to react to that.
+
+00:47:03.330 --> 00:47:06.550 align:middle line:84%
+If the whole world
+goes into recession,
+
+00:47:06.550 --> 00:47:08.980 align:middle line:84%
+the US is very likely
+to lower interest rates
+
+00:47:08.980 --> 00:47:13.130 align:middle line:84%
+because it's very
+contractionary.
+
+00:47:13.130 --> 00:47:15.760 align:middle line:84%
+The whole world
+goes into recession.
+
+00:47:15.760 --> 00:47:18.880 align:middle line:84%
+When the US goes into recession,
+the rest of the world, everyone
+
+00:47:18.880 --> 00:47:21.920 align:middle line:84%
+wants to cut interest rates
+because the US is a big player.
+
+00:47:21.920 --> 00:47:23.790 align:middle line:84%
+So it really drags
+everyone down.
+
+00:47:23.790 --> 00:47:30.790 align:middle line:90%
+
+
+00:47:30.790 --> 00:47:33.520 align:middle line:84%
+The last one, I'm going to
+repeat this in the next lecture
+
+00:47:33.520 --> 00:47:37.750 align:middle line:84%
+is, well, what happens if I star
+moves up, the foreign interest
+
+00:47:37.750 --> 00:47:39.340 align:middle line:90%
+rate moves up?
+
+00:47:39.340 --> 00:47:42.570 align:middle line:90%
+Well, the LM doesn't move.
+
+00:47:42.570 --> 00:47:45.870 align:middle line:90%
+This one will move which way?
+
+00:47:45.870 --> 00:47:47.460 align:middle line:84%
+Because that was
+a parameter here.
+
+00:47:47.460 --> 00:47:51.785 align:middle line:90%
+To the right.
+
+00:47:51.785 --> 00:47:54.403 align:middle line:90%
+
+
+00:47:54.403 --> 00:47:55.320 align:middle line:90%
+You said to the right.
+
+00:47:55.320 --> 00:47:55.862 align:middle line:90%
+That's right.
+
+00:47:55.862 --> 00:47:59.340 align:middle line:90%
+
+
+00:47:59.340 --> 00:48:03.090 align:middle line:90%
+So think what happened here.
+
+00:48:03.090 --> 00:48:04.710 align:middle line:84%
+If the foreign
+interest rate goes,
+
+00:48:04.710 --> 00:48:09.720 align:middle line:84%
+up at any given interest
+rate, now the domestic bond
+
+00:48:09.720 --> 00:48:12.030 align:middle line:90%
+is doing worse than otherwise.
+
+00:48:12.030 --> 00:48:17.050 align:middle line:84%
+So I need to depreciate the
+exchange rate today in order
+
+00:48:17.050 --> 00:48:22.030 align:middle line:90%
+to expect an appreciation.
+
+00:48:22.030 --> 00:48:26.025 align:middle line:84%
+That means this curve
+moves to the left.
+
+00:48:26.025 --> 00:48:30.132 align:middle line:90%
+
+
+00:48:30.132 --> 00:48:31.590 align:middle line:84%
+It moves to the
+left because I have
+
+00:48:31.590 --> 00:48:34.890 align:middle line:84%
+to expect an appreciation to
+compensate for the interest rate
+
+00:48:34.890 --> 00:48:37.050 align:middle line:90%
+differential.
+
+00:48:37.050 --> 00:48:38.640 align:middle line:90%
+So these will move to the left.
+
+00:48:38.640 --> 00:48:40.535 align:middle line:90%
+What about this curve here?
+
+00:48:40.535 --> 00:48:43.960 align:middle line:90%
+
+
+00:48:43.960 --> 00:48:47.320 align:middle line:90%
+We solve it in the next lecture.
+
+00:48:47.320 --> 00:48:49.050 align:middle line:90%
+Very good.
+
+00:48:49.050 --> 00:49:03.000 align:middle line:90%
