@@ -1,43 +1,43 @@
 [
   {
-    "id": "50bed27cf608505eacde1379",
+    "id": "D:\\LR\\My_Gallery\\France\\Paris\\chatelet\\DSC_0131.jpg_1702678322.0",
     "filename": "DSC_0131.jpg",
     "width": 6016,
     "height": 3384,
-    "title": "DSC_0131",
+    "title": "DSC_0131.jpg",
     "tags": [
       "Orange",
       "Warm"
     ],
-    "Link": "",
-    "CameraModel": "NIKON Z 5\n",
-    "ISO": "\n",
-    "FocalLength": "\n",
-    "ExposureBiasValue": "\n",
-    "Aperture": "\n",
-    "ExposureTime": "\n",
+    "Link": "https://www.google.com/maps?q=48.8481,2.3958",
+    "CameraModel": "NIKON Z 5",
+    "ISO": "",
+    "FocalLength": "",
+    "ExposureBiasValue": "",
+    "Aperture": "f/",
+    "ExposureTime": "",
     "ai_analysis": null,
-    "Location": "夏特雷"
+    "Location": "chatelet"
   },
   {
-    "id": "8d70a719da0376640fbd6df1",
+    "id": "D:\\LR\\My_Gallery\\France\\Paris\\chatelet\\DSC_0167.jpg_1702678366.0",
     "filename": "DSC_0167.jpg",
     "width": 6016,
     "height": 4016,
-    "title": "DSC_0167",
+    "title": "DSC_0167.jpg",
     "tags": [
-      "High Contrast",
       "Blue",
-      "Cool"
+      "Cool",
+      "High Contrast"
     ],
-    "Link": "",
-    "CameraModel": "NIKON Z 5\n",
-    "ISO": "\n",
-    "FocalLength": "\n",
-    "ExposureBiasValue": "\n",
-    "Aperture": "\n",
-    "ExposureTime": "\n",
+    "Link": "https://www.google.com/maps?q=48.8481,2.3958",
+    "CameraModel": "NIKON Z 5",
+    "ISO": "",
+    "FocalLength": "",
+    "ExposureBiasValue": "",
+    "Aperture": "f/",
+    "ExposureTime": "",
     "ai_analysis": null,
-    "Location": "夏特雷"
+    "Location": "chatelet"
   }
 ]

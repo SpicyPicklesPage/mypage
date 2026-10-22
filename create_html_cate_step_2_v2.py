@@ -35,7 +35,7 @@ LOCATION_MAPPING = {
     "Alexandria": "亚历山大", "Luxor": "卢克索", "Cairo": "开罗",
     "Aswan": "阿斯旺", "Hurghada": "赫尔格达", "Servia": "塞尔维亚",
     "Belgrad": "贝尔格莱德", "Hungry": "匈牙利", "Budapest": "布达佩斯",
-    "Austria": "奥地利", "Vienna": "维也纳",
+    "Austria": "奥地利", "Vienna": "维也纳","Grenoble":"格勒诺贝尔"
 }
 
 

@@ -1,64 +1,64 @@
 [
   {
-    "id": "f7b66028b6cc4bfaec0fa0f4",
+    "id": "D:\\LR\\My_Gallery\\France\\Paris\\ens\\DSC_0303.jpg_1702678326.0",
     "filename": "DSC_0303.jpg",
     "width": 6016,
     "height": 4016,
-    "title": "DSC_0303",
+    "title": "DSC_0303.jpg",
     "tags": [
-      "Low Key",
       "Dark",
+      "Low Key",
       "Red",
       "Warm"
     ],
-    "Link": "",
-    "CameraModel": "NIKON Z 5\n",
-    "ISO": "\n",
-    "FocalLength": "\n",
-    "ExposureBiasValue": "\n",
-    "Aperture": "\n",
-    "ExposureTime": "\n",
+    "Link": "https://www.google.com/maps?q=48.8481,2.3958",
+    "CameraModel": "NIKON Z 5",
+    "ISO": "",
+    "FocalLength": "",
+    "ExposureBiasValue": "",
+    "Aperture": "f/",
+    "ExposureTime": "",
     "ai_analysis": null,
-    "Location": "巴黎高师"
+    "Location": "ens"
   },
   {
-    "id": "9cecbdeaff01f84a7eb5e108",
+    "id": "D:\\LR\\My_Gallery\\France\\Paris\\ens\\DSC_0310.jpg_1702678324.0",
     "filename": "DSC_0310.jpg",
     "width": 4016,
     "height": 6016,
-    "title": "DSC_0310",
+    "title": "DSC_0310.jpg",
     "tags": [
       "Red",
       "Warm"
     ],
-    "Link": "",
-    "CameraModel": "NIKON Z 5\n",
-    "ISO": "\n",
-    "FocalLength": "\n",
-    "ExposureBiasValue": "\n",
-    "Aperture": "\n",
-    "ExposureTime": "\n",
+    "Link": "https://www.google.com/maps?q=48.8481,2.3958",
+    "CameraModel": "NIKON Z 5",
+    "ISO": "",
+    "FocalLength": "",
+    "ExposureBiasValue": "",
+    "Aperture": "f/",
+    "ExposureTime": "",
     "ai_analysis": null,
-    "Location": "巴黎高师"
+    "Location": "ens"
   },
   {
-    "id": "b750d841cfbf20990888d30b",
+    "id": "D:\\LR\\My_Gallery\\France\\Paris\\ens\\DSC_0311.jpg_1702678326.0",
     "filename": "DSC_0311.jpg",
     "width": 3320,
     "height": 5621,
-    "title": "DSC_0311",
+    "title": "DSC_0311.jpg",
     "tags": [
       "Orange",
       "Warm"
     ],
-    "Link": "",
-    "CameraModel": "NIKON Z 5\n",
-    "ISO": "\n",
-    "FocalLength": "\n",
-    "ExposureBiasValue": "\n",
-    "Aperture": "\n",
-    "ExposureTime": "\n",
+    "Link": "https://www.google.com/maps?q=48.8481,2.3958",
+    "CameraModel": "NIKON Z 5",
+    "ISO": "",
+    "FocalLength": "",
+    "ExposureBiasValue": "",
+    "Aperture": "f/",
+    "ExposureTime": "",
     "ai_analysis": null,
-    "Location": "巴黎高师"
+    "Location": "ens"
   }
 ]

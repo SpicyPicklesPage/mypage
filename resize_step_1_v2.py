@@ -10,9 +10,9 @@ from PIL import Image, ImageOps
 from tqdm import tqdm
 
 
-INPUT_FOLDER = Path(r"D:\pages\mypage\silent")
-OUTPUT_FOLDER = Path(r"D:\pages\mypage\silent") / "compressed"
-FILENAME_PREFIX = "2024_05_1112"
+INPUT_FOLDER = Path(r"D:\LR\My_Gallery\France\Grenoble")
+OUTPUT_FOLDER = Path(r"D:\LR\My_Gallery\France\Grenoble") / "compressed"
+FILENAME_PREFIX = "2024_05_25"
 SUPPORTED_EXTENSIONS = {".jpg", ".jpeg"}
 
 
