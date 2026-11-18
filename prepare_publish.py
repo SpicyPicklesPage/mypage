@@ -24,10 +24,11 @@ PHOTO_OUTPUT = PUBLISH_ROOT / "photos"
 MAX_LONG_EDGE = 1600
 JPEG_QUALITY = 82
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
+EXCLUDED_FILM_FILES = {"000159800001.jpg"}
 
 CORE_FILES = {
     "index.html", "pickle-jar-7f3c.html", "photo-v2.html", "photo-v2.css",
-    "photo-v2.js", "fireworks.html", "pixel.html", "11.html", "建筑.png",
+    "photo-v2.js", "film.html", "film.css", "film.js", "fireworks.html", "pixel.html", "11.html", "建筑.png",
     "炮弹.png", "content_note.css", "sidebar.js",
 }
 NOTE_FILES = {
@@ -50,6 +51,26 @@ def copy_file(source: Path, destination: Path) -> None:
     shutil.copy2(source, destination)
 
 
+def copy_film_roll() -> None:
+    source = PHOTO_SOURCE / "film-00015980"
+    destination = PHOTO_OUTPUT / "film-00015980"
+    records = json.loads((source / "photos_info.json").read_text(encoding="utf-8"))
+    records = [record for record in records if record["filename"] not in EXCLUDED_FILM_FILES]
+    for folder in ("full", "thumbs"):
+        (destination / folder).mkdir(parents=True, exist_ok=True)
+        for filename in EXCLUDED_FILM_FILES:
+            (destination / folder / filename).unlink(missing_ok=True)
+    # Copy only the selected manifest entries, rather than the whole folder.
+    for record in records:
+        for relative in ("full/" + record["filename"], record["thumbnail"]):
+            copy_file(source / relative, destination / relative)
+    manifest = json.dumps(records, ensure_ascii=False, indent=2)
+    (destination / "photos_info.json").write_text(manifest + "\n", encoding="utf-8")
+    (destination / "photos_info.js").write_text(
+        "window.FILM_ROLL_PHOTOS = " + manifest + ";\n", encoding="utf-8"
+    )
+
+
 def copy_site_files() -> None:
     allowed_root_files = CORE_FILES | NOTE_FILES | {".nojekyll"}
     for existing in PUBLISH_ROOT.iterdir():
@@ -70,6 +91,9 @@ def copy_site_files() -> None:
     for source in gallery_root.rglob("*"):
         if source.is_file() and source.name in {"photo-v2.html", "photos_info.json"}:
             copy_file(source, PUBLISH_ROOT / source.relative_to(SITE_ROOT))
+
+    # Keep the roll JPEGs at the requested ~2 MB; thumbnails are separate.
+    copy_film_roll()
 
     (PUBLISH_ROOT / ".nojekyll").touch()
 
@@ -196,6 +220,12 @@ def main() -> None:
     copy_site_files()
     photo_count, photo_bytes = compress_photos()
     validate_gallery_data()
+    film_root = PHOTO_OUTPUT / "film-00015980"
+    film_records = json.loads((film_root / "photos_info.json").read_text(encoding="utf-8"))
+    for record in film_records:
+        for relative in ("full/" + record["filename"], record["thumbnail"]):
+            if not (film_root / relative).is_file():
+                raise FileNotFoundError(f"Film photograph missing: {relative}")
     removed_images = remove_missing_local_images()
     validate_local_links()
 

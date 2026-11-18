@@ -83,6 +83,7 @@ def build_archive_menu() -> str:
 
     lines = [
         '<nav class="place-list" aria-label="摄影地点">',
+        '  <a href="/film.html">胶片手记 <span>FILM / 00015980</span></a>',
         '  <a class="place-list__all" href="/My_Gallery/photo-v2.html">全部地点 <span>ALL PLACES</span></a>',
     ]
     for folder in visible_directories(SOURCE_ROOT):
