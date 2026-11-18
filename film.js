@@ -12,19 +12,8 @@
   const close = document.getElementById('lightboxClose');
   const wander = document.getElementById('wanderView');
   const sheet = document.getElementById('sheetView');
-  const pattern = [
-    { size: 'small', align: 'left', inset: .035, before: .02, after: 0 },
-    { size: 'medium', align: 'right', inset: .055, pair: true, offset: .08, after: .18 },
-    { size: 'large', align: 'left', inset: .08, before: .06, after: .2 },
-    { size: 'small', align: 'right', inset: .15, before: .03, after: 0 },
-    { size: 'medium', align: 'left', inset: .025, pair: true, offset: .07, after: .18 },
-    { size: 'large', align: 'center', inset: 0, before: .05, after: .21 },
-    { size: 'small', align: 'left', inset: .16, before: .02, after: 0 },
-    { size: 'medium', align: 'right', inset: .025, pair: true, offset: .1, after: .17 },
-    { size: 'large', align: 'right', inset: .07, before: .07, after: .22 }
-  ];
   let originals = [], photos = [], randomOrder = [], loaded = 0, mode = 'wander';
-  let active = -1, focusBefore = null, resizeFrame = 0, lastTouch = null;
+  let active = -1, focusBefore = null, lastTouch = null;
   const pad = number => String(number).padStart(2, '0');
   const url = (photo, full = false) => BASE + (full ? 'full/' + photo.filename : photo.thumbnail) + '?v=20261118-portrait';
 
@@ -46,28 +35,6 @@
       groups.get(key).push(photo);
     }
     return shuffle([...groups.values()]).flatMap(shuffle);
-  }
-  function layout() {
-    if (mode === 'sheet') { gallery.style.height = ''; return; }
-    let cursor = 0, previous = null;
-    const width = gallery.clientWidth, vh = Math.max(600, innerHeight), mobile = width < 680;
-    [...gallery.children].forEach((element, index) => {
-      const p = pattern[index % pattern.length], ratio = Number(element.dataset.ratio);
-      let fraction;
-      if (mobile) fraction = p.size === 'small' ? (ratio < .85 ? .34 : .47) : p.size === 'medium' ? (ratio < .85 ? .62 : .78) : (ratio < .85 ? .78 : .98);
-      else fraction = p.size === 'small' ? (ratio < .85 ? .21 : .28) : p.size === 'medium' ? (ratio < .85 ? .36 : .45) : (ratio < .85 ? .56 : .8);
-      const w = width * fraction, inset = Math.min(width * p.inset, width - w);
-      const x = p.align === 'right' ? width - w - inset : p.align === 'center' ? (width - w) / 2 : inset;
-      const pair = !mobile && p.pair && previous && (x + w + width * .025 <= previous.x || previous.x + previous.w + width * .025 <= x);
-      const y = pair ? previous.y + vh * p.offset : cursor + vh * (p.before || 0);
-      // Account for the negative border and caption as well as the photograph.
-      const height = (w - (mobile ? 12 : 18)) / ratio + 80;
-      element.style.width = w + 'px';
-      element.style.transform = `translate3d(${x}px,${y}px,0)`;
-      cursor = Math.max(cursor, y + height) + vh * p.after;
-      previous = { x, y, w };
-    });
-    gallery.style.height = Math.ceil(cursor) + 'px';
   }
   function createPhoto(photo, index) {
     const button = document.createElement('button');
@@ -103,7 +70,7 @@
     const end = mode === 'sheet' ? photos.length : Math.min(loaded + 10, photos.length);
     const fragment = document.createDocumentFragment();
     for (let i = loaded; i < end; i++) fragment.append(createPhoto(photos[i], i));
-    gallery.append(fragment); loaded = end; layout();
+    gallery.append(fragment); loaded = end;
     sequence.textContent = `${pad(loaded)} / ${pad(photos.length)} FRAMES`;
     more.hidden = loaded >= photos.length;
     loadingText.textContent = loaded >= photos.length ? '这一卷，到这里。 / END OF ROLL' : '往下，光还在继续。';
@@ -117,7 +84,7 @@
     gallery.classList.toggle('is-sheet', mode === 'sheet');
     document.getElementById('viewHint').textContent = mode === 'sheet'
       ? '按底片编号排列。点击任意一格，展开照片。'
-      : '循着色调，随机翻阅。点击照片，展开细节。';
+      : '向下翻阅，点击照片展开细节。';
     gallery.replaceChildren(); renderBatch();
   }
   function showPhoto(index) {
@@ -175,9 +142,6 @@
       const current = controls.indexOf(document.activeElement);
       event.preventDefault(); controls[(current + (event.shiftKey ? -1 : 1) + controls.length) % controls.length].focus();
     }
-  });
-  window.addEventListener('resize', () => {
-    cancelAnimationFrame(resizeFrame); resizeFrame = requestAnimationFrame(layout);
   });
   const observer = new IntersectionObserver(entries => {
     if (entries.some(entry => entry.isIntersecting) && loaded && loaded < photos.length && mode === 'wander') renderBatch();
