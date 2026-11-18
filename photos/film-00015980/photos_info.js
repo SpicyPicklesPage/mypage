@@ -1,28 +1,5 @@
 window.FILM_ROLL_PHOTOS = [
   {
-    "id": "film-000159800002",
-    "filename": "000159800002.jpg",
-    "thumbnail": "thumbs/000159800002.jpg",
-    "width": 4257,
-    "height": 2822,
-    "title": "胶片手记 / 0002",
-    "frame": 2,
-    "rotation_degrees": 0,
-    "tags": [
-      "B&W",
-      "Monochrome"
-    ],
-    "Location": "00015980",
-    "Link": "",
-    "CameraModel": "",
-    "ISO": "",
-    "FocalLength": "",
-    "Aperture": "",
-    "ExposureTime": "",
-    "bytes": 1938645,
-    "ai_analysis": null
-  },
-  {
     "id": "film-000159800003",
     "filename": "000159800003.jpg",
     "thumbnail": "thumbs/000159800003.jpg",

@@ -24,7 +24,7 @@ PHOTO_OUTPUT = PUBLISH_ROOT / "photos"
 MAX_LONG_EDGE = 1600
 JPEG_QUALITY = 82
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
-EXCLUDED_FILM_FILES = {"000159800001.jpg"}
+EXCLUDED_FILM_FILES = {"000159800001.jpg", "000159800002.jpg"}
 
 CORE_FILES = {
     "index.html", "pickle-jar-7f3c.html", "photo-v2.html", "photo-v2.css",

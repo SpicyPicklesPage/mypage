@@ -16,7 +16,7 @@ from PIL import Image, ImageCms
 
 TARGET_BYTES = 2_000_000
 MAX_LONG_EDGE = 5200
-EXCLUDED_STEMS = {"000159800001"}
+EXCLUDED_STEMS = {"000159800001", "000159800002"}
 # Positive angles are counterclockwise, as used by Pillow.
 ROTATIONS = {
     4: 90, 6: -90, 7: -90, 8: -90, 9: 90, 10: 90, 12: 90,

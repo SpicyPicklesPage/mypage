@@ -15,7 +15,7 @@
   let originals = [], photos = [], randomOrder = [], loaded = 0, mode = 'wander';
   let active = -1, focusBefore = null, lastTouch = null;
   const pad = number => String(number).padStart(2, '0');
-  const url = (photo, full = false) => BASE + (full ? 'full/' + photo.filename : photo.thumbnail) + '?v=20261118-portrait';
+  const url = (photo, full = false) => BASE + (full ? 'full/' + photo.filename : photo.thumbnail) + '?v=20261118-no02';
 
   function shuffle(items) {
     const result = [...items];
@@ -154,7 +154,7 @@
       if (location.protocol === 'file:') {
         data = window.FILM_ROLL_PHOTOS;
       } else {
-        const response = await fetch(BASE + 'photos_info.json?v=20261118-portrait');
+        const response = await fetch(BASE + 'photos_info.json?v=20261118-no02');
         if (!response.ok) throw new Error('HTTP ' + response.status);
         data = await response.json();
       }
