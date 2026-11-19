@@ -1,0 +1,190 @@
+{
+  "kodak-gold-200-gannan-2026": {
+    "excluded_stems": [
+      "ircGAGr9p9aAFyI3BXEO5kES9_A434",
+      "ircGAGr9p92AYu2BBXEO5jSWStY012"
+    ],
+    "sources": [
+      {
+        "name": "ircGAGr9p-OAdITbBXEO5mis3Zc969.bmp",
+        "sequence": 3,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9p-uAaKbQBXEO5ph1_1k709.bmp",
+        "sequence": 4,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9p_KAAyaUBXEO5ncXVTI327.bmp",
+        "sequence": 5,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9p_iAVpq2BXEO5i1GxBs672.bmp",
+        "sequence": 6,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9p_2ABsEWBXEO5uMY89s931.bmp",
+        "sequence": 7,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9qAOATVHsBXEO5vde9QA137.bmp",
+        "sequence": 8,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9qAiAKcVdBXEO5rL8-hA047.bmp",
+        "sequence": 9,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9qA2AR0jEBXEO5sjx0Kg535.bmp",
+        "sequence": 10,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9qBOAbq5mBXEO5jUu_mk759.bmp",
+        "sequence": 11,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9qBmAJfkmBXEO5nF_Eb4666.bmp",
+        "sequence": 12,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9qB-ACHO2BXEO5iWV9_g397.bmp",
+        "sequence": 13,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9qCeAPqc9BXEO5l3RK8I608.bmp",
+        "sequence": 14,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9qCyAQq8cBXEO5o1rMNw873.bmp",
+        "sequence": 15,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9qDKAQwyVBXEO5n4oJn0764.bmp",
+        "sequence": 16,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9qDeAVouNBXEO5p2r-8M862.bmp",
+        "sequence": 17,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9qD2AD0BJBXEO5iAVwDY135.bmp",
+        "sequence": 18,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9qEOAd85JBXEO5iWzIlA643.bmp",
+        "sequence": 19,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9qEiAFtrEBXEO5jrdRyw345.bmp",
+        "sequence": 20,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9qE6AdgDnBXEO5ubqGHc328.bmp",
+        "sequence": 21,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9qFSAE4oCBXEO5rUK8f4152.bmp",
+        "sequence": 22,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9qFqAObfxBXEO5o2KIIc107.bmp",
+        "sequence": 23,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9qF-AOIEyBXEO5quY6xE444.bmp",
+        "sequence": 24,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9qGWASRrqBXEO5gwfiX4072.bmp",
+        "sequence": 25,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9qG2AY5WRBXEO5hEiNGs077.bmp",
+        "sequence": 26,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9qHOAb1VpBXEO5gVGM4Y126.bmp",
+        "sequence": 27,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9qHmAJrzWBXEO5u8X2uY070.bmp",
+        "sequence": 28,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9qH-APkImBXEO5qdKTQo197.bmp",
+        "sequence": 29,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9qIWACyBPBXEO5vZaQL8951.bmp",
+        "sequence": 30,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9qIyAcHJLBXEO5oeGGZs934.bmp",
+        "sequence": 31,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9qJKAMLuNBXEO5q5j_4k305.bmp",
+        "sequence": 32,
+        "rotation": -90
+      },
+      {
+        "name": "ircGAGr9rd6ALiNnBXEO5nFvL9A895.bmp",
+        "sequence": 33,
+        "rotation": -90
+      },
+      {
+        "name": "ircGAGr9reSANS46BXEO5hhiViI956.bmp",
+        "sequence": 34,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9reuAE_IVBXEO5hgdAEc502.bmp",
+        "sequence": 35,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9rfCALPBnBXEO5qZdonQ058.bmp",
+        "sequence": 36,
+        "rotation": 0
+      },
+      {
+        "name": "ircGAGr9rfaAbTAUBXEO5rUWnio972.bmp",
+        "sequence": 37,
+        "rotation": 90
+      },
+      {
+        "name": "ircGAGr9rfuAElprBXEO5tSuQMc608.bmp",
+        "sequence": 38,
+        "rotation": 0
+      }
+    ]
+  }
+}

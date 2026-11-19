@@ -28,7 +28,7 @@ EXCLUDED_FILM_FILES = {"000159800001.jpg", "000159800002.jpg"}
 
 CORE_FILES = {
     "index.html", "pickle-jar-7f3c.html", "photo-v2.html", "photo-v2.css",
-    "photo-v2.js", "film.html", "film.css", "film.js", "fireworks.html", "pixel.html", "11.html", "建筑.png",
+    "photo-v2.js", "film.html", "film.css", "film.js", "films.html", "films.css", "film-kodak-gold-200.html", "film-rolls.json", "fireworks.html", "pixel.html", "11.html", "建筑.png",
     "炮弹.png", "content_note.css", "sidebar.js",
 }
 NOTE_FILES = {
@@ -52,23 +52,31 @@ def copy_file(source: Path, destination: Path) -> None:
 
 
 def copy_film_roll() -> None:
-    source = PHOTO_SOURCE / "film-00015980"
-    destination = PHOTO_OUTPUT / "film-00015980"
-    records = json.loads((source / "photos_info.json").read_text(encoding="utf-8"))
-    records = [record for record in records if record["filename"] not in EXCLUDED_FILM_FILES]
-    for folder in ("full", "thumbs"):
-        (destination / folder).mkdir(parents=True, exist_ok=True)
-        for filename in EXCLUDED_FILM_FILES:
-            (destination / folder / filename).unlink(missing_ok=True)
-    # Copy only the selected manifest entries, rather than the whole folder.
-    for record in records:
-        for relative in ("full/" + record["filename"], record["thumbnail"]):
-            copy_file(source / relative, destination / relative)
-    manifest = json.dumps(records, ensure_ascii=False, indent=2)
-    (destination / "photos_info.json").write_text(manifest + "\n", encoding="utf-8")
-    (destination / "photos_info.js").write_text(
-        "window.FILM_ROLL_PHOTOS = " + manifest + ";\n", encoding="utf-8"
-    )
+    rolls = json.loads((SITE_ROOT / "film-rolls.json").read_text(encoding="utf-8"))
+    exclusions = {
+        "film-00015980": EXCLUDED_FILM_FILES,
+        "kodak-gold-200-gannan-2026": {
+            "ircGAGr9p9aAFyI3BXEO5kES9_A434.jpg",
+            "ircGAGr9p92AYu2BBXEO5jSWStY012.jpg",
+        },
+    }
+    for roll in rolls:
+        source = PHOTO_SOURCE / roll["id"]
+        destination = PHOTO_OUTPUT / roll["id"]
+        denied = exclusions.get(roll["id"], set())
+        records = json.loads((source / "photos_info.json").read_text(encoding="utf-8"))
+        records = [r for r in records if r["filename"] not in denied]
+        for folder in ("full", "thumbs"):
+            (destination / folder).mkdir(parents=True, exist_ok=True)
+            for filename in denied:
+                (destination / folder / filename).unlink(missing_ok=True)
+        for record in records:
+            for relative in ("full/" + record["filename"], record["thumbnail"]):
+                copy_file(source / relative, destination / relative)
+        manifest = json.dumps(records, ensure_ascii=False, indent=2)
+        (destination / "photos_info.json").write_text(manifest + "\n", encoding="utf-8")
+        (destination / "photos_info.js").write_text(
+            "window.FILM_ROLL_PHOTOS = " + manifest + ";\n", encoding="utf-8")
 
 
 def copy_site_files() -> None:
@@ -220,12 +228,16 @@ def main() -> None:
     copy_site_files()
     photo_count, photo_bytes = compress_photos()
     validate_gallery_data()
-    film_root = PHOTO_OUTPUT / "film-00015980"
-    film_records = json.loads((film_root / "photos_info.json").read_text(encoding="utf-8"))
-    for record in film_records:
-        for relative in ("full/" + record["filename"], record["thumbnail"]):
-            if not (film_root / relative).is_file():
-                raise FileNotFoundError(f"Film photograph missing: {relative}")
+    rolls = json.loads((SITE_ROOT / "film-rolls.json").read_text(encoding="utf-8"))
+    for roll in rolls:
+        film_root = PHOTO_OUTPUT / roll["id"]
+        records = json.loads((film_root / "photos_info.json").read_text(encoding="utf-8"))
+        if len(records) != roll["count"]:
+            raise ValueError(f"Film count mismatch: {roll['id']}")
+        for record in records:
+            for relative in ("full/" + record["filename"], record["thumbnail"]):
+                if not (film_root / relative).is_file():
+                    raise FileNotFoundError(f"Film photograph missing: {relative}")
     removed_images = remove_missing_local_images()
     validate_local_links()
 

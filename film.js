@@ -1,6 +1,8 @@
 'use strict';
 (() => {
-  const BASE = './photos/film-00015980/';
+  const CONFIG = window.FILM_ROLL_CONFIG || {};
+  const BASE = CONFIG.photoBase || './photos/film-00015980/';
+  const VERSION = CONFIG.assetVersion || '20261119-library';
   const gallery = document.getElementById('gallery');
   const more = document.getElementById('loadMore');
   const loading = document.getElementById('loading');
@@ -12,39 +14,23 @@
   const close = document.getElementById('lightboxClose');
   const wander = document.getElementById('wanderView');
   const sheet = document.getElementById('sheetView');
-  let originals = [], photos = [], randomOrder = [], loaded = 0, mode = 'wander';
+  let originals = [], photos = [], loaded = 0, mode = 'wander';
   let active = -1, focusBefore = null, lastTouch = null;
   const pad = number => String(number).padStart(2, '0');
-  const url = (photo, full = false) => BASE + (full ? 'full/' + photo.filename : photo.thumbnail) + '?v=20261118-no02';
+  const url = (photo, full = false) => BASE + (full ? 'full/' + photo.filename : photo.thumbnail) + '?v=' + encodeURIComponent(VERSION);
 
-  function shuffle(items) {
-    const result = [...items];
-    for (let i = result.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [result[i], result[j]] = [result[j], result[i]];
-    }
-    return result;
-  }
-  function organizeByTag(items) {
-    const priority = ['Red', 'Orange', 'Yellow', 'Green', 'Cyan', 'Blue', 'Purple', 'Magenta', 'B&W'];
-    const groups = new Map();
-    for (const photo of items) {
-      const tags = photo.tags || [];
-      const key = tags.find(tag => priority.includes(tag)) || tags[0] || 'Others';
-      if (!groups.has(key)) groups.set(key, []);
-      groups.get(key).push(photo);
-    }
-    return shuffle([...groups.values()]).flatMap(shuffle);
-  }
+  const labelFor = (photo, index) => Number.isFinite(photo.frame) ? `第 ${photo.frame} 格` : `第 ${index + 1} 张`;
+
   function createPhoto(photo, index) {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'photo';
     button.dataset.ratio = photo.width / photo.height;
-    button.setAttribute('aria-label', `展开第 ${photo.frame} 格照片`);
+    button.setAttribute('aria-label', `展开${labelFor(photo, index)}照片`);
     const frame = document.createElement('span');
     frame.className = 'photo-image';
-    frame.dataset.frame = pad(photo.frame);
+    frame.dataset.frame = Number.isFinite(photo.frame) ? pad(photo.frame) : pad(index + 1);
+    frame.dataset.roll = CONFIG.label || 'SHD400';
     frame.style.setProperty('--ratio', photo.width / photo.height);
     const thumb = new Image();
     thumb.loading = 'lazy'; thumb.decoding = 'async';
@@ -60,7 +46,7 @@
     const caption = document.createElement('span');
     caption.className = 'photo-caption';
     const number = document.createElement('span'), label = document.createElement('span');
-    number.textContent = 'FRAME ' + pad(photo.frame); label.textContent = '00015980';
+    number.textContent = labelFor(photo, index); label.textContent = CONFIG.label || 'SHD400';
     caption.append(number, label); button.append(frame, caption);
     button.addEventListener('click', () => openPhoto(index));
     requestAnimationFrame(() => button.classList.add('is-visible'));
@@ -78,13 +64,13 @@
   function setView(view) {
     if (!originals.length) return;
     mode = view; loaded = 0;
-    photos = mode === 'sheet' ? [...originals].sort((a, b) => a.frame - b.frame) : randomOrder;
+    photos = originals;
     wander.setAttribute('aria-pressed', String(mode === 'wander'));
     sheet.setAttribute('aria-pressed', String(mode === 'sheet'));
     gallery.classList.toggle('is-sheet', mode === 'sheet');
-    document.getElementById('viewHint').textContent = mode === 'sheet'
-      ? '按底片编号排列。点击任意一格，展开照片。'
-      : '向下翻阅，点击照片展开细节。';
+    document.getElementById('viewHint').textContent = CONFIG.order === 'import'
+      ? '按扫描导入顺序展示。点击照片展开细节。'
+      : '按底片帧号顺序展示。点击照片展开细节。';
     gallery.replaceChildren(); renderBatch();
   }
   function showPhoto(index) {
@@ -94,7 +80,7 @@
     // Keep the thumbnail visible until the full JPEG has finished loading.
     image.src = url(photo); image.alt = photo.title;
     document.getElementById('lightboxTitle').textContent = photo.title;
-    document.getElementById('lightboxMeta').textContent = `ROLL 00015980 · FRAME ${pad(photo.frame)}`;
+    document.getElementById('lightboxMeta').textContent = `${CONFIG.stock || '乐凯 SHD400'} · ${labelFor(photo, active)}`;
     document.getElementById('lightboxCount').textContent = `${pad(active + 1)} / ${pad(photos.length)}`;
     const full = new Image(), expected = active;
     full.onload = () => { if (active === expected && !dialog.hidden) { image.src = full.src; status.textContent = ''; } };
@@ -154,12 +140,16 @@
       if (location.protocol === 'file:') {
         data = window.FILM_ROLL_PHOTOS;
       } else {
-        const response = await fetch(BASE + 'photos_info.json?v=20261118-no02');
+        const response = await fetch(BASE + 'photos_info.json?v=' + encodeURIComponent(VERSION));
         if (!response.ok) throw new Error('HTTP ' + response.status);
         data = await response.json();
       }
       if (!Array.isArray(data) || !data.length || data.some(photo => !photo.filename || !photo.thumbnail || !(photo.width > 0 && photo.height > 0))) throw new Error('Invalid gallery data');
-      originals = data; randomOrder = organizeByTag(originals);
+      originals = data.map((photo, index) => ({...photo, __inputOrder:index})).sort((a,b) => {
+        const orderA = Number.isFinite(a.frame) ? a.frame : Number.isFinite(a.sequence) ? a.sequence : a.__inputOrder;
+        const orderB = Number.isFinite(b.frame) ? b.frame : Number.isFinite(b.sequence) ? b.sequence : b.__inputOrder;
+        return orderA - orderB;
+      });
       document.getElementById('photoCount').textContent = originals.length;
       setView('wander');
     } catch (error) {

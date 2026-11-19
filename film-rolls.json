@@ -1,0 +1,34 @@
+[
+  {
+    "id": "film-00015980",
+    "page": "film.html",
+    "stock": "乐凯 SHD400",
+    "brand": "LUCKY",
+    "kind": "黑白负片",
+    "iso": 400,
+    "date": "2026 年 11 月",
+    "location": "甘南 · 湖州",
+    "count": 34,
+    "theme": "lucky",
+    "order": "frame",
+    "label": "SHD400",
+    "cover": "000159800030.jpg",
+    "description": "甘南与湖州的黑白影像。"
+  },
+  {
+    "id": "kodak-gold-200-gannan-2026",
+    "page": "film-kodak-gold-200.html",
+    "stock": "Kodak Gold 200",
+    "brand": "KODAK",
+    "kind": "彩色负片",
+    "iso": 200,
+    "date": "2026 年",
+    "location": "甘南",
+    "count": 36,
+    "theme": "kodak",
+    "order": "import",
+    "label": "GOLD 200",
+    "cover": "ircGAGr9qAOATVHsBXEO5vde9QA137.jpg",
+    "description": "在甘南，收下一卷日光与色彩。"
+  }
+]
