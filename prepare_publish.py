@@ -30,6 +30,8 @@ CORE_FILES = {
     "index.html", "pickle-jar-7f3c.html", "photo-v2.html", "photo-v2.css",
     "photo-v2.js", "film.html", "film.css", "film.js", "films.html", "films.css", "film-kodak-gold-200.html", "film-rolls.json", "fireworks.html", "pixel.html", "11.html", "建筑.png",
     "炮弹.png", "content_note.css", "sidebar.js",
+    "assets/film-canisters/lucky-shd400-render-v2.webp",
+    "assets/film-canisters/kodak-gold200-render-v2.webp",
 }
 NOTE_FILES = {
     "结构化思维读书笔记.html", "《金字塔原理》读书笔记.html",
